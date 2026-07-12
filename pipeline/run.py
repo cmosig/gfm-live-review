@@ -315,6 +315,7 @@ def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
     duration = (datetime.now(timezone.utc) - started).total_seconds()
     state.append_run({"event": "run", "seed": seed, "backfill": backfill,
                       "extractor": extractor, "model": model,
+                      "effort": os.environ.get("GFM_EFFORT", "low"),
                       "duration_s": round(duration, 1),
                       **stats, "n_cards": n_cards, "quarantine": quarantine.count()})
     if use_git:  # commit the run-log line too
@@ -357,7 +358,12 @@ def main(argv=None) -> int:
                    help="rebuild + commit + push after every N newly-carded papers")
     p.add_argument("--model", default=extract.DEFAULT_MODEL,
                    help=f"model for paper reading (default {extract.DEFAULT_MODEL})")
+    p.add_argument("--effort", default="low",
+                   choices=["low", "medium", "high", "xhigh", "max"],
+                   help="reasoning effort for extraction (default low; the CLI's "
+                        "default extended thinking dominates per-paper latency)")
     args = p.parse_args(argv)
+    os.environ["GFM_EFFORT"] = args.effort  # honoured by host + sandbox extractors
 
     try:
         with _Lock():

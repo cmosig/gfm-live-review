@@ -84,10 +84,13 @@ def _call_claude(prompt: str, *, strict_reminder: bool = False) -> dict:
     if strict_reminder:
         prompt += ("\n\nIMPORTANT: your previous reply was not valid JSON. "
                    "Reply with ONLY the JSON object, no prose, no fences.")
+    cmd = ["claude", "-p", "--output-format", "json", "--model", MODEL,
+           "--max-turns", "2", "--allowedTools", ALLOWED_TOOLS]
+    effort = os.environ.get("GFM_EFFORT", "low")
+    if effort:
+        cmd += ["--effort", effort]
     proc = subprocess.run(
-        ["claude", "-p", "--output-format", "json", "--model", MODEL,
-         "--max-turns", "2", "--allowedTools", ALLOWED_TOOLS],
-        input=prompt, capture_output=True, text=True, timeout=300,
+        cmd, input=prompt, capture_output=True, text=True, timeout=300,
     )
     if proc.returncode != 0:
         stderr = (proc.stderr or "").lower()

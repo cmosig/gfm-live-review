@@ -125,6 +125,7 @@ def build_docker_argv(*, model: str, container_name: str,
     argv += [
         "--env", f"GFM_MODEL={model}",
         "--env", f"GFM_ALLOWED_TOOLS={ALLOWED_TOOLS}",
+        "--env", f"GFM_EFFORT={os.environ.get('GFM_EFFORT', 'low')}",
         IMAGE,
     ]
     return argv

@@ -11,11 +11,16 @@ with, so the model can only emit text.
 from __future__ import annotations
 
 import json
+import os
 import re
 import shutil
 import subprocess
 
 ALLOWED_TOOLS = ""  # MUST stay empty. Asserted before every invocation.
+# Reasoning effort for the extraction call. Default "low": paper reading is a
+# structured-extraction task, not open-ended reasoning, and the CLI's default
+# extended thinking dominates per-paper latency. Override via GFM_EFFORT.
+DEFAULT_EFFORT = "low"
 _FENCE_RE = re.compile(r"^\s*```(?:json)?\s*|\s*```\s*$", re.MULTILINE)
 
 
@@ -66,10 +71,13 @@ def call(prompt: str, *, model: str, timeout: int = 300,
     if strict_reminder:
         prompt += ("\n\nIMPORTANT: your previous reply was not valid JSON. "
                    "Reply with ONLY the JSON object, no prose, no fences.")
+    effort = os.environ.get("GFM_EFFORT", DEFAULT_EFFORT)
+    cmd = ["claude", "-p", "--output-format", "json", "--model", model,
+           "--max-turns", "2", "--allowedTools", ALLOWED_TOOLS]
+    if effort:
+        cmd += ["--effort", effort]
     proc = subprocess.run(
-        ["claude", "-p", "--output-format", "json", "--model", model,
-         "--max-turns", "2", "--allowedTools", ALLOWED_TOOLS],
-        input=prompt, capture_output=True, text=True, timeout=timeout,
+        cmd, input=prompt, capture_output=True, text=True, timeout=timeout,
     )
     if proc.returncode != 0:
         stderr = (proc.stderr or "").lower()
