@@ -26,7 +26,10 @@ from .textutil import span_in_text, span_sha256
 # whole extraction and quarantine it.
 MAX_SPAN_FAILURE_RATE = 0.5
 
-_MODEL = "claude-opus-4-8"
+# Model used for paper reading. Sonnet 5 is thorough and cost-effective; override
+# per run with `pipeline.run --model`. The extraction call dominates per-paper
+# wall time (fetch/parse are negligible), so this is the main latency knob.
+DEFAULT_MODEL = "claude-sonnet-5"
 
 _SLUG_RE = re.compile(r"[^a-z0-9]+")
 
@@ -235,7 +238,8 @@ def assemble_card(output: ExtractionOutput, meta: PaperMeta,
     )
 
 
-def extract_card(meta: PaperMeta, paper_text: str, *, run_fn) -> ExtractionResult:
+def extract_card(meta: PaperMeta, paper_text: str, *, run_fn,
+                 model: str = DEFAULT_MODEL) -> ExtractionResult:
     """Run one extraction end-to-end. `run_fn(payload, model=...) -> dict`.
 
     `run_fn` is injected (defaults wired in run.py to sandbox.run_extraction) so
@@ -246,7 +250,7 @@ def extract_card(meta: PaperMeta, paper_text: str, *, run_fn) -> ExtractionResul
 
     # 1. Validate the untrusted JSON against the closed-enum schema.
     try:
-        raw = run_fn(payload, model=_MODEL)
+        raw = run_fn(payload, model=model)
         output = ExtractionOutput.model_validate(raw)
     except QuotaExhausted:
         # Not a per-paper failure: must propagate so the run stops cleanly and

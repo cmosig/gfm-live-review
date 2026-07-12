@@ -141,7 +141,7 @@ def _make_run_fn(mode: str, egress_mode: str):
 # One paper
 # ---------------------------------------------------------------------------
 def process_paper(vr: verify.VerifyResult, run_fn, seen: dict,
-                  existing_keys: set[str]) -> str:
+                  existing_keys: set[str], *, model: str) -> str:
     """Fetch, extract, and card one paper. Returns a short status string.
 
     Updates `seen` ONLY on a terminal outcome (carded or quarantined), never on
@@ -173,7 +173,7 @@ def process_paper(vr: verify.VerifyResult, run_fn, seen: dict,
     text = fetch_arxiv_text(cand.arxiv_id)
     text = slice_for_extraction(text)
 
-    result = extract.extract_card(meta, text, run_fn=run_fn)
+    result = extract.extract_card(meta, text, run_fn=run_fn, model=model)
     if result.quarantined:
         quarantine.write(key, title=cand.title, reason=result.reason,
                          payload=result.payload, extra={"raw_output": result.raw})
@@ -224,7 +224,8 @@ def publish(*, push: bool, use_git: bool, msg: str) -> int:
 
 def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
         use_git: bool, limit: int | None, backfill: bool = False,
-        redeploy_every: int | None = None) -> int:
+        redeploy_every: int | None = None,
+        model: str = extract.DEFAULT_MODEL) -> int:
     started = datetime.now(timezone.utc)
     stats = {"ingested": 0, "accepted": 0, "new": 0, "carded": 0,
              "quarantined": 0, "skipped": 0, "quota_stopped": False}
@@ -274,7 +275,7 @@ def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
             print(f"reached --limit {limit}, stopping", file=sys.stderr)
             break
         try:
-            status = process_paper(vr, run_fn, seen, existing_keys)
+            status = process_paper(vr, run_fn, seen, existing_keys, model=model)
         except QuotaExhausted as exc:
             print(f"QUOTA EXHAUSTED, stopping cleanly: {exc}", file=sys.stderr)
             stats["quota_stopped"] = True
@@ -313,7 +314,8 @@ def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
     # --- run log ---
     duration = (datetime.now(timezone.utc) - started).total_seconds()
     state.append_run({"event": "run", "seed": seed, "backfill": backfill,
-                      "extractor": extractor, "duration_s": round(duration, 1),
+                      "extractor": extractor, "model": model,
+                      "duration_s": round(duration, 1),
                       **stats, "n_cards": n_cards, "quarantine": quarantine.count()})
     if use_git:  # commit the run-log line too
         git_commit_push(f"log: run complete ({n_cards} cards)", push=push)
@@ -353,6 +355,8 @@ def main(argv=None) -> int:
                    help="exhaustive one-off search to grow the corpus")
     p.add_argument("--redeploy-every", type=int, default=None,
                    help="rebuild + commit + push after every N newly-carded papers")
+    p.add_argument("--model", default=extract.DEFAULT_MODEL,
+                   help=f"model for paper reading (default {extract.DEFAULT_MODEL})")
     args = p.parse_args(argv)
 
     try:
@@ -360,7 +364,8 @@ def main(argv=None) -> int:
             return run(seed=args.seed, extractor=args.extractor,
                        egress_mode=args.egress_mode, push=not args.no_push,
                        use_git=not args.no_git, limit=args.limit,
-                       backfill=args.backfill, redeploy_every=args.redeploy_every)
+                       backfill=args.backfill, redeploy_every=args.redeploy_every,
+                       model=args.model)
     except SystemExit:
         raise
     except Exception:
