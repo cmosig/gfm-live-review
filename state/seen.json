@@ -63,6 +63,10 @@
     "key": "zvonkov2025cropland",
     "status": "carded"
   },
+  "deep learning based burned area mapping using bi temporal siamese networks and alphaearth foundation datasets": {
+    "key": "seydi2025deep",
+    "status": "quarantined"
+  },
   "earth embeddings reveal diverse urban signals from space": {
     "arxiv_id": "2604.03456",
     "dropped_claims": 0,
