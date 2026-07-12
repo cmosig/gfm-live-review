@@ -14,6 +14,9 @@
   "CCDC_harmonics": [
     "brown2025alphaearth"
   ],
+  "CKA": [
+    "barreiro2026simpler"
+  ],
   "CNN1D": [
     "cheng2026from"
   ],
@@ -25,6 +28,12 @@
   ],
   "DHS_surveys": [
     "pettersson2025leveraging"
+  ],
+  "DINOv3-SAT": [
+    "barreiro2026simpler"
+  ],
+  "EFM_guided_generative_reconstruction": [
+    "chen2026when"
   ],
   "EuroSAT-Embed": [
     "corley2026from"
@@ -59,6 +68,9 @@
   "Moran's I clustering": [
     "hou2026slum"
   ],
+  "PACE_OCI": [
+    "tushar2026foundation"
+  ],
   "PCA dimensional saturation": [
     "hou2026slum"
   ],
@@ -89,6 +101,9 @@
   "SSIM structural fidelity": [
     "hou2026slum"
   ],
+  "SoftCon": [
+    "barreiro2026simpler"
+  ],
   "Sub-Saharan_Africa": [
     "pettersson2025leveraging"
   ],
@@ -101,8 +116,14 @@
   "ViT-Adapter": [
     "asif2026adapting"
   ],
+  "ViT-MAE": [
+    "barreiro2026simpler"
+  ],
   "XGBoost": [
     "metz2025application"
+  ],
+  "aerosol_optical_depth_estimation": [
+    "tushar2026foundation"
   ],
   "affinity_propagation_clustering": [
     "perera2026clustering"
@@ -127,6 +148,9 @@
   ],
   "archaeological_site_monitoring": [
     "tadesse2026watch"
+  ],
+  "architecture_selection": [
+    "barreiro2026simpler"
   ],
   "arctic_infrastructure_mapping": [
     "perera2026clustering"
@@ -233,6 +257,9 @@
   "cropland_mapping": [
     "zvonkov2025cropland"
   ],
+  "cross_attention_conditioning": [
+    "chen2026when"
+  ],
   "cross_lingual_poi_text_embedding": [
     "hou2026aef"
   ],
@@ -257,9 +284,6 @@
   "dhs_survey": [
     "nazir2026alphaearth"
   ],
-  "diffusion_model": [
-    "liu2026huiyanearth"
-  ],
   "digital_surface_model": [
     "hamoudzadeh2026inferring"
   ],
@@ -277,9 +301,6 @@
   ],
   "distance_to_road_prediction": [
     "plas2026better"
-  ],
-  "distribution_shift": [
-    "hamoudzadeh2026inferring"
   ],
   "domain_gap_satellite_to_rgb": [
     "polushko2026flood"
@@ -328,6 +349,9 @@
   ],
   "embedding_fusion": [
     "plas2026better"
+  ],
+  "embedding_interpolation": [
+    "scheurer2026lepa"
   ],
   "embedding_interpretability": [
     "rahman2026physically"
@@ -389,6 +413,9 @@
   "frozen backbone": [
     "thasma2026beyond"
   ],
+  "frozen_embeddings": [
+    "adjei2026foundation"
+  ],
   "frozen_vs_finetuned_embeddings": [
     "ishikawa2025assessing"
   ],
@@ -421,6 +448,9 @@
   ],
   "geographic_generalization": [
     "shang2026benchmarking"
+  ],
+  "geometric_equivariance": [
+    "scheurer2026lepa"
   ],
   "georsclip": [
     "tadesse2026watch"
@@ -476,6 +506,9 @@
   "housing_price_estimation": [
     "hou2026aef"
   ],
+  "hyperspectral_foundation_model": [
+    "tushar2026foundation"
+  ],
   "ice_wedge_polygon_detection": [
     "perera2026clustering"
   ],
@@ -506,11 +539,20 @@
   "internet_search_embeddings": [
     "metz2025application"
   ],
+  "joint_embedding_predictive_architecture": [
+    "scheurer2026lepa"
+  ],
   "knowledge-distillation": [
     "feng2026tessera"
   ],
+  "label_shift": [
+    "adjei2026foundation"
+  ],
   "land-fertility-classification": [
     "sachan2026post"
+  ],
+  "land_surface_temperature_super_resolution": [
+    "chen2026when"
   ],
   "land_use_distribution_mapping": [
     "liu2025beyond"
@@ -521,8 +563,14 @@
   "language_accessible_embeddings": [
     "liu2025beyond"
   ],
+  "layer_pruning": [
+    "barreiro2026simpler"
+  ],
   "lcz_upscaling": [
     "ko2026exploring"
+  ],
+  "leave_one_country_out_CV": [
+    "adjei2026foundation"
   ],
   "llm_as_judge": [
     "rahman2026physically"
@@ -554,11 +602,17 @@
   "mean_pooling": [
     "corley2026from"
   ],
+  "mean_reciprocal_rank": [
+    "scheurer2026lepa"
+  ],
   "minority_crop_detection": [
     "shang2026benchmarking"
   ],
   "mobile_phone_data": [
     "metz2025application"
+  ],
+  "model_compression": [
+    "barreiro2026simpler"
   ],
   "modifiable_areal_unit_problem": [
     "gong2026earth"
@@ -707,6 +761,9 @@
   "representation_efficiency": [
     "gong2026earth"
   ],
+  "representation_similarity": [
+    "barreiro2026simpler"
+  ],
   "respiratory_infection_prediction": [
     "nazir2026alphaearth"
   ],
@@ -769,6 +826,9 @@
   ],
   "single-temporal post-event SAR": [
     "thasma2026beyond"
+  ],
+  "single_frame_composite": [
+    "adjei2026foundation"
   ],
   "smallholder_agriculture": [
     "lisaius2026embedding"

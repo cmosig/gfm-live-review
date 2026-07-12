@@ -115,6 +115,12 @@
     "key": "grayevsky2025dehn",
     "status": "off_topic"
   },
+  "do foundation model embeddings improve cross country crop yield generalisation a leave one country out evaluation in sub saharan africa": {
+    "arxiv_id": "2605.08113",
+    "dropped_claims": 0,
+    "key": "adjei2026foundation",
+    "status": "carded"
+  },
   "dorronsoro s theorem in heisenberg groups": {
     "key": "fssler2019dorronsoro",
     "status": "off_topic"
@@ -149,6 +155,12 @@
     "arxiv_id": "2606.24120",
     "dropped_claims": 1,
     "key": "polushko2026flood",
+    "status": "carded"
+  },
+  "foundation ai models for aerosol optical depth estimation from pace satellite data": {
+    "arxiv_id": "2605.00678",
+    "dropped_claims": 0,
+    "key": "tushar2026foundation",
     "status": "carded"
   },
   "from landslide conditioning factors to satellite embeddings evaluating the utilisation of google alphaearth for landslide susceptibility mapping using deep learning": {
@@ -222,6 +234,12 @@
   "land cover and flood type govern the detection limits of satellite based flood mapping across diverse global flood events": {
     "key": "kolluru2026land",
     "status": "quarantined"
+  },
+  "lepa learning geometric equivariance in satellite remote sensing data with a predictive architecture": {
+    "arxiv_id": "2603.07246",
+    "dropped_claims": 0,
+    "key": "scheurer2026lepa",
+    "status": "carded"
   },
   "leveraging compact satellite embeddings and graph neural networks for large scale poverty mapping": {
     "arxiv_id": "2511.01408",
@@ -343,6 +361,12 @@
     "key": "houriez2025scalable",
     "status": "quarantined"
   },
+  "simpler efficient foundation model adaptation via similarity guided layer pruning for earth observation": {
+    "arxiv_id": "2603.19873",
+    "dropped_claims": 0,
+    "key": "barreiro2026simpler",
+    "status": "carded"
+  },
   "slum detection and density mapping with alphaearth foundations a representation learning evaluation across 12 global cities": {
     "arxiv_id": "2605.10029",
     "dropped_claims": 0,
@@ -417,6 +441,12 @@
     "arxiv_id": "2607.01082",
     "dropped_claims": 0,
     "key": "aalaila2026when",
+    "status": "carded"
+  },
+  "when earth foundation models meet diffusion an application to land surface temperature super resolution": {
+    "arxiv_id": "2604.16841",
+    "dropped_claims": 0,
+    "key": "chen2026when",
     "status": "carded"
   }
 }
