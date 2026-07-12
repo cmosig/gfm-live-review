@@ -27,7 +27,64 @@ function currentView() {
   return excludeSelf ? DATA.views.no_self_eval : DATA.views.all;
 }
 
-const LABEL_ORDER = { consensus: 0, contested: 1, thin: 2, gap: 3 };
+/* ---- display names (fallbacks keep future keys working) ---- */
+const MODEL_NAMES = {
+  alphaearth: "AlphaEarth", tessera: "TESSERA", prithvi: "Prithvi", clay: "Clay",
+  presto: "Presto", satclip: "SatCLIP", geoclip: "GeoCLIP", satmae: "SatMAE",
+  scalemae: "Scale-MAE", dofa: "DOFA", croma: "CROMA", galileo: "Galileo",
+  task_specific: "task-specific model",
+};
+function modelName(key) {
+  if (key === null || key === undefined) return "—";
+  return MODEL_NAMES[key] || key;
+}
+function taskName(key) { return String(key).replace(/_/g, " "); }
+
+const AXIS_INFO = {
+  G1_label_rich_parity: ["Label-rich parity", "Do foundation models match task-specific models when training labels are plentiful?"],
+  G2_label_scarce_efficiency: ["Label efficiency", "Do foundation models win when only few labels are available?"],
+  G3_spatial_transfer: ["Spatial transfer", "Do results hold in regions the downstream model never saw?"],
+  G4_temporal_transfer: ["Temporal transfer", "Do results hold across time — different years or seasons?"],
+  G5_cost: ["Cost", "Compute, inference and storage cost compared to alternatives."],
+  G6_compactness: ["Compactness", "How small can the embeddings be before performance drops?"],
+  G7_interpretability: ["Interpretability", "Can we understand what the embedding dimensions encode?"],
+  G8_uncertainty: ["Uncertainty", "Are predictions calibrated? Is uncertainty quantified at all?"],
+  G9_ecological_fine_scale: ["Fine-scale ecology", "Forests, mixed pixels, and fine-grained ecological structure."],
+  G10_human_semantics: ["Human semantics", "Socioeconomic signals: wealth, slums, population, urban function."],
+  G11_complementarity: ["Complementarity", "Do different foundation models improve when combined?"],
+  G12_openness: ["Openness", "Open weights, open data, reproducibility."],
+};
+function axisTitle(axis) {
+  const info = AXIS_INFO[axis];
+  return info ? info[0] : axis;
+}
+
+const DIR_GLYPH = { better: "▲", worse: "▼", parity: "≈" };
+const DIR_WORD = {
+  better: "foundation model beats the baseline",
+  worse: "baseline beats the foundation model",
+  parity: "effectively equal",
+};
+
+const LIMITATION_INFO = {
+  temporal_transfer: "Performance degrades across time (other years/seasons)",
+  spatial_transfer: "Performance degrades in unseen regions",
+  interpretability: "Embeddings are hard to interpret",
+  uncertainty: "No or poor uncertainty quantification",
+  mixed_pixels: "Coarse pixels mix multiple land covers",
+  human_semantics: "Weak on socioeconomic / human signals",
+  time_sensitivity: "Sensitive to acquisition timing",
+  benchmark_narrowness: "Evaluated on too few / narrow benchmarks",
+  compute_cost: "High compute or storage cost",
+  data_bias: "Training or evaluation data is biased",
+};
+
+const DOI_STATUS_INFO = {
+  verified: "DOI resolved and confirmed (journal DOIs are title-matched against Crossref; arXiv DOIs are derived 1:1 from the arXiv id)",
+  no_doi_found: "No DOI exists in any metadata source for this paper",
+  unresolved: "DOI found but the lookup failed — retried on the next run",
+  mismatch: "DOI resolves to a different title — flagged for review",
+};
 
 /* ---- link helpers ---- */
 function paperLink(claim) {
@@ -40,33 +97,52 @@ function fmtNum(x) {
   if (x === null || x === undefined) return "—";
   return (Math.round(x * 1000) / 1000).toString();
 }
+function fmtRatio(x) {
+  if (x === null || x === undefined) return "—";
+  return (Math.round(x * 1000) / 10) + "%";
+}
 
 /* ---- claim table (used inside the modal) ---- */
 function claimTable(claims) {
-  const head = el("tr", {}, ["Paper", "Model", "vs baseline", "Metric", "Value",
-    "Baseline", "Dataset", "Labels", "Dir", "Loc"].map(h => el("th", { text: h })));
+  const heads = [
+    ["Paper", "The paper this claim comes from"],
+    ["Model", "The foundation model being evaluated"],
+    ["Baseline", "What it is compared against"],
+    ["Metric", ""],
+    ["Value", "The foundation model's score"],
+    ["Baseline value", "The baseline's score"],
+    ["Dataset", "Results are never pooled across datasets"],
+    ["Labels used", "Fraction of training labels used downstream"],
+    ["Direction", "better = foundation model wins, worse = baseline wins"],
+    ["Where", "Location in the paper"],
+  ];
+  const head = el("tr", {}, heads.map(([h, t]) => el("th", { text: h, title: t })));
   const rows = claims.map(c => {
     const cells = [];
-    cells.push(el("td", {}, [paperLink(c), c.self_evaluation ? el("span", { class: "badge self", text: "self" }) : null]));
-    cells.push(el("td", { text: c.model }));
-    cells.push(el("td", { text: c.baseline || "—" }));
+    cells.push(el("td", {}, [paperLink(c), c.self_evaluation
+      ? el("span", { class: "badge self", text: "self-eval",
+                     title: "Authors helped create the model they evaluate" }) : null]));
+    cells.push(el("td", { text: modelName(c.model) }));
+    cells.push(el("td", { text: modelName(c.baseline) }));
     cells.push(el("td", { text: c.metric }));
     cells.push(el("td", { text: fmtNum(c.value) }));
     cells.push(el("td", { text: fmtNum(c.baseline_value) }));
     cells.push(el("td", { text: c.dataset }));
-    cells.push(el("td", { text: c.label_ratio === null ? "—" : c.label_ratio }));
-    cells.push(el("td", {}, [el("span", { class: "dir dir-" + c.direction, text: c.direction })]));
+    cells.push(el("td", { text: fmtRatio(c.label_ratio) }));
+    cells.push(el("td", {}, [el("span", { class: "dir dir-" + c.direction,
+      text: (DIR_GLYPH[c.direction] || "") + " " + c.direction, title: DIR_WORD[c.direction] || "" })]));
     cells.push(el("td", { text: c.locator }));
     const tr = el("tr", {}, cells);
     const spanRow = el("tr", { class: "span-row" }, [
       el("td", { attrs: { colspan: "10" } }, [
-        el("span", { class: "quote-label", text: "quote: " }),
-        el("span", { class: "quote", text: c.span })  // textContent -> literal
+        el("span", { class: "quote-label", text: "verbatim quote: " }),
+        el("span", { class: "quote", text: "“" + c.span + "”" })  // textContent -> literal
       ])
     ]);
     return [tr, spanRow];
   }).flat();
-  return el("table", { class: "claims" }, [el("thead", {}, [head]), el("tbody", {}, rows)]);
+  return el("div", { class: "scroll" }, [
+    el("table", { class: "claims" }, [el("thead", {}, [head]), el("tbody", {}, rows)])]);
 }
 
 /* ---- modal ---- */
@@ -79,10 +155,37 @@ function openModal(title, node) {
 }
 function closeModal() { document.getElementById("modal").classList.add("hidden"); }
 
-/* ---- label chip ---- */
+/* ---- shared bits ---- */
 function labelChip(label, extra) {
   const t = extra ? `${label} · ${extra}` : label;
-  return el("span", { class: "chip chip-" + label, text: t });
+  const titles = {
+    consensus: "At least 3 papers and ≥80% agree on the direction",
+    contested: "At least 3 papers, but they disagree on the direction",
+    thin: "Only 1–2 papers so far — not enough for a consensus",
+    gap: "No paper has produced evidence here yet",
+  };
+  return el("span", { class: "chip chip-" + label, text: t, title: titles[label] || "" });
+}
+
+function directionLegend() {
+  const items = [
+    ["sw-better", "▲", "better — the foundation model beats its baseline"],
+    ["sw-worse", "▼", "worse — the baseline wins"],
+    ["sw-parity", "≈", "parity — effectively equal"],
+    ["sw-mixed", "±", "mixed — papers disagree (contested)"],
+  ];
+  const legend = el("div", { class: "legend" }, [
+    el("span", { class: "lg-title", text: "Cell colour = direction of the evidence:" }),
+    ...items.map(([cls, glyph, label]) => el("span", { class: "lg-item" }, [
+      el("span", { class: "lg-swatch " + cls, text: glyph }),
+      txt(label),
+    ])),
+    el("span", { class: "lg-item" }, [
+      el("span", { class: "lg-swatch sw-ring", text: "" }),
+      txt("ring = consensus (≥3 papers, ≥80% agree); no ring = 1–2 papers"),
+    ]),
+  ]);
+  return legend;
 }
 
 /* =====================  VIEWS  ===================== */
@@ -90,44 +193,68 @@ function labelChip(label, extra) {
 function renderMatrix(root) {
   const m = currentView().matrix;
   root.appendChild(el("p", { class: "lede", text:
-    "Model × task. Cell colour = consensus across papers (numbers are never pooled across datasets). Click a cell for the underlying claims." }));
-  if (!m.tasks.length) { root.appendChild(el("p", { text: "No claims yet." })); return; }
-  const wrap = el("div", { class: "scroll" });
-  const table = el("table", { class: "matrix" });
+    "Where has each foundation model been evaluated, and how did it do? The number in a cell is how many " +
+    "papers evaluated that model on that task; the colour shows which way their evidence points, relative " +
+    "to each paper's baseline. Click any cell to see the underlying results with their verbatim quotes. " +
+    "Results are never averaged across datasets — the colour summarises per-paper direction only." }));
+  root.appendChild(directionLegend());
+  if (!m.tasks.length) { root.appendChild(el("p", { class: "empty-note", text: "No claims yet." })); return; }
+
+  const table = el("table");
   const header = el("tr", {}, [el("th", { text: "" })].concat(
-    m.tasks.map(t => el("th", { class: "rot", text: t }))));
+    m.tasks.map(t => el("th", { class: "colhead", text: taskName(t) }))));
   const body = [header];
   for (const model of m.models) {
-    const cells = [el("th", { class: "rowhead", text: model })];
+    const cells = [el("th", { class: "rowhead", text: modelName(model) })];
     for (const task of m.tasks) {
       const cell = m.cells[model + "\t" + task];
-      if (!cell) { cells.push(el("td", { class: "cell empty" })); continue; }
-      const td = el("td", { class: "cell chip-" + cell.label,
-        title: `${cell.label} — ${cell.n_papers} paper(s), ${cell.n_claims} claim(s)`,
-        onclick: () => openModal(`${model} — ${task}`, claimTable(cell.claims)) },
-        [txt(cell.n_papers)]);
+      if (!cell) {
+        cells.push(el("td", { class: "cell empty", title: "No evidence yet" }));
+        continue;
+      }
+      const mixed = cell.label === "contested";
+      const dirCls = mixed ? "mixed" : (cell.direction || "parity");
+      const glyph = mixed ? "±" : (DIR_GLYPH[cell.direction] || "");
+      const dirText = mixed ? "papers disagree" : (DIR_WORD[cell.direction] || "");
+      const td = el("td", {
+        class: `cell dir-cell-${dirCls} ev-${cell.label}`,
+        title: `${modelName(model)} on ${taskName(task)}: ${cell.n_papers} paper(s), ${cell.n_claims} result(s) — ` +
+               `${dirText}${cell.agreement !== null ? ` (${Math.round(cell.agreement * 100)}% agree)` : ""}. ` +
+               `Evidence: ${cell.label}. Click for details.`,
+        onclick: () => openModal(`${modelName(model)} — ${taskName(task)}`, claimTable(cell.claims)),
+      }, [
+        el("span", { class: "glyph", text: glyph }),
+        el("span", { class: "n", text: cell.n_papers }),
+      ]);
       cells.push(td);
     }
     body.push(el("tr", {}, cells));
   }
-  table.appendChild(el("tbody", {}, body));
-  wrap.appendChild(table);
-  root.appendChild(wrap);
+  const t = el("div", { class: "matrix scroll" }, [el("table", {}, [el("tbody", {}, body)])]);
+  root.appendChild(t);
 }
 
 function renderContested(root) {
   root.appendChild(el("p", { class: "lede", text:
-    "Where papers measuring the same dataset disagree on direction — the most valuable page." }));
+    "Groups where at least three papers measured the same thing — same task, same dataset, same metric, " +
+    "same label regime — and reached opposite conclusions. This is the most informative page: disagreement " +
+    "usually means a hidden variable (region, preprocessing, label budget) that the field hasn't isolated yet." }));
   const groups = currentView().groups.filter(g => g.label === "contested");
-  if (!groups.length) { root.appendChild(el("p", { text: "No contested groups at current thresholds." })); return; }
+  if (!groups.length) {
+    root.appendChild(el("p", { class: "empty-note", text:
+      "No contested dataset-level groups yet — so far, no ≥3 papers measured the same model on the same " +
+      "dataset and disagreed. As the corpus grows, disagreements will surface here. (Axis-level " +
+      "disagreements already exist — see the Research axes tab.)" }));
+    return;
+  }
   for (const g of groups) {
     const card = el("div", { class: "gcard" });
     card.appendChild(el("div", { class: "gcard-head" }, [
-      el("strong", { text: `${g.task} · ${g.dataset}` }),
-      labelChip("contested", `${g.n_papers} papers, ${Math.round(g.agreement*100)}% agree`)
+      el("strong", { text: `${taskName(g.task)} · ${g.dataset}` }),
+      labelChip("contested", `${g.n_papers} papers, ${Math.round(g.agreement * 100)}% agree`)
     ]));
     card.appendChild(el("div", { class: "gcard-sub", text:
-      `${g.model} vs ${g.baseline || "—"} · ${g.metric} · ${g.label_regime}` }));
+      `${modelName(g.model)} vs ${modelName(g.baseline)} · metric: ${g.metric} · labels: ${g.label_regime.replace(/_/g, " ")}` }));
     card.appendChild(claimTable(g.claims));
     root.appendChild(card);
   }
@@ -135,40 +262,68 @@ function renderContested(root) {
 
 function renderChallenges(root) {
   root.appendChild(el("p", { class: "lede", text:
-    "Open challenges by evidence volume, and how often each limitation is raised over time." }));
+    "What do papers themselves say is still broken? Each paper's stated limitations are tagged against a " +
+    "fixed vocabulary; this counts distinct papers per limitation. The bars rank today's most-cited open " +
+    "challenges; the mini-columns show how often each was raised per month." }));
   const lim = DATA.limitations;
   const tags = Object.keys(lim.totals).sort((a, b) => lim.totals[b] - lim.totals[a]);
-  if (!tags.length) { root.appendChild(el("p", { text: "No limitations recorded yet." })); return; }
+  if (!tags.length) { root.appendChild(el("p", { class: "empty-note", text: "No limitations recorded yet." })); return; }
+  const maxTotal = Math.max(...tags.map(t => lim.totals[t]));
+  const allMonths = [...new Set(tags.flatMap(t => Object.keys(lim.series[t] || {})))].sort();
+  const maxMonthly = Math.max(1, ...tags.flatMap(t => Object.values(lim.series[t] || {})));
+
   const table = el("table", { class: "board" }, [
     el("thead", {}, [el("tr", {}, [
-      el("th", { text: "Limitation" }), el("th", { text: "Papers" }), el("th", { text: "Trend" })])]),
+      el("th", { text: "Limitation" }),
+      el("th", { text: "Papers citing it" }),
+      el("th", { text: "Per month", title: "Distinct papers raising this limitation, by publication month" })])]),
     el("tbody", {}, tags.map(tag => {
       const series = lim.series[tag] || {};
-      const months = Object.keys(series).sort();
-      const spark = months.map(mm => `${mm}:${series[mm]}`).join("  ");
+      const trend = el("span", { class: "trend" }, allMonths.map(mm => {
+        const v = series[mm] || 0;
+        const col = el("span", { class: "tcol", title: `${mm}: ${v} paper(s)` });
+        col.style.height = Math.max(2, Math.round((v / maxMonthly) * 22)) + "px";
+        return col;
+      }));
+      const bar = el("span", { class: "bar" });
+      bar.style.width = Math.round((lim.totals[tag] / maxTotal) * 240) + "px";
       return el("tr", {}, [
-        el("td", { text: tag }),
-        el("td", { text: lim.totals[tag] }),
-        el("td", { class: "spark", text: spark || "—" })
+        el("td", {}, [
+          el("div", { class: "lim-name", text: taskName(tag) }),
+          el("div", { class: "lim-desc", text: LIMITATION_INFO[tag] || "" }),
+        ]),
+        el("td", { class: "barcell" }, [el("span", { class: "bar-wrap" }, [
+          bar, el("span", { class: "bar-n", text: lim.totals[tag] })])]),
+        el("td", {}, [trend]),
       ]);
     }))
   ]);
-  root.appendChild(table);
+  root.appendChild(el("div", { class: "scroll" }, [table]));
 }
 
 function renderAxes(root) {
   root.appendChild(el("p", { class: "lede", text:
-    "Research-goal rubric G1–G12. Explicit gap rows mark axes nobody has evidence on yet." }));
+    "Twelve standing research questions (G1–G12) that the corpus is graded against. Every extracted result " +
+    "is assigned to the question it answers; axes with no evidence yet are explicit gaps — they are what " +
+    "nobody has measured, which is as informative as what everybody has." }));
   const axes = currentView().axes;
   for (const a of axes) {
+    const info = AXIS_INFO[a.axis] || [a.axis, ""];
     const row = el("div", { class: "axis-row" });
-    const head = el("div", { class: "axis-head" }, [
-      el("span", { class: "axis-name", text: a.axis }),
-      labelChip(a.label, a.n_papers ? `${a.n_papers} papers` : "no evidence")
+    const left = el("div", {}, [
+      el("span", { class: "axis-code", text: a.axis.split("_")[0] }),
+      el("span", { class: "axis-name", text: info[0] }),
+      el("p", { class: "axis-q", text: info[1] }),
     ]);
+    const right = el("div", { class: "axis-right" }, [
+      labelChip(a.label, a.n_papers
+        ? `${a.n_papers} paper${a.n_papers === 1 ? "" : "s"}` : "no evidence"),
+    ]);
+    const head = el("div", { class: "axis-head" }, [left, right]);
     if (a.claims.length) {
-      head.style.cursor = "pointer";
-      head.addEventListener("click", () => openModal(a.axis, claimTable(a.claims)));
+      row.style.cursor = "pointer";
+      row.title = "Click to see the evidence for this question";
+      row.addEventListener("click", () => openModal(`${a.axis.split("_")[0]} · ${info[0]}`, claimTable(a.claims)));
     }
     row.appendChild(head);
     root.appendChild(row);
@@ -177,24 +332,43 @@ function renderAxes(root) {
 
 function renderRegistry(root) {
   const r = DATA.registry;
-  const bar = el("div", { class: "stats" });
-  bar.appendChild(el("span", { class: "stat", text: `${r.n_papers} papers` }));
-  for (const [k, v] of Object.entries(r.doi_status_counts)) {
-    bar.appendChild(el("span", { class: "stat", text: `${k}: ${v}` }));
-  }
-  bar.appendChild(el("span", { class: "stat warn", text: `quarantined: ${r.quarantine_count}` }));
-  root.appendChild(bar);
+  root.appendChild(el("p", { class: "lede", text:
+    "Every paper in the corpus. \"DOI status\" is the result of mechanical verification: DOIs are taken " +
+    "only from Crossref/OpenAlex/arXiv metadata (never from the language model) and checked before being " +
+    "shown. Quarantined = a paper whose extraction failed validation; it is kept aside with its raw " +
+    "output for inspection and never enters the statistics." }));
+
+  const stats = el("div", { class: "stats" }, [
+    el("div", { class: "stat" }, [
+      el("div", { class: "v", text: r.n_papers }), el("div", { class: "k", text: "papers" })]),
+    ...Object.entries(r.doi_status_counts).map(([k, v]) =>
+      el("div", { class: "stat", title: DOI_STATUS_INFO[k] || "" }, [
+        el("div", { class: "v", text: v }), el("div", { class: "k", text: "DOI " + k.replace(/_/g, " ") })])),
+    el("div", { class: "stat" + (r.quarantine_count ? " warn" : "") ,
+                title: "Extractions that failed validation — kept aside, never counted" }, [
+      el("div", { class: "v", text: r.quarantine_count }), el("div", { class: "k", text: "quarantined" })]),
+  ]);
+  root.appendChild(stats);
 
   const table = el("table", { class: "registry" }, [
-    el("thead", {}, [el("tr", {}, ["Title", "Date", "Venue", "DOI", "Status", "Claims"]
-      .map(h => el("th", { text: h })))]),
+    el("thead", {}, [el("tr", {}, [
+      el("th", { text: "Title" }),
+      el("th", { text: "Date" }),
+      el("th", { text: "Venue" }),
+      el("th", { text: "DOI" }),
+      el("th", { text: "DOI status", title: "verified: resolved & confirmed · no doi found: none exists in metadata · unresolved: lookup failed, retried next run · mismatch: resolves to a different title" }),
+      el("th", { text: "Results", title: "Number of verified quantitative claims extracted" })])]),
     el("tbody", {}, r.papers.map(p => el("tr", {}, [
       el("td", {}, [p.link ? el("a", { text: p.title, attrs: { href: p.link, target: "_blank", rel: "noopener noreferrer" } }) : txt(p.title),
-        p.self_evaluation ? el("span", { class: "badge self", text: "self" }) : null]),
+        p.self_evaluation ? el("span", { class: "badge self", text: "self-eval",
+          title: "Authors helped create the model they evaluate" }) : null]),
       el("td", { text: p.date }),
       el("td", { text: p.venue || "—" }),
-      el("td", { text: p.doi || "—" }),
-      el("td", {}, [el("span", { class: "doi doi-" + p.doi_status, text: p.doi_status })]),
+      el("td", {}, [p.doi
+        ? el("a", { text: p.doi, attrs: { href: "https://doi.org/" + encodeURIComponent(p.doi).replace(/%2F/gi, "/"), target: "_blank", rel: "noopener noreferrer" } })
+        : txt("—")]),
+      el("td", {}, [el("span", { class: "doi doi-" + p.doi_status,
+        text: p.doi_status.replace(/_/g, " "), title: DOI_STATUS_INFO[p.doi_status] || "" })]),
       el("td", { text: p.n_claims })
     ])))
   ]);
@@ -204,11 +378,13 @@ function renderRegistry(root) {
 const TABS = [
   { id: "matrix", label: "Model × Task", render: renderMatrix },
   { id: "contested", label: "Contested", render: renderContested },
-  { id: "challenges", label: "Open Challenges", render: renderChallenges },
-  { id: "axes", label: "Axes G1–G12", render: renderAxes },
-  { id: "registry", label: "Registry", render: renderRegistry },
+  { id: "challenges", label: "Open challenges", render: renderChallenges },
+  { id: "axes", label: "Research axes", render: renderAxes },
+  { id: "registry", label: "Paper registry", render: renderRegistry },
 ];
-let activeTab = "matrix";
+// Deep-linkable tabs: #contested, #registry, … (falls back to the matrix).
+let activeTab = TABS.some(t => t.id === location.hash.slice(1))
+  ? location.hash.slice(1) : "matrix";
 
 function renderTabs() {
   const nav = document.getElementById("tabs");
@@ -217,16 +393,15 @@ function renderTabs() {
     nav.appendChild(el("button", {
       class: "tab" + (t.id === activeTab ? " active" : ""),
       text: t.label,
-      onclick: () => { activeTab = t.id; render(); }
+      onclick: () => { activeTab = t.id; history.replaceState(null, "", "#" + t.id); render(); }
     }));
   }
 }
 
 function renderSubtitle() {
   const sub = document.getElementById("subtitle");
-  sub.textContent = `${DATA.meta.n_papers} papers · corpus through ${DATA.corpus_through || "—"} · ` +
-    `consensus = ≥${DATA.meta.consensus_rule.min_papers} papers, ` +
-    `≥${Math.round(DATA.meta.consensus_rule.agreement*100)}% agreeing` +
+  sub.textContent = `A self-updating review of the evidence · ${DATA.meta.n_papers} papers · ` +
+    `corpus through ${DATA.corpus_through || "—"}` +
     (excludeSelf ? " · self-evaluations excluded" : "");
 }
 

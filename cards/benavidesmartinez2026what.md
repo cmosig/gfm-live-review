@@ -30,8 +30,8 @@ claims:
   task: land_cover_classification
   value: 98.0
 date: '2026-03-08'
-doi: null
-doi_status: no_doi_found
+doi: 10.48550/arxiv.2603.16911
+doi_status: verified
 extractor_version: '1'
 ingested_at: '2026-07-12T16:42:07.839908Z'
 key: benavidesmartinez2026what

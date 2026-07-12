@@ -70,8 +70,8 @@ claims:
   task: change_detection
   value: 79.3
 date: '2025-07-29'
-doi: null
-doi_status: no_doi_found
+doi: 10.48550/arxiv.2507.22291
+doi_status: verified
 extractor_version: '1'
 ingested_at: '2026-07-12T16:33:46.916817Z'
 key: brown2025alphaearth

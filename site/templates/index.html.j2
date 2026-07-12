@@ -7,13 +7,48 @@
 
 <header>
   <div class="head-row">
-    <h1>Geospatial Foundation Models — Live Review</h1>
-    <label class="toggle">
+    <div>
+      <h1>Geospatial Foundation Models — Live Review</h1>
+      <p class="subtitle" id="subtitle"></p>
+    </div>
+    <label class="toggle" title="Papers whose authors created the very model they evaluate tend to report wins. Toggle them off to see only independent evidence.">
       <input type="checkbox" id="excludeSelf">
       <span>Exclude self-evaluations</span>
     </label>
   </div>
-  <p class="subtitle" id="subtitle"></p>
+
+  <details class="help">
+    <summary>How to read this dashboard</summary>
+    <div class="help-body">
+      <p>This site is a <strong>self-updating literature review</strong>: every day it reads new papers
+         that evaluate geospatial foundation models (AlphaEarth, TESSERA, Prithvi, Clay, …) and extracts
+         their quantitative results. Every number shown here links back to a paper and a
+         <em>verbatim quote</em> from it — nothing is editorialised.</p>
+      <dl>
+        <dt>Direction <span class="dir dir-better">▲ better</span> <span class="dir dir-worse">▼ worse</span> <span class="dir dir-parity">≈ parity</span></dt>
+        <dd>Each result compares a <strong>foundation model against a baseline</strong> (a task-specific
+            model or another foundation model) on one dataset. <em>Better</em> = the foundation model wins,
+            <em>worse</em> = the baseline wins, <em>parity</em> = effectively equal.</dd>
+        <dt>Evidence labels</dt>
+        <dd><span class="chip chip-consensus">consensus</span> ≥3 papers and ≥80% agree on the direction ·
+            <span class="chip chip-contested">contested</span> ≥3 papers but they disagree ·
+            <span class="chip chip-thin">thin</span> only 1–2 papers so far ·
+            <span class="chip chip-gap">gap</span> nobody has looked yet.</dd>
+        <dt>Label regime</dt>
+        <dd>How much training data the downstream task used: <em>label-rich</em> (≥75% of labels),
+            <em>label-partial</em>, <em>label-scarce</em> (≤10%). Results from different regimes are never mixed,
+            because label efficiency is precisely what foundation models promise.</dd>
+        <dt>Self-evaluation</dt>
+        <dd>The paper's authors helped create the very foundation model they evaluate (checked
+            mechanically via author overlap with the model's original paper). Such papers tend to report
+            wins — the toggle above excludes them.</dd>
+        <dt>Never pooled across datasets</dt>
+        <dd>A "consensus" always means papers measured the <em>same dataset</em> under the same conditions —
+            never an average of apples and oranges.</dd>
+      </dl>
+    </div>
+  </details>
+
   <nav id="tabs"></nav>
 </header>
 
@@ -23,14 +58,17 @@
   <div class="modal-box">
     <button id="modalClose" class="modal-close" aria-label="Close">×</button>
     <h2 id="modalTitle"></h2>
+    <p class="modal-hint">Each row is one claim from one paper. The quote underneath is copied verbatim
+       from the paper and was mechanically verified to appear in its text.</p>
     <div id="modalBody"></div>
   </div>
 </div>
 
 <footer>
-  <p>Every number links in ≤2 clicks to a paper and a verbatim supporting quote.
-     Inference is subscription-only via a local CLI; this site holds no
-     credentials. The one human-edited file is <code>taxonomy.yaml</code>.</p>
+  <p>Every number on this site is traceable in ≤2 clicks to a paper and a verbatim supporting quote.
+     Updated daily and fully automatic; the underlying data is
+     <a href="data.json">one JSON file</a>. Inference is subscription-only via a local CLI;
+     this site holds no credentials.</p>
 </footer>
 
 <!-- Inert data blob: parsed by app.js, never executed. -->

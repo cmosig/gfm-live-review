@@ -49,8 +49,8 @@ claims:
   task: hydrological_modeling
   value: 0.612
 date: '2026-01-04'
-doi: null
-doi_status: no_doi_found
+doi: 10.48550/arxiv.2601.01558
+doi_status: verified
 extractor_version: '1'
 ingested_at: '2026-07-12T16:42:58.547763Z'
 key: qu2026utilizing

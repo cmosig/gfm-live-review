@@ -42,8 +42,8 @@ claims:
   task: land_cover_classification
   value: 71.1
 date: '2026-05-18'
-doi: null
-doi_status: no_doi_found
+doi: 10.48550/arxiv.2605.18667
+doi_status: verified
 extractor_version: '1'
 ingested_at: '2026-07-12T16:39:05.797573Z'
 key: plas2026better

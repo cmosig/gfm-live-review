@@ -78,8 +78,8 @@ claims:
   task: slum_detection
   value: -2.0
 date: '2026-05-11'
-doi: null
-doi_status: no_doi_found
+doi: 10.48550/arxiv.2605.10029
+doi_status: verified
 extractor_version: '1'
 ingested_at: '2026-07-12T16:40:58.866090Z'
 key: hou2026slum

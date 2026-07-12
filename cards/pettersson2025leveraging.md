@@ -25,8 +25,8 @@ claims:
   task: wealth_mapping
   value: 0.546
 date: '2025-11-03'
-doi: null
-doi_status: no_doi_found
+doi: 10.48550/arxiv.2511.01408
+doi_status: verified
 extractor_version: '1'
 ingested_at: '2026-07-12T16:32:04.911460Z'
 key: pettersson2025leveraging
@@ -72,7 +72,7 @@ regions:
 - gm
 - mz
 - mw
-self_evaluation: true
+self_evaluation: false
 tasks:
 - poverty_mapping
 - wealth_mapping

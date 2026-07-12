@@ -26,8 +26,8 @@ claims:
   task: landslide_susceptibility
   value: 0.99
 date: '2026-01-12'
-doi: null
-doi_status: no_doi_found
+doi: 10.48550/arxiv.2601.07268
+doi_status: verified
 extractor_version: '1'
 ingested_at: '2026-07-12T16:32:48.899861Z'
 key: cheng2026from

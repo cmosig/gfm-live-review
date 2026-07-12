@@ -67,6 +67,11 @@ def axes() -> set[str]:
     return set(load_taxonomy().get("axes", []))
 
 
+def axes_ordered() -> list[str]:
+    """Axes in taxonomy order (G1..G12), not string-sorted (G10 < G2)."""
+    return list(load_taxonomy().get("axes", []))
+
+
 def tasks() -> set[str]:
     return set(load_taxonomy().get("tasks", []))
 

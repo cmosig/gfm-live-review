@@ -53,8 +53,8 @@ claims:
   task: local_climate_zone_classification
   value: 60.1
 date: '2026-06-18'
-doi: null
-doi_status: no_doi_found
+doi: 10.48550/arxiv.2606.20034
+doi_status: verified
 extractor_version: '1'
 ingested_at: '2026-07-12T16:35:57.653092Z'
 key: ko2026exploring
@@ -76,7 +76,7 @@ proposed_tags:
 - coarse_label_training
 regions:
 - ch
-self_evaluation: false
+self_evaluation: true
 tasks:
 - local_climate_zone_classification
 title: 'Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale

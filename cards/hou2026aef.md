@@ -64,8 +64,8 @@ claims:
   task: representation_probing
   value: 0.635
 date: '2026-06-15'
-doi: null
-doi_status: no_doi_found
+doi: 10.48550/arxiv.2606.20697
+doi_status: verified
 extractor_version: '1'
 ingested_at: '2026-07-12T16:44:31.279594Z'
 key: hou2026aef
@@ -90,7 +90,7 @@ proposed_tags:
 - inter_stream_capacity_competition
 regions:
 - cn
-self_evaluation: true
+self_evaluation: false
 tasks:
 - land_cover_classification
 - population_density

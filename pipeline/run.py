@@ -180,6 +180,20 @@ def process_paper(vr: verify.VerifyResult, run_fn, seen: dict,
         state.mark_seen(seen, title=cand.title, key=key, status="quarantined")
         return f"quarantined:{result.reason[:40]}"
 
+    # Self-evaluation is decided mechanically where possible: author overlap
+    # with the evaluated model's own defining paper (already in the corpus).
+    # The LLM's flag only breaks ties for models whose paper we don't hold.
+    card = result.card
+    resolved_self = verify.resolve_self_evaluation(
+        arxiv_id=card.arxiv_id, authors=card.authors,
+        evaluated_models=card.models, llm_flag=card.self_evaluation,
+        model_authors=verify.model_paper_authors(cards_mod.load_all_cards()),
+    )
+    if resolved_self != card.self_evaluation:
+        result = extract.ExtractionResult(
+            card.model_copy(update={"self_evaluation": resolved_self}),
+            False, result.reason, result.payload, result.dropped_claims, result.raw)
+
     cards_mod.write_card(result.card)
     existing_keys.add(key)
     state.mark_seen(seen, title=cand.title, key=key, status="carded",

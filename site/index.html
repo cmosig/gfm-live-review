@@ -7,13 +7,48 @@
 
 <header>
   <div class="head-row">
-    <h1>Geospatial Foundation Models — Live Review</h1>
-    <label class="toggle">
+    <div>
+      <h1>Geospatial Foundation Models — Live Review</h1>
+      <p class="subtitle" id="subtitle"></p>
+    </div>
+    <label class="toggle" title="Papers whose authors created the very model they evaluate tend to report wins. Toggle them off to see only independent evidence.">
       <input type="checkbox" id="excludeSelf">
       <span>Exclude self-evaluations</span>
     </label>
   </div>
-  <p class="subtitle" id="subtitle"></p>
+
+  <details class="help">
+    <summary>How to read this dashboard</summary>
+    <div class="help-body">
+      <p>This site is a <strong>self-updating literature review</strong>: every day it reads new papers
+         that evaluate geospatial foundation models (AlphaEarth, TESSERA, Prithvi, Clay, …) and extracts
+         their quantitative results. Every number shown here links back to a paper and a
+         <em>verbatim quote</em> from it — nothing is editorialised.</p>
+      <dl>
+        <dt>Direction <span class="dir dir-better">▲ better</span> <span class="dir dir-worse">▼ worse</span> <span class="dir dir-parity">≈ parity</span></dt>
+        <dd>Each result compares a <strong>foundation model against a baseline</strong> (a task-specific
+            model or another foundation model) on one dataset. <em>Better</em> = the foundation model wins,
+            <em>worse</em> = the baseline wins, <em>parity</em> = effectively equal.</dd>
+        <dt>Evidence labels</dt>
+        <dd><span class="chip chip-consensus">consensus</span> ≥3 papers and ≥80% agree on the direction ·
+            <span class="chip chip-contested">contested</span> ≥3 papers but they disagree ·
+            <span class="chip chip-thin">thin</span> only 1–2 papers so far ·
+            <span class="chip chip-gap">gap</span> nobody has looked yet.</dd>
+        <dt>Label regime</dt>
+        <dd>How much training data the downstream task used: <em>label-rich</em> (≥75% of labels),
+            <em>label-partial</em>, <em>label-scarce</em> (≤10%). Results from different regimes are never mixed,
+            because label efficiency is precisely what foundation models promise.</dd>
+        <dt>Self-evaluation</dt>
+        <dd>The paper's authors helped create the very foundation model they evaluate (checked
+            mechanically via author overlap with the model's original paper). Such papers tend to report
+            wins — the toggle above excludes them.</dd>
+        <dt>Never pooled across datasets</dt>
+        <dd>A "consensus" always means papers measured the <em>same dataset</em> under the same conditions —
+            never an average of apples and oranges.</dd>
+      </dl>
+    </div>
+  </details>
+
   <nav id="tabs"></nav>
 </header>
 
@@ -23,14 +58,17 @@
   <div class="modal-box">
     <button id="modalClose" class="modal-close" aria-label="Close">×</button>
     <h2 id="modalTitle"></h2>
+    <p class="modal-hint">Each row is one claim from one paper. The quote underneath is copied verbatim
+       from the paper and was mechanically verified to appear in its text.</p>
     <div id="modalBody"></div>
   </div>
 </div>
 
 <footer>
-  <p>Every number links in ≤2 clicks to a paper and a verbatim supporting quote.
-     Inference is subscription-only via a local CLI; this site holds no
-     credentials. The one human-edited file is <code>taxonomy.yaml</code>.</p>
+  <p>Every number on this site is traceable in ≤2 clicks to a paper and a verbatim supporting quote.
+     Updated daily and fully automatic; the underlying data is
+     <a href="data.json">one JSON file</a>. Inference is subscription-only via a local CLI;
+     this site holds no credentials.</p>
 </footer>
 
 <!-- Inert data blob: parsed by app.js, never executed. -->
@@ -173,40 +211,39 @@
   },
   "registry": {
     "doi_status_counts": {
-      "no_doi_found": 12,
-      "verified": 1
+      "verified": 13
     },
     "n_papers": 13,
     "papers": [
       {
         "arxiv_id": "2606.20034",
         "date": "2026-06-18",
-        "doi": null,
-        "doi_status": "no_doi_found",
+        "doi": "10.48550/arxiv.2606.20034",
+        "doi_status": "verified",
         "key": "ko2026exploring",
         "link": "https://arxiv.org/abs/2606.20034",
         "n_claims": 3,
-        "self_evaluation": false,
+        "self_evaluation": true,
         "title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
         "venue": "arXiv"
       },
       {
         "arxiv_id": "2606.20697",
         "date": "2026-06-15",
-        "doi": null,
-        "doi_status": "no_doi_found",
+        "doi": "10.48550/arxiv.2606.20697",
+        "doi_status": "verified",
         "key": "hou2026aef",
         "link": "https://arxiv.org/abs/2606.20697",
         "n_claims": 3,
-        "self_evaluation": true,
+        "self_evaluation": false,
         "title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
         "venue": "arXiv"
       },
       {
         "arxiv_id": "2605.18667",
         "date": "2026-05-18",
-        "doi": null,
-        "doi_status": "no_doi_found",
+        "doi": "10.48550/arxiv.2605.18667",
+        "doi_status": "verified",
         "key": "plas2026better",
         "link": "https://arxiv.org/abs/2605.18667",
         "n_claims": 2,
@@ -217,8 +254,8 @@
       {
         "arxiv_id": "2605.10029",
         "date": "2026-05-11",
-        "doi": null,
-        "doi_status": "no_doi_found",
+        "doi": "10.48550/arxiv.2605.10029",
+        "doi_status": "verified",
         "key": "hou2026slum",
         "link": "https://arxiv.org/abs/2605.10029",
         "n_claims": 4,
@@ -229,8 +266,8 @@
       {
         "arxiv_id": "2604.03456",
         "date": "2026-04-03",
-        "doi": null,
-        "doi_status": "no_doi_found",
+        "doi": "10.48550/arxiv.2604.03456",
+        "doi_status": "verified",
         "key": "gong2026earth",
         "link": "https://arxiv.org/abs/2604.03456",
         "n_claims": 7,
@@ -241,8 +278,8 @@
       {
         "arxiv_id": "2603.16911",
         "date": "2026-03-08",
-        "doi": null,
-        "doi_status": "no_doi_found",
+        "doi": "10.48550/arxiv.2603.16911",
+        "doi_status": "verified",
         "key": "benavidesmartinez2026what",
         "link": "https://arxiv.org/abs/2603.16911",
         "n_claims": 1,
@@ -253,20 +290,20 @@
       {
         "arxiv_id": "2602.17250",
         "date": "2026-02-19",
-        "doi": null,
-        "doi_status": "no_doi_found",
+        "doi": "10.48550/arxiv.2602.17250",
+        "doi_status": "verified",
         "key": "hamoudzadeh2026inferring",
         "link": "https://arxiv.org/abs/2602.17250",
         "n_claims": 5,
-        "self_evaluation": true,
+        "self_evaluation": false,
         "title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
         "venue": "arXiv"
       },
       {
         "arxiv_id": "2601.07268",
         "date": "2026-01-12",
-        "doi": null,
-        "doi_status": "no_doi_found",
+        "doi": "10.48550/arxiv.2601.07268",
+        "doi_status": "verified",
         "key": "cheng2026from",
         "link": "https://arxiv.org/abs/2601.07268",
         "n_claims": 1,
@@ -277,8 +314,8 @@
       {
         "arxiv_id": "2601.01558",
         "date": "2026-01-04",
-        "doi": null,
-        "doi_status": "no_doi_found",
+        "doi": "10.48550/arxiv.2601.01558",
+        "doi_status": "verified",
         "key": "qu2026utilizing",
         "link": "https://arxiv.org/abs/2601.01558",
         "n_claims": 2,
@@ -301,20 +338,20 @@
       {
         "arxiv_id": "2511.01408",
         "date": "2025-11-03",
-        "doi": null,
-        "doi_status": "no_doi_found",
+        "doi": "10.48550/arxiv.2511.01408",
+        "doi_status": "verified",
         "key": "pettersson2025leveraging",
         "link": "https://arxiv.org/abs/2511.01408",
         "n_claims": 1,
-        "self_evaluation": true,
+        "self_evaluation": false,
         "title": "Leveraging Compact Satellite Embeddings and Graph Neural Networks for Large-Scale Poverty Mapping",
         "venue": "arXiv"
       },
       {
         "arxiv_id": "2507.22291",
         "date": "2025-07-29",
-        "doi": null,
-        "doi_status": "no_doi_found",
+        "doi": "10.48550/arxiv.2507.22291",
+        "doi_status": "verified",
         "key": "brown2025alphaearth",
         "link": "https://arxiv.org/abs/2507.22291",
         "n_claims": 3,
@@ -325,8 +362,8 @@
       {
         "arxiv_id": "2506.20380",
         "date": "2025-06-25",
-        "doi": null,
-        "doi_status": "no_doi_found",
+        "doi": "10.48550/arxiv.2506.20380",
+        "doi_status": "verified",
         "key": "feng2025tessera",
         "link": "https://arxiv.org/abs/2506.20380",
         "n_claims": 7,
@@ -340,6 +377,653 @@
   "views": {
     "all": {
       "axes": [
+        {
+          "agreement": 0.5,
+          "axis": "G1_label_rich_parity",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.9,
+              "dataset": "Nantou County, Taiwan",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.07268",
+              "locator": "Sec 4.3",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "cheng2026from",
+              "paper_title": "From Landslide Conditioning Factors to Satellite Embeddings: Evaluating the Utilisation of Google AlphaEarth for Landslide Susceptibility Mapping using Deep Learning",
+              "self_evaluation": false,
+              "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
+              "value": 0.99
+            },
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 76.9,
+              "dataset": "TreeSatAI-TS",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2506.20380",
+              "locator": "Table 1 (a1)",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "feng2025tessera",
+              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
+              "self_evaluation": true,
+              "span": "TESSERA achieves a state-of-the-art F1-score of 77.96 with full supervision",
+              "value": 77.96
+            },
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 25.7,
+              "dataset": "Austrian Crop",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2506.20380",
+              "locator": "Table 1 (b)",
+              "metric": "miou",
+              "model": "tessera",
+              "paper_key": "feng2025tessera",
+              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
+              "self_evaluation": true,
+              "span": "TESSERA achieves 53.12 mIoU, establishing a new SOTA",
+              "value": 53.12
+            },
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 51.08,
+              "dataset": "PASTIS-R",
+              "direction": "worse",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2506.20380",
+              "locator": "Table 1 (b)",
+              "metric": "miou",
+              "model": "tessera",
+              "paper_key": "feng2025tessera",
+              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
+              "self_evaluation": true,
+              "span": "it obtains 50.68 mIoU, ranking second",
+              "value": 50.68
+            },
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 29.59,
+              "dataset": "Biomassters",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2506.20380",
+              "locator": "Table 1 (c)",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "feng2025tessera",
+              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
+              "self_evaluation": true,
+              "span": "TESSERA achieves an RMSE of 27.43 t/ha with full labels",
+              "value": 27.43
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.38,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ achieved the best results, with an R² of 0.84",
+              "value": 0.84
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 32.22,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ achieved the best performance, with an RMSE of approximately 16 m on the testing set",
+              "value": 16.42
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "CHN-Econ",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.20697",
+              "locator": "Sec 4.2.1; Table 7",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hou2026aef",
+              "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
+              "self_evaluation": false,
+              "span": "reaches only 0.461 on E1, compared with 0.635 for BL1",
+              "value": 0.635
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "GRAM pseudo-masks",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.10029",
+              "locator": "Sec 6.2",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "hou2026slum",
+              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
+              "self_evaluation": false,
+              "span": "the median F1 of S1 TorchMLP is 0.763",
+              "value": 0.763
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Bern LCZ",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.20034",
+              "locator": "Table 7 / Sec 5.2",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "ko2026exploring",
+              "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
+              "self_evaluation": true,
+              "span": "followed by AlphaEarth (0.81) and the model using annual composites",
+              "value": 0.81
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
+              "value": 0.8
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "DHS (37 surveys, 2017-2023)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.01408",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "pettersson2025leveraging",
+              "paper_title": "Leveraging Compact Satellite Embeddings and Graph Neural Networks for Large-Scale Poverty Mapping",
+              "self_evaluation": false,
+              "span": "(A) DHS Points",
+              "value": 0.546
+            },
+            {
+              "baseline": "tessera",
+              "baseline_value": 70.6,
+              "dataset": "Dynamic World",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.18667",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "plas2026better",
+              "paper_title": "Better Together: Evaluating the Complementarity of Earth Embedding Models",
+              "self_evaluation": false,
+              "span": "any of their individual scores (71.1% and 70.6%, respectively)",
+              "value": 71.1
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.706,
+              "dataset": "CAMELS",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.01558",
+              "locator": "Sec 6",
+              "metric": "nse",
+              "model": "alphaearth",
+              "paper_key": "qu2026utilizing",
+              "paper_title": "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings",
+              "self_evaluation": false,
+              "span": "median NSE values of 0.708 for the AEF embeddings and 0.706 for the model using CAMELS attributes",
+              "value": 0.708
+            }
+          ],
+          "direction": "better",
+          "label": "contested",
+          "n_claims": 14,
+          "n_papers": 10
+        },
+        {
+          "agreement": 1.0,
+          "axis": "G2_label_scarce_efficiency",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "OpenET ensemble",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2507.22291",
+              "locator": "Sec 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "brown2025alphaearth",
+              "paper_title": "AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse label data",
+              "self_evaluation": true,
+              "span": "achieving R2=0.58±0.01R^{2}=0.58\\pm 0.01",
+              "value": 0.58
+            },
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 52.79,
+              "dataset": "TreeSatAI-TS",
+              "direction": "better",
+              "label_ratio": 0.01,
+              "link": "https://arxiv.org/abs/2506.20380",
+              "locator": "Table 1 (a1)",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "feng2025tessera",
+              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
+              "self_evaluation": true,
+              "span": "it achieves an F1 score of 60.58",
+              "value": 60.58
+            },
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 37.22,
+              "dataset": "Austrian Crop",
+              "direction": "better",
+              "label_ratio": 0.01,
+              "link": "https://arxiv.org/abs/2506.20380",
+              "locator": "Table 1 (a2)",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "feng2025tessera",
+              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
+              "self_evaluation": true,
+              "span": "TESSERA achieves a 66.15 F1 score",
+              "value": 66.15
+            }
+          ],
+          "direction": "better",
+          "label": "thin",
+          "n_claims": 3,
+          "n_papers": 2
+        },
+        {
+          "agreement": 0.5,
+          "axis": "G3_spatial_transfer",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "ACS 5-year",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2604.03456",
+              "locator": "Sec 2.2",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "gong2026earth",
+              "paper_title": "Earth Embeddings Reveal Diverse Urban Signals from Space",
+              "self_evaluation": false,
+              "span": "all three models cluster at low R2 (AlphaEarth ∼\\sim 0.15, Clay ∼\\sim 0.15)",
+              "value": 0.15
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.38,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ shows better generalization (R2=0.84R^{2}=0.84, median difference = -2.62 m) compared with the standard U-Net (R2=0.78R^{2}=0.78",
+              "value": 0.78
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "CHN-Econ",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.20697",
+              "locator": "Abstract; Table 7",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hou2026aef",
+              "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
+              "self_evaluation": false,
+              "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
+              "value": 0.301
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "CHN-Econ",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.20697",
+              "locator": "Abstract; Table 7",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hou2026aef",
+              "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
+              "self_evaluation": false,
+              "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
+              "value": 0.16
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "WUDAPT LCZ",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.20034",
+              "locator": "Table 6 / Sec 5.1",
+              "metric": "miou",
+              "model": "tessera",
+              "paper_key": "ko2026exploring",
+              "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
+              "self_evaluation": true,
+              "span": "TESSERA achieved the best test results with a test IoU of 0.69 and accuracy of 0.80",
+              "value": 0.69
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around -0.28–0.07",
+              "value": -0.28
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around 0.39–0.51",
+              "value": 0.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.553,
+              "dataset": "CAMELS",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.01558",
+              "locator": "Sec 6",
+              "metric": "nse",
+              "model": "alphaearth",
+              "paper_key": "qu2026utilizing",
+              "paper_title": "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings",
+              "self_evaluation": false,
+              "span": "the median NSE of the AEF embeddings rose to 0.612, while the model relying on CAMELS attributes reached only 0.553",
+              "value": 0.612
+            }
+          ],
+          "direction": "better",
+          "label": "contested",
+          "n_claims": 8,
+          "n_papers": 6
+        },
+        {
+          "agreement": 0.667,
+          "axis": "G4_temporal_transfer",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": 72.0,
+              "dataset": "LCMAP land cover change",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2507.22291",
+              "locator": "Sec 7",
+              "metric": "balanced_accuracy",
+              "model": "alphaearth",
+              "paper_key": "brown2025alphaearth",
+              "paper_title": "AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse label data",
+              "self_evaluation": true,
+              "span": "achieving 78.4%±1.1178.4\\%\\pm 1.11 balanced accuracy (BA) (linear)",
+              "value": 78.4
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "LCMAP land use change",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2507.22291",
+              "locator": "Sec 7",
+              "metric": "balanced_accuracy",
+              "model": "alphaearth",
+              "paper_key": "brown2025alphaearth",
+              "paper_title": "AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse label data",
+              "self_evaluation": true,
+              "span": "79.3%±1.6779.3\\%\\pm 1.67 BA (kNN, k=3)",
+              "value": 79.3
+            },
+            {
+              "baseline": null,
+              "baseline_value": 0.538,
+              "dataset": "GRAM pseudo-masks",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.10029",
+              "locator": "Sec 4.1.1",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "hou2026slum",
+              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
+              "self_evaluation": false,
+              "span": "the median spatial F1 of TorchMLP increases from 0.538 to 0.616",
+              "value": 0.616
+            },
+            {
+              "baseline": null,
+              "baseline_value": 0.299,
+              "dataset": "GRAM pseudo-masks",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.10029",
+              "locator": "Sec 4.1.2",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hou2026slum",
+              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
+              "self_evaluation": false,
+              "span": "increases from 0.299 under S1 to 0.466 under",
+              "value": 0.466
+            },
+            {
+              "baseline": null,
+              "baseline_value": 73.9,
+              "dataset": "WUDAPT LCZ",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.20034",
+              "locator": "Table 10 / Sec 6.4",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "ko2026exploring",
+              "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
+              "self_evaluation": true,
+              "span": "notable drops in Bern (73.9% to 60.1%) and Basel (77.4% to 68.8%)",
+              "value": 60.1
+            }
+          ],
+          "direction": "better",
+          "label": "contested",
+          "n_claims": 5,
+          "n_papers": 3
+        },
+        {
+          "agreement": null,
+          "axis": "G5_cost",
+          "claims": [],
+          "direction": null,
+          "label": "gap",
+          "n_claims": 0,
+          "n_papers": 0
+        },
+        {
+          "agreement": 1.0,
+          "axis": "G6_compactness",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "ESA WorldCover 2020",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2603.16911",
+              "locator": "Sec 3.1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "benavidesmartinez2026what",
+              "paper_title": "What on Earth is AlphaEarth? Hierarchical structure and functional interpretability for global land cover",
+              "self_evaluation": false,
+              "span": "required to recover 98% of baseline classification performance varies substantially",
+              "value": 98.0
+            }
+          ],
+          "direction": "parity",
+          "label": "thin",
+          "n_claims": 1,
+          "n_papers": 1
+        },
+        {
+          "agreement": null,
+          "axis": "G7_interpretability",
+          "claims": [],
+          "direction": null,
+          "label": "gap",
+          "n_claims": 0,
+          "n_papers": 0
+        },
+        {
+          "agreement": null,
+          "axis": "G8_uncertainty",
+          "claims": [],
+          "direction": null,
+          "label": "gap",
+          "n_claims": 0,
+          "n_papers": 0
+        },
+        {
+          "agreement": 0.667,
+          "axis": "G9_ecological_fine_scale",
+          "claims": [
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 16.1,
+              "dataset": "Borneo Canopy Height",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2506.20380",
+              "locator": "Table 1 (c)",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "feng2025tessera",
+              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
+              "self_evaluation": true,
+              "span": "achieving the lowest RMSE of 12.2 m.",
+              "value": 12.2
+            },
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 16.1,
+              "dataset": "Danum Valley",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Sec 3",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "TESSERA, AlphaEarth, and Presto achieved Root Mean Square Error (RMSE) values of 12.2 m, 16.1 m, and 17.9 m",
+              "value": 12.2
+            },
+            {
+              "baseline": "tessera",
+              "baseline_value": 12.2,
+              "dataset": "Danum Valley",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Sec 6.5",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "Feng et al. (2025) reported an RMSE of 16.1 m for canopy height regression using AlphaEarth Embeddings",
+              "value": 16.1
+            },
+            {
+              "baseline": null,
+              "baseline_value": 0.0,
+              "dataset": "GRAM pseudo-masks",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.10029",
+              "locator": "Sec 4.1.4",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hou2026slum",
+              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
+              "self_evaluation": false,
+              "span": "with a median of −2.00",
+              "value": -2.0
+            }
+          ],
+          "direction": "better",
+          "label": "contested",
+          "n_claims": 4,
+          "n_papers": 3
+        },
         {
           "agreement": 1.0,
           "axis": "G10_human_semantics",
@@ -480,653 +1164,6 @@
           "label": "gap",
           "n_claims": 0,
           "n_papers": 0
-        },
-        {
-          "agreement": 0.5,
-          "axis": "G1_label_rich_parity",
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.9,
-              "dataset": "Nantou County, Taiwan",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.07268",
-              "locator": "Sec 4.3",
-              "metric": "auc",
-              "model": "alphaearth",
-              "paper_key": "cheng2026from",
-              "paper_title": "From Landslide Conditioning Factors to Satellite Embeddings: Evaluating the Utilisation of Google AlphaEarth for Landslide Susceptibility Mapping using Deep Learning",
-              "self_evaluation": false,
-              "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
-              "value": 0.99
-            },
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 76.9,
-              "dataset": "TreeSatAI-TS",
-              "direction": "better",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2506.20380",
-              "locator": "Table 1 (a1)",
-              "metric": "f1",
-              "model": "tessera",
-              "paper_key": "feng2025tessera",
-              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
-              "self_evaluation": true,
-              "span": "TESSERA achieves a state-of-the-art F1-score of 77.96 with full supervision",
-              "value": 77.96
-            },
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 25.7,
-              "dataset": "Austrian Crop",
-              "direction": "better",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2506.20380",
-              "locator": "Table 1 (b)",
-              "metric": "miou",
-              "model": "tessera",
-              "paper_key": "feng2025tessera",
-              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
-              "self_evaluation": true,
-              "span": "TESSERA achieves 53.12 mIoU, establishing a new SOTA",
-              "value": 53.12
-            },
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 51.08,
-              "dataset": "PASTIS-R",
-              "direction": "worse",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2506.20380",
-              "locator": "Table 1 (b)",
-              "metric": "miou",
-              "model": "tessera",
-              "paper_key": "feng2025tessera",
-              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
-              "self_evaluation": true,
-              "span": "it obtains 50.68 mIoU, ranking second",
-              "value": 50.68
-            },
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 29.59,
-              "dataset": "Biomassters",
-              "direction": "better",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2506.20380",
-              "locator": "Table 1 (c)",
-              "metric": "rmse",
-              "model": "tessera",
-              "paper_key": "feng2025tessera",
-              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
-              "self_evaluation": true,
-              "span": "TESSERA achieves an RMSE of 27.43 t/ha with full labels",
-              "value": 27.43
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.38,
-              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2602.17250",
-              "locator": "Table 4",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "hamoudzadeh2026inferring",
-              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-              "self_evaluation": true,
-              "span": "U-Net++ achieved the best results, with an R² of 0.84",
-              "value": 0.84
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 32.22,
-              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2602.17250",
-              "locator": "Table 4",
-              "metric": "rmse",
-              "model": "alphaearth",
-              "paper_key": "hamoudzadeh2026inferring",
-              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-              "self_evaluation": true,
-              "span": "U-Net++ achieved the best performance, with an RMSE of approximately 16 m on the testing set",
-              "value": 16.42
-            },
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "CHN-Econ",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.20697",
-              "locator": "Sec 4.2.1; Table 7",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "hou2026aef",
-              "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
-              "self_evaluation": true,
-              "span": "reaches only 0.461 on E1, compared with 0.635 for BL1",
-              "value": 0.635
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "GRAM pseudo-masks",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.10029",
-              "locator": "Sec 6.2",
-              "metric": "f1",
-              "model": "alphaearth",
-              "paper_key": "hou2026slum",
-              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
-              "self_evaluation": false,
-              "span": "the median F1 of S1 TorchMLP is 0.763",
-              "value": 0.763
-            },
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "Bern LCZ",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.20034",
-              "locator": "Table 7 / Sec 5.2",
-              "metric": "miou",
-              "model": "alphaearth",
-              "paper_key": "ko2026exploring",
-              "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-              "self_evaluation": false,
-              "span": "followed by AlphaEarth (0.81) and the model using annual composites",
-              "value": 0.81
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 3",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
-              "value": 0.8
-            },
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "DHS (37 surveys, 2017-2023)",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.01408",
-              "locator": "Table 1",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "pettersson2025leveraging",
-              "paper_title": "Leveraging Compact Satellite Embeddings and Graph Neural Networks for Large-Scale Poverty Mapping",
-              "self_evaluation": true,
-              "span": "(A) DHS Points",
-              "value": 0.546
-            },
-            {
-              "baseline": "tessera",
-              "baseline_value": 70.6,
-              "dataset": "Dynamic World",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.18667",
-              "locator": "Table 3",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "plas2026better",
-              "paper_title": "Better Together: Evaluating the Complementarity of Earth Embedding Models",
-              "self_evaluation": false,
-              "span": "any of their individual scores (71.1% and 70.6%, respectively)",
-              "value": 71.1
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.706,
-              "dataset": "CAMELS",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.01558",
-              "locator": "Sec 6",
-              "metric": "nse",
-              "model": "alphaearth",
-              "paper_key": "qu2026utilizing",
-              "paper_title": "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings",
-              "self_evaluation": false,
-              "span": "median NSE values of 0.708 for the AEF embeddings and 0.706 for the model using CAMELS attributes",
-              "value": 0.708
-            }
-          ],
-          "direction": "better",
-          "label": "contested",
-          "n_claims": 14,
-          "n_papers": 10
-        },
-        {
-          "agreement": 1.0,
-          "axis": "G2_label_scarce_efficiency",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "OpenET ensemble",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2507.22291",
-              "locator": "Sec 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "brown2025alphaearth",
-              "paper_title": "AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse label data",
-              "self_evaluation": true,
-              "span": "achieving R2=0.58±0.01R^{2}=0.58\\pm 0.01",
-              "value": 0.58
-            },
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 52.79,
-              "dataset": "TreeSatAI-TS",
-              "direction": "better",
-              "label_ratio": 0.01,
-              "link": "https://arxiv.org/abs/2506.20380",
-              "locator": "Table 1 (a1)",
-              "metric": "f1",
-              "model": "tessera",
-              "paper_key": "feng2025tessera",
-              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
-              "self_evaluation": true,
-              "span": "it achieves an F1 score of 60.58",
-              "value": 60.58
-            },
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 37.22,
-              "dataset": "Austrian Crop",
-              "direction": "better",
-              "label_ratio": 0.01,
-              "link": "https://arxiv.org/abs/2506.20380",
-              "locator": "Table 1 (a2)",
-              "metric": "f1",
-              "model": "tessera",
-              "paper_key": "feng2025tessera",
-              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
-              "self_evaluation": true,
-              "span": "TESSERA achieves a 66.15 F1 score",
-              "value": 66.15
-            }
-          ],
-          "direction": "better",
-          "label": "thin",
-          "n_claims": 3,
-          "n_papers": 2
-        },
-        {
-          "agreement": 0.5,
-          "axis": "G3_spatial_transfer",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "ACS 5-year",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2604.03456",
-              "locator": "Sec 2.2",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "gong2026earth",
-              "paper_title": "Earth Embeddings Reveal Diverse Urban Signals from Space",
-              "self_evaluation": false,
-              "span": "all three models cluster at low R2 (AlphaEarth ∼\\sim 0.15, Clay ∼\\sim 0.15)",
-              "value": 0.15
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.38,
-              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2602.17250",
-              "locator": "Table 4",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "hamoudzadeh2026inferring",
-              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-              "self_evaluation": true,
-              "span": "U-Net++ shows better generalization (R2=0.84R^{2}=0.84, median difference = -2.62 m) compared with the standard U-Net (R2=0.78R^{2}=0.78",
-              "value": 0.78
-            },
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "CHN-Econ",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.20697",
-              "locator": "Abstract; Table 7",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "hou2026aef",
-              "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
-              "self_evaluation": true,
-              "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
-              "value": 0.301
-            },
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "CHN-Econ",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.20697",
-              "locator": "Abstract; Table 7",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "hou2026aef",
-              "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
-              "self_evaluation": true,
-              "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
-              "value": 0.16
-            },
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "WUDAPT LCZ",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.20034",
-              "locator": "Table 6 / Sec 5.1",
-              "metric": "miou",
-              "model": "tessera",
-              "paper_key": "ko2026exploring",
-              "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-              "self_evaluation": false,
-              "span": "TESSERA achieved the best test results with a test IoU of 0.69 and accuracy of 0.80",
-              "value": 0.69
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around -0.28–0.07",
-              "value": -0.28
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around 0.39–0.51",
-              "value": 0.39
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.553,
-              "dataset": "CAMELS",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.01558",
-              "locator": "Sec 6",
-              "metric": "nse",
-              "model": "alphaearth",
-              "paper_key": "qu2026utilizing",
-              "paper_title": "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings",
-              "self_evaluation": false,
-              "span": "the median NSE of the AEF embeddings rose to 0.612, while the model relying on CAMELS attributes reached only 0.553",
-              "value": 0.612
-            }
-          ],
-          "direction": "better",
-          "label": "contested",
-          "n_claims": 8,
-          "n_papers": 6
-        },
-        {
-          "agreement": 0.667,
-          "axis": "G4_temporal_transfer",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": 72.0,
-              "dataset": "LCMAP land cover change",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2507.22291",
-              "locator": "Sec 7",
-              "metric": "balanced_accuracy",
-              "model": "alphaearth",
-              "paper_key": "brown2025alphaearth",
-              "paper_title": "AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse label data",
-              "self_evaluation": true,
-              "span": "achieving 78.4%±1.1178.4\\%\\pm 1.11 balanced accuracy (BA) (linear)",
-              "value": 78.4
-            },
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "LCMAP land use change",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2507.22291",
-              "locator": "Sec 7",
-              "metric": "balanced_accuracy",
-              "model": "alphaearth",
-              "paper_key": "brown2025alphaearth",
-              "paper_title": "AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse label data",
-              "self_evaluation": true,
-              "span": "79.3%±1.6779.3\\%\\pm 1.67 BA (kNN, k=3)",
-              "value": 79.3
-            },
-            {
-              "baseline": null,
-              "baseline_value": 0.538,
-              "dataset": "GRAM pseudo-masks",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.10029",
-              "locator": "Sec 4.1.1",
-              "metric": "f1",
-              "model": "alphaearth",
-              "paper_key": "hou2026slum",
-              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
-              "self_evaluation": false,
-              "span": "the median spatial F1 of TorchMLP increases from 0.538 to 0.616",
-              "value": 0.616
-            },
-            {
-              "baseline": null,
-              "baseline_value": 0.299,
-              "dataset": "GRAM pseudo-masks",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.10029",
-              "locator": "Sec 4.1.2",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "hou2026slum",
-              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
-              "self_evaluation": false,
-              "span": "increases from 0.299 under S1 to 0.466 under",
-              "value": 0.466
-            },
-            {
-              "baseline": null,
-              "baseline_value": 73.9,
-              "dataset": "WUDAPT LCZ",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.20034",
-              "locator": "Table 10 / Sec 6.4",
-              "metric": "accuracy",
-              "model": "alphaearth",
-              "paper_key": "ko2026exploring",
-              "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-              "self_evaluation": false,
-              "span": "notable drops in Bern (73.9% to 60.1%) and Basel (77.4% to 68.8%)",
-              "value": 60.1
-            }
-          ],
-          "direction": "better",
-          "label": "contested",
-          "n_claims": 5,
-          "n_papers": 3
-        },
-        {
-          "agreement": null,
-          "axis": "G5_cost",
-          "claims": [],
-          "direction": null,
-          "label": "gap",
-          "n_claims": 0,
-          "n_papers": 0
-        },
-        {
-          "agreement": 1.0,
-          "axis": "G6_compactness",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "ESA WorldCover 2020",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2603.16911",
-              "locator": "Sec 3.1",
-              "metric": "accuracy",
-              "model": "alphaearth",
-              "paper_key": "benavidesmartinez2026what",
-              "paper_title": "What on Earth is AlphaEarth? Hierarchical structure and functional interpretability for global land cover",
-              "self_evaluation": false,
-              "span": "required to recover 98% of baseline classification performance varies substantially",
-              "value": 98.0
-            }
-          ],
-          "direction": "parity",
-          "label": "thin",
-          "n_claims": 1,
-          "n_papers": 1
-        },
-        {
-          "agreement": null,
-          "axis": "G7_interpretability",
-          "claims": [],
-          "direction": null,
-          "label": "gap",
-          "n_claims": 0,
-          "n_papers": 0
-        },
-        {
-          "agreement": null,
-          "axis": "G8_uncertainty",
-          "claims": [],
-          "direction": null,
-          "label": "gap",
-          "n_claims": 0,
-          "n_papers": 0
-        },
-        {
-          "agreement": 0.667,
-          "axis": "G9_ecological_fine_scale",
-          "claims": [
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 16.1,
-              "dataset": "Borneo Canopy Height",
-              "direction": "better",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2506.20380",
-              "locator": "Table 1 (c)",
-              "metric": "rmse",
-              "model": "tessera",
-              "paper_key": "feng2025tessera",
-              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
-              "self_evaluation": true,
-              "span": "achieving the lowest RMSE of 12.2 m.",
-              "value": 12.2
-            },
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 16.1,
-              "dataset": "Danum Valley",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2602.17250",
-              "locator": "Sec 3",
-              "metric": "rmse",
-              "model": "tessera",
-              "paper_key": "hamoudzadeh2026inferring",
-              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-              "self_evaluation": true,
-              "span": "TESSERA, AlphaEarth, and Presto achieved Root Mean Square Error (RMSE) values of 12.2 m, 16.1 m, and 17.9 m",
-              "value": 12.2
-            },
-            {
-              "baseline": "tessera",
-              "baseline_value": 12.2,
-              "dataset": "Danum Valley",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2602.17250",
-              "locator": "Sec 6.5",
-              "metric": "rmse",
-              "model": "alphaearth",
-              "paper_key": "hamoudzadeh2026inferring",
-              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-              "self_evaluation": true,
-              "span": "Feng et al. (2025) reported an RMSE of 16.1 m for canopy height regression using AlphaEarth Embeddings",
-              "value": 16.1
-            },
-            {
-              "baseline": null,
-              "baseline_value": 0.0,
-              "dataset": "GRAM pseudo-masks",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.10029",
-              "locator": "Sec 4.1.4",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "hou2026slum",
-              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
-              "self_evaluation": false,
-              "span": "with a median of −2.00",
-              "value": -2.0
-            }
-          ],
-          "direction": "better",
-          "label": "contested",
-          "n_claims": 4,
-          "n_papers": 3
         }
       ],
       "groups": [
@@ -1206,7 +1243,7 @@
               "model": "alphaearth",
               "paper_key": "hamoudzadeh2026inferring",
               "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-              "self_evaluation": true,
+              "self_evaluation": false,
               "span": "Feng et al. (2025) reported an RMSE of 16.1 m for canopy height regression using AlphaEarth Embeddings",
               "value": 16.1
             }
@@ -1236,7 +1273,7 @@
               "model": "tessera",
               "paper_key": "hamoudzadeh2026inferring",
               "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-              "self_evaluation": true,
+              "self_evaluation": false,
               "span": "TESSERA, AlphaEarth, and Presto achieved Root Mean Square Error (RMSE) values of 12.2 m, 16.1 m, and 17.9 m",
               "value": 12.2
             }
@@ -1266,7 +1303,7 @@
               "model": "alphaearth",
               "paper_key": "hamoudzadeh2026inferring",
               "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-              "self_evaluation": true,
+              "self_evaluation": false,
               "span": "U-Net++ achieved the best results, with an R² of 0.84",
               "value": 0.84
             },
@@ -1282,7 +1319,7 @@
               "model": "alphaearth",
               "paper_key": "hamoudzadeh2026inferring",
               "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-              "self_evaluation": true,
+              "self_evaluation": false,
               "span": "U-Net++ shows better generalization (R2=0.84R^{2}=0.84, median difference = -2.62 m) compared with the standard U-Net (R2=0.78R^{2}=0.78",
               "value": 0.78
             }
@@ -1312,7 +1349,7 @@
               "model": "alphaearth",
               "paper_key": "hamoudzadeh2026inferring",
               "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-              "self_evaluation": true,
+              "self_evaluation": false,
               "span": "U-Net++ achieved the best performance, with an RMSE of approximately 16 m on the testing set",
               "value": 16.42
             }
@@ -1780,7 +1817,7 @@
               "model": "alphaearth",
               "paper_key": "ko2026exploring",
               "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-              "self_evaluation": false,
+              "self_evaluation": true,
               "span": "followed by AlphaEarth (0.81) and the model using annual composites",
               "value": 0.81
             }
@@ -1810,7 +1847,7 @@
               "model": "alphaearth",
               "paper_key": "ko2026exploring",
               "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-              "self_evaluation": false,
+              "self_evaluation": true,
               "span": "notable drops in Bern (73.9% to 60.1%) and Basel (77.4% to 68.8%)",
               "value": 60.1
             }
@@ -1840,7 +1877,7 @@
               "model": "tessera",
               "paper_key": "ko2026exploring",
               "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-              "self_evaluation": false,
+              "self_evaluation": true,
               "span": "TESSERA achieved the best test results with a test IoU of 0.69 and accuracy of 0.80",
               "value": 0.69
             }
@@ -1870,7 +1907,7 @@
               "model": "alphaearth",
               "paper_key": "hou2026aef",
               "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
-              "self_evaluation": true,
+              "self_evaluation": false,
               "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
               "value": 0.301
             },
@@ -1886,7 +1923,7 @@
               "model": "alphaearth",
               "paper_key": "hou2026aef",
               "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
-              "self_evaluation": true,
+              "self_evaluation": false,
               "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
               "value": 0.16
             },
@@ -1902,7 +1939,7 @@
               "model": "alphaearth",
               "paper_key": "hou2026aef",
               "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
-              "self_evaluation": true,
+              "self_evaluation": false,
               "span": "reaches only 0.461 on E1, compared with 0.635 for BL1",
               "value": 0.635
             }
@@ -2250,7 +2287,7 @@
               "model": "alphaearth",
               "paper_key": "pettersson2025leveraging",
               "paper_title": "Leveraging Compact Satellite Embeddings and Graph Neural Networks for Large-Scale Poverty Mapping",
-              "self_evaluation": true,
+              "self_evaluation": false,
               "span": "(A) DHS Points",
               "value": 0.546
             }
@@ -2282,7 +2319,7 @@
                 "model": "alphaearth",
                 "paper_key": "hamoudzadeh2026inferring",
                 "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-                "self_evaluation": true,
+                "self_evaluation": false,
                 "span": "U-Net++ achieved the best results, with an R² of 0.84",
                 "value": 0.84
               },
@@ -2298,7 +2335,7 @@
                 "model": "alphaearth",
                 "paper_key": "hamoudzadeh2026inferring",
                 "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-                "self_evaluation": true,
+                "self_evaluation": false,
                 "span": "U-Net++ achieved the best performance, with an RMSE of approximately 16 m on the testing set",
                 "value": 16.42
               },
@@ -2314,7 +2351,7 @@
                 "model": "alphaearth",
                 "paper_key": "hamoudzadeh2026inferring",
                 "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-                "self_evaluation": true,
+                "self_evaluation": false,
                 "span": "U-Net++ shows better generalization (R2=0.84R^{2}=0.84, median difference = -2.62 m) compared with the standard U-Net (R2=0.78R^{2}=0.78",
                 "value": 0.78
               },
@@ -2330,7 +2367,7 @@
                 "model": "alphaearth",
                 "paper_key": "hamoudzadeh2026inferring",
                 "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-                "self_evaluation": true,
+                "self_evaluation": false,
                 "span": "Feng et al. (2025) reported an RMSE of 16.1 m for canopy height regression using AlphaEarth Embeddings",
                 "value": 16.1
               }
@@ -2604,7 +2641,7 @@
                 "model": "alphaearth",
                 "paper_key": "ko2026exploring",
                 "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-                "self_evaluation": false,
+                "self_evaluation": true,
                 "span": "followed by AlphaEarth (0.81) and the model using annual composites",
                 "value": 0.81
               },
@@ -2620,7 +2657,7 @@
                 "model": "alphaearth",
                 "paper_key": "ko2026exploring",
                 "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-                "self_evaluation": false,
+                "self_evaluation": true,
                 "span": "notable drops in Bern (73.9% to 60.1%) and Basel (77.4% to 68.8%)",
                 "value": 60.1
               }
@@ -2647,7 +2684,7 @@
                 "model": "alphaearth",
                 "paper_key": "hou2026aef",
                 "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
-                "self_evaluation": true,
+                "self_evaluation": false,
                 "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
                 "value": 0.301
               },
@@ -2663,7 +2700,7 @@
                 "model": "alphaearth",
                 "paper_key": "hou2026aef",
                 "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
-                "self_evaluation": true,
+                "self_evaluation": false,
                 "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
                 "value": 0.16
               },
@@ -2679,7 +2716,7 @@
                 "model": "alphaearth",
                 "paper_key": "hou2026aef",
                 "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
-                "self_evaluation": true,
+                "self_evaluation": false,
                 "span": "reaches only 0.461 on E1, compared with 0.635 for BL1",
                 "value": 0.635
               }
@@ -2899,7 +2936,7 @@
                 "model": "alphaearth",
                 "paper_key": "pettersson2025leveraging",
                 "paper_title": "Leveraging Compact Satellite Embeddings and Graph Neural Networks for Large-Scale Poverty Mapping",
-                "self_evaluation": true,
+                "self_evaluation": false,
                 "span": "(A) DHS Points",
                 "value": 0.546
               }
@@ -2996,7 +3033,7 @@
                 "model": "tessera",
                 "paper_key": "hamoudzadeh2026inferring",
                 "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
-                "self_evaluation": true,
+                "self_evaluation": false,
                 "span": "TESSERA, AlphaEarth, and Presto achieved Root Mean Square Error (RMSE) values of 12.2 m, 16.1 m, and 17.9 m",
                 "value": 12.2
               }
@@ -3109,7 +3146,7 @@
                 "model": "tessera",
                 "paper_key": "ko2026exploring",
                 "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-                "self_evaluation": false,
+                "self_evaluation": true,
                 "span": "TESSERA achieved the best test results with a test IoU of 0.69 and accuracy of 0.80",
                 "value": 0.69
               }
@@ -3175,6 +3212,444 @@
     },
     "no_self_eval": {
       "axes": [
+        {
+          "agreement": 0.5,
+          "axis": "G1_label_rich_parity",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.9,
+              "dataset": "Nantou County, Taiwan",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.07268",
+              "locator": "Sec 4.3",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "cheng2026from",
+              "paper_title": "From Landslide Conditioning Factors to Satellite Embeddings: Evaluating the Utilisation of Google AlphaEarth for Landslide Susceptibility Mapping using Deep Learning",
+              "self_evaluation": false,
+              "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
+              "value": 0.99
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.38,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ achieved the best results, with an R² of 0.84",
+              "value": 0.84
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 32.22,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ achieved the best performance, with an RMSE of approximately 16 m on the testing set",
+              "value": 16.42
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "CHN-Econ",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.20697",
+              "locator": "Sec 4.2.1; Table 7",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hou2026aef",
+              "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
+              "self_evaluation": false,
+              "span": "reaches only 0.461 on E1, compared with 0.635 for BL1",
+              "value": 0.635
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "GRAM pseudo-masks",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.10029",
+              "locator": "Sec 6.2",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "hou2026slum",
+              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
+              "self_evaluation": false,
+              "span": "the median F1 of S1 TorchMLP is 0.763",
+              "value": 0.763
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
+              "value": 0.8
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "DHS (37 surveys, 2017-2023)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.01408",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "pettersson2025leveraging",
+              "paper_title": "Leveraging Compact Satellite Embeddings and Graph Neural Networks for Large-Scale Poverty Mapping",
+              "self_evaluation": false,
+              "span": "(A) DHS Points",
+              "value": 0.546
+            },
+            {
+              "baseline": "tessera",
+              "baseline_value": 70.6,
+              "dataset": "Dynamic World",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.18667",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "plas2026better",
+              "paper_title": "Better Together: Evaluating the Complementarity of Earth Embedding Models",
+              "self_evaluation": false,
+              "span": "any of their individual scores (71.1% and 70.6%, respectively)",
+              "value": 71.1
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.706,
+              "dataset": "CAMELS",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.01558",
+              "locator": "Sec 6",
+              "metric": "nse",
+              "model": "alphaearth",
+              "paper_key": "qu2026utilizing",
+              "paper_title": "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings",
+              "self_evaluation": false,
+              "span": "median NSE values of 0.708 for the AEF embeddings and 0.706 for the model using CAMELS attributes",
+              "value": 0.708
+            }
+          ],
+          "direction": "parity",
+          "label": "contested",
+          "n_claims": 9,
+          "n_papers": 8
+        },
+        {
+          "agreement": null,
+          "axis": "G2_label_scarce_efficiency",
+          "claims": [],
+          "direction": null,
+          "label": "gap",
+          "n_claims": 0,
+          "n_papers": 0
+        },
+        {
+          "agreement": 0.4,
+          "axis": "G3_spatial_transfer",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "ACS 5-year",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2604.03456",
+              "locator": "Sec 2.2",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "gong2026earth",
+              "paper_title": "Earth Embeddings Reveal Diverse Urban Signals from Space",
+              "self_evaluation": false,
+              "span": "all three models cluster at low R2 (AlphaEarth ∼\\sim 0.15, Clay ∼\\sim 0.15)",
+              "value": 0.15
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.38,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ shows better generalization (R2=0.84R^{2}=0.84, median difference = -2.62 m) compared with the standard U-Net (R2=0.78R^{2}=0.78",
+              "value": 0.78
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "CHN-Econ",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.20697",
+              "locator": "Abstract; Table 7",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hou2026aef",
+              "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
+              "self_evaluation": false,
+              "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
+              "value": 0.301
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "CHN-Econ",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.20697",
+              "locator": "Abstract; Table 7",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hou2026aef",
+              "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
+              "self_evaluation": false,
+              "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
+              "value": 0.16
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around -0.28–0.07",
+              "value": -0.28
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around 0.39–0.51",
+              "value": 0.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.553,
+              "dataset": "CAMELS",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.01558",
+              "locator": "Sec 6",
+              "metric": "nse",
+              "model": "alphaearth",
+              "paper_key": "qu2026utilizing",
+              "paper_title": "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings",
+              "self_evaluation": false,
+              "span": "the median NSE of the AEF embeddings rose to 0.612, while the model relying on CAMELS attributes reached only 0.553",
+              "value": 0.612
+            }
+          ],
+          "direction": "better",
+          "label": "contested",
+          "n_claims": 7,
+          "n_papers": 5
+        },
+        {
+          "agreement": 1.0,
+          "axis": "G4_temporal_transfer",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": 0.538,
+              "dataset": "GRAM pseudo-masks",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.10029",
+              "locator": "Sec 4.1.1",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "hou2026slum",
+              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
+              "self_evaluation": false,
+              "span": "the median spatial F1 of TorchMLP increases from 0.538 to 0.616",
+              "value": 0.616
+            },
+            {
+              "baseline": null,
+              "baseline_value": 0.299,
+              "dataset": "GRAM pseudo-masks",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.10029",
+              "locator": "Sec 4.1.2",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hou2026slum",
+              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
+              "self_evaluation": false,
+              "span": "increases from 0.299 under S1 to 0.466 under",
+              "value": 0.466
+            }
+          ],
+          "direction": "better",
+          "label": "thin",
+          "n_claims": 2,
+          "n_papers": 1
+        },
+        {
+          "agreement": null,
+          "axis": "G5_cost",
+          "claims": [],
+          "direction": null,
+          "label": "gap",
+          "n_claims": 0,
+          "n_papers": 0
+        },
+        {
+          "agreement": 1.0,
+          "axis": "G6_compactness",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "ESA WorldCover 2020",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2603.16911",
+              "locator": "Sec 3.1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "benavidesmartinez2026what",
+              "paper_title": "What on Earth is AlphaEarth? Hierarchical structure and functional interpretability for global land cover",
+              "self_evaluation": false,
+              "span": "required to recover 98% of baseline classification performance varies substantially",
+              "value": 98.0
+            }
+          ],
+          "direction": "parity",
+          "label": "thin",
+          "n_claims": 1,
+          "n_papers": 1
+        },
+        {
+          "agreement": null,
+          "axis": "G7_interpretability",
+          "claims": [],
+          "direction": null,
+          "label": "gap",
+          "n_claims": 0,
+          "n_papers": 0
+        },
+        {
+          "agreement": null,
+          "axis": "G8_uncertainty",
+          "claims": [],
+          "direction": null,
+          "label": "gap",
+          "n_claims": 0,
+          "n_papers": 0
+        },
+        {
+          "agreement": 0.5,
+          "axis": "G9_ecological_fine_scale",
+          "claims": [
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 16.1,
+              "dataset": "Danum Valley",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Sec 3",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "TESSERA, AlphaEarth, and Presto achieved Root Mean Square Error (RMSE) values of 12.2 m, 16.1 m, and 17.9 m",
+              "value": 12.2
+            },
+            {
+              "baseline": "tessera",
+              "baseline_value": 12.2,
+              "dataset": "Danum Valley",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Sec 6.5",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "Feng et al. (2025) reported an RMSE of 16.1 m for canopy height regression using AlphaEarth Embeddings",
+              "value": 16.1
+            },
+            {
+              "baseline": null,
+              "baseline_value": 0.0,
+              "dataset": "GRAM pseudo-masks",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.10029",
+              "locator": "Sec 4.1.4",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hou2026slum",
+              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
+              "self_evaluation": false,
+              "span": "with a median of −2.00",
+              "value": -2.0
+            }
+          ],
+          "direction": "better",
+          "label": "thin",
+          "n_claims": 3,
+          "n_papers": 2
+        },
         {
           "agreement": 1.0,
           "axis": "G10_human_semantics",
@@ -3315,351 +3790,145 @@
           "label": "gap",
           "n_claims": 0,
           "n_papers": 0
-        },
-        {
-          "agreement": 0.5,
-          "axis": "G1_label_rich_parity",
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.9,
-              "dataset": "Nantou County, Taiwan",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.07268",
-              "locator": "Sec 4.3",
-              "metric": "auc",
-              "model": "alphaearth",
-              "paper_key": "cheng2026from",
-              "paper_title": "From Landslide Conditioning Factors to Satellite Embeddings: Evaluating the Utilisation of Google AlphaEarth for Landslide Susceptibility Mapping using Deep Learning",
-              "self_evaluation": false,
-              "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
-              "value": 0.99
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "GRAM pseudo-masks",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.10029",
-              "locator": "Sec 6.2",
-              "metric": "f1",
-              "model": "alphaearth",
-              "paper_key": "hou2026slum",
-              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
-              "self_evaluation": false,
-              "span": "the median F1 of S1 TorchMLP is 0.763",
-              "value": 0.763
-            },
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "Bern LCZ",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.20034",
-              "locator": "Table 7 / Sec 5.2",
-              "metric": "miou",
-              "model": "alphaearth",
-              "paper_key": "ko2026exploring",
-              "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-              "self_evaluation": false,
-              "span": "followed by AlphaEarth (0.81) and the model using annual composites",
-              "value": 0.81
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 3",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
-              "value": 0.8
-            },
-            {
-              "baseline": "tessera",
-              "baseline_value": 70.6,
-              "dataset": "Dynamic World",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.18667",
-              "locator": "Table 3",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "plas2026better",
-              "paper_title": "Better Together: Evaluating the Complementarity of Earth Embedding Models",
-              "self_evaluation": false,
-              "span": "any of their individual scores (71.1% and 70.6%, respectively)",
-              "value": 71.1
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.706,
-              "dataset": "CAMELS",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.01558",
-              "locator": "Sec 6",
-              "metric": "nse",
-              "model": "alphaearth",
-              "paper_key": "qu2026utilizing",
-              "paper_title": "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings",
-              "self_evaluation": false,
-              "span": "median NSE values of 0.708 for the AEF embeddings and 0.706 for the model using CAMELS attributes",
-              "value": 0.708
-            }
-          ],
-          "direction": "better",
-          "label": "contested",
-          "n_claims": 6,
-          "n_papers": 6
-        },
-        {
-          "agreement": null,
-          "axis": "G2_label_scarce_efficiency",
-          "claims": [],
-          "direction": null,
-          "label": "gap",
-          "n_claims": 0,
-          "n_papers": 0
-        },
-        {
-          "agreement": 0.5,
-          "axis": "G3_spatial_transfer",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "ACS 5-year",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2604.03456",
-              "locator": "Sec 2.2",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "gong2026earth",
-              "paper_title": "Earth Embeddings Reveal Diverse Urban Signals from Space",
-              "self_evaluation": false,
-              "span": "all three models cluster at low R2 (AlphaEarth ∼\\sim 0.15, Clay ∼\\sim 0.15)",
-              "value": 0.15
-            },
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "WUDAPT LCZ",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.20034",
-              "locator": "Table 6 / Sec 5.1",
-              "metric": "miou",
-              "model": "tessera",
-              "paper_key": "ko2026exploring",
-              "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-              "self_evaluation": false,
-              "span": "TESSERA achieved the best test results with a test IoU of 0.69 and accuracy of 0.80",
-              "value": 0.69
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around -0.28–0.07",
-              "value": -0.28
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around 0.39–0.51",
-              "value": 0.39
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.553,
-              "dataset": "CAMELS",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.01558",
-              "locator": "Sec 6",
-              "metric": "nse",
-              "model": "alphaearth",
-              "paper_key": "qu2026utilizing",
-              "paper_title": "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings",
-              "self_evaluation": false,
-              "span": "the median NSE of the AEF embeddings rose to 0.612, while the model relying on CAMELS attributes reached only 0.553",
-              "value": 0.612
-            }
-          ],
-          "direction": "better",
-          "label": "contested",
-          "n_claims": 5,
-          "n_papers": 4
-        },
-        {
-          "agreement": 0.5,
-          "axis": "G4_temporal_transfer",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": 0.538,
-              "dataset": "GRAM pseudo-masks",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.10029",
-              "locator": "Sec 4.1.1",
-              "metric": "f1",
-              "model": "alphaearth",
-              "paper_key": "hou2026slum",
-              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
-              "self_evaluation": false,
-              "span": "the median spatial F1 of TorchMLP increases from 0.538 to 0.616",
-              "value": 0.616
-            },
-            {
-              "baseline": null,
-              "baseline_value": 0.299,
-              "dataset": "GRAM pseudo-masks",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.10029",
-              "locator": "Sec 4.1.2",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "hou2026slum",
-              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
-              "self_evaluation": false,
-              "span": "increases from 0.299 under S1 to 0.466 under",
-              "value": 0.466
-            },
-            {
-              "baseline": null,
-              "baseline_value": 73.9,
-              "dataset": "WUDAPT LCZ",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.20034",
-              "locator": "Table 10 / Sec 6.4",
-              "metric": "accuracy",
-              "model": "alphaearth",
-              "paper_key": "ko2026exploring",
-              "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-              "self_evaluation": false,
-              "span": "notable drops in Bern (73.9% to 60.1%) and Basel (77.4% to 68.8%)",
-              "value": 60.1
-            }
-          ],
-          "direction": "better",
-          "label": "thin",
-          "n_claims": 3,
-          "n_papers": 2
-        },
-        {
-          "agreement": null,
-          "axis": "G5_cost",
-          "claims": [],
-          "direction": null,
-          "label": "gap",
-          "n_claims": 0,
-          "n_papers": 0
-        },
-        {
-          "agreement": 1.0,
-          "axis": "G6_compactness",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "ESA WorldCover 2020",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2603.16911",
-              "locator": "Sec 3.1",
-              "metric": "accuracy",
-              "model": "alphaearth",
-              "paper_key": "benavidesmartinez2026what",
-              "paper_title": "What on Earth is AlphaEarth? Hierarchical structure and functional interpretability for global land cover",
-              "self_evaluation": false,
-              "span": "required to recover 98% of baseline classification performance varies substantially",
-              "value": 98.0
-            }
-          ],
-          "direction": "parity",
-          "label": "thin",
-          "n_claims": 1,
-          "n_papers": 1
-        },
-        {
-          "agreement": null,
-          "axis": "G7_interpretability",
-          "claims": [],
-          "direction": null,
-          "label": "gap",
-          "n_claims": 0,
-          "n_papers": 0
-        },
-        {
-          "agreement": null,
-          "axis": "G8_uncertainty",
-          "claims": [],
-          "direction": null,
-          "label": "gap",
-          "n_claims": 0,
-          "n_papers": 0
-        },
-        {
-          "agreement": 1.0,
-          "axis": "G9_ecological_fine_scale",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": 0.0,
-              "dataset": "GRAM pseudo-masks",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.10029",
-              "locator": "Sec 4.1.4",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "hou2026slum",
-              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
-              "self_evaluation": false,
-              "span": "with a median of −2.00",
-              "value": -2.0
-            }
-          ],
-          "direction": "worse",
-          "label": "thin",
-          "n_claims": 1,
-          "n_papers": 1
         }
       ],
       "groups": [
+        {
+          "agreement": 1.0,
+          "baseline": "tessera",
+          "claims": [
+            {
+              "baseline": "tessera",
+              "baseline_value": 12.2,
+              "dataset": "Danum Valley",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Sec 6.5",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "Feng et al. (2025) reported an RMSE of 16.1 m for canopy height regression using AlphaEarth Embeddings",
+              "value": 16.1
+            }
+          ],
+          "dataset": "Danum Valley",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "canopy_height_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "alphaearth",
+          "claims": [
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 16.1,
+              "dataset": "Danum Valley",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Sec 3",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "TESSERA, AlphaEarth, and Presto achieved Root Mean Square Error (RMSE) values of 12.2 m, 16.1 m, and 17.9 m",
+              "value": 12.2
+            }
+          ],
+          "dataset": "Danum Valley",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "tessera",
+          "n_papers": 1,
+          "task": "canopy_height_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.38,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ achieved the best results, with an R² of 0.84",
+              "value": 0.84
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.38,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ shows better generalization (R2=0.84R^{2}=0.84, median difference = -2.62 m) compared with the standard U-Net (R2=0.78R^{2}=0.78",
+              "value": 0.78
+            }
+          ],
+          "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "canopy_height_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 32.22,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ achieved the best performance, with an RMSE of approximately 16 m on the testing set",
+              "value": 16.42
+            }
+          ],
+          "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "canopy_height_estimation"
+        },
         {
           "agreement": 1.0,
           "baseline": "task_specific",
@@ -3895,88 +4164,60 @@
             {
               "baseline": null,
               "baseline_value": null,
-              "dataset": "Bern LCZ",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.20034",
-              "locator": "Table 7 / Sec 5.2",
-              "metric": "miou",
-              "model": "alphaearth",
-              "paper_key": "ko2026exploring",
-              "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
-              "self_evaluation": false,
-              "span": "followed by AlphaEarth (0.81) and the model using annual composites",
-              "value": 0.81
-            }
-          ],
-          "dataset": "Bern LCZ",
-          "direction": "better",
-          "label": "thin",
-          "label_regime": "unspecified",
-          "metric": "miou",
-          "model": "alphaearth",
-          "n_papers": 1,
-          "task": "local_climate_zone_classification"
-        },
-        {
-          "agreement": 1.0,
-          "baseline": null,
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": 73.9,
-              "dataset": "WUDAPT LCZ",
+              "dataset": "CHN-Econ",
               "direction": "worse",
               "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.20034",
-              "locator": "Table 10 / Sec 6.4",
-              "metric": "accuracy",
+              "link": "https://arxiv.org/abs/2606.20697",
+              "locator": "Abstract; Table 7",
+              "metric": "r2",
               "model": "alphaearth",
-              "paper_key": "ko2026exploring",
-              "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
+              "paper_key": "hou2026aef",
+              "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
               "self_evaluation": false,
-              "span": "notable drops in Bern (73.9% to 60.1%) and Basel (77.4% to 68.8%)",
-              "value": 60.1
-            }
-          ],
-          "dataset": "WUDAPT LCZ",
-          "direction": "worse",
-          "label": "thin",
-          "label_regime": "unspecified",
-          "metric": "accuracy",
-          "model": "alphaearth",
-          "n_papers": 1,
-          "task": "local_climate_zone_classification"
-        },
-        {
-          "agreement": 1.0,
-          "baseline": null,
-          "claims": [
+              "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
+              "value": 0.301
+            },
             {
               "baseline": null,
               "baseline_value": null,
-              "dataset": "WUDAPT LCZ",
-              "direction": "better",
+              "dataset": "CHN-Econ",
+              "direction": "worse",
               "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.20034",
-              "locator": "Table 6 / Sec 5.1",
-              "metric": "miou",
-              "model": "tessera",
-              "paper_key": "ko2026exploring",
-              "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
+              "link": "https://arxiv.org/abs/2606.20697",
+              "locator": "Abstract; Table 7",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hou2026aef",
+              "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
               "self_evaluation": false,
-              "span": "TESSERA achieved the best test results with a test IoU of 0.69 and accuracy of 0.80",
-              "value": 0.69
+              "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
+              "value": 0.16
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "CHN-Econ",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.20697",
+              "locator": "Sec 4.2.1; Table 7",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hou2026aef",
+              "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
+              "self_evaluation": false,
+              "span": "reaches only 0.461 on E1, compared with 0.635 for BL1",
+              "value": 0.635
             }
           ],
-          "dataset": "WUDAPT LCZ",
-          "direction": "better",
+          "dataset": "CHN-Econ",
+          "direction": "worse",
           "label": "thin",
           "label_regime": "unspecified",
-          "metric": "miou",
-          "model": "tessera",
+          "metric": "r2",
+          "model": "alphaearth",
           "n_papers": 1,
-          "task": "local_climate_zone_classification"
+          "task": "representation_probing"
         },
         {
           "agreement": 1.0,
@@ -4265,10 +4506,115 @@
           "model": "clay",
           "n_papers": 1,
           "task": "urban_signal_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "DHS (37 surveys, 2017-2023)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.01408",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "pettersson2025leveraging",
+              "paper_title": "Leveraging Compact Satellite Embeddings and Graph Neural Networks for Large-Scale Poverty Mapping",
+              "self_evaluation": false,
+              "span": "(A) DHS Points",
+              "value": 0.546
+            }
+          ],
+          "dataset": "DHS (37 surveys, 2017-2023)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "wealth_mapping"
         }
       ],
       "matrix": {
         "cells": {
+          "alphaearth\tcanopy_height_estimation": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.38,
+                "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2602.17250",
+                "locator": "Table 4",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "hamoudzadeh2026inferring",
+                "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+                "self_evaluation": false,
+                "span": "U-Net++ achieved the best results, with an R² of 0.84",
+                "value": 0.84
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 32.22,
+                "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2602.17250",
+                "locator": "Table 4",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "hamoudzadeh2026inferring",
+                "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+                "self_evaluation": false,
+                "span": "U-Net++ achieved the best performance, with an RMSE of approximately 16 m on the testing set",
+                "value": 16.42
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.38,
+                "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2602.17250",
+                "locator": "Table 4",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "hamoudzadeh2026inferring",
+                "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+                "self_evaluation": false,
+                "span": "U-Net++ shows better generalization (R2=0.84R^{2}=0.84, median difference = -2.62 m) compared with the standard U-Net (R2=0.78R^{2}=0.78",
+                "value": 0.78
+              },
+              {
+                "baseline": "tessera",
+                "baseline_value": 12.2,
+                "dataset": "Danum Valley",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2602.17250",
+                "locator": "Sec 6.5",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "hamoudzadeh2026inferring",
+                "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+                "self_evaluation": false,
+                "span": "Feng et al. (2025) reported an RMSE of 16.1 m for canopy height regression using AlphaEarth Embeddings",
+                "value": 16.1
+              }
+            ],
+            "direction": "better",
+            "label": "thin",
+            "model": "alphaearth",
+            "n_claims": 4,
+            "n_papers": 1,
+            "task": "canopy_height_estimation"
+          },
           "alphaearth\tcrop_yield_estimation": {
             "agreement": 1.0,
             "claims": [
@@ -4457,48 +4803,64 @@
             "n_papers": 1,
             "task": "landslide_susceptibility"
           },
-          "alphaearth\tlocal_climate_zone_classification": {
+          "alphaearth\trepresentation_probing": {
             "agreement": 1.0,
             "claims": [
               {
                 "baseline": null,
                 "baseline_value": null,
-                "dataset": "Bern LCZ",
-                "direction": "better",
+                "dataset": "CHN-Econ",
+                "direction": "worse",
                 "label_ratio": null,
-                "link": "https://arxiv.org/abs/2606.20034",
-                "locator": "Table 7 / Sec 5.2",
-                "metric": "miou",
+                "link": "https://arxiv.org/abs/2606.20697",
+                "locator": "Abstract; Table 7",
+                "metric": "r2",
                 "model": "alphaearth",
-                "paper_key": "ko2026exploring",
-                "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
+                "paper_key": "hou2026aef",
+                "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
                 "self_evaluation": false,
-                "span": "followed by AlphaEarth (0.81) and the model using annual composites",
-                "value": 0.81
+                "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
+                "value": 0.301
               },
               {
                 "baseline": null,
-                "baseline_value": 73.9,
-                "dataset": "WUDAPT LCZ",
+                "baseline_value": null,
+                "dataset": "CHN-Econ",
                 "direction": "worse",
                 "label_ratio": null,
-                "link": "https://arxiv.org/abs/2606.20034",
-                "locator": "Table 10 / Sec 6.4",
-                "metric": "accuracy",
+                "link": "https://arxiv.org/abs/2606.20697",
+                "locator": "Abstract; Table 7",
+                "metric": "r2",
                 "model": "alphaearth",
-                "paper_key": "ko2026exploring",
-                "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
+                "paper_key": "hou2026aef",
+                "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
                 "self_evaluation": false,
-                "span": "notable drops in Bern (73.9% to 60.1%) and Basel (77.4% to 68.8%)",
-                "value": 60.1
+                "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
+                "value": 0.16
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "CHN-Econ",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2606.20697",
+                "locator": "Sec 4.2.1; Table 7",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "hou2026aef",
+                "paper_title": "AEF-Econ: Toward Plug-and-Play Socioeconomic Foundation Embeddings from AlphaEarth for Urban Remote Sensing",
+                "self_evaluation": false,
+                "span": "reaches only 0.461 on E1, compared with 0.635 for BL1",
+                "value": 0.635
               }
             ],
-            "direction": "better",
+            "direction": "worse",
             "label": "thin",
             "model": "alphaearth",
-            "n_claims": 2,
+            "n_claims": 3,
             "n_papers": 1,
-            "task": "local_climate_zone_classification"
+            "task": "representation_probing"
           },
           "alphaearth\tslum_detection": {
             "agreement": 1.0,
@@ -4693,6 +5055,33 @@
             "n_papers": 1,
             "task": "urban_signal_mapping"
           },
+          "alphaearth\twealth_mapping": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "DHS (37 surveys, 2017-2023)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2511.01408",
+                "locator": "Table 1",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "pettersson2025leveraging",
+                "paper_title": "Leveraging Compact Satellite Embeddings and Graph Neural Networks for Large-Scale Poverty Mapping",
+                "self_evaluation": false,
+                "span": "(A) DHS Points",
+                "value": 0.546
+              }
+            ],
+            "direction": "parity",
+            "label": "thin",
+            "model": "alphaearth",
+            "n_claims": 1,
+            "n_papers": 1,
+            "task": "wealth_mapping"
+          },
           "clay\turban_signal_mapping": {
             "agreement": 1.0,
             "claims": [
@@ -4720,24 +5109,24 @@
             "n_papers": 1,
             "task": "urban_signal_mapping"
           },
-          "tessera\tlocal_climate_zone_classification": {
+          "tessera\tcanopy_height_estimation": {
             "agreement": 1.0,
             "claims": [
               {
-                "baseline": null,
-                "baseline_value": null,
-                "dataset": "WUDAPT LCZ",
+                "baseline": "alphaearth",
+                "baseline_value": 16.1,
+                "dataset": "Danum Valley",
                 "direction": "better",
                 "label_ratio": null,
-                "link": "https://arxiv.org/abs/2606.20034",
-                "locator": "Table 6 / Sec 5.1",
-                "metric": "miou",
+                "link": "https://arxiv.org/abs/2602.17250",
+                "locator": "Sec 3",
+                "metric": "rmse",
                 "model": "tessera",
-                "paper_key": "ko2026exploring",
-                "paper_title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
+                "paper_key": "hamoudzadeh2026inferring",
+                "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
                 "self_evaluation": false,
-                "span": "TESSERA achieved the best test results with a test IoU of 0.69 and accuracy of 0.80",
-                "value": 0.69
+                "span": "TESSERA, AlphaEarth, and Presto achieved Root Mean Square Error (RMSE) values of 12.2 m, 16.1 m, and 17.9 m",
+                "value": 12.2
               }
             ],
             "direction": "better",
@@ -4745,7 +5134,7 @@
             "model": "tessera",
             "n_claims": 1,
             "n_papers": 1,
-            "task": "local_climate_zone_classification"
+            "task": "canopy_height_estimation"
           }
         },
         "models": [
@@ -4754,14 +5143,16 @@
           "tessera"
         ],
         "tasks": [
+          "canopy_height_estimation",
           "crop_yield_estimation",
           "hydrological_modeling",
           "land_cover_classification",
           "landslide_susceptibility",
-          "local_climate_zone_classification",
+          "representation_probing",
           "slum_detection",
           "socioeconomic_estimation",
-          "urban_signal_mapping"
+          "urban_signal_mapping",
+          "wealth_mapping"
         ]
       }
     }

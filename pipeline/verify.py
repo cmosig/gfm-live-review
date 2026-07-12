@@ -35,15 +35,28 @@ def fetch_crossref_work(doi: str) -> dict:
     return resp.json().get("message", {})
 
 
+def arxiv_doi(arxiv_id: str) -> str:
+    """The DataCite DOI arXiv mints for every paper: 10.48550/arXiv.<id>.
+
+    This is a documented, deterministic 1:1 mapping from the arXiv id (which
+    itself comes from the arXiv API, never the LLM), so it counts as verified
+    by construction — no fuzzy title match needed.
+    """
+    return f"10.48550/arxiv.{arxiv_id}"
+
+
 def resolve_doi(cand: Candidate, *, fetch=fetch_crossref_work) -> tuple[str | None, str]:
     """Return (doi, doi_status).
 
-    * no doi in metadata            -> (None, "no_doi_found")
-    * Crossref/network error        -> (doi, "unresolved")   [retry another day]
-    * title fuzzy-match >= threshold -> (doi, "verified")
-    * title mismatch                -> (doi, "mismatch")     [caller quarantines]
+    * journal DOI + title match      -> (doi, "verified")
+    * journal DOI + Crossref error   -> (doi, "unresolved")  [retry another day]
+    * journal DOI + title mismatch   -> (doi, "mismatch")    [caller quarantines]
+    * no journal DOI, arXiv paper    -> (10.48550/arXiv.<id>, "verified")
+    * no DOI derivable at all        -> (None, "no_doi_found")
     """
     if not cand.doi:
+        if cand.arxiv_id:
+            return arxiv_doi(cand.arxiv_id), "verified"
         return None, "no_doi_found"
     doi = cand.doi.strip().lower()
     try:
@@ -80,6 +93,56 @@ def detect_self_evaluation(cand: Candidate) -> bool:
     if cand.arxiv_id and cand.arxiv_id in _tracked_arxiv_ids():
         return True
     return False
+
+
+def _norm_author(name: str) -> str:
+    """Normalise an author's FULL name for overlap matching.
+
+    Full-name matching, not surname+initial: with common surnames the initial
+    scheme collides ("Chenhui Zhang" at DeepMind vs "Chi Zhang" in hydrology
+    both become "zhang c"), and a false self-eval flag wrongly discards an
+    independent evaluation. Both sides come from the arXiv API, which gives
+    consistently formatted full names, so exact full-name equality is reliable.
+    """
+    return " ".join(name.strip().lower().replace(".", " ").split())
+
+
+def model_paper_authors(cards) -> dict[str, set[str]]:
+    """model key -> normalised author set of that model's own defining paper.
+
+    The defining papers (e.g. AlphaEarth's, TESSERA's) are themselves in the
+    corpus, so their author lists are committed data — no extra API call.
+    """
+    tracked = _tracked_arxiv_ids()  # arxiv_id -> model key
+    out: dict[str, set[str]] = {}
+    for card in cards:
+        if card.arxiv_id and card.arxiv_id in tracked:
+            out[tracked[card.arxiv_id]] = {
+                a for a in (_norm_author(x) for x in card.authors) if a
+            }
+    return out
+
+
+def resolve_self_evaluation(*, arxiv_id: str | None, authors: list[str],
+                            evaluated_models: list[str], llm_flag: bool,
+                            model_authors: dict[str, set[str]]) -> bool:
+    """Decide self_evaluation, mechanically wherever possible (§8).
+
+    Semantics: TRUE means the authors evaluate a tracked FOUNDATION MODEL they
+    themselves created — not merely that they built some downstream method.
+
+    * The model's own defining paper -> True.
+    * Evaluated model(s) whose defining-paper authors we know -> author overlap
+      decides; the LLM's opinion is ignored (the check is computable).
+    * Otherwise -> fall back to the extractor's flag.
+    """
+    if arxiv_id and arxiv_id in _tracked_arxiv_ids():
+        return True
+    known = [m for m in evaluated_models if m in model_authors]
+    if known:
+        paper_authors = {a for a in (_norm_author(x) for x in authors) if a}
+        return any(paper_authors & model_authors[m] for m in known)
+    return llm_flag
 
 
 def verify(cand: Candidate, seen: dict[str, dict], existing_titles: set[str],

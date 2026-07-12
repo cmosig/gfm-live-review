@@ -118,8 +118,8 @@ claims:
   task: urban_signal_mapping
   value: 0.55
 date: '2026-04-03'
-doi: null
-doi_status: no_doi_found
+doi: 10.48550/arxiv.2604.03456
+doi_status: verified
 extractor_version: '1'
 ingested_at: '2026-07-12T16:37:30.914989Z'
 key: gong2026earth

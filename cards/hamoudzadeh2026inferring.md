@@ -85,8 +85,8 @@ claims:
   task: canopy_height_estimation
   value: 16.1
 date: '2026-02-19'
-doi: null
-doi_status: no_doi_found
+doi: 10.48550/arxiv.2602.17250
+doi_status: verified
 extractor_version: '1'
 ingested_at: '2026-07-12T16:36:27.401924Z'
 key: hamoudzadeh2026inferring
@@ -111,7 +111,7 @@ proposed_tags:
 - terrain_elevation
 regions:
 - fr
-self_evaluation: true
+self_evaluation: false
 tasks:
 - canopy_height_estimation
 - land_cover_classification

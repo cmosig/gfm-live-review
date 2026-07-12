@@ -125,8 +125,8 @@ claims:
   task: canopy_height_estimation
   value: 12.2
 date: '2025-06-25'
-doi: null
-doi_status: no_doi_found
+doi: 10.48550/arxiv.2506.20380
+doi_status: verified
 extractor_version: '1'
 ingested_at: '2026-07-12T16:31:02.740876Z'
 key: feng2025tessera

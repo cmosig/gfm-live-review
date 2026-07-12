@@ -194,7 +194,7 @@ def axes_view(rows: list[ClaimRow]) -> list[dict]:
     for r in rows:
         by_axis[r.axis].append(r)
     out = []
-    for axis in sorted(config.axes()):
+    for axis in config.axes_ordered():
         grp = by_axis.get(axis, [])
         cls = classify(grp)
         out.append({
