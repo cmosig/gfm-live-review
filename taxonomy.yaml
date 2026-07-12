@@ -73,10 +73,14 @@ promoted_tags:
 - DINOv3
 - LoRA
 - TerraMind
+- cloud_gap_imputation
 - diffusion_model
 - disease_surveillance
 - distribution_shift
+- gravity_wave_flux_parameterization
 - malaria_prediction
+- masked_autoencoder
+- object_detection
 - satellite_embeddings
 - spatial_autocorrelation
 - tree_species_classification

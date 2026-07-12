@@ -23,6 +23,9 @@
   "CNN2D": [
     "cheng2026from"
   ],
+  "CORDEX": [
+    "schmude2024prithvi"
+  ],
   "DEM prior": [
     "thasma2026beyond"
   ],
@@ -34,6 +37,12 @@
   ],
   "EFM_guided_generative_reconstruction": [
     "chen2026when"
+  ],
+  "ERA5": [
+    "schmude2024prithvi"
+  ],
+  "EnMAP": [
+    "matin2025hyperkd"
   ],
   "EuroSAT-Embed": [
     "corley2026from"
@@ -67,6 +76,9 @@
   ],
   "MDI feature importance": [
     "benavidesmartinez2026what"
+  ],
+  "MERRA-2": [
+    "schmude2024prithvi"
   ],
   "MOSAIKS": [
     "brown2025alphaearth"
@@ -188,6 +200,9 @@
   "band_adaptability": [
     "li2025landslide"
   ],
+  "band_adaptation": [
+    "hsu2024geospatial"
+  ],
   "barlow-twins": [
     "feng2026tessera"
   ],
@@ -202,6 +217,9 @@
   ],
   "borehole_data": [
     "omalley2026context"
+  ],
+  "building_density_estimation": [
+    "dionelis2025scaling"
   ],
   "burned_area_mapping": [
     "shibli2026low"
@@ -250,9 +268,6 @@
   ],
   "cloud_cover_failure": [
     "kaushik2026prithvi"
-  ],
-  "cloud_gap_imputation": [
-    "li2026hls"
   ],
   "cloud_robustness": [
     "feng2025tessera"
@@ -311,6 +326,9 @@
   "cross_lingual_poi_text_embedding": [
     "hou2026aef"
   ],
+  "cross_spectral_domain_adaptation": [
+    "matin2025hyperkd"
+  ],
   "cross_tier_generalization": [
     "hou2026aef"
   ],
@@ -358,6 +376,9 @@
   ],
   "donor_basin_selection": [
     "qu2026utilizing"
+  ],
+  "downscaling": [
+    "schmude2024prithvi"
   ],
   "downstream-driven-scaling-laws": [
     "feng2026tessera"
@@ -458,6 +479,9 @@
   "fixed_embedding_products": [
     "corley2026from"
   ],
+  "flops_analysis": [
+    "dionelis2025scaling"
+  ],
   "food_water_nexus": [
     "asif2026adapting"
   ],
@@ -500,6 +524,9 @@
   "generative_foundation_model": [
     "liu2026huiyanearth"
   ],
+  "geo_aware_unet": [
+    "dionelis2025scaling"
+  ],
   "geo_conditioned_generation": [
     "liu2026huiyanearth"
   ],
@@ -539,9 +566,6 @@
   "graph_neural_network": [
     "pettersson2025leveraging"
   ],
-  "gravity_wave_flux_parameterization": [
-    "gupta2025finetuning"
-  ],
   "handcrafted_features_vs_embeddings": [
     "cheng2026from"
   ],
@@ -569,14 +593,26 @@
   "housing_price_estimation": [
     "hou2026aef"
   ],
+  "hurricane_track_forecasting": [
+    "schmude2024prithvi"
+  ],
   "hyperparameter_optimization_protocol": [
     "simumba2025geo"
+  ],
+  "hyperparameter_tuning": [
+    "sosa2024how"
   ],
   "hyperspectral_foundation_model": [
     "tushar2026foundation"
   ],
+  "hyperspectral_imaging": [
+    "matin2025hyperkd"
+  ],
   "ice_wedge_polygon_detection": [
     "perera2026clustering"
+  ],
+  "ice_wedge_polygon_mapping": [
+    "hsu2024geospatial"
   ],
   "in_context_learning": [
     "omalley2026context"
@@ -592,6 +628,9 @@
   ],
   "input_label_resolution_mismatch": [
     "corley2026from"
+  ],
+  "instance_segmentation": [
+    "hsu2024geospatial"
   ],
   "int8_quantization": [
     "feng2025tessera"
@@ -610,6 +649,9 @@
   ],
   "knowledge-distillation": [
     "feng2026tessera"
+  ],
+  "knowledge_distillation": [
+    "matin2025hyperkd"
   ],
   "label_shift": [
     "adjei2026foundation"
@@ -667,6 +709,15 @@
   ],
   "lulc_misclassification_detection": [
     "heiman2026characterizing"
+  ],
+  "mamba_ssm": [
+    "dionelis2025scaling"
+  ],
+  "mars_crater_detection": [
+    "hsu2024geospatial"
+  ],
+  "masked_reconstruction": [
+    "schmude2024prithvi"
   ],
   "matryoshka-embeddings": [
     "feng2026tessera"
@@ -754,9 +805,6 @@
   ],
   "object counting": [
     "zhang2026fusar"
-  ],
-  "object_detection": [
-    "asif2026adapting"
   ],
   "oil_palm_plantation_mapping": [
     "brown2025alphaearth"
@@ -878,6 +926,9 @@
   "ridge_regression_baseline": [
     "hamoudzadeh2026inferring"
   ],
+  "road_density_estimation": [
+    "dionelis2025scaling"
+  ],
   "routine_health_information_systems": [
     "metz2025application"
   ],
@@ -890,8 +941,14 @@
   "satlas_pretrain": [
     "tadesse2026watch"
   ],
+  "satmae": [
+    "sosa2024how"
+  ],
   "scale_transfer": [
     "ma2025harvesting"
+  ],
+  "scaling_laws": [
+    "dionelis2025scaling"
   ],
   "scattering_mechanism_constraint": [
     "liu2026huiyanearth"
@@ -946,6 +1003,9 @@
   ],
   "soil_moisture_estimation": [
     "kontogiorgakis2026comparative"
+  ],
+  "soil_organic_carbon_prediction": [
+    "matin2025hyperkd"
   ],
   "spatial block cross-validation": [
     "hou2026slum"
@@ -1022,11 +1082,17 @@
   "terrain_elevation": [
     "hamoudzadeh2026inferring"
   ],
+  "terramind": [
+    "dionelis2025scaling"
+  ],
   "tillage_mapping": [
     "ma2025harvesting"
   ],
   "time_series_reconstruction": [
     "li2026hls"
+  ],
+  "training_from_scratch": [
+    "sosa2024how"
   ],
   "tree_genera_classification": [
     "brown2025alphaearth"
@@ -1067,17 +1133,26 @@
   "vision_transformer": [
     "cheng2026from"
   ],
+  "vit_upernet": [
+    "dionelis2025scaling"
+  ],
   "vs30_estimation": [
     "nakata2026subsurface"
   ],
   "weakly_supervised_temporal_localization": [
     "tadesse2026watch"
   ],
+  "weather_forecasting": [
+    "schmude2024prithvi"
+  ],
   "west_africa": [
     "lisaius2026embedding"
   ],
   "wildfire_mapping": [
     "shibli2026low"
+  ],
+  "wildfire_scar_mapping": [
+    "sosa2024how"
   ],
   "workflow_simplicity": [
     "zvonkov2025cropland"

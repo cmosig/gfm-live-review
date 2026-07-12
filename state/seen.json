@@ -225,6 +225,12 @@
     "key": "basu2024geodesic",
     "status": "off_topic"
   },
+  "geospatial foundation models for image analysis evaluating and enhancing nasa ibm prithvi s domain adaptability": {
+    "arxiv_id": "2409.00489",
+    "dropped_claims": 0,
+    "key": "hsu2024geospatial",
+    "status": "carded"
+  },
   "graphfire x physics informed graph attention networks and structural gradient boosting for building scale wildfire preparedness at the wildland urban interface": {
     "key": "-",
     "status": "quarantined_mismatch"
@@ -251,10 +257,22 @@
     "key": "li2026hls",
     "status": "carded"
   },
+  "how effective is pre training of large masked autoencoders for downstream earth observation tasks": {
+    "arxiv_id": "2409.18536",
+    "dropped_claims": 0,
+    "key": "sosa2024how",
+    "status": "carded"
+  },
   "huiyanearth sar a foundation model for high fidelity and low cost global remote sensing imagery generation": {
     "arxiv_id": "2604.11444",
     "dropped_claims": 0,
     "key": "liu2026huiyanearth",
+    "status": "carded"
+  },
+  "hyperkd distilling cross spectral knowledge in masked autoencoders via inverse domain shift with spatial aware masking and specialized loss": {
+    "arxiv_id": "2508.09453",
+    "dropped_claims": 0,
+    "key": "matin2025hyperkd",
     "status": "carded"
   },
   "in context learning enables continental scale subsurface temperature prediction from sparse local observations": {
@@ -403,6 +421,16 @@
     "key": "kaushik2026prithvi",
     "status": "carded"
   },
+  "prithvi eo 2 0 a versatile multi temporal foundation model for earth observation applications": {
+    "key": "szwarcman2024prithvi",
+    "status": "quarantined"
+  },
+  "prithvi wxc foundation model for weather and climate": {
+    "arxiv_id": "2409.13598",
+    "dropped_claims": 0,
+    "key": "schmude2024prithvi",
+    "status": "carded"
+  },
   "quasi isometric rigidity for lamplighters with lamps of polynomial growth": {
     "key": "dumoncel2025quasi",
     "status": "off_topic"
@@ -418,6 +446,12 @@
   "scalable geospatial data generation using alphaearth foundations model": {
     "key": "houriez2025scalable",
     "status": "quarantined"
+  },
+  "scaling laws for geospatial foundation models a case study on phileo bench": {
+    "arxiv_id": "2506.14765",
+    "dropped_claims": 0,
+    "key": "dionelis2025scaling",
+    "status": "carded"
   },
   "sensor adaptive flood mapping with pre trained multi modal transformers across sar and multispectral modalities": {
     "arxiv_id": "2509.23035",
@@ -480,6 +514,10 @@
     "dropped_claims": 1,
     "key": "kyselica2026towards",
     "status": "carded"
+  },
+  "towards scalable and generalizable earth observation data mining via foundation model composition": {
+    "key": "chuc2025towards",
+    "status": "quarantined"
   },
   "utilizing a geospatial foundation model for coastline delineation in small sandy islands": {
     "arxiv_id": "2511.10177",
