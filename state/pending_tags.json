@@ -35,8 +35,14 @@
   "GeoNames": [
     "pettersson2025leveraging"
   ],
+  "HIV_prediction": [
+    "metz2025application"
+  ],
   "IWI": [
     "pettersson2025leveraging"
+  ],
+  "LMIC": [
+    "metz2025application"
   ],
   "LSTM": [
     "qu2026utilizing"
@@ -55,6 +61,9 @@
   ],
   "PCA_dimensionality_reduction": [
     "cheng2026from"
+  ],
+  "PDFM": [
+    "metz2025application"
   ],
   "POI auxiliary features": [
     "hou2026slum"
@@ -80,6 +89,9 @@
   "TerraMind": [
     "thasma2026beyond"
   ],
+  "XGBoost": [
+    "metz2025application"
+  ],
   "agbd": [
     "mandal2026biomazon"
   ],
@@ -97,6 +109,9 @@
   ],
   "atlantic_forest": [
     "heiman2026characterizing"
+  ],
+  "attention_probing": [
+    "rahman2026physically"
   ],
   "attention_unet": [
     "ko2026exploring"
@@ -118,6 +133,9 @@
   ],
   "calibration": [
     "omalley2026context"
+  ],
+  "call_detail_records": [
+    "metz2025application"
   ],
   "capacity_adaptive_reconstruction": [
     "hou2026aef"
@@ -146,6 +164,9 @@
   "continuous_time_modeling": [
     "brown2025alphaearth"
   ],
+  "contrastive_learning": [
+    "liu2025beyond"
+  ],
   "controlnet": [
     "liu2026huiyanearth"
   ],
@@ -163,6 +184,9 @@
   ],
   "crime_prediction": [
     "gong2026earth"
+  ],
+  "cropland_mapping": [
+    "zvonkov2025cropland"
   ],
   "cross_lingual_poi_text_embedding": [
     "hou2026aef"
@@ -191,11 +215,11 @@
   "dimension pruning": [
     "benavidesmartinez2026what"
   ],
+  "dimension_dictionary": [
+    "rahman2026physically"
+  ],
   "dimensionality_reduction": [
     "gong2026earth"
-  ],
-  "disease_surveillance": [
-    "nazir2026alphaearth"
   ],
   "distance_to_road_prediction": [
     "plas2026better"
@@ -221,6 +245,12 @@
   "embedding redundancy": [
     "benavidesmartinez2026what"
   ],
+  "embedding_clustering": [
+    "zvonkov2025cropland"
+  ],
+  "embedding_clustering_umap": [
+    "lisaius2026embedding"
+  ],
   "embedding_complementarity": [
     "plas2026better"
   ],
@@ -236,6 +266,9 @@
   "embedding_fusion": [
     "plas2026better"
   ],
+  "embedding_interpretability": [
+    "rahman2026physically"
+  ],
   "embeddings_as_data": [
     "feng2025tessera"
   ],
@@ -244,6 +277,9 @@
   ],
   "emergency_medical_services_forecasting": [
     "aalaila2026when"
+  ],
+  "environmental_variable_regression": [
+    "rahman2026physically"
   ],
   "evapotranspiration_estimation": [
     "brown2025alphaearth"
@@ -257,8 +293,14 @@
   "exogenous_spatial_context": [
     "aalaila2026when"
   ],
+  "faiss_similarity_search": [
+    "rahman2026physically"
+  ],
   "feature-wise linear modulation": [
     "zhang2026fusar"
+  ],
+  "feature_engineering_free": [
+    "lisaius2026embedding"
   ],
   "fixed_embedding_products": [
     "corley2026from"
@@ -278,6 +320,9 @@
   "fuzzy_label_loss": [
     "pettersson2025leveraging"
   ],
+  "gdp_mapping": [
+    "liu2025beyond"
+  ],
   "gedi_lidar_supervision": [
     "mandal2026biomazon"
   ],
@@ -293,14 +338,23 @@
   "geospatial prior as world knowledge": [
     "zhang2026fusar"
   ],
+  "geostatistical_interpolation_baseline": [
+    "metz2025application"
+  ],
   "geothermal_gradient": [
     "nakata2026subsurface"
   ],
   "geothermal_resource_assessment": [
     "omalley2026context"
   ],
+  "glad_comparison": [
+    "zvonkov2025cropland"
+  ],
   "global_annual_embeddings": [
     "brown2025alphaearth"
+  ],
+  "google_earth_engine": [
+    "zvonkov2025cropland"
   ],
   "granularity_generalization_tradeoff": [
     "qu2026utilizing"
@@ -313,6 +367,9 @@
   ],
   "health_burden_prediction": [
     "gong2026earth"
+  ],
+  "health_facility_outputs": [
+    "metz2025application"
   ],
   "hierarchical embedding structure": [
     "benavidesmartinez2026what"
@@ -335,11 +392,26 @@
   "inter_stream_capacity_competition": [
     "hou2026aef"
   ],
+  "intercropping": [
+    "lisaius2026embedding"
+  ],
+  "internet_search_embeddings": [
+    "metz2025application"
+  ],
+  "land_use_distribution_mapping": [
+    "liu2025beyond"
+  ],
   "landslide_conditioning_factors": [
     "cheng2026from"
   ],
+  "language_accessible_embeddings": [
+    "liu2025beyond"
+  ],
   "lcz_upscaling": [
     "ko2026exploring"
+  ],
+  "llm_as_judge": [
+    "rahman2026physically"
   ],
   "location_embeddings": [
     "plas2026better"
@@ -356,20 +428,23 @@
   "lulc_misclassification_detection": [
     "heiman2026characterizing"
   ],
-  "malaria_prediction": [
-    "nazir2026alphaearth"
-  ],
   "mean_absolute_error_metric": [
     "omalley2026context"
   ],
   "mean_pooling": [
     "corley2026from"
   ],
+  "mobile_phone_data": [
+    "metz2025application"
+  ],
   "modifiable_areal_unit_problem": [
     "gong2026earth"
   ],
   "monotone_ordered_quantile_output": [
     "mandal2026biomazon"
+  ],
+  "multi_source_embedding_integration": [
+    "metz2025application"
   ],
   "multi_source_fusion": [
     "brown2025alphaearth"
@@ -380,11 +455,20 @@
   "multimodal fusion": [
     "thasma2026beyond"
   ],
+  "multimodal_alignment": [
+    "liu2025beyond"
+  ],
   "multimodal_sensor_fusion": [
     "mandal2026biomazon"
   ],
   "mutual_information_analysis": [
     "qu2026utilizing"
+  ],
+  "natural_language_query": [
+    "rahman2026physically"
+  ],
+  "natural_language_spatial_retrieval": [
+    "liu2025beyond"
   ],
   "ndvi_saturation": [
     "heiman2026characterizing"
@@ -421,6 +505,9 @@
   ],
   "platonic_representation_hypothesis": [
     "plas2026better"
+  ],
+  "poi_guided_alignment": [
+    "liu2025beyond"
   ],
   "point_process_intensity": [
     "aalaila2026when"
@@ -467,11 +554,17 @@
   "restoration_strategy_prediction": [
     "heiman2026characterizing"
   ],
+  "retrieval_augmented_generation": [
+    "rahman2026physically"
+  ],
   "rh_profile_prediction": [
     "mandal2026biomazon"
   ],
   "ridge_regression_baseline": [
     "hamoudzadeh2026inferring"
+  ],
+  "routine_health_information_systems": [
+    "metz2025application"
   ],
   "sar_image_generation": [
     "liu2026huiyanearth"
@@ -491,11 +584,20 @@
   "seismic_site_characterization": [
     "nakata2026subsurface"
   ],
+  "sentinel-1": [
+    "lisaius2026embedding"
+  ],
+  "sentinel-2": [
+    "lisaius2026embedding"
+  ],
   "sentinel1_sentinel2_fusion": [
     "feng2025tessera"
   ],
   "single-temporal post-event SAR": [
     "thasma2026beyond"
+  ],
+  "smallholder_agriculture": [
+    "lisaius2026embedding"
   ],
   "socioeconomic_foundation_embedding": [
     "hou2026aef"
@@ -523,6 +625,9 @@
   ],
   "specialist-generalist taxonomy": [
     "benavidesmartinez2026what"
+  ],
+  "spectral_temporal_metrics": [
+    "lisaius2026embedding"
   ],
   "stats_pooling": [
     "corley2026from"
@@ -593,6 +698,9 @@
   "universal_kriging_baseline": [
     "omalley2026context"
   ],
+  "urban_representation_learning": [
+    "liu2025beyond"
+  ],
   "urban_signal_prediction": [
     "gong2026earth"
   ],
@@ -608,8 +716,17 @@
   "vs30_estimation": [
     "nakata2026subsurface"
   ],
+  "west_africa": [
+    "lisaius2026embedding"
+  ],
+  "workflow_simplicity": [
+    "zvonkov2025cropland"
+  ],
   "world_model_representation": [
     "omalley2026context"
+  ],
+  "worldcover_comparison": [
+    "zvonkov2025cropland"
   ],
   "wudapt": [
     "ko2026exploring"

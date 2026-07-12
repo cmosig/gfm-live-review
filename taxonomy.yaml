@@ -70,5 +70,7 @@ limitations:
 
 # >>> auto-managed below (auto-promoted tags); human edits above are preserved >>>
 promoted_tags:
+- disease_surveillance
+- malaria_prediction
 - satellite_embeddings
 - urban_morphology

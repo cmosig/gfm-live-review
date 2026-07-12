@@ -1,0 +1,24 @@
+{
+  "key": "graphfire x physics informed graph attention networks and st",
+  "title": "GraphFire-X: Physics-Informed Graph Attention Networks and Structural Gradient Boosting for Building-Scale Wildfire Preparedness at the Wildland-Urban Interface",
+  "reason": "DOI title mismatch (possible metadata error)",
+  "quarantined_at": "2026-07-12T17:48:08.513401+00:00",
+  "payload": {
+    "candidate": {
+      "title": "GraphFire-X: Physics-Informed Graph Attention Networks and Structural Gradient Boosting for Building-Scale Wildfire Preparedness at the Wildland-Urban Interface",
+      "abstract": "As wildfires increasingly evolve into urban conflagrations, traditional risk models that treat structures as isolated assets fail to capture the non-linear contagion dynamics characteristic of the wildland urban interface (WUI). This research bridges the gap between mechanistic physics and data driven learning by establishing a novel dual specialist ensemble framework that disentangles vulnerability into two distinct vectors, environmental contagion and structural fragility. The architecture integrates two specialized predictive streams, an environmental specialist, implemented as a graph neural network (GNN) that operationalizes the community as a directed contagion graph weighted by physics informed convection, radiation, and ember probabilities, and enriched with high dimensional Google AlphaEarth Foundation embeddings, and a Structural Specialist, implemented via XGBoost to isolate granular asset level resilience. Applied to the 2025 Eaton Fire, the framework reveals a critical dichotomy in risk drivers. The GNN demonstrates that neighborhood scale environmental pressure overwhelmingly dominates intrinsic structural features in defining propagation pathways, while the XGBoost model identifies eaves as the primary micro scale ingress vector. By synthesizing these divergent signals through logistic stacking, the ensemble achieves robust classification and generates a diagnostic risk topology. This capability empowers decision makers to move beyond binary loss prediction and precisely target mitigation prioritizing vegetation management for high connectivity clusters and structural hardening for architecturally vulnerable nodes thereby operationalizing a proactive, data driven approach to community resilience.",
+      "authors": [
+        "Miguel Esparza",
+        "Vamshi Battal",
+        "Ali Mostafavi"
+      ],
+      "author_ids": [],
+      "arxiv_id": "2512.20813",
+      "doi": "10.1016/j.cacaie.2026.100085",
+      "venue": "arXiv",
+      "date": "2025-12-23",
+      "openalex_id": null,
+      "source": "arxiv"
+    }
+  }
+}

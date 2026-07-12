@@ -17,10 +17,22 @@
     "key": "nazir2026alphaearth",
     "status": "carded"
   },
+  "application and validation of geospatial foundation model data for the prediction of health facility programmatic outputs a case study in malawi": {
+    "arxiv_id": "2510.25954",
+    "dropped_claims": 0,
+    "key": "metz2025application",
+    "status": "carded"
+  },
   "better together evaluating the complementarity of earth embedding models": {
     "arxiv_id": "2605.18667",
     "dropped_claims": 0,
     "key": "plas2026better",
+    "status": "carded"
+  },
+  "beyond alphaearth toward human centered geospatial foundation models via poi guided contrastive learning": {
+    "arxiv_id": "2510.09894",
+    "dropped_claims": 0,
+    "key": "liu2025beyond",
     "status": "carded"
   },
   "beyond backscatter alphaearth land cover priors for rapid sar flood segmentation across foundation backbones": {
@@ -45,10 +57,22 @@
     "key": "heiman2026characterizing",
     "status": "carded"
   },
+  "cropland mapping using geospatial embeddings": {
+    "arxiv_id": "2511.02923",
+    "dropped_claims": 0,
+    "key": "zvonkov2025cropland",
+    "status": "carded"
+  },
   "earth embeddings reveal diverse urban signals from space": {
     "arxiv_id": "2604.03456",
     "dropped_claims": 0,
     "key": "gong2026earth",
+    "status": "carded"
+  },
+  "embedding based crop type classification in the groundnut basin of senegal": {
+    "arxiv_id": "2601.16900",
+    "dropped_claims": 0,
+    "key": "lisaius2026embedding",
     "status": "carded"
   },
   "exploring the potential of alphaearth and tessera embeddings for fine scale local climate zone mapping a case study across five cities in switzerland": {
@@ -74,6 +98,10 @@
     "dropped_claims": 0,
     "key": "zhang2026fusar",
     "status": "carded"
+  },
+  "graphfire x physics informed graph attention networks and structural gradient boosting for building scale wildfire preparedness at the wildland urban interface": {
+    "key": "-",
+    "status": "quarantined_mismatch"
   },
   "harvesting alphaearth benchmarking the geospatial foundation model for agricultural downstream tasks": {
     "arxiv_id": "2601.00857",
@@ -112,6 +140,12 @@
   "mini jepa foundation model fleet enables agentic hydrologic intelligence": {
     "key": "rahman2026mini",
     "status": "quarantined"
+  },
+  "physically interpretable alphaearth foundation model embeddings enable llm based land surface intelligence": {
+    "arxiv_id": "2602.10354",
+    "dropped_claims": 0,
+    "key": "rahman2026physically",
+    "status": "carded"
   },
   "slum detection and density mapping with alphaearth foundations a representation learning evaluation across 12 global cities": {
     "arxiv_id": "2605.10029",
