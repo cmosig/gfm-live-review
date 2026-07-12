@@ -1,4 +1,16 @@
 {
+  "a wispr of the venus surface analysis of the venus nightside thermal emission at optical wavelengths": {
+    "key": "lustigyaeger2023wispr",
+    "status": "off_topic"
+  },
+  "accessibility and twin width": {
+    "key": "kontogeorgiou2026accessibility",
+    "status": "off_topic"
+  },
+  "adaptive individual uncertainty under out of distribution shift with expert routed conformal prediction": {
+    "key": "badkul2025adaptive",
+    "status": "off_topic"
+  },
   "aef econ toward plug and play socioeconomic foundation embeddings from alphaearth for urban remote sensing": {
     "arxiv_id": "2606.20697",
     "dropped_claims": 0,
@@ -22,6 +34,16 @@
     "dropped_claims": 0,
     "key": "metz2025application",
     "status": "carded"
+  },
+  "assessing the effectiveness of deep embeddings for tree species classification in the dutch forest inventory": {
+    "arxiv_id": "2508.18829",
+    "dropped_claims": 0,
+    "key": "ishikawa2025assessing",
+    "status": "carded"
+  },
+  "asymptotic shapes for stationary first passage percolation on virtually nilpotent groups": {
+    "key": "auffinger2021asymptotic",
+    "status": "off_topic"
   },
   "better together evaluating the complementarity of earth embedding models": {
     "arxiv_id": "2605.18667",
@@ -47,6 +69,10 @@
     "key": "mandal2026biomazon",
     "status": "carded"
   },
+  "building prescribed quantitative orbit equivalence with the group of integers": {
+    "key": "-",
+    "status": "quarantined_mismatch"
+  },
   "characterizing alphaearth embedding geometry for agentic environmental reasoning": {
     "key": "rahman2026characterizing",
     "status": "quarantined"
@@ -67,6 +93,10 @@
     "key": "seydi2025deep",
     "status": "quarantined"
   },
+  "dehn functions computations lower bounds and the quasiisometric rigidity of rm sol 5": {
+    "key": "grayevsky2025dehn",
+    "status": "off_topic"
+  },
   "earth embeddings reveal diverse urban signals from space": {
     "arxiv_id": "2604.03456",
     "dropped_claims": 0,
@@ -84,6 +114,10 @@
     "dropped_claims": 0,
     "key": "ko2026exploring",
     "status": "carded"
+  },
+  "first passage percolation on hyperbolic groups": {
+    "key": "basu2019first",
+    "status": "off_topic"
   },
   "from landslide conditioning factors to satellite embeddings evaluating the utilisation of google alphaearth for landslide susceptibility mapping using deep learning": {
     "arxiv_id": "2601.07268",
@@ -103,6 +137,10 @@
     "key": "zhang2026fusar",
     "status": "carded"
   },
+  "geodesic trees and exceptional directions in fpp on hyperbolic groups": {
+    "key": "basu2024geodesic",
+    "status": "off_topic"
+  },
   "graphfire x physics informed graph attention networks and structural gradient boosting for building scale wildfire preparedness at the wildland urban interface": {
     "key": "-",
     "status": "quarantined_mismatch"
@@ -112,6 +150,10 @@
     "dropped_claims": 0,
     "key": "ma2025harvesting",
     "status": "carded"
+  },
+  "higher rank confining subsets and hyperbolic actions of solvable groups": {
+    "key": "abbott2021higher",
+    "status": "off_topic"
   },
   "huiyanearth sar a foundation model for high fidelity and low cost global remote sensing imagery generation": {
     "arxiv_id": "2604.11444",
@@ -131,19 +173,83 @@
     "key": "hamoudzadeh2026inferring",
     "status": "carded"
   },
+  "isoperimetric profiles and regular embeddings of locally compact groups": {
+    "key": "paucar2024isoperimetric",
+    "status": "off_topic"
+  },
+  "isoperimetric profiles of lamplighter like groups": {
+    "key": "correia2025isoperimetric",
+    "status": "off_topic"
+  },
   "leveraging compact satellite embeddings and graph neural networks for large scale poverty mapping": {
     "arxiv_id": "2511.01408",
     "dropped_claims": 1,
     "key": "pettersson2025leveraging",
     "status": "carded"
   },
+  "llm guided monte carlo tree search over knowledge graphs composing mechanistic explanations for drug disease pairs": {
+    "key": "jakhar2026llm",
+    "status": "off_topic"
+  },
+  "locality of percolation for graphs with polynomial growth": {
+    "key": "contreras2022locality",
+    "status": "off_topic"
+  },
   "mapping tomato cropping systems in california using alphaearth geospatial embeddings and deep learning analysis": {
     "key": "narimani2026mapping",
     "status": "quarantined"
   },
+  "measured asymptotic expanders and rigidity for roe algebras": {
+    "key": "li2020measured",
+    "status": "off_topic"
+  },
+  "measured expanders": {
+    "key": "li2021measured",
+    "status": "off_topic"
+  },
+  "metric spaces of arbitrary finitely generated scaling group": {
+    "key": "levitin2022metric",
+    "status": "off_topic"
+  },
   "mini jepa foundation model fleet enables agentic hydrologic intelligence": {
     "key": "rahman2026mini",
     "status": "quarantined"
+  },
+  "mosaiks are made of tesserae gui design for a co simulation framework": {
+    "key": "schulte2026mosaiks",
+    "status": "off_topic"
+  },
+  "obstructions for quantitative measure equivalence between locally compact groups": {
+    "key": "correia2025obstructions",
+    "status": "off_topic"
+  },
+  "odomutants and flexibility results for quantitative orbit equivalence": {
+    "key": "correia2025odomutants",
+    "status": "off_topic"
+  },
+  "on matou ek like embedding obstructions of countably branching graphs": {
+    "key": "malthaner2023matou",
+    "status": "off_topic"
+  },
+  "on quantitative orbit equivalence for lamplighter like groups": {
+    "key": "correia2026quantitative",
+    "status": "off_topic"
+  },
+  "on the absence of quantitatively critical measure equivalence couplings": {
+    "key": "correia2024absence",
+    "status": "off_topic"
+  },
+  "on the dehn functions of central products of nilpotent groups": {
+    "key": "garcameja2023dehn",
+    "status": "off_topic"
+  },
+  "on the quasi isometric classification of permutational wreath products": {
+    "key": "dumoncel2024quasi",
+    "status": "off_topic"
+  },
+  "on the universality of fluctuations for the cover time": {
+    "key": "berestycki2022universality",
+    "status": "off_topic"
   },
   "physically interpretable alphaearth foundation model embeddings enable llm based land surface intelligence": {
     "arxiv_id": "2602.10354",
@@ -151,11 +257,35 @@
     "key": "rahman2026physically",
     "status": "carded"
   },
+  "poincar profiles of lamplighter diagonal products": {
+    "key": "coz2020poincar",
+    "status": "off_topic"
+  },
+  "quasi isometric rigidity for lamplighters with lamps of polynomial growth": {
+    "key": "dumoncel2025quasi",
+    "status": "off_topic"
+  },
+  "regular maps from the lamplighter to metabelian groups": {
+    "key": "gournay2024regular",
+    "status": "off_topic"
+  },
+  "revealing the mysteries of venus the davinci mission": {
+    "key": "garvin2022revealing",
+    "status": "off_topic"
+  },
+  "scalable geospatial data generation using alphaearth foundations model": {
+    "key": "houriez2025scalable",
+    "status": "quarantined"
+  },
   "slum detection and density mapping with alphaearth foundations a representation learning evaluation across 12 global cities": {
     "arxiv_id": "2605.10029",
     "dropped_claims": 0,
     "key": "hou2026slum",
     "status": "carded"
+  },
+  "sofic actions halo products and metric approximations of groups": {
+    "key": "alekseev2026sofic",
+    "status": "off_topic"
   },
   "subsurface property mapping using google alphaearth foundations": {
     "arxiv_id": "2604.14756",
@@ -163,17 +293,43 @@
     "key": "nakata2026subsurface",
     "status": "carded"
   },
+  "tessera secure near line rate weight streaming for uma edge accelerators": {
+    "key": "naskar2026tessera",
+    "status": "off_topic"
+  },
   "tessera temporal embeddings of surface spectra for earth representation and analysis": {
     "arxiv_id": "2506.20380",
     "dropped_claims": 0,
     "key": "feng2025tessera",
     "status": "carded"
   },
+  "tessera unlocking heterogeneous gpus through kernel granularity disaggregation": {
+    "key": "hu2026tessera",
+    "status": "off_topic"
+  },
+  "tessera v2 scaling pixel wise earth foundation models": {
+    "arxiv_id": "2607.03949",
+    "dropped_claims": 0,
+    "key": "feng2026tessera",
+    "status": "carded"
+  },
+  "the coarse baum connes conjecture for certain relative expanders": {
+    "key": "deng2021coarse",
+    "status": "quarantined"
+  },
+  "the maximal coarse baum connes conjecture for spaces that admit an a by fce coarse fibration structure": {
+    "key": "guo2024maximal",
+    "status": "off_topic"
+  },
   "utilizing earth foundation models to enhance the simulation performance of hydrological models with alphaearth embeddings": {
     "arxiv_id": "2601.01558",
     "dropped_claims": 0,
     "key": "qu2026utilizing",
     "status": "carded"
+  },
+  "vanishing of the second l p cohomology group for most semisimple groups of rank at least 3": {
+    "key": "neumann2023vanishing",
+    "status": "off_topic"
   },
   "what on earth is alphaearth hierarchical structure and functional interpretability for global land cover": {
     "arxiv_id": "2603.16911",

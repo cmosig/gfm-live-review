@@ -1,0 +1,22 @@
+{
+  "key": "building prescribed quantitative orbit equivalence with the ",
+  "title": "Building prescribed quantitative orbit equivalence with the group of integers",
+  "reason": "DOI title mismatch (possible metadata error)",
+  "quarantined_at": "2026-07-12T18:10:53.238460+00:00",
+  "payload": {
+    "candidate": {
+      "title": "Building prescribed quantitative orbit equivalence with the group of integers",
+      "abstract": "Two groups are orbit equivalent if they both admit an action on a same probability space that share the same orbits. In particular the Ornstein-Weiss theorem implies that all infinite amenable groups are orbit equivalent to the group of integers. To refine this notion between infinite amenable groups Delabie, Koivisto, Le Maître and Tessera introduced a quantitative version of orbit equivalence. They furthermore obtained obstructions to the existence of such equivalence using the isoperimetric profile. In this article we offer to answer the inverse problem (find a group being orbit equivalent to a prescribed group with prescribed quantification) in the case of the group of integers using the so called Følner tiling shifts introduced by Delabie et al. To do so we use the diagonal products defined by Brieussel and Zheng giving groups with prescribed isoperimetric profile.",
+      "authors": [
+        "Amandine Escalier"
+      ],
+      "author_ids": [],
+      "arxiv_id": "2202.10312",
+      "doi": "10.4171/GGD/766",
+      "venue": "arXiv",
+      "date": "2022-02-21",
+      "openalex_id": null,
+      "source": "arxiv"
+    }
+  }
+}
