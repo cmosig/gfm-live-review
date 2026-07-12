@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Runtime lock (state/*.json and runs.jsonl ARE committed; the lock is not)
+state/.lock
+
+# Never commit anything credential-shaped. There should be nothing to ignore
+# here because the repo holds no credentials — this is a tripwire, not a need.
+.env
+*.credentials.json
+.credentials.json
+
+# Unrelated MCP server state (not part of this project)
+.mcp/

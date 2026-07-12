@@ -1,0 +1,80 @@
+{
+  "aef econ toward plug and play socioeconomic foundation embeddings from alphaearth for urban remote sensing": {
+    "arxiv_id": "2606.20697",
+    "dropped_claims": 0,
+    "key": "hou2026aef",
+    "status": "carded"
+  },
+  "alphaearth foundations an embedding field model for accurate and efficient global mapping from sparse label data": {
+    "arxiv_id": "2507.22291",
+    "dropped_claims": 0,
+    "key": "brown2025alphaearth",
+    "status": "carded"
+  },
+  "better together evaluating the complementarity of earth embedding models": {
+    "arxiv_id": "2605.18667",
+    "dropped_claims": 0,
+    "key": "plas2026better",
+    "status": "carded"
+  },
+  "earth embeddings reveal diverse urban signals from space": {
+    "arxiv_id": "2604.03456",
+    "dropped_claims": 0,
+    "key": "gong2026earth",
+    "status": "carded"
+  },
+  "exploring the potential of alphaearth and tessera embeddings for fine scale local climate zone mapping a case study across five cities in switzerland": {
+    "arxiv_id": "2606.20034",
+    "dropped_claims": 0,
+    "key": "ko2026exploring",
+    "status": "carded"
+  },
+  "from landslide conditioning factors to satellite embeddings evaluating the utilisation of google alphaearth for landslide susceptibility mapping using deep learning": {
+    "arxiv_id": "2601.07268",
+    "dropped_claims": 0,
+    "key": "cheng2026from",
+    "status": "carded"
+  },
+  "harvesting alphaearth benchmarking the geospatial foundation model for agricultural downstream tasks": {
+    "arxiv_id": "2601.00857",
+    "dropped_claims": 0,
+    "key": "ma2025harvesting",
+    "status": "carded"
+  },
+  "inferring height from earth embeddings first insights using google alphaearth": {
+    "arxiv_id": "2602.17250",
+    "dropped_claims": 0,
+    "key": "hamoudzadeh2026inferring",
+    "status": "carded"
+  },
+  "leveraging compact satellite embeddings and graph neural networks for large scale poverty mapping": {
+    "arxiv_id": "2511.01408",
+    "dropped_claims": 1,
+    "key": "pettersson2025leveraging",
+    "status": "carded"
+  },
+  "slum detection and density mapping with alphaearth foundations a representation learning evaluation across 12 global cities": {
+    "arxiv_id": "2605.10029",
+    "dropped_claims": 0,
+    "key": "hou2026slum",
+    "status": "carded"
+  },
+  "tessera temporal embeddings of surface spectra for earth representation and analysis": {
+    "arxiv_id": "2506.20380",
+    "dropped_claims": 0,
+    "key": "feng2025tessera",
+    "status": "carded"
+  },
+  "utilizing earth foundation models to enhance the simulation performance of hydrological models with alphaearth embeddings": {
+    "arxiv_id": "2601.01558",
+    "dropped_claims": 0,
+    "key": "qu2026utilizing",
+    "status": "carded"
+  },
+  "what on earth is alphaearth hierarchical structure and functional interpretability for global land cover": {
+    "arxiv_id": "2603.16911",
+    "dropped_claims": 0,
+    "key": "benavidesmartinez2026what",
+    "status": "carded"
+  }
+}

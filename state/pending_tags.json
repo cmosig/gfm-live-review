@@ -1,0 +1,350 @@
+{
+  "AlphaEarth Foundations": [
+    "hou2026slum"
+  ],
+  "CCA_CKA_similarity": [
+    "plas2026better"
+  ],
+  "CCDC_harmonics": [
+    "brown2025alphaearth"
+  ],
+  "CNN1D": [
+    "cheng2026from"
+  ],
+  "CNN2D": [
+    "cheng2026from"
+  ],
+  "DHS_surveys": [
+    "pettersson2025leveraging"
+  ],
+  "GeoNames": [
+    "pettersson2025leveraging"
+  ],
+  "IWI": [
+    "pettersson2025leveraging"
+  ],
+  "LSTM": [
+    "qu2026utilizing"
+  ],
+  "MDI feature importance": [
+    "benavidesmartinez2026what"
+  ],
+  "MOSAIKS": [
+    "brown2025alphaearth"
+  ],
+  "Moran's I clustering": [
+    "hou2026slum"
+  ],
+  "PCA dimensional saturation": [
+    "hou2026slum"
+  ],
+  "PCA_dimensionality_reduction": [
+    "cheng2026from"
+  ],
+  "POI auxiliary features": [
+    "hou2026slum"
+  ],
+  "SHAP dimension importance": [
+    "hou2026slum"
+  ],
+  "SSIM structural fidelity": [
+    "hou2026slum"
+  ],
+  "Sub-Saharan_Africa": [
+    "pettersson2025leveraging"
+  ],
+  "agricultural_practice_mapping": [
+    "ma2025harvesting"
+  ],
+  "analysis_ready_embeddings": [
+    "ma2025harvesting"
+  ],
+  "attention_unet": [
+    "ko2026exploring"
+  ],
+  "barlow_twins": [
+    "feng2025tessera"
+  ],
+  "basin_similarity": [
+    "qu2026utilizing"
+  ],
+  "bioclimatic_variable_prediction": [
+    "plas2026better"
+  ],
+  "capacity_adaptive_reconstruction": [
+    "hou2026aef"
+  ],
+  "census_block_group": [
+    "gong2026earth"
+  ],
+  "city-scale representation drift": [
+    "hou2026slum"
+  ],
+  "cloud_robustness": [
+    "feng2025tessera"
+  ],
+  "coarse_label_training": [
+    "ko2026exploring"
+  ],
+  "commuting_mode_share": [
+    "gong2026earth"
+  ],
+  "continuous_time_modeling": [
+    "brown2025alphaearth"
+  ],
+  "coordinate_displacement": [
+    "pettersson2025leveraging"
+  ],
+  "cover_crop_mapping": [
+    "ma2025harvesting"
+  ],
+  "crime_prediction": [
+    "gong2026earth"
+  ],
+  "cross_lingual_poi_text_embedding": [
+    "hou2026aef"
+  ],
+  "cross_tier_generalization": [
+    "hou2026aef"
+  ],
+  "data_harmonization": [
+    "ma2025harvesting"
+  ],
+  "digital_surface_model": [
+    "hamoudzadeh2026inferring"
+  ],
+  "dimension pruning": [
+    "benavidesmartinez2026what"
+  ],
+  "dimensionality_reduction": [
+    "gong2026earth"
+  ],
+  "distance_to_road_prediction": [
+    "plas2026better"
+  ],
+  "distribution_shift": [
+    "hamoudzadeh2026inferring"
+  ],
+  "donor_basin_selection": [
+    "qu2026utilizing"
+  ],
+  "dsm_regression": [
+    "hamoudzadeh2026inferring"
+  ],
+  "earth_embeddings": [
+    "hamoudzadeh2026inferring"
+  ],
+  "ecotone representation": [
+    "benavidesmartinez2026what"
+  ],
+  "embedding dimension ablation": [
+    "benavidesmartinez2026what"
+  ],
+  "embedding redundancy": [
+    "benavidesmartinez2026what"
+  ],
+  "embedding_complementarity": [
+    "plas2026better"
+  ],
+  "embedding_compression": [
+    "ma2025harvesting"
+  ],
+  "embedding_dimension_compression": [
+    "hou2026aef"
+  ],
+  "embedding_field_model": [
+    "brown2025alphaearth"
+  ],
+  "embedding_fusion": [
+    "plas2026better"
+  ],
+  "embeddings_as_data": [
+    "feng2025tessera"
+  ],
+  "embeddings_vs_composites": [
+    "ko2026exploring"
+  ],
+  "evapotranspiration_estimation": [
+    "brown2025alphaearth"
+  ],
+  "functional interpretability": [
+    "benavidesmartinez2026what"
+  ],
+  "functional_zone_retrieval": [
+    "hou2026aef"
+  ],
+  "fuzzy_label_loss": [
+    "pettersson2025leveraging"
+  ],
+  "global_annual_embeddings": [
+    "brown2025alphaearth"
+  ],
+  "granularity_generalization_tradeoff": [
+    "qu2026utilizing"
+  ],
+  "graph_neural_network": [
+    "pettersson2025leveraging"
+  ],
+  "handcrafted_features_vs_embeddings": [
+    "cheng2026from"
+  ],
+  "health_burden_prediction": [
+    "gong2026earth"
+  ],
+  "hierarchical embedding structure": [
+    "benavidesmartinez2026what"
+  ],
+  "housing_price_estimation": [
+    "hou2026aef"
+  ],
+  "informal settlements": [
+    "hou2026slum"
+  ],
+  "int8_quantization": [
+    "feng2025tessera"
+  ],
+  "inter_stream_capacity_competition": [
+    "hou2026aef"
+  ],
+  "landslide_conditioning_factors": [
+    "cheng2026from"
+  ],
+  "lcz_upscaling": [
+    "ko2026exploring"
+  ],
+  "location_embeddings": [
+    "plas2026better"
+  ],
+  "low_shot_transfer": [
+    "brown2025alphaearth"
+  ],
+  "modifiable_areal_unit_problem": [
+    "gong2026earth"
+  ],
+  "multi_source_fusion": [
+    "brown2025alphaearth"
+  ],
+  "multi_source_self_supervised_fusion": [
+    "hou2026aef"
+  ],
+  "mutual_information_analysis": [
+    "qu2026utilizing"
+  ],
+  "nighttime lights": [
+    "hou2026slum"
+  ],
+  "nighttime_lights": [
+    "hou2026aef"
+  ],
+  "oil_palm_plantation_mapping": [
+    "brown2025alphaearth"
+  ],
+  "pixel_embeddings": [
+    "plas2026better"
+  ],
+  "pixel_wise_foundation_model": [
+    "feng2025tessera"
+  ],
+  "platonic_representation_hypothesis": [
+    "plas2026better"
+  ],
+  "points_of_interest": [
+    "hou2026aef"
+  ],
+  "prediction_in_ungauged_basins": [
+    "qu2026utilizing"
+  ],
+  "pseudo-label supervision": [
+    "hou2026slum"
+  ],
+  "rainfall_runoff_modeling": [
+    "qu2026utilizing"
+  ],
+  "reference_data_resolution": [
+    "ko2026exploring"
+  ],
+  "regionalization": [
+    "qu2026utilizing"
+  ],
+  "representation_efficiency": [
+    "gong2026earth"
+  ],
+  "ridge_regression_baseline": [
+    "hamoudzadeh2026inferring"
+  ],
+  "scale_transfer": [
+    "ma2025harvesting"
+  ],
+  "sdg_monitoring": [
+    "gong2026earth"
+  ],
+  "sentinel1_sentinel2_fusion": [
+    "feng2025tessera"
+  ],
+  "socioeconomic_foundation_embedding": [
+    "hou2026aef"
+  ],
+  "socioeconomic_prediction": [
+    "gong2026earth"
+  ],
+  "spatial block cross-validation": [
+    "hou2026slum"
+  ],
+  "spatial_autocorrelation": [
+    "pettersson2025leveraging"
+  ],
+  "spatial_scale_of_classes": [
+    "plas2026better"
+  ],
+  "specialist-generalist taxonomy": [
+    "benavidesmartinez2026what"
+  ],
+  "streamflow_prediction": [
+    "qu2026utilizing"
+  ],
+  "sub-pixel density estimation": [
+    "hou2026slum"
+  ],
+  "subsurface_heterogeneity": [
+    "qu2026utilizing"
+  ],
+  "surface_emissivity": [
+    "brown2025alphaearth"
+  ],
+  "surface_height_mapping": [
+    "hamoudzadeh2026inferring"
+  ],
+  "temporal_alignment": [
+    "cheng2026from"
+  ],
+  "temporal_sampling_invariance": [
+    "feng2025tessera"
+  ],
+  "terrain_elevation": [
+    "hamoudzadeh2026inferring"
+  ],
+  "tillage_mapping": [
+    "ma2025harvesting"
+  ],
+  "tree_genera_classification": [
+    "brown2025alphaearth"
+  ],
+  "tree_species_classification": [
+    "feng2025tessera"
+  ],
+  "unet": [
+    "hamoudzadeh2026inferring"
+  ],
+  "unet++": [
+    "hamoudzadeh2026inferring"
+  ],
+  "urban_signal_prediction": [
+    "gong2026earth"
+  ],
+  "vision_transformer": [
+    "cheng2026from"
+  ],
+  "wudapt": [
+    "ko2026exploring"
+  ]
+}

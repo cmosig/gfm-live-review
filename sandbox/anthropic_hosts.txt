@@ -1,0 +1,8 @@
+# Egress allowlist for the sandbox proxy — the ONLY hosts the extractor
+# container may reach. This is the reviewed exception to the source-tree
+# "no api.anthropic.com" guard (tests/test_no_api.py): naming a host to
+# *restrict* egress to it is the opposite of making an API call to it.
+# One host per line; blank lines and #-comments ignored.
+api.anthropic.com
+statsig.anthropic.com
+console.anthropic.com

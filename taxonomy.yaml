@@ -1,0 +1,74 @@
+# taxonomy.yaml
+#
+# This is the ONLY file a human is ever expected to hand-edit.
+#
+# `axes`, `tasks`, and `limitations` are CLOSED ENUMS presented to the
+# extractor. Anything the model wants to say that is not in these lists is
+# emitted as a `proposed_tag` instead, and promoted below automatically once it
+# has been proposed by >= 2 papers (see aggregate.py). Below that threshold it
+# waits in state/pending_tags.json.
+#
+# Everything ABOVE the auto-managed sentinel near the bottom is yours to edit;
+# your comments here are preserved across automatic promotions. Do not remove an
+# axis/task/limitation that existing cards already reference without re-running a
+# backfill: aggregation validates against this file.
+
+# ---------------------------------------------------------------------------
+# Research-goal axes G1-G12. Each is a question we want the corpus to answer.
+# ---------------------------------------------------------------------------
+axes:
+  - G1_label_rich_parity        # Match task-specific models when labels are plentiful
+  - G2_label_scarce_efficiency  # Win under few labels (label efficiency)
+  - G3_spatial_transfer         # Generalise to unseen regions
+  - G4_temporal_transfer        # Generalise across time / to unseen dates
+  - G5_cost                     # Compute / inference / storage cost
+  - G6_compactness              # Embedding dimensionality / footprint
+  - G7_interpretability         # Are the embeddings interpretable?
+  - G8_uncertainty              # Calibration / uncertainty quantification
+  - G9_ecological_fine_scale    # Fine-scale ecology, forests, mixed pixels
+  - G10_human_semantics         # Human / socioeconomic signal (wealth, slums)
+  - G11_complementarity         # Do models complement each other when combined?
+  - G12_openness                # Open weights / open data / reproducibility
+
+# ---------------------------------------------------------------------------
+# Downstream task vocabulary. Grows automatically via proposed_tags.
+# ---------------------------------------------------------------------------
+tasks:
+  - land_cover_classification
+  - crop_type_mapping
+  - crop_yield_estimation
+  - local_climate_zone_classification
+  - canopy_height_estimation
+  - biomass_estimation
+  - landslide_susceptibility
+  - flood_mapping
+  - hydrological_modeling
+  - wealth_mapping
+  - poverty_mapping
+  - slum_detection
+  - population_density
+  - urban_signal_mapping
+  - socioeconomic_estimation
+  - change_detection
+  - semantic_segmentation
+  - representation_probing
+
+# ---------------------------------------------------------------------------
+# Controlled limitation vocabulary. Cards may ONLY use these tags.
+# ---------------------------------------------------------------------------
+limitations:
+  - temporal_transfer
+  - spatial_transfer
+  - interpretability
+  - uncertainty
+  - mixed_pixels
+  - human_semantics
+  - time_sensitivity
+  - benchmark_narrowness
+  - compute_cost
+  - data_bias
+
+# >>> auto-managed below (auto-promoted tags); human edits above are preserved >>>
+promoted_tags:
+- satellite_embeddings
+- urban_morphology

@@ -1,0 +1,31 @@
+# Offline CI. No secrets, no docker, no `claude`, no network. Just the guards
+# and the pure-Python logic. If any of these fail, the safety properties the
+# project is built on have regressed.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install (pinned deps)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+      - name: Run tests (offline)
+        run: pytest -q
+      - name: No-API source guard (belt & braces)
+        run: |
+          ! grep -rniI "anthropic_api_key" --include="*.py" --include="*.toml" \
+             --include="*.yaml" --include="Dockerfile" pipeline sandbox pyproject.toml

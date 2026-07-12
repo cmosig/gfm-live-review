@@ -1,0 +1,12 @@
+# Fire once a day, with a randomised delay so we're a polite API citizen, and
+# Persistent=true so a missed run (machine asleep) fires on next boot.
+[Unit]
+Description=Run gfm-live-review daily
+
+[Timer]
+OnCalendar=*-*-* 03:30:00
+RandomizedDelaySec=1800
+Persistent=true
+
+[Install]
+WantedBy=timers.target

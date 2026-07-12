@@ -1,0 +1,28 @@
+# Daily extraction + publish run. Extraction runs in the Docker sandbox; the
+# push happens from here (never from GitHub Actions), so the repo holds no
+# credentials and never goes "inactive" enough for GitHub to disable schedules.
+#
+# Install (user units, recommended — no root, uses your login + rootless docker):
+#   mkdir -p ~/.config/systemd/user
+#   cp deploy/gfm-review.* ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now gfm-review.timer
+#   loginctl enable-linger "$USER"     # so the timer runs when you're logged out
+#
+# Dry run:  systemctl --user start gfm-review.service ; journalctl --user -u gfm-review -f
+[Unit]
+Description=gfm-live-review daily run (ingest, extract, aggregate, publish)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/projects/gfm-live-review
+# Adjust the interpreter path if you use a venv/conda env.
+ExecStart=/usr/bin/env python3 -m pipeline.run
+# Never let a single run wedge the timer.
+TimeoutStartSec=3600
+Nice=10
+
+[Install]
+WantedBy=default.target

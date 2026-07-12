@@ -1,0 +1,119 @@
+/* GFM Live Review — vanilla CSS, light/dark aware, no external assets. */
+:root {
+  --bg: #ffffff; --fg: #1a1d21; --muted: #5b6470; --line: #e2e6ea;
+  --card: #f7f9fb; --accent: #2563eb;
+  --consensus: #1a7f37; --consensus-bg: #dcfce7;
+  --contested: #b45309; --contested-bg: #fef3c7;
+  --thin: #6b7280; --thin-bg: #eceff2;
+  --gap: #9ca3af; --gap-bg: #f3f4f6;
+  --better: #1a7f37; --worse: #b91c1c; --parity: #6b7280;
+  --warn: #b91c1c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1216; --fg: #e6e9ec; --muted: #9aa4b0; --line: #262b31;
+    --card: #171b21; --accent: #6ea8fe;
+    --consensus: #4ade80; --consensus-bg: #0f2d1a;
+    --contested: #fbbf24; --contested-bg: #33260a;
+    --thin: #9aa4b0; --thin-bg: #1c2126;
+    --gap: #6b7280; --gap-bg: #171b21;
+    --better: #4ade80; --worse: #f87171; --parity: #9aa4b0;
+    --warn: #f87171;
+  }
+}
+:root[data-theme="dark"] { color-scheme: dark; }
+:root[data-theme="light"] { color-scheme: light; }
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 15px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+header, main, footer { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+header { padding-top: 22px; }
+.head-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+h1 { font-size: 22px; margin: 0; }
+.subtitle { color: var(--muted); margin: 6px 0 14px; font-size: 13px; }
+.toggle { display: flex; align-items: center; gap: 7px; font-size: 13px; color: var(--muted); cursor: pointer; }
+
+nav#tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.tab { background: none; border: none; padding: 9px 13px; font-size: 14px; color: var(--muted);
+  cursor: pointer; border-bottom: 2px solid transparent; }
+.tab:hover { color: var(--fg); }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+
+main { padding-top: 18px; padding-bottom: 40px; min-height: 50vh; }
+.lede { color: var(--muted); font-size: 13.5px; margin: 0 0 16px; }
+.scroll { overflow-x: auto; }
+
+/* chips */
+.chip { display: inline-block; padding: 2px 9px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.chip-consensus { color: var(--consensus); background: var(--consensus-bg); }
+.chip-contested { color: var(--contested); background: var(--contested-bg); }
+.chip-thin { color: var(--thin); background: var(--thin-bg); }
+.chip-gap { color: var(--gap); background: var(--gap-bg); }
+
+/* matrix */
+table { border-collapse: collapse; }
+.matrix th, .matrix td { border: 1px solid var(--line); text-align: center; }
+.matrix .rowhead { text-align: right; padding: 4px 10px; font-weight: 600; white-space: nowrap; background: var(--card); }
+.matrix th.rot { padding: 8px 6px; font-size: 12px; max-width: 42px; }
+.matrix td.cell { width: 44px; height: 40px; cursor: pointer; font-weight: 700; }
+.matrix td.cell:hover { outline: 2px solid var(--accent); outline-offset: -2px; }
+.matrix td.empty { background: transparent; cursor: default; }
+td.chip-consensus { background: var(--consensus-bg); color: var(--consensus); }
+td.chip-contested { background: var(--contested-bg); color: var(--contested); }
+td.chip-thin { background: var(--thin-bg); color: var(--thin); }
+td.chip-gap { background: var(--gap-bg); color: var(--gap); }
+
+/* group cards (contested) */
+.gcard { border: 1px solid var(--line); border-radius: 8px; padding: 14px; margin-bottom: 14px; background: var(--card); }
+.gcard-head { display: flex; align-items: center; gap: 10px; justify-content: space-between; flex-wrap: wrap; }
+.gcard-sub { color: var(--muted); font-size: 12.5px; margin: 4px 0 10px; }
+
+/* claim tables */
+table.claims, table.board, table.registry { width: 100%; font-size: 13px; }
+table.claims th, table.board th, table.registry th { text-align: left; color: var(--muted); font-weight: 600;
+  border-bottom: 1px solid var(--line); padding: 6px 8px; }
+table.claims td, table.board td, table.registry td { padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.span-row td { border-bottom: 1px solid var(--line); padding-top: 0; }
+.quote-label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+.quote { font-style: italic; color: var(--fg); }
+.dir { font-weight: 600; }
+.dir-better { color: var(--better); } .dir-worse { color: var(--worse); } .dir-parity { color: var(--parity); }
+.badge { font-size: 10px; padding: 1px 5px; border-radius: 4px; margin-left: 6px; }
+.badge.self { background: var(--contested-bg); color: var(--contested); }
+
+/* axes */
+.axis-row { border-bottom: 1px solid var(--line); padding: 10px 0; }
+.axis-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.axis-name { font-family: ui-monospace, Menlo, monospace; font-size: 13.5px; }
+
+/* board / spark */
+.spark { font-family: ui-monospace, Menlo, monospace; font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+
+/* stats */
+.stats { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; font-size: 12.5px; }
+.stat.warn { color: var(--warn); }
+
+/* doi status */
+.doi { font-size: 12px; font-weight: 600; }
+.doi-verified { color: var(--consensus); }
+.doi-mismatch, .doi-unresolved { color: var(--contested); }
+.doi-no_doi_found { color: var(--muted); }
+
+a { color: var(--accent); }
+
+/* modal */
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,.5); display: flex; align-items: flex-start;
+  justify-content: center; padding: 40px 16px; overflow-y: auto; z-index: 10; }
+.modal.hidden { display: none; }
+.modal-box { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; max-width: 960px;
+  width: 100%; padding: 20px; position: relative; }
+.modal-close { position: absolute; top: 10px; right: 12px; background: none; border: none; font-size: 24px;
+  color: var(--muted); cursor: pointer; line-height: 1; }
+.modal-box h2 { font-size: 16px; margin: 0 0 12px; }
+
+footer { color: var(--muted); font-size: 12px; border-top: 1px solid var(--line); padding-top: 14px; padding-bottom: 30px; }
+code { background: var(--card); padding: 1px 5px; border-radius: 4px; font-size: 12px; }

@@ -1,0 +1,2 @@
+{"ts": "2026-07-12T16:31:07.786649+00:00", "event": "run", "seed": true, "extractor": "host", "duration_s": 59.7, "ingested": 13, "accepted": 13, "new": 2, "carded": 1, "quarantined": 0, "skipped": 0, "quota_stopped": false, "n_cards": 1, "quarantine": 0}
+{"ts": "2026-07-12T16:44:36.489811+00:00", "event": "run", "seed": true, "extractor": "host", "duration_s": 766.3, "ingested": 13, "accepted": 13, "new": 12, "carded": 12, "quarantined": 0, "skipped": 1, "quota_stopped": false, "n_cards": 13, "quarantine": 0}

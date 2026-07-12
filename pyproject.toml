@@ -1,0 +1,36 @@
+[project]
+name = "gfm-live-review"
+version = "0.1.0"
+description = "A self-updating literature review of geospatial foundation models."
+readme = "README.md"
+requires-python = ">=3.11"
+
+# Pinned dependencies. There is deliberately NO `anthropic` SDK here and there
+# never will be: all inference goes through the Claude Code CLI (`claude -p`)
+# using the local subscription login. See README threat model.
+dependencies = [
+    "pydantic==2.12.5",
+    "PyYAML==6.0.2",
+    "requests==2.32.3",
+    "feedparser==6.0.12",
+    "PyMuPDF==1.28.0",
+    "rapidfuzz==3.14.5",
+    "Jinja2==3.1.6",
+    "python-dateutil==2.9.0.post0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["pipeline"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

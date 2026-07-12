@@ -1,0 +1,83 @@
+# models.yaml
+#
+# The geospatial foundation models we track. `key` is the canonical identifier
+# used in Claim.model and Claim.baseline. `aliases` are matched (case-insensitive)
+# against title/abstract during screening and against claim text during
+# extraction. `openalex_work_id` (optional) is the model's own defining paper,
+# used to detect self-evaluation via author overlap (see verify.py / §8).
+#
+# `task_specific` is a reserved baseline value (a bespoke supervised model), not
+# a foundation model, so it is not listed here.
+
+models:
+  - key: alphaearth
+    name: AlphaEarth Foundations
+    aliases: ["alphaearth", "alpha earth", "alphaearth foundations", "AEF", "AEFM", "satellite embedding v1", "google satellite embedding"]
+    openalex_work_id: null
+    arxiv_id: "2507.22291"
+
+  - key: tessera
+    name: TESSERA
+    aliases: ["tessera"]
+    openalex_work_id: null
+    arxiv_id: "2506.20380"
+
+  - key: prithvi
+    name: Prithvi
+    aliases: ["prithvi", "prithvi-eo", "prithvi eo"]
+    openalex_work_id: null
+    arxiv_id: null
+
+  - key: clay
+    name: Clay
+    aliases: ["clay foundation model", "clay v1", "clay model"]
+    openalex_work_id: null
+    arxiv_id: null
+
+  - key: presto
+    name: Presto
+    aliases: ["presto", "lightweight pretrained transformer remote sensing"]
+    openalex_work_id: null
+    arxiv_id: null
+
+  - key: satclip
+    name: SatCLIP
+    aliases: ["satclip"]
+    openalex_work_id: null
+    arxiv_id: null
+
+  - key: geoclip
+    name: GeoCLIP
+    aliases: ["geoclip"]
+    openalex_work_id: null
+    arxiv_id: null
+
+  - key: satmae
+    name: SatMAE
+    aliases: ["satmae"]
+    openalex_work_id: null
+    arxiv_id: null
+
+  - key: scalemae
+    name: Scale-MAE
+    aliases: ["scale-mae", "scalemae", "scale mae"]
+    openalex_work_id: null
+    arxiv_id: null
+
+  - key: dofa
+    name: DOFA
+    aliases: ["dofa", "dynamic one-for-all"]
+    openalex_work_id: null
+    arxiv_id: null
+
+  - key: croma
+    name: CROMA
+    aliases: ["croma"]
+    openalex_work_id: null
+    arxiv_id: null
+
+  - key: galileo
+    name: Galileo
+    aliases: ["galileo"]
+    openalex_work_id: null
+    arxiv_id: null

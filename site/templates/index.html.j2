@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'">
+<title>GFM Live Review — Geospatial Foundation Models</title>
+<link rel="stylesheet" href="style.css">
+
+<header>
+  <div class="head-row">
+    <h1>Geospatial Foundation Models — Live Review</h1>
+    <label class="toggle">
+      <input type="checkbox" id="excludeSelf">
+      <span>Exclude self-evaluations</span>
+    </label>
+  </div>
+  <p class="subtitle" id="subtitle"></p>
+  <nav id="tabs"></nav>
+</header>
+
+<main id="view"></main>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-box">
+    <button id="modalClose" class="modal-close" aria-label="Close">×</button>
+    <h2 id="modalTitle"></h2>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<footer>
+  <p>Every number links in ≤2 clicks to a paper and a verbatim supporting quote.
+     Inference is subscription-only via a local CLI; this site holds no
+     credentials. The one human-edited file is <code>taxonomy.yaml</code>.</p>
+</footer>
+
+<!-- Inert data blob: parsed by app.js, never executed. -->
+<script type="application/json" id="gfm-data">{{ embedded_json | safe }}</script>
+<script src="app.js"></script>
