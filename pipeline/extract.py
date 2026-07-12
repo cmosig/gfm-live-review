@@ -144,6 +144,12 @@ Hard rules:
     Anything else goes in `proposed_tags`, never invented into the enums.
   - `span` MUST be an exact substring of the provided paper text. If you cannot
     find a verbatim <=25-word quote for a number, DROP that claim.
+  - Baselines: the comparison that matters is foundation model vs a
+    TASK-SPECIFIC model (a bespoke supervised model built for that exact task).
+    Whenever the paper reports one, emit the claim with baseline
+    "task_specific" and its score as baseline_value — even if the paper also
+    compares foundation models against each other. Model-vs-model claims may be
+    emitted IN ADDITION, never instead.
   - NEVER pool numbers across datasets.
   - Do NOT output a DOI or any identifier; that is added later from metadata.
   - If a field is unknown, use null or an empty list. Do not fabricate.

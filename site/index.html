@@ -26,9 +26,11 @@
          <em>verbatim quote</em> from it — nothing is editorialised.</p>
       <dl>
         <dt>Direction <span class="dir dir-better">▲ better</span> <span class="dir dir-worse">▼ worse</span> <span class="dir dir-parity">≈ parity</span></dt>
-        <dd>Each result compares a <strong>foundation model against a baseline</strong> (a task-specific
-            model or another foundation model) on one dataset. <em>Better</em> = the foundation model wins,
-            <em>worse</em> = the baseline wins, <em>parity</em> = effectively equal.</dd>
+        <dd>Colours always compare a <strong>foundation model against a task-specific model</strong> — a bespoke
+            supervised model built for that exact task, i.e. what a practitioner would otherwise use — on one
+            dataset. <em>Better</em> = the foundation model wins, <em>worse</em> = the task-specific model wins,
+            <em>parity</em> = effectively equal. Model-vs-model results (e.g. TESSERA vs AlphaEarth) are shown
+            in the details but never drive the colours; a cell with only those is left neutral.</dd>
         <dt>Evidence labels</dt>
         <dd><span class="chip chip-consensus">consensus</span> ≥3 papers and ≥80% agree on the direction ·
             <span class="chip chip-contested">contested</span> ≥3 papers but they disagree ·
@@ -378,7 +380,7 @@
     "all": {
       "axes": [
         {
-          "agreement": 0.5,
+          "agreement": 0.6,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -606,13 +608,14 @@
               "value": 0.708
             }
           ],
-          "direction": "better",
+          "direction": "parity",
           "label": "contested",
           "n_claims": 14,
-          "n_papers": 10
+          "n_papers": 5,
+          "n_papers_all": 10
         },
         {
-          "agreement": 1.0,
+          "agreement": null,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -664,13 +667,14 @@
               "value": 66.15
             }
           ],
-          "direction": "better",
-          "label": "thin",
+          "direction": null,
+          "label": "gap",
           "n_claims": 3,
-          "n_papers": 2
+          "n_papers": 0,
+          "n_papers_all": 2
         },
         {
-          "agreement": 0.5,
+          "agreement": 0.667,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -805,10 +809,11 @@
           "direction": "better",
           "label": "contested",
           "n_claims": 8,
-          "n_papers": 6
+          "n_papers": 3,
+          "n_papers_all": 6
         },
         {
-          "agreement": 0.667,
+          "agreement": null,
           "axis": "G4_temporal_transfer",
           "claims": [
             {
@@ -892,10 +897,11 @@
               "value": 60.1
             }
           ],
-          "direction": "better",
-          "label": "contested",
+          "direction": null,
+          "label": "gap",
           "n_claims": 5,
-          "n_papers": 3
+          "n_papers": 0,
+          "n_papers_all": 3
         },
         {
           "agreement": null,
@@ -904,10 +910,11 @@
           "direction": null,
           "label": "gap",
           "n_claims": 0,
-          "n_papers": 0
+          "n_papers": 0,
+          "n_papers_all": 0
         },
         {
-          "agreement": 1.0,
+          "agreement": null,
           "axis": "G6_compactness",
           "claims": [
             {
@@ -927,10 +934,11 @@
               "value": 98.0
             }
           ],
-          "direction": "parity",
-          "label": "thin",
+          "direction": null,
+          "label": "gap",
           "n_claims": 1,
-          "n_papers": 1
+          "n_papers": 0,
+          "n_papers_all": 1
         },
         {
           "agreement": null,
@@ -939,7 +947,8 @@
           "direction": null,
           "label": "gap",
           "n_claims": 0,
-          "n_papers": 0
+          "n_papers": 0,
+          "n_papers_all": 0
         },
         {
           "agreement": null,
@@ -948,10 +957,11 @@
           "direction": null,
           "label": "gap",
           "n_claims": 0,
-          "n_papers": 0
+          "n_papers": 0,
+          "n_papers_all": 0
         },
         {
-          "agreement": 0.667,
+          "agreement": null,
           "axis": "G9_ecological_fine_scale",
           "claims": [
             {
@@ -1019,13 +1029,14 @@
               "value": -2.0
             }
           ],
-          "direction": "better",
-          "label": "contested",
+          "direction": null,
+          "label": "gap",
           "n_claims": 4,
-          "n_papers": 3
+          "n_papers": 0,
+          "n_papers_all": 3
         },
         {
-          "agreement": 1.0,
+          "agreement": null,
           "axis": "G10_human_semantics",
           "claims": [
             {
@@ -1109,13 +1120,14 @@
               "value": 0.69
             }
           ],
-          "direction": "better",
-          "label": "thin",
+          "direction": null,
+          "label": "gap",
           "n_claims": 5,
-          "n_papers": 1
+          "n_papers": 0,
+          "n_papers_all": 1
         },
         {
-          "agreement": 1.0,
+          "agreement": null,
           "axis": "G11_complementarity",
           "claims": [
             {
@@ -1151,10 +1163,11 @@
               "value": 76.7
             }
           ],
-          "direction": "better",
-          "label": "thin",
+          "direction": null,
+          "label": "gap",
           "n_claims": 2,
-          "n_papers": 2
+          "n_papers": 0,
+          "n_papers_all": 2
         },
         {
           "agreement": null,
@@ -1163,7 +1176,8 @@
           "direction": null,
           "label": "gap",
           "n_claims": 0,
-          "n_papers": 0
+          "n_papers": 0,
+          "n_papers_all": 0
         }
       ],
       "groups": [
@@ -2377,10 +2391,11 @@
             "model": "alphaearth",
             "n_claims": 4,
             "n_papers": 1,
+            "n_papers_all": 1,
             "task": "canopy_height_estimation"
           },
           "alphaearth\tchange_detection": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": null,
@@ -2415,11 +2430,12 @@
                 "value": 79.3
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "alphaearth",
             "n_claims": 2,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "change_detection"
           },
           "alphaearth\tcrop_yield_estimation": {
@@ -2479,10 +2495,11 @@
             "model": "alphaearth",
             "n_claims": 3,
             "n_papers": 1,
+            "n_papers_all": 1,
             "task": "crop_yield_estimation"
           },
           "alphaearth\thydrological_modeling": {
-            "agreement": 0.5,
+            "agreement": 1.0,
             "claims": [
               {
                 "baseline": null,
@@ -2533,15 +2550,16 @@
                 "value": 0.612
               }
             ],
-            "direction": "better",
+            "direction": "parity",
             "label": "thin",
             "model": "alphaearth",
             "n_claims": 3,
-            "n_papers": 2,
+            "n_papers": 1,
+            "n_papers_all": 2,
             "task": "hydrological_modeling"
           },
           "alphaearth\tland_cover_classification": {
-            "agreement": 0.5,
+            "agreement": null,
             "claims": [
               {
                 "baseline": null,
@@ -2592,11 +2610,12 @@
                 "value": 71.1
               }
             ],
-            "direction": "parity",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "alphaearth",
             "n_claims": 3,
-            "n_papers": 2,
+            "n_papers": 0,
+            "n_papers_all": 2,
             "task": "land_cover_classification"
           },
           "alphaearth\tlandslide_susceptibility": {
@@ -2624,10 +2643,11 @@
             "model": "alphaearth",
             "n_claims": 1,
             "n_papers": 1,
+            "n_papers_all": 1,
             "task": "landslide_susceptibility"
           },
           "alphaearth\tlocal_climate_zone_classification": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": null,
@@ -2662,15 +2682,16 @@
                 "value": 60.1
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "alphaearth",
             "n_claims": 2,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "local_climate_zone_classification"
           },
           "alphaearth\trepresentation_probing": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": null,
@@ -2721,11 +2742,12 @@
                 "value": 0.635
               }
             ],
-            "direction": "worse",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "alphaearth",
             "n_claims": 3,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "representation_probing"
           },
           "alphaearth\tslum_detection": {
@@ -2796,15 +2818,16 @@
                 "value": -2.0
               }
             ],
-            "direction": "better",
+            "direction": "parity",
             "label": "thin",
             "model": "alphaearth",
             "n_claims": 4,
             "n_papers": 1,
+            "n_papers_all": 1,
             "task": "slum_detection"
           },
           "alphaearth\tsocioeconomic_estimation": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": "prithvi",
@@ -2823,15 +2846,16 @@
                 "value": 0.44
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "alphaearth",
             "n_claims": 1,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "socioeconomic_estimation"
           },
           "alphaearth\turban_signal_mapping": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": "prithvi",
@@ -2914,15 +2938,16 @@
                 "value": 0.15
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "alphaearth",
             "n_claims": 5,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "urban_signal_mapping"
           },
           "alphaearth\twealth_mapping": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": null,
@@ -2941,15 +2966,16 @@
                 "value": 0.546
               }
             ],
-            "direction": "parity",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "alphaearth",
             "n_claims": 1,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "wealth_mapping"
           },
           "clay\turban_signal_mapping": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": "alphaearth",
@@ -2968,15 +2994,16 @@
                 "value": 0.55
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "clay",
             "n_claims": 1,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "urban_signal_mapping"
           },
           "tessera\tbiomass_estimation": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": "alphaearth",
@@ -2995,15 +3022,16 @@
                 "value": 27.43
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "tessera",
             "n_claims": 1,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "biomass_estimation"
           },
           "tessera\tcanopy_height_estimation": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": "alphaearth",
@@ -3038,15 +3066,16 @@
                 "value": 12.2
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "tessera",
             "n_claims": 2,
-            "n_papers": 2,
+            "n_papers": 0,
+            "n_papers_all": 2,
             "task": "canopy_height_estimation"
           },
           "tessera\tcrop_type_mapping": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": "alphaearth",
@@ -3081,15 +3110,16 @@
                 "value": 53.12
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "tessera",
             "n_claims": 2,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "crop_type_mapping"
           },
           "tessera\tland_cover_classification": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": "alphaearth",
@@ -3124,15 +3154,16 @@
                 "value": 60.58
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "tessera",
             "n_claims": 2,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "land_cover_classification"
           },
           "tessera\tlocal_climate_zone_classification": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": null,
@@ -3151,15 +3182,16 @@
                 "value": 0.69
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "tessera",
             "n_claims": 1,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "local_climate_zone_classification"
           },
           "tessera\tsemantic_segmentation": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": "alphaearth",
@@ -3178,11 +3210,12 @@
                 "value": 50.68
               }
             ],
-            "direction": "worse",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "tessera",
             "n_claims": 1,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "semantic_segmentation"
           }
         },
@@ -3213,7 +3246,7 @@
     "no_self_eval": {
       "axes": [
         {
-          "agreement": 0.5,
+          "agreement": 0.6,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -3364,7 +3397,8 @@
           "direction": "parity",
           "label": "contested",
           "n_claims": 9,
-          "n_papers": 8
+          "n_papers": 5,
+          "n_papers_all": 8
         },
         {
           "agreement": null,
@@ -3373,10 +3407,11 @@
           "direction": null,
           "label": "gap",
           "n_claims": 0,
-          "n_papers": 0
+          "n_papers": 0,
+          "n_papers_all": 0
         },
         {
-          "agreement": 0.4,
+          "agreement": 0.667,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -3495,10 +3530,11 @@
           "direction": "better",
           "label": "contested",
           "n_claims": 7,
-          "n_papers": 5
+          "n_papers": 3,
+          "n_papers_all": 5
         },
         {
-          "agreement": 1.0,
+          "agreement": null,
           "axis": "G4_temporal_transfer",
           "claims": [
             {
@@ -3534,10 +3570,11 @@
               "value": 0.466
             }
           ],
-          "direction": "better",
-          "label": "thin",
+          "direction": null,
+          "label": "gap",
           "n_claims": 2,
-          "n_papers": 1
+          "n_papers": 0,
+          "n_papers_all": 1
         },
         {
           "agreement": null,
@@ -3546,10 +3583,11 @@
           "direction": null,
           "label": "gap",
           "n_claims": 0,
-          "n_papers": 0
+          "n_papers": 0,
+          "n_papers_all": 0
         },
         {
-          "agreement": 1.0,
+          "agreement": null,
           "axis": "G6_compactness",
           "claims": [
             {
@@ -3569,10 +3607,11 @@
               "value": 98.0
             }
           ],
-          "direction": "parity",
-          "label": "thin",
+          "direction": null,
+          "label": "gap",
           "n_claims": 1,
-          "n_papers": 1
+          "n_papers": 0,
+          "n_papers_all": 1
         },
         {
           "agreement": null,
@@ -3581,7 +3620,8 @@
           "direction": null,
           "label": "gap",
           "n_claims": 0,
-          "n_papers": 0
+          "n_papers": 0,
+          "n_papers_all": 0
         },
         {
           "agreement": null,
@@ -3590,10 +3630,11 @@
           "direction": null,
           "label": "gap",
           "n_claims": 0,
-          "n_papers": 0
+          "n_papers": 0,
+          "n_papers_all": 0
         },
         {
-          "agreement": 0.5,
+          "agreement": null,
           "axis": "G9_ecological_fine_scale",
           "claims": [
             {
@@ -3645,13 +3686,14 @@
               "value": -2.0
             }
           ],
-          "direction": "better",
-          "label": "thin",
+          "direction": null,
+          "label": "gap",
           "n_claims": 3,
-          "n_papers": 2
+          "n_papers": 0,
+          "n_papers_all": 2
         },
         {
-          "agreement": 1.0,
+          "agreement": null,
           "axis": "G10_human_semantics",
           "claims": [
             {
@@ -3735,13 +3777,14 @@
               "value": 0.69
             }
           ],
-          "direction": "better",
-          "label": "thin",
+          "direction": null,
+          "label": "gap",
           "n_claims": 5,
-          "n_papers": 1
+          "n_papers": 0,
+          "n_papers_all": 1
         },
         {
-          "agreement": 1.0,
+          "agreement": null,
           "axis": "G11_complementarity",
           "claims": [
             {
@@ -3777,10 +3820,11 @@
               "value": 76.7
             }
           ],
-          "direction": "better",
-          "label": "thin",
+          "direction": null,
+          "label": "gap",
           "n_claims": 2,
-          "n_papers": 2
+          "n_papers": 0,
+          "n_papers_all": 2
         },
         {
           "agreement": null,
@@ -3789,7 +3833,8 @@
           "direction": null,
           "label": "gap",
           "n_claims": 0,
-          "n_papers": 0
+          "n_papers": 0,
+          "n_papers_all": 0
         }
       ],
       "groups": [
@@ -4613,6 +4658,7 @@
             "model": "alphaearth",
             "n_claims": 4,
             "n_papers": 1,
+            "n_papers_all": 1,
             "task": "canopy_height_estimation"
           },
           "alphaearth\tcrop_yield_estimation": {
@@ -4672,6 +4718,7 @@
             "model": "alphaearth",
             "n_claims": 3,
             "n_papers": 1,
+            "n_papers_all": 1,
             "task": "crop_yield_estimation"
           },
           "alphaearth\thydrological_modeling": {
@@ -4715,10 +4762,11 @@
             "model": "alphaearth",
             "n_claims": 2,
             "n_papers": 1,
+            "n_papers_all": 1,
             "task": "hydrological_modeling"
           },
           "alphaearth\tland_cover_classification": {
-            "agreement": 0.5,
+            "agreement": null,
             "claims": [
               {
                 "baseline": null,
@@ -4769,11 +4817,12 @@
                 "value": 71.1
               }
             ],
-            "direction": "parity",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "alphaearth",
             "n_claims": 3,
-            "n_papers": 2,
+            "n_papers": 0,
+            "n_papers_all": 2,
             "task": "land_cover_classification"
           },
           "alphaearth\tlandslide_susceptibility": {
@@ -4801,10 +4850,11 @@
             "model": "alphaearth",
             "n_claims": 1,
             "n_papers": 1,
+            "n_papers_all": 1,
             "task": "landslide_susceptibility"
           },
           "alphaearth\trepresentation_probing": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": null,
@@ -4855,11 +4905,12 @@
                 "value": 0.635
               }
             ],
-            "direction": "worse",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "alphaearth",
             "n_claims": 3,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "representation_probing"
           },
           "alphaearth\tslum_detection": {
@@ -4930,15 +4981,16 @@
                 "value": -2.0
               }
             ],
-            "direction": "better",
+            "direction": "parity",
             "label": "thin",
             "model": "alphaearth",
             "n_claims": 4,
             "n_papers": 1,
+            "n_papers_all": 1,
             "task": "slum_detection"
           },
           "alphaearth\tsocioeconomic_estimation": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": "prithvi",
@@ -4957,15 +5009,16 @@
                 "value": 0.44
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "alphaearth",
             "n_claims": 1,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "socioeconomic_estimation"
           },
           "alphaearth\turban_signal_mapping": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": "prithvi",
@@ -5048,15 +5101,16 @@
                 "value": 0.15
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "alphaearth",
             "n_claims": 5,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "urban_signal_mapping"
           },
           "alphaearth\twealth_mapping": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": null,
@@ -5075,15 +5129,16 @@
                 "value": 0.546
               }
             ],
-            "direction": "parity",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "alphaearth",
             "n_claims": 1,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "wealth_mapping"
           },
           "clay\turban_signal_mapping": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": "alphaearth",
@@ -5102,15 +5157,16 @@
                 "value": 0.55
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "clay",
             "n_claims": 1,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "urban_signal_mapping"
           },
           "tessera\tcanopy_height_estimation": {
-            "agreement": 1.0,
+            "agreement": null,
             "claims": [
               {
                 "baseline": "alphaearth",
@@ -5129,11 +5185,12 @@
                 "value": 12.2
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": null,
+            "label": "gap",
             "model": "tessera",
             "n_claims": 1,
-            "n_papers": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "canopy_height_estimation"
           }
         },

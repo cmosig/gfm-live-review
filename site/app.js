@@ -159,23 +159,25 @@ function closeModal() { document.getElementById("modal").classList.add("hidden")
 function labelChip(label, extra) {
   const t = extra ? `${label} · ${extra}` : label;
   const titles = {
-    consensus: "At least 3 papers and ≥80% agree on the direction",
-    contested: "At least 3 papers, but they disagree on the direction",
-    thin: "Only 1–2 papers so far — not enough for a consensus",
+    consensus: "At least 3 papers and ≥80% agree vs a task-specific model",
+    contested: "At least 3 papers, but they disagree vs a task-specific model",
+    thin: "Only 1–2 papers vs a task-specific model so far",
     gap: "No paper has produced evidence here yet",
+    nobaseline: "Papers exist, but none compares against a task-specific model yet",
   };
   return el("span", { class: "chip chip-" + label, text: t, title: titles[label] || "" });
 }
 
 function directionLegend() {
   const items = [
-    ["sw-better", "▲", "better — the foundation model beats its baseline"],
-    ["sw-worse", "▼", "worse — the baseline wins"],
+    ["sw-better", "▲", "better — the foundation model beats the task-specific model"],
+    ["sw-worse", "▼", "worse — the task-specific model wins"],
     ["sw-parity", "≈", "parity — effectively equal"],
     ["sw-mixed", "±", "mixed — papers disagree (contested)"],
+    ["sw-none", "·", "no task-specific comparison yet (only model-vs-model results)"],
   ];
   const legend = el("div", { class: "legend" }, [
-    el("span", { class: "lg-title", text: "Cell colour = direction of the evidence:" }),
+    el("span", { class: "lg-title", text: "Cell colour = direction vs a task-specific model:" }),
     ...items.map(([cls, glyph, label]) => el("span", { class: "lg-item" }, [
       el("span", { class: "lg-swatch " + cls, text: glyph }),
       txt(label),
@@ -193,10 +195,11 @@ function directionLegend() {
 function renderMatrix(root) {
   const m = currentView().matrix;
   root.appendChild(el("p", { class: "lede", text:
-    "Where has each foundation model been evaluated, and how did it do? The number in a cell is how many " +
-    "papers evaluated that model on that task; the colour shows which way their evidence points, relative " +
-    "to each paper's baseline. Click any cell to see the underlying results with their verbatim quotes. " +
-    "Results are never averaged across datasets — the colour summarises per-paper direction only." }));
+    "Where has each foundation model been evaluated, and does it beat what a practitioner would otherwise " +
+    "build? The number in a cell is how many papers evaluated that model on that task; the colour shows " +
+    "the direction against a task-specific model — the comparison that matters for adoption. Cells with " +
+    "only model-vs-model results are left neutral (·). Click any cell for all underlying results, including " +
+    "model-vs-model ones, with verbatim quotes. Numbers are never averaged across datasets." }));
   root.appendChild(directionLegend());
   if (!m.tasks.length) { root.appendChild(el("p", { class: "empty-note", text: "No claims yet." })); return; }
 
@@ -212,19 +215,33 @@ function renderMatrix(root) {
         cells.push(el("td", { class: "cell empty", title: "No evidence yet" }));
         continue;
       }
+      // Direction/consensus reflect ONLY foundation-model-vs-task-specific
+      // claims. cell.n_papers is that subset; n_papers_all is total evidence.
+      const hasTS = cell.n_papers > 0;
       const mixed = cell.label === "contested";
-      const dirCls = mixed ? "mixed" : (cell.direction || "parity");
-      const glyph = mixed ? "±" : (DIR_GLYPH[cell.direction] || "");
-      const dirText = mixed ? "papers disagree" : (DIR_WORD[cell.direction] || "");
+      let dirCls, glyph, dirText;
+      if (!hasTS) {
+        dirCls = "none"; glyph = "·";
+        dirText = "only model-vs-model results so far — no task-specific comparison";
+      } else if (mixed) {
+        dirCls = "mixed"; glyph = "±"; dirText = "papers disagree vs a task-specific model";
+      } else {
+        dirCls = cell.direction || "parity";
+        glyph = DIR_GLYPH[cell.direction] || "";
+        dirText = DIR_WORD[cell.direction] || "";
+      }
+      const nPapers = cell.n_papers_all !== undefined ? cell.n_papers_all : cell.n_papers;
+      const tsNote = hasTS
+        ? `${cell.n_papers} vs task-specific${cell.agreement !== null ? `, ${Math.round(cell.agreement * 100)}% agree` : ""}`
+        : "no task-specific comparison yet";
       const td = el("td", {
-        class: `cell dir-cell-${dirCls} ev-${cell.label}`,
-        title: `${modelName(model)} on ${taskName(task)}: ${cell.n_papers} paper(s), ${cell.n_claims} result(s) — ` +
-               `${dirText}${cell.agreement !== null ? ` (${Math.round(cell.agreement * 100)}% agree)` : ""}. ` +
-               `Evidence: ${cell.label}. Click for details.`,
+        class: `cell dir-cell-${dirCls} ev-${hasTS ? cell.label : "none"}`,
+        title: `${modelName(model)} on ${taskName(task)}: ${nPapers} paper(s), ${cell.n_claims} result(s) — ` +
+               `${dirText} (${tsNote}). Click for details.`,
         onclick: () => openModal(`${modelName(model)} — ${taskName(task)}`, claimTable(cell.claims)),
       }, [
         el("span", { class: "glyph", text: glyph }),
-        el("span", { class: "n", text: cell.n_papers }),
+        el("span", { class: "n", text: nPapers }),
       ]);
       cells.push(td);
     }
@@ -236,10 +253,12 @@ function renderMatrix(root) {
 
 function renderContested(root) {
   root.appendChild(el("p", { class: "lede", text:
-    "Groups where at least three papers measured the same thing — same task, same dataset, same metric, " +
-    "same label regime — and reached opposite conclusions. This is the most informative page: disagreement " +
-    "usually means a hidden variable (region, preprocessing, label budget) that the field hasn't isolated yet." }));
-  const groups = currentView().groups.filter(g => g.label === "contested");
+    "Groups where at least three papers measured the same thing against a task-specific model — same task, " +
+    "same dataset, same metric, same label regime — and reached opposite conclusions about whether the " +
+    "foundation model wins. This is the most informative page: disagreement usually means a hidden variable " +
+    "(region, preprocessing, label budget) that the field hasn't isolated yet." }));
+  const groups = currentView().groups.filter(
+    g => g.label === "contested" && g.baseline === "task_specific");
   if (!groups.length) {
     root.appendChild(el("p", { class: "empty-note", text:
       "No contested dataset-level groups yet — so far, no ≥3 papers measured the same model on the same " +
@@ -315,10 +334,22 @@ function renderAxes(root) {
       el("span", { class: "axis-name", text: info[0] }),
       el("p", { class: "axis-q", text: info[1] }),
     ]);
-    const right = el("div", { class: "axis-right" }, [
-      labelChip(a.label, a.n_papers
-        ? `${a.n_papers} paper${a.n_papers === 1 ? "" : "s"}` : "no evidence"),
-    ]);
+    // Consensus label reflects vs-task-specific claims; the count reflects all
+    // evidence. An axis with papers but no task-specific comparison is neither a
+    // gap nor a consensus — it's "no baseline".
+    const total = a.n_papers_all !== undefined ? a.n_papers_all : a.n_papers;
+    let chipLabel, chipExtra;
+    if (total === 0) {
+      chipLabel = "gap"; chipExtra = "no evidence";
+    } else if (a.n_papers === 0) {
+      chipLabel = "nobaseline";
+      chipExtra = `${total} paper${total === 1 ? "" : "s"}, none vs task-specific`;
+    } else {
+      chipLabel = a.label;
+      chipExtra = `${a.n_papers} vs task-specific` +
+        (total > a.n_papers ? ` of ${total}` : "");
+    }
+    const right = el("div", { class: "axis-right" }, [labelChip(chipLabel, chipExtra)]);
     const head = el("div", { class: "axis-head" }, [left, right]);
     if (a.claims.length) {
       row.style.cursor = "pointer";

@@ -26,9 +26,11 @@
          <em>verbatim quote</em> from it — nothing is editorialised.</p>
       <dl>
         <dt>Direction <span class="dir dir-better">▲ better</span> <span class="dir dir-worse">▼ worse</span> <span class="dir dir-parity">≈ parity</span></dt>
-        <dd>Each result compares a <strong>foundation model against a baseline</strong> (a task-specific
-            model or another foundation model) on one dataset. <em>Better</em> = the foundation model wins,
-            <em>worse</em> = the baseline wins, <em>parity</em> = effectively equal.</dd>
+        <dd>Colours always compare a <strong>foundation model against a task-specific model</strong> — a bespoke
+            supervised model built for that exact task, i.e. what a practitioner would otherwise use — on one
+            dataset. <em>Better</em> = the foundation model wins, <em>worse</em> = the task-specific model wins,
+            <em>parity</em> = effectively equal. Model-vs-model results (e.g. TESSERA vs AlphaEarth) are shown
+            in the details but never drive the colours; a cell with only those is left neutral.</dd>
         <dt>Evidence labels</dt>
         <dd><span class="chip chip-consensus">consensus</span> ≥3 papers and ≥80% agree on the direction ·
             <span class="chip chip-contested">contested</span> ≥3 papers but they disagree ·

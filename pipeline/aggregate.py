@@ -165,9 +165,26 @@ def group_view(rows: list[ClaimRow]) -> list[dict]:
     return out
 
 
+def _vs_task_specific(rows: list[ClaimRow]) -> list[ClaimRow]:
+    """The rows whose direction is meaningful for the headline question.
+
+    Direction on the dashboard ALWAYS means "foundation model vs a
+    task-specific model". Claims comparing two foundation models, or with no
+    baseline at all, stay visible in click-throughs but never drive the
+    consensus/direction classification.
+    """
+    return [r for r in rows if r.baseline == config.TASK_SPECIFIC]
+
+
 def matrix_view(rows: list[ClaimRow]) -> dict:
     """Model x task cells, coloured by consensus. Numbers are never pooled;
-    the label reflects paper-level agreement, click-through shows the groups."""
+    the label reflects paper-level agreement, click-through shows the groups.
+
+    Classification (direction/label/agreement) is computed ONLY from claims
+    whose baseline is a task-specific model; `n_papers_all` counts every paper
+    with any claim in the cell, so the UI can show total evidence while
+    colouring strictly by the vs-task-specific subset.
+    """
     cells: dict[tuple, list[ClaimRow]] = defaultdict(list)
     models, tasks = set(), set()
     for r in rows:
@@ -176,9 +193,10 @@ def matrix_view(rows: list[ClaimRow]) -> dict:
         tasks.add(r.task)
     cell_out = {}
     for (model, task), grp in cells.items():
-        cls = classify(grp)
+        cls = classify(_vs_task_specific(grp))
         cell_out[f"{model}\t{task}"] = {
-            "model": model, "task": task, "n_claims": len(grp), **cls,
+            "model": model, "task": task, "n_claims": len(grp),
+            "n_papers_all": len({r.paper_key for r in grp}), **cls,
             "claims": [_claim_payload(r) for r in grp],
         }
     return {
@@ -196,10 +214,13 @@ def axes_view(rows: list[ClaimRow]) -> list[dict]:
     out = []
     for axis in config.axes_ordered():
         grp = by_axis.get(axis, [])
-        cls = classify(grp)
+        # Direction/consensus only from vs-task-specific claims (see matrix_view);
+        # n_papers_all still counts every paper contributing any evidence.
+        cls = classify(_vs_task_specific(grp))
         out.append({
             "axis": axis,
             "n_claims": len(grp),
+            "n_papers_all": len({r.paper_key for r in grp}),
             **cls,
             "claims": [_claim_payload(r) for r in grp],
         })

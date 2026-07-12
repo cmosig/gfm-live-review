@@ -87,6 +87,43 @@ def test_matrix_cell_click_through_has_claims():
     assert cell["claims"] and cell["claims"][0]["span"]
 
 
+def test_direction_only_from_vs_task_specific():
+    # Three papers, all "better", but comparing TESSERA to another FOUNDATION
+    # model (alphaearth) — not a task-specific model. Direction must NOT be set.
+    cards = [make_card(f"pap{i}", claims=[
+        make_claim(f"pap{i}", 1, baseline="alphaearth", direction="better")])
+        for i in range(3)]
+    m = aggregate.matrix_view(aggregate.flatten(cards))
+    cell = m["cells"]["tessera\tcrop_type_mapping"]
+    assert cell["direction"] is None          # no vs-task-specific evidence
+    assert cell["n_papers"] == 0              # vs-task-specific paper count
+    assert cell["n_papers_all"] == 3          # but total evidence is visible
+    assert cell["n_claims"] == 3
+    assert cell["label"] == "gap"
+
+
+def test_matrix_mixes_baselines_classifies_only_task_specific():
+    # Two task-specific claims (one better, one worse) + a model-vs-model claim.
+    c = make_card("pap0", claims=[
+        make_claim("pap0", 1, baseline="task_specific", direction="better"),
+        make_claim("pap0", 2, baseline="alphaearth", direction="worse"),
+    ])
+    m = aggregate.matrix_view(aggregate.flatten([c]))
+    cell = m["cells"]["tessera\tcrop_type_mapping"]
+    # Only the task-specific claim's direction counts.
+    assert cell["direction"] == "better"
+    assert cell["n_papers"] == 1 and cell["n_papers_all"] == 1
+
+
+def test_axes_view_direction_vs_task_specific_only():
+    cards = [make_card("pap0", axes=["G1_label_rich_parity"], claims=[
+        make_claim("pap0", 1, baseline="alphaearth", direction="better")])]
+    axes = aggregate.axes_view(aggregate.flatten(cards))
+    g1 = next(a for a in axes if a["axis"] == "G1_label_rich_parity")
+    assert g1["direction"] is None and g1["n_papers"] == 0
+    assert g1["n_papers_all"] == 1
+
+
 def test_tag_promotion_threshold():
     # A proposed tag with 2 distinct papers is promoted; 1 stays pending.
     cards = [
