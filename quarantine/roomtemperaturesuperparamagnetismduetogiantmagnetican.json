@@ -1,0 +1,23 @@
+{
+  "key": "room temperature superparamagnetism due to giant magnetic an",
+  "title": "Room-temperature superparamagnetism due to giant magnetic anisotropy in Mo$_{S}$ defected single-layer MoS$_{2}$",
+  "reason": "DOI title mismatch (possible metadata error)",
+  "quarantined_at": "2026-07-12T19:10:54.430745+00:00",
+  "payload": {
+    "candidate": {
+      "title": "Room-temperature superparamagnetism due to giant magnetic anisotropy in Mo$_{S}$ defected single-layer MoS$_{2}$",
+      "abstract": "Room-temperature superparamagnetism due to a large magnetic anisotropy energy (MAE) of a single atom magnet has always been a prerequisite for nanoscale magnetic devices. Realization of two dimensional (2D) materials such as single-layer (SL) MoS$_{2}$, has provided new platforms for exploring magnetic effects, which is important for both fundamental research and for industrial applications. Here, we use density functional theory (DFT) to show that the antisite defect (Mo$_{S}$) in SL MoS$_{2}$ is magnetic in nature with a magnetic moment of $μ$ of $\\sim$ 2$μ_{B}$ and, remarkably, exhibits an exceptionally large atomic scale MAE$=\\varepsilon_{\\parallel}-\\varepsilon_{\\perp}$ of $\\sim$500 meV. Our calculations reveal that this giant anisotropy is the joint effect of strong crystal field and significant spin-orbit coupling (SOC). In addition, the magnetic moment $μ$ can be tuned between 1$μ_{B}$ and 3$μ_{B}$ by varying the Fermi energy $\\varepsilon_{F}$, which can be achieved either by changing the gate voltage or by chemical doping. We also show that MAE can be raised to $\\sim$1 eV with n-type doping of the MoS$_{2}$:Mo$_{S}$ sample. Our systematic investigations deepen our understanding of spin-related phenomena in SL MoS$_{2}$ and could provide a route to nanoscale spintronic devices.",
+      "authors": [
+        "M. A. Khan",
+        "Michael N. Leuenberger"
+      ],
+      "author_ids": [],
+      "arxiv_id": "1709.01653",
+      "doi": "10.1088/1361-648X/aab113",
+      "venue": "arXiv",
+      "date": "2017-09-06",
+      "openalex_id": null,
+      "source": "arxiv"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "key": "not so presto outcomes of sluggish prestin in outer hair cel",
+  "title": "Not so presto? Outcomes of sluggish prestin in outer hair cells",
+  "reason": "DOI title mismatch (possible metadata error)",
+  "quarantined_at": "2026-07-12T19:03:05.268423+00:00",
+  "payload": {
+    "candidate": {
+      "title": "Not so presto? Outcomes of sluggish prestin in outer hair cells",
+      "abstract": "Prestin (SLC26A5), a protein essential for the sensitivity of the mammalian ear, was so named from \\emph{presto}. The assumption was that this membrane protein supports fast movement of outer hair cells (OHCs) that matches the mammalian hearing range, up to 20 kHz in general and beyond, depending on the species. \\emph{In vitro} data from isolated OHCs appeared to be consistent with such frequencies. However, some recent reports cast doubts on this assumption, suggesting that the intrinsic transition rates of this protein are much lower, about 3 kHz for guinea pigs, not covering the auditory frequency range of the animal. Recent \\emph{in vivo} data also show that the amplitude of OHC motion rolls off well below the best frequency of the location. The present report examines whether or not these resent observations are compatible with the physiological function of OHCs by using simple piezoelectric models.",
+      "authors": [
+        "Kuni H. Iwasa"
+      ],
+      "author_ids": [],
+      "arxiv_id": "2004.14932",
+      "doi": "10.1063/5.0189196",
+      "venue": "arXiv",
+      "date": "2020-04-30",
+      "openalex_id": null,
+      "source": "arxiv"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "key": "stellar population astrophysics spa with the tng nlte atmosp",
+  "title": "Stellar Population Astrophysics (SPA) with the TNG: NLTE atmospheric parameters and abundances of giant stars in 33 Open Clusters",
+  "reason": "DOI title mismatch (possible metadata error)",
+  "quarantined_at": "2026-07-12T19:17:41.423558+00:00",
+  "payload": {
+    "candidate": {
+      "title": "Stellar Population Astrophysics (SPA) with the TNG: NLTE atmospheric parameters and abundances of giant stars in 33 Open Clusters",
+      "abstract": "Open clusters serve as important tools for accurately studying the chemical evolution of the Milky Way. By combining precise chemical data from high-resolution spectra with information on their distances and ages, we can effectively uncover the processes that have shaped our Galaxy. This study aims to derive NLTE atmospheric parameters and chemical abundances for approximately one hundred giant stars across 33 open clusters with near-solar metallicity. The clusters span a wide range of ages, enabling an assessment of the presence and extent of any age-related abundance gradients. In the Stellar Population Astrophysics (SPA) project, we acquired new high-resolution spectra of open clusters using the HARPS-N echelle spectrograph at the Telescopio Nazionale Galileo. We chemically characterized nine open clusters for the first time and reanalyzed previously studied SPA clusters, resulting in a consistent and homogeneous sample. We determined NLTE atmospheric parameters using the equivalent width method and derived NLTE chemical abundances through spectral synthesis for various elements, including alpha elements (Mg, Si, and Ti), light odd-Z elements (Na, Al), iron-peak elements (Mn, Co, and Ni), and neutron-capture elements (Sr, Y, and Eu). Our findings are compared with the existing literature, revealing good agreement. We examine the trends of [X/Fe] versus age, confirming previous observations and the enrichment patterns predicted by nucleosynthesis processes. Positive correlations with age are present for Mg, Si, Ti, Al, Mn, Co, Ni, and Sr, while Na and Y and Eu show a negative trend. This study emphasizes the significance of NLTE corrections and reinforces the utility of open clusters as tracers of Galactic chemical evolution. Furthermore, we provide a benchmark sample of NLTE abundances for upcoming open cluster surveys within large-scale projects such as 4MOST and WEAVE.",
+      "authors": [
+        "M. Dal Ponte",
+        "V. D'Orazi",
+        "A. Bragaglia",
+        "A. R. Casey",
+        "N. Storm",
+        "L. Spina",
+        "J. Alonso-Santiago",
+        "G. Andreuzzi",
+        "A. Frasca",
+        "J. Kos",
+        "S. Lucatello",
+        "D. Romano",
+        "A. Vallenari",
+        "N. Vernekar"
+      ],
+      "author_ids": [],
+      "arxiv_id": "2507.15122",
+      "doi": "10.1051/0004-6361/202554258",
+      "venue": "arXiv",
+      "date": "2025-07-20",
+      "openalex_id": null,
+      "source": "arxiv"
+    }
+  }
+}

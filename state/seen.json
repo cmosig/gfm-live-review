@@ -1,4 +1,20 @@
 {
+  "3d cloud reconstruction through geospatially aware masked autoencoders": {
+    "key": "girtsou2025cloud",
+    "status": "quarantined"
+  },
+  "a complex valued sar foundation model based on physically inspired representation learning": {
+    "key": "wang2025complex",
+    "status": "quarantined"
+  },
+  "a denser hydrogen inferred from first principles simulations challenges jupiter s interior models": {
+    "key": "cozza2025denser",
+    "status": "quarantined"
+  },
+  "a fourier domain jerk search for binary pulsars": {
+    "key": "-",
+    "status": "quarantined_mismatch"
+  },
   "a geospatial approach to predicting desert locust breeding grounds in africa": {
     "arxiv_id": "2403.06860",
     "dropped_claims": 0,
@@ -8,6 +24,30 @@
   "a gpu based single pulse search pipeline gsp with database and its application to the commensal radio astronomy fast survey crafts": {
     "key": "you2021gpu",
     "status": "off_topic"
+  },
+  "a new method to derive an empirical lower limit on the mass density of a ufo": {
+    "key": "loeb2024new",
+    "status": "quarantined"
+  },
+  "a presto based parallel pulsar search pipeline used for fast drift scan data": {
+    "key": "yu2019presto",
+    "status": "off_topic"
+  },
+  "a recipe for improving remote sensing vlm zero shot generalization": {
+    "key": "barzilai2025recipe",
+    "status": "quarantined"
+  },
+  "a satellite foundation model for improved wealth monitoring": {
+    "key": "zheng2026satellite",
+    "status": "quarantined"
+  },
+  "a semi coherent search for optical pulsations from scorpius x 1": {
+    "key": "placa2025semi",
+    "status": "quarantined"
+  },
+  "a sensor agnostic domain generalization framework for leveraging geospatial foundation models enhancing semantic segmentation viasynergistic pseudo labeling and generative learning": {
+    "key": "yaghmour2025sensor",
+    "status": "quarantined"
   },
   "a sentinel 3 foundation model for ocean colour": {
     "key": "dawson2025sentinel",
@@ -20,6 +60,18 @@
   "a survey for radio pulsars and transients in the 10 pc region around sgr a": {
     "key": "desvignes2025survey",
     "status": "off_topic"
+  },
+  "a survey of dynamical and gravitational lensing tests in scale invariance the fall of dark matter": {
+    "key": "maeder2024survey",
+    "status": "quarantined"
+  },
+  "a survey on remote sensing foundation models from vision to multimodality": {
+    "key": "huang2025survey",
+    "status": "quarantined"
+  },
+  "a well motivated model of pedestrian dynamics": {
+    "key": "sten2026well",
+    "status": "quarantined"
   },
   "a wispr of the venus surface analysis of the venus nightside thermal emission at optical wavelengths": {
     "key": "lustigyaeger2023wispr",
@@ -37,6 +89,10 @@
     "key": "kontogeorgiou2026accessibility",
     "status": "off_topic"
   },
+  "activation and alignment a causal account of the scientific revolution": {
+    "key": "sticker2026activation",
+    "status": "quarantined"
+  },
   "adapting prithvi eo for fallow detection for food water nexus vit adapter necks and parameter efficient backbone tuning of geospatial foundation model": {
     "arxiv_id": "2606.12218",
     "dropped_claims": 0,
@@ -47,11 +103,27 @@
     "key": "badkul2025adaptive",
     "status": "off_topic"
   },
+  "advancing plain vision transformer towards remote sensing foundation model": {
+    "key": "wang2022advancing",
+    "status": "quarantined"
+  },
   "aef econ toward plug and play socioeconomic foundation embeddings from alphaearth for urban remote sensing": {
     "arxiv_id": "2606.20697",
     "dropped_claims": 0,
     "key": "hou2026aef",
     "status": "carded"
+  },
+  "agentic ai for remote sensing technical challenges and research directions": {
+    "key": "munir2026agentic",
+    "status": "quarantined"
+  },
+  "agrifm a multi source temporal remote sensing foundation model for agriculture mapping": {
+    "key": "li2025agrifm",
+    "status": "quarantined"
+  },
+  "ai derived structural building intelligence for urban resilience an application in saint vincent and the grenadines": {
+    "key": "tingzon2025derived",
+    "status": "quarantined"
   },
   "alphaearth foundations an embedding field model for accurate and efficient global mapping from sparse label data": {
     "arxiv_id": "2507.22291",
@@ -65,11 +137,39 @@
     "key": "nazir2026alphaearth",
     "status": "carded"
   },
+  "an asymmetric formula for interval consonance and its relation to harmonic coincidence": {
+    "key": "roure2026asymmetric",
+    "status": "quarantined"
+  },
+  "an open benchmark dataset for geoai foundation models for oil palm mapping in indonesia": {
+    "key": "wafiq2025open",
+    "status": "quarantined"
+  },
+  "analyzing local representations of self supervised vision transformers": {
+    "key": "vanyan2023analyzing",
+    "status": "quarantined"
+  },
+  "any model any place any time get remote sensing foundation model embeddings on demand": {
+    "key": "ye2026any",
+    "status": "quarantined"
+  },
+  "any optical model a universal foundation model for optical remote sensing": {
+    "key": "li2025any",
+    "status": "quarantined"
+  },
+  "apple an evolution code for modeling giant planets": {
+    "key": "sur2024apple",
+    "status": "quarantined"
+  },
   "application and validation of geospatial foundation model data for the prediction of health facility programmatic outputs a case study in malawi": {
     "arxiv_id": "2510.25954",
     "dropped_claims": 0,
     "key": "metz2025application",
     "status": "carded"
+  },
+  "asiaco asiago spectroscopy and imaging atlas of comets": {
+    "key": "ochner2025asiaco",
+    "status": "quarantined"
   },
   "assessing the effectiveness of deep embeddings for tree species classification in the dutch forest inventory": {
     "arxiv_id": "2508.18829",
@@ -89,9 +189,29 @@
     "key": "li2023assessment",
     "status": "carded"
   },
+  "assessment of the point wise approach for the turbulent settling of finite size particles": {
+    "key": "battistaa2025assessment",
+    "status": "quarantined"
+  },
   "asymptotic shapes for stationary first passage percolation on virtually nilpotent groups": {
     "key": "auffinger2021asymptotic",
     "status": "off_topic"
+  },
+  "auroral acceleration generates electron beams in jupiter s middle magnetosphere": {
+    "key": "piasecki2026auroral",
+    "status": "quarantined"
+  },
+  "authentication security of prf gnss ranging": {
+    "key": "anderson2025authentication",
+    "status": "quarantined"
+  },
+  "background induced forces from quadratically coupled ultralight dark matter": {
+    "key": "bouley2026background",
+    "status": "quarantined"
+  },
+  "benchmarking foundation models for hyperspectral image classification application to cereal crop type mapping": {
+    "key": "elbarz2025benchmarking",
+    "status": "quarantined"
   },
   "benchmarking geospatial foundation models for agriculture applications": {
     "arxiv_id": "2606.29664",
@@ -117,6 +237,10 @@
     "key": "thasma2026beyond",
     "status": "carded"
   },
+  "beyond cosine decay on the effectiveness of infinite learning rate schedule for continual pre training": {
+    "key": "singh2025beyond",
+    "status": "quarantined"
+  },
   "biomazon a multimodal dataset for 3d forest structure and biomass modeling in the amazon basin": {
     "arxiv_id": "2606.05368",
     "dropped_claims": 0,
@@ -127,9 +251,45 @@
     "key": "white2022bits",
     "status": "off_topic"
   },
+  "botaclip contrastive learning for botany aware representation of earth observation data": {
+    "key": "cerna2025botaclip",
+    "status": "quarantined"
+  },
+  "brewing stronger features dual teacher distillation for multispectral earth observation": {
+    "key": "wolf2026brewing",
+    "status": "quarantined"
+  },
+  "bridging remote sensors with multisensor geospatial foundation models": {
+    "key": "han2024bridging",
+    "status": "quarantined"
+  },
   "building prescribed quantitative orbit equivalence with the group of integers": {
     "key": "-",
     "status": "quarantined_mismatch"
+  },
+  "buoyancy driven motion of non coalescing inertial drops microstructure modeling with nearest particle statistics": {
+    "key": "fintzi2024buoyancy",
+    "status": "quarantined"
+  },
+  "callisto s nonresonant orbit as an outcome of circum jovian disk substructure": {
+    "key": "yap2026callisto",
+    "status": "quarantined"
+  },
+  "can generative geospatial diffusion models excel as discriminative geospatial foundation models": {
+    "key": "jia2025can",
+    "status": "quarantined"
+  },
+  "can jupiter s atmospheric metallicity be different from the deep interior": {
+    "key": "mller2024can",
+    "status": "quarantined"
+  },
+  "cardinality estimation using gumbel distribution": {
+    "key": "ukasiewicz2020cardinality",
+    "status": "off_topic"
+  },
+  "causality in physics from galileo to einstein and beyond": {
+    "key": "angelis2025causality",
+    "status": "quarantined"
   },
   "characterization and benchmarking of a phase sensitive two qubit gate using direct digital synthesis": {
     "key": "tholn2023characterization",
@@ -145,11 +305,23 @@
     "key": "heiman2026characterizing",
     "status": "carded"
   },
+  "characterizing jupiter s interior using machine learning reveals four key structures": {
+    "key": "ziv2024characterizing",
+    "status": "quarantined"
+  },
+  "clay cnn hybrids leveraging geospatial foundation models as auxiliary context for landslide detection": {
+    "key": "vu2026clay",
+    "status": "quarantined"
+  },
   "clustering guided domain specific pretrained foundation model for very high resolution arctic remote sensing": {
     "arxiv_id": "2605.30467",
     "dropped_claims": 0,
     "key": "perera2026clustering",
     "status": "carded"
+  },
+  "commissioning an all sky infrared camera array for detection of airborne objects": {
+    "key": "domin2024commissioning",
+    "status": "quarantined"
   },
   "comparative assessment of multimodal earth observation data for soil moisture estimation": {
     "arxiv_id": "2602.18083",
@@ -157,11 +329,71 @@
     "key": "kontogiorgakis2026comparative",
     "status": "carded"
   },
+  "comprehensive vlbi observations of galileo satellites with the auscope array": {
+    "key": "schunck2026comprehensive",
+    "status": "quarantined"
+  },
+  "compressing vision transformers in geospatial transfer learning with manifold constrained optimization": {
+    "key": "snyder2026compressing",
+    "status": "quarantined"
+  },
+  "conditions for accretion favoring an unmelted callisto and a differentiated ganymede": {
+    "key": "bennacer2025conditions",
+    "status": "quarantined"
+  },
+  "context aware multimodal representation learning for spatio temporally explicit environmental modelling": {
+    "key": "peters2025context",
+    "status": "quarantined"
+  },
+  "continental scale habitat distribution modelling with multimodal earth observation foundation models": {
+    "key": "simoussi2025continental",
+    "status": "quarantined"
+  },
+  "continuation of an optical spectroscopic campaign of fermi blazar candidates with tng discovery of a new changing look blazar": {
+    "key": "crespo2025continuation",
+    "status": "quarantined"
+  },
+  "croma remote sensing representations with contrastive radar optical masked autoencoders": {
+    "key": "fuller2023croma",
+    "status": "quarantined"
+  },
   "cropland mapping using geospatial embeddings": {
     "arxiv_id": "2511.02923",
     "dropped_claims": 0,
     "key": "zvonkov2025cropland",
     "status": "carded"
+  },
+  "cross domain few shot learning for hyperspectral image classification based on mixup foundation model": {
+    "key": "paeedeh2026cross",
+    "status": "quarantined"
+  },
+  "cross scale mae a tale of multi scale exploitation in remote sensing": {
+    "key": "tang2024cross",
+    "status": "quarantined"
+  },
+  "cross sensor self supervised training and alignment for remote sensing": {
+    "key": "marsocci2024cross",
+    "status": "quarantined"
+  },
+  "crossearth sar a sar centric and billion scale geospatial foundation model for domain generalizable semantic segmentation": {
+    "key": "ye2026crossearth",
+    "status": "quarantined"
+  },
+  "cryo bench benchmarking foundation models for cryosphere applications": {
+    "key": "kaushik2026cryo",
+    "status": "quarantined"
+  },
+  "crystal oscillators in osnma enabled receivers an implementation view for automotive applications": {
+    "key": "ardizzon2025crystal",
+    "status": "quarantined"
+  },
+  "csmoe an efficient remote sensing foundation model with soft mixture of experts": {
+    "key": "hackel2025csmoe",
+    "status": "quarantined"
+  },
+  "darkvesselnet multi modal remote sensing and trajectory reasoning for dark vessel detection": {
+    "key": "sharma2026darkvesselnet",
+    "status": "quarantined"
   },
   "data caching for enterprise grade petabyte scale olap": {
     "key": "tang2024data",
@@ -181,21 +413,73 @@
     "key": "butsko2025deploying",
     "status": "carded"
   },
+  "detection and simulation of urban heat islands using a fine tuned geospatial foundation model": {
+    "key": "kreismann2025detection",
+    "status": "quarantined"
+  },
+  "detection and simulation of urban heat islands using a fine tuned geospatial foundation model for microclimate impact prediction": {
+    "key": "fleckenstein2025detection",
+    "status": "quarantined"
+  },
+  "detection of an nh 3 absorption band at 2 2 m on europa": {
+    "key": "emran2025detection",
+    "status": "quarantined"
+  },
+  "developing a foundation model for high resolution remote sensing data of the netherlands": {
+    "key": "vermeeren2026developing",
+    "status": "quarantined"
+  },
+  "discovery of two new pulsars in 47 tucanae ngc 104": {
+    "key": "-",
+    "status": "quarantined_mismatch"
+  },
+  "disdop distillation with domain priors for open vocabulary aerial object detection": {
+    "key": "xu2026disdop",
+    "status": "quarantined"
+  },
   "do foundation model embeddings improve cross country crop yield generalisation a leave one country out evaluation in sub saharan africa": {
     "arxiv_id": "2605.08113",
     "dropped_claims": 0,
     "key": "adjei2026foundation",
     "status": "carded"
   },
+  "dofa clip multimodal vision language foundation models for earth observation": {
+    "key": "xiong2025dofa",
+    "status": "quarantined"
+  },
   "dorronsoro s theorem in heisenberg groups": {
     "key": "fssler2019dorronsoro",
     "status": "off_topic"
+  },
+  "dynamics of an oscillatory boundary layer over a sediment bed in euler lagrange simulations": {
+    "key": "doren2024dynamics",
+    "status": "quarantined"
+  },
+  "dynamics of the velocity fluctuations in sedimenting suspensions of rigid fibres": {
+    "key": "chiarini2025dynamics",
+    "status": "quarantined"
+  },
+  "dynamicvis dynamic visual perception for efficient remote sensing foundation models": {
+    "key": "chen2025dynamicvis",
+    "status": "quarantined"
+  },
+  "earth embeddings as products taxonomy ecosystem and standardized access": {
+    "key": "fang2026earth",
+    "status": "quarantined"
   },
   "earth embeddings reveal diverse urban signals from space": {
     "arxiv_id": "2604.03456",
     "dropped_claims": 0,
     "key": "gong2026earth",
     "status": "carded"
+  },
+  "earthshift a benchmark for measuring robustness to real world distribution shifts in earth observation": {
+    "key": "doerksen2026earthshift",
+    "status": "quarantined"
+  },
+  "easyspec an open source python package for long slit spectroscopy": {
+    "key": "menezes2025easyspec",
+    "status": "quarantined"
   },
   "ecological mapping with geospatial foundation models": {
     "key": "mahlasi2026ecological",
@@ -215,6 +499,46 @@
     "key": "tao2018embedding",
     "status": "off_topic"
   },
+  "emerging flexible designs for geospatial multimodal foundation models": {
+    "key": "dias2026emerging",
+    "status": "quarantined"
+  },
+  "enabling intrinsic reasoning over dense geospatial embeddings with dfr gemma": {
+    "key": "zhang2026enabling",
+    "status": "quarantined"
+  },
+  "energetic proton losses reveal io s extended and longitudinally asymmetrical atmosphere": {
+    "key": "huybrighs2024energetic",
+    "status": "quarantined"
+  },
+  "enhancing contrastive learning for geolocalization by discovering hard negatives on semivariograms": {
+    "key": "chen2025enhancing",
+    "status": "quarantined"
+  },
+  "enhancing worldwide image geolocation by ensembling satellite based ground level attribute predictors": {
+    "key": "bianco2024enhancing",
+    "status": "quarantined"
+  },
+  "eos fm can an ensemble of specialist models act as a generalist feature extractor": {
+    "key": "adorni2025eos",
+    "status": "quarantined"
+  },
+  "evidence for optical pulsations from a redback millisecond pulsar": {
+    "key": "papitto2025evidence",
+    "status": "quarantined"
+  },
+  "evolution of jupiter and saturn with helium rain": {
+    "key": "howard2024evolution",
+    "status": "quarantined"
+  },
+  "examining quality of dgnss derived positioning in data in urban city a case study of an urban city in india": {
+    "key": "singla2024examining",
+    "status": "quarantined"
+  },
+  "exploring fluorine chemical evolution in the galactic disk the open cluster perspective": {
+    "key": "seshashayana2024exploring",
+    "status": "quarantined"
+  },
   "exploring the potential of alphaearth and tessera embeddings for fine scale local climate zone mapping a case study across five cities in switzerland": {
     "arxiv_id": "2606.20034",
     "dropped_claims": 0,
@@ -225,21 +549,69 @@
     "key": "-",
     "status": "quarantined_mismatch"
   },
+  "fast radio burst search cross spectrum vs auto spectrum method": {
+    "key": "liu2018fast",
+    "status": "off_topic"
+  },
+  "fine scale soil mapping in alaska with multimodal machine learning": {
+    "key": "lin2025fine",
+    "status": "quarantined"
+  },
+  "fine tune smarter not harder parameter efficient fine tuning for geospatial foundation models": {
+    "key": "martiescofet2025fine",
+    "status": "quarantined"
+  },
+  "fine tuning of geospatial foundation models for aboveground biomass estimation": {
+    "key": "muszynski2024fine",
+    "status": "quarantined"
+  },
   "finetuning ai foundation models to develop subgrid scale parameterizations a case study on atmospheric gravity waves": {
     "arxiv_id": "2509.03816",
     "dropped_claims": 0,
     "key": "gupta2025finetuning",
     "status": "carded"
   },
+  "first multi constellation observations of navigation satellite signals in the lunar domain by post processing l1 l5 iq snapshots": {
+    "key": "sciacca2025first",
+    "status": "quarantined"
+  },
+  "first on orbit demonstration of a geospatial foundation model": {
+    "key": "du2025first",
+    "status": "quarantined"
+  },
   "first passage percolation on hyperbolic groups": {
     "key": "basu2019first",
     "status": "off_topic"
+  },
+  "fleximo a flexible remote sensing foundation model": {
+    "key": "li2025fleximo",
+    "status": "quarantined"
   },
   "flood mapping from rgb imagery using a vision foundation model": {
     "arxiv_id": "2606.24120",
     "dropped_claims": 1,
     "key": "polushko2026flood",
     "status": "carded"
+  },
+  "floro a multimodal geospatial foundation model for ecological remote sensing across sensors and scales": {
+    "key": "rodriguez2026floro",
+    "status": "quarantined"
+  },
+  "fluctuations clustering and interaction driven dynamics in sedimenting particles at low galileo numbers a neural network approach": {
+    "key": "vovk2025fluctuations",
+    "status": "quarantined"
+  },
+  "fomo multi modal multi scale and multi task remote sensing foundation models for forest monitoring": {
+    "key": "bountos2023fomo",
+    "status": "quarantined"
+  },
+  "formation and trapping of co2 from cryogenic irradiation of carbonate": {
+    "key": "pandya2026formation",
+    "status": "quarantined"
+  },
+  "formation of water rich giant planet satellites at decretion disk ice lines": {
+    "key": "yap2026formation",
+    "status": "quarantined"
   },
   "foundation ai models for aerosol optical depth estimation from pace satellite data": {
     "arxiv_id": "2605.00678",
@@ -257,11 +629,19 @@
     "key": "jakubik2023foundation",
     "status": "carded"
   },
+  "foundation models for remote sensing and earth observation a survey": {
+    "key": "xiao2024foundation",
+    "status": "quarantined"
+  },
   "from landslide conditioning factors to satellite embeddings evaluating the utilisation of google alphaearth for landslide susceptibility mapping using deep learning": {
     "arxiv_id": "2601.07268",
     "dropped_claims": 0,
     "key": "cheng2026from",
     "status": "carded"
+  },
+  "from physics to foundation models a review of ai driven quantitative remote sensing inversion": {
+    "key": "yu2025from",
+    "status": "quarantined"
   },
   "from pixels to patches pooling strategies for earth embeddings": {
     "arxiv_id": "2603.02080",
@@ -279,6 +659,46 @@
     "key": "zhang2026fusar",
     "status": "carded"
   },
+  "fusionrs a large scale rgb infrared remote sensing dataset for dual modal vision language foundation models": {
+    "key": "han2026fusionrs",
+    "status": "quarantined"
+  },
+  "gaia a foundation model for operational atmospheric dynamics": {
+    "key": "asanjan2025gaia",
+    "status": "quarantined"
+  },
+  "galilei and huygens music and science": {
+    "key": "papadopoulos2025galilei",
+    "status": "quarantined"
+  },
+  "galileo a pseudospectral collocation framework for legged robots": {
+    "key": "chandler2024galileo",
+    "status": "quarantined"
+  },
+  "galileo and buonamici on the tides of the sea was something omitted from the dialogue": {
+    "key": "-",
+    "status": "quarantined_mismatch"
+  },
+  "galileo galilei and satellite navigation": {
+    "key": "angelis2025galileo",
+    "status": "quarantined"
+  },
+  "galileo learning global local features of many remote sensing modalities": {
+    "key": "tseng2025galileo",
+    "status": "quarantined"
+  },
+  "galileo project observatory class system architecture": {
+    "key": "bridgham2025galileo",
+    "status": "quarantined"
+  },
+  "galileo s quantization": {
+    "key": "l2024galileo",
+    "status": "quarantined"
+  },
+  "galileo s ship and the relativity principle": {
+    "key": "ramrez2024galileo",
+    "status": "quarantined"
+  },
   "gbd dart ii 175 mhz polarimetric observation of pulsars from gauribidanur and a new pulsar signal processing pipeline": {
     "key": "b2026gbd",
     "status": "quarantined"
@@ -289,9 +709,45 @@
     "key": "simumba2025geo",
     "status": "carded"
   },
+  "geoclip clip inspired alignment between locations and images for effective worldwide geo localization": {
+    "key": "cepeda2023geoclip",
+    "status": "quarantined"
+  },
+  "geoclip geometry aware clipping for differentially private sgd": {
+    "key": "gilani2025geoclip",
+    "status": "quarantined"
+  },
+  "geocrossbench cross band generalization for remote sensing": {
+    "key": "tamazyan2025geocrossbench",
+    "status": "quarantined"
+  },
+  "geodano geometric vlm with domain agnostic vision encoder": {
+    "key": "cho2025geodano",
+    "status": "quarantined"
+  },
   "geodesic trees and exceptional directions in fpp on hyperbolic groups": {
     "key": "basu2024geodesic",
     "status": "off_topic"
+  },
+  "geolink empowering remote sensing foundation model with openstreetmap data": {
+    "key": "bai2025geolink",
+    "status": "quarantined"
+  },
+  "geomeld toward semantically grounded foundation models for remote sensing": {
+    "key": "hasan2026geomeld",
+    "status": "quarantined"
+  },
+  "georope ground aware rotary adaptation for remote sensing foundation models": {
+    "key": "luo2026georope",
+    "status": "quarantined"
+  },
+  "geosane learning geospatial representations from models not data": {
+    "key": "hanna2026geosane",
+    "status": "quarantined"
+  },
+  "geospatial foundation model embeddings improve population estimation unevenly across space and scale": {
+    "key": "zhang2026geospatial",
+    "status": "quarantined"
   },
   "geospatial foundation models for image analysis evaluating and enhancing nasa ibm prithvi s domain adaptability": {
     "arxiv_id": "2409.00489",
@@ -299,9 +755,33 @@
     "key": "hsu2024geospatial",
     "status": "carded"
   },
+  "geospatial foundation models to enable progress on sustainable development goals": {
+    "key": "ghamisi2025geospatial",
+    "status": "quarantined"
+  },
+  "geovista geospatial vision tabular transformer for multimodal environment representation": {
+    "key": "liu2026geovista",
+    "status": "quarantined"
+  },
+  "gfm4mpm towards geospatial foundation models for mineral prospectivity mapping": {
+    "key": "daruna2024gfm4mpm",
+    "status": "quarantined"
+  },
+  "ggi lectures on boundary and asymptotic symmetries": {
+    "key": "speziale2025ggi",
+    "status": "quarantined"
+  },
+  "global and dense embeddings of earth major tom floating in the latent space": {
+    "key": "czerkawski2024global",
+    "status": "quarantined"
+  },
   "graphfire x physics informed graph attention networks and structural gradient boosting for building scale wildfire preparedness at the wildland urban interface": {
     "key": "-",
     "status": "quarantined_mismatch"
+  },
+  "grb 240529a a tale of two shocks": {
+    "key": "sun2024grb",
+    "status": "quarantined"
   },
   "habitat and land cover change detection in alpine protected areas a comparison of ai architectures": {
     "arxiv_id": "2511.00073",
@@ -319,11 +799,23 @@
     "key": "abbott2021higher",
     "status": "off_topic"
   },
+  "highfm towards a foundation model for learning representations from high frequency earth observation data": {
+    "key": "girtsou2026highfm",
+    "status": "quarantined"
+  },
   "hls gpt a generative pretrained transformer gpt for continental scale nasa harmonized landsat and sentinel 2 hls reflectance reconstruction across all bands on arbitrary dates": {
     "arxiv_id": "2606.18115",
     "dropped_claims": 0,
     "key": "li2026hls",
     "status": "carded"
+  },
+  "how do self supervised remote sensing vision models transfer to downstream tasks": {
+    "key": "romero2026how",
+    "status": "quarantined"
+  },
+  "how does the spatial distribution of pre training data affect geospatial foundation models": {
+    "key": "purohit2025how",
+    "status": "quarantined"
   },
   "how effective is pre training of large masked autoencoders for downstream earth observation tasks": {
     "arxiv_id": "2409.18536",
@@ -331,11 +823,23 @@
     "key": "sosa2024how",
     "status": "carded"
   },
+  "how much of a model do we need redundancy and slimmability in remote sensing foundation models": {
+    "key": "hackel2026how",
+    "status": "quarantined"
+  },
+  "how to embed matters evaluation of eo embedding design choices": {
+    "key": "gilch2026how",
+    "status": "quarantined"
+  },
   "huiyanearth sar a foundation model for high fidelity and low cost global remote sensing imagery generation": {
     "arxiv_id": "2604.11444",
     "dropped_claims": 0,
     "key": "liu2026huiyanearth",
     "status": "carded"
+  },
+  "hybiomass global hyperspectral imagery benchmark dataset for evaluating geospatial foundation models in forest aboveground biomass estimation": {
+    "key": "banze2025hybiomass",
+    "status": "quarantined"
   },
   "hyperkd distilling cross spectral knowledge in masked autoencoders via inverse domain shift with spatial aware masking and specialized loss": {
     "arxiv_id": "2508.09453",
@@ -343,8 +847,16 @@
     "key": "matin2025hyperkd",
     "status": "carded"
   },
+  "hyperloglog hll security inflating cardinality estimates": {
+    "key": "reviriego2020hyperloglog",
+    "status": "off_topic"
+  },
   "impact of rubin observatory cadence choices on supernovae photometric classification": {
     "key": "alves2022impact",
+    "status": "off_topic"
+  },
+  "improved acceleration of the gpu fourier domain acceleration search algorithm": {
+    "key": "admek2017improved",
     "status": "off_topic"
   },
   "in context learning enables continental scale subsurface temperature prediction from sparse local observations": {
@@ -352,6 +864,10 @@
     "dropped_claims": 0,
     "key": "omalley2026context",
     "status": "carded"
+  },
+  "in depth characterization of the kepler 10 three planet system with harps n radial velocities and kepler transit timing variations": {
+    "key": "bonomo2025depth",
+    "status": "quarantined"
   },
   "increasing the detectability of long period and nulling pulsars in next generation pulsar surveys": {
     "key": "grover2024increasing",
@@ -363,9 +879,33 @@
     "key": "hamoudzadeh2026inferring",
     "status": "carded"
   },
+  "instageo compute efficient geospatial machine learning from data to deployment": {
+    "key": "yusuf2025instageo",
+    "status": "quarantined"
+  },
+  "integrating evolutionary biology into physics classroom scaling dimension form and function": {
+    "key": "das2024integrating",
+    "status": "quarantined"
+  },
+  "interpolation of gedi biomass estimates with calibrated uncertainty quantification": {
+    "key": "young2026interpolation",
+    "status": "quarantined"
+  },
   "intra query runtime elasticity for cloud native data analysis": {
     "key": "zhang2025intra",
     "status": "off_topic"
+  },
+  "invariant features for global crop type classification": {
+    "key": "tong2025invariant",
+    "status": "quarantined"
+  },
+  "ion neutral chemistry at icy moons the case of ganymede": {
+    "key": "beth2025ion",
+    "status": "quarantined"
+  },
+  "ionosphere of ganymede galileo observations versus test particle simulation": {
+    "key": "beth2025ionosphere",
+    "status": "quarantined"
   },
   "isoperimetric profiles and regular embeddings of locally compact groups": {
     "key": "paucar2024isoperimetric",
@@ -375,8 +915,28 @@
     "key": "correia2025isoperimetric",
     "status": "off_topic"
   },
+  "jackknife araim efficient gnss integrity monitoring for simultaneous faults under non gaussian errors": {
+    "key": "yan2025jackknife",
+    "status": "quarantined"
+  },
+  "jointly spatial temporal representation learning for individual trajectories": {
+    "key": "huang2023jointly",
+    "status": "quarantined"
+  },
+  "jupiter s interior with an inverted helium gradient": {
+    "key": "nettelmann2025jupiter",
+    "status": "quarantined"
+  },
+  "kidsat satellite imagery to map childhood poverty dataset and benchmark": {
+    "key": "sharma2024kidsat",
+    "status": "quarantined"
+  },
   "land cover and flood type govern the detection limits of satellite based flood mapping across diverse global flood events": {
     "key": "kolluru2026land",
+    "status": "quarantined"
+  },
+  "landsat bench datasets and benchmarks for landsat foundation models": {
+    "key": "corley2025landsat",
     "status": "quarantined"
   },
   "landslide hazard mapping with geospatial foundation models geographical generalizability data scarcity and band adaptability": {
@@ -385,11 +945,23 @@
     "key": "li2025landslide",
     "status": "carded"
   },
+  "large scale gnss spreading code optimization": {
+    "key": "yang2024large",
+    "status": "quarantined"
+  },
+  "leap a rapid neural surrogate of multi fluid mhd at europa": {
+    "key": "reddy2026leap",
+    "status": "quarantined"
+  },
   "lepa learning geometric equivariance in satellite remote sensing data with a predictive architecture": {
     "arxiv_id": "2603.07246",
     "dropped_claims": 0,
     "key": "scheurer2026lepa",
     "status": "carded"
+  },
+  "leveraging ai multimodal geospatial foundation models for improved near real time flood mapping at a global scale": {
+    "key": "tulbure2025leveraging",
+    "status": "quarantined"
   },
   "leveraging compact satellite embeddings and graph neural networks for large scale poverty mapping": {
     "arxiv_id": "2511.01408",
@@ -397,13 +969,29 @@
     "key": "pettersson2025leveraging",
     "status": "carded"
   },
+  "leveraging lstm for predictive modeling of satellite clock bias": {
+    "key": "bhatt2024leveraging",
+    "status": "quarantined"
+  },
+  "lightweight metadata aware mixture of experts masked autoencoder for earth observation": {
+    "key": "albughdadi2025lightweight",
+    "status": "quarantined"
+  },
   "lightweight pre trained transformers for remote sensing timeseries": {
     "key": "tseng2023lightweight",
+    "status": "quarantined"
+  },
+  "limiting velocity and generalized lorentz trasformations": {
+    "key": "minni2025limiting",
     "status": "quarantined"
   },
   "lipschitz 1 connectedness for some solvable lie groups": {
     "key": "cohen2016lipschitz",
     "status": "off_topic"
+  },
+  "lisat language instructed segmentation assistant for satellite imagery": {
+    "key": "quenum2025lisat",
+    "status": "quarantined"
   },
   "llm guided monte carlo tree search over knowledge graphs composing mechanistic explanations for drug disease pairs": {
     "key": "jakhar2026llm",
@@ -413,15 +1001,39 @@
     "key": "contreras2022locality",
     "status": "off_topic"
   },
+  "location is all you need continuous spatiotemporal neural representations of earth observation data": {
+    "key": "madadikhaljan2026location",
+    "status": "quarantined"
+  },
   "long video diffusion generation with segmented cross attention and content rich video data curation": {
     "key": "yan2024long",
     "status": "off_topic"
+  },
+  "look where it matters training free ultra hr remote sensing vqa via adaptive zoom search": {
+    "key": "zhou2025look",
+    "status": "quarantined"
+  },
+  "low eddington ratio changing look active galactic nuclei the case of ngc 4614": {
+    "key": "lusso2025low",
+    "status": "quarantined"
+  },
+  "low mass stellar and substellar content of the young cluster berkeley 59": {
+    "key": "panwar2024low",
+    "status": "quarantined"
   },
   "low rank adaptation of geospatial foundation models for wildfire mapping using sentinel 2 data": {
     "arxiv_id": "2605.04989",
     "dropped_claims": 0,
     "key": "shibli2026low",
     "status": "carded"
+  },
+  "magnetization transfer from protons to quadrupolar nuclei in solid state nmr using presto or dipolar mediated refocused inept methods": {
+    "key": "giovine2020magnetization",
+    "status": "off_topic"
+  },
+  "mapex modality aware pruning of experts for remote sensing foundation models": {
+    "key": "hanna2025mapex",
+    "status": "quarantined"
   },
   "mapping the multiverse of latent representations": {
     "key": "wayland2024mapping",
@@ -451,25 +1063,111 @@
     "key": "wang2022metadata",
     "status": "off_topic"
   },
+  "meteoroid ablation within the jovian atmosphere implications on the oxygen delivery to the gas giant s atmosphere": {
+    "key": "mehta2024meteoroid",
+    "status": "quarantined"
+  },
   "metric spaces of arbitrary finitely generated scaling group": {
     "key": "levitin2022metric",
     "status": "off_topic"
   },
+  "mineral false positives in the search for exoplanet surface biosignatures": {
+    "key": "parkinson2026mineral",
+    "status": "quarantined"
+  },
   "mini jepa foundation model fleet enables agentic hydrologic intelligence": {
     "key": "rahman2026mini",
+    "status": "quarantined"
+  },
+  "mobility embedded pois learning what a place is and how it is used from human movement": {
+    "key": "siampou2026mobility",
+    "status": "quarantined"
+  },
+  "modularis modular relational analytics over heterogeneous distributed platforms": {
+    "key": "koutsoukos2020modularis",
+    "status": "off_topic"
+  },
+  "momo mars orbital model foundation model for mars orbital applications": {
+    "key": "purohit2026momo",
+    "status": "quarantined"
+  },
+  "monitoring of the offset between utc and its prediction broadcast by the gnss": {
+    "key": "defraigne2025monitoring",
     "status": "quarantined"
   },
   "mosaiks are made of tesserae gui design for a co simulation framework": {
     "key": "schulte2026mosaiks",
     "status": "off_topic"
   },
+  "mtp advancing remote sensing foundation model via multi task pretraining": {
+    "key": "wang2024mtp",
+    "status": "quarantined"
+  },
+  "multi label guided soft contrastive learning for efficient earth observation pretraining": {
+    "key": "wang2024multi",
+    "status": "quarantined"
+  },
+  "multi modal contrastive learning for implicit earth embeddings via location tying": {
+    "arxiv_id": "2606.20167",
+    "dropped_claims": 0,
+    "key": "hecht2026multi",
+    "status": "carded"
+  },
   "multi spectral remote sensing image retrieval using geospatial foundation models": {
     "key": "blumenstiel2024multi",
+    "status": "quarantined"
+  },
+  "multi wavelength study of the high galactic latitude supernova remnant candidate g118 4 37 0 associated with the calvera pulsar": {
+    "key": "greco2025multi",
+    "status": "quarantined"
+  },
+  "multimodal contrastive learning of urban space representations from poi data": {
+    "key": "wang2024multimodal",
+    "status": "quarantined"
+  },
+  "nara anchor conditioned relation aware contextualization of heterogeneous geoentities": {
+    "key": "kim2026nara",
+    "status": "quarantined"
+  },
+  "neural plasticity inspired multimodal foundation model for earth observation": {
+    "key": "xiong2024neural",
+    "status": "quarantined"
+  },
+  "neural processes maintain calibrated biomass estimates across spatiotemporal gaps and disturbance": {
+    "key": "young2026neural",
+    "status": "quarantined"
+  },
+  "neuralcms a deep learning approach to study jupiter s interior": {
+    "key": "ziv2024neuralcms",
+    "status": "quarantined"
+  },
+  "new models of jupiter s magnetopause and bow shock through the juno prime mission probabilistic location shape and internally driven variation": {
+    "key": "rutala2025new",
     "status": "quarantined"
   },
   "no msp counterparts detected in gbt searches of spider candidates 4fgl j0935 3 0901 4fgl j1627 7 3219 and 4fgl j2212 4 0708": {
     "key": "corcoran2023msp",
     "status": "off_topic"
+  },
+  "no one knows the state of the art in geospatial foundation models": {
+    "key": "corley2026one",
+    "status": "quarantined"
+  },
+  "not so presto outcomes of sluggish prestin in outer hair cells": {
+    "key": "-",
+    "status": "quarantined_mismatch"
+  },
+  "objects in generated videos are slower than they appear models suffer sub earth gravity and don t know galileo s principle for now": {
+    "key": "thozhiyoor2025objects",
+    "status": "quarantined"
+  },
+  "observation of low quadrupolar nuclei by surface enhanced nmr spectroscopy": {
+    "key": "nagashima2020observation",
+    "status": "off_topic"
+  },
+  "observing health outcomes using remote sensing imagery and geo context guided visual transformer": {
+    "key": "li2026observing",
+    "status": "quarantined"
   },
   "obstructions for quantitative measure equivalence between locally compact groups": {
     "key": "correia2025obstructions",
@@ -478,6 +1176,10 @@
   "odomutants and flexibility results for quantitative orbit equivalence": {
     "key": "correia2025odomutants",
     "status": "off_topic"
+  },
+  "on board remote sensing foundation models for unsupervised change detection of disaster events": {
+    "key": "ramrezgallego2026board",
+    "status": "quarantined"
   },
   "on matou ek like embedding obstructions of countably branching graphs": {
     "key": "malthaner2023matou",
@@ -503,9 +1205,39 @@
     "key": "dumoncel2024quasi",
     "status": "off_topic"
   },
+  "on the role of the fast oscillations in the secular dynamics of the lunar coplanar perturbation on galileo satellites": {
+    "key": "alessi2024role",
+    "status": "quarantined"
+  },
   "on the universality of fluctuations for the cover time": {
     "key": "berestycki2022universality",
     "status": "off_topic"
+  },
+  "one for all toward unified foundation models for earth vision": {
+    "key": "xiong2024one",
+    "status": "quarantined"
+  },
+  "osm billion level openstreetmap dataset for city wide experiments": {
+    "key": "zheng2025osm",
+    "status": "quarantined"
+  },
+  "pangaea a global and inclusive benchmark for geospatial foundation models": {
+    "key": "marsocci2024pangaea",
+    "status": "quarantined"
+  },
+  "parameter efficient adaptation of geospatial foundation models through embedding deflection": {
+    "key": "thoreau2025parameter",
+    "status": "quarantined"
+  },
+  "pedestrian crowd management experiments a data guidance paper": {
+    "key": "boomers2023pedestrian",
+    "status": "quarantined"
+  },
+  "performance and generalizability impacts of incorporating location encoders into deep learning for dynamic pm2 5 estimation": {
+    "arxiv_id": "2505.18461",
+    "dropped_claims": 2,
+    "key": "karimzadeh2025performance",
+    "status": "carded"
   },
   "phileo bench evaluating geo spatial foundation models": {
     "arxiv_id": "2401.04464",
@@ -523,11 +1255,27 @@
     "key": "coz2020poincar",
     "status": "off_topic"
   },
+  "point m2ae multi scale masked autoencoders for hierarchical point cloud pre training": {
+    "key": "zhang2022point",
+    "status": "quarantined"
+  },
+  "polypath supporting multiple tradeoffs for interaction latency": {
+    "key": "yun2016polypath",
+    "status": "off_topic"
+  },
+  "position prediction self supervised learning for multimodal satellite imagery semantic segmentation": {
+    "key": "waithaka2025position",
+    "status": "quarantined"
+  },
   "post quantum secure federated defi for inclusive banking": {
     "arxiv_id": "2606.10658",
     "dropped_claims": 0,
     "key": "sachan2026post",
     "status": "carded"
+  },
+  "practical spoofing attacks on galileo open service navigation message authentication": {
+    "key": "wang2025practical",
+    "status": "quarantined"
   },
   "predicting rare events by shrinking towards proportional odds": {
     "key": "faletto2023predicting",
@@ -543,8 +1291,20 @@
     "key": "goel2023presto",
     "status": "carded"
   },
+  "presto a systematic framework for blockchain consensus protocols": {
+    "key": "leonardos2019presto",
+    "status": "off_topic"
+  },
   "presto an in storage data preprocessing system for training recommendation models": {
     "key": "lee2024presto",
+    "status": "off_topic"
+  },
+  "presto color a photometric survey cadence for explosive physics fast transients": {
+    "key": "bianco2018presto",
+    "status": "off_topic"
+  },
+  "presto digitization part i from nks number theory to xorbitant semantics by way of cayley dickson process and zero divisor based representations": {
+    "key": "marrais2006presto",
     "status": "off_topic"
   },
   "presto distilling steps and layers for accelerating music generation": {
@@ -567,6 +1327,10 @@
     "key": "chu2025presto",
     "status": "off_topic"
   },
+  "presto probabilistic cardinality estimation for rdf queries based on subgraph overlapping": {
+    "key": "wang2018presto",
+    "status": "off_topic"
+  },
   "presto progressive pretraining enhances synthetic chemistry outcomes": {
     "arxiv_id": "2406.13193",
     "dropped_claims": 0,
@@ -578,6 +1342,10 @@
     "dropped_claims": 0,
     "key": "sarpe2021presto",
     "status": "carded"
+  },
+  "pretrain where investigating how pretraining data diversity impacts geospatial foundation model performance": {
+    "key": "kaur2026pretrain",
+    "status": "quarantined"
   },
   "prithvi complimentary adaptive fusion encoder cafe unlocking full potential for flood inundation mapping": {
     "arxiv_id": "2601.02315",
@@ -595,28 +1363,156 @@
     "key": "schmude2024prithvi",
     "status": "carded"
   },
+  "probing geospatial ssl representations with environmental signals": {
+    "key": "mocharla2026probing",
+    "status": "quarantined"
+  },
+  "probing gravitational waves using gnss constellations": {
+    "key": "roy2025probing",
+    "status": "quarantined"
+  },
+  "prue a practical recipe for field boundary segmentation at scale": {
+    "key": "muhawenayo2026prue",
+    "status": "quarantined"
+  },
   "pulsar detection with deep learning": {
     "key": "pendyala2025pulsar",
     "status": "off_topic"
+  },
+  "pwyll and manann n craters as a laboratory for constraining irradiation timescales on europa": {
+    "key": "davis2024pwyll",
+    "status": "quarantined"
+  },
+  "qoulipo what a quantum computer sees when it reads a book": {
+    "key": "jurczak2026qoulipo",
+    "status": "quarantined"
   },
   "quasi isometric rigidity for lamplighters with lamps of polynomial growth": {
     "key": "dumoncel2025quasi",
     "status": "off_topic"
   },
+  "range retrieval augmented neural fields for multi resolution geo embeddings": {
+    "arxiv_id": "2502.19781",
+    "dropped_claims": 0,
+    "key": "dhakal2025range",
+    "status": "carded"
+  },
+  "rapid adaptation of earth observation foundation models for segmentation": {
+    "key": "selvam2024rapid",
+    "status": "quarantined"
+  },
+  "real time evaluation of an ultra tight gnss ins integration based on adaptive pll bandwidth": {
+    "key": "pages2026real",
+    "status": "quarantined"
+  },
   "regular maps from the lamplighter to metabelian groups": {
     "key": "gournay2024regular",
+    "status": "off_topic"
+  },
+  "rejepa a novel joint embedding predictive architecture for efficient remote sensing image retrieval": {
+    "key": "choudhury2025rejepa",
+    "status": "quarantined"
+  },
+  "relativistic roots of entropy": {
+    "key": "-",
+    "status": "quarantined_mismatch"
+  },
+  "remote sensing chatgpt solving remote sensing tasks with chatgpt and visual models": {
+    "key": "guo2024remote",
+    "status": "quarantined"
+  },
+  "remsa foundation model selection for remote sensing via a constraint aware agent": {
+    "key": "chen2025remsa",
+    "status": "quarantined"
+  },
+  "reobench benchmarking robustness of earth observation foundation models": {
+    "key": "li2025reobench",
+    "status": "quarantined"
+  },
+  "reply to comment on observation of the quantum equivalence principle for matter waves": {
+    "key": "dobkowski2025reply",
+    "status": "quarantined"
+  },
+  "rethinking blockchain security position paper": {
+    "key": "chia2018rethinking",
     "status": "off_topic"
   },
   "rethinking the cloudonomics of efficient i o for data intensive analytics applications": {
     "key": "tang2023rethinking",
     "status": "off_topic"
   },
+  "rethinking transformers pre training for multi spectral satellite imagery": {
+    "key": "noman2024rethinking",
+    "status": "quarantined"
+  },
+  "revealing callisto s near subsurface thermophysical properties with alma calibration data": {
+    "key": "meyer2025revealing",
+    "status": "quarantined"
+  },
   "revealing the mysteries of venus the davinci mission": {
     "key": "garvin2022revealing",
     "status": "off_topic"
   },
+  "ringmo aerial an aerial remote sensing foundation model with affine transformation contrastive learning": {
+    "key": "diao2024ringmo",
+    "status": "quarantined"
+  },
+  "ringmo agent a unified remote sensing foundation model for multi platform and multi modal reasoning": {
+    "key": "hu2025ringmo",
+    "status": "quarantined"
+  },
+  "room temperature superparamagnetism due to giant magnetic anisotropy in mo s defected single layer mos 2": {
+    "key": "-",
+    "status": "quarantined_mismatch"
+  },
+  "rs prune training free data pruning at high ratios for efficient remote sensing diffusion foundation models": {
+    "key": "wei2025prune",
+    "status": "quarantined"
+  },
+  "rs vheat heat conduction guided efficient remote sensing foundation model": {
+    "key": "hu2024vheat",
+    "status": "quarantined"
+  },
+  "satclip global general purpose location embeddings with satellite imagery": {
+    "key": "klemmer2023satclip",
+    "status": "quarantined"
+  },
+  "satellite based detection of looted archaeological sites using machine learning": {
+    "arxiv_id": "2602.19608",
+    "dropped_claims": 0,
+    "key": "tadesse2026satellite",
+    "status": "carded"
+  },
+  "satellite federated fine tuning for foundation models in space computing power networks": {
+    "key": "zhu2025satellite",
+    "status": "quarantined"
+  },
+  "satmae pre training transformers for temporal and multi spectral satellite imagery": {
+    "key": "cong2022satmae",
+    "status": "quarantined"
+  },
+  "satmamba development of foundation models for remote sensing imagery using state space models": {
+    "key": "duc2025satmamba",
+    "status": "quarantined"
+  },
+  "satswinmae efficient autoencoding for multiscale time series satellite imagery": {
+    "key": "nakayama2024satswinmae",
+    "status": "quarantined"
+  },
+  "satvision toa a geospatial foundation model for coarse resolution all sky remote sensing imagery": {
+    "key": "spradlin2024satvision",
+    "status": "quarantined"
+  },
+  "scalable and trustworthy earth observation foundation models": {
+    "key": "imtiaz2026scalable",
+    "status": "quarantined"
+  },
   "scalable geospatial data generation using alphaearth foundations model": {
     "key": "houriez2025scalable",
+    "status": "quarantined"
+  },
+  "scale mae a scale aware masked autoencoder for multiscale geospatial representation learning": {
+    "key": "reed2022scale",
     "status": "quarantined"
   },
   "scaling laws for geospatial foundation models a case study on phileo bench": {
@@ -625,9 +1521,25 @@
     "key": "dionelis2025scaling",
     "status": "carded"
   },
+  "scaling remote sensing foundation models data domain tradeoffs at the peta scale": {
+    "key": "wickrema2025scaling",
+    "status": "quarantined"
+  },
+  "searching for large dark matter clumps using the galileo satnav clock variations": {
+    "key": "bertrand2024searching",
+    "status": "quarantined"
+  },
+  "searching for pulsars in extreme orbits gpu acceleration of the fourier domain jerk search": {
+    "key": "admek2019searching",
+    "status": "off_topic"
+  },
   "searching for pulsars with phase characteristics": {
     "key": "peng2022searching",
     "status": "off_topic"
+  },
+  "seefar satellite agnostic multi resolution dataset for geospatial foundation models": {
+    "key": "lowman2024seefar",
+    "status": "quarantined"
   },
   "seeing through the clouds cloud gap imputation with prithvi foundation model": {
     "arxiv_id": "2404.19609",
@@ -635,17 +1547,49 @@
     "key": "godwin2024seeing",
     "status": "carded"
   },
+  "self supervised representation learning for geospatial objects a survey": {
+    "key": "chen2024self",
+    "status": "quarantined"
+  },
+  "senpa mae sensor parameter aware masked autoencoder for multi satellite self supervised pretraining": {
+    "key": "prexl2024senpa",
+    "status": "quarantined"
+  },
   "sensor adaptive flood mapping with pre trained multi modal transformers across sar and multispectral modalities": {
     "arxiv_id": "2509.23035",
     "dropped_claims": 0,
     "key": "tanaka2025sensor",
     "status": "carded"
   },
+  "settling dynamics of an oloid experiments and simulations": {
+    "key": "flapper2025settling",
+    "status": "quarantined"
+  },
+  "settling of two rigidly connected spheres": {
+    "key": "maches2024settling",
+    "status": "quarantined"
+  },
+  "shrug fm reliability aware foundation models for earth observation": {
+    "key": "gonzalezcalabuig2025shrug",
+    "status": "quarantined"
+  },
+  "sigmae a spectral index guided foundation model for multispectral remote sensing": {
+    "key": "zhang2026sigmae",
+    "status": "quarantined"
+  },
   "simpler efficient foundation model adaptation via similarity guided layer pruning for earth observation": {
     "arxiv_id": "2603.19873",
     "dropped_claims": 0,
     "key": "barreiro2026simpler",
     "status": "carded"
+  },
+  "skysense a multi modal remote sensing foundation model towards universal interpretation for earth observation imagery": {
+    "key": "guo2023skysense",
+    "status": "quarantined"
+  },
+  "skysense v2 a unified foundation model for multi modal remote sensing": {
+    "key": "zhang2025skysense",
+    "status": "quarantined"
   },
   "slum detection and density mapping with alphaearth foundations a representation learning evaluation across 12 global cities": {
     "arxiv_id": "2605.10029",
@@ -657,15 +1601,79 @@
     "key": "alekseev2026sofic",
     "status": "off_topic"
   },
+  "soma 1m a large scale sar optical multi resolution alignment dataset for multi task remote sensing": {
+    "key": "wu2026soma",
+    "status": "quarantined"
+  },
   "sparkesx single dish parkes data sets for finding the unexpected a data challenge": {
     "key": "yong2022sparkesx",
     "status": "off_topic"
+  },
+  "spatial representation learning beyond pixels unifying raster data and vector semantics for human centric geospatial foundation models": {
+    "key": "knoblauch2026spatial",
+    "status": "quarantined"
+  },
+  "spatiotemporal variations of temperature in jupiter s upper atmosphere": {
+    "key": "roberts2025spatiotemporal",
+    "status": "quarantined"
+  },
+  "spectral gaps and spatial priors studying hyperspectral downstream adaptation using terramind": {
+    "key": "leonardi2026spectral",
+    "status": "quarantined"
+  },
+  "spectralearth fm bringing hyperspectral imagery into multimodal earth observation pretraining": {
+    "key": "braham2026spectralearth",
+    "status": "quarantined"
+  },
+  "spectralgpt spectral remote sensing foundation model": {
+    "key": "hong2023spectralgpt",
+    "status": "quarantined"
+  },
+  "spectralx parameter efficient domain generalization for spectral remote sensing foundation models": {
+    "key": "zhang2025spectralx",
+    "status": "quarantined"
+  },
+  "spying on the quickly variable optical sky with the fast optical photometer sifap2": {
+    "key": "illiano2024spying",
+    "status": "quarantined"
+  },
+  "ssl4eco a global seasonal dataset for geospatial foundation models in ecology": {
+    "key": "plekhanova2025ssl4eco",
+    "status": "quarantined"
+  },
+  "state dependent effects on the frequency response of prestin real and imaginary components of nonlinear capacitance": {
+    "key": "santossacchi2020state",
+    "status": "off_topic"
+  },
+  "statistical and structural identifiability in representation learning": {
+    "key": "nelson2026statistical",
+    "status": "quarantined"
+  },
+  "stellar population astrophysics spa with the tng nlte atmospheric parameters and abundances of giant stars in 33 open clusters": {
+    "key": "-",
+    "status": "quarantined_mismatch"
+  },
+  "story of an architecturally suggestive polyhedron from medieval trade to renaissance art and modern design": {
+    "key": "katz2025story",
+    "status": "quarantined"
+  },
+  "structure and growth of galileo sequences": {
+    "key": "cheah2026structure",
+    "status": "quarantined"
+  },
+  "structure semantic decoupled modulation of global geospatial embeddings for high resolution remote sensing mapping": {
+    "key": "lyu2026structure",
+    "status": "quarantined"
   },
   "subsurface property mapping using google alphaearth foundations": {
     "arxiv_id": "2604.14756",
     "dropped_claims": 0,
     "key": "nakata2026subsurface",
     "status": "carded"
+  },
+  "survey of multimodal geospatial foundation models techniques applications and challenges": {
+    "key": "yang2025survey",
+    "status": "quarantined"
   },
   "swinynet a transformer based multi task model for accurate and efficient frb search": {
     "key": "-",
@@ -674,6 +1682,14 @@
   "symbolic specialization of rewriting logic theories with presto": {
     "key": "alpuente2021symbolic",
     "status": "off_topic"
+  },
+  "targeted search for young radio pulsars in the smc discovery of two new pulsars": {
+    "key": "titus2019targeted",
+    "status": "off_topic"
+  },
+  "terratorch the geospatial foundation models toolkit": {
+    "key": "gomes2025terratorch",
+    "status": "quarantined"
   },
   "tessera secure near line rate weight streaming for uma edge accelerators": {
     "key": "naskar2026tessera",
@@ -695,13 +1711,29 @@
     "key": "feng2026tessera",
     "status": "carded"
   },
+  "the 3 1 formulation of chemical dynamics in curved spacetime under the eulerian observer": {
+    "key": "zhang2025formulation",
+    "status": "quarantined"
+  },
   "the coarse baum connes conjecture for certain relative expanders": {
     "key": "deng2021coarse",
+    "status": "quarantined"
+  },
+  "the deployment of a geomagnetic variometer station as auxiliary instrumentation for the study of unidentified aerial phenomena": {
+    "key": "vervelidou2025deployment",
     "status": "quarantined"
   },
   "the effect of vera c rubin observatory cadence selections on kilonova detectability": {
     "key": "andrade2025effect",
     "status": "off_topic"
+  },
+  "the gaps programme at tng lxxiii confirmation of the hot sub neptune toi 4602 b hd 25295 b a key target for future atmospheric characterization": {
+    "key": "maio2026gaps",
+    "status": "quarantined"
+  },
+  "the geometry of motions vol i mechanics as geometries": {
+    "key": "iglesiaszemmour2025geometry",
+    "status": "quarantined"
   },
   "the gmrt high resolution southern sky survey for pulsars and transients iii searching for long period pulsars": {
     "key": "singh2022gmrt",
@@ -711,13 +1743,53 @@
     "key": "guo2024maximal",
     "status": "off_topic"
   },
+  "the orbital parameters of the del cep inner binary system determined using 2019 harps n spectroscopic data": {
+    "key": "nardetto2024orbital",
+    "status": "quarantined"
+  },
+  "the potential of copernicus satellites for disaster response retrieving building damage from sentinel 1 and sentinel 2": {
+    "key": "dietrich2025potential",
+    "status": "quarantined"
+  },
+  "the spatiotemporal structure of induced magnetic fields in callisto s plasma environment due to their propagation with mhd modes": {
+    "key": "strack2024spatiotemporal",
+    "status": "quarantined"
+  },
   "the stack search tests on fast data discovery of six faint isolated millisecond pulsars in ngc 6517 and ngc 7078 m15": {
     "key": "dai2026stack",
     "status": "off_topic"
   },
+  "the tychonic system an implausible theory": {
+    "key": "vanin2026tychonic",
+    "status": "quarantined"
+  },
+  "the view from space navigating instrumentation differences with eofms": {
+    "key": "demilt2025view",
+    "status": "quarantined"
+  },
+  "thermophysical properties of europa s surface constrained by galileo photopolarimeter radiometer temperature measurements": {
+    "key": "lange2026thermophysical",
+    "status": "quarantined"
+  },
+  "thor a versatile foundation model for earth observation climate and society applications": {
+    "key": "forgaard2026thor",
+    "status": "quarantined"
+  },
+  "time2agri temporal pretext tasks for agricultural monitoring": {
+    "key": "gupta2025time2agri",
+    "status": "quarantined"
+  },
+  "towards a unified copernicus foundation model for earth vision": {
+    "key": "wang2025towards",
+    "status": "quarantined"
+  },
   "towards dm free search for fast radio bursts with machine learning i an implementation on multibeam data": {
     "key": "chen2025towards",
     "status": "off_topic"
+  },
+  "towards interpretable geo localization a concept aware global image gps alignment framework": {
+    "key": "jia2025towards",
+    "status": "quarantined"
   },
   "towards onboard continuous change detection for floods": {
     "arxiv_id": "2601.13751",
@@ -725,8 +1797,40 @@
     "key": "kyselica2026towards",
     "status": "carded"
   },
+  "towards privacy preserved pre training of remote sensing foundation models with federated mutual guidance learning": {
+    "key": "tan2025towards",
+    "status": "quarantined"
+  },
   "towards scalable and generalizable earth observation data mining via foundation model composition": {
     "key": "chuc2025towards",
+    "status": "quarantined"
+  },
+  "towards scalable foundation model for multi modal and hyperspectral geospatial data": {
+    "key": "si2025towards",
+    "status": "quarantined"
+  },
+  "tracking advanced planetary systems tapas with harps n viii a wide orbit planetary companion in the hot jupiter system hd 118203": {
+    "key": "maciejewski2024tracking",
+    "status": "quarantined"
+  },
+  "trajganr trajectory centric urban multimodal learning via geospatially aligned neural representations": {
+    "key": "siampou2026trajganr",
+    "status": "quarantined"
+  },
+  "trick time and range integrity check using low earth orbiting satellite for securing gnss": {
+    "key": "mumtaz2025trick",
+    "status": "quarantined"
+  },
+  "un esercizio di storia della scienza misurare i periodi dei satelliti galileiani di giove con il sidereus nuncius": {
+    "key": "neri2024esercizio",
+    "status": "quarantined"
+  },
+  "unbounded yudovich solutions of the euler equations": {
+    "key": "cobb2024unbounded",
+    "status": "quarantined"
+  },
+  "uncertainty aware tree height change regression": {
+    "key": "gaber2026uncertainty",
     "status": "quarantined"
   },
   "utilizing a geospatial foundation model for coastline delineation in small sandy islands": {
@@ -748,6 +1852,10 @@
   "venus key to understanding the evolution of terrestrial planets": {
     "key": "wilson2017venus",
     "status": "off_topic"
+  },
+  "vidtag temporally aligned video to gps geolocalization with denoising sequence prediction at a global scale": {
+    "key": "kulkarni2026vidtag",
+    "status": "quarantined"
   },
   "watch wide area archaeological site tracking for change detection": {
     "arxiv_id": "2605.08160",
@@ -778,6 +1886,18 @@
     "dropped_claims": 0,
     "key": "chen2026when",
     "status": "carded"
+  },
+  "will power return to the clouds from divine authority to genai authority": {
+    "key": "torkestani2025will",
+    "status": "quarantined"
+  },
+  "xona pulsar compatibility with gnss": {
+    "key": "reid2025xona",
+    "status": "quarantined"
+  },
+  "zero shot satellite image retrieval through joint embeddings application to crisis response": {
+    "key": "walsh2026zero",
+    "status": "quarantined"
   },
   "zksdk streamlining zero knowledge proof development through automated trace driven zk backend selection": {
     "key": "law2025zksdk",

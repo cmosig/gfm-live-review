@@ -1,0 +1,23 @@
+{
+  "key": "a fourier domain jerk search for binary pulsars",
+  "title": "A Fourier Domain \"Jerk\" Search for Binary Pulsars",
+  "reason": "DOI title mismatch (possible metadata error)",
+  "quarantined_at": "2026-07-12T19:04:46.299978+00:00",
+  "payload": {
+    "candidate": {
+      "title": "A Fourier Domain \"Jerk\" Search for Binary Pulsars",
+      "abstract": "While binary pulsar systems are fantastic laboratories for a wide array of astrophysics, they are particularly difficult to detect. The orbital motion of the pulsar changes its apparent spin frequency over the course of an observation, essentially \"smearing\" the response of the time series in the Fourier domain. We review the Fourier domain acceleration search (FDAS), which uses a matched filtering algorithm to correct for this smearing by assuming constant acceleration for a small enough portion of the orbit. We discuss the theory and implementation of a Fourier domain \"jerk\" search, developed as part of the \\textsc{PRESTO} software package, which extends the FDAS to account for a linearly changing acceleration, or constant orbital jerk, of the pulsar. We test the performance of our algorithm on archival Green Bank Telescope observations of the globular cluster Terzan~5, and show that while the jerk search has a significantly longer runtime, it improves search sensitivity to binaries when the observation duration is $5$ to $15\\%$ of the orbital period. Finally, we present the jerk-search-enabled detection of Ter5am (PSR~J1748$-$2446am), a new highly-accelerated pulsar in a compact, eccentric, and relativistic orbit, with a likely pulsar mass of 1.649$^{+0.037}_{-0.11}$\\,\\msun.",
+      "authors": [
+        "Bridget C. Andersen",
+        "Scott M. Ransom"
+      ],
+      "author_ids": [],
+      "arxiv_id": "1807.07900",
+      "doi": "10.3847/2041-8213/aad59f",
+      "venue": "arXiv",
+      "date": "2018-07-19",
+      "openalex_id": null,
+      "source": "arxiv"
+    }
+  }
+}

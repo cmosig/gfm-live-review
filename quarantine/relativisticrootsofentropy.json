@@ -1,0 +1,22 @@
+{
+  "key": "relativistic roots of entropy",
+  "title": "Relativistic Roots of $κ$-Entropy",
+  "reason": "DOI title mismatch (possible metadata error)",
+  "quarantined_at": "2026-07-12T19:25:37.496643+00:00",
+  "payload": {
+    "candidate": {
+      "title": "Relativistic Roots of $κ$-Entropy",
+      "abstract": "The axiomatic structure of the $κ$-statistcal theory is proven. In addition to the first three standard Khinchin--Shannon axioms of continuity, maximality, and expansibility, two further axioms are identified, namely the self-duality axiom and the scaling axiom. It is shown that both the $κ$-entropy and its special limiting case, the classical Boltzmann--Gibbs--Shannon entropy, follow unambiguously from the above new set of five axioms. It has been emphasized that the statistical theory that can be built from $κ$-entropy has a validity that goes beyond physics and can be used to treat physical, natural, or artificial complex systems. The physical origin of the self-duality and scaling axioms has been investigated and traced back to the first principles of relativistic physics, i.e., the Galileo relativity principle and the Einstein principle of the constancy of the speed of light. It has been shown that the $κ$-formalism, which emerges from the $κ$-entropy, can treat both simple (few-body) and complex (statistical) systems in a unified way. Relativistic statistical mechanics based on $κ$-entropy is shown that preserves the main features of classical statistical mechanics (kinetic theory, molecular chaos hypothesis, maximum entropy principle, thermodynamic stability, H-theorem, and Lesche stability). The answers that the $κ$-statistical theory gives to the more-than-a-century-old open problems of relativistic physics, such as how thermodynamic quantities like temperature and entropy vary with the speed of the reference frame, have been emphasized.",
+      "authors": [
+        "G. Kaniadakis"
+      ],
+      "author_ids": [],
+      "arxiv_id": "2405.07678",
+      "doi": "10.3390/e26050406",
+      "venue": "arXiv",
+      "date": "2024-05-13",
+      "openalex_id": null,
+      "source": "arxiv"
+    }
+  }
+}

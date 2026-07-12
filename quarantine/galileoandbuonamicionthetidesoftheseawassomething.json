@@ -1,0 +1,22 @@
+{
+  "key": "galileo and buonamici on the tides of the sea was something ",
+  "title": "Galileo and Buonamici on the Tides of the Sea: Was Something Omitted from the Dialogue?",
+  "reason": "DOI title mismatch (possible metadata error)",
+  "quarantined_at": "2026-07-12T19:23:34.159244+00:00",
+  "payload": {
+    "candidate": {
+      "title": "Galileo and Buonamici on the Tides of the Sea: Was Something Omitted from the Dialogue?",
+      "abstract": "In his 1616 discourse on the tides, Galileo claimed that diurnal tides occurred in Lisbon, Portugal, bolstering his theory of the tides. Lisbon does not feature such tides, but in an exchange of letters in 1629-1630, Giovanfrancesco Buonamici provided Galileo with information on where such tides could be found. Buonamici referred Galileo to the Regimiento de Navegación of Andrés García de Céspedes, and to the Descrittione di Tutti i Paesi Bassi of Lodovico Guicciardini. Galileo omitted any information on where diurnal tides occurred from his 1632 Dialogue, perhaps unintentionally, leaving him open to criticism. Buonamici's material militates against that criticism.",
+      "authors": [
+        "Christopher M. Graney"
+      ],
+      "author_ids": [],
+      "arxiv_id": "2409.11331",
+      "doi": "10.3724/SP.J.1440-2807.2024.01.11",
+      "venue": "arXiv",
+      "date": "2024-09-17",
+      "openalex_id": null,
+      "source": "arxiv"
+    }
+  }
+}

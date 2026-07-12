@@ -1,0 +1,27 @@
+{
+  "key": "discovery of two new pulsars in 47 tucanae ngc 104",
+  "title": "Discovery of Two New Pulsars in 47 Tucanae (NGC 104)",
+  "reason": "DOI title mismatch (possible metadata error)",
+  "quarantined_at": "2026-07-12T19:05:57.256775+00:00",
+  "payload": {
+    "candidate": {
+      "title": "Discovery of Two New Pulsars in 47 Tucanae (NGC 104)",
+      "abstract": "We report the discovery of two new millisecond pulsars (PSRs J0024$-$7204aa and J0024$-$7204ab) in the globular cluster 47\\,Tucanae (NGC 104). Our results bring the total number of pulsars in 47\\,Tucanae to 25. These pulsars were discovered by reprocessing archival observations from the Parkes radio telescope. We reprocessed the data using a standard search procedure based on the PRESTO software package as well as using a new method in which we incoherently added the power spectra corresponding to $\\sim$1100\\,hr of observations. The newly discovered PSR~J0024$-$7204aa, has a pulse frequency of $\\rm \\sim$541\\,Hz (corresponding to a $\\rm \\sim$1.84 ms period), which is higher than any other pulsars currently known in the cluster and ranks 12$^{\\rm{th}}$ amongst all the currently known pulsars. The dispersion measure of this pulsar, 24.941(7)\\,cm$^{-3}$ pc, is the highest in the cluster. The second discovered pulsar, PSR~J0024$-$7204ab, is an isolated pulsar with a pulse frequency of $\\rm \\sim$270\\,Hz (corresponding to a period of $\\rm \\sim$3.70 ms).",
+      "authors": [
+        "Zhichen Pan",
+        "George Hobbs",
+        "Di Li",
+        "Alessandro Ridolfi",
+        "Pei Wang",
+        "Paulo Freire"
+      ],
+      "author_ids": [],
+      "arxiv_id": "1603.01348",
+      "doi": "10.1093/mnrasl/slw037",
+      "venue": "arXiv",
+      "date": "2016-03-04",
+      "openalex_id": null,
+      "source": "arxiv"
+    }
+  }
+}
