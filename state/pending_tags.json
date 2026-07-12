@@ -2,6 +2,9 @@
   "AlphaEarth Foundations": [
     "hou2026slum"
   ],
+  "AlphaEarth embeddings as auxiliary input": [
+    "thasma2026beyond"
+  ],
   "CCA_CKA_similarity": [
     "plas2026better"
   ],
@@ -14,8 +17,14 @@
   "CNN2D": [
     "cheng2026from"
   ],
+  "DEM prior": [
+    "thasma2026beyond"
+  ],
   "DHS_surveys": [
     "pettersson2025leveraging"
+  ],
+  "DINOv3": [
+    "thasma2026beyond"
   ],
   "GeoNames": [
     "pettersson2025leveraging"
@@ -44,6 +53,9 @@
   "POI auxiliary features": [
     "hou2026slum"
   ],
+  "SAR flood segmentation": [
+    "thasma2026beyond"
+  ],
   "SHAP dimension importance": [
     "hou2026slum"
   ],
@@ -53,14 +65,32 @@
   "Sub-Saharan_Africa": [
     "pettersson2025leveraging"
   ],
+  "TerraMind": [
+    "thasma2026beyond"
+  ],
+  "agbd": [
+    "mandal2026biomazon"
+  ],
   "agricultural_practice_mapping": [
     "ma2025harvesting"
+  ],
+  "alphaearth_late_fusion": [
+    "mandal2026biomazon"
+  ],
+  "amazon_basin": [
+    "mandal2026biomazon"
   ],
   "analysis_ready_embeddings": [
     "ma2025harvesting"
   ],
+  "atlantic_forest": [
+    "heiman2026characterizing"
+  ],
   "attention_unet": [
     "ko2026exploring"
+  ],
+  "auxiliary land-cover prior": [
+    "thasma2026beyond"
   ],
   "barlow_twins": [
     "feng2025tessera"
@@ -70,6 +100,12 @@
   ],
   "bioclimatic_variable_prediction": [
     "plas2026better"
+  ],
+  "borehole_data": [
+    "omalley2026context"
+  ],
+  "calibration": [
+    "omalley2026context"
   ],
   "capacity_adaptive_reconstruction": [
     "hou2026aef"
@@ -95,6 +131,9 @@
   "coordinate_displacement": [
     "pettersson2025leveraging"
   ],
+  "cosine_similarity_metric": [
+    "heiman2026characterizing"
+  ],
   "cover_crop_mapping": [
     "ma2025harvesting"
   ],
@@ -109,6 +148,9 @@
   ],
   "data_harmonization": [
     "ma2025harvesting"
+  ],
+  "dataset_paper": [
+    "mandal2026biomazon"
   ],
   "digital_surface_model": [
     "hamoudzadeh2026inferring"
@@ -164,8 +206,26 @@
   "embeddings_vs_composites": [
     "ko2026exploring"
   ],
+  "emergency_medical_services_forecasting": [
+    "aalaila2026when"
+  ],
   "evapotranspiration_estimation": [
     "brown2025alphaearth"
+  ],
+  "event-stratified split": [
+    "thasma2026beyond"
+  ],
+  "event_demand_forecasting": [
+    "aalaila2026when"
+  ],
+  "exogenous_spatial_context": [
+    "aalaila2026when"
+  ],
+  "forest_restoration_monitoring": [
+    "heiman2026characterizing"
+  ],
+  "frozen backbone": [
+    "thasma2026beyond"
   ],
   "functional interpretability": [
     "benavidesmartinez2026what"
@@ -175,6 +235,12 @@
   ],
   "fuzzy_label_loss": [
     "pettersson2025leveraging"
+  ],
+  "gedi_lidar_supervision": [
+    "mandal2026biomazon"
+  ],
+  "geothermal_resource_assessment": [
+    "omalley2026context"
   ],
   "global_annual_embeddings": [
     "brown2025alphaearth"
@@ -197,6 +263,9 @@
   "housing_price_estimation": [
     "hou2026aef"
   ],
+  "in_context_learning": [
+    "omalley2026context"
+  ],
   "informal settlements": [
     "hou2026slum"
   ],
@@ -215,11 +284,23 @@
   "location_embeddings": [
     "plas2026better"
   ],
+  "log_gaussian_cox_process": [
+    "aalaila2026when"
+  ],
   "low_shot_transfer": [
     "brown2025alphaearth"
   ],
+  "lulc_misclassification_detection": [
+    "heiman2026characterizing"
+  ],
+  "mean_absolute_error_metric": [
+    "omalley2026context"
+  ],
   "modifiable_areal_unit_problem": [
     "gong2026earth"
+  ],
+  "monotone_ordered_quantile_output": [
+    "mandal2026biomazon"
   ],
   "multi_source_fusion": [
     "brown2025alphaearth"
@@ -227,8 +308,17 @@
   "multi_source_self_supervised_fusion": [
     "hou2026aef"
   ],
+  "multimodal fusion": [
+    "thasma2026beyond"
+  ],
+  "multimodal_sensor_fusion": [
+    "mandal2026biomazon"
+  ],
   "mutual_information_analysis": [
     "qu2026utilizing"
+  ],
+  "ndvi_saturation": [
+    "heiman2026characterizing"
   ],
   "nighttime lights": [
     "hou2026slum"
@@ -239,6 +329,9 @@
   "oil_palm_plantation_mapping": [
     "brown2025alphaearth"
   ],
+  "physics_informed_baseline": [
+    "omalley2026context"
+  ],
   "pixel_embeddings": [
     "plas2026better"
   ],
@@ -248,11 +341,17 @@
   "platonic_representation_hypothesis": [
     "plas2026better"
   ],
+  "point_process_intensity": [
+    "aalaila2026when"
+  ],
   "points_of_interest": [
     "hou2026aef"
   ],
   "prediction_in_ungauged_basins": [
     "qu2026utilizing"
+  ],
+  "proprietary_model": [
+    "heiman2026characterizing"
   ],
   "pseudo-label supervision": [
     "hou2026slum"
@@ -263,11 +362,23 @@
   "reference_data_resolution": [
     "ko2026exploring"
   ],
+  "reference_trajectory_embedding": [
+    "heiman2026characterizing"
+  ],
+  "reforestation": [
+    "heiman2026characterizing"
+  ],
   "regionalization": [
     "qu2026utilizing"
   ],
   "representation_efficiency": [
     "gong2026earth"
+  ],
+  "restoration_strategy_prediction": [
+    "heiman2026characterizing"
+  ],
+  "rh_profile_prediction": [
+    "mandal2026biomazon"
   ],
   "ridge_regression_baseline": [
     "hamoudzadeh2026inferring"
@@ -278,8 +389,14 @@
   "sdg_monitoring": [
     "gong2026earth"
   ],
+  "seed stability": [
+    "thasma2026beyond"
+  ],
   "sentinel1_sentinel2_fusion": [
     "feng2025tessera"
+  ],
+  "single-temporal post-event SAR": [
+    "thasma2026beyond"
   ],
   "socioeconomic_foundation_embedding": [
     "hou2026aef"
@@ -296,17 +413,26 @@
   "spatial_scale_of_classes": [
     "plas2026better"
   ],
+  "spatio_temporal_point_process": [
+    "aalaila2026when"
+  ],
   "specialist-generalist taxonomy": [
     "benavidesmartinez2026what"
   ],
   "streamflow_prediction": [
     "qu2026utilizing"
   ],
+  "structure_biomass_coupling": [
+    "mandal2026biomazon"
+  ],
   "sub-pixel density estimation": [
     "hou2026slum"
   ],
   "subsurface_heterogeneity": [
     "qu2026utilizing"
+  ],
+  "subsurface_temperature_prediction": [
+    "omalley2026context"
   ],
   "surface_emissivity": [
     "brown2025alphaearth"
@@ -332,17 +458,29 @@
   "tree_species_classification": [
     "feng2025tessera"
   ],
+  "umap_visualization": [
+    "heiman2026characterizing"
+  ],
   "unet": [
     "hamoudzadeh2026inferring"
   ],
   "unet++": [
     "hamoudzadeh2026inferring"
   ],
+  "universal_kriging_baseline": [
+    "omalley2026context"
+  ],
   "urban_signal_prediction": [
     "gong2026earth"
   ],
+  "vertical_forest_structure": [
+    "mandal2026biomazon"
+  ],
   "vision_transformer": [
     "cheng2026from"
+  ],
+  "world_model_representation": [
+    "omalley2026context"
   ],
   "wudapt": [
     "ko2026exploring"

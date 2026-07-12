@@ -75,7 +75,7 @@
 
 <!-- Inert data blob: parsed by app.js, never executed. -->
 <script type="application/json" id="gfm-data">{
-  "corpus_through": "2026-06-18",
+  "corpus_through": "2026-07-01",
   "limitations": {
     "series": {
       "benchmark_narrowness": {
@@ -86,16 +86,17 @@
         "2026-02": 1,
         "2026-03": 1,
         "2026-04": 1,
-        "2026-05": 2,
-        "2026-06": 2
+        "2026-05": 3,
+        "2026-06": 4,
+        "2026-07": 1
       },
       "data_bias": {
         "2025-11": 1,
         "2026-02": 1,
         "2026-03": 1,
         "2026-04": 1,
-        "2026-05": 1,
-        "2026-06": 1
+        "2026-05": 2,
+        "2026-06": 3
       },
       "human_semantics": {
         "2026-03": 1,
@@ -106,13 +107,14 @@
       "interpretability": {
         "2025-12": 1,
         "2026-01": 2,
-        "2026-03": 1
+        "2026-03": 1,
+        "2026-07": 1
       },
       "mixed_pixels": {
         "2025-12": 1,
         "2026-03": 1,
         "2026-05": 1,
-        "2026-06": 1
+        "2026-06": 2
       },
       "spatial_transfer": {
         "2025-11": 1,
@@ -121,8 +123,8 @@
         "2026-02": 1,
         "2026-03": 1,
         "2026-04": 1,
-        "2026-05": 1,
-        "2026-06": 1
+        "2026-05": 2,
+        "2026-06": 2
       },
       "temporal_transfer": {
         "2025-12": 1,
@@ -130,30 +132,34 @@
         "2026-02": 1,
         "2026-03": 1,
         "2026-04": 1,
-        "2026-06": 1
+        "2026-05": 1,
+        "2026-06": 2
       },
       "time_sensitivity": {
         "2025-06": 1,
         "2025-12": 1,
         "2026-01": 1,
         "2026-03": 1,
-        "2026-04": 1
+        "2026-04": 1,
+        "2026-06": 1
       },
       "uncertainty": {
         "2025-11": 1,
-        "2026-03": 1
+        "2026-03": 1,
+        "2026-05": 2,
+        "2026-06": 1
       }
     },
     "totals": {
-      "benchmark_narrowness": 11,
-      "data_bias": 6,
+      "benchmark_narrowness": 15,
+      "data_bias": 9,
       "human_semantics": 4,
-      "interpretability": 4,
-      "mixed_pixels": 4,
-      "spatial_transfer": 9,
-      "temporal_transfer": 7,
-      "time_sensitivity": 5,
-      "uncertainty": 2
+      "interpretability": 5,
+      "mixed_pixels": 5,
+      "spatial_transfer": 11,
+      "temporal_transfer": 9,
+      "time_sensitivity": 6,
+      "uncertainty": 5
     }
   },
   "meta": {
@@ -189,7 +195,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 13,
+    "n_papers": 18,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -213,10 +219,34 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 13
+      "verified": 18
     },
-    "n_papers": 13,
+    "n_papers": 18,
     "papers": [
+      {
+        "arxiv_id": "2607.01082",
+        "date": "2026-07-01",
+        "doi": "10.48550/arxiv.2607.01082",
+        "doi_status": "verified",
+        "key": "aalaila2026when",
+        "link": "https://arxiv.org/abs/2607.01082",
+        "n_claims": 0,
+        "self_evaluation": false,
+        "title": "When Context Compensates for Sparse Event History: AlphaEarth for Spatio-Temporal Point-Process Forecasting",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2606.29134",
+        "date": "2026-06-28",
+        "doi": "10.48550/arxiv.2606.29134",
+        "doi_status": "verified",
+        "key": "thasma2026beyond",
+        "link": "https://arxiv.org/abs/2606.29134",
+        "n_claims": 3,
+        "self_evaluation": false,
+        "title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+        "venue": "arXiv"
+      },
       {
         "arxiv_id": "2606.20034",
         "date": "2026-06-18",
@@ -242,6 +272,18 @@
         "venue": "arXiv"
       },
       {
+        "arxiv_id": "2606.05368",
+        "date": "2026-06-03",
+        "doi": "10.48550/arxiv.2606.05368",
+        "doi_status": "verified",
+        "key": "mandal2026biomazon",
+        "link": "https://arxiv.org/abs/2606.05368",
+        "n_claims": 0,
+        "self_evaluation": false,
+        "title": "Biomazon: A Multimodal Dataset for 3D Forest Structure and Biomass Modeling in the Amazon Basin",
+        "venue": "arXiv"
+      },
+      {
         "arxiv_id": "2605.18667",
         "date": "2026-05-18",
         "doi": "10.48550/arxiv.2605.18667",
@@ -254,6 +296,18 @@
         "venue": "arXiv"
       },
       {
+        "arxiv_id": "2605.16665",
+        "date": "2026-05-15",
+        "doi": "10.48550/arxiv.2605.16665",
+        "doi_status": "verified",
+        "key": "omalley2026context",
+        "link": "https://arxiv.org/abs/2605.16665",
+        "n_claims": 0,
+        "self_evaluation": false,
+        "title": "In-context learning enables continental-scale subsurface temperature prediction from sparse local observations",
+        "venue": "arXiv"
+      },
+      {
         "arxiv_id": "2605.10029",
         "date": "2026-05-11",
         "doi": "10.48550/arxiv.2605.10029",
@@ -263,6 +317,18 @@
         "n_claims": 4,
         "self_evaluation": false,
         "title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2605.05547",
+        "date": "2026-05-07",
+        "doi": "10.48550/arxiv.2605.05547",
+        "doi_status": "verified",
+        "key": "heiman2026characterizing",
+        "link": "https://arxiv.org/abs/2605.05547",
+        "n_claims": 0,
+        "self_evaluation": false,
+        "title": "Characterizing Brazilian Atlantic Forest Restoration Outcomes with Geospatial AlphaEarth Embeddings",
         "venue": "arXiv"
       },
       {
@@ -374,7 +440,7 @@
         "venue": "arXiv"
       }
     ],
-    "quarantine_count": 0
+    "quarantine_count": 2
   },
   "views": {
     "all": {
@@ -674,7 +740,7 @@
           "n_papers_all": 2
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.75,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -804,13 +870,45 @@
               "self_evaluation": false,
               "span": "the median NSE of the AEF embeddings rose to 0.612, while the model relying on CAMELS attributes reached only 0.553",
               "value": 0.612
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.041,
+              "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "DINOv3 SAR+AE achieves the best Florence IoU (0.078)",
+              "value": 0.078
+            },
+            {
+              "baseline": null,
+              "baseline_value": 0.046,
+              "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Sec III-C",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "the best mean IoU is 0.078 (DINOv3\nSAR+AE), followed by TerraMind SAR+AE (0.072)",
+              "value": 0.072
             }
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 8,
-          "n_papers": 3,
-          "n_papers_all": 6
+          "n_claims": 10,
+          "n_papers": 4,
+          "n_papers_all": 7
         },
         {
           "agreement": null,
@@ -1127,7 +1225,7 @@
           "n_papers_all": 1
         },
         {
-          "agreement": null,
+          "agreement": 1.0,
           "axis": "G11_complementarity",
           "claims": [
             {
@@ -1161,13 +1259,29 @@
               "self_evaluation": false,
               "span": "their fused score (76.7%) is significantly greater than any of their individual scores (71.1% and 70.6%, respectively)",
               "value": 76.7
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.103,
+              "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Sec III-C",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "followed by DINOv3 SAR+AE (0.172)",
+              "value": 0.172
             }
           ],
-          "direction": null,
-          "label": "gap",
-          "n_claims": 2,
-          "n_papers": 0,
-          "n_papers_all": 2
+          "direction": "better",
+          "label": "thin",
+          "n_claims": 3,
+          "n_papers": 1,
+          "n_papers_all": 3
         },
         {
           "agreement": null,
@@ -1572,6 +1686,96 @@
           "model": "alphaearth",
           "n_papers": 1,
           "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.103,
+              "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Sec III-C",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "followed by DINOv3 SAR+AE (0.172)",
+              "value": 0.172
+            }
+          ],
+          "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.041,
+              "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "DINOv3 SAR+AE achieves the best Florence IoU (0.078)",
+              "value": 0.078
+            }
+          ],
+          "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": 0.046,
+              "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Sec III-C",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "the best mean IoU is 0.078 (DINOv3\nSAR+AE), followed by TerraMind SAR+AE (0.072)",
+              "value": 0.072
+            }
+          ],
+          "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "flood_mapping"
         },
         {
           "agreement": 1.0,
@@ -2498,6 +2702,66 @@
             "n_papers_all": 1,
             "task": "crop_yield_estimation"
           },
+          "alphaearth\tflood_mapping": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.041,
+                "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2606.29134",
+                "locator": "Table I",
+                "metric": "miou",
+                "model": "alphaearth",
+                "paper_key": "thasma2026beyond",
+                "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+                "self_evaluation": false,
+                "span": "DINOv3 SAR+AE achieves the best Florence IoU (0.078)",
+                "value": 0.078
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.103,
+                "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2606.29134",
+                "locator": "Sec III-C",
+                "metric": "miou",
+                "model": "alphaearth",
+                "paper_key": "thasma2026beyond",
+                "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+                "self_evaluation": false,
+                "span": "followed by DINOv3 SAR+AE (0.172)",
+                "value": 0.172
+              },
+              {
+                "baseline": null,
+                "baseline_value": 0.046,
+                "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2606.29134",
+                "locator": "Sec III-C",
+                "metric": "miou",
+                "model": "alphaearth",
+                "paper_key": "thasma2026beyond",
+                "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+                "self_evaluation": false,
+                "span": "the best mean IoU is 0.078 (DINOv3\nSAR+AE), followed by TerraMind SAR+AE (0.072)",
+                "value": 0.072
+              }
+            ],
+            "direction": "better",
+            "label": "thin",
+            "model": "alphaearth",
+            "n_claims": 3,
+            "n_papers": 1,
+            "n_papers_all": 1,
+            "task": "flood_mapping"
+          },
           "alphaearth\thydrological_modeling": {
             "agreement": 1.0,
             "claims": [
@@ -3230,6 +3494,7 @@
           "change_detection",
           "crop_type_mapping",
           "crop_yield_estimation",
+          "flood_mapping",
           "hydrological_modeling",
           "land_cover_classification",
           "landslide_susceptibility",
@@ -3411,7 +3676,7 @@
           "n_papers_all": 0
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.75,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -3525,13 +3790,45 @@
               "self_evaluation": false,
               "span": "the median NSE of the AEF embeddings rose to 0.612, while the model relying on CAMELS attributes reached only 0.553",
               "value": 0.612
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.041,
+              "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "DINOv3 SAR+AE achieves the best Florence IoU (0.078)",
+              "value": 0.078
+            },
+            {
+              "baseline": null,
+              "baseline_value": 0.046,
+              "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Sec III-C",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "the best mean IoU is 0.078 (DINOv3\nSAR+AE), followed by TerraMind SAR+AE (0.072)",
+              "value": 0.072
             }
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 7,
-          "n_papers": 3,
-          "n_papers_all": 5
+          "n_claims": 9,
+          "n_papers": 4,
+          "n_papers_all": 6
         },
         {
           "agreement": null,
@@ -3784,7 +4081,7 @@
           "n_papers_all": 1
         },
         {
-          "agreement": null,
+          "agreement": 1.0,
           "axis": "G11_complementarity",
           "claims": [
             {
@@ -3818,13 +4115,29 @@
               "self_evaluation": false,
               "span": "their fused score (76.7%) is significantly greater than any of their individual scores (71.1% and 70.6%, respectively)",
               "value": 76.7
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.103,
+              "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Sec III-C",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "followed by DINOv3 SAR+AE (0.172)",
+              "value": 0.172
             }
           ],
-          "direction": null,
-          "label": "gap",
-          "n_claims": 2,
-          "n_papers": 0,
-          "n_papers_all": 2
+          "direction": "better",
+          "label": "thin",
+          "n_claims": 3,
+          "n_papers": 1,
+          "n_papers_all": 3
         },
         {
           "agreement": null,
@@ -4049,6 +4362,96 @@
           "model": "alphaearth",
           "n_papers": 1,
           "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.103,
+              "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Sec III-C",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "followed by DINOv3 SAR+AE (0.172)",
+              "value": 0.172
+            }
+          ],
+          "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.041,
+              "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "DINOv3 SAR+AE achieves the best Florence IoU (0.078)",
+              "value": 0.078
+            }
+          ],
+          "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": 0.046,
+              "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Sec III-C",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "the best mean IoU is 0.078 (DINOv3\nSAR+AE), followed by TerraMind SAR+AE (0.072)",
+              "value": 0.072
+            }
+          ],
+          "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "flood_mapping"
         },
         {
           "agreement": 1.0,
@@ -4721,6 +5124,66 @@
             "n_papers_all": 1,
             "task": "crop_yield_estimation"
           },
+          "alphaearth\tflood_mapping": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.041,
+                "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2606.29134",
+                "locator": "Table I",
+                "metric": "miou",
+                "model": "alphaearth",
+                "paper_key": "thasma2026beyond",
+                "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+                "self_evaluation": false,
+                "span": "DINOv3 SAR+AE achieves the best Florence IoU (0.078)",
+                "value": 0.078
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.103,
+                "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2606.29134",
+                "locator": "Sec III-C",
+                "metric": "miou",
+                "model": "alphaearth",
+                "paper_key": "thasma2026beyond",
+                "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+                "self_evaluation": false,
+                "span": "followed by DINOv3 SAR+AE (0.172)",
+                "value": 0.172
+              },
+              {
+                "baseline": null,
+                "baseline_value": 0.046,
+                "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2606.29134",
+                "locator": "Sec III-C",
+                "metric": "miou",
+                "model": "alphaearth",
+                "paper_key": "thasma2026beyond",
+                "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+                "self_evaluation": false,
+                "span": "the best mean IoU is 0.078 (DINOv3\nSAR+AE), followed by TerraMind SAR+AE (0.072)",
+                "value": 0.072
+              }
+            ],
+            "direction": "better",
+            "label": "thin",
+            "model": "alphaearth",
+            "n_claims": 3,
+            "n_papers": 1,
+            "n_papers_all": 1,
+            "task": "flood_mapping"
+          },
           "alphaearth\thydrological_modeling": {
             "agreement": 1.0,
             "claims": [
@@ -5202,6 +5665,7 @@
         "tasks": [
           "canopy_height_estimation",
           "crop_yield_estimation",
+          "flood_mapping",
           "hydrological_modeling",
           "land_cover_classification",
           "landslide_susceptibility",

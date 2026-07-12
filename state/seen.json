@@ -17,6 +17,24 @@
     "key": "plas2026better",
     "status": "carded"
   },
+  "beyond backscatter alphaearth land cover priors for rapid sar flood segmentation across foundation backbones": {
+    "arxiv_id": "2606.29134",
+    "dropped_claims": 0,
+    "key": "thasma2026beyond",
+    "status": "carded"
+  },
+  "biomazon a multimodal dataset for 3d forest structure and biomass modeling in the amazon basin": {
+    "arxiv_id": "2606.05368",
+    "dropped_claims": 0,
+    "key": "mandal2026biomazon",
+    "status": "carded"
+  },
+  "characterizing brazilian atlantic forest restoration outcomes with geospatial alphaearth embeddings": {
+    "arxiv_id": "2605.05547",
+    "dropped_claims": 0,
+    "key": "heiman2026characterizing",
+    "status": "carded"
+  },
   "earth embeddings reveal diverse urban signals from space": {
     "arxiv_id": "2604.03456",
     "dropped_claims": 0,
@@ -41,6 +59,12 @@
     "key": "ma2025harvesting",
     "status": "carded"
   },
+  "in context learning enables continental scale subsurface temperature prediction from sparse local observations": {
+    "arxiv_id": "2605.16665",
+    "dropped_claims": 0,
+    "key": "omalley2026context",
+    "status": "carded"
+  },
   "inferring height from earth embeddings first insights using google alphaearth": {
     "arxiv_id": "2602.17250",
     "dropped_claims": 0,
@@ -52,6 +76,14 @@
     "dropped_claims": 1,
     "key": "pettersson2025leveraging",
     "status": "carded"
+  },
+  "mapping tomato cropping systems in california using alphaearth geospatial embeddings and deep learning analysis": {
+    "key": "narimani2026mapping",
+    "status": "quarantined"
+  },
+  "mini jepa foundation model fleet enables agentic hydrologic intelligence": {
+    "key": "rahman2026mini",
+    "status": "quarantined"
   },
   "slum detection and density mapping with alphaearth foundations a representation learning evaluation across 12 global cities": {
     "arxiv_id": "2605.10029",
@@ -75,6 +107,12 @@
     "arxiv_id": "2603.16911",
     "dropped_claims": 0,
     "key": "benavidesmartinez2026what",
+    "status": "carded"
+  },
+  "when context compensates for sparse event history alphaearth for spatio temporal point process forecasting": {
+    "arxiv_id": "2607.01082",
+    "dropped_claims": 0,
+    "key": "aalaila2026when",
     "status": "carded"
   }
 }
