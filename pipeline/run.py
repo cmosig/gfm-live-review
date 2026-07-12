@@ -180,6 +180,14 @@ def process_paper(vr: verify.VerifyResult, run_fn, seen: dict,
         state.mark_seen(seen, title=cand.title, key=key, status="quarantined")
         return f"quarantined:{result.reason[:40]}"
 
+    # Relevance gate: a broad backfill search pulls in false positives (e.g. a
+    # database named "Presto"). If extraction found neither a tracked model nor
+    # any quantitative claim, this isn't a GFM evaluation paper — skip it (mark
+    # seen so we don't re-fetch it) rather than write an empty card.
+    if not result.card.models and not result.card.claims:
+        state.mark_seen(seen, title=cand.title, key=key, status="off_topic")
+        return "skip:off_topic"
+
     # Self-evaluation is decided mechanically where possible: author overlap
     # with the evaluated model's own defining paper (already in the corpus).
     # The LLM's flag only breaks ties for models whose paper we don't hold.
@@ -204,8 +212,19 @@ def process_paper(vr: verify.VerifyResult, run_fn, seen: dict,
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+def publish(*, push: bool, use_git: bool, msg: str) -> int:
+    """Grow the taxonomy, rebuild the site, and (optionally) commit + push."""
+    all_cards = cards_mod.load_all_cards()
+    apply_tag_promotion(all_cards)
+    build(quarantine_count=quarantine.count())
+    if use_git:
+        git_commit_push(msg, push=push)
+    return len(all_cards)
+
+
 def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
-        use_git: bool, limit: int | None) -> int:
+        use_git: bool, limit: int | None, backfill: bool = False,
+        redeploy_every: int | None = None) -> int:
     started = datetime.now(timezone.utc)
     stats = {"ingested": 0, "accepted": 0, "new": 0, "carded": 0,
              "quarantined": 0, "skipped": 0, "quota_stopped": False}
@@ -221,6 +240,9 @@ def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
     # --- ingest ---
     if seed:
         candidates = ingest.fetch_arxiv_by_ids(SEED_ARXIV_IDS)
+    elif backfill:
+        candidates = ingest.fetch_arxiv_backfill()
+        print(f"backfill ingest: {len(candidates)} candidates", file=sys.stderr)
     else:
         candidates = ingest.fetch_arxiv_recent()
         try:
@@ -269,6 +291,12 @@ def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
         print(f"  {status}", file=sys.stderr)
         if status.startswith("carded"):
             stats["carded"] += 1
+            # Redeploy every N newly-carded papers, so the live site grows in
+            # visible increments during a long backfill.
+            if redeploy_every and stats["carded"] % redeploy_every == 0:
+                n = publish(push=push, use_git=use_git,
+                            msg=f"data: +{redeploy_every} cards ({stats['carded']} this run)")
+                print(f"  ↳ redeployed at {stats['carded']} cards ({n} total)", file=sys.stderr)
         elif status.startswith("quarantined"):
             stats["quarantined"] += 1
         else:
@@ -276,22 +304,19 @@ def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
         existing_titles.add(state.title_key(cand.title))
         time.sleep(PER_PAPER_SLEEP)
 
-    # --- taxonomy growth, aggregate, build ---
-    all_cards = cards_mod.load_all_cards()
-    promoted, pending = apply_tag_promotion(all_cards)
-    if promoted:
-        print(f"promoted tags: {promoted}", file=sys.stderr)
-    build(quarantine_count=quarantine.count())
+    # --- taxonomy growth, aggregate, build, final publish ---
+    n_cards = publish(
+        push=push, use_git=use_git,
+        msg=f"run: +{stats['carded']} cards, {stats['quarantined']} quarantined, "
+            f"{len(cards_mod.load_all_cards())} total")
 
-    # --- run log & commit ---
+    # --- run log ---
     duration = (datetime.now(timezone.utc) - started).total_seconds()
-    state.append_run({"event": "run", "seed": seed, "extractor": extractor,
-                      "duration_s": round(duration, 1), **stats,
-                      "n_cards": len(all_cards), "quarantine": quarantine.count()})
-    if use_git:
-        msg = (f"run: +{stats['carded']} cards, {stats['quarantined']} quarantined, "
-               f"{len(all_cards)} total")
-        git_commit_push(msg, push=push)
+    state.append_run({"event": "run", "seed": seed, "backfill": backfill,
+                      "extractor": extractor, "duration_s": round(duration, 1),
+                      **stats, "n_cards": n_cards, "quarantine": quarantine.count()})
+    if use_git:  # commit the run-log line too
+        git_commit_push(f"log: run complete ({n_cards} cards)", push=push)
 
     print(f"DONE: {stats}", file=sys.stderr)
     return 0
@@ -324,13 +349,18 @@ def main(argv=None) -> int:
     p.add_argument("--no-push", action="store_true", help="commit but do not push")
     p.add_argument("--no-git", action="store_true", help="skip all git operations")
     p.add_argument("--limit", type=int, default=None, help="cap papers processed this run")
+    p.add_argument("--backfill", action="store_true",
+                   help="exhaustive one-off search to grow the corpus")
+    p.add_argument("--redeploy-every", type=int, default=None,
+                   help="rebuild + commit + push after every N newly-carded papers")
     args = p.parse_args(argv)
 
     try:
         with _Lock():
             return run(seed=args.seed, extractor=args.extractor,
                        egress_mode=args.egress_mode, push=not args.no_push,
-                       use_git=not args.no_git, limit=args.limit)
+                       use_git=not args.no_git, limit=args.limit,
+                       backfill=args.backfill, redeploy_every=args.redeploy_every)
     except SystemExit:
         raise
     except Exception:

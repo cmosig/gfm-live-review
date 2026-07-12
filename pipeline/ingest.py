@@ -108,6 +108,47 @@ def fetch_arxiv_recent(*, max_results: int = 50) -> list[Candidate]:
     return out
 
 
+def fetch_arxiv_backfill(*, per_query: int = 100) -> list[Candidate]:
+    """Exhaustive one-off sweep to grow the corpus: every model alias + topical
+    queries, paginated, deduplicated by arXiv id. Screening decides relevance.
+    """
+    queries: list[str] = []
+    for aliases in config.model_aliases().values():
+        for alias in aliases[:2]:  # the two most specific aliases per model
+            queries.append(f'all:"{alias}"')
+    queries += [
+        'all:"geospatial foundation model"',
+        'all:"earth observation foundation model"',
+        'all:"remote sensing foundation model"',
+        'all:"satellite embeddings"',
+        'all:"earth embeddings"',
+        'abs:"foundation model" AND abs:"remote sensing"',
+        'abs:"pretrained" AND abs:"earth observation"',
+    ]
+    seen_ids: set[str] = set()
+    out: list[Candidate] = []
+    for q in queries:
+        for start in range(0, per_query, 50):
+            batch = _arxiv_search_page(q, start=start, max_results=50)
+            new = [c for c in batch if c.arxiv_id and c.arxiv_id not in seen_ids]
+            for c in new:
+                seen_ids.add(c.arxiv_id)
+            out += new
+            if len(batch) < 50:
+                break  # no more pages for this query
+    return out
+
+
+def _arxiv_search_page(query: str, *, start: int, max_results: int) -> list[Candidate]:
+    params = {
+        "search_query": query, "start": start, "max_results": max_results,
+        "sortBy": "submittedDate", "sortOrder": "descending",
+    }
+    resp = http.get(ARXIV_API, params=params)
+    http.courtesy_sleep()
+    return _arxiv_entries_to_candidates(feedparser.parse(resp.text))
+
+
 def fetch_openalex_recent(since: date, *, per_page: int = 50) -> list[Candidate]:
     """OpenAlex works published since `since`, in the polite pool."""
     params = {
