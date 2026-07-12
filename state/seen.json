@@ -11,6 +11,12 @@
     "key": "brown2025alphaearth",
     "status": "carded"
   },
+  "alphaearth satellite embeddings for modelling climate sensitive diseases towards global health resilience": {
+    "arxiv_id": "2605.10949",
+    "dropped_claims": 0,
+    "key": "nazir2026alphaearth",
+    "status": "carded"
+  },
   "better together evaluating the complementarity of earth embedding models": {
     "arxiv_id": "2605.18667",
     "dropped_claims": 0,
@@ -28,6 +34,10 @@
     "dropped_claims": 0,
     "key": "mandal2026biomazon",
     "status": "carded"
+  },
+  "characterizing alphaearth embedding geometry for agentic environmental reasoning": {
+    "key": "rahman2026characterizing",
+    "status": "quarantined"
   },
   "characterizing brazilian atlantic forest restoration outcomes with geospatial alphaearth embeddings": {
     "arxiv_id": "2605.05547",
@@ -53,10 +63,28 @@
     "key": "cheng2026from",
     "status": "carded"
   },
+  "from pixels to patches pooling strategies for earth embeddings": {
+    "arxiv_id": "2603.02080",
+    "dropped_claims": 0,
+    "key": "corley2026from",
+    "status": "carded"
+  },
+  "fusar gpt a spatiotemporal feature embedded and two stage decoupled visual language model for sar imagery": {
+    "arxiv_id": "2602.19190",
+    "dropped_claims": 0,
+    "key": "zhang2026fusar",
+    "status": "carded"
+  },
   "harvesting alphaearth benchmarking the geospatial foundation model for agricultural downstream tasks": {
     "arxiv_id": "2601.00857",
     "dropped_claims": 0,
     "key": "ma2025harvesting",
+    "status": "carded"
+  },
+  "huiyanearth sar a foundation model for high fidelity and low cost global remote sensing imagery generation": {
+    "arxiv_id": "2604.11444",
+    "dropped_claims": 0,
+    "key": "liu2026huiyanearth",
     "status": "carded"
   },
   "in context learning enables continental scale subsurface temperature prediction from sparse local observations": {
@@ -89,6 +117,12 @@
     "arxiv_id": "2605.10029",
     "dropped_claims": 0,
     "key": "hou2026slum",
+    "status": "carded"
+  },
+  "subsurface property mapping using google alphaearth foundations": {
+    "arxiv_id": "2604.14756",
+    "dropped_claims": 0,
+    "key": "nakata2026subsurface",
     "status": "carded"
   },
   "tessera temporal embeddings of surface spectra for earth representation and analysis": {
