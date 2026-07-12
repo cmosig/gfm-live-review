@@ -26,11 +26,14 @@
   "DHS_surveys": [
     "pettersson2025leveraging"
   ],
-  "DINOv3": [
-    "thasma2026beyond"
-  ],
   "EuroSAT-Embed": [
     "corley2026from"
+  ],
+  "FCOS": [
+    "asif2026adapting"
+  ],
+  "Faster_RCNN": [
+    "asif2026adapting"
   ],
   "GeoNames": [
     "pettersson2025leveraging"
@@ -65,6 +68,9 @@
   "PDFM": [
     "metz2025application"
   ],
+  "PEFT": [
+    "asif2026adapting"
+  ],
   "POI auxiliary features": [
     "hou2026slum"
   ],
@@ -86,17 +92,29 @@
   "Sub-Saharan_Africa": [
     "pettersson2025leveraging"
   ],
-  "TerraMind": [
-    "thasma2026beyond"
+  "UPerNet_decoder": [
+    "polushko2026flood"
+  ],
+  "VHSR_pretraining_curation": [
+    "perera2026clustering"
+  ],
+  "ViT-Adapter": [
+    "asif2026adapting"
   ],
   "XGBoost": [
     "metz2025application"
+  ],
+  "affinity_propagation_clustering": [
+    "perera2026clustering"
   ],
   "agbd": [
     "mandal2026biomazon"
   ],
   "agricultural_practice_mapping": [
     "ma2025harvesting"
+  ],
+  "airborne_RGB_imagery": [
+    "polushko2026flood"
   ],
   "alphaearth_late_fusion": [
     "mandal2026biomazon"
@@ -106,6 +124,12 @@
   ],
   "analysis_ready_embeddings": [
     "ma2025harvesting"
+  ],
+  "archaeological_site_monitoring": [
+    "tadesse2026watch"
+  ],
+  "arctic_infrastructure_mapping": [
+    "perera2026clustering"
   ],
   "atlantic_forest": [
     "heiman2026characterizing"
@@ -119,6 +143,9 @@
   "auxiliary land-cover prior": [
     "thasma2026beyond"
   ],
+  "barlow-twins": [
+    "feng2026tessera"
+  ],
   "barlow_twins": [
     "feng2025tessera"
   ],
@@ -130,6 +157,9 @@
   ],
   "borehole_data": [
     "omalley2026context"
+  ],
+  "burned_area_mapping": [
+    "shibli2026low"
   ],
   "calibration": [
     "omalley2026context"
@@ -149,8 +179,17 @@
   "city-scale representation drift": [
     "hou2026slum"
   ],
+  "class_imbalance": [
+    "ishikawa2025assessing"
+  ],
   "climate_sensitive_disease": [
     "nazir2026alphaearth"
+  ],
+  "clip": [
+    "tadesse2026watch"
+  ],
+  "cloud_gap_imputation": [
+    "li2026hls"
   ],
   "cloud_robustness": [
     "feng2025tessera"
@@ -160,6 +199,9 @@
   ],
   "commuting_mode_share": [
     "gong2026earth"
+  ],
+  "compute-optimal-allocation": [
+    "feng2026tessera"
   ],
   "continuous_time_modeling": [
     "brown2025alphaearth"
@@ -182,6 +224,9 @@
   "cover_crop_mapping": [
     "ma2025harvesting"
   ],
+  "credit-lending": [
+    "sachan2026post"
+  ],
   "crime_prediction": [
     "gong2026earth"
   ],
@@ -203,6 +248,12 @@
   "dataset_paper": [
     "mandal2026biomazon"
   ],
+  "decision_threshold_sensitivity": [
+    "polushko2026flood"
+  ],
+  "dempster-shafer-fusion": [
+    "sachan2026post"
+  ],
   "dhs_survey": [
     "nazir2026alphaearth"
   ],
@@ -221,14 +272,26 @@
   "dimensionality_reduction": [
     "gong2026earth"
   ],
+  "dinov3": [
+    "tadesse2026watch"
+  ],
   "distance_to_road_prediction": [
     "plas2026better"
   ],
   "distribution_shift": [
     "hamoudzadeh2026inferring"
   ],
+  "domain_gap_satellite_to_rgb": [
+    "polushko2026flood"
+  ],
+  "domain_specific_MAE": [
+    "perera2026clustering"
+  ],
   "donor_basin_selection": [
     "qu2026utilizing"
+  ],
+  "downstream-driven-scaling-laws": [
+    "feng2026tessera"
   ],
   "dsm_regression": [
     "hamoudzadeh2026inferring"
@@ -269,6 +332,9 @@
   "embedding_interpretability": [
     "rahman2026physically"
   ],
+  "embeddings-as-data": [
+    "feng2026tessera"
+  ],
   "embeddings_as_data": [
     "feng2025tessera"
   ],
@@ -296,20 +362,35 @@
   "faiss_similarity_search": [
     "rahman2026physically"
   ],
+  "fallow_detection": [
+    "asif2026adapting"
+  ],
   "feature-wise linear modulation": [
     "zhang2026fusar"
   ],
   "feature_engineering_free": [
     "lisaius2026embedding"
   ],
+  "federated-defi": [
+    "sachan2026post"
+  ],
+  "fine_tuning": [
+    "ishikawa2025assessing"
+  ],
   "fixed_embedding_products": [
     "corley2026from"
+  ],
+  "food_water_nexus": [
+    "asif2026adapting"
   ],
   "forest_restoration_monitoring": [
     "heiman2026characterizing"
   ],
   "frozen backbone": [
     "thasma2026beyond"
+  ],
+  "frozen_vs_finetuned_embeddings": [
+    "ishikawa2025assessing"
   ],
   "functional interpretability": [
     "benavidesmartinez2026what"
@@ -319,6 +400,9 @@
   ],
   "fuzzy_label_loss": [
     "pettersson2025leveraging"
+  ],
+  "gap_filling": [
+    "li2026hls"
   ],
   "gdp_mapping": [
     "liu2025beyond"
@@ -334,6 +418,12 @@
   ],
   "geo_conditioned_generation": [
     "liu2026huiyanearth"
+  ],
+  "geographic_generalization": [
+    "shang2026benchmarking"
+  ],
+  "georsclip": [
+    "tadesse2026watch"
   ],
   "geospatial prior as world knowledge": [
     "zhang2026fusar"
@@ -365,6 +455,12 @@
   "handcrafted_features_vs_embeddings": [
     "cheng2026from"
   ],
+  "handcrafted_spectral_texture_features": [
+    "tadesse2026watch"
+  ],
+  "harmonic_medoid_features": [
+    "ishikawa2025assessing"
+  ],
   "health_burden_prediction": [
     "gong2026earth"
   ],
@@ -374,14 +470,26 @@
   "hierarchical embedding structure": [
     "benavidesmartinez2026what"
   ],
+  "homomorphic-encryption": [
+    "sachan2026post"
+  ],
   "housing_price_estimation": [
     "hou2026aef"
+  ],
+  "ice_wedge_polygon_detection": [
+    "perera2026clustering"
   ],
   "in_context_learning": [
     "omalley2026context"
   ],
   "informal settlements": [
     "hou2026slum"
+  ],
+  "input_adaptation_confound": [
+    "shang2026benchmarking"
+  ],
+  "input_format_adaptation": [
+    "shang2026benchmarking"
   ],
   "input_label_resolution_mismatch": [
     "corley2026from"
@@ -397,6 +505,12 @@
   ],
   "internet_search_embeddings": [
     "metz2025application"
+  ],
+  "knowledge-distillation": [
+    "feng2026tessera"
+  ],
+  "land-fertility-classification": [
+    "sachan2026post"
   ],
   "land_use_distribution_mapping": [
     "liu2025beyond"
@@ -419,6 +533,9 @@
   "log_gaussian_cox_process": [
     "aalaila2026when"
   ],
+  "looting_detection": [
+    "tadesse2026watch"
+  ],
   "lora_finetuning": [
     "liu2026huiyanearth"
   ],
@@ -428,11 +545,17 @@
   "lulc_misclassification_detection": [
     "heiman2026characterizing"
   ],
+  "matryoshka-embeddings": [
+    "feng2026tessera"
+  ],
   "mean_absolute_error_metric": [
     "omalley2026context"
   ],
   "mean_pooling": [
     "corley2026from"
+  ],
+  "minority_crop_detection": [
+    "shang2026benchmarking"
   ],
   "mobile_phone_data": [
     "metz2025application"
@@ -464,6 +587,9 @@
   "mutual_information_analysis": [
     "qu2026utilizing"
   ],
+  "national_forest_inventory": [
+    "ishikawa2025assessing"
+  ],
   "natural_language_query": [
     "rahman2026physically"
   ],
@@ -476,6 +602,9 @@
   "near_surface_seismic_velocity": [
     "nakata2026subsurface"
   ],
+  "nested-embeddings": [
+    "feng2026tessera"
+  ],
   "nighttime lights": [
     "hou2026slum"
   ],
@@ -485,14 +614,23 @@
   "object counting": [
     "zhang2026fusar"
   ],
+  "object_detection": [
+    "asif2026adapting"
+  ],
   "oil_palm_plantation_mapping": [
     "brown2025alphaearth"
   ],
   "olmoearth": [
     "corley2026from"
   ],
+  "parameter_efficient_fine_tuning": [
+    "shibli2026low"
+  ],
   "physics_informed_baseline": [
     "omalley2026context"
+  ],
+  "pixel-wise-foundation-model": [
+    "feng2026tessera"
   ],
   "pixel_embeddings": [
     "plas2026better"
@@ -521,8 +659,14 @@
   "population_health": [
     "nazir2026alphaearth"
   ],
+  "post-quantum-cryptography": [
+    "sachan2026post"
+  ],
   "prediction_in_ungauged_basins": [
     "qu2026utilizing"
+  ],
+  "pretraining-loss-vs-downstream": [
+    "feng2026tessera"
   ],
   "proprietary_model": [
     "heiman2026characterizing"
@@ -533,14 +677,29 @@
   "rainfall_runoff_modeling": [
     "qu2026utilizing"
   ],
+  "random_forest": [
+    "ishikawa2025assessing"
+  ],
+  "recall_at_k_temporal_margin": [
+    "tadesse2026watch"
+  ],
+  "red_edge_reconstruction": [
+    "li2026hls"
+  ],
   "reference_data_resolution": [
     "ko2026exploring"
   ],
   "reference_trajectory_embedding": [
     "heiman2026characterizing"
   ],
+  "reflectance_reconstruction": [
+    "li2026hls"
+  ],
   "reforestation": [
     "heiman2026characterizing"
+  ],
+  "regional_distribution_shift": [
+    "shang2026benchmarking"
   ],
   "regionalization": [
     "qu2026utilizing"
@@ -557,6 +716,9 @@
   "retrieval_augmented_generation": [
     "rahman2026physically"
   ],
+  "retrogressive_thaw_slump_detection": [
+    "perera2026clustering"
+  ],
   "rh_profile_prediction": [
     "mandal2026biomazon"
   ],
@@ -568,6 +730,9 @@
   ],
   "sar_image_generation": [
     "liu2026huiyanearth"
+  ],
+  "satlas_pretrain": [
+    "tadesse2026watch"
   ],
   "scale_transfer": [
     "ma2025harvesting"
@@ -584,8 +749,17 @@
   "seismic_site_characterization": [
     "nakata2026subsurface"
   ],
+  "self_supervised_change_scoring": [
+    "tadesse2026watch"
+  ],
   "sentinel-1": [
     "lisaius2026embedding"
+  ],
+  "sentinel-1-2-fusion": [
+    "feng2026tessera"
+  ],
+  "sentinel-1_sentinel-2_fusion": [
+    "ishikawa2025assessing"
   ],
   "sentinel-2": [
     "lisaius2026embedding"
@@ -611,9 +785,6 @@
   "spatial localization": [
     "zhang2026fusar"
   ],
-  "spatial_autocorrelation": [
-    "pettersson2025leveraging"
-  ],
   "spatial_scale_of_classes": [
     "plas2026better"
   ],
@@ -631,6 +802,9 @@
   ],
   "stats_pooling": [
     "corley2026from"
+  ],
+  "storage-adaptive": [
+    "feng2026tessera"
   ],
   "streamflow_prediction": [
     "qu2026utilizing"
@@ -656,6 +830,9 @@
   "surface_height_mapping": [
     "hamoudzadeh2026inferring"
   ],
+  "surface_reflectance": [
+    "li2026hls"
+  ],
   "surface_to_subsurface_inference": [
     "nakata2026subsurface"
   ],
@@ -668,6 +845,9 @@
   "temporal_alignment": [
     "cheng2026from"
   ],
+  "temporal_embedding_distance": [
+    "tadesse2026watch"
+  ],
   "temporal_sampling_invariance": [
     "feng2025tessera"
   ],
@@ -677,11 +857,14 @@
   "tillage_mapping": [
     "ma2025harvesting"
   ],
+  "time_series_reconstruction": [
+    "li2026hls"
+  ],
   "tree_genera_classification": [
     "brown2025alphaearth"
   ],
-  "tree_species_classification": [
-    "feng2025tessera"
+  "tundra_capillary_network_detection": [
+    "perera2026clustering"
   ],
   "two-stage SFT": [
     "zhang2026fusar"
@@ -716,8 +899,14 @@
   "vs30_estimation": [
     "nakata2026subsurface"
   ],
+  "weakly_supervised_temporal_localization": [
+    "tadesse2026watch"
+  ],
   "west_africa": [
     "lisaius2026embedding"
+  ],
+  "wildfire_mapping": [
+    "shibli2026low"
   ],
   "workflow_simplicity": [
     "zvonkov2025cropland"

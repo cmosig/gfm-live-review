@@ -70,7 +70,12 @@ limitations:
 
 # >>> auto-managed below (auto-promoted tags); human edits above are preserved >>>
 promoted_tags:
+- DINOv3
+- LoRA
+- TerraMind
 - disease_surveillance
 - malaria_prediction
 - satellite_embeddings
+- spatial_autocorrelation
+- tree_species_classification
 - urban_morphology

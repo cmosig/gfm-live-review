@@ -7,6 +7,12 @@
     "key": "kontogeorgiou2026accessibility",
     "status": "off_topic"
   },
+  "adapting prithvi eo for fallow detection for food water nexus vit adapter necks and parameter efficient backbone tuning of geospatial foundation model": {
+    "arxiv_id": "2606.12218",
+    "dropped_claims": 0,
+    "key": "asif2026adapting",
+    "status": "carded"
+  },
   "adaptive individual uncertainty under out of distribution shift with expert routed conformal prediction": {
     "key": "badkul2025adaptive",
     "status": "off_topic"
@@ -87,6 +93,12 @@
     "arxiv_id": "2605.05547",
     "dropped_claims": 0,
     "key": "heiman2026characterizing",
+    "status": "carded"
+  },
+  "clustering guided domain specific pretrained foundation model for very high resolution arctic remote sensing": {
+    "arxiv_id": "2605.30467",
+    "dropped_claims": 0,
+    "key": "perera2026clustering",
     "status": "carded"
   },
   "cropland mapping using geospatial embeddings": {
@@ -207,6 +219,10 @@
     "key": "correia2025isoperimetric",
     "status": "off_topic"
   },
+  "land cover and flood type govern the detection limits of satellite based flood mapping across diverse global flood events": {
+    "key": "kolluru2026land",
+    "status": "quarantined"
+  },
   "leveraging compact satellite embeddings and graph neural networks for large scale poverty mapping": {
     "arxiv_id": "2511.01408",
     "dropped_claims": 1,
@@ -224,6 +240,12 @@
   "locality of percolation for graphs with polynomial growth": {
     "key": "contreras2022locality",
     "status": "off_topic"
+  },
+  "low rank adaptation of geospatial foundation models for wildfire mapping using sentinel 2 data": {
+    "arxiv_id": "2605.04989",
+    "dropped_claims": 0,
+    "key": "shibli2026low",
+    "status": "carded"
   },
   "mapping tomato cropping systems in california using alphaearth geospatial embeddings and deep learning analysis": {
     "key": "narimani2026mapping",
@@ -294,6 +316,12 @@
   "poincar profiles of lamplighter diagonal products": {
     "key": "coz2020poincar",
     "status": "off_topic"
+  },
+  "post quantum secure federated defi for inclusive banking": {
+    "arxiv_id": "2606.10658",
+    "dropped_claims": 0,
+    "key": "sachan2026post",
+    "status": "carded"
   },
   "predicting viticulture potential through an ensemble of u net and a geospatial foundation model": {
     "key": "perez2026predicting",
@@ -372,6 +400,12 @@
   "venus key to understanding the evolution of terrestrial planets": {
     "key": "wilson2017venus",
     "status": "off_topic"
+  },
+  "watch wide area archaeological site tracking for change detection": {
+    "arxiv_id": "2605.08160",
+    "dropped_claims": 0,
+    "key": "tadesse2026watch",
+    "status": "carded"
   },
   "what on earth is alphaearth hierarchical structure and functional interpretability for global land cover": {
     "arxiv_id": "2603.16911",
