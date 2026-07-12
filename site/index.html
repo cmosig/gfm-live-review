@@ -570,7 +570,7 @@
         "venue": "arXiv"
       }
     ],
-    "quarantine_count": 4
+    "quarantine_count": 5
   },
   "views": {
     "all": {
@@ -5047,7 +5047,642 @@
           "urban_signal_mapping",
           "wealth_mapping"
         ]
-      }
+      },
+      "task_verdicts": [
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.946,
+              "dataset": "JECAM Senegal (2018)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.16900",
+              "locator": "Table 7",
+              "metric": "accuracy",
+              "model": "tessera",
+              "paper_key": "lisaius2026embedding",
+              "paper_title": "Embedding -based Crop Type Classification in the Groundnut Basin of Senegal",
+              "self_evaluation": true,
+              "span": "0.965 ±\\pm 0.007",
+              "value": 0.965
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.837,
+              "dataset": "JECAM Senegal (train 2018, predict 2021)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.16900",
+              "locator": "Table 8",
+              "metric": "accuracy",
+              "model": "tessera",
+              "paper_key": "lisaius2026embedding",
+              "paper_title": "Embedding -based Crop Type Classification in the Groundnut Basin of Senegal",
+              "self_evaluation": true,
+              "span": "0.850 ±\\pm 0.003",
+              "value": 0.85
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.808",
+              "value": 0.808
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.88,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.897",
+              "value": 0.897
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.745",
+              "value": 0.745
+            }
+          ],
+          "datasets": [
+            "CropHarvest Togo test set",
+            "JECAM Senegal (2018)",
+            "JECAM Senegal (train 2018, predict 2021)"
+          ],
+          "direction": "better",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 1,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "presto",
+              "n_claims": 2,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "tessera",
+              "n_claims": 2,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": true,
+          "n_claims": 5,
+          "n_models": 3,
+          "n_papers": 2,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.38,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ achieved the best results, with an R² of 0.84",
+              "value": 0.84
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 32.22,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ achieved the best performance, with an RMSE of approximately 16 m on the testing set",
+              "value": 16.42
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.38,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ shows better generalization (R2=0.84R^{2}=0.84, median difference = -2.62 m) compared with the standard U-Net (R2=0.78R^{2}=0.78",
+              "value": 0.78
+            }
+          ],
+          "datasets": [
+            "Nouvelle-Aquitaine IGN RGE ALTI DSM"
+          ],
+          "direction": "better",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 3,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 3,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "canopy_height_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.786,
+              "dataset": "JECAM Senegal (2018, 5 crops)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.16900",
+              "locator": "Table 12",
+              "metric": "accuracy",
+              "model": "tessera",
+              "paper_key": "lisaius2026embedding",
+              "paper_title": "Embedding -based Crop Type Classification in the Groundnut Basin of Senegal",
+              "self_evaluation": true,
+              "span": "0.846 ±\\pm 0.033",
+              "value": 0.846
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.647,
+              "dataset": "JECAM Senegal (2019, 5 crops)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.16900",
+              "locator": "Table 12",
+              "metric": "accuracy",
+              "model": "tessera",
+              "paper_key": "lisaius2026embedding",
+              "paper_title": "Embedding -based Crop Type Classification in the Groundnut Basin of Senegal",
+              "self_evaluation": true,
+              "span": "0.694 ±\\pm 0.045",
+              "value": 0.694
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.516,
+              "dataset": "JECAM Senegal (2021, 8 crops)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.16900",
+              "locator": "Table 12",
+              "metric": "accuracy",
+              "model": "tessera",
+              "paper_key": "lisaius2026embedding",
+              "paper_title": "Embedding -based Crop Type Classification in the Groundnut Basin of Senegal",
+              "self_evaluation": true,
+              "span": "0.567 ±\\pm 0.036",
+              "value": 0.567
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.172,
+              "dataset": "JECAM Senegal (train 2018, predict 2019)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.16900",
+              "locator": "Table 13",
+              "metric": "accuracy",
+              "model": "tessera",
+              "paper_key": "lisaius2026embedding",
+              "paper_title": "Embedding -based Crop Type Classification in the Groundnut Basin of Senegal",
+              "self_evaluation": true,
+              "span": "0.626 ±\\pm 0.001",
+              "value": 0.626
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.187,
+              "dataset": "JECAM Senegal (train 2019, predict 2018)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.16900",
+              "locator": "Table 13",
+              "metric": "accuracy",
+              "model": "tessera",
+              "paper_key": "lisaius2026embedding",
+              "paper_title": "Embedding -based Crop Type Classification in the Groundnut Basin of Senegal",
+              "self_evaluation": true,
+              "span": "0.555 ±\\pm 0.001",
+              "value": 0.555
+            }
+          ],
+          "datasets": [
+            "JECAM Senegal (2018, 5 crops)",
+            "JECAM Senegal (2019, 5 crops)",
+            "JECAM Senegal (2021, 8 crops)",
+            "JECAM Senegal (train 2018, predict 2019)",
+            "JECAM Senegal (train 2019, predict 2018)"
+          ],
+          "direction": "better",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "tessera",
+              "n_claims": 5,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 5,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
+              "value": 0.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around -0.28–0.07",
+              "value": -0.28
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around 0.39–0.51",
+              "value": 0.39
+            }
+          ],
+          "datasets": [
+            "USDA-NASS county-level yield",
+            "USDA-NASS county-level yield (ETF/GP ecoregions)"
+          ],
+          "direction": "worse",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 3,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 3,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.041,
+              "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "DINOv3 SAR+AE achieves the best Florence IoU (0.078)",
+              "value": 0.078
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.103,
+              "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Sec III-C",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "followed by DINOv3 SAR+AE (0.172)",
+              "value": 0.172
+            }
+          ],
+          "datasets": [
+            "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+            "ImpactMesh-Flood (EMSR311 Hurricane Florence)"
+          ],
+          "direction": "better",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 2,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 2,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.706,
+              "dataset": "CAMELS",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.01558",
+              "locator": "Sec 6",
+              "metric": "nse",
+              "model": "alphaearth",
+              "paper_key": "qu2026utilizing",
+              "paper_title": "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings",
+              "self_evaluation": false,
+              "span": "median NSE values of 0.708 for the AEF embeddings and 0.706 for the model using CAMELS attributes",
+              "value": 0.708
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.553,
+              "dataset": "CAMELS",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.01558",
+              "locator": "Sec 6",
+              "metric": "nse",
+              "model": "alphaearth",
+              "paper_key": "qu2026utilizing",
+              "paper_title": "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings",
+              "self_evaluation": false,
+              "span": "the median NSE of the AEF embeddings rose to 0.612, while the model relying on CAMELS attributes reached only 0.553",
+              "value": 0.612
+            }
+          ],
+          "datasets": [
+            "CAMELS"
+          ],
+          "direction": "parity",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "parity",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 2,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 2,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "hydrological_modeling"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.9,
+              "dataset": "Nantou County, Taiwan",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.07268",
+              "locator": "Sec 4.3",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "cheng2026from",
+              "paper_title": "From Landslide Conditioning Factors to Satellite Embeddings: Evaluating the Utilisation of Google AlphaEarth for Landslide Susceptibility Mapping using Deep Learning",
+              "self_evaluation": false,
+              "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
+              "value": 0.99
+            }
+          ],
+          "datasets": [
+            "Nantou County, Taiwan"
+          ],
+          "direction": "better",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 1,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 1,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "landslide_susceptibility"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.44,
+              "dataset": "Malawi health catchment areas",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2510.25954",
+              "locator": "Sec Results (Embedding-based Models)",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "metz2025application",
+              "paper_title": "Application and Validation of Geospatial Foundation Model Data for the Prediction of Health Facility Programmatic Outputs -- A Case Study in Malawi",
+              "self_evaluation": false,
+              "span": "with R² values of 0.58 and 0.18 from cross-validation, respectively",
+              "value": 0.58
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.47,
+              "dataset": "Malawi health catchment areas",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2510.25954",
+              "locator": "Sec Results (Embedding-based Models)",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "metz2025application",
+              "paper_title": "Application and Validation of Geospatial Foundation Model Data for the Prediction of Health Facility Programmatic Outputs -- A Case Study in Malawi",
+              "self_evaluation": false,
+              "span": "while test set R² values were\n0.53 and 0.16, respectively",
+              "value": 0.53
+            }
+          ],
+          "datasets": [
+            "Malawi health catchment areas"
+          ],
+          "direction": "better",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 2,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 2,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "population_density"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "GRAM pseudo-masks",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.10029",
+              "locator": "Sec 6.2",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "hou2026slum",
+              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
+              "self_evaluation": false,
+              "span": "the median F1 of S1 TorchMLP is 0.763",
+              "value": 0.763
+            }
+          ],
+          "datasets": [
+            "GRAM pseudo-masks"
+          ],
+          "direction": "parity",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "parity",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 1,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 1,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "slum_detection"
+        }
+      ]
     },
     "no_self_eval": {
       "axes": [
@@ -8081,7 +8716,491 @@
           "urban_signal_mapping",
           "wealth_mapping"
         ]
-      }
+      },
+      "task_verdicts": [
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.38,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ achieved the best results, with an R² of 0.84",
+              "value": 0.84
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 32.22,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ achieved the best performance, with an RMSE of approximately 16 m on the testing set",
+              "value": 16.42
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.38,
+              "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.17250",
+              "locator": "Table 4",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "hamoudzadeh2026inferring",
+              "paper_title": "Inferring Height from Earth Embeddings: First insights using Google AlphaEarth",
+              "self_evaluation": false,
+              "span": "U-Net++ shows better generalization (R2=0.84R^{2}=0.84, median difference = -2.62 m) compared with the standard U-Net (R2=0.78R^{2}=0.78",
+              "value": 0.78
+            }
+          ],
+          "datasets": [
+            "Nouvelle-Aquitaine IGN RGE ALTI DSM"
+          ],
+          "direction": "better",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 3,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 3,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "canopy_height_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
+              "value": 0.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around -0.28–0.07",
+              "value": -0.28
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around 0.39–0.51",
+              "value": 0.39
+            }
+          ],
+          "datasets": [
+            "USDA-NASS county-level yield",
+            "USDA-NASS county-level yield (ETF/GP ecoregions)"
+          ],
+          "direction": "worse",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 3,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 3,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.041,
+              "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "DINOv3 SAR+AE achieves the best Florence IoU (0.078)",
+              "value": 0.078
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.103,
+              "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Sec III-C",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "followed by DINOv3 SAR+AE (0.172)",
+              "value": 0.172
+            }
+          ],
+          "datasets": [
+            "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+            "ImpactMesh-Flood (EMSR311 Hurricane Florence)"
+          ],
+          "direction": "better",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 2,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 2,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.706,
+              "dataset": "CAMELS",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.01558",
+              "locator": "Sec 6",
+              "metric": "nse",
+              "model": "alphaearth",
+              "paper_key": "qu2026utilizing",
+              "paper_title": "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings",
+              "self_evaluation": false,
+              "span": "median NSE values of 0.708 for the AEF embeddings and 0.706 for the model using CAMELS attributes",
+              "value": 0.708
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.553,
+              "dataset": "CAMELS",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.01558",
+              "locator": "Sec 6",
+              "metric": "nse",
+              "model": "alphaearth",
+              "paper_key": "qu2026utilizing",
+              "paper_title": "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings",
+              "self_evaluation": false,
+              "span": "the median NSE of the AEF embeddings rose to 0.612, while the model relying on CAMELS attributes reached only 0.553",
+              "value": 0.612
+            }
+          ],
+          "datasets": [
+            "CAMELS"
+          ],
+          "direction": "parity",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "parity",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 2,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 2,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "hydrological_modeling"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.808",
+              "value": 0.808
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.88,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.897",
+              "value": 0.897
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.745",
+              "value": 0.745
+            }
+          ],
+          "datasets": [
+            "CropHarvest Togo test set"
+          ],
+          "direction": "better",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 1,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "presto",
+              "n_claims": 2,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": true,
+          "n_claims": 3,
+          "n_models": 2,
+          "n_papers": 1,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.9,
+              "dataset": "Nantou County, Taiwan",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.07268",
+              "locator": "Sec 4.3",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "cheng2026from",
+              "paper_title": "From Landslide Conditioning Factors to Satellite Embeddings: Evaluating the Utilisation of Google AlphaEarth for Landslide Susceptibility Mapping using Deep Learning",
+              "self_evaluation": false,
+              "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
+              "value": 0.99
+            }
+          ],
+          "datasets": [
+            "Nantou County, Taiwan"
+          ],
+          "direction": "better",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 1,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 1,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "landslide_susceptibility"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.44,
+              "dataset": "Malawi health catchment areas",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2510.25954",
+              "locator": "Sec Results (Embedding-based Models)",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "metz2025application",
+              "paper_title": "Application and Validation of Geospatial Foundation Model Data for the Prediction of Health Facility Programmatic Outputs -- A Case Study in Malawi",
+              "self_evaluation": false,
+              "span": "with R² values of 0.58 and 0.18 from cross-validation, respectively",
+              "value": 0.58
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.47,
+              "dataset": "Malawi health catchment areas",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2510.25954",
+              "locator": "Sec Results (Embedding-based Models)",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "metz2025application",
+              "paper_title": "Application and Validation of Geospatial Foundation Model Data for the Prediction of Health Facility Programmatic Outputs -- A Case Study in Malawi",
+              "self_evaluation": false,
+              "span": "while test set R² values were\n0.53 and 0.16, respectively",
+              "value": 0.53
+            }
+          ],
+          "datasets": [
+            "Malawi health catchment areas"
+          ],
+          "direction": "better",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 2,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 2,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "population_density"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "GRAM pseudo-masks",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.10029",
+              "locator": "Sec 6.2",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "hou2026slum",
+              "paper_title": "Slum Detection and Density Mapping with AlphaEarth Foundations: A Representation Learning Evaluation Across 12 Global Cities",
+              "self_evaluation": false,
+              "span": "the median F1 of S1 TorchMLP is 0.763",
+              "value": 0.763
+            }
+          ],
+          "datasets": [
+            "GRAM pseudo-masks"
+          ],
+          "direction": "parity",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "parity",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 1,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 1,
+          "n_models": 1,
+          "n_papers": 1,
+          "task": "slum_detection"
+        }
+      ]
     }
   }
 }</script>

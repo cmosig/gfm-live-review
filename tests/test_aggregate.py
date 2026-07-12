@@ -115,6 +115,44 @@ def test_matrix_mixes_baselines_classifies_only_task_specific():
     assert cell["n_papers"] == 1 and cell["n_papers_all"] == 1
 
 
+def test_task_verdicts_pool_gfms_vs_task_specific():
+    # Two models, three papers, all beating a task-specific baseline on the same
+    # task (different datasets). Task verdict pools them: consensus better.
+    cards = [
+        make_card("pap0", claims=[make_claim("pap0", 1, model="alphaearth", dataset="A", direction="better")]),
+        make_card("pap1", claims=[make_claim("pap1", 1, model="tessera", dataset="B", direction="better")]),
+        make_card("pap2", claims=[make_claim("pap2", 1, model="alphaearth", dataset="C", direction="better")]),
+    ]
+    tv = aggregate.task_verdicts(aggregate.flatten(cards))
+    assert len(tv) == 1
+    v = tv[0]
+    assert v["task"] == "crop_type_mapping"
+    assert v["label"] == "consensus" and v["direction"] == "better"
+    assert v["n_papers"] == 3 and v["n_models"] == 2
+    assert set(v["datasets"]) == {"A", "B", "C"}
+    assert v["models_differ"] is False
+
+
+def test_task_verdicts_flag_model_disagreement():
+    # AlphaEarth beats task-specific; TESSERA loses to it — same task.
+    cards = [
+        make_card("pap0", claims=[make_claim("pap0", 1, model="alphaearth", direction="better")]),
+        make_card("pap1", claims=[make_claim("pap1", 1, model="tessera", direction="worse")]),
+    ]
+    tv = aggregate.task_verdicts(aggregate.flatten(cards))
+    v = tv[0]
+    assert v["models_differ"] is True
+    per = {m["model"]: m["direction"] for m in v["models"]}
+    assert per == {"alphaearth": "better", "tessera": "worse"}
+
+
+def test_task_verdicts_ignore_model_vs_model():
+    # A claim comparing two foundation models must not create a task verdict.
+    cards = [make_card("pap0", claims=[make_claim("pap0", 1, baseline="alphaearth")])]
+    tv = aggregate.task_verdicts(aggregate.flatten(cards))
+    assert tv == []
+
+
 def test_axes_view_direction_vs_task_specific_only():
     cards = [make_card("pap0", axes=["G1_label_rich_parity"], claims=[
         make_claim("pap0", 1, baseline="alphaearth", direction="better")])]

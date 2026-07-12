@@ -129,7 +129,10 @@ commentary. The object must have exactly these keys:
 Each claim is an object with keys:
   axis (one of the axis keys), task (one of the task keys),
   dataset (REQUIRED string, the exact benchmark/dataset name),
-  model (one of the model keys), baseline (a model key, or "task_specific", or null),
+  model (one of the model keys), baseline (a model key, or "task_specific", or null;
+        use "task_specific" for ANY non-foundation-model reference: a bespoke
+        supervised model trained for this task, a spectral index such as NDVI/NDWI,
+        or a classical / handcrafted-feature method),
   metric (one of: {metrics}),
   value (number), baseline_value (number or null),
   label_ratio (number in (0,1], or null — fraction of labels used),
@@ -144,12 +147,13 @@ Hard rules:
     Anything else goes in `proposed_tags`, never invented into the enums.
   - `span` MUST be an exact substring of the provided paper text. If you cannot
     find a verbatim <=25-word quote for a number, DROP that claim.
-  - Baselines: the comparison that matters is foundation model vs a
-    TASK-SPECIFIC model (a bespoke supervised model built for that exact task).
-    Whenever the paper reports one, emit the claim with baseline
-    "task_specific" and its score as baseline_value — even if the paper also
-    compares foundation models against each other. Model-vs-model claims may be
-    emitted IN ADDITION, never instead.
+  - Baselines: the comparison that matters is a geospatial foundation model vs a
+    TASK-SPECIFIC approach — a bespoke supervised model, a spectral index
+    (NDVI, NDWI, …), or a classical/handcrafted-feature method. Whenever the
+    paper reports such a comparison, emit the claim with baseline
+    "task_specific" and its score as baseline_value. Comparisons between two
+    foundation models are of little interest — only emit them if the paper has
+    no task-specific comparison at all, and never instead of one.
   - NEVER pool numbers across datasets.
   - Do NOT output a DOI or any identifier; that is added later from metadata.
   - If a field is unknown, use null or an empty list. Do not fabricate.

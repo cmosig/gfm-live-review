@@ -177,7 +177,7 @@ function directionLegend() {
     ["sw-none", "·", "no task-specific comparison yet (only model-vs-model results)"],
   ];
   const legend = el("div", { class: "legend" }, [
-    el("span", { class: "lg-title", text: "Cell colour = direction vs a task-specific model:" }),
+    el("span", { class: "lg-title", text: "Direction — foundation model vs task-specific / index:" }),
     ...items.map(([cls, glyph, label]) => el("span", { class: "lg-item" }, [
       el("span", { class: "lg-swatch " + cls, text: glyph }),
       txt(label),
@@ -190,16 +190,71 @@ function directionLegend() {
   return legend;
 }
 
+function verdictDir(v) {
+  if (!v.n_papers) return { cls: "none", glyph: "·", word: "no task-specific comparison" };
+  if (v.label === "contested") return { cls: "mixed", glyph: "±", word: "papers disagree" };
+  const d = v.direction || "parity";
+  return { cls: d, glyph: DIR_GLYPH[d] || "", word: DIR_WORD[d] || "" };
+}
+
 /* =====================  VIEWS  ===================== */
+
+function renderVerdicts(root) {
+  root.appendChild(el("p", { class: "lede", text:
+    "The headline question: do geospatial foundation models beat the task-specific alternative — a bespoke " +
+    "supervised model or a classical index like NDVI — that a practitioner would otherwise use? Each row is " +
+    "one task, pooling every paper that ran that comparison (we count which way each paper landed, never " +
+    "averaging incomparable metrics). Contested tasks come first. Click a row for the evidence and quotes." }));
+  root.appendChild(directionLegend());
+  const verdicts = currentView().task_verdicts;
+  if (!verdicts.length) {
+    root.appendChild(el("p", { class: "empty-note", text:
+      "No foundation-model-vs-task-specific comparisons extracted yet." }));
+    return;
+  }
+  for (const v of verdicts) {
+    const dl = verdictDir(v);
+    const card = el("div", { class: "vcard",
+      title: "Click for the underlying results and verbatim quotes",
+      onclick: () => openModal(`${taskName(v.task)} — foundation models vs task-specific`, claimTable(v.claims)) });
+
+    card.appendChild(el("div", { class: "vcard-head" }, [
+      el("div", { class: "vcard-title" }, [
+        el("span", { class: "vdir dir-cell-" + dl.cls, text: dl.glyph }),
+        el("span", { class: "vtask", text: taskName(v.task) }),
+      ]),
+      labelChip(v.label, `${v.n_papers} paper${v.n_papers === 1 ? "" : "s"}`),
+    ]));
+
+    const nD = v.datasets.length, nM = v.n_models;
+    card.appendChild(el("div", { class: "vcard-sub", text:
+      `${dl.word} · ${nM} model${nM === 1 ? "" : "s"} · ${nD} dataset${nD === 1 ? "" : "s"}` +
+      (v.agreement !== null && v.n_papers >= 3 ? ` · ${Math.round(v.agreement * 100)}% of papers agree` : "") }));
+
+    // Per-model breakdown, flagged when models disagree.
+    const bd = el("div", { class: "vmodels" });
+    if (v.models_differ) bd.appendChild(el("span", { class: "vdiff", text: "differs by model:" }));
+    for (const m of v.models) {
+      const md = verdictDir(m);
+      bd.appendChild(el("span", { class: "vmodel",
+        title: `${modelName(m.model)}: ${md.word} — ${m.n_papers} paper(s)` }, [
+        el("span", { class: "vdir-sm dir-cell-" + md.cls, text: md.glyph }),
+        el("span", { text: modelName(m.model) }),
+        el("span", { class: "vmodel-n", text: m.n_papers }),
+      ]));
+    }
+    card.appendChild(bd);
+    root.appendChild(card);
+  }
+}
 
 function renderMatrix(root) {
   const m = currentView().matrix;
   root.appendChild(el("p", { class: "lede", text:
-    "Where has each foundation model been evaluated, and does it beat what a practitioner would otherwise " +
-    "build? The number in a cell is how many papers evaluated that model on that task; the colour shows " +
-    "the direction against a task-specific model — the comparison that matters for adoption. Cells with " +
-    "only model-vs-model results are left neutral (·). Click any cell for all underlying results, including " +
-    "model-vs-model ones, with verbatim quotes. Numbers are never averaged across datasets." }));
+    "The same question broken down by individual model: for each foundation model and task, does it beat the " +
+    "task-specific alternative? The number is how many papers ran that comparison; the colour is the " +
+    "direction vs task-specific. Cells with only model-vs-model results are left neutral (·). Click any cell " +
+    "for the underlying results and verbatim quotes. Numbers are never averaged across datasets." }));
   root.appendChild(directionLegend());
   if (!m.tasks.length) { root.appendChild(el("p", { class: "empty-note", text: "No claims yet." })); return; }
 
@@ -249,34 +304,6 @@ function renderMatrix(root) {
   }
   const t = el("div", { class: "matrix scroll" }, [el("table", {}, [el("tbody", {}, body)])]);
   root.appendChild(t);
-}
-
-function renderContested(root) {
-  root.appendChild(el("p", { class: "lede", text:
-    "Groups where at least three papers measured the same thing against a task-specific model — same task, " +
-    "same dataset, same metric, same label regime — and reached opposite conclusions about whether the " +
-    "foundation model wins. This is the most informative page: disagreement usually means a hidden variable " +
-    "(region, preprocessing, label budget) that the field hasn't isolated yet." }));
-  const groups = currentView().groups.filter(
-    g => g.label === "contested" && g.baseline === "task_specific");
-  if (!groups.length) {
-    root.appendChild(el("p", { class: "empty-note", text:
-      "No contested dataset-level groups yet — so far, no ≥3 papers measured the same model on the same " +
-      "dataset and disagreed. As the corpus grows, disagreements will surface here. (Axis-level " +
-      "disagreements already exist — see the Research axes tab.)" }));
-    return;
-  }
-  for (const g of groups) {
-    const card = el("div", { class: "gcard" });
-    card.appendChild(el("div", { class: "gcard-head" }, [
-      el("strong", { text: `${taskName(g.task)} · ${g.dataset}` }),
-      labelChip("contested", `${g.n_papers} papers, ${Math.round(g.agreement * 100)}% agree`)
-    ]));
-    card.appendChild(el("div", { class: "gcard-sub", text:
-      `${modelName(g.model)} vs ${modelName(g.baseline)} · metric: ${g.metric} · labels: ${g.label_regime.replace(/_/g, " ")}` }));
-    card.appendChild(claimTable(g.claims));
-    root.appendChild(card);
-  }
 }
 
 function renderChallenges(root) {
@@ -407,15 +434,15 @@ function renderRegistry(root) {
 }
 
 const TABS = [
-  { id: "matrix", label: "Model × Task", render: renderMatrix },
-  { id: "contested", label: "Contested", render: renderContested },
-  { id: "challenges", label: "Open challenges", render: renderChallenges },
+  { id: "verdicts", label: "GFM vs task-specific", render: renderVerdicts },
+  { id: "bymodel", label: "By model", render: renderMatrix },
   { id: "axes", label: "Research axes", render: renderAxes },
+  { id: "challenges", label: "Open challenges", render: renderChallenges },
   { id: "registry", label: "Paper registry", render: renderRegistry },
 ];
-// Deep-linkable tabs: #contested, #registry, … (falls back to the matrix).
+// Deep-linkable tabs: #bymodel, #registry, … (falls back to the verdicts view).
 let activeTab = TABS.some(t => t.id === location.hash.slice(1))
-  ? location.hash.slice(1) : "matrix";
+  ? location.hash.slice(1) : "verdicts";
 
 function renderTabs() {
   const nav = document.getElementById("tabs");

@@ -176,6 +176,48 @@ def _vs_task_specific(rows: list[ClaimRow]) -> list[ClaimRow]:
     return [r for r in rows if r.baseline == config.TASK_SPECIFIC]
 
 
+def task_verdicts(rows: list[ClaimRow]) -> list[dict]:
+    """The headline view: do geospatial foundation models (as a class) beat
+    task-specific models / indices, per task?
+
+    Only vs-task-specific claims count. Direction is compared per PAPER, then
+    papers are counted — so pooling across datasets is legitimate (we count
+    which way each paper landed, we never average incomparable metrics). A
+    per-model breakdown is attached so a reader can see whether the answer
+    differs by model.
+    """
+    ts = [r for r in rows if r.baseline == config.TASK_SPECIFIC]
+    by_task: dict[str, list[ClaimRow]] = defaultdict(list)
+    for r in ts:
+        by_task[r.task].append(r)
+
+    out = []
+    for task, grp in by_task.items():
+        overall = classify(grp)
+        by_model: dict[str, list[ClaimRow]] = defaultdict(list)
+        for r in grp:
+            by_model[r.model].append(r)
+        models = []
+        for model, mrows in sorted(by_model.items()):
+            mc = classify(mrows)
+            models.append({"model": model, "n_claims": len(mrows), **mc})
+        model_dirs = {m["direction"] for m in models if m["direction"]}
+        out.append({
+            "task": task,
+            **overall,
+            "n_claims": len(grp),
+            "n_models": len(by_model),
+            "datasets": sorted({r.dataset for r in grp}),
+            "models": models,
+            "models_differ": len(model_dirs) > 1,
+            "claims": [_claim_payload(r) for r in grp],
+        })
+
+    order = {"contested": 0, "consensus": 1, "thin": 2, "gap": 3}
+    out.sort(key=lambda t: (order.get(t["label"], 9), -t["n_papers"], t["task"]))
+    return out
+
+
 def matrix_view(rows: list[ClaimRow]) -> dict:
     """Model x task cells, coloured by consensus. Numbers are never pooled;
     the label reflects paper-level agreement, click-through shows the groups.
@@ -234,6 +276,7 @@ def build_group_views(cards: list[Card]) -> dict:
     for view_name, include_self in (("all", True), ("no_self_eval", False)):
         rows = _filter_self(rows_all, include_self)
         out[view_name] = {
+            "task_verdicts": task_verdicts(rows),
             "groups": group_view(rows),
             "matrix": matrix_view(rows),
             "axes": axes_view(rows),
