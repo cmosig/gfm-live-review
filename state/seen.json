@@ -45,6 +45,12 @@
     "key": "auffinger2021asymptotic",
     "status": "off_topic"
   },
+  "benchmarking geospatial foundation models for agriculture applications": {
+    "arxiv_id": "2606.29664",
+    "dropped_claims": 0,
+    "key": "shang2026benchmarking",
+    "status": "carded"
+  },
   "better together evaluating the complementarity of earth embedding models": {
     "arxiv_id": "2605.18667",
     "dropped_claims": 0,
@@ -97,6 +103,10 @@
     "key": "grayevsky2025dehn",
     "status": "off_topic"
   },
+  "dorronsoro s theorem in heisenberg groups": {
+    "key": "fssler2019dorronsoro",
+    "status": "off_topic"
+  },
   "earth embeddings reveal diverse urban signals from space": {
     "arxiv_id": "2604.03456",
     "dropped_claims": 0,
@@ -109,6 +119,10 @@
     "key": "lisaius2026embedding",
     "status": "carded"
   },
+  "embedding the heisenberg group into a bounded dimensional euclidean space with optimal distortion": {
+    "key": "tao2018embedding",
+    "status": "off_topic"
+  },
   "exploring the potential of alphaearth and tessera embeddings for fine scale local climate zone mapping a case study across five cities in switzerland": {
     "arxiv_id": "2606.20034",
     "dropped_claims": 0,
@@ -118,6 +132,12 @@
   "first passage percolation on hyperbolic groups": {
     "key": "basu2019first",
     "status": "off_topic"
+  },
+  "flood mapping from rgb imagery using a vision foundation model": {
+    "arxiv_id": "2606.24120",
+    "dropped_claims": 1,
+    "key": "polushko2026flood",
+    "status": "carded"
   },
   "from landslide conditioning factors to satellite embeddings evaluating the utilisation of google alphaearth for landslide susceptibility mapping using deep learning": {
     "arxiv_id": "2601.07268",
@@ -155,6 +175,12 @@
     "key": "abbott2021higher",
     "status": "off_topic"
   },
+  "hls gpt a generative pretrained transformer gpt for continental scale nasa harmonized landsat and sentinel 2 hls reflectance reconstruction across all bands on arbitrary dates": {
+    "arxiv_id": "2606.18115",
+    "dropped_claims": 0,
+    "key": "li2026hls",
+    "status": "carded"
+  },
   "huiyanearth sar a foundation model for high fidelity and low cost global remote sensing imagery generation": {
     "arxiv_id": "2604.11444",
     "dropped_claims": 0,
@@ -186,6 +212,10 @@
     "dropped_claims": 1,
     "key": "pettersson2025leveraging",
     "status": "carded"
+  },
+  "lipschitz 1 connectedness for some solvable lie groups": {
+    "key": "cohen2016lipschitz",
+    "status": "off_topic"
   },
   "llm guided monte carlo tree search over knowledge graphs composing mechanistic explanations for drug disease pairs": {
     "key": "jakhar2026llm",
@@ -243,6 +273,10 @@
     "key": "garcameja2023dehn",
     "status": "off_topic"
   },
+  "on the finiteness length of some soluble linear groups": {
+    "key": "rego2019finiteness",
+    "status": "off_topic"
+  },
   "on the quasi isometric classification of permutational wreath products": {
     "key": "dumoncel2024quasi",
     "status": "off_topic"
@@ -260,6 +294,10 @@
   "poincar profiles of lamplighter diagonal products": {
     "key": "coz2020poincar",
     "status": "off_topic"
+  },
+  "predicting viticulture potential through an ensemble of u net and a geospatial foundation model": {
+    "key": "perez2026predicting",
+    "status": "quarantined"
   },
   "quasi isometric rigidity for lamplighters with lamps of polynomial growth": {
     "key": "dumoncel2025quasi",
@@ -329,6 +367,10 @@
   },
   "vanishing of the second l p cohomology group for most semisimple groups of rank at least 3": {
     "key": "neumann2023vanishing",
+    "status": "off_topic"
+  },
+  "venus key to understanding the evolution of terrestrial planets": {
+    "key": "wilson2017venus",
     "status": "off_topic"
   },
   "what on earth is alphaearth hierarchical structure and functional interpretability for global land cover": {
