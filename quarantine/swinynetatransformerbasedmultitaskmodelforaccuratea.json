@@ -1,0 +1,35 @@
+{
+  "key": "swinynet a transformer based multi task model for accurate a",
+  "title": "SwinYNet: A Transformer-based Multi-Task Model for Accurate and Efficient FRB Search",
+  "reason": "DOI title mismatch (possible metadata error)",
+  "quarantined_at": "2026-07-12T18:52:13.076753+00:00",
+  "payload": {
+    "candidate": {
+      "title": "SwinYNet: A Transformer-based Multi-Task Model for Accurate and Efficient FRB Search",
+      "abstract": "In this study, we present a transformer-based multi-task model for Fast Radio Burst (FRB) detection, signal segmentation, and parameter estimation directly from time-frequency data, without requiring computationally expensive de-dispersion preprocessing. To overcome the scarcity of labeled observational data, we develop an FRB simulator and a rule-based automatic annotation pipeline, enabling training exclusively on simulated data. Evaluations on the FAST-FREX dataset show that our model achieves an F1 score of 97.8%, recall of 95.7%, and precision of 100%, outperforming both conventional tools (e.g., PRESTO, Heimdall) and recent AI-based baselines (e.g., RaSPDAM, DRAFTS) in both accuracy and inference speed. The model supports pixel-level signal segmentation and yields reliable estimates for dispersion measure (DM) and time of arrival (ToA). Large-scale blind searches on CRAFTS data further demonstrate robustness, with an average false positive rate of 0.28% and minimal human verification required. This search has already led to the identification of two pulsar candidates, both confirmed as known pulsars. Processing benchmarks indicate that the model enables real-time searches on a single consumer-grade GPU, making petabyte-scale blind searches feasible. The code is publicly available on GitHub, and the model can be easily integrated with existing tools to automate and streamline radio data analysis beyond FRB or pulsar searches.",
+      "authors": [
+        "Yunchuan Chen",
+        "Shulei Ni",
+        "Chan Li",
+        "Jianhua Fang",
+        "Dengke Zhou",
+        "Huaxi Chen",
+        "Yi Feng",
+        "Pei Wang",
+        "Chenwu Jin",
+        "Han Wang",
+        "Bijuan Huang",
+        "Xuerong Guo",
+        "Donghui Quan",
+        "Di Li"
+      ],
+      "author_ids": [],
+      "arxiv_id": "2603.05958",
+      "doi": "10.3847/1538-4365/ae40f7",
+      "venue": "arXiv",
+      "date": "2026-03-06",
+      "openalex_id": null,
+      "source": "arxiv"
+    }
+  }
+}

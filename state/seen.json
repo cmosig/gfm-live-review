@@ -5,12 +5,32 @@
     "key": "yusuf2024geospatial",
     "status": "carded"
   },
+  "a gpu based single pulse search pipeline gsp with database and its application to the commensal radio astronomy fast survey crafts": {
+    "key": "you2021gpu",
+    "status": "off_topic"
+  },
   "a sentinel 3 foundation model for ocean colour": {
     "key": "dawson2025sentinel",
     "status": "quarantined"
   },
+  "a study of 80 known pulsars at 185 mhz using mwa incoherent drift scan observations": {
+    "key": "yu2025study",
+    "status": "off_topic"
+  },
+  "a survey for radio pulsars and transients in the 10 pc region around sgr a": {
+    "key": "desvignes2025survey",
+    "status": "off_topic"
+  },
   "a wispr of the venus surface analysis of the venus nightside thermal emission at optical wavelengths": {
     "key": "lustigyaeger2023wispr",
+    "status": "off_topic"
+  },
+  "accelerating frb search dataset and methods": {
+    "key": "guo2024accelerating",
+    "status": "off_topic"
+  },
+  "accelerating presto with gpus": {
+    "key": "bauer2026accelerating",
     "status": "off_topic"
   },
   "accessibility and twin width": {
@@ -63,6 +83,12 @@
     "key": "kaushik2025assessing",
     "status": "carded"
   },
+  "assessment of a new geoai foundation model for flood inundation mapping": {
+    "arxiv_id": "2309.14500",
+    "dropped_claims": 0,
+    "key": "li2023assessment",
+    "status": "carded"
+  },
   "asymptotic shapes for stationary first passage percolation on virtually nilpotent groups": {
     "key": "auffinger2021asymptotic",
     "status": "off_topic"
@@ -97,9 +123,17 @@
     "key": "mandal2026biomazon",
     "status": "carded"
   },
+  "bits missing finding exotic pulsars using bfloat16 on nvidia gpus": {
+    "key": "white2022bits",
+    "status": "off_topic"
+  },
   "building prescribed quantitative orbit equivalence with the group of integers": {
     "key": "-",
     "status": "quarantined_mismatch"
+  },
+  "characterization and benchmarking of a phase sensitive two qubit gate using direct digital synthesis": {
+    "key": "tholn2023characterization",
+    "status": "off_topic"
   },
   "characterizing alphaearth embedding geometry for agentic environmental reasoning": {
     "key": "rahman2026characterizing",
@@ -129,6 +163,10 @@
     "key": "zvonkov2025cropland",
     "status": "carded"
   },
+  "data caching for enterprise grade petabyte scale olap": {
+    "key": "tang2024data",
+    "status": "off_topic"
+  },
   "deep learning based burned area mapping using bi temporal siamese networks and alphaearth foundation datasets": {
     "key": "seydi2025deep",
     "status": "quarantined"
@@ -136,6 +174,12 @@
   "dehn functions computations lower bounds and the quasiisometric rigidity of rm sol 5": {
     "key": "grayevsky2025dehn",
     "status": "off_topic"
+  },
+  "deploying geospatial foundation models in the real world lessons from worldcereal": {
+    "arxiv_id": "2508.00858",
+    "dropped_claims": 0,
+    "key": "butsko2025deploying",
+    "status": "carded"
   },
   "do foundation model embeddings improve cross country crop yield generalisation a leave one country out evaluation in sub saharan africa": {
     "arxiv_id": "2605.08113",
@@ -156,6 +200,10 @@
   "ecological mapping with geospatial foundation models": {
     "key": "mahlasi2026ecological",
     "status": "quarantined"
+  },
+  "efficient deep learning pipelines for accurate cost estimations over large scale query workload": {
+    "key": "kang2021efficient",
+    "status": "off_topic"
   },
   "embedding based crop type classification in the groundnut basin of senegal": {
     "arxiv_id": "2601.16900",
@@ -221,11 +269,19 @@
     "key": "corley2026from",
     "status": "carded"
   },
+  "frtsearch unified detection and parameter inference of fast radio transients using instance segmentation": {
+    "key": "zhang2026frtsearch",
+    "status": "off_topic"
+  },
   "fusar gpt a spatiotemporal feature embedded and two stage decoupled visual language model for sar imagery": {
     "arxiv_id": "2602.19190",
     "dropped_claims": 0,
     "key": "zhang2026fusar",
     "status": "carded"
+  },
+  "gbd dart ii 175 mhz polarimetric observation of pulsars from gauribidanur and a new pulsar signal processing pipeline": {
+    "key": "b2026gbd",
+    "status": "quarantined"
   },
   "geo bench 2 from performance to capability rethinking evaluation in geospatial ai": {
     "arxiv_id": "2511.15658",
@@ -287,17 +343,29 @@
     "key": "matin2025hyperkd",
     "status": "carded"
   },
+  "impact of rubin observatory cadence choices on supernovae photometric classification": {
+    "key": "alves2022impact",
+    "status": "off_topic"
+  },
   "in context learning enables continental scale subsurface temperature prediction from sparse local observations": {
     "arxiv_id": "2605.16665",
     "dropped_claims": 0,
     "key": "omalley2026context",
     "status": "carded"
   },
+  "increasing the detectability of long period and nulling pulsars in next generation pulsar surveys": {
+    "key": "grover2024increasing",
+    "status": "off_topic"
+  },
   "inferring height from earth embeddings first insights using google alphaearth": {
     "arxiv_id": "2602.17250",
     "dropped_claims": 0,
     "key": "hamoudzadeh2026inferring",
     "status": "carded"
+  },
+  "intra query runtime elasticity for cloud native data analysis": {
+    "key": "zhang2025intra",
+    "status": "off_topic"
   },
   "isoperimetric profiles and regular embeddings of locally compact groups": {
     "key": "paucar2024isoperimetric",
@@ -329,6 +397,10 @@
     "key": "pettersson2025leveraging",
     "status": "carded"
   },
+  "lightweight pre trained transformers for remote sensing timeseries": {
+    "key": "tseng2023lightweight",
+    "status": "quarantined"
+  },
   "lipschitz 1 connectedness for some solvable lie groups": {
     "key": "cohen2016lipschitz",
     "status": "off_topic"
@@ -341,15 +413,27 @@
     "key": "contreras2022locality",
     "status": "off_topic"
   },
+  "long video diffusion generation with segmented cross attention and content rich video data curation": {
+    "key": "yan2024long",
+    "status": "off_topic"
+  },
   "low rank adaptation of geospatial foundation models for wildfire mapping using sentinel 2 data": {
     "arxiv_id": "2605.04989",
     "dropped_claims": 0,
     "key": "shibli2026low",
     "status": "carded"
   },
+  "mapping the multiverse of latent representations": {
+    "key": "wayland2024mapping",
+    "status": "off_topic"
+  },
   "mapping tomato cropping systems in california using alphaearth geospatial embeddings and deep learning analysis": {
     "key": "narimani2026mapping",
     "status": "quarantined"
+  },
+  "matching ranks over probability yields truly deep safety alignment": {
+    "key": "vega2025matching",
+    "status": "off_topic"
   },
   "measured asymptotic expanders and rigidity for roe algebras": {
     "key": "li2020measured",
@@ -357,6 +441,14 @@
   },
   "measured expanders": {
     "key": "li2021measured",
+    "status": "off_topic"
+  },
+  "measurement and control of a superconducting quantum processor with a fully integrated radio frequency system on a chip": {
+    "key": "tholn2022measurement",
+    "status": "off_topic"
+  },
+  "metadata caching in presto towards fast data processing": {
+    "key": "wang2022metadata",
     "status": "off_topic"
   },
   "metric spaces of arbitrary finitely generated scaling group": {
@@ -374,6 +466,10 @@
   "multi spectral remote sensing image retrieval using geospatial foundation models": {
     "key": "blumenstiel2024multi",
     "status": "quarantined"
+  },
+  "no msp counterparts detected in gbt searches of spider candidates 4fgl j0935 3 0901 4fgl j1627 7 3219 and 4fgl j2212 4 0708": {
+    "key": "corcoran2023msp",
+    "status": "off_topic"
   },
   "obstructions for quantitative measure equivalence between locally compact groups": {
     "key": "correia2025obstructions",
@@ -433,9 +529,55 @@
     "key": "sachan2026post",
     "status": "carded"
   },
+  "predicting rare events by shrinking towards proportional odds": {
+    "key": "faletto2023predicting",
+    "status": "off_topic"
+  },
   "predicting viticulture potential through an ensemble of u net and a geospatial foundation model": {
     "key": "perez2026predicting",
     "status": "quarantined"
+  },
+  "presto a multilingual dataset for parsing realistic task oriented dialogs": {
+    "arxiv_id": "2303.08954",
+    "dropped_claims": 0,
+    "key": "goel2023presto",
+    "status": "carded"
+  },
+  "presto an in storage data preprocessing system for training recommendation models": {
+    "key": "lee2024presto",
+    "status": "off_topic"
+  },
+  "presto distilling steps and layers for accelerating music generation": {
+    "key": "novack2024presto",
+    "status": "off_topic"
+  },
+  "presto fast motion planning using diffusion models based on key configuration environment representation": {
+    "key": "seo2024presto",
+    "status": "off_topic"
+  },
+  "presto hardware acceleration of ciphers for hybrid homomorphic encryption": {
+    "key": "jeon2025presto",
+    "status": "off_topic"
+  },
+  "presto predicting system level disruptions through parametric model checking": {
+    "key": "fang2022presto",
+    "status": "off_topic"
+  },
+  "presto preimage informed instruction optimization for prompting black box llms": {
+    "key": "chu2025presto",
+    "status": "off_topic"
+  },
+  "presto progressive pretraining enhances synthetic chemistry outcomes": {
+    "arxiv_id": "2406.13193",
+    "dropped_claims": 0,
+    "key": "cao2024presto",
+    "status": "carded"
+  },
+  "presto simple and scalable sampling techniques for the rigorous approximation of temporal motif counts": {
+    "arxiv_id": "2101.07152",
+    "dropped_claims": 0,
+    "key": "sarpe2021presto",
+    "status": "carded"
   },
   "prithvi complimentary adaptive fusion encoder cafe unlocking full potential for flood inundation mapping": {
     "arxiv_id": "2601.02315",
@@ -453,12 +595,20 @@
     "key": "schmude2024prithvi",
     "status": "carded"
   },
+  "pulsar detection with deep learning": {
+    "key": "pendyala2025pulsar",
+    "status": "off_topic"
+  },
   "quasi isometric rigidity for lamplighters with lamps of polynomial growth": {
     "key": "dumoncel2025quasi",
     "status": "off_topic"
   },
   "regular maps from the lamplighter to metabelian groups": {
     "key": "gournay2024regular",
+    "status": "off_topic"
+  },
+  "rethinking the cloudonomics of efficient i o for data intensive analytics applications": {
+    "key": "tang2023rethinking",
     "status": "off_topic"
   },
   "revealing the mysteries of venus the davinci mission": {
@@ -474,6 +624,10 @@
     "dropped_claims": 0,
     "key": "dionelis2025scaling",
     "status": "carded"
+  },
+  "searching for pulsars with phase characteristics": {
+    "key": "peng2022searching",
+    "status": "off_topic"
   },
   "seeing through the clouds cloud gap imputation with prithvi foundation model": {
     "arxiv_id": "2404.19609",
@@ -503,11 +657,23 @@
     "key": "alekseev2026sofic",
     "status": "off_topic"
   },
+  "sparkesx single dish parkes data sets for finding the unexpected a data challenge": {
+    "key": "yong2022sparkesx",
+    "status": "off_topic"
+  },
   "subsurface property mapping using google alphaearth foundations": {
     "arxiv_id": "2604.14756",
     "dropped_claims": 0,
     "key": "nakata2026subsurface",
     "status": "carded"
+  },
+  "swinynet a transformer based multi task model for accurate and efficient frb search": {
+    "key": "-",
+    "status": "quarantined_mismatch"
+  },
+  "symbolic specialization of rewriting logic theories with presto": {
+    "key": "alpuente2021symbolic",
+    "status": "off_topic"
   },
   "tessera secure near line rate weight streaming for uma edge accelerators": {
     "key": "naskar2026tessera",
@@ -533,8 +699,24 @@
     "key": "deng2021coarse",
     "status": "quarantined"
   },
+  "the effect of vera c rubin observatory cadence selections on kilonova detectability": {
+    "key": "andrade2025effect",
+    "status": "off_topic"
+  },
+  "the gmrt high resolution southern sky survey for pulsars and transients iii searching for long period pulsars": {
+    "key": "singh2022gmrt",
+    "status": "off_topic"
+  },
   "the maximal coarse baum connes conjecture for spaces that admit an a by fce coarse fibration structure": {
     "key": "guo2024maximal",
+    "status": "off_topic"
+  },
+  "the stack search tests on fast data discovery of six faint isolated millisecond pulsars in ngc 6517 and ngc 7078 m15": {
+    "key": "dai2026stack",
+    "status": "off_topic"
+  },
+  "towards dm free search for fast radio bursts with machine learning i an implementation on multibeam data": {
+    "key": "chen2025towards",
     "status": "off_topic"
   },
   "towards onboard continuous change detection for floods": {
@@ -596,5 +778,9 @@
     "dropped_claims": 0,
     "key": "chen2026when",
     "status": "carded"
+  },
+  "zksdk streamlining zero knowledge proof development through automated trace driven zk backend selection": {
+    "key": "law2025zksdk",
+    "status": "off_topic"
   }
 }

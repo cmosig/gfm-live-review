@@ -952,3 +952,4 @@
 {"ts": "2026-07-12T18:38:01.026820+00:00", "event": "rejected", "title": "Continual Barlow Twins: continual self-supervised learning for remote sensing semantic segmentation", "reason": "no model name and no topic-regex match"}
 {"ts": "2026-07-12T18:38:01.027167+00:00", "event": "rejected", "title": "Boosting ship detection in SAR images with complementary pretraining techniques", "reason": "no model name and no topic-regex match"}
 {"ts": "2026-07-12T18:38:01.027542+00:00", "event": "rejected", "title": "Towards DeepSentinel: An extensible corpus of labelled Sentinel-1 and -2 imagery and a general-purpose sensor-fusion semantic embedding model", "reason": "no model name and no topic-regex match"}
+{"ts": "2026-07-12T18:56:54.386995+00:00", "event": "paper_error", "title": "Scalable Analysis of Bipartite Experiments", "error": "404 for https://arxiv.org/pdf/2402.11070"}

@@ -287,11 +287,17 @@
   "coastline_monitoring": [
     "chhabra2025utilizing"
   ],
+  "code-switching": [
+    "goel2023presto"
+  ],
   "commuting_mode_share": [
     "gong2026earth"
   ],
   "compute-optimal-allocation": [
     "feng2026tessera"
+  ],
+  "concentration_inequalities": [
+    "sarpe2021presto"
   ],
   "continual_change_detection": [
     "kyselica2026towards"
@@ -322,6 +328,9 @@
   ],
   "crime_prediction": [
     "gong2026earth"
+  ],
+  "cropland_classification": [
+    "butsko2025deploying"
   ],
   "cropland_mapping": [
     "zvonkov2025cropland"
@@ -373,6 +382,9 @@
   ],
   "dinov3": [
     "tadesse2026watch"
+  ],
+  "disfluencies": [
+    "goel2023presto"
   ],
   "distance_to_road_prediction": [
     "plas2026better"
@@ -448,6 +460,9 @@
   ],
   "encoder_freezing": [
     "kaushik2025assessing"
+  ],
+  "end_to_end_pipeline": [
+    "li2023assessment"
   ],
   "environmental_variable_regression": [
     "rahman2026physically"
@@ -575,6 +590,9 @@
   "graph_neural_network": [
     "pettersson2025leveraging"
   ],
+  "graph_sampling": [
+    "sarpe2021presto"
+  ],
   "handcrafted_features_vs_embeddings": [
     "cheng2026from"
   ],
@@ -631,6 +649,9 @@
   ],
   "input_adaptation_confound": [
     "shang2026benchmarking"
+  ],
+  "input_band_flexibility": [
+    "li2023assessment"
   ],
   "input_format_adaptation": [
     "shang2026benchmarking"
@@ -719,6 +740,9 @@
   "lulc_misclassification_detection": [
     "heiman2026characterizing"
   ],
+  "mT5": [
+    "goel2023presto"
+  ],
   "mamba_ssm": [
     "dionelis2025scaling"
   ],
@@ -761,8 +785,14 @@
   "modifiable_areal_unit_problem": [
     "gong2026earth"
   ],
+  "molecule_text_modeling": [
+    "cao2024presto"
+  ],
   "monotone_ordered_quantile_output": [
     "mandal2026biomazon"
+  ],
+  "multi_scale_representation_learning": [
+    "li2023assessment"
   ],
   "multi_source_embedding_integration": [
     "metz2025application"
@@ -776,8 +806,14 @@
   "multi_spectral_ablation": [
     "simumba2025geo"
   ],
+  "multilingual dialog dataset": [
+    "goel2023presto"
+  ],
   "multimodal fusion": [
     "thasma2026beyond"
+  ],
+  "multimodal_LLM": [
+    "cao2024presto"
   ],
   "multimodal_alignment": [
     "liu2025beyond"
@@ -832,6 +868,12 @@
   ],
   "onboard_satellite_inference": [
     "kyselica2026towards"
+  ],
+  "openEO_pipeline": [
+    "butsko2025deploying"
+  ],
+  "operational_deployment_protocol": [
+    "butsko2025deploying"
   ],
   "parameter_efficient_fine_tuning": [
     "shibli2026low"
@@ -902,6 +944,18 @@
   "random_forest": [
     "ishikawa2025assessing"
   ],
+  "reaction_condition_prediction": [
+    "cao2024presto"
+  ],
+  "reaction_prediction": [
+    "cao2024presto"
+  ],
+  "reaction_type_classification": [
+    "cao2024presto"
+  ],
+  "reagent_selection": [
+    "cao2024presto"
+  ],
   "recall_at_k_temporal_margin": [
     "tadesse2026watch"
   ],
@@ -943,6 +997,9 @@
   ],
   "retrogressive_thaw_slump_detection": [
     "perera2026clustering"
+  ],
+  "retrosynthesis": [
+    "cao2024presto"
   ],
   "rh_profile_prediction": [
     "mandal2026biomazon"
@@ -988,6 +1045,9 @@
   ],
   "seismic_site_characterization": [
     "nakata2026subsurface"
+  ],
+  "self_supervised_adaptation": [
+    "butsko2025deploying"
   ],
   "self_supervised_change_scoring": [
     "tadesse2026watch"
@@ -1094,17 +1154,26 @@
   "surface_to_subsurface_inference": [
     "nakata2026subsurface"
   ],
+  "synthetic_chemistry": [
+    "cao2024presto"
+  ],
   "tabular_feature_augmentation": [
     "nazir2026alphaearth"
   ],
   "target detection": [
     "zhang2026fusar"
   ],
+  "task-oriented semantic parsing": [
+    "goel2023presto"
+  ],
   "temporal_alignment": [
     "cheng2026from"
   ],
   "temporal_embedding_distance": [
     "tadesse2026watch"
+  ],
+  "temporal_motif_counting": [
+    "sarpe2021presto"
   ],
   "temporal_sampling_invariance": [
     "feng2025tessera"
@@ -1157,6 +1226,9 @@
   "urban_signal_prediction": [
     "gong2026earth"
   ],
+  "user revisions": [
+    "goel2023presto"
+  ],
   "vertical_forest_structure": [
     "mandal2026biomazon"
   ],
@@ -1195,6 +1267,9 @@
   ],
   "wudapt": [
     "ko2026exploring"
+  ],
+  "yield_regression": [
+    "cao2024presto"
   ],
   "zonal_statistics": [
     "corley2026from"
