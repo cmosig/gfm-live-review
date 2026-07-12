@@ -73,6 +73,7 @@ promoted_tags:
 - DINOv3
 - LoRA
 - TerraMind
+- building_density_estimation
 - cloud_gap_imputation
 - diffusion_model
 - disease_surveillance
@@ -85,3 +86,4 @@ promoted_tags:
 - spatial_autocorrelation
 - tree_species_classification
 - urban_morphology
+- wildfire_scar_mapping

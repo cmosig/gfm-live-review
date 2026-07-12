@@ -14,6 +14,9 @@
   "CCDC_harmonics": [
     "brown2025alphaearth"
   ],
+  "CGAN_baseline": [
+    "godwin2024seeing"
+  ],
   "CKA": [
     "barreiro2026simpler"
   ],
@@ -64,6 +67,9 @@
   ],
   "HIV_prediction": [
     "metz2025application"
+  ],
+  "HLS_dataset": [
+    "jakubik2023foundation"
   ],
   "IWI": [
     "pettersson2025leveraging"
@@ -218,8 +224,8 @@
   "borehole_data": [
     "omalley2026context"
   ],
-  "building_density_estimation": [
-    "dionelis2025scaling"
+  "burn_scar_mapping": [
+    "xie2024when"
   ],
   "burned_area_mapping": [
     "shibli2026low"
@@ -346,6 +352,9 @@
   ],
   "dempster-shafer-fusion": [
     "sachan2026post"
+  ],
+  "desert_locust_breeding_prediction": [
+    "yusuf2024geospatial"
   ],
   "dhs_survey": [
     "nazir2026alphaearth"
@@ -716,6 +725,12 @@
   "mars_crater_detection": [
     "hsu2024geospatial"
   ],
+  "masked_autoencoder_pretraining": [
+    "jakubik2023foundation"
+  ],
+  "masked_autoencoder_task_alignment": [
+    "xie2024when"
+  ],
   "masked_reconstruction": [
     "schmude2024prithvi"
   ],
@@ -733,6 +748,9 @@
   ],
   "minority_crop_detection": [
     "shang2026benchmarking"
+  ],
+  "missing_data_imputation": [
+    "godwin2024seeing"
   ],
   "mobile_phone_data": [
     "metz2025application"
@@ -818,6 +836,9 @@
   "parameter_efficient_fine_tuning": [
     "shibli2026low"
   ],
+  "phileo_bench": [
+    "fibaek2024phileo"
+  ],
   "physics_informed_baseline": [
     "omalley2026context"
   ],
@@ -871,6 +892,9 @@
   ],
   "pseudo-label supervision": [
     "hou2026slum"
+  ],
+  "pseudo_absence_generation": [
+    "yusuf2024geospatial"
   ],
   "rainfall_runoff_modeling": [
     "qu2026utilizing"
@@ -928,6 +952,9 @@
   ],
   "road_density_estimation": [
     "dionelis2025scaling"
+  ],
+  "road_segmentation": [
+    "fibaek2024phileo"
   ],
   "routine_health_information_systems": [
     "metz2025application"
@@ -1025,6 +1052,9 @@
   "specialist-generalist taxonomy": [
     "benavidesmartinez2026what"
   ],
+  "species_distribution_modeling": [
+    "yusuf2024geospatial"
+  ],
   "spectral_temporal_metrics": [
     "lisaius2026embedding"
   ],
@@ -1091,6 +1121,9 @@
   "time_series_reconstruction": [
     "li2026hls"
   ],
+  "traditional_ML_vs_foundation_model": [
+    "xie2024when"
+  ],
   "training_from_scratch": [
     "sosa2024how"
   ],
@@ -1150,9 +1183,6 @@
   ],
   "wildfire_mapping": [
     "shibli2026low"
-  ],
-  "wildfire_scar_mapping": [
-    "sosa2024how"
   ],
   "workflow_simplicity": [
     "zvonkov2025cropland"

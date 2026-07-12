@@ -1,4 +1,10 @@
 {
+  "a geospatial approach to predicting desert locust breeding grounds in africa": {
+    "arxiv_id": "2403.06860",
+    "dropped_claims": 0,
+    "key": "yusuf2024geospatial",
+    "status": "carded"
+  },
   "a sentinel 3 foundation model for ocean colour": {
     "key": "dawson2025sentinel",
     "status": "quarantined"
@@ -197,6 +203,12 @@
     "key": "felton2025foundation",
     "status": "off_topic"
   },
+  "foundation models for generalist geospatial artificial intelligence": {
+    "arxiv_id": "2310.18660",
+    "dropped_claims": 0,
+    "key": "jakubik2023foundation",
+    "status": "carded"
+  },
   "from landslide conditioning factors to satellite embeddings evaluating the utilisation of google alphaearth for landslide susceptibility mapping using deep learning": {
     "arxiv_id": "2601.07268",
     "dropped_claims": 0,
@@ -359,6 +371,10 @@
     "key": "schulte2026mosaiks",
     "status": "off_topic"
   },
+  "multi spectral remote sensing image retrieval using geospatial foundation models": {
+    "key": "blumenstiel2024multi",
+    "status": "quarantined"
+  },
   "obstructions for quantitative measure equivalence between locally compact groups": {
     "key": "correia2025obstructions",
     "status": "off_topic"
@@ -394,6 +410,12 @@
   "on the universality of fluctuations for the cover time": {
     "key": "berestycki2022universality",
     "status": "off_topic"
+  },
+  "phileo bench evaluating geo spatial foundation models": {
+    "arxiv_id": "2401.04464",
+    "dropped_claims": 0,
+    "key": "fibaek2024phileo",
+    "status": "carded"
   },
   "physically interpretable alphaearth foundation model embeddings enable llm based land surface intelligence": {
     "arxiv_id": "2602.10354",
@@ -451,6 +473,12 @@
     "arxiv_id": "2506.14765",
     "dropped_claims": 0,
     "key": "dionelis2025scaling",
+    "status": "carded"
+  },
+  "seeing through the clouds cloud gap imputation with prithvi foundation model": {
+    "arxiv_id": "2404.19609",
+    "dropped_claims": 0,
+    "key": "godwin2024seeing",
     "status": "carded"
   },
   "sensor adaptive flood mapping with pre trained multi modal transformers across sar and multispectral modalities": {
@@ -549,6 +577,12 @@
     "arxiv_id": "2603.16911",
     "dropped_claims": 0,
     "key": "benavidesmartinez2026what",
+    "status": "carded"
+  },
+  "when are foundation models effective understanding the suitability for pixel level classification using multispectral imagery": {
+    "arxiv_id": "2404.11797",
+    "dropped_claims": 0,
+    "key": "xie2024when",
     "status": "carded"
   },
   "when context compensates for sparse event history alphaearth for spatio temporal point process forecasting": {
