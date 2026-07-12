@@ -101,6 +101,12 @@
     "key": "perera2026clustering",
     "status": "carded"
   },
+  "comparative assessment of multimodal earth observation data for soil moisture estimation": {
+    "arxiv_id": "2602.18083",
+    "dropped_claims": 0,
+    "key": "kontogiorgakis2026comparative",
+    "status": "carded"
+  },
   "cropland mapping using geospatial embeddings": {
     "arxiv_id": "2511.02923",
     "dropped_claims": 0,
@@ -130,6 +136,10 @@
     "dropped_claims": 0,
     "key": "gong2026earth",
     "status": "carded"
+  },
+  "ecological mapping with geospatial foundation models": {
+    "key": "mahlasi2026ecological",
+    "status": "quarantined"
   },
   "embedding based crop type classification in the groundnut basin of senegal": {
     "arxiv_id": "2601.16900",
@@ -179,6 +189,12 @@
     "arxiv_id": "2602.19190",
     "dropped_claims": 0,
     "key": "zhang2026fusar",
+    "status": "carded"
+  },
+  "geo bench 2 from performance to capability rethinking evaluation in geospatial ai": {
+    "arxiv_id": "2511.15658",
+    "dropped_claims": 0,
+    "key": "simumba2025geo",
     "status": "carded"
   },
   "geodesic trees and exceptional directions in fpp on hyperbolic groups": {
@@ -345,6 +361,12 @@
     "key": "perez2026predicting",
     "status": "quarantined"
   },
+  "prithvi complimentary adaptive fusion encoder cafe unlocking full potential for flood inundation mapping": {
+    "arxiv_id": "2601.02315",
+    "dropped_claims": 0,
+    "key": "kaushik2026prithvi",
+    "status": "carded"
+  },
   "quasi isometric rigidity for lamplighters with lamps of polynomial growth": {
     "key": "dumoncel2025quasi",
     "status": "off_topic"
@@ -410,6 +432,18 @@
   "the maximal coarse baum connes conjecture for spaces that admit an a by fce coarse fibration structure": {
     "key": "guo2024maximal",
     "status": "off_topic"
+  },
+  "towards onboard continuous change detection for floods": {
+    "arxiv_id": "2601.13751",
+    "dropped_claims": 1,
+    "key": "kyselica2026towards",
+    "status": "carded"
+  },
+  "utilizing a geospatial foundation model for coastline delineation in small sandy islands": {
+    "arxiv_id": "2511.10177",
+    "dropped_claims": 0,
+    "key": "chhabra2025utilizing",
+    "status": "carded"
   },
   "utilizing earth foundation models to enhance the simulation performance of hydrological models with alphaearth embeddings": {
     "arxiv_id": "2601.01558",

@@ -44,6 +44,9 @@
   "Faster_RCNN": [
     "asif2026adapting"
   ],
+  "GEO-Bench-2": [
+    "simumba2025geo"
+  ],
   "GeoNames": [
     "pettersson2025leveraging"
   ],
@@ -122,6 +125,9 @@
   "XGBoost": [
     "metz2025application"
   ],
+  "adapter_fine_tuning": [
+    "kaushik2026prithvi"
+  ],
   "aerosol_optical_depth_estimation": [
     "tushar2026foundation"
   ],
@@ -191,6 +197,9 @@
   "call_detail_records": [
     "metz2025application"
   ],
+  "capability_groups": [
+    "simumba2025geo"
+  ],
   "capacity_adaptive_reconstruction": [
     "hou2026aef"
   ],
@@ -212,20 +221,32 @@
   "clip": [
     "tadesse2026watch"
   ],
+  "cloud_cover_failure": [
+    "kaushik2026prithvi"
+  ],
   "cloud_gap_imputation": [
     "li2026hls"
   ],
   "cloud_robustness": [
     "feng2025tessera"
   ],
+  "cnn_transformer_fusion": [
+    "kaushik2026prithvi"
+  ],
   "coarse_label_training": [
     "ko2026exploring"
+  ],
+  "coastline_monitoring": [
+    "chhabra2025utilizing"
   ],
   "commuting_mode_share": [
     "gong2026earth"
   ],
   "compute-optimal-allocation": [
     "feng2026tessera"
+  ],
+  "continual_change_detection": [
+    "kyselica2026towards"
   ],
   "continuous_time_modeling": [
     "brown2025alphaearth"
@@ -416,6 +437,9 @@
   "frozen_embeddings": [
     "adjei2026foundation"
   ],
+  "frozen_vs_finetuned_ablation": [
+    "simumba2025geo"
+  ],
   "frozen_vs_finetuned_embeddings": [
     "ishikawa2025assessing"
   ],
@@ -500,11 +524,17 @@
   "hierarchical embedding structure": [
     "benavidesmartinez2026what"
   ],
+  "history_injection_mechanism": [
+    "kyselica2026towards"
+  ],
   "homomorphic-encryption": [
     "sachan2026post"
   ],
   "housing_price_estimation": [
     "hou2026aef"
+  ],
+  "hyperparameter_optimization_protocol": [
+    "simumba2025geo"
   ],
   "hyperspectral_foundation_model": [
     "tushar2026foundation"
@@ -569,6 +599,9 @@
   "lcz_upscaling": [
     "ko2026exploring"
   ],
+  "leaderboard": [
+    "simumba2025geo"
+  ],
   "leave_one_country_out_CV": [
     "adjei2026foundation"
   ],
@@ -629,11 +662,17 @@
   "multi_source_self_supervised_fusion": [
     "hou2026aef"
   ],
+  "multi_spectral_ablation": [
+    "simumba2025geo"
+  ],
   "multimodal fusion": [
     "thasma2026beyond"
   ],
   "multimodal_alignment": [
     "liu2025beyond"
+  ],
+  "multimodal_fusion": [
+    "kontogiorgakis2026comparative"
   ],
   "multimodal_sensor_fusion": [
     "mandal2026biomazon"
@@ -676,6 +715,9 @@
   ],
   "olmoearth": [
     "corley2026from"
+  ],
+  "onboard_satellite_inference": [
+    "kyselica2026towards"
   ],
   "parameter_efficient_fine_tuning": [
     "shibli2026low"
@@ -788,6 +830,9 @@
   "sar_image_generation": [
     "liu2026huiyanearth"
   ],
+  "sar_orbit_geometry": [
+    "kontogiorgakis2026comparative"
+  ],
   "satlas_pretrain": [
     "tadesse2026watch"
   ],
@@ -824,6 +869,9 @@
   "sentinel1_sentinel2_fusion": [
     "feng2025tessera"
   ],
+  "shoreline_delineation": [
+    "chhabra2025utilizing"
+  ],
   "single-temporal post-event SAR": [
     "thasma2026beyond"
   ],
@@ -838,6 +886,9 @@
   ],
   "socioeconomic_prediction": [
     "gong2026earth"
+  ],
+  "soil_moisture_estimation": [
+    "kontogiorgakis2026comparative"
   ],
   "spatial block cross-validation": [
     "hou2026slum"

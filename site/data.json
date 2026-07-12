@@ -7,9 +7,9 @@
         "2025-07": 1,
         "2025-08": 1,
         "2025-10": 2,
-        "2025-11": 2,
-        "2026-01": 2,
-        "2026-02": 1,
+        "2025-11": 4,
+        "2026-01": 4,
+        "2026-02": 2,
         "2026-03": 4,
         "2026-04": 3,
         "2026-05": 7,
@@ -17,6 +17,8 @@
         "2026-07": 2
       },
       "compute_cost": {
+        "2025-11": 1,
+        "2026-01": 2,
         "2026-03": 2,
         "2026-04": 1,
         "2026-05": 3,
@@ -26,9 +28,9 @@
       "data_bias": {
         "2025-08": 1,
         "2025-10": 2,
-        "2025-11": 1,
+        "2025-11": 2,
         "2026-01": 1,
-        "2026-02": 1,
+        "2026-02": 2,
         "2026-03": 1,
         "2026-04": 4,
         "2026-05": 3,
@@ -62,10 +64,10 @@
       "spatial_transfer": {
         "2025-08": 1,
         "2025-10": 2,
-        "2025-11": 2,
+        "2025-11": 3,
         "2025-12": 1,
-        "2026-01": 3,
-        "2026-02": 2,
+        "2026-01": 4,
+        "2026-02": 3,
         "2026-03": 1,
         "2026-04": 4,
         "2026-05": 5,
@@ -86,14 +88,14 @@
       "time_sensitivity": {
         "2025-06": 1,
         "2025-12": 1,
-        "2026-01": 1,
+        "2026-01": 2,
         "2026-03": 1,
         "2026-04": 3,
         "2026-05": 2,
         "2026-06": 1
       },
       "uncertainty": {
-        "2025-11": 1,
+        "2025-11": 2,
         "2026-01": 1,
         "2026-03": 1,
         "2026-04": 1,
@@ -102,16 +104,16 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 33,
-      "compute_cost": 9,
-      "data_bias": 20,
+      "benchmark_narrowness": 38,
+      "compute_cost": 12,
+      "data_bias": 22,
       "human_semantics": 5,
       "interpretability": 8,
       "mixed_pixels": 9,
-      "spatial_transfer": 28,
+      "spatial_transfer": 31,
       "temporal_transfer": 17,
-      "time_sensitivity": 10,
-      "uncertainty": 9
+      "time_sensitivity": 11,
+      "uncertainty": 10
     }
   },
   "meta": {
@@ -147,7 +149,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 43,
+    "n_papers": 48,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -171,9 +173,9 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 43
+      "verified": 48
     },
-    "n_papers": 43,
+    "n_papers": 48,
     "papers": [
       {
         "arxiv_id": "2607.03949",
@@ -536,6 +538,18 @@
         "venue": "arXiv"
       },
       {
+        "arxiv_id": "2602.18083",
+        "date": "2026-02-20",
+        "doi": "10.48550/arxiv.2602.18083",
+        "doi_status": "verified",
+        "key": "kontogiorgakis2026comparative",
+        "link": "https://arxiv.org/abs/2602.18083",
+        "n_claims": 2,
+        "self_evaluation": false,
+        "title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+        "venue": "arXiv"
+      },
+      {
         "arxiv_id": "2602.17250",
         "date": "2026-02-19",
         "doi": "10.48550/arxiv.2602.17250",
@@ -572,6 +586,18 @@
         "venue": "arXiv"
       },
       {
+        "arxiv_id": "2601.13751",
+        "date": "2026-01-20",
+        "doi": "10.48550/arxiv.2601.13751",
+        "doi_status": "verified",
+        "key": "kyselica2026towards",
+        "link": "https://arxiv.org/abs/2601.13751",
+        "n_claims": 2,
+        "self_evaluation": false,
+        "title": "Towards Onboard Continuous Change Detection for Floods",
+        "venue": "arXiv"
+      },
+      {
         "arxiv_id": "2601.07268",
         "date": "2026-01-12",
         "doi": "10.48550/arxiv.2601.07268",
@@ -581,6 +607,18 @@
         "n_claims": 1,
         "self_evaluation": false,
         "title": "From Landslide Conditioning Factors to Satellite Embeddings: Evaluating the Utilisation of Google AlphaEarth for Landslide Susceptibility Mapping using Deep Learning",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2601.02315",
+        "date": "2026-01-05",
+        "doi": "10.48550/arxiv.2601.02315",
+        "doi_status": "verified",
+        "key": "kaushik2026prithvi",
+        "link": "https://arxiv.org/abs/2601.02315",
+        "n_claims": 6,
+        "self_evaluation": false,
+        "title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
         "venue": "arXiv"
       },
       {
@@ -605,6 +643,30 @@
         "n_claims": 3,
         "self_evaluation": false,
         "title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2511.15658",
+        "date": "2025-11-19",
+        "doi": "10.48550/arxiv.2511.15658",
+        "doi_status": "verified",
+        "key": "simumba2025geo",
+        "link": "https://arxiv.org/abs/2511.15658",
+        "n_claims": 0,
+        "self_evaluation": false,
+        "title": "GEO-Bench-2: From Performance to Capability, Rethinking Evaluation in Geospatial AI",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2511.10177",
+        "date": "2025-11-13",
+        "doi": "10.48550/arxiv.2511.10177",
+        "doi_status": "verified",
+        "key": "chhabra2025utilizing",
+        "link": "https://arxiv.org/abs/2511.10177",
+        "n_claims": 3,
+        "self_evaluation": false,
+        "title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
         "venue": "arXiv"
       },
       {
@@ -692,13 +754,13 @@
         "venue": "arXiv"
       }
     ],
-    "quarantine_count": 10
+    "quarantine_count": 11
   },
   "views": {
     "all": {
       "axes": [
         {
-          "agreement": 0.636,
+          "agreement": 0.583,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -764,6 +826,22 @@
               "self_evaluation": false,
               "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
               "value": 0.99
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Maldives Sentinel-2 Coastline Dataset",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.10177",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "chhabra2025utilizing",
+              "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+              "self_evaluation": false,
+              "span": "125 images",
+              "value": 0.9913
             },
             {
               "baseline": "alphaearth",
@@ -924,6 +1002,54 @@
               "self_evaluation": false,
               "span": "93.33% (±0.69) F1 macro",
               "value": 93.33
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 90.8,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "U-Net Base [li2023assessment] 84.03 90.80 95.40 31",
+              "value": 90.5
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 64.56,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "TerraMind also shows competitive performance with 62.33 IoU, whereas U-Net falls short at 60.14",
+              "value": 68.74
+            },
+            {
+              "baseline": "dofa",
+              "baseline_value": 61.52,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "DOFA 59.15 (0.03) 61.52 (0.02) 74.22 (0.02) 116",
+              "value": 68.74
             },
             {
               "baseline": null,
@@ -1280,12 +1406,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 36,
-          "n_papers": 11,
-          "n_papers_all": 18
+          "n_claims": 40,
+          "n_papers": 12,
+          "n_papers_all": 20
         },
         {
-          "agreement": 1.0,
+          "agreement": 0.75,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -1319,6 +1445,22 @@
               "self_evaluation": true,
               "span": "achieving R2=0.58±0.01R^{2}=0.58\\pm 0.01",
               "value": 0.58
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Maldives Sentinel-2 Coastline Dataset",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.10177",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "chhabra2025utilizing",
+              "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+              "self_evaluation": false,
+              "span": "5 images\n\n0.8509\n\n0.7977\n\n0.9612",
+              "value": 0.9612
             },
             {
               "baseline": "alphaearth",
@@ -1418,6 +1560,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "ISMN (113 stations, Europe)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.18083",
+              "locator": "Abstract / Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "kontogiorgakis2026comparative",
+              "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+              "self_evaluation": false,
+              "span": "Foundation model (Prithvi) embeddings provide negligible improvement over hand-crafted features (R²=0.515 vs. 0.514)",
+              "value": 0.515
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 80.43,
               "dataset": "NeuenahrFlood",
               "direction": "better",
@@ -1498,13 +1656,13 @@
             }
           ],
           "direction": "better",
-          "label": "consensus",
-          "n_claims": 13,
-          "n_papers": 3,
-          "n_papers_all": 6
+          "label": "contested",
+          "n_claims": 15,
+          "n_papers": 4,
+          "n_papers_all": 8
         },
         {
-          "agreement": 0.778,
+          "agreement": 0.8,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -1634,6 +1792,38 @@
               "self_evaluation": false,
               "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
               "value": 0.16
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.54,
+              "dataset": "Sen1Floods11 Bolivia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "Prithvi-CAFE surpasses the baseline U-Net by 10.8 IoU",
+              "value": 88.87
+            },
+            {
+              "baseline": "prithvi",
+              "baseline_value": 82.89,
+              "dataset": "Sen1Floods11 Bolivia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "and the original Prithvi by 9",
+              "value": 88.87
             },
             {
               "baseline": null,
@@ -1957,10 +2147,10 @@
             }
           ],
           "direction": "better",
-          "label": "contested",
-          "n_claims": 28,
-          "n_papers": 9,
-          "n_papers_all": 14
+          "label": "consensus",
+          "n_claims": 30,
+          "n_papers": 10,
+          "n_papers_all": 15
         },
         {
           "agreement": 1.0,
@@ -2118,7 +2308,7 @@
           "n_papers_all": 4
         },
         {
-          "agreement": 1.0,
+          "agreement": 0.5,
           "axis": "G5_cost",
           "claims": [
             {
@@ -2170,6 +2360,38 @@
               "value": 62.8
             },
             {
+              "baseline": "prithvi",
+              "baseline_value": 65.05,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "using only 45.5M trainable parameters",
+              "value": 68.74
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.46,
+              "dataset": "STTORM-CD-Floods",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.13751",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "kyselica2026towards",
+              "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+              "self_evaluation": false,
+              "span": "ContUrbanCD 0.46 ±\\pm 0.26",
+              "value": 0.38
+            },
+            {
               "baseline": null,
               "baseline_value": 81.96,
               "dataset": "MTBS/NBAC Wildfire Events",
@@ -2204,9 +2426,9 @@
           ],
           "direction": "better",
           "label": "thin",
-          "n_claims": 5,
-          "n_papers": 1,
-          "n_papers_all": 4
+          "n_claims": 7,
+          "n_papers": 2,
+          "n_papers_all": 6
         },
         {
           "agreement": null,
@@ -2245,6 +2467,38 @@
               "value": 98.0
             },
             {
+              "baseline": "prithvi",
+              "baseline_value": 0.9912,
+              "dataset": "Maldives Sentinel-2 Coastline Dataset",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.10177",
+              "locator": "Results Sec 4",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "chhabra2025utilizing",
+              "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+              "self_evaluation": false,
+              "span": "Our highest F1 score is Prithvi 600M at 0.9912, with Prithvi 300M closely following at 0.9908",
+              "value": 0.9908
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "STTORM-CD-Floods",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.13751",
+              "locator": "Sec 7",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "kyselica2026towards",
+              "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+              "self_evaluation": false,
+              "span": "the model achieves an F1-score of 0.479 on the STTORM-CD-Floods test set",
+              "value": 0.479
+            },
+            {
               "baseline": null,
               "baseline_value": 69.43,
               "dataset": "MTBS/NBAC Wildfire Events",
@@ -2263,9 +2517,9 @@
           ],
           "direction": null,
           "label": "gap",
-          "n_claims": 3,
+          "n_claims": 5,
           "n_papers": 0,
-          "n_papers_all": 3
+          "n_papers_all": 5
         },
         {
           "agreement": null,
@@ -2369,7 +2623,7 @@
           "n_papers_all": 0
         },
         {
-          "agreement": 1.0,
+          "agreement": 0.5,
           "axis": "G9_ecological_fine_scale",
           "claims": [
             {
@@ -2451,13 +2705,29 @@
               "self_evaluation": false,
               "span": "with a median of −2.00",
               "value": -2.0
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.5066,
+              "dataset": "ISMN (113 stations, Europe)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.18083",
+              "locator": "Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "kontogiorgakis2026comparative",
+              "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+              "self_evaluation": false,
+              "span": "Prithvi_S2",
+              "value": 0.5091
             }
           ],
           "direction": "better",
           "label": "thin",
-          "n_claims": 5,
-          "n_papers": 1,
-          "n_papers_all": 4
+          "n_claims": 6,
+          "n_papers": 2,
+          "n_papers_all": 5
         },
         {
           "agreement": 1.0,
@@ -3134,6 +3404,66 @@
           "label_regime": "unspecified",
           "metric": "f1",
           "model": "satmae",
+          "n_papers": 1,
+          "task": "change_detection"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "STTORM-CD-Floods",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.13751",
+              "locator": "Sec 7",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "kyselica2026towards",
+              "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+              "self_evaluation": false,
+              "span": "the model achieves an F1-score of 0.479 on the STTORM-CD-Floods test set",
+              "value": 0.479
+            }
+          ],
+          "dataset": "STTORM-CD-Floods",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "change_detection"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.46,
+              "dataset": "STTORM-CD-Floods",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.13751",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "kyselica2026towards",
+              "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+              "self_evaluation": false,
+              "span": "ContUrbanCD 0.46 ±\\pm 0.26",
+              "value": 0.38
+            }
+          ],
+          "dataset": "STTORM-CD-Floods",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "prithvi",
           "n_papers": 1,
           "task": "change_detection"
         },
@@ -3941,6 +4271,96 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 64.56,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "TerraMind also shows competitive performance with 62.33 IoU, whereas U-Net falls short at 60.14",
+              "value": 68.74
+            }
+          ],
+          "dataset": "FloodPlanet",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "dofa",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": 61.52,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "DOFA 59.15 (0.03) 61.52 (0.02) 74.22 (0.02) 116",
+              "value": 68.74
+            }
+          ],
+          "dataset": "FloodPlanet",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 65.05,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "using only 45.5M trainable parameters",
+              "value": 68.74
+            }
+          ],
+          "dataset": "FloodPlanet",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.103,
               "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
               "direction": "better",
@@ -4179,6 +4599,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 90.8,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "U-Net Base [li2023assessment] 84.03 90.80 95.40 31",
+              "value": 90.5
+            }
+          ],
+          "dataset": "Sen1Floods11",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
           "baseline": null,
           "claims": [
             {
@@ -4200,6 +4650,66 @@
           ],
           "dataset": "Sen1Floods11",
           "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.54,
+              "dataset": "Sen1Floods11 Bolivia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "Prithvi-CAFE surpasses the baseline U-Net by 10.8 IoU",
+              "value": 88.87
+            }
+          ],
+          "dataset": "Sen1Floods11 Bolivia",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 82.89,
+              "dataset": "Sen1Floods11 Bolivia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "and the original Prithvi by 9",
+              "value": 88.87
+            }
+          ],
+          "dataset": "Sen1Floods11 Bolivia",
+          "direction": "better",
           "label": "thin",
           "label_regime": "unspecified",
           "metric": "miou",
@@ -5345,6 +5855,52 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "ISMN (113 stations, Europe)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.18083",
+              "locator": "Abstract / Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "kontogiorgakis2026comparative",
+              "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+              "self_evaluation": false,
+              "span": "Foundation model (Prithvi) embeddings provide negligible improvement over hand-crafted features (R²=0.515 vs. 0.514)",
+              "value": 0.515
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.5066,
+              "dataset": "ISMN (113 stations, Europe)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.18083",
+              "locator": "Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "kontogiorgakis2026comparative",
+              "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+              "self_evaluation": false,
+              "span": "Prithvi_S2",
+              "value": 0.5091
+            }
+          ],
+          "dataset": "ISMN (113 stations, Europe)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.2063,
               "dataset": "PACE OCI L1B/L2 AOD",
               "direction": "better",
@@ -5531,6 +6087,82 @@
           "label": "thin",
           "label_regime": "unspecified",
           "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Maldives Sentinel-2 Coastline Dataset",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.10177",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "chhabra2025utilizing",
+              "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+              "self_evaluation": false,
+              "span": "5 images\n\n0.8509\n\n0.7977\n\n0.9612",
+              "value": 0.9612
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Maldives Sentinel-2 Coastline Dataset",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.10177",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "chhabra2025utilizing",
+              "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+              "self_evaluation": false,
+              "span": "125 images",
+              "value": 0.9913
+            }
+          ],
+          "dataset": "Maldives Sentinel-2 Coastline Dataset",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 0.9912,
+              "dataset": "Maldives Sentinel-2 Coastline Dataset",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.10177",
+              "locator": "Results Sec 4",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "chhabra2025utilizing",
+              "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+              "self_evaluation": false,
+              "span": "Our highest F1 score is Prithvi 600M at 0.9912, with Prithvi 300M closely following at 0.9908",
+              "value": 0.9908
+            }
+          ],
+          "dataset": "Maldives Sentinel-2 Coastline Dataset",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
           "model": "prithvi",
           "n_papers": 1,
           "task": "semantic_segmentation"
@@ -7077,8 +7709,40 @@
             "task": "land_cover_classification"
           },
           "prithvi\tchange_detection": {
-            "agreement": null,
+            "agreement": 1.0,
             "claims": [
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "STTORM-CD-Floods",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.13751",
+                "locator": "Sec 7",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "kyselica2026towards",
+                "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+                "self_evaluation": false,
+                "span": "the model achieves an F1-score of 0.479 on the STTORM-CD-Floods test set",
+                "value": 0.479
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.46,
+                "dataset": "STTORM-CD-Floods",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.13751",
+                "locator": "Table 2",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "kyselica2026towards",
+                "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+                "self_evaluation": false,
+                "span": "ContUrbanCD 0.46 ±\\pm 0.26",
+                "value": 0.38
+              },
               {
                 "baseline": "satmae",
                 "baseline_value": 41.1,
@@ -7144,12 +7808,12 @@
                 "value": 88.13
               }
             ],
-            "direction": null,
-            "label": "gap",
+            "direction": "worse",
+            "label": "thin",
             "model": "prithvi",
-            "n_claims": 4,
-            "n_papers": 0,
-            "n_papers_all": 2,
+            "n_claims": 6,
+            "n_papers": 1,
+            "n_papers_all": 3,
             "task": "change_detection"
           },
           "prithvi\tcrop_type_mapping": {
@@ -7291,6 +7955,102 @@
           "prithvi\tflood_mapping": {
             "agreement": 1.0,
             "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 90.8,
+                "dataset": "Sen1Floods11",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.02315",
+                "locator": "Table 1",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "kaushik2026prithvi",
+                "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+                "self_evaluation": false,
+                "span": "U-Net Base [li2023assessment] 84.03 90.80 95.40 31",
+                "value": 90.5
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 82.54,
+                "dataset": "Sen1Floods11 Bolivia",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.02315",
+                "locator": "Table 1",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "kaushik2026prithvi",
+                "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+                "self_evaluation": false,
+                "span": "Prithvi-CAFE surpasses the baseline U-Net by 10.8 IoU",
+                "value": 88.87
+              },
+              {
+                "baseline": "prithvi",
+                "baseline_value": 82.89,
+                "dataset": "Sen1Floods11 Bolivia",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.02315",
+                "locator": "Table 1",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "kaushik2026prithvi",
+                "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+                "self_evaluation": false,
+                "span": "and the original Prithvi by 9",
+                "value": 88.87
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 64.56,
+                "dataset": "FloodPlanet",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.02315",
+                "locator": "Table 2",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "kaushik2026prithvi",
+                "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+                "self_evaluation": false,
+                "span": "TerraMind also shows competitive performance with 62.33 IoU, whereas U-Net falls short at 60.14",
+                "value": 68.74
+              },
+              {
+                "baseline": "dofa",
+                "baseline_value": 61.52,
+                "dataset": "FloodPlanet",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.02315",
+                "locator": "Table 2",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "kaushik2026prithvi",
+                "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+                "self_evaluation": false,
+                "span": "DOFA 59.15 (0.03) 61.52 (0.02) 74.22 (0.02) 116",
+                "value": 68.74
+              },
+              {
+                "baseline": "prithvi",
+                "baseline_value": 65.05,
+                "dataset": "FloodPlanet",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.02315",
+                "locator": "Table 2",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "kaushik2026prithvi",
+                "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+                "self_evaluation": false,
+                "span": "using only 45.5M trainable parameters",
+                "value": 68.74
+              },
               {
                 "baseline": "task_specific",
                 "baseline_value": 90.6,
@@ -7455,9 +8215,9 @@
             "direction": "better",
             "label": "thin",
             "model": "prithvi",
-            "n_claims": 10,
-            "n_papers": 1,
-            "n_papers_all": 2,
+            "n_claims": 16,
+            "n_papers": 2,
+            "n_papers_all": 3,
             "task": "flood_mapping"
           },
           "prithvi\tland_cover_classification": {
@@ -7489,7 +8249,7 @@
             "task": "land_cover_classification"
           },
           "prithvi\trepresentation_probing": {
-            "agreement": 1.0,
+            "agreement": 0.667,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -7538,6 +8298,38 @@
                 "self_evaluation": false,
                 "span": "EFDiff-x0x_{0}",
                 "value": 0.5629
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.514,
+                "dataset": "ISMN (113 stations, Europe)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2602.18083",
+                "locator": "Abstract / Table II",
+                "metric": "r2",
+                "model": "prithvi",
+                "paper_key": "kontogiorgakis2026comparative",
+                "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+                "self_evaluation": false,
+                "span": "Foundation model (Prithvi) embeddings provide negligible improvement over hand-crafted features (R²=0.515 vs. 0.514)",
+                "value": 0.515
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.5066,
+                "dataset": "ISMN (113 stations, Europe)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2602.18083",
+                "locator": "Table II",
+                "metric": "r2",
+                "model": "prithvi",
+                "paper_key": "kontogiorgakis2026comparative",
+                "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+                "self_evaluation": false,
+                "span": "Prithvi_S2",
+                "value": 0.5091
               },
               {
                 "baseline": null,
@@ -7589,11 +8381,11 @@
               }
             ],
             "direction": "better",
-            "label": "thin",
+            "label": "contested",
             "model": "prithvi",
-            "n_claims": 6,
-            "n_papers": 2,
-            "n_papers_all": 3,
+            "n_claims": 8,
+            "n_papers": 3,
+            "n_papers_all": 4,
             "task": "representation_probing"
           },
           "prithvi\tsemantic_segmentation": {
@@ -7630,6 +8422,54 @@
                 "self_evaluation": false,
                 "span": "SIMPLER retains 89% of baseline (mIoU 62.2% vs 69.6%)",
                 "value": 62.2
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "Maldives Sentinel-2 Coastline Dataset",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2511.10177",
+                "locator": "Table 1",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "chhabra2025utilizing",
+                "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+                "self_evaluation": false,
+                "span": "5 images\n\n0.8509\n\n0.7977\n\n0.9612",
+                "value": 0.9612
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "Maldives Sentinel-2 Coastline Dataset",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2511.10177",
+                "locator": "Table 1",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "chhabra2025utilizing",
+                "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+                "self_evaluation": false,
+                "span": "125 images",
+                "value": 0.9913
+              },
+              {
+                "baseline": "prithvi",
+                "baseline_value": 0.9912,
+                "dataset": "Maldives Sentinel-2 Coastline Dataset",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2511.10177",
+                "locator": "Results Sec 4",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "chhabra2025utilizing",
+                "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+                "self_evaluation": false,
+                "span": "Our highest F1 score is Prithvi 600M at 0.9912, with Prithvi 300M closely following at 0.9908",
+                "value": 0.9908
               },
               {
                 "baseline": "task_specific",
@@ -7715,9 +8555,9 @@
             "direction": "better",
             "label": "thin",
             "model": "prithvi",
-            "n_claims": 7,
+            "n_claims": 10,
             "n_papers": 2,
-            "n_papers_all": 3,
+            "n_papers_all": 4,
             "task": "semantic_segmentation"
           },
           "satclip\tchange_detection": {
@@ -8276,6 +9116,394 @@
       },
       "task_verdicts": [
         {
+          "agreement": 0.667,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.3421,
+              "dataset": "HLS Landsat LST benchmark (Water)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2604.16841",
+              "locator": "Table 5.1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "chen2026when",
+              "paper_title": "When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution",
+              "self_evaluation": false,
+              "span": "EFDiff-x0x_{0} reduces Water RMSE to 0.29∘\\,{}^{\\circ}C, a 16% improvement over the best non-EFM baseline",
+              "value": 0.2892
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.5336,
+              "dataset": "HLS Landsat LST benchmark (Forest)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2604.16841",
+              "locator": "Table 5.1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "chen2026when",
+              "paper_title": "When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution",
+              "self_evaluation": false,
+              "span": "EFDiff-x0x_{0}",
+              "value": 0.466
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.648,
+              "dataset": "HLS Landsat LST benchmark (Low Vegetation)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2604.16841",
+              "locator": "Table 5.1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "chen2026when",
+              "paper_title": "When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution",
+              "self_evaluation": false,
+              "span": "EFDiff-x0x_{0}",
+              "value": 0.5629
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "ISMN (113 stations, Europe)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.18083",
+              "locator": "Abstract / Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "kontogiorgakis2026comparative",
+              "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+              "self_evaluation": false,
+              "span": "Foundation model (Prithvi) embeddings provide negligible improvement over hand-crafted features (R²=0.515 vs. 0.514)",
+              "value": 0.515
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.5066,
+              "dataset": "ISMN (113 stations, Europe)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.18083",
+              "locator": "Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "kontogiorgakis2026comparative",
+              "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+              "self_evaluation": false,
+              "span": "Prithvi_S2",
+              "value": 0.5091
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.2063,
+              "dataset": "PACE OCI L1B/L2 AOD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.00678",
+              "locator": "Table I",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "tushar2026foundation",
+              "paper_title": "Foundation AI Models for Aerosol Optical Depth Estimation from PACE Satellite Data",
+              "self_evaluation": false,
+              "span": "PrithviEO1 [10]",
+              "value": 0.1925
+            }
+          ],
+          "datasets": [
+            "HLS Landsat LST benchmark (Forest)",
+            "HLS Landsat LST benchmark (Low Vegetation)",
+            "HLS Landsat LST benchmark (Water)",
+            "ISMN (113 stations, Europe)",
+            "PACE OCI L1B/L2 AOD"
+          ],
+          "direction": "better",
+          "label": "contested",
+          "models": [
+            {
+              "agreement": 0.667,
+              "direction": "better",
+              "label": "contested",
+              "model": "prithvi",
+              "n_claims": 6,
+              "n_papers": 3
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 6,
+          "n_models": 1,
+          "n_papers": 3,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 90.8,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "U-Net Base [li2023assessment] 84.03 90.80 95.40 31",
+              "value": 90.5
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.54,
+              "dataset": "Sen1Floods11 Bolivia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "Prithvi-CAFE surpasses the baseline U-Net by 10.8 IoU",
+              "value": 88.87
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 64.56,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "TerraMind also shows competitive performance with 62.33 IoU, whereas U-Net falls short at 60.14",
+              "value": 68.74
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 90.6,
+              "dataset": "BlessemFlood21",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.24120",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "polushko2026flood",
+              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
+              "self_evaluation": false,
+              "span": "89.1",
+              "value": 89.1
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 95.1,
+              "dataset": "BlessemFlood21",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.24120",
+              "locator": "Table I",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "polushko2026flood",
+              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
+              "self_evaluation": false,
+              "span": "94.3",
+              "value": 94.3
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 99.3,
+              "dataset": "BlessemFlood21",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.24120",
+              "locator": "Table I",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "polushko2026flood",
+              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
+              "self_evaluation": false,
+              "span": "99.6",
+              "value": 99.6
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 93.1,
+              "dataset": "NeuenahrFlood",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.24120",
+              "locator": "Table II",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "polushko2026flood",
+              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
+              "self_evaluation": false,
+              "span": "90.3",
+              "value": 90.3
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 96.4,
+              "dataset": "NeuenahrFlood",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.24120",
+              "locator": "Table II",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "polushko2026flood",
+              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
+              "self_evaluation": false,
+              "span": "94.6",
+              "value": 94.6
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 99.1,
+              "dataset": "NeuenahrFlood",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.24120",
+              "locator": "Table II",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "polushko2026flood",
+              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
+              "self_evaluation": false,
+              "span": "99.5",
+              "value": 99.5
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 34.14,
+              "dataset": "NeuenahrFlood",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.24120",
+              "locator": "Table III",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "polushko2026flood",
+              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
+              "self_evaluation": false,
+              "span": "34.85",
+              "value": 34.85
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 80.43,
+              "dataset": "NeuenahrFlood",
+              "direction": "better",
+              "label_ratio": 0.095,
+              "link": "https://arxiv.org/abs/2606.24120",
+              "locator": "Table IV / Sec IV Exp. 3",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "polushko2026flood",
+              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
+              "self_evaluation": false,
+              "span": "91.34 % vs. 80.43 %",
+              "value": 91.34
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 66.81,
+              "dataset": "NeuenahrFlood",
+              "direction": "better",
+              "label_ratio": 0.006,
+              "link": "https://arxiv.org/abs/2606.24120",
+              "locator": "Table IV",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "polushko2026flood",
+              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
+              "self_evaluation": false,
+              "span": "73.52",
+              "value": 73.52
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.041,
+              "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "DINOv3 SAR+AE achieves the best Florence IoU (0.078)",
+              "value": 0.078
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.103,
+              "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2606.29134",
+              "locator": "Sec III-C",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "thasma2026beyond",
+              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+              "self_evaluation": false,
+              "span": "followed by DINOv3 SAR+AE (0.172)",
+              "value": 0.172
+            }
+          ],
+          "datasets": [
+            "BlessemFlood21",
+            "FloodPlanet",
+            "ImpactMesh-Flood (EMSR176 Louisiana floods)",
+            "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
+            "NeuenahrFlood",
+            "Sen1Floods11",
+            "Sen1Floods11 Bolivia"
+          ],
+          "direction": "better",
+          "label": "consensus",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 2,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "prithvi",
+              "n_claims": 12,
+              "n_papers": 2
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 14,
+          "n_models": 2,
+          "n_papers": 3,
+          "task": "flood_mapping"
+        },
+        {
           "agreement": 1.0,
           "claims": [
             {
@@ -8496,6 +9724,112 @@
           "n_models": 3,
           "n_papers": 3,
           "task": "land_cover_classification"
+        },
+        {
+          "agreement": 0.5,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.46,
+              "dataset": "STTORM-CD-Floods",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.13751",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "kyselica2026towards",
+              "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+              "self_evaluation": false,
+              "span": "ContUrbanCD 0.46 ±\\pm 0.26",
+              "value": 0.38
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 42.5,
+              "dataset": "WATCH Afghanistan archaeological sites (test split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08160",
+              "locator": "Sec V-B / Table III",
+              "metric": "accuracy",
+              "model": "satclip",
+              "paper_key": "tadesse2026watch",
+              "paper_title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
+              "self_evaluation": false,
+              "span": "GeoRSCLIP exceeds Handcrafted by 10 percentage points at m=0m{=}0 under TED (52.5% vs. 42.5%)",
+              "value": 52.5
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 15.0,
+              "dataset": "WATCH Afghanistan archaeological sites (test split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08160",
+              "locator": "Sec V-B",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "tadesse2026watch",
+              "paper_title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
+              "self_evaluation": false,
+              "span": "CLIP nearly doubles Handcrafted recall under SSCD (27.5% vs. 15.0%)",
+              "value": 27.5
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 97.5,
+              "dataset": "WATCH Afghanistan archaeological sites (test split)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08160",
+              "locator": "Sec V-B",
+              "metric": "accuracy",
+              "model": "satclip",
+              "paper_key": "tadesse2026watch",
+              "paper_title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
+              "self_evaluation": false,
+              "span": "Satlas-Pretrain overtakes it from m≥1m{\\geq}1 onward and gains 7.5 points by m=6m{=}6 (97.5% vs. 90.0%)",
+              "value": 90.0
+            }
+          ],
+          "datasets": [
+            "STTORM-CD-Floods",
+            "WATCH Afghanistan archaeological sites (test split)"
+          ],
+          "direction": "worse",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "clay",
+              "n_claims": 1,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "prithvi",
+              "n_claims": 1,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "satclip",
+              "n_claims": 2,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": true,
+          "n_claims": 4,
+          "n_models": 3,
+          "n_papers": 2,
+          "task": "change_detection"
         },
         {
           "agreement": 1.0,
@@ -8748,310 +10082,6 @@
           "task": "crop_yield_estimation"
         },
         {
-          "agreement": 1.0,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 90.6,
-              "dataset": "BlessemFlood21",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.24120",
-              "locator": "Table I",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "polushko2026flood",
-              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
-              "self_evaluation": false,
-              "span": "89.1",
-              "value": 89.1
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 95.1,
-              "dataset": "BlessemFlood21",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.24120",
-              "locator": "Table I",
-              "metric": "f1",
-              "model": "prithvi",
-              "paper_key": "polushko2026flood",
-              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
-              "self_evaluation": false,
-              "span": "94.3",
-              "value": 94.3
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 99.3,
-              "dataset": "BlessemFlood21",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.24120",
-              "locator": "Table I",
-              "metric": "accuracy",
-              "model": "prithvi",
-              "paper_key": "polushko2026flood",
-              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
-              "self_evaluation": false,
-              "span": "99.6",
-              "value": 99.6
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 93.1,
-              "dataset": "NeuenahrFlood",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.24120",
-              "locator": "Table II",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "polushko2026flood",
-              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
-              "self_evaluation": false,
-              "span": "90.3",
-              "value": 90.3
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 96.4,
-              "dataset": "NeuenahrFlood",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.24120",
-              "locator": "Table II",
-              "metric": "f1",
-              "model": "prithvi",
-              "paper_key": "polushko2026flood",
-              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
-              "self_evaluation": false,
-              "span": "94.6",
-              "value": 94.6
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 99.1,
-              "dataset": "NeuenahrFlood",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.24120",
-              "locator": "Table II",
-              "metric": "accuracy",
-              "model": "prithvi",
-              "paper_key": "polushko2026flood",
-              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
-              "self_evaluation": false,
-              "span": "99.5",
-              "value": 99.5
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 34.14,
-              "dataset": "NeuenahrFlood",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.24120",
-              "locator": "Table III",
-              "metric": "f1",
-              "model": "prithvi",
-              "paper_key": "polushko2026flood",
-              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
-              "self_evaluation": false,
-              "span": "34.85",
-              "value": 34.85
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 80.43,
-              "dataset": "NeuenahrFlood",
-              "direction": "better",
-              "label_ratio": 0.095,
-              "link": "https://arxiv.org/abs/2606.24120",
-              "locator": "Table IV / Sec IV Exp. 3",
-              "metric": "f1",
-              "model": "prithvi",
-              "paper_key": "polushko2026flood",
-              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
-              "self_evaluation": false,
-              "span": "91.34 % vs. 80.43 %",
-              "value": 91.34
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 66.81,
-              "dataset": "NeuenahrFlood",
-              "direction": "better",
-              "label_ratio": 0.006,
-              "link": "https://arxiv.org/abs/2606.24120",
-              "locator": "Table IV",
-              "metric": "f1",
-              "model": "prithvi",
-              "paper_key": "polushko2026flood",
-              "paper_title": "Flood Mapping from RGB imagery using a Vision Foundation Model",
-              "self_evaluation": false,
-              "span": "73.52",
-              "value": 73.52
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.041,
-              "dataset": "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
-              "direction": "better",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2606.29134",
-              "locator": "Table I",
-              "metric": "miou",
-              "model": "alphaearth",
-              "paper_key": "thasma2026beyond",
-              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
-              "self_evaluation": false,
-              "span": "DINOv3 SAR+AE achieves the best Florence IoU (0.078)",
-              "value": 0.078
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.103,
-              "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
-              "direction": "better",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2606.29134",
-              "locator": "Sec III-C",
-              "metric": "miou",
-              "model": "alphaearth",
-              "paper_key": "thasma2026beyond",
-              "paper_title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
-              "self_evaluation": false,
-              "span": "followed by DINOv3 SAR+AE (0.172)",
-              "value": 0.172
-            }
-          ],
-          "datasets": [
-            "BlessemFlood21",
-            "ImpactMesh-Flood (EMSR176 Louisiana floods)",
-            "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
-            "NeuenahrFlood"
-          ],
-          "direction": "better",
-          "label": "thin",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "alphaearth",
-              "n_claims": 2,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "prithvi",
-              "n_claims": 9,
-              "n_papers": 1
-            }
-          ],
-          "models_differ": false,
-          "n_claims": 11,
-          "n_models": 2,
-          "n_papers": 2,
-          "task": "flood_mapping"
-        },
-        {
-          "agreement": 1.0,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.3421,
-              "dataset": "HLS Landsat LST benchmark (Water)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2604.16841",
-              "locator": "Table 5.1",
-              "metric": "rmse",
-              "model": "prithvi",
-              "paper_key": "chen2026when",
-              "paper_title": "When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution",
-              "self_evaluation": false,
-              "span": "EFDiff-x0x_{0} reduces Water RMSE to 0.29∘\\,{}^{\\circ}C, a 16% improvement over the best non-EFM baseline",
-              "value": 0.2892
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.5336,
-              "dataset": "HLS Landsat LST benchmark (Forest)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2604.16841",
-              "locator": "Table 5.1",
-              "metric": "rmse",
-              "model": "prithvi",
-              "paper_key": "chen2026when",
-              "paper_title": "When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution",
-              "self_evaluation": false,
-              "span": "EFDiff-x0x_{0}",
-              "value": 0.466
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.648,
-              "dataset": "HLS Landsat LST benchmark (Low Vegetation)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2604.16841",
-              "locator": "Table 5.1",
-              "metric": "rmse",
-              "model": "prithvi",
-              "paper_key": "chen2026when",
-              "paper_title": "When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution",
-              "self_evaluation": false,
-              "span": "EFDiff-x0x_{0}",
-              "value": 0.5629
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.2063,
-              "dataset": "PACE OCI L1B/L2 AOD",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.00678",
-              "locator": "Table I",
-              "metric": "rmse",
-              "model": "prithvi",
-              "paper_key": "tushar2026foundation",
-              "paper_title": "Foundation AI Models for Aerosol Optical Depth Estimation from PACE Satellite Data",
-              "self_evaluation": false,
-              "span": "PrithviEO1 [10]",
-              "value": 0.1925
-            }
-          ],
-          "datasets": [
-            "HLS Landsat LST benchmark (Forest)",
-            "HLS Landsat LST benchmark (Low Vegetation)",
-            "HLS Landsat LST benchmark (Water)",
-            "PACE OCI L1B/L2 AOD"
-          ],
-          "direction": "better",
-          "label": "thin",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "prithvi",
-              "n_claims": 4,
-              "n_papers": 2
-            }
-          ],
-          "models_differ": false,
-          "n_claims": 4,
-          "n_models": 1,
-          "n_papers": 2,
-          "task": "representation_probing"
-        },
-        {
           "agreement": 0.5,
           "claims": [
             {
@@ -9232,87 +10262,6 @@
           "n_models": 1,
           "n_papers": 1,
           "task": "canopy_height_estimation"
-        },
-        {
-          "agreement": 1.0,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 42.5,
-              "dataset": "WATCH Afghanistan archaeological sites (test split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08160",
-              "locator": "Sec V-B / Table III",
-              "metric": "accuracy",
-              "model": "satclip",
-              "paper_key": "tadesse2026watch",
-              "paper_title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
-              "self_evaluation": false,
-              "span": "GeoRSCLIP exceeds Handcrafted by 10 percentage points at m=0m{=}0 under TED (52.5% vs. 42.5%)",
-              "value": 52.5
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 15.0,
-              "dataset": "WATCH Afghanistan archaeological sites (test split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08160",
-              "locator": "Sec V-B",
-              "metric": "accuracy",
-              "model": "clay",
-              "paper_key": "tadesse2026watch",
-              "paper_title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
-              "self_evaluation": false,
-              "span": "CLIP nearly doubles Handcrafted recall under SSCD (27.5% vs. 15.0%)",
-              "value": 27.5
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 97.5,
-              "dataset": "WATCH Afghanistan archaeological sites (test split)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08160",
-              "locator": "Sec V-B",
-              "metric": "accuracy",
-              "model": "satclip",
-              "paper_key": "tadesse2026watch",
-              "paper_title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
-              "self_evaluation": false,
-              "span": "Satlas-Pretrain overtakes it from m≥1m{\\geq}1 onward and gains 7.5 points by m=6m{=}6 (97.5% vs. 90.0%)",
-              "value": 90.0
-            }
-          ],
-          "datasets": [
-            "WATCH Afghanistan archaeological sites (test split)"
-          ],
-          "direction": "better",
-          "label": "thin",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "clay",
-              "n_claims": 1,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "satclip",
-              "n_claims": 2,
-              "n_papers": 1
-            }
-          ],
-          "models_differ": false,
-          "n_claims": 3,
-          "n_models": 2,
-          "n_papers": 1,
-          "task": "change_detection"
         },
         {
           "agreement": 1.0,
@@ -9515,7 +10464,7 @@
     "no_self_eval": {
       "axes": [
         {
-          "agreement": 0.6,
+          "agreement": 0.545,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -9581,6 +10530,22 @@
               "self_evaluation": false,
               "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
               "value": 0.99
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Maldives Sentinel-2 Coastline Dataset",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.10177",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "chhabra2025utilizing",
+              "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+              "self_evaluation": false,
+              "span": "125 images",
+              "value": 0.9913
             },
             {
               "baseline": "task_specific",
@@ -9677,6 +10642,54 @@
               "self_evaluation": false,
               "span": "93.33% (±0.69) F1 macro",
               "value": 93.33
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 90.8,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "U-Net Base [li2023assessment] 84.03 90.80 95.40 31",
+              "value": 90.5
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 64.56,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "TerraMind also shows competitive performance with 62.33 IoU, whereas U-Net falls short at 60.14",
+              "value": 68.74
+            },
+            {
+              "baseline": "dofa",
+              "baseline_value": 61.52,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "DOFA 59.15 (0.03) 61.52 (0.02) 74.22 (0.02) 116",
+              "value": 68.74
             },
             {
               "baseline": "satclip",
@@ -9937,12 +10950,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 26,
-          "n_papers": 10,
-          "n_papers_all": 15
+          "n_claims": 30,
+          "n_papers": 11,
+          "n_papers_all": 17
         },
         {
-          "agreement": 1.0,
+          "agreement": 0.75,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -9960,6 +10973,22 @@
               "self_evaluation": false,
               "span": "the DIoU-trained FCOS variant reaches mAP@50 = 0.8025 (+6.42% relative over the FR-CNN DIoU baseline)",
               "value": 0.8025
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Maldives Sentinel-2 Coastline Dataset",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.10177",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "chhabra2025utilizing",
+              "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+              "self_evaluation": false,
+              "span": "5 images\n\n0.8509\n\n0.7977\n\n0.9612",
+              "value": 0.9612
             },
             {
               "baseline": "task_specific",
@@ -10024,6 +11053,22 @@
               "self_evaluation": false,
               "span": "46.11% (±3.00) F1 macro",
               "value": 46.11
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "ISMN (113 stations, Europe)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.18083",
+              "locator": "Abstract / Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "kontogiorgakis2026comparative",
+              "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+              "self_evaluation": false,
+              "span": "Foundation model (Prithvi) embeddings provide negligible improvement over hand-crafted features (R²=0.515 vs. 0.514)",
+              "value": 0.515
             },
             {
               "baseline": "task_specific",
@@ -10107,13 +11152,13 @@
             }
           ],
           "direction": "better",
-          "label": "consensus",
-          "n_claims": 10,
-          "n_papers": 3,
-          "n_papers_all": 4
+          "label": "contested",
+          "n_claims": 12,
+          "n_papers": 4,
+          "n_papers_all": 6
         },
         {
-          "agreement": 0.778,
+          "agreement": 0.8,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -10243,6 +11288,38 @@
               "self_evaluation": false,
               "span": "AEF achieves R² values of only 0.301 for cross-region and 0.160 for cross-tier evaluation.",
               "value": 0.16
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.54,
+              "dataset": "Sen1Floods11 Bolivia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "Prithvi-CAFE surpasses the baseline U-Net by 10.8 IoU",
+              "value": 88.87
+            },
+            {
+              "baseline": "prithvi",
+              "baseline_value": 82.89,
+              "dataset": "Sen1Floods11 Bolivia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "and the original Prithvi by 9",
+              "value": 88.87
             },
             {
               "baseline": "task_specific",
@@ -10550,10 +11627,10 @@
             }
           ],
           "direction": "better",
-          "label": "contested",
-          "n_claims": 27,
-          "n_papers": 9,
-          "n_papers_all": 13
+          "label": "consensus",
+          "n_claims": 29,
+          "n_papers": 10,
+          "n_papers_all": 14
         },
         {
           "agreement": null,
@@ -10599,7 +11676,7 @@
           "n_papers_all": 1
         },
         {
-          "agreement": 1.0,
+          "agreement": 0.5,
           "axis": "G5_cost",
           "claims": [
             {
@@ -10651,6 +11728,38 @@
               "value": 62.8
             },
             {
+              "baseline": "prithvi",
+              "baseline_value": 65.05,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "using only 45.5M trainable parameters",
+              "value": 68.74
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.46,
+              "dataset": "STTORM-CD-Floods",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.13751",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "kyselica2026towards",
+              "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+              "self_evaluation": false,
+              "span": "ContUrbanCD 0.46 ±\\pm 0.26",
+              "value": 0.38
+            },
+            {
               "baseline": null,
               "baseline_value": 81.96,
               "dataset": "MTBS/NBAC Wildfire Events",
@@ -10685,9 +11794,9 @@
           ],
           "direction": "better",
           "label": "thin",
-          "n_claims": 5,
-          "n_papers": 1,
-          "n_papers_all": 4
+          "n_claims": 7,
+          "n_papers": 2,
+          "n_papers_all": 6
         },
         {
           "agreement": null,
@@ -10726,6 +11835,38 @@
               "value": 98.0
             },
             {
+              "baseline": "prithvi",
+              "baseline_value": 0.9912,
+              "dataset": "Maldives Sentinel-2 Coastline Dataset",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.10177",
+              "locator": "Results Sec 4",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "chhabra2025utilizing",
+              "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+              "self_evaluation": false,
+              "span": "Our highest F1 score is Prithvi 600M at 0.9912, with Prithvi 300M closely following at 0.9908",
+              "value": 0.9908
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "STTORM-CD-Floods",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.13751",
+              "locator": "Sec 7",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "kyselica2026towards",
+              "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+              "self_evaluation": false,
+              "span": "the model achieves an F1-score of 0.479 on the STTORM-CD-Floods test set",
+              "value": 0.479
+            },
+            {
               "baseline": null,
               "baseline_value": 69.43,
               "dataset": "MTBS/NBAC Wildfire Events",
@@ -10744,9 +11885,9 @@
           ],
           "direction": null,
           "label": "gap",
-          "n_claims": 3,
+          "n_claims": 5,
           "n_papers": 0,
-          "n_papers_all": 3
+          "n_papers_all": 5
         },
         {
           "agreement": null,
@@ -10850,7 +11991,7 @@
           "n_papers_all": 0
         },
         {
-          "agreement": 1.0,
+          "agreement": 0.5,
           "axis": "G9_ecological_fine_scale",
           "claims": [
             {
@@ -10916,13 +12057,29 @@
               "self_evaluation": false,
               "span": "with a median of −2.00",
               "value": -2.0
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.5066,
+              "dataset": "ISMN (113 stations, Europe)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.18083",
+              "locator": "Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "kontogiorgakis2026comparative",
+              "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+              "self_evaluation": false,
+              "span": "Prithvi_S2",
+              "value": 0.5091
             }
           ],
           "direction": "better",
           "label": "thin",
-          "n_claims": 4,
-          "n_papers": 1,
-          "n_papers_all": 3
+          "n_claims": 5,
+          "n_papers": 2,
+          "n_papers_all": 4
         },
         {
           "agreement": 1.0,
@@ -11484,6 +12641,66 @@
         },
         {
           "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "STTORM-CD-Floods",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.13751",
+              "locator": "Sec 7",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "kyselica2026towards",
+              "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+              "self_evaluation": false,
+              "span": "the model achieves an F1-score of 0.479 on the STTORM-CD-Floods test set",
+              "value": 0.479
+            }
+          ],
+          "dataset": "STTORM-CD-Floods",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "change_detection"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.46,
+              "dataset": "STTORM-CD-Floods",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.13751",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "kyselica2026towards",
+              "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+              "self_evaluation": false,
+              "span": "ContUrbanCD 0.46 ±\\pm 0.26",
+              "value": 0.38
+            }
+          ],
+          "dataset": "STTORM-CD-Floods",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "change_detection"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "task_specific",
           "claims": [
             {
@@ -12016,6 +13233,96 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 64.56,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "TerraMind also shows competitive performance with 62.33 IoU, whereas U-Net falls short at 60.14",
+              "value": 68.74
+            }
+          ],
+          "dataset": "FloodPlanet",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "dofa",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": 61.52,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "DOFA 59.15 (0.03) 61.52 (0.02) 74.22 (0.02) 116",
+              "value": 68.74
+            }
+          ],
+          "dataset": "FloodPlanet",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 65.05,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "using only 45.5M trainable parameters",
+              "value": 68.74
+            }
+          ],
+          "dataset": "FloodPlanet",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.103,
               "dataset": "ImpactMesh-Flood (EMSR176 Louisiana floods)",
               "direction": "better",
@@ -12254,6 +13561,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 90.8,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "U-Net Base [li2023assessment] 84.03 90.80 95.40 31",
+              "value": 90.5
+            }
+          ],
+          "dataset": "Sen1Floods11",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
           "baseline": null,
           "claims": [
             {
@@ -12275,6 +13612,66 @@
           ],
           "dataset": "Sen1Floods11",
           "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.54,
+              "dataset": "Sen1Floods11 Bolivia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "Prithvi-CAFE surpasses the baseline U-Net by 10.8 IoU",
+              "value": 88.87
+            }
+          ],
+          "dataset": "Sen1Floods11 Bolivia",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 82.89,
+              "dataset": "Sen1Floods11 Bolivia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "and the original Prithvi by 9",
+              "value": 88.87
+            }
+          ],
+          "dataset": "Sen1Floods11 Bolivia",
+          "direction": "better",
           "label": "thin",
           "label_regime": "unspecified",
           "metric": "miou",
@@ -13180,6 +14577,52 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "ISMN (113 stations, Europe)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.18083",
+              "locator": "Abstract / Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "kontogiorgakis2026comparative",
+              "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+              "self_evaluation": false,
+              "span": "Foundation model (Prithvi) embeddings provide negligible improvement over hand-crafted features (R²=0.515 vs. 0.514)",
+              "value": 0.515
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.5066,
+              "dataset": "ISMN (113 stations, Europe)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.18083",
+              "locator": "Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "kontogiorgakis2026comparative",
+              "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+              "self_evaluation": false,
+              "span": "Prithvi_S2",
+              "value": 0.5091
+            }
+          ],
+          "dataset": "ISMN (113 stations, Europe)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.2063,
               "dataset": "PACE OCI L1B/L2 AOD",
               "direction": "better",
@@ -13366,6 +14809,82 @@
           "label": "thin",
           "label_regime": "unspecified",
           "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Maldives Sentinel-2 Coastline Dataset",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.10177",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "chhabra2025utilizing",
+              "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+              "self_evaluation": false,
+              "span": "5 images\n\n0.8509\n\n0.7977\n\n0.9612",
+              "value": 0.9612
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Maldives Sentinel-2 Coastline Dataset",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.10177",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "chhabra2025utilizing",
+              "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+              "self_evaluation": false,
+              "span": "125 images",
+              "value": 0.9913
+            }
+          ],
+          "dataset": "Maldives Sentinel-2 Coastline Dataset",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 0.9912,
+              "dataset": "Maldives Sentinel-2 Coastline Dataset",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.10177",
+              "locator": "Results Sec 4",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "chhabra2025utilizing",
+              "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+              "self_evaluation": false,
+              "span": "Our highest F1 score is Prithvi 600M at 0.9912, with Prithvi 300M closely following at 0.9908",
+              "value": 0.9908
+            }
+          ],
+          "dataset": "Maldives Sentinel-2 Coastline Dataset",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
           "model": "prithvi",
           "n_papers": 1,
           "task": "semantic_segmentation"
@@ -14778,8 +16297,40 @@
             "task": "land_cover_classification"
           },
           "prithvi\tchange_detection": {
-            "agreement": null,
+            "agreement": 1.0,
             "claims": [
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "STTORM-CD-Floods",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.13751",
+                "locator": "Sec 7",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "kyselica2026towards",
+                "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+                "self_evaluation": false,
+                "span": "the model achieves an F1-score of 0.479 on the STTORM-CD-Floods test set",
+                "value": 0.479
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.46,
+                "dataset": "STTORM-CD-Floods",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.13751",
+                "locator": "Table 2",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "kyselica2026towards",
+                "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+                "self_evaluation": false,
+                "span": "ContUrbanCD 0.46 ±\\pm 0.26",
+                "value": 0.38
+              },
               {
                 "baseline": "satmae",
                 "baseline_value": 41.1,
@@ -14845,12 +16396,12 @@
                 "value": 88.13
               }
             ],
-            "direction": null,
-            "label": "gap",
+            "direction": "worse",
+            "label": "thin",
             "model": "prithvi",
-            "n_claims": 4,
-            "n_papers": 0,
-            "n_papers_all": 2,
+            "n_claims": 6,
+            "n_papers": 1,
+            "n_papers_all": 3,
             "task": "change_detection"
           },
           "prithvi\tcrop_type_mapping": {
@@ -14992,6 +16543,102 @@
           "prithvi\tflood_mapping": {
             "agreement": 1.0,
             "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 90.8,
+                "dataset": "Sen1Floods11",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.02315",
+                "locator": "Table 1",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "kaushik2026prithvi",
+                "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+                "self_evaluation": false,
+                "span": "U-Net Base [li2023assessment] 84.03 90.80 95.40 31",
+                "value": 90.5
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 82.54,
+                "dataset": "Sen1Floods11 Bolivia",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.02315",
+                "locator": "Table 1",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "kaushik2026prithvi",
+                "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+                "self_evaluation": false,
+                "span": "Prithvi-CAFE surpasses the baseline U-Net by 10.8 IoU",
+                "value": 88.87
+              },
+              {
+                "baseline": "prithvi",
+                "baseline_value": 82.89,
+                "dataset": "Sen1Floods11 Bolivia",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.02315",
+                "locator": "Table 1",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "kaushik2026prithvi",
+                "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+                "self_evaluation": false,
+                "span": "and the original Prithvi by 9",
+                "value": 88.87
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 64.56,
+                "dataset": "FloodPlanet",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.02315",
+                "locator": "Table 2",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "kaushik2026prithvi",
+                "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+                "self_evaluation": false,
+                "span": "TerraMind also shows competitive performance with 62.33 IoU, whereas U-Net falls short at 60.14",
+                "value": 68.74
+              },
+              {
+                "baseline": "dofa",
+                "baseline_value": 61.52,
+                "dataset": "FloodPlanet",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.02315",
+                "locator": "Table 2",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "kaushik2026prithvi",
+                "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+                "self_evaluation": false,
+                "span": "DOFA 59.15 (0.03) 61.52 (0.02) 74.22 (0.02) 116",
+                "value": 68.74
+              },
+              {
+                "baseline": "prithvi",
+                "baseline_value": 65.05,
+                "dataset": "FloodPlanet",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2601.02315",
+                "locator": "Table 2",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "kaushik2026prithvi",
+                "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+                "self_evaluation": false,
+                "span": "using only 45.5M trainable parameters",
+                "value": 68.74
+              },
               {
                 "baseline": "task_specific",
                 "baseline_value": 90.6,
@@ -15156,9 +16803,9 @@
             "direction": "better",
             "label": "thin",
             "model": "prithvi",
-            "n_claims": 10,
-            "n_papers": 1,
-            "n_papers_all": 2,
+            "n_claims": 16,
+            "n_papers": 2,
+            "n_papers_all": 3,
             "task": "flood_mapping"
           },
           "prithvi\tland_cover_classification": {
@@ -15190,7 +16837,7 @@
             "task": "land_cover_classification"
           },
           "prithvi\trepresentation_probing": {
-            "agreement": 1.0,
+            "agreement": 0.667,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -15239,6 +16886,38 @@
                 "self_evaluation": false,
                 "span": "EFDiff-x0x_{0}",
                 "value": 0.5629
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.514,
+                "dataset": "ISMN (113 stations, Europe)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2602.18083",
+                "locator": "Abstract / Table II",
+                "metric": "r2",
+                "model": "prithvi",
+                "paper_key": "kontogiorgakis2026comparative",
+                "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+                "self_evaluation": false,
+                "span": "Foundation model (Prithvi) embeddings provide negligible improvement over hand-crafted features (R²=0.515 vs. 0.514)",
+                "value": 0.515
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.5066,
+                "dataset": "ISMN (113 stations, Europe)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2602.18083",
+                "locator": "Table II",
+                "metric": "r2",
+                "model": "prithvi",
+                "paper_key": "kontogiorgakis2026comparative",
+                "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+                "self_evaluation": false,
+                "span": "Prithvi_S2",
+                "value": 0.5091
               },
               {
                 "baseline": null,
@@ -15290,11 +16969,11 @@
               }
             ],
             "direction": "better",
-            "label": "thin",
+            "label": "contested",
             "model": "prithvi",
-            "n_claims": 6,
-            "n_papers": 2,
-            "n_papers_all": 3,
+            "n_claims": 8,
+            "n_papers": 3,
+            "n_papers_all": 4,
             "task": "representation_probing"
           },
           "prithvi\tsemantic_segmentation": {
@@ -15331,6 +17010,54 @@
                 "self_evaluation": false,
                 "span": "SIMPLER retains 89% of baseline (mIoU 62.2% vs 69.6%)",
                 "value": 62.2
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "Maldives Sentinel-2 Coastline Dataset",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2511.10177",
+                "locator": "Table 1",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "chhabra2025utilizing",
+                "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+                "self_evaluation": false,
+                "span": "5 images\n\n0.8509\n\n0.7977\n\n0.9612",
+                "value": 0.9612
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "Maldives Sentinel-2 Coastline Dataset",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2511.10177",
+                "locator": "Table 1",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "chhabra2025utilizing",
+                "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+                "self_evaluation": false,
+                "span": "125 images",
+                "value": 0.9913
+              },
+              {
+                "baseline": "prithvi",
+                "baseline_value": 0.9912,
+                "dataset": "Maldives Sentinel-2 Coastline Dataset",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2511.10177",
+                "locator": "Results Sec 4",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "chhabra2025utilizing",
+                "paper_title": "Utilizing a Geospatial Foundation Model for Coastline Delineation in Small Sandy Islands",
+                "self_evaluation": false,
+                "span": "Our highest F1 score is Prithvi 600M at 0.9912, with Prithvi 300M closely following at 0.9908",
+                "value": 0.9908
               },
               {
                 "baseline": "task_specific",
@@ -15416,9 +17143,9 @@
             "direction": "better",
             "label": "thin",
             "model": "prithvi",
-            "n_claims": 7,
+            "n_claims": 10,
             "n_papers": 2,
-            "n_papers_all": 3,
+            "n_papers_all": 4,
             "task": "semantic_segmentation"
           },
           "satclip\tchange_detection": {
@@ -15655,124 +17382,181 @@
       },
       "task_verdicts": [
         {
-          "agreement": 0.5,
+          "agreement": 0.667,
           "claims": [
             {
               "baseline": "task_specific",
-              "baseline_value": -0.093,
-              "dataset": "GROW-Africa/HarvestStat maize yield (LOCO)",
+              "baseline_value": 0.3421,
+              "dataset": "HLS Landsat LST benchmark (Water)",
               "direction": "better",
               "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08113",
-              "locator": "Table III",
-              "metric": "r2",
+              "link": "https://arxiv.org/abs/2604.16841",
+              "locator": "Table 5.1",
+              "metric": "rmse",
               "model": "prithvi",
-              "paper_key": "adjei2026foundation",
-              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+              "paper_key": "chen2026when",
+              "paper_title": "When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution",
               "self_evaluation": false,
-              "span": "ranging from −0.093-0.093 (Spectral / Ridge) to −0.027-0.027 (Prithvi-EO / Ridge)",
-              "value": -0.027
+              "span": "EFDiff-x0x_{0} reduces Water RMSE to 0.29∘\\,{}^{\\circ}C, a 16% improvement over the best non-EFM baseline",
+              "value": 0.2892
             },
             {
               "baseline": "task_specific",
-              "baseline_value": 0.291,
-              "dataset": "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
+              "baseline_value": 0.5336,
+              "dataset": "HLS Landsat LST benchmark (Forest)",
               "direction": "better",
               "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08113",
+              "link": "https://arxiv.org/abs/2604.16841",
+              "locator": "Table 5.1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "chen2026when",
+              "paper_title": "When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution",
+              "self_evaluation": false,
+              "span": "EFDiff-x0x_{0}",
+              "value": 0.466
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.648,
+              "dataset": "HLS Landsat LST benchmark (Low Vegetation)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2604.16841",
+              "locator": "Table 5.1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "chen2026when",
+              "paper_title": "When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution",
+              "self_evaluation": false,
+              "span": "EFDiff-x0x_{0}",
+              "value": 0.5629
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "ISMN (113 stations, Europe)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.18083",
+              "locator": "Abstract / Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "kontogiorgakis2026comparative",
+              "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
+              "self_evaluation": false,
+              "span": "Foundation model (Prithvi) embeddings provide negligible improvement over hand-crafted features (R²=0.515 vs. 0.514)",
+              "value": 0.515
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.5066,
+              "dataset": "ISMN (113 stations, Europe)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2602.18083",
               "locator": "Table II",
               "metric": "r2",
               "model": "prithvi",
-              "paper_key": "adjei2026foundation",
-              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+              "paper_key": "kontogiorgakis2026comparative",
+              "paper_title": "Comparative Assessment of Multimodal Earth Observation Data for Soil Moisture Estimation",
               "self_evaluation": false,
-              "span": "best-case Prithvi-EO R=20.300{}^{2}=0.300 vs. spectral R=20.291{}^{2}=0.291",
-              "value": 0.3
+              "span": "Prithvi_S2",
+              "value": 0.5091
             },
             {
               "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield",
-              "direction": "parity",
+              "baseline_value": 0.2063,
+              "dataset": "PACE OCI L1B/L2 AOD",
+              "direction": "better",
               "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 3",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "link": "https://arxiv.org/abs/2605.00678",
+              "locator": "Table I",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "tushar2026foundation",
+              "paper_title": "Foundation AI Models for Aerosol Optical Depth Estimation from PACE Satellite Data",
               "self_evaluation": false,
-              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
-              "value": 0.8
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around -0.28–0.07",
-              "value": -0.28
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around 0.39–0.51",
-              "value": 0.39
+              "span": "PrithviEO1 [10]",
+              "value": 0.1925
             }
           ],
           "datasets": [
-            "GROW-Africa/HarvestStat maize yield (LOCO)",
-            "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
-            "USDA-NASS county-level yield",
-            "USDA-NASS county-level yield (ETF/GP ecoregions)"
+            "HLS Landsat LST benchmark (Forest)",
+            "HLS Landsat LST benchmark (Low Vegetation)",
+            "HLS Landsat LST benchmark (Water)",
+            "ISMN (113 stations, Europe)",
+            "PACE OCI L1B/L2 AOD"
           ],
           "direction": "better",
-          "label": "thin",
+          "label": "contested",
           "models": [
             {
-              "agreement": 1.0,
-              "direction": "worse",
-              "label": "thin",
-              "model": "alphaearth",
-              "n_claims": 3,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
+              "agreement": 0.667,
               "direction": "better",
-              "label": "thin",
+              "label": "contested",
               "model": "prithvi",
-              "n_claims": 2,
-              "n_papers": 1
+              "n_claims": 6,
+              "n_papers": 3
             }
           ],
-          "models_differ": true,
-          "n_claims": 5,
-          "n_models": 2,
-          "n_papers": 2,
-          "task": "crop_yield_estimation"
+          "models_differ": false,
+          "n_claims": 6,
+          "n_models": 1,
+          "n_papers": 3,
+          "task": "representation_probing"
         },
         {
           "agreement": 1.0,
           "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 90.8,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "U-Net Base [li2023assessment] 84.03 90.80 95.40 31",
+              "value": 90.5
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.54,
+              "dataset": "Sen1Floods11 Bolivia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "Prithvi-CAFE surpasses the baseline U-Net by 10.8 IoU",
+              "value": 88.87
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 64.56,
+              "dataset": "FloodPlanet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "kaushik2026prithvi",
+              "paper_title": "Prithvi-Complimentary Adaptive Fusion Encoder (CAFE): unlocking full-potential for flood inundation mapping",
+              "self_evaluation": false,
+              "span": "TerraMind also shows competitive performance with 62.33 IoU, whereas U-Net falls short at 60.14",
+              "value": 68.74
+            },
             {
               "baseline": "task_specific",
               "baseline_value": 90.6,
@@ -15952,12 +17736,15 @@
           ],
           "datasets": [
             "BlessemFlood21",
+            "FloodPlanet",
             "ImpactMesh-Flood (EMSR176 Louisiana floods)",
             "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
-            "NeuenahrFlood"
+            "NeuenahrFlood",
+            "Sen1Floods11",
+            "Sen1Floods11 Bolivia"
           ],
           "direction": "better",
-          "label": "thin",
+          "label": "consensus",
           "models": [
             {
               "agreement": 1.0,
@@ -15972,15 +17759,237 @@
               "direction": "better",
               "label": "thin",
               "model": "prithvi",
-              "n_claims": 9,
-              "n_papers": 1
+              "n_claims": 12,
+              "n_papers": 2
             }
           ],
           "models_differ": false,
-          "n_claims": 11,
+          "n_claims": 14,
+          "n_models": 2,
+          "n_papers": 3,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 0.5,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.46,
+              "dataset": "STTORM-CD-Floods",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.13751",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "kyselica2026towards",
+              "paper_title": "Towards Onboard Continuous Change Detection for Floods",
+              "self_evaluation": false,
+              "span": "ContUrbanCD 0.46 ±\\pm 0.26",
+              "value": 0.38
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 42.5,
+              "dataset": "WATCH Afghanistan archaeological sites (test split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08160",
+              "locator": "Sec V-B / Table III",
+              "metric": "accuracy",
+              "model": "satclip",
+              "paper_key": "tadesse2026watch",
+              "paper_title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
+              "self_evaluation": false,
+              "span": "GeoRSCLIP exceeds Handcrafted by 10 percentage points at m=0m{=}0 under TED (52.5% vs. 42.5%)",
+              "value": 52.5
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 15.0,
+              "dataset": "WATCH Afghanistan archaeological sites (test split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08160",
+              "locator": "Sec V-B",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "tadesse2026watch",
+              "paper_title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
+              "self_evaluation": false,
+              "span": "CLIP nearly doubles Handcrafted recall under SSCD (27.5% vs. 15.0%)",
+              "value": 27.5
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 97.5,
+              "dataset": "WATCH Afghanistan archaeological sites (test split)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08160",
+              "locator": "Sec V-B",
+              "metric": "accuracy",
+              "model": "satclip",
+              "paper_key": "tadesse2026watch",
+              "paper_title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
+              "self_evaluation": false,
+              "span": "Satlas-Pretrain overtakes it from m≥1m{\\geq}1 onward and gains 7.5 points by m=6m{=}6 (97.5% vs. 90.0%)",
+              "value": 90.0
+            }
+          ],
+          "datasets": [
+            "STTORM-CD-Floods",
+            "WATCH Afghanistan archaeological sites (test split)"
+          ],
+          "direction": "worse",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "clay",
+              "n_claims": 1,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "prithvi",
+              "n_claims": 1,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "satclip",
+              "n_claims": 2,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": true,
+          "n_claims": 4,
+          "n_models": 3,
+          "n_papers": 2,
+          "task": "change_detection"
+        },
+        {
+          "agreement": 0.5,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": -0.093,
+              "dataset": "GROW-Africa/HarvestStat maize yield (LOCO)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08113",
+              "locator": "Table III",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "adjei2026foundation",
+              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+              "self_evaluation": false,
+              "span": "ranging from −0.093-0.093 (Spectral / Ridge) to −0.027-0.027 (Prithvi-EO / Ridge)",
+              "value": -0.027
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.291,
+              "dataset": "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08113",
+              "locator": "Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "adjei2026foundation",
+              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+              "self_evaluation": false,
+              "span": "best-case Prithvi-EO R=20.300{}^{2}=0.300 vs. spectral R=20.291{}^{2}=0.291",
+              "value": 0.3
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
+              "value": 0.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around -0.28–0.07",
+              "value": -0.28
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around 0.39–0.51",
+              "value": 0.39
+            }
+          ],
+          "datasets": [
+            "GROW-Africa/HarvestStat maize yield (LOCO)",
+            "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
+            "USDA-NASS county-level yield",
+            "USDA-NASS county-level yield (ETF/GP ecoregions)"
+          ],
+          "direction": "better",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 3,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "prithvi",
+              "n_claims": 2,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": true,
+          "n_claims": 5,
           "n_models": 2,
           "n_papers": 2,
-          "task": "flood_mapping"
+          "task": "crop_yield_estimation"
         },
         {
           "agreement": 1.0,
@@ -16163,98 +18172,6 @@
           "task": "land_cover_classification"
         },
         {
-          "agreement": 1.0,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.3421,
-              "dataset": "HLS Landsat LST benchmark (Water)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2604.16841",
-              "locator": "Table 5.1",
-              "metric": "rmse",
-              "model": "prithvi",
-              "paper_key": "chen2026when",
-              "paper_title": "When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution",
-              "self_evaluation": false,
-              "span": "EFDiff-x0x_{0} reduces Water RMSE to 0.29∘\\,{}^{\\circ}C, a 16% improvement over the best non-EFM baseline",
-              "value": 0.2892
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.5336,
-              "dataset": "HLS Landsat LST benchmark (Forest)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2604.16841",
-              "locator": "Table 5.1",
-              "metric": "rmse",
-              "model": "prithvi",
-              "paper_key": "chen2026when",
-              "paper_title": "When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution",
-              "self_evaluation": false,
-              "span": "EFDiff-x0x_{0}",
-              "value": 0.466
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.648,
-              "dataset": "HLS Landsat LST benchmark (Low Vegetation)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2604.16841",
-              "locator": "Table 5.1",
-              "metric": "rmse",
-              "model": "prithvi",
-              "paper_key": "chen2026when",
-              "paper_title": "When Earth Foundation Models Meet Diffusion: An Application to Land Surface Temperature Super-Resolution",
-              "self_evaluation": false,
-              "span": "EFDiff-x0x_{0}",
-              "value": 0.5629
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.2063,
-              "dataset": "PACE OCI L1B/L2 AOD",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.00678",
-              "locator": "Table I",
-              "metric": "rmse",
-              "model": "prithvi",
-              "paper_key": "tushar2026foundation",
-              "paper_title": "Foundation AI Models for Aerosol Optical Depth Estimation from PACE Satellite Data",
-              "self_evaluation": false,
-              "span": "PrithviEO1 [10]",
-              "value": 0.1925
-            }
-          ],
-          "datasets": [
-            "HLS Landsat LST benchmark (Forest)",
-            "HLS Landsat LST benchmark (Low Vegetation)",
-            "HLS Landsat LST benchmark (Water)",
-            "PACE OCI L1B/L2 AOD"
-          ],
-          "direction": "better",
-          "label": "thin",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "prithvi",
-              "n_claims": 4,
-              "n_papers": 2
-            }
-          ],
-          "models_differ": false,
-          "n_claims": 4,
-          "n_models": 1,
-          "n_papers": 2,
-          "task": "representation_probing"
-        },
-        {
           "agreement": 0.5,
           "claims": [
             {
@@ -16435,87 +18352,6 @@
           "n_models": 1,
           "n_papers": 1,
           "task": "canopy_height_estimation"
-        },
-        {
-          "agreement": 1.0,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 42.5,
-              "dataset": "WATCH Afghanistan archaeological sites (test split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08160",
-              "locator": "Sec V-B / Table III",
-              "metric": "accuracy",
-              "model": "satclip",
-              "paper_key": "tadesse2026watch",
-              "paper_title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
-              "self_evaluation": false,
-              "span": "GeoRSCLIP exceeds Handcrafted by 10 percentage points at m=0m{=}0 under TED (52.5% vs. 42.5%)",
-              "value": 52.5
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 15.0,
-              "dataset": "WATCH Afghanistan archaeological sites (test split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08160",
-              "locator": "Sec V-B",
-              "metric": "accuracy",
-              "model": "clay",
-              "paper_key": "tadesse2026watch",
-              "paper_title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
-              "self_evaluation": false,
-              "span": "CLIP nearly doubles Handcrafted recall under SSCD (27.5% vs. 15.0%)",
-              "value": 27.5
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 97.5,
-              "dataset": "WATCH Afghanistan archaeological sites (test split)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08160",
-              "locator": "Sec V-B",
-              "metric": "accuracy",
-              "model": "satclip",
-              "paper_key": "tadesse2026watch",
-              "paper_title": "WATCH: Wide-Area Archaeological Site Tracking for Change Detection",
-              "self_evaluation": false,
-              "span": "Satlas-Pretrain overtakes it from m≥1m{\\geq}1 onward and gains 7.5 points by m=6m{=}6 (97.5% vs. 90.0%)",
-              "value": 90.0
-            }
-          ],
-          "datasets": [
-            "WATCH Afghanistan archaeological sites (test split)"
-          ],
-          "direction": "better",
-          "label": "thin",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "clay",
-              "n_claims": 1,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "satclip",
-              "n_claims": 2,
-              "n_papers": 1
-            }
-          ],
-          "models_differ": false,
-          "n_claims": 3,
-          "n_models": 2,
-          "n_papers": 1,
-          "task": "change_detection"
         },
         {
           "agreement": 1.0,
