@@ -1,0 +1,27 @@
+{
+  "key": "farm fine tuning geospatial foundation models for intra fiel",
+  "title": "FARM: Fine-Tuning Geospatial Foundation Models for Intra-Field Crop Yield Regression",
+  "reason": "DOI title mismatch (possible metadata error)",
+  "quarantined_at": "2026-07-12T18:44:54.826119+00:00",
+  "payload": {
+    "candidate": {
+      "title": "FARM: Fine-Tuning Geospatial Foundation Models for Intra-Field Crop Yield Regression",
+      "abstract": "Accurate and timely crop yield prediction is crucial for global food security and modern agricultural management. Traditional methods often lack the scalability and granularity required for precision farming. This paper introduces FARM: Fine-tuning Agricultural Regression Models, a deep learning framework designed for high-resolution, intra-field canola yield prediction. FARM leverages a pre-trained, large-scale geospatial foundation model (Prithvi-EO-2.0-600M) and adapts it for a continuous regression task, transforming multi-temporal satellite imagery into dense, pixel-level (30 m) yield maps. Evaluated on a comprehensive dataset from the Canadian Prairies, FARM achieves a Root Mean Squared Error (RMSE) of 0.44 and an R^2 of 0.81. Using an independent high-resolution yield monitor dataset, we further show that fine-tuning FARM on limited ground-truth labels outperforms training the same architecture from scratch, confirming the benefit of pre-training on large, upsampled county-level data for data-scarce precision agriculture. These results represent improvement over baseline architectures like 3D-CNN and DeepYield, which highlight the effectiveness of fine-tuning foundation models for specialized agricultural applications. By providing a continuous, high-resolution output, FARM offers a more actionable tool for precision agriculture than conventional classification or county-level aggregation methods. This work validates a novel approach that bridges the gap between large-scale Earth observation and on-farm decision-making, offering a scalable solution for detailed agricultural monitoring.",
+      "authors": [
+        "Shayan Nejadshamsi",
+        "Yuanyuan Zhang",
+        "Shadi Zaki",
+        "Brock Porth",
+        "Lysa Porth",
+        "Vahab Khoshdel"
+      ],
+      "author_ids": [],
+      "arxiv_id": "2510.26609",
+      "doi": "10.3390/agriengineering8010002",
+      "venue": "arXiv",
+      "date": "2025-10-30",
+      "openalex_id": null,
+      "source": "arxiv"
+    }
+  }
+}

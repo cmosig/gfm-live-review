@@ -44,6 +44,9 @@
   "Faster_RCNN": [
     "asif2026adapting"
   ],
+  "FloodPlanet": [
+    "kaushik2025assessing"
+  ],
   "GEO-Bench-2": [
     "simumba2025geo"
   ],
@@ -98,6 +101,9 @@
   "SAR-text-feature triplet dataset": [
     "zhang2026fusar"
   ],
+  "SAR_MS_fusion": [
+    "tanaka2025sensor"
+  ],
   "SHAP dimension importance": [
     "hou2026slum"
   ],
@@ -146,6 +152,9 @@
   "alphaearth_late_fusion": [
     "mandal2026biomazon"
   ],
+  "alpine_habitat_monitoring": [
+    "kristen2025habitat"
+  ],
   "amazon_basin": [
     "mandal2026biomazon"
   ],
@@ -164,6 +173,9 @@
   "atlantic_forest": [
     "heiman2026characterizing"
   ],
+  "atmospheric_science": [
+    "gupta2025finetuning"
+  ],
   "attention_probing": [
     "rahman2026physically"
   ],
@@ -172,6 +184,9 @@
   ],
   "auxiliary land-cover prior": [
     "thasma2026beyond"
+  ],
+  "band_adaptability": [
+    "li2025landslide"
   ],
   "barlow-twins": [
     "feng2026tessera"
@@ -206,6 +221,12 @@
   "census_block_group": [
     "gong2026earth"
   ],
+  "changevit": [
+    "kristen2025habitat"
+  ],
+  "channel_masking": [
+    "tanaka2025sensor"
+  ],
   "child_undernutrition_stunting": [
     "nazir2026alphaearth"
   ],
@@ -215,11 +236,17 @@
   "class_imbalance": [
     "ishikawa2025assessing"
   ],
+  "climate_model_subgrid_scale": [
+    "gupta2025finetuning"
+  ],
   "climate_sensitive_disease": [
     "nazir2026alphaearth"
   ],
   "clip": [
     "tadesse2026watch"
+  ],
+  "cloud_cover": [
+    "kaushik2025assessing"
   ],
   "cloud_cover_failure": [
     "kaushik2026prithvi"
@@ -389,6 +416,9 @@
   "emergency_medical_services_forecasting": [
     "aalaila2026when"
   ],
+  "encoder_freezing": [
+    "kaushik2025assessing"
+  ],
   "environmental_variable_regression": [
     "rahman2026physically"
   ],
@@ -418,6 +448,9 @@
   ],
   "federated-defi": [
     "sachan2026post"
+  ],
+  "few-shot": [
+    "kaushik2025assessing"
   ],
   "fine_tuning": [
     "ishikawa2025assessing"
@@ -506,6 +539,9 @@
   "graph_neural_network": [
     "pettersson2025leveraging"
   ],
+  "gravity_wave_flux_parameterization": [
+    "gupta2025finetuning"
+  ],
   "handcrafted_features_vs_embeddings": [
     "cheng2026from"
   ],
@@ -590,6 +626,9 @@
   "landslide_conditioning_factors": [
     "cheng2026from"
   ],
+  "landslide_type_vs_geography": [
+    "li2025landslide"
+  ],
   "language_accessible_embeddings": [
     "liu2025beyond"
   ],
@@ -601,6 +640,9 @@
   ],
   "leaderboard": [
     "simumba2025geo"
+  ],
+  "leave-one-region-out": [
+    "kaushik2025assessing"
   ],
   "leave_one_country_out_CV": [
     "adjei2026foundation"
@@ -674,11 +716,17 @@
   "multimodal_fusion": [
     "kontogiorgakis2026comparative"
   ],
+  "multimodal_lidar_fusion": [
+    "kristen2025habitat"
+  ],
   "multimodal_sensor_fusion": [
     "mandal2026biomazon"
   ],
   "mutual_information_analysis": [
     "qu2026utilizing"
+  ],
+  "mutual_information_band_selection": [
+    "li2025landslide"
   ],
   "national_forest_inventory": [
     "ishikawa2025assessing"
@@ -758,11 +806,17 @@
   "post-quantum-cryptography": [
     "sachan2026post"
   ],
+  "post_classification_vs_direct_change_detection": [
+    "kristen2025habitat"
+  ],
   "prediction_in_ungauged_basins": [
     "qu2026utilizing"
   ],
   "pretraining-loss-vs-downstream": [
     "feng2026tessera"
+  ],
+  "prithvi_wxc": [
+    "gupta2025finetuning"
   ],
   "proprietary_model": [
     "heiman2026characterizing"
@@ -853,6 +907,9 @@
   ],
   "self_supervised_change_scoring": [
     "tadesse2026watch"
+  ],
+  "sensor_flexibility": [
+    "tanaka2025sensor"
   ],
   "sentinel-1": [
     "lisaius2026embedding"
@@ -988,6 +1045,9 @@
   ],
   "unet++": [
     "hamoudzadeh2026inferring"
+  ],
+  "unet_baseline": [
+    "kristen2025habitat"
   ],
   "universal_kriging_baseline": [
     "omalley2026context"

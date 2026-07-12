@@ -1,4 +1,8 @@
 {
+  "a sentinel 3 foundation model for ocean colour": {
+    "key": "dawson2025sentinel",
+    "status": "quarantined"
+  },
   "a wispr of the venus surface analysis of the venus nightside thermal emission at optical wavelengths": {
     "key": "lustigyaeger2023wispr",
     "status": "off_topic"
@@ -45,6 +49,12 @@
     "arxiv_id": "2508.18829",
     "dropped_claims": 0,
     "key": "ishikawa2025assessing",
+    "status": "carded"
+  },
+  "assessing the value of geo foundational models for flood inundation mapping benchmarking models for sentinel 1 sentinel 2 and planetscope for end users": {
+    "arxiv_id": "2511.01990",
+    "dropped_claims": 0,
+    "key": "kaushik2025assessing",
     "status": "carded"
   },
   "asymptotic shapes for stationary first passage percolation on virtually nilpotent groups": {
@@ -157,6 +167,16 @@
     "key": "ko2026exploring",
     "status": "carded"
   },
+  "farm fine tuning geospatial foundation models for intra field crop yield regression": {
+    "key": "-",
+    "status": "quarantined_mismatch"
+  },
+  "finetuning ai foundation models to develop subgrid scale parameterizations a case study on atmospheric gravity waves": {
+    "arxiv_id": "2509.03816",
+    "dropped_claims": 0,
+    "key": "gupta2025finetuning",
+    "status": "carded"
+  },
   "first passage percolation on hyperbolic groups": {
     "key": "basu2019first",
     "status": "off_topic"
@@ -172,6 +192,10 @@
     "dropped_claims": 0,
     "key": "tushar2026foundation",
     "status": "carded"
+  },
+  "foundation models for astrobiology paper i workshop and overview": {
+    "key": "felton2025foundation",
+    "status": "off_topic"
   },
   "from landslide conditioning factors to satellite embeddings evaluating the utilisation of google alphaearth for landslide susceptibility mapping using deep learning": {
     "arxiv_id": "2601.07268",
@@ -204,6 +228,12 @@
   "graphfire x physics informed graph attention networks and structural gradient boosting for building scale wildfire preparedness at the wildland urban interface": {
     "key": "-",
     "status": "quarantined_mismatch"
+  },
+  "habitat and land cover change detection in alpine protected areas a comparison of ai architectures": {
+    "arxiv_id": "2511.00073",
+    "dropped_claims": 0,
+    "key": "kristen2025habitat",
+    "status": "carded"
   },
   "harvesting alphaearth benchmarking the geospatial foundation model for agricultural downstream tasks": {
     "arxiv_id": "2601.00857",
@@ -250,6 +280,12 @@
   "land cover and flood type govern the detection limits of satellite based flood mapping across diverse global flood events": {
     "key": "kolluru2026land",
     "status": "quarantined"
+  },
+  "landslide hazard mapping with geospatial foundation models geographical generalizability data scarcity and band adaptability": {
+    "arxiv_id": "2511.04474",
+    "dropped_claims": 0,
+    "key": "li2025landslide",
+    "status": "carded"
   },
   "lepa learning geometric equivariance in satellite remote sensing data with a predictive architecture": {
     "arxiv_id": "2603.07246",
@@ -382,6 +418,12 @@
   "scalable geospatial data generation using alphaearth foundations model": {
     "key": "houriez2025scalable",
     "status": "quarantined"
+  },
+  "sensor adaptive flood mapping with pre trained multi modal transformers across sar and multispectral modalities": {
+    "arxiv_id": "2509.23035",
+    "dropped_claims": 0,
+    "key": "tanaka2025sensor",
+    "status": "carded"
   },
   "simpler efficient foundation model adaptation via similarity guided layer pruning for earth observation": {
     "arxiv_id": "2603.19873",
