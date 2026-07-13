@@ -129,6 +129,11 @@ commentary. The object must have exactly these keys:
   setup (str): datasets / protocol in 1-3 sentences.
   caveats (str): limitations the AUTHORS themselves flag.
 
+A claim is a QUANTITATIVE result. If you cannot fill in `model`, `metric`,
+`value` and `dataset` for it from the paper, it is not a claim: OMIT it entirely
+rather than emitting the object with nulls in those fields. Fewer, complete
+claims are always better than more, partial ones.
+
 Each claim is an object with keys:
   axis (one of the axis keys), task (one of the task keys),
   dataset (REQUIRED string, the exact benchmark/dataset name),
@@ -238,6 +243,40 @@ def assemble_card(output: ExtractionOutput, meta: PaperMeta,
     )
 
 
+def _validate_dropping_bad_claims(raw: dict) -> tuple[ExtractionOutput, int]:
+    """Validate the extraction, dropping individual claims that fail the schema.
+
+    The extractor sometimes emits a claim with `model: null`, `metric: null` or a
+    missing value — a claim that is simply not a quantitative result. Failing the
+    whole card on one of those threw away every *good* claim in the paper too, so
+    a paper could be lost to a single bad row. This mirrors what span
+    verification already does: drop the bad claims, keep the card, and let the
+    caller quarantine only if too large a fraction failed.
+
+    Claims are only ever DROPPED, never repaired — we do not guess what the model
+    meant. Any error outside `claims` (a bad enum in `axes`, an invented
+    top-level field) still fails the whole card, so `extra="forbid"` and the
+    closed-enum guarantees are untouched.
+    """
+    try:
+        return ExtractionOutput.model_validate(raw), 0
+    except pydantic.ValidationError as exc:
+        bad: set[int] = set()
+        for err in exc.errors():
+            loc = err["loc"]
+            # Only claim-local errors are salvageable: ("claims", 3, "model").
+            if len(loc) >= 2 and loc[0] == "claims" and isinstance(loc[1], int):
+                bad.add(loc[1])
+            else:
+                raise  # structural error — the card is not trustworthy
+        if not bad:
+            raise
+        kept = [c for i, c in enumerate(raw.get("claims") or []) if i not in bad]
+        # Re-validate with the bad claims removed. If it still fails, the problem
+        # was never the claims and the card is quarantined by the caller.
+        return ExtractionOutput.model_validate({**raw, "claims": kept}), len(bad)
+
+
 def extract_card(meta: PaperMeta, paper_text: str, *, run_fn,
                  model: str = DEFAULT_MODEL) -> ExtractionResult:
     """Run one extraction end-to-end. `run_fn(payload, model=...) -> dict`.
@@ -251,7 +290,7 @@ def extract_card(meta: PaperMeta, paper_text: str, *, run_fn,
     # 1. Validate the untrusted JSON against the closed-enum schema.
     try:
         raw = run_fn(payload, model=model)
-        output = ExtractionOutput.model_validate(raw)
+        output, invalid = _validate_dropping_bad_claims(raw)
     except (QuotaExhausted, ClaudeError):
         # Neither is a per-paper failure: the paper was never read. Propagate so
         # the run stops (quota) or trips its circuit breaker (transport), leaving
@@ -265,11 +304,12 @@ def extract_card(meta: PaperMeta, paper_text: str, *, run_fn,
 
     # 2. Span verification.
     claims, dropped = _verify_and_build_claims(output, meta, paper_text)
-    total = len(output.claims)
+    dropped += invalid
+    total = len(output.claims) + invalid
     if total and dropped / total > MAX_SPAN_FAILURE_RATE:
         return ExtractionResult(
             None, True,
-            f"span verification failed for {dropped}/{total} claims (> {MAX_SPAN_FAILURE_RATE:.0%})",
+            f"claim verification failed for {dropped}/{total} claims (> {MAX_SPAN_FAILURE_RATE:.0%})",
             payload, dropped_claims=dropped, raw=raw,
         )
 

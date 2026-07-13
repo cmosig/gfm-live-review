@@ -49,7 +49,7 @@ def test_majority_fabricated_spans_quarantined():
         ], "summary": "s"}
     res = extract.extract_card(META, PAPER, run_fn=run_fn)
     assert res.quarantined
-    assert "span verification failed" in res.reason
+    assert "claim verification failed" in res.reason
 
 
 def test_span_hash_is_computed_in_python():
