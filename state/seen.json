@@ -233,19 +233,11 @@
     "key": "schunck2026comprehensive",
     "status": "off_topic"
   },
-  "croma remote sensing representations with contrastive radar optical masked autoencoders": {
-    "key": "fuller2023croma",
-    "status": "quarantined"
-  },
   "cropland mapping using geospatial embeddings": {
     "arxiv_id": "2511.02923",
     "dropped_claims": 0,
     "key": "zvonkov2025cropland",
     "status": "carded"
-  },
-  "cross scale mae a tale of multi scale exploitation in remote sensing": {
-    "key": "tang2024cross",
-    "status": "quarantined"
   },
   "cryo bench benchmarking foundation models for cryosphere applications": {
     "arxiv_id": "2603.01576",
@@ -332,10 +324,6 @@
     "dropped_claims": 0,
     "key": "chen2025enhancing",
     "status": "carded"
-  },
-  "enhancing worldwide image geolocation by ensembling satellite based ground level attribute predictors": {
-    "key": "bianco2024enhancing",
-    "status": "quarantined"
   },
   "evidence for optical pulsations from a redback millisecond pulsar": {
     "key": "papitto2025evidence",
@@ -436,10 +424,6 @@
   "galileo and buonamici on the tides of the sea was something omitted from the dialogue": {
     "key": "-",
     "status": "quarantined_mismatch"
-  },
-  "gbd dart ii 175 mhz polarimetric observation of pulsars from gauribidanur and a new pulsar signal processing pipeline": {
-    "key": "b2026gbd",
-    "status": "quarantined"
   },
   "geo bench 2 from performance to capability rethinking evaluation in geospatial ai": {
     "arxiv_id": "2511.15658",
@@ -579,10 +563,6 @@
     "key": "correia2025isoperimetric",
     "status": "off_topic"
   },
-  "kidsat satellite imagery to map childhood poverty dataset and benchmark": {
-    "key": "sharma2024kidsat",
-    "status": "quarantined"
-  },
   "land cover and flood type govern the detection limits of satellite based flood mapping across diverse global flood events": {
     "key": "kolluru2026land",
     "status": "quarantined"
@@ -643,10 +623,6 @@
     "key": "wayland2024mapping",
     "status": "off_topic"
   },
-  "mapping tomato cropping systems in california using alphaearth geospatial embeddings and deep learning analysis": {
-    "key": "narimani2026mapping",
-    "status": "quarantined"
-  },
   "matching ranks over probability yields truly deep safety alignment": {
     "key": "vega2025matching",
     "status": "off_topic"
@@ -692,10 +668,6 @@
     "dropped_claims": 0,
     "key": "hecht2026multi",
     "status": "carded"
-  },
-  "multi spectral remote sensing image retrieval using geospatial foundation models": {
-    "key": "blumenstiel2024multi",
-    "status": "quarantined"
   },
   "neural plasticity inspired multimodal foundation model for earth observation": {
     "arxiv_id": "2403.15356",
@@ -789,10 +761,6 @@
     "key": "yun2016polypath",
     "status": "off_topic"
   },
-  "position prediction self supervised learning for multimodal satellite imagery semantic segmentation": {
-    "key": "waithaka2025position",
-    "status": "quarantined"
-  },
   "post quantum secure federated defi for inclusive banking": {
     "arxiv_id": "2606.10658",
     "dropped_claims": 0,
@@ -872,10 +840,6 @@
     "dropped_claims": 0,
     "key": "kaushik2026prithvi",
     "status": "carded"
-  },
-  "prithvi eo 2 0 a versatile multi temporal foundation model for earth observation applications": {
-    "key": "szwarcman2024prithvi",
-    "status": "quarantined"
   },
   "prithvi wxc foundation model for weather and climate": {
     "arxiv_id": "2409.13598",
@@ -1009,10 +973,6 @@
     "key": "barreiro2026simpler",
     "status": "carded"
   },
-  "skysense a multi modal remote sensing foundation model towards universal interpretation for earth observation imagery": {
-    "key": "guo2023skysense",
-    "status": "quarantined"
-  },
   "slum detection and density mapping with alphaearth foundations a representation learning evaluation across 12 global cities": {
     "arxiv_id": "2605.10029",
     "dropped_claims": 0,
@@ -1085,10 +1045,6 @@
     "key": "zhang2025formulation",
     "status": "off_topic"
   },
-  "the coarse baum connes conjecture for certain relative expanders": {
-    "key": "deng2021coarse",
-    "status": "quarantined"
-  },
   "the effect of vera c rubin observatory cadence selections on kilonova detectability": {
     "key": "andrade2025effect",
     "status": "off_topic"
@@ -1142,10 +1098,6 @@
     "dropped_claims": 1,
     "key": "kyselica2026towards",
     "status": "carded"
-  },
-  "towards scalable and generalizable earth observation data mining via foundation model composition": {
-    "key": "chuc2025towards",
-    "status": "quarantined"
   },
   "trick time and range integrity check using low earth orbiting satellite for securing gnss": {
     "key": "mumtaz2025trick",
