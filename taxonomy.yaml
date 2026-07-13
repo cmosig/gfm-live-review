@@ -73,6 +73,7 @@ promoted_tags:
 - DINOv3
 - LoRA
 - TerraMind
+- air_temperature_prediction
 - biome_classification
 - building_density_estimation
 - cloud_gap_imputation
@@ -80,8 +81,13 @@ promoted_tags:
 - diffusion_model
 - disease_surveillance
 - distribution_shift
+- ecoregion_classification
+- elevation_prediction
+- geographic_generalization
 - gravity_wave_flux_parameterization
 - handcrafted_spectral_texture_features
+- image_geolocalization
+- joint_embedding_predictive_architecture
 - location_encoder
 - malaria_prediction
 - masked_autoencoder
@@ -91,4 +97,5 @@ promoted_tags:
 - spatial_autocorrelation
 - tree_species_classification
 - urban_morphology
+- vision_transformer
 - wildfire_scar_mapping

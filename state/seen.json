@@ -1,4 +1,10 @@
 {
+  "3d cloud reconstruction through geospatially aware masked autoencoders": {
+    "arxiv_id": "2501.02035",
+    "dropped_claims": 0,
+    "key": "girtsou2025cloud",
+    "status": "carded"
+  },
   "a fourier domain jerk search for binary pulsars": {
     "key": "-",
     "status": "quarantined_mismatch"
@@ -231,6 +237,16 @@
     "key": "tao2018embedding",
     "status": "off_topic"
   },
+  "enhancing contrastive learning for geolocalization by discovering hard negatives on semivariograms": {
+    "arxiv_id": "2509.21573",
+    "dropped_claims": 0,
+    "key": "chen2025enhancing",
+    "status": "carded"
+  },
+  "enhancing worldwide image geolocation by ensembling satellite based ground level attribute predictors": {
+    "key": "bianco2024enhancing",
+    "status": "quarantined"
+  },
   "exploring the potential of alphaearth and tessera embeddings for fine scale local climate zone mapping a case study across five cities in switzerland": {
     "arxiv_id": "2606.20034",
     "dropped_claims": 0,
@@ -283,6 +299,10 @@
     "key": "cheng2026from",
     "status": "carded"
   },
+  "from physics to foundation models a review of ai driven quantitative remote sensing inversion": {
+    "key": "yu2025from",
+    "status": "off_topic"
+  },
   "from pixels to patches pooling strategies for earth embeddings": {
     "arxiv_id": "2603.02080",
     "dropped_claims": 0,
@@ -313,6 +333,20 @@
     "key": "simumba2025geo",
     "status": "carded"
   },
+  "geoclip clip inspired alignment between locations and images for effective worldwide geo localization": {
+    "arxiv_id": "2309.16020",
+    "dropped_claims": 0,
+    "key": "cepeda2023geoclip",
+    "status": "carded"
+  },
+  "geoclip geometry aware clipping for differentially private sgd": {
+    "key": "gilani2025geoclip",
+    "status": "off_topic"
+  },
+  "geodano geometric vlm with domain agnostic vision encoder": {
+    "key": "cho2025geodano",
+    "status": "off_topic"
+  },
   "geodesic trees and exceptional directions in fpp on hyperbolic groups": {
     "key": "basu2024geodesic",
     "status": "off_topic"
@@ -341,6 +375,10 @@
   },
   "higher rank confining subsets and hyperbolic actions of solvable groups": {
     "key": "abbott2021higher",
+    "status": "off_topic"
+  },
+  "highfm towards a foundation model for learning representations from high frequency earth observation data": {
+    "key": "girtsou2026highfm",
     "status": "off_topic"
   },
   "hls gpt a generative pretrained transformer gpt for continental scale nasa harmonized landsat and sentinel 2 hls reflectance reconstruction across all bands on arbitrary dates": {
@@ -399,6 +437,12 @@
     "key": "zhang2025intra",
     "status": "off_topic"
   },
+  "is sub metre resolution necessary for cocoa mapping a landscape stratified evaluation of very high resolution imagery decametric earth observation inputs and operational products in cote d ivoire": {
+    "arxiv_id": "2607.08945",
+    "dropped_claims": 0,
+    "key": "orlowski2026sub",
+    "status": "carded"
+  },
   "isoperimetric profiles and regular embeddings of locally compact groups": {
     "key": "paucar2024isoperimetric",
     "status": "off_topic"
@@ -406,6 +450,10 @@
   "isoperimetric profiles of lamplighter like groups": {
     "key": "correia2025isoperimetric",
     "status": "off_topic"
+  },
+  "kidsat satellite imagery to map childhood poverty dataset and benchmark": {
+    "key": "sharma2024kidsat",
+    "status": "quarantined"
   },
   "land cover and flood type govern the detection limits of satellite based flood mapping across diverse global flood events": {
     "key": "kolluru2026land",
@@ -587,6 +635,10 @@
     "key": "yun2016polypath",
     "status": "off_topic"
   },
+  "position prediction self supervised learning for multimodal satellite imagery semantic segmentation": {
+    "key": "waithaka2025position",
+    "status": "quarantined"
+  },
   "post quantum secure federated defi for inclusive banking": {
     "arxiv_id": "2606.10658",
     "dropped_claims": 0,
@@ -596,6 +648,12 @@
   "predicting rare events by shrinking towards proportional odds": {
     "key": "faletto2023predicting",
     "status": "off_topic"
+  },
+  "predicting viticulture potential through an ensemble of u net and a geospatial foundation model": {
+    "arxiv_id": "2607.08449",
+    "dropped_claims": 1,
+    "key": "perez2026predicting",
+    "status": "carded"
   },
   "presto a multilingual dataset for parsing realistic task oriented dialogs": {
     "arxiv_id": "2303.08954",
@@ -689,6 +747,12 @@
     "key": "gournay2024regular",
     "status": "off_topic"
   },
+  "rejepa a novel joint embedding predictive architecture for efficient remote sensing image retrieval": {
+    "arxiv_id": "2504.03169",
+    "dropped_claims": 0,
+    "key": "choudhury2025rejepa",
+    "status": "carded"
+  },
   "relativistic roots of entropy": {
     "key": "-",
     "status": "quarantined_mismatch"
@@ -701,6 +765,12 @@
     "key": "tang2023rethinking",
     "status": "off_topic"
   },
+  "rethinking transformers pre training for multi spectral satellite imagery": {
+    "arxiv_id": "2403.05419",
+    "dropped_claims": 0,
+    "key": "noman2024rethinking",
+    "status": "carded"
+  },
   "revealing the mysteries of venus the davinci mission": {
     "key": "garvin2022revealing",
     "status": "off_topic"
@@ -709,10 +779,22 @@
     "key": "-",
     "status": "quarantined_mismatch"
   },
+  "satclip global general purpose location embeddings with satellite imagery": {
+    "arxiv_id": "2311.17179",
+    "dropped_claims": 0,
+    "key": "klemmer2023satclip",
+    "status": "carded"
+  },
   "satellite based detection of looted archaeological sites using machine learning": {
     "arxiv_id": "2602.19608",
     "dropped_claims": 0,
     "key": "tadesse2026satellite",
+    "status": "carded"
+  },
+  "satmae pre training transformers for temporal and multi spectral satellite imagery": {
+    "arxiv_id": "2207.08051",
+    "dropped_claims": 0,
+    "key": "cong2022satmae",
     "status": "carded"
   },
   "scalable geospatial data generation using alphaearth foundations model": {
@@ -831,9 +913,21 @@
     "key": "dai2026stack",
     "status": "off_topic"
   },
+  "time2agri temporal pretext tasks for agricultural monitoring": {
+    "arxiv_id": "2507.04366",
+    "dropped_claims": 0,
+    "key": "gupta2025time2agri",
+    "status": "carded"
+  },
   "towards dm free search for fast radio bursts with machine learning i an implementation on multibeam data": {
     "key": "chen2025towards",
     "status": "off_topic"
+  },
+  "towards interpretable geo localization a concept aware global image gps alignment framework": {
+    "arxiv_id": "2509.01910",
+    "dropped_claims": 0,
+    "key": "jia2025towards",
+    "status": "carded"
   },
   "towards onboard continuous change detection for floods": {
     "arxiv_id": "2601.13751",
@@ -864,6 +958,12 @@
   "venus key to understanding the evolution of terrestrial planets": {
     "key": "wilson2017venus",
     "status": "off_topic"
+  },
+  "vidtag temporally aligned video to gps geolocalization with denoising sequence prediction at a global scale": {
+    "arxiv_id": "2604.12159",
+    "dropped_claims": 0,
+    "key": "kulkarni2026vidtag",
+    "status": "carded"
   },
   "watch wide area archaeological site tracking for change detection": {
     "arxiv_id": "2605.08160",
