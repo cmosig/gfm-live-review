@@ -36,7 +36,14 @@ WorkingDirectory=%h/projects/gfm-live-review
 # `claude` and `gfm-usage-probe` both live in ~/.local/bin; systemd's default
 # PATH does not include it, and neither does it include the conda env.
 Environment=PATH=%h/.local/bin:%h/miniconda3/envs/env_conda/bin:/usr/local/bin:/usr/bin:/bin
+# --backfill: the daily sweep (fetch_arxiv_recent) only sees NEW arrivals, so on
+# its own it would card each day's papers while the existing backlog — including
+# anything requeued after a transport failure — sat untouched forever. The
+# backfill ingest is the only path that reaches those. Re-screening the full
+# candidate list each night is cheap (no model call; seen.json skips anything
+# already carded), and the usage gate bounds what the run actually spends.
 ExecStart=%h/miniconda3/envs/env_conda/bin/python -m pipeline.run \
+    --backfill \
     --extractor host \
     --max-session-pct 50 \
     --skip-weekly-above 80 \
