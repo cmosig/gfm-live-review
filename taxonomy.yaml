@@ -72,6 +72,7 @@ limitations:
 promoted_tags:
 - DINOv3
 - LoRA
+- MOSAIKS
 - TerraMind
 - air_temperature_prediction
 - biome_classification
@@ -95,6 +96,7 @@ promoted_tags:
 - object_detection
 - retrieval_augmented_generation
 - satellite_embeddings
+- satmae
 - spatial_autocorrelation
 - tree_species_classification
 - urban_morphology

@@ -233,10 +233,22 @@
     "key": "schunck2026comprehensive",
     "status": "off_topic"
   },
+  "croma remote sensing representations with contrastive radar optical masked autoencoders": {
+    "arxiv_id": "2311.00566",
+    "dropped_claims": 1,
+    "key": "fuller2023croma",
+    "status": "carded"
+  },
   "cropland mapping using geospatial embeddings": {
     "arxiv_id": "2511.02923",
     "dropped_claims": 0,
     "key": "zvonkov2025cropland",
+    "status": "carded"
+  },
+  "cross scale mae a tale of multi scale exploitation in remote sensing": {
+    "arxiv_id": "2401.15855",
+    "dropped_claims": 0,
+    "key": "tang2024cross",
     "status": "carded"
   },
   "cryo bench benchmarking foundation models for cryosphere applications": {
@@ -323,6 +335,12 @@
     "arxiv_id": "2509.21573",
     "dropped_claims": 0,
     "key": "chen2025enhancing",
+    "status": "carded"
+  },
+  "enhancing worldwide image geolocation by ensembling satellite based ground level attribute predictors": {
+    "arxiv_id": "2407.13862",
+    "dropped_claims": 0,
+    "key": "bianco2024enhancing",
     "status": "carded"
   },
   "evidence for optical pulsations from a redback millisecond pulsar": {
@@ -424,6 +442,10 @@
   "galileo and buonamici on the tides of the sea was something omitted from the dialogue": {
     "key": "-",
     "status": "quarantined_mismatch"
+  },
+  "gbd dart ii 175 mhz polarimetric observation of pulsars from gauribidanur and a new pulsar signal processing pipeline": {
+    "key": "b2026gbd",
+    "status": "off_topic"
   },
   "geo bench 2 from performance to capability rethinking evaluation in geospatial ai": {
     "arxiv_id": "2511.15658",
@@ -563,6 +585,12 @@
     "key": "correia2025isoperimetric",
     "status": "off_topic"
   },
+  "kidsat satellite imagery to map childhood poverty dataset and benchmark": {
+    "arxiv_id": "2407.05986",
+    "dropped_claims": 0,
+    "key": "sharma2024kidsat",
+    "status": "carded"
+  },
   "land cover and flood type govern the detection limits of satellite based flood mapping across diverse global flood events": {
     "key": "kolluru2026land",
     "status": "quarantined"
@@ -622,6 +650,12 @@
   "mapping the multiverse of latent representations": {
     "key": "wayland2024mapping",
     "status": "off_topic"
+  },
+  "mapping tomato cropping systems in california using alphaearth geospatial embeddings and deep learning analysis": {
+    "arxiv_id": "2605.21804",
+    "dropped_claims": 0,
+    "key": "narimani2026mapping",
+    "status": "carded"
   },
   "matching ranks over probability yields truly deep safety alignment": {
     "key": "vega2025matching",
@@ -761,6 +795,12 @@
     "key": "yun2016polypath",
     "status": "off_topic"
   },
+  "position prediction self supervised learning for multimodal satellite imagery semantic segmentation": {
+    "arxiv_id": "2506.06852",
+    "dropped_claims": 0,
+    "key": "waithaka2025position",
+    "status": "carded"
+  },
   "post quantum secure federated defi for inclusive banking": {
     "arxiv_id": "2606.10658",
     "dropped_claims": 0,
@@ -847,6 +887,10 @@
     "key": "schmude2024prithvi",
     "status": "carded"
   },
+  "promptable concept segmentation from above evaluating sam 3 s zero shot and one shot capabilities in remote sensing": {
+    "key": "dabaja2026promptable",
+    "status": "off_topic"
+  },
   "pulsar detection with deep learning": {
     "key": "pendyala2025pulsar",
     "status": "off_topic"
@@ -927,6 +971,10 @@
     "key": "cong2022satmae",
     "status": "carded"
   },
+  "scalable and trustworthy earth observation foundation models": {
+    "key": "imtiaz2026scalable",
+    "status": "quarantined"
+  },
   "scalable geospatial data generation using alphaearth foundations model": {
     "key": "houriez2025scalable",
     "status": "quarantined"
@@ -972,6 +1020,10 @@
     "dropped_claims": 0,
     "key": "barreiro2026simpler",
     "status": "carded"
+  },
+  "skysense a multi modal remote sensing foundation model towards universal interpretation for earth observation imagery": {
+    "key": "guo2023skysense",
+    "status": "quarantined"
   },
   "slum detection and density mapping with alphaearth foundations a representation learning evaluation across 12 global cities": {
     "arxiv_id": "2605.10029",
@@ -1098,6 +1150,10 @@
     "dropped_claims": 1,
     "key": "kyselica2026towards",
     "status": "carded"
+  },
+  "towards scalable and generalizable earth observation data mining via foundation model composition": {
+    "key": "chuc2025towards",
+    "status": "quarantined"
   },
   "trick time and range integrity check using low earth orbiting satellite for securing gnss": {
     "key": "mumtaz2025trick",
