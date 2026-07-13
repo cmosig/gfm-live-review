@@ -248,6 +248,92 @@ function renderVerdicts(root) {
   }
 }
 
+function renderBenchmarks(root) {
+  root.appendChild(el("p", { class: "lede", text:
+    "The same results grouped by the exact benchmark they were measured on. Holding the dataset fixed is the " +
+    "only way a disagreement between two papers is a real disagreement rather than an artefact of different " +
+    "data — so these groups are the apples-to-apples cut. Benchmarks that more than one paper has run come " +
+    "first; those are the only ones where a cross-paper comparison is possible at all. Click any row for the " +
+    "underlying results and verbatim quotes." }));
+  root.appendChild(directionLegend());
+
+  const benches = currentView().benchmarks || [];
+  if (!benches.length) {
+    root.appendChild(el("p", { class: "empty-note", text: "No benchmark results extracted yet." }));
+    return;
+  }
+
+  const shared = benches.filter(b => b.n_papers > 1);
+  const single = benches.filter(b => b.n_papers <= 1);
+
+  root.appendChild(el("p", { class: "bm-stat", text:
+    `${benches.length} distinct benchmarks · ${shared.length} evaluated by more than one paper` }));
+
+  const openBench = (b) => openModal(
+    `${b.name} — every extracted result on this benchmark`, claimTable(b.claims));
+
+  const card = (b) => {
+    const dl = verdictDir(b.verdict);
+    const c = el("div", { class: "vcard",
+      title: "Click for the underlying results and verbatim quotes",
+      onclick: () => openBench(b) });
+    c.appendChild(el("div", { class: "vcard-head" }, [
+      el("div", { class: "vcard-title" }, [
+        el("span", { class: "vdir dir-cell-" + dl.cls, text: dl.glyph }),
+        el("span", { class: "vtask", text: b.name }),
+      ]),
+      labelChip(b.verdict.label, `${b.n_papers} paper${b.n_papers === 1 ? "" : "s"}`),
+    ]));
+    c.appendChild(el("div", { class: "vcard-sub", text:
+      `${dl.word} · ${b.n_claims} claim${b.n_claims === 1 ? "" : "s"} · ` +
+      `${b.models.length} model${b.models.length === 1 ? "" : "s"} · ` +
+      b.tasks.map(taskName).join(", ") }));
+
+    const bd = el("div", { class: "vmodels" });
+    for (const m of b.models) {
+      bd.appendChild(el("span", { class: "vmodel" }, [el("span", { text: modelName(m) })]));
+    }
+    c.appendChild(bd);
+
+    // The exact strings the papers used. Variants are splits/sensors of the same
+    // benchmark, folded together for grouping but never rewritten.
+    if (b.variants.length > 1) {
+      c.appendChild(el("div", { class: "bm-variants",
+        title: "The exact dataset strings the papers used, folded into this benchmark",
+        text: "variants: " + b.variants.join(" · ") }));
+    }
+    return c;
+  };
+
+  for (const b of shared) root.appendChild(card(b));
+
+  if (single.length) {
+    const det = el("details", { class: "bm-tail" });
+    det.appendChild(el("summary", { text:
+      `${single.length} benchmark${single.length === 1 ? "" : "s"} evaluated by a single paper ` +
+      `(no cross-paper comparison possible yet)` }));
+    const rows = single.map(b => {
+      const dl = verdictDir(b.verdict);
+      return el("tr", { class: "clickable", onclick: () => openBench(b) }, [
+        el("td", {}, [el("span", { class: "dir dir-" + (dl.cls === "mixed" || dl.cls === "none" ? "parity" : dl.cls), text: dl.glyph })]),
+        el("td", { text: b.name }),
+        el("td", { text: b.tasks.map(taskName).join(", ") }),
+        el("td", { text: b.models.map(modelName).join(", ") }),
+        el("td", { text: b.n_claims }),
+      ]);
+    });
+    const table = el("table", { class: "board" }, [
+      el("thead", {}, [el("tr", {}, [
+        el("th", { text: "" }), el("th", { text: "Benchmark" }), el("th", { text: "Task" }),
+        el("th", { text: "Models" }), el("th", { text: "Claims" }),
+      ])]),
+      el("tbody", {}, rows),
+    ]);
+    det.appendChild(el("div", { class: "scroll" }, [table]));
+    root.appendChild(det);
+  }
+}
+
 function renderMatrix(root) {
   const m = currentView().matrix;
   root.appendChild(el("p", { class: "lede", text:
@@ -435,6 +521,7 @@ function renderRegistry(root) {
 
 const TABS = [
   { id: "verdicts", label: "GFM vs task-specific", render: renderVerdicts },
+  { id: "benchmarks", label: "By benchmark", render: renderBenchmarks },
   { id: "bymodel", label: "By model", render: renderMatrix },
   { id: "axes", label: "Research axes", render: renderAxes },
   { id: "challenges", label: "Open challenges", render: renderChallenges },

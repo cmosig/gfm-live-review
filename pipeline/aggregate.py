@@ -11,6 +11,7 @@ recomputing client-side.
 """
 from __future__ import annotations
 
+import re
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 
@@ -165,6 +166,121 @@ def group_view(rows: list[ClaimRow]) -> list[dict]:
     return out
 
 
+# ---------------------------------------------------------------------------
+# Benchmark grouping
+# ---------------------------------------------------------------------------
+# `dataset` is free text from the extractor, so the same benchmark arrives in
+# many surface forms ("Sen1Floods11", "Sen1Floods11 Bolivia", "CropHarvest Togo
+# test set"). Grouping on the raw string yields ~130 groups of one, which
+# answers nothing. We fold each name to a canonical benchmark, but keep the
+# EXACT original string on every claim as its variant — so the grouping is a
+# navigation aid and never destroys what the paper actually said.
+_PARENS_RE = re.compile(r"\([^)]*\)")
+_YEAR_RE = re.compile(r"\b(?:19|20)\d{2}(?:-\d{2,4})?\b")
+_NOISE_RE = re.compile(
+    r"\b(?:test|train|training|val|validation|eval|holdout|held-out|split|splits|"
+    r"set|subset|sample|samples|dataset|datasets|benchmark|data)\b")
+_NON_ALNUM_RE = re.compile(r"[^a-z0-9]+")
+_MIN_PREFIX_LEN = 4  # don't let a 2-3 char name swallow unrelated benchmarks
+
+
+def _strip_qualifiers(s: str) -> str:
+    """Drop the "(2018, 5 crops)" / ", 2013-2020" tail that names a split, not a
+    benchmark. Parentheses go FIRST: splitting on the comma first would cut
+    "JECAM Senegal (2018, 5 crops)" mid-parenthesis and strand "(2018".
+    """
+    return _PARENS_RE.sub(" ", s).split(",")[0]
+
+
+def _normalise_dataset(dataset: str) -> str:
+    """Fold one raw dataset string to a comparison key (may still be a variant)."""
+    s = _strip_qualifiers(dataset)
+    s = s.lower()
+    s = _YEAR_RE.sub(" ", s)
+    s = _NOISE_RE.sub(" ", s)           # drop split/set/dataset noise words
+    return _NON_ALNUM_RE.sub(" ", s).strip()
+
+
+def _benchmark_keys(datasets: set[str]) -> dict[str, str]:
+    """raw dataset string -> canonical benchmark key.
+
+    Two-pass: normalise, then fold any name that begins with another *known*
+    benchmark name into that shorter parent ("sen1floods11 bolivia" is a split
+    of "sen1floods11"). Only names the corpus actually contains can act as
+    parents, so this never invents a grouping.
+    """
+    norm = {d: _normalise_dataset(d) for d in datasets}
+    known = {n for n in norm.values() if len(n) >= _MIN_PREFIX_LEN}
+    canon: dict[str, str] = {}
+    for raw, n in norm.items():
+        parent = n
+        for cand in known:
+            if cand == n or len(cand) >= len(parent):
+                continue
+            # word-boundary prefix only: "cdl fallow" -> "cdl", but never
+            # "eurosat" -> "euro" unless "euro" is itself a dataset in the corpus.
+            if n.startswith(cand + " "):
+                parent = cand
+        canon[raw] = parent or n
+    return canon
+
+
+def _display_name(variants: set[str]) -> str:
+    """The benchmark's own name, recovered from its variant spellings.
+
+    The shortest variant is the least qualified one; dropping its split/year
+    qualifier turns "JECAM Senegal (2018, 5 crops)" into "JECAM Senegal". Casing
+    comes from the paper, never from title-casing (which would wreck acronyms).
+    """
+    shortest = min(variants, key=lambda v: (len(v), v))
+    base = re.sub(r"\s+", " ", _strip_qualifiers(shortest)).strip(" -–—/")
+    return base or shortest
+
+
+def benchmark_view(rows: list[ClaimRow]) -> list[dict]:
+    """One entry per benchmark: every claim made on it, across all papers.
+
+    This is the apples-to-apples cut. Within a single benchmark the evaluation
+    substrate is held fixed, so disagreement between papers is a real
+    disagreement rather than an artefact of different data. Consensus is still
+    computed per PAPER and only from vs-task-specific claims, exactly as
+    elsewhere — metrics are never averaged across papers.
+    """
+    if not rows:
+        return []
+    canon = _benchmark_keys({r.dataset for r in rows})
+
+    groups: dict[str, list[ClaimRow]] = defaultdict(list)
+    for r in rows:
+        groups[canon[r.dataset]].append(r)
+
+    out = []
+    for key, grp in groups.items():
+        display = _display_name({r.dataset for r in grp})
+        ts = [r for r in grp if r.baseline == config.TASK_SPECIFIC]
+        out.append({
+            "benchmark": key,
+            "name": display,
+            "variants": sorted({r.dataset for r in grp}),
+            "n_papers": len({r.paper_key for r in grp}),
+            "n_claims": len(grp),
+            "tasks": sorted({r.task for r in grp}),
+            "models": sorted({r.model for r in grp}),
+            "metrics": sorted({r.metric for r in grp}),
+            # Verdict is vs-task-specific only; a benchmark on which every claim
+            # is GFM-vs-GFM has no verdict to give, and says so.
+            "verdict": classify(ts) if ts else
+                       {"label": "gap", "n_papers": 0, "direction": None,
+                        "agreement": None},
+            "n_vs_task_specific": len(ts),
+            "claims": [_claim_payload(r) for r in grp],
+        })
+    # Most-evaluated benchmarks first: those are the ones where a cross-paper
+    # comparison is actually possible.
+    out.sort(key=lambda b: (-b["n_papers"], -b["n_claims"], b["name"].lower()))
+    return out
+
+
 def _vs_task_specific(rows: list[ClaimRow]) -> list[ClaimRow]:
     """The rows whose direction is meaningful for the headline question.
 
@@ -277,6 +393,7 @@ def build_group_views(cards: list[Card]) -> dict:
         rows = _filter_self(rows_all, include_self)
         out[view_name] = {
             "task_verdicts": task_verdicts(rows),
+            "benchmarks": benchmark_view(rows),
             "groups": group_view(rows),
             "matrix": matrix_view(rows),
             "axes": axes_view(rows),
