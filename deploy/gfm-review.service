@@ -1,8 +1,23 @@
-# Daily extraction + publish run. Extraction runs in the Docker sandbox; the
-# push happens from here (never from GitHub Actions), so the repo holds no
-# credentials and never goes "inactive" enough for GitHub to disable schedules.
+# Daily extraction + publish run. The push happens from here (never from GitHub
+# Actions), so the repo holds no credentials and never goes "inactive" enough
+# for GitHub to disable schedules.
 #
-# Install (user units, recommended — no root, uses your login + rootless docker):
+# Usage gating uses the REAL subscription percentages (the same numbers /usage
+# shows), not a token-cost estimate:
+#   --max-session-pct 50   stop once the rolling 5-hour window hits 50%
+#   --skip-weekly-above 80 do not run at all if the 7-day window is already >=80%
+# Those numbers come from `gfm-usage-probe`, which lives OUTSIDE the repo on
+# purpose: it reads the OAuth token, and the repo's no-API guard forbids any
+# source file from holding a credential or naming the API host. If the probe
+# cannot report, the run refuses to start — unknown usage is never treated as
+# spare headroom.
+#
+# --extractor host: the Docker sandbox is still blocked on the one-time root
+# uidmap/subuid step. Drop this flag (and the default sandbox takes over) once
+# that is done; the host extractor keeps the empty tool allowlist but loses the
+# container's filesystem/egress isolation.
+#
+# Install (user units — no root, uses your login):
 #   mkdir -p ~/.config/systemd/user
 #   cp deploy/gfm-review.* ~/.config/systemd/user/
 #   systemctl --user daemon-reload
@@ -18,10 +33,20 @@ Wants=network-online.target
 [Service]
 Type=oneshot
 WorkingDirectory=%h/projects/gfm-live-review
-# Adjust the interpreter path if you use a venv/conda env.
-ExecStart=/usr/bin/env python3 -m pipeline.run
+# `claude` and `gfm-usage-probe` both live in ~/.local/bin; systemd's default
+# PATH does not include it, and neither does it include the conda env.
+Environment=PATH=%h/.local/bin:%h/miniconda3/envs/env_conda/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=%h/miniconda3/envs/env_conda/bin/python -m pipeline.run \
+    --extractor host \
+    --max-session-pct 50 \
+    --skip-weekly-above 80 \
+    --redeploy-every 10
+# journald is not readable for user units on every host, so keep a plain log too:
+#   tail -f ~/gfm-review.log
+StandardOutput=append:%h/gfm-review.log
+StandardError=append:%h/gfm-review.log
 # Never let a single run wedge the timer.
-TimeoutStartSec=3600
+TimeoutStartSec=10800
 Nice=10
 
 [Install]

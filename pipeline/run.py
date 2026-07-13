@@ -25,7 +25,7 @@ from datetime import date, datetime, timezone
 import yaml
 
 from . import cards as cards_mod
-from . import config, extract, ingest, quarantine, screen, state, verify
+from . import config, extract, ingest, quarantine, screen, state, usage, verify
 from .aggregate import compute_tag_promotion
 from .build import build
 from . import claude_cli
@@ -232,13 +232,41 @@ def publish(*, push: bool, use_git: bool, msg: str) -> int:
 def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
         use_git: bool, limit: int | None, backfill: bool = False,
         redeploy_every: int | None = None, max_usd: float | None = None,
+        max_session_pct: float | None = None, skip_weekly_above: float | None = None,
         model: str = extract.DEFAULT_MODEL) -> int:
     started = datetime.now(timezone.utc)
     stats = {"ingested": 0, "accepted": 0, "new": 0, "carded": 0,
              "quarantined": 0, "skipped": 0, "quota_stopped": False,
              "infra_failures": 0, "infra_stopped": False,
-             "budget_stopped": False, "cost_usd": 0.0}
+             "budget_stopped": False, "cost_usd": 0.0,
+             "usage_stopped": False, "weekly_skipped": False}
     infra_failures = 0  # consecutive; reset by any successful paper
+
+    # --- usage gates (real subscription percentages, via the external probe) ---
+    # Unreadable usage must never be read as "plenty left": if a gate is asked
+    # for and we cannot measure, we refuse to spend.
+    if max_session_pct is not None or skip_weekly_above is not None:
+        try:
+            u = usage.fetch()
+        except usage.UsageUnavailable as exc:
+            print(f"REFUSING TO RUN: {exc}", file=sys.stderr)
+            state.append_run({"event": "usage_unavailable", "error": str(exc)})
+            return 0
+        print(f"usage at start: {u}", file=sys.stderr)
+        if skip_weekly_above is not None and u.weekly_pct >= skip_weekly_above:
+            print(f"weekly usage {u.weekly_pct:.0f}% >= {skip_weekly_above:.0f}% — "
+                  f"not running today", file=sys.stderr)
+            stats["weekly_skipped"] = True
+            state.append_run({"event": "weekly_skipped", "weekly_pct": u.weekly_pct,
+                              "threshold": skip_weekly_above})
+            return 0
+        if max_session_pct is not None and u.session_pct >= max_session_pct:
+            print(f"session usage {u.session_pct:.0f}% already >= {max_session_pct:.0f}% — "
+                  f"nothing to do", file=sys.stderr)
+            stats["usage_stopped"] = True
+            state.append_run({"event": "usage_stopped", "session_pct": u.session_pct,
+                              "threshold": max_session_pct, "carded": 0})
+            return 0
 
     if use_git:
         git_pull()
@@ -321,6 +349,24 @@ def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
                   f"stopping cleanly", file=sys.stderr)
             stats["budget_stopped"] = True
             break
+
+        # The real gate: stop at the actual session utilisation, re-read after
+        # every paper. If usage becomes unreadable mid-run we stop rather than
+        # keep spending blind — same rule as at startup.
+        if max_session_pct is not None:
+            try:
+                u = usage.fetch()
+            except usage.UsageUnavailable as exc:
+                print(f"usage unreadable mid-run, stopping cleanly: {exc}", file=sys.stderr)
+                stats["usage_stopped"] = True
+                break
+            stats["session_pct"] = u.session_pct
+            stats["weekly_pct"] = u.weekly_pct
+            if u.session_pct >= max_session_pct:
+                print(f"session usage {u.session_pct:.0f}% >= {max_session_pct:.0f}% — "
+                      f"stopping cleanly ({u})", file=sys.stderr)
+                stats["usage_stopped"] = True
+                break
         print(f"  {status}", file=sys.stderr)
         if status.startswith("carded"):
             stats["carded"] += 1
@@ -389,7 +435,11 @@ def main(argv=None) -> int:
     p.add_argument("--redeploy-every", type=int, default=None,
                    help="rebuild + commit + push after every N newly-carded papers")
     p.add_argument("--max-usd", type=float, default=None,
-                   help="stop cleanly once the CLI has reported this much usage")
+                   help="stop cleanly once the CLI has reported this much cost")
+    p.add_argument("--max-session-pct", type=float, default=None,
+                   help="stop cleanly once the real 5-hour session usage reaches this %%")
+    p.add_argument("--skip-weekly-above", type=float, default=None,
+                   help="do not run at all if real weekly usage is already at/above this %%")
     p.add_argument("--model", default=extract.DEFAULT_MODEL,
                    help=f"model for paper reading (default {extract.DEFAULT_MODEL})")
     p.add_argument("--effort", default="low",
@@ -405,7 +455,8 @@ def main(argv=None) -> int:
                        egress_mode=args.egress_mode, push=not args.no_push,
                        use_git=not args.no_git, limit=args.limit,
                        backfill=args.backfill, redeploy_every=args.redeploy_every,
-                       max_usd=args.max_usd, model=args.model)
+                       max_usd=args.max_usd, max_session_pct=args.max_session_pct,
+                       skip_weekly_above=args.skip_weekly_above, model=args.model)
     except SystemExit:
         raise
     except Exception:

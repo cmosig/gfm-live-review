@@ -1,11 +1,15 @@
-# Fire once a day, with a randomised delay so we're a polite API citizen, and
-# Persistent=true so a missed run (machine asleep) fires on next boot.
+# Fire every day at 02:00, and Persistent=true so a run missed while the machine
+# was off fires on next boot rather than being silently skipped.
+#
+# No RandomizedDelaySec: the run is bounded by real subscription usage (the
+# service passes --max-session-pct / --skip-weekly-above), not by being a polite
+# API citizen, and a predictable 02:00 slot is easier to reason about against
+# the rolling 5-hour window.
 [Unit]
 Description=Run gfm-live-review daily
 
 [Timer]
-OnCalendar=*-*-* 03:30:00
-RandomizedDelaySec=1800
+OnCalendar=*-*-* 02:00:00
 Persistent=true
 
 [Install]
