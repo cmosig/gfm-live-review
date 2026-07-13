@@ -18,7 +18,7 @@ from datetime import date, datetime, timezone
 import pydantic
 
 from . import EXTRACTOR_VERSION, config
-from .claude_cli import QuotaExhausted
+from .claude_cli import ClaudeError, QuotaExhausted
 from .schema import Card, Claim, ExtractionOutput
 from .textutil import span_in_text, span_sha256
 
@@ -252,9 +252,11 @@ def extract_card(meta: PaperMeta, paper_text: str, *, run_fn,
     try:
         raw = run_fn(payload, model=model)
         output = ExtractionOutput.model_validate(raw)
-    except QuotaExhausted:
-        # Not a per-paper failure: must propagate so the run stops cleanly and
-        # seen.json is left untouched for this paper (resume tomorrow).
+    except (QuotaExhausted, ClaudeError):
+        # Neither is a per-paper failure: the paper was never read. Propagate so
+        # the run stops (quota) or trips its circuit breaker (transport), leaving
+        # seen.json untouched for this paper. Quarantining here is what let one
+        # sustained API outage bury 251 perfectly good papers as if they were bad.
         raise
     except pydantic.ValidationError as exc:
         return ExtractionResult(None, True, f"schema validation failed: {exc}", payload, raw=raw)

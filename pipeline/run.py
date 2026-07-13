@@ -28,7 +28,8 @@ from . import cards as cards_mod
 from . import config, extract, ingest, quarantine, screen, state, verify
 from .aggregate import compute_tag_promotion
 from .build import build
-from .claude_cli import QuotaExhausted
+from . import claude_cli
+from .claude_cli import ClaudeError, QuotaExhausted
 
 # Seed corpus (arXiv ids). 1-2 are the models themselves; the rest downstream.
 SEED_ARXIV_IDS = [
@@ -39,6 +40,12 @@ SEED_ARXIV_IDS = [
 
 LOCK_PATH = config.STATE_DIR / ".lock"
 PER_PAPER_SLEEP = 5.0
+
+# A transport failure means the paper was never read, so it is retried on the
+# next run rather than quarantined. But if they never stop, retrying every
+# remaining paper just burns the queue against a dead API — so after this many
+# consecutive transport failures, stop the run cleanly and resume tomorrow.
+MAX_CONSECUTIVE_INFRA_FAILURES = 5
 
 
 # ---------------------------------------------------------------------------
@@ -224,11 +231,14 @@ def publish(*, push: bool, use_git: bool, msg: str) -> int:
 
 def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
         use_git: bool, limit: int | None, backfill: bool = False,
-        redeploy_every: int | None = None,
+        redeploy_every: int | None = None, max_usd: float | None = None,
         model: str = extract.DEFAULT_MODEL) -> int:
     started = datetime.now(timezone.utc)
     stats = {"ingested": 0, "accepted": 0, "new": 0, "carded": 0,
-             "quarantined": 0, "skipped": 0, "quota_stopped": False}
+             "quarantined": 0, "skipped": 0, "quota_stopped": False,
+             "infra_failures": 0, "infra_stopped": False,
+             "budget_stopped": False, "cost_usd": 0.0}
+    infra_failures = 0  # consecutive; reset by any successful paper
 
     if use_git:
         git_pull()
@@ -276,10 +286,25 @@ def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
             break
         try:
             status = process_paper(vr, run_fn, seen, existing_keys, model=model)
+            infra_failures = 0
         except QuotaExhausted as exc:
             print(f"QUOTA EXHAUSTED, stopping cleanly: {exc}", file=sys.stderr)
             stats["quota_stopped"] = True
             break
+        except ClaudeError as exc:
+            # Transport/API failure: the paper was never read. Leave it unseen so
+            # it retries, and trip the breaker if the API is simply down.
+            infra_failures += 1
+            stats["infra_failures"] += 1
+            print(f"transport failure {infra_failures}/{MAX_CONSECUTIVE_INFRA_FAILURES} "
+                  f"(not quarantined, will retry): {cand.title[:60]}: {exc}", file=sys.stderr)
+            state.append_run({"event": "infra_failure", "title": cand.title, "error": str(exc)})
+            if infra_failures >= MAX_CONSECUTIVE_INFRA_FAILURES:
+                print("too many consecutive transport failures — stopping cleanly",
+                      file=sys.stderr)
+                stats["infra_stopped"] = True
+                break
+            continue
         except Exception as exc:  # one bad paper must not break the run
             print(f"paper failed (continuing): {cand.title[:60]}: {exc}", file=sys.stderr)
             traceback.print_exc()
@@ -289,6 +314,13 @@ def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
             # Persist seen after every paper so progress survives a crash.
             state.save_seen(seen)
         processed += 1
+
+        stats["cost_usd"] = round(claude_cli.cost_usd(), 4)
+        if max_usd is not None and claude_cli.cost_usd() >= max_usd:
+            print(f"reached --max-usd {max_usd} (spent ${claude_cli.cost_usd():.2f}), "
+                  f"stopping cleanly", file=sys.stderr)
+            stats["budget_stopped"] = True
+            break
         print(f"  {status}", file=sys.stderr)
         if status.startswith("carded"):
             stats["carded"] += 1
@@ -356,6 +388,8 @@ def main(argv=None) -> int:
                    help="exhaustive one-off search to grow the corpus")
     p.add_argument("--redeploy-every", type=int, default=None,
                    help="rebuild + commit + push after every N newly-carded papers")
+    p.add_argument("--max-usd", type=float, default=None,
+                   help="stop cleanly once the CLI has reported this much usage")
     p.add_argument("--model", default=extract.DEFAULT_MODEL,
                    help=f"model for paper reading (default {extract.DEFAULT_MODEL})")
     p.add_argument("--effort", default="low",
@@ -371,7 +405,7 @@ def main(argv=None) -> int:
                        egress_mode=args.egress_mode, push=not args.no_push,
                        use_git=not args.no_git, limit=args.limit,
                        backfill=args.backfill, redeploy_every=args.redeploy_every,
-                       model=args.model)
+                       max_usd=args.max_usd, model=args.model)
     except SystemExit:
         raise
     except Exception:

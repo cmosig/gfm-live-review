@@ -23,13 +23,31 @@ ALLOWED_TOOLS = ""  # MUST stay empty. Asserted before every invocation.
 DEFAULT_EFFORT = "low"
 _FENCE_RE = re.compile(r"^\s*```(?:json)?\s*|\s*```\s*$", re.MULTILINE)
 
+# `claude -p --output-format json` reports API-level failures by exiting non-zero
+# with an EMPTY stderr and the human-readable reason on stdout, inside the result
+# envelope ({"is_error": true, "api_error_status": 429, "result": "<reason>"}).
+# Classification must therefore read stdout; reading stderr sees nothing at all.
+_QUOTA_TOKENS = ("unauthenticated", "not logged in", "quota", "credit",
+                 "rate limit", "usage limit", "out of", "upgrade")
+_QUOTA_STATUSES = (401, 403, 429)
+
 
 class ClaudeError(RuntimeError):
-    pass
+    """Transport/API failure. NOT the paper's fault — never quarantine on it."""
 
 
 class QuotaExhausted(RuntimeError):
     """Subscription quota/auth problem — not a crash. Callers stop cleanly."""
+
+
+# Cumulative USD the CLI has reported for this process. The subscription is not
+# billed per call, but the figure is the only usage signal the CLI exposes, so
+# run.py uses it as the budget meter.
+_cost_usd = 0.0
+
+
+def cost_usd() -> float:
+    return _cost_usd
 
 
 def extract_json_object(text: str) -> dict:
@@ -79,15 +97,23 @@ def call(prompt: str, *, model: str, timeout: int = 300,
     proc = subprocess.run(
         cmd, input=prompt, capture_output=True, text=True, timeout=timeout,
     )
-    if proc.returncode != 0:
-        stderr = (proc.stderr or "").lower()
-        if any(t in stderr for t in ("unauthenticated", "not logged in", "quota",
-                                     "credit", "rate limit", "usage limit")):
-            raise QuotaExhausted(proc.stderr[-500:])
-        raise ClaudeError(f"claude failed ({proc.returncode}): {proc.stderr[-500:]}")
-    envelope = json.loads(proc.stdout)
-    if envelope.get("is_error"):
-        raise ClaudeError(f"claude reported error: {envelope.get('result')}")
+    try:
+        envelope = json.loads(proc.stdout)
+    except (json.JSONDecodeError, ValueError):
+        envelope = {}
+
+    global _cost_usd
+    _cost_usd += float(envelope.get("total_cost_usd") or 0.0)
+
+    if proc.returncode != 0 or envelope.get("is_error"):
+        # The reason lives on stdout; stderr is a last resort for a CLI that died
+        # before it could emit an envelope at all (e.g. a bad flag).
+        reason = str(envelope.get("result") or proc.stderr or "").strip()
+        status = envelope.get("api_error_status")
+        if status in _QUOTA_STATUSES or any(t in reason.lower() for t in _QUOTA_TOKENS):
+            raise QuotaExhausted(f"{status or proc.returncode}: {reason[-500:]}")
+        raise ClaudeError(
+            f"claude failed (exit {proc.returncode}, api {status}): {reason[-500:]}")
     return extract_json_object(envelope.get("result", ""))
 
 

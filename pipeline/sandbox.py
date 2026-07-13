@@ -25,6 +25,8 @@ import subprocess
 import uuid
 from pathlib import Path
 
+from .claude_cli import ClaudeError, QuotaExhausted
+
 # ---------------------------------------------------------------------------
 # Image / identity
 # ---------------------------------------------------------------------------
@@ -81,8 +83,10 @@ HARDENING_FLAGS = [
 ]
 
 
-class SandboxError(RuntimeError):
-    pass
+class SandboxError(ClaudeError):
+    """A container-side failure: the paper was never read, so it is a transport
+    error, not a bad paper. Subclassing ClaudeError makes extract.py propagate it
+    instead of quarantining the paper for the container's mistake."""
 
 
 def _network_args(egress_mode: str) -> tuple[list[str], list[str]]:
@@ -221,7 +225,6 @@ def run_extraction(payload: dict, *, model: str, egress_mode: str = "proxy",
         raise SandboxError(f"extraction timed out after {timeout}s") from exc
     if proc.returncode == 3:
         # entrypoint exit 3 == subscription quota/auth. Not a crash: stop cleanly.
-        from .claude_cli import QuotaExhausted
         raise QuotaExhausted(proc.stderr[-500:])
     if proc.returncode != 0:
         raise SandboxError(f"container exited {proc.returncode}: {proc.stderr[-2000:]}")

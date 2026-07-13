@@ -92,15 +92,23 @@ def _call_claude(prompt: str, *, strict_reminder: bool = False) -> dict:
     proc = subprocess.run(
         cmd, input=prompt, capture_output=True, text=True, timeout=300,
     )
-    if proc.returncode != 0:
-        stderr = (proc.stderr or "").lower()
-        if any(t in stderr for t in ("unauthenticated", "login", "quota", "credit",
-                                     "usage limit", "rate limit")):
-            _die(f"QUOTA/AUTH: {proc.stderr[-500:]}", code=3)
-        _die(f"FATAL: claude CLI failed ({proc.returncode}): {proc.stderr[-500:]}", code=4)
-    envelope = json.loads(proc.stdout)
-    if envelope.get("is_error"):
-        _die(f"FATAL: claude reported error: {envelope.get('result')}", code=5)
+    # The CLI reports API failures by exiting non-zero with an EMPTY stderr and
+    # the reason on stdout in the result envelope. Classify from stdout; stderr
+    # only carries a CLI that died before emitting an envelope (e.g. a bad flag).
+    try:
+        envelope = json.loads(proc.stdout)
+    except (json.JSONDecodeError, ValueError):
+        envelope = {}
+    if proc.returncode != 0 or envelope.get("is_error"):
+        reason = str(envelope.get("result") or proc.stderr or "").strip()
+        status = envelope.get("api_error_status")
+        if status in (401, 403, 429) or any(
+            t in reason.lower() for t in ("unauthenticated", "login", "quota",
+                                          "credit", "usage limit", "rate limit",
+                                          "out of", "upgrade")):
+            _die(f"QUOTA/AUTH: {status or proc.returncode}: {reason[-500:]}", code=3)
+        _die(f"FATAL: claude CLI failed (exit {proc.returncode}, api {status}): "
+             f"{reason[-500:]}", code=4)
     return _extract_json_object(envelope.get("result", ""))
 
 
