@@ -88,6 +88,7 @@ promoted_tags:
 - handcrafted_spectral_texture_features
 - image_geolocalization
 - joint_embedding_predictive_architecture
+- knowledge_distillation
 - location_encoder
 - malaria_prediction
 - masked_autoencoder

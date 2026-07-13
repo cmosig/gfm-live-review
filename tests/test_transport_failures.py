@@ -67,7 +67,7 @@ def test_transport_failure_never_quarantines_the_paper(monkeypatch):
 
     meta = extract.PaperMeta(key="x2025y", title="T", date=date(2025, 1, 1),
                              authors=["A"], arxiv_id="1234.5678", doi=None,
-                             doi_status="absent", venue=None, self_evaluation=False)
+                             doi_status="no_doi_found", venue=None, self_evaluation=False)
 
     def dead_api(payload, *, model):
         raise ClaudeError("claude failed (exit 1, api 529): Overloaded")
@@ -81,7 +81,7 @@ def test_quota_still_propagates_from_extract(monkeypatch):
 
     meta = extract.PaperMeta(key="x2025y", title="T", date=date(2025, 1, 1),
                              authors=["A"], arxiv_id="1234.5678", doi=None,
-                             doi_status="absent", venue=None, self_evaluation=False)
+                             doi_status="no_doi_found", venue=None, self_evaluation=False)
 
     def out_of_quota(payload, *, model):
         raise QuotaExhausted("429: usage limit reached")
