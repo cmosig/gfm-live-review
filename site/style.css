@@ -155,6 +155,38 @@ td.cell.ev-consensus.dir-cell-parity { border-color: var(--parity-ring); }
 .vdir-sm { width: 18px; height: 18px; border-radius: 5px; display: inline-flex; align-items: center;
   justify-content: center; font-weight: 800; font-size: 10px; flex: none; }
 
+/* ---- evidence / scepticism panel ---- */
+.evidence { background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--mixed-fg);
+  border-radius: 10px; padding: 12px 15px; margin: 0 0 16px; }
+.evidence-title { font-weight: 700; font-size: 13px; letter-spacing: .02em; text-transform: uppercase;
+  color: var(--mixed-fg); margin-bottom: 10px; }
+.ev-bar { display: flex; height: 9px; border-radius: 5px; overflow: hidden; margin-bottom: 11px;
+  background: var(--bg); }
+.ev-seg { display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 700;
+  color: #fff; }
+.ev-better { background: var(--better-fg); }
+.ev-worse { background: var(--worse-fg); }
+.ev-parity { background: var(--parity-fg); }
+.ev-notes { margin: 0; padding-left: 17px; }
+.ev-notes li { font-size: 13px; margin-bottom: 5px; line-height: 1.5; }
+.ev-head { font-weight: 650; }
+.ev-why { color: var(--muted); }
+
+/* ---- verdict caveats ---- */
+.warn { font-size: 12.5px; line-height: 1.5; margin-top: 9px; padding: 6px 9px; border-radius: 7px;
+  background: var(--bg); border: 1px solid var(--line); color: var(--fg); }
+.warn-tag { display: inline-block; font-size: 10px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: .04em; border-radius: 4px; padding: 1px 5px; margin-right: 7px; color: #fff; }
+.warn-pool { border-color: var(--mixed-fg); }
+.warn-pool .warn-tag { background: var(--mixed-fg); }
+.warn-self { border-color: var(--worse-fg); }
+.warn-self .warn-tag { background: var(--worse-fg); }
+.vcheck { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; margin-top: 9px;
+  padding-top: 9px; border-top: 1px dashed var(--line); font-size: 12.5px; }
+.vcheck-label { color: var(--faint); }
+.vcheck-name { font-weight: 650; }
+.vcheck-n { color: var(--muted); }
+
 /* ---- by-benchmark view ---- */
 .bm-stat { color: var(--faint); font-size: 12.5px; margin: 0 0 12px; }
 .bm-variants { color: var(--faint); font-size: 12px; margin-top: 8px; padding-top: 8px;

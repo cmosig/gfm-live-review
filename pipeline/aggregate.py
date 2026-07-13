@@ -292,6 +292,118 @@ def _vs_task_specific(rows: list[ClaimRow]) -> list[ClaimRow]:
     return [r for r in rows if r.baseline == config.TASK_SPECIFIC]
 
 
+def _strongest_benchmark(rows: list[ClaimRow]) -> dict | None:
+    """The single benchmark within these rows carrying the most papers.
+
+    This is the same-dataset check on a pooled verdict: same data, same protocol,
+    so a disagreement here is real rather than an artefact of pooling.
+    """
+    if not rows:
+        return None
+    canon = _benchmark_keys({r.dataset for r in rows})
+    groups: dict[str, list[ClaimRow]] = defaultdict(list)
+    for r in rows:
+        groups[canon[r.dataset]].append(r)
+    best = max(groups.values(),
+               key=lambda g: (len({r.paper_key for r in g}), len(g)))
+    return {"name": _display_name({r.dataset for r in best}),
+            "n_claims": len(best), **classify(best)}
+
+
+def diagnostics_view(rows: list[ClaimRow]) -> list[dict]:
+    """Diagnostic tasks (e.g. linear probing), kept OUT of the headline.
+
+    They are real results and stay visible, but they are not evidence about
+    whether a foundation model beats the alternative a practitioner would
+    otherwise reach for, so they never carry a verdict.
+    """
+    diagnostic = config.diagnostic_tasks()
+    by_task: dict[str, list[ClaimRow]] = defaultdict(list)
+    for r in rows:
+        if r.task in diagnostic:
+            by_task[r.task].append(r)
+    out = []
+    for task, grp in sorted(by_task.items()):
+        out.append({
+            "task": task,
+            "n_papers": len({r.paper_key for r in grp}),
+            "n_claims": len(grp),
+            "models": sorted({r.model for r in grp}),
+            "datasets": sorted({r.dataset for r in grp}),
+            "claims": [_claim_payload(r) for r in grp],
+        })
+    return out
+
+
+def evidence_profile(rows: list[ClaimRow]) -> dict:
+    """The shape of the evidence itself — the numbers a sceptical reader needs.
+
+    A dashboard that only reports "foundation models win" while the corpus is
+    77% wins is reporting the publication process, not the science. These
+    figures make the skew, the missing baselines and the missing label ratios
+    visible instead of implied.
+    """
+    ts = [r for r in rows if r.baseline == config.TASK_SPECIFIC]
+    dirs = Counter(r.direction for r in ts)
+    buckets = Counter(r.bucket for r in rows)
+    n = len(rows)
+    return {
+        "n_claims": n,
+        "n_vs_task_specific": len(ts),
+        "n_vs_model_or_none": n - len(ts),
+        "directions": {"better": dirs.get("better", 0),
+                       "worse": dirs.get("worse", 0),
+                       "parity": dirs.get("parity", 0)},
+        "pct_better": round(100 * dirs.get("better", 0) / len(ts), 1) if ts else 0.0,
+        "label_ratio_unspecified": buckets.get("unspecified", 0),
+        "pct_label_ratio_unspecified": round(100 * buckets.get("unspecified", 0) / n, 1) if n else 0.0,
+        "n_self_eval_claims": sum(1 for r in rows if r.self_evaluation),
+    }
+
+
+def _pooling_note(verdict: dict) -> str | None:
+    """Say out loud when a pooled verdict is not backed by same-dataset evidence.
+
+    Pooling across datasets is a legitimate vote count, but it can manufacture
+    agreement that no single benchmark supports — and in this corpus it does:
+    flood_mapping pools to "consensus", while Sen1Floods11, the one flood
+    benchmark with enough papers to judge, is contested. A reader must not have
+    to notice that for themselves.
+    """
+    if verdict["label"] != "consensus":
+        return None
+    sb = verdict.get("strongest_benchmark")
+    if not sb:
+        return None
+    if sb["label"] == "contested":
+        return (f"pooled agreement only: {sb['name']}, the one benchmark here with "
+                f"enough papers to judge, is contested")
+    if sb["n_papers"] < MIN_PAPERS_FOR_CONSENSUS:
+        return (f"pooled agreement only: no single benchmark has {MIN_PAPERS_FOR_CONSENSUS}+ "
+                f"papers ({sb['name']} has the most, at {sb['n_papers']})")
+    return None
+
+
+def _mark_fragile(pooled: list[dict], without_self: list[dict]) -> None:
+    """Flag verdicts that do not survive removing self-evaluations.
+
+    `change_detection` reads "consensus" until you drop the papers whose authors
+    built the model, at which point it is "contested". A verdict that flips on
+    that is not a finding, and must not be presented as one.
+    """
+    other = {t["task"]: t for t in without_self}
+    for t in pooled:
+        o = other.get(t["task"])
+        if o is None:
+            t["fragile"] = "rests entirely on self-evaluations"
+        elif o["label"] != t["label"] or o["direction"] != t["direction"]:
+            t["fragile"] = (f"becomes {o['label']}"
+                            + (f"/{o['direction']}" if o["direction"] else "")
+                            + " without self-evaluations")
+        else:
+            t["fragile"] = None
+
+
 def task_verdicts(rows: list[ClaimRow]) -> list[dict]:
     """The headline view: do geospatial foundation models (as a class) beat
     task-specific models / indices, per task?
@@ -302,7 +414,9 @@ def task_verdicts(rows: list[ClaimRow]) -> list[dict]:
     per-model breakdown is attached so a reader can see whether the answer
     differs by model.
     """
-    ts = [r for r in rows if r.baseline == config.TASK_SPECIFIC]
+    diagnostic = config.diagnostic_tasks()
+    ts = [r for r in rows
+          if r.baseline == config.TASK_SPECIFIC and r.task not in diagnostic]
     by_task: dict[str, list[ClaimRow]] = defaultdict(list)
     for r in ts:
         by_task[r.task].append(r)
@@ -326,8 +440,14 @@ def task_verdicts(rows: list[ClaimRow]) -> list[dict]:
             "datasets": sorted({r.dataset for r in grp}),
             "models": models,
             "models_differ": len(model_dirs) > 1,
+            # The honest cross-check on the pooling: the best evidence this task
+            # has on any SINGLE benchmark. If the pooled verdict says consensus
+            # but no individual benchmark clears the bar, pooling is doing all
+            # the work and the reader deserves to see that.
+            "strongest_benchmark": _strongest_benchmark(grp),
             "claims": [_claim_payload(r) for r in grp],
         })
+        out[-1]["pooling_note"] = _pooling_note(out[-1])
 
     order = {"contested": 0, "consensus": 1, "thin": 2, "gap": 3}
     out.sort(key=lambda t: (order.get(t["label"], 9), -t["n_papers"], t["task"]))
@@ -342,7 +462,12 @@ def matrix_view(rows: list[ClaimRow]) -> dict:
     whose baseline is a task-specific model; `n_papers_all` counts every paper
     with any claim in the cell, so the UI can show total evidence while
     colouring strictly by the vs-task-specific subset.
+
+    Diagnostic tasks are excluded for the same reason as in the headline: they
+    are not a comparison against the practitioner's alternative.
     """
+    diagnostic = config.diagnostic_tasks()
+    rows = [r for r in rows if r.task not in diagnostic]
     cells: dict[tuple, list[ClaimRow]] = defaultdict(list)
     models, tasks = set(), set()
     for r in rows:
@@ -393,11 +518,18 @@ def build_group_views(cards: list[Card]) -> dict:
         rows = _filter_self(rows_all, include_self)
         out[view_name] = {
             "task_verdicts": task_verdicts(rows),
+            "diagnostics": diagnostics_view(rows),
             "benchmarks": benchmark_view(rows),
             "groups": group_view(rows),
             "matrix": matrix_view(rows),
             "axes": axes_view(rows),
+            "evidence": evidence_profile(rows),
         }
+    # A verdict that only holds because the model's own authors reported it is
+    # not a verdict. Compare the two views and say so on the card.
+    _mark_fragile(out["all"]["task_verdicts"], out["no_self_eval"]["task_verdicts"])
+    for t in out["no_self_eval"]["task_verdicts"]:
+        t["fragile"] = None  # self-evals are already gone in this view
     return out
 
 

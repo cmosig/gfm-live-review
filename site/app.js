@@ -199,12 +199,87 @@ function verdictDir(v) {
 
 /* =====================  VIEWS  ===================== */
 
+/* The numbers a sceptical reader needs before reading any verdict. A dashboard
+   that reports only "foundation models win", from a corpus that is 77% wins, is
+   reporting the publication process rather than the science. */
+function renderEvidencePanel(root) {
+  const e = currentView().evidence;
+  if (!e || !e.n_claims) return;
+  const d = e.directions;
+  const total = d.better + d.worse + d.parity;
+
+  const panel = el("div", { class: "evidence" });
+  panel.appendChild(el("div", { class: "evidence-title", text: "Read the evidence sceptically" }));
+
+  // Direction skew, shown as a bar rather than asserted in prose.
+  const bar = el("div", { class: "ev-bar", title:
+    `${d.better} better · ${d.worse} worse · ${d.parity} parity (vs task-specific)` });
+  for (const [k, n] of [["better", d.better], ["parity", d.parity], ["worse", d.worse]]) {
+    if (!n) continue;
+    bar.appendChild(el("span", { class: "ev-seg ev-" + k,
+      attrs: { style: `width:${(100 * n / total).toFixed(1)}%` },
+      text: n > total * 0.08 ? String(n) : "" }));
+  }
+  panel.appendChild(bar);
+
+  const notes = [
+    [`${e.pct_better}% of the ${e.n_vs_task_specific} head-to-head claims favour the foundation model.`,
+     "Papers reporting that a foundation model lost are far less likely to be written or accepted. " +
+     "Treat this skew as a fact about publishing, not about the models."],
+    [`${e.pct_label_ratio_unspecified}% of claims never state how many labels were used.`,
+     "Label efficiency is the central promise of foundation models. This corpus mostly cannot check it."],
+    [`${e.n_vs_model_or_none} of ${e.n_claims} claims have no task-specific baseline at all.`,
+     "They compare one foundation model against another, so they say nothing about whether either " +
+     "beats what a practitioner would otherwise build. They never drive a verdict."],
+  ];
+  const ul = el("ul", { class: "ev-notes" });
+  for (const [head, why] of notes) {
+    ul.appendChild(el("li", {}, [
+      el("span", { class: "ev-head", text: head }), txt(" "),
+      el("span", { class: "ev-why", text: why }),
+    ]));
+  }
+  panel.appendChild(ul);
+  root.appendChild(panel);
+}
+
+function renderDiagnostics(root) {
+  const diag = currentView().diagnostics || [];
+  if (!diag.length) return;
+  const det = el("details", { class: "bm-tail" });
+  const n = diag.reduce((a, d) => a + d.n_claims, 0);
+  det.appendChild(el("summary", { text:
+    `Diagnostic tasks — ${n} claims, deliberately excluded from the verdicts above` }));
+  det.appendChild(el("p", { class: "lede", text:
+    "Linear probing of frozen embeddings measures how much information a representation carries. It is not " +
+    "the alternative a practitioner would otherwise build, so \"does the foundation model win?\" is not a " +
+    "meaningful question to ask of it. These results are real and stay visible — they simply never count as " +
+    "evidence that foundation models beat the task-specific option." }));
+  for (const d of diag) {
+    det.appendChild(el("div", { class: "vcard",
+      title: "Click for the underlying results and verbatim quotes",
+      onclick: () => openModal(`${taskName(d.task)} — diagnostic results`, claimTable(d.claims)) }, [
+      el("div", { class: "vcard-head" }, [
+        el("div", { class: "vcard-title" }, [el("span", { class: "vtask", text: taskName(d.task) })]),
+        el("span", { class: "chip chip-thin", text: "no verdict" }),
+      ]),
+      el("div", { class: "vcard-sub", text:
+        `${d.n_papers} paper${d.n_papers === 1 ? "" : "s"} · ${d.n_claims} claims · ` +
+        `${d.models.length} models · ${d.datasets.length} datasets` }),
+    ]));
+  }
+  root.appendChild(det);
+}
+
 function renderVerdicts(root) {
   root.appendChild(el("p", { class: "lede", text:
     "The headline question: do geospatial foundation models beat the task-specific alternative — a bespoke " +
     "supervised model or a classical index like NDVI — that a practitioner would otherwise use? Each row is " +
-    "one task, pooling every paper that ran that comparison (we count which way each paper landed, never " +
-    "averaging incomparable metrics). Contested tasks come first. Click a row for the evidence and quotes." }));
+    "one task. Every paper casts one vote (the majority direction of its own results) and the votes are " +
+    "counted; numbers are never averaged across datasets or metrics. Because that vote pools papers that used " +
+    "different datasets, each verdict also shows its strongest single benchmark as a same-data check — and " +
+    "says so when the two disagree. Contested tasks come first; click a row for the evidence and quotes." }));
+  renderEvidencePanel(root);
   root.appendChild(directionLegend());
   const verdicts = currentView().task_verdicts;
   if (!verdicts.length) {
@@ -231,6 +306,34 @@ function renderVerdicts(root) {
       `${dl.word} · ${nM} model${nM === 1 ? "" : "s"} · ${nD} dataset${nD === 1 ? "" : "s"}` +
       (v.agreement !== null && v.n_papers >= 3 ? ` · ${Math.round(v.agreement * 100)}% of papers agree` : "") }));
 
+    // The two ways a headline verdict can be less than it looks. Both are stated
+    // on the card itself — a reader must never have to infer them.
+    if (v.pooling_note) {
+      card.appendChild(el("div", { class: "warn warn-pool",
+        title: "Pooling papers across different datasets can manufacture agreement " +
+               "that no single benchmark supports" }, [
+        el("span", { class: "warn-tag", text: "pooled" }), txt(v.pooling_note)]));
+    }
+    if (v.fragile) {
+      card.appendChild(el("div", { class: "warn warn-self",
+        title: "This verdict does not survive removing papers whose authors built the model" }, [
+        el("span", { class: "warn-tag", text: "fragile" }), txt(v.fragile)]));
+    }
+
+    // The same-data check: the best evidence this task has on one benchmark.
+    if (v.strongest_benchmark) {
+      const sb = v.strongest_benchmark;
+      const sd = verdictDir(sb);
+      card.appendChild(el("div", { class: "vcheck",
+        title: "Same dataset, same protocol — the strictest comparison available for this task" }, [
+        el("span", { class: "vcheck-label", text: "strongest single benchmark:" }),
+        el("span", { class: "vdir-sm dir-cell-" + sd.cls, text: sd.glyph }),
+        el("span", { class: "vcheck-name", text: sb.name }),
+        el("span", { class: "vcheck-n", text:
+          `${sb.n_papers} paper${sb.n_papers === 1 ? "" : "s"} · ${sb.label}` }),
+      ]));
+    }
+
     // Per-model breakdown, flagged when models disagree.
     const bd = el("div", { class: "vmodels" });
     if (v.models_differ) bd.appendChild(el("span", { class: "vdiff", text: "differs by model:" }));
@@ -246,6 +349,7 @@ function renderVerdicts(root) {
     card.appendChild(bd);
     root.appendChild(card);
   }
+  renderDiagnostics(root);
 }
 
 function renderBenchmarks(root) {

@@ -76,6 +76,15 @@ def tasks() -> set[str]:
     return set(load_taxonomy().get("tasks", []))
 
 
+def diagnostic_tasks() -> set[str]:
+    """Tasks that are diagnostics, not practitioner alternatives (see taxonomy).
+
+    Kept out of the headline verdict and the matrix: "does the GFM beat the
+    task-specific model?" is not a question linear probing can answer.
+    """
+    return set(load_taxonomy().get("diagnostic_tasks", []))
+
+
 def limitations() -> set[str]:
     return set(load_taxonomy().get("limitations", []))
 

@@ -54,6 +54,22 @@ tasks:
   - representation_probing
 
 # ---------------------------------------------------------------------------
+# Diagnostic tasks: measured in the literature, but NOT things a practitioner
+# would otherwise solve with a task-specific model. Linear probing of frozen
+# embeddings is a way of interrogating a representation, not an alternative to
+# a bespoke supervised model — so "does the GFM beat the task-specific option?"
+# is not a meaningful question to ask of it, and pretending otherwise inflates
+# the headline (representation_probing was the single largest task in it).
+#
+# These are EXCLUDED from the headline verdicts and the model x task matrix.
+# Their claims are still extracted, still shown in the by-benchmark view, and
+# still listed on their own below the verdicts — just never counted as evidence
+# that foundation models beat the practitioner's alternative.
+# ---------------------------------------------------------------------------
+diagnostic_tasks:
+  - representation_probing
+
+# ---------------------------------------------------------------------------
 # Controlled limitation vocabulary. Cards may ONLY use these tags.
 # ---------------------------------------------------------------------------
 limitations:

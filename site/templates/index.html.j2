@@ -52,15 +52,28 @@
             <span class="chip chip-gap">gap</span> nobody has looked yet.</dd>
         <dt>Label regime</dt>
         <dd>How much training data the downstream task used: <em>label-rich</em> (≥75% of labels),
-            <em>label-partial</em>, <em>label-scarce</em> (≤10%). Results from different regimes are never mixed,
-            because label efficiency is precisely what foundation models promise.</dd>
+            <em>label-partial</em>, <em>label-scarce</em> (≤10%). The <em>By benchmark</em> and grouped views
+            keep regimes separate. <strong>But most papers never report it</strong> — see the evidence panel
+            below; label efficiency is the central promise of foundation models and it is the thing this
+            corpus is least able to check.</dd>
         <dt>Self-evaluation</dt>
         <dd>The paper's authors helped create the very foundation model they evaluate (checked
             mechanically via author overlap with the model's original paper). Such papers tend to report
             wins — the toggle above excludes them.</dd>
-        <dt>Never pooled across datasets</dt>
-        <dd>A "consensus" always means papers measured the <em>same dataset</em> under the same conditions —
-            never an average of apples and oranges.</dd>
+        <dt>How the headline verdict is counted</dt>
+        <dd>Numbers are <strong>never averaged</strong> across datasets or metrics — an mIoU and an F1 are never
+            added up. Instead each <em>paper</em> gets one vote (the majority direction of its own results), and
+            the votes are counted. That vote <em>does</em> pool papers that used different datasets, metrics and
+            label regimes, which is a real limitation: pooling can produce agreement that no single benchmark
+            supports. So every verdict also shows its <strong>strongest single benchmark</strong> — the same data,
+            same protocol check — and says so plainly when the two disagree.</dd>
+        <dt>Same-dataset evidence</dt>
+        <dd>For the strict apples-to-apples cut, use the <em>By benchmark</em> tab: it groups results by the exact
+            dataset, so a disagreement there is a real disagreement rather than an artefact of different data.</dd>
+        <dt>Diagnostic tasks</dt>
+        <dd>Linear probing of frozen embeddings interrogates a representation; it is not the alternative a
+            practitioner would otherwise build. It is listed separately and never counted as evidence that
+            foundation models beat the task-specific option.</dd>
       </dl>
     </div>
   </details>
