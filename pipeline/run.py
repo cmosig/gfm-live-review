@@ -214,7 +214,19 @@ def process_paper(vr: verify.VerifyResult, run_fn, seen: dict,
         self_evaluation=vr.self_evaluation,
     )
 
-    text = fetch_arxiv_text(cand.arxiv_id)
+    from .http import HttpError
+    try:
+        text = fetch_arxiv_text(cand.arxiv_id)
+    except HttpError as exc:
+        if exc.transient:
+            raise  # network/429/5xx: leave unseen, the generic handler retries it
+        # Permanent (404/410): the id is withdrawn or wrong and will 404 forever.
+        # Retire it (mark seen) so we stop re-fetching a dead source every run.
+        state.mark_seen(seen, title=cand.title, key=key,
+                        status="source_unavailable", arxiv_id=cand.arxiv_id)
+        state.append_run({"event": "source_unavailable", "title": cand.title,
+                          "arxiv_id": cand.arxiv_id, "error": str(exc)})
+        return f"skip:source_unavailable({exc.status_code})"
     text = slice_for_extraction(text)
 
     result = extract.extract_card(meta, text, run_fn=run_fn, model=model)
