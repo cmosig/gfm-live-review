@@ -92,6 +92,9 @@
   "FloodPlanet": [
     "kaushik2025assessing"
   ],
+  "GAIR": [
+    "siampou2026trajganr"
+  ],
   "GEO-Bench-2": [
     "simumba2025geo"
   ],
@@ -121,6 +124,9 @@
   ],
   "ImageNet_baseline": [
     "romero2026how"
+  ],
+  "KL_divergence": [
+    "zhang2026geospatial"
   ],
   "LMIC": [
     "metz2025application"
@@ -163,9 +169,6 @@
   ],
   "PCA_dimensionality_reduction": [
     "cheng2026from"
-  ],
-  "PDFM": [
-    "metz2025application"
   ],
   "PEFT": [
     "asif2026adapting"
@@ -257,6 +260,9 @@
   "UPerNet_decoder": [
     "polushko2026flood"
   ],
+  "UniTraj": [
+    "siampou2026trajganr"
+  ],
   "VHR_imagery": [
     "orlowski2026sub"
   ],
@@ -301,6 +307,9 @@
   ],
   "analysis_ready_embeddings": [
     "ma2025harvesting"
+  ],
+  "aoi_function_prediction": [
+    "siampou2026trajganr"
   ],
   "archaeological_looting_detection": [
     "tadesse2026satellite"
@@ -425,6 +434,9 @@
   "climate_sensitive_disease": [
     "nazir2026alphaearth"
   ],
+  "climate_vulnerability_index": [
+    "liu2026geovista"
+  ],
   "clip": [
     "tadesse2026watch"
   ],
@@ -521,6 +533,9 @@
   "cross-scale-mae": [
     "tang2024cross"
   ],
+  "cross_attention": [
+    "liu2026geovista"
+  ],
   "cross_attention_conditioning": [
     "chen2026when"
   ],
@@ -532,6 +547,9 @@
   ],
   "cross_modal_retrieval": [
     "xiong2025dofa"
+  ],
+  "cross_paper_metric_divergence": [
+    "corley2026one"
   ],
   "cross_spectral_domain_adaptation": [
     "matin2025hyperkd"
@@ -547,6 +565,9 @@
   ],
   "data_harmonization": [
     "ma2025harvesting"
+  ],
+  "data_source_shift": [
+    "doerksen2026earthshift"
   ],
   "dataset_paper": [
     "mandal2026biomazon"
@@ -590,6 +611,9 @@
   "distance_to_road_prediction": [
     "plas2026better"
   ],
+  "distributional_robustness": [
+    "doerksen2026earthshift"
+  ],
   "domain_gap_satellite_to_rgb": [
     "polushko2026flood"
   ],
@@ -616,6 +640,9 @@
   ],
   "effective_rank": [
     "mocharla2026probing"
+  ],
+  "effective_robustness": [
+    "doerksen2026earthshift"
   ],
   "elevation_regression": [
     "hecht2026multi"
@@ -686,6 +713,12 @@
   "esa_cci_land_cover": [
     "bianco2024enhancing"
   ],
+  "evaluation_harness": [
+    "corley2026one"
+  ],
+  "evaluation_reproducibility": [
+    "corley2026one"
+  ],
   "evapotranspiration_estimation": [
     "brown2025alphaearth"
   ],
@@ -733,6 +766,9 @@
   ],
   "fine_tuning_vs_frozen": [
     "romero2026how"
+  ],
+  "fire_hazard_prediction": [
+    "liu2026geovista"
   ],
   "fixed_embedding_products": [
     "corley2026from"
@@ -818,6 +854,9 @@
   "geospatial prior as world knowledge": [
     "zhang2026fusar"
   ],
+  "geospatial_covariates": [
+    "zhang2026geospatial"
+  ],
   "geostatistical_interpolation_baseline": [
     "metz2025application"
   ],
@@ -865,6 +904,9 @@
   ],
   "handcrafted_features_vs_embeddings": [
     "cheng2026from"
+  ],
+  "hard_braking_event_detection": [
+    "siampou2026trajganr"
   ],
   "hard_negative_mining": [
     "chen2025enhancing"
@@ -1076,6 +1118,9 @@
   "masked_autoencoder_task_alignment": [
     "xie2024when"
   ],
+  "masked_autoencoding": [
+    "liu2026geovista"
+  ],
   "masked_modeling": [
     "tseng2025galileo"
   ],
@@ -1129,6 +1174,9 @@
   ],
   "monte_carlo_dropout": [
     "narimani2026mapping"
+  ],
+  "mortality_prediction": [
+    "liu2026geovista"
   ],
   "msg_seviri_imagery": [
     "girtsou2025cloud"
@@ -1277,6 +1325,9 @@
   "pixel_wise_foundation_model": [
     "feng2025tessera"
   ],
+  "place_embeddings": [
+    "zhang2026geospatial"
+  ],
   "plant_presence_prediction": [
     "cerna2025botaclip"
   ],
@@ -1301,6 +1352,9 @@
   "population_density_regression": [
     "hecht2026multi"
   ],
+  "population_dynamics_foundation_model": [
+    "zhang2026geospatial"
+  ],
   "population_health": [
     "nazir2026alphaearth"
   ],
@@ -1318,6 +1372,9 @@
   ],
   "pretraining-loss-vs-downstream": [
     "feng2026tessera"
+  ],
+  "pretraining_data_attribution": [
+    "corley2026one"
   ],
   "prithvi_wxc": [
     "gupta2025finetuning"
@@ -1421,6 +1478,9 @@
   "road_density_estimation": [
     "dionelis2025scaling"
   ],
+  "road_popularity_prediction": [
+    "siampou2026trajganr"
+  ],
   "road_segmentation": [
     "fibaek2024phileo"
   ],
@@ -1453,6 +1513,9 @@
   ],
   "scale_aware_positional_encoding": [
     "reed2022scale"
+  ],
+  "scale_shift": [
+    "doerksen2026earthshift"
   ],
   "scale_transfer": [
     "ma2025harvesting"
@@ -1498,6 +1561,9 @@
   ],
   "sensor_modality_transfer": [
     "tamazyan2025geocrossbench"
+  ],
+  "sensor_shift": [
+    "doerksen2026earthshift"
   ],
   "sentinel-1": [
     "lisaius2026embedding"
@@ -1664,11 +1730,17 @@
   "traditional_ML_vs_foundation_model": [
     "xie2024when"
   ],
+  "traffic_speed_prediction": [
+    "siampou2026trajganr"
+  ],
   "training_from_scratch": [
     "sosa2024how"
   ],
   "trajectory_prediction": [
     "kulkarni2026vidtag"
+  ],
+  "trajectory_representation_learning": [
+    "siampou2026trajganr"
   ],
   "tree_cover_density": [
     "orlowski2026sub"
@@ -1736,6 +1808,9 @@
   "vision_language_pretraining": [
     "xiong2025dofa"
   ],
+  "vision_tabular_fusion": [
+    "liu2026geovista"
+  ],
   "vit_upernet": [
     "dionelis2025scaling"
   ],
@@ -1756,6 +1831,9 @@
   ],
   "weight_merging": [
     "xiong2025dofa"
+  ],
+  "weight_release_audit": [
+    "corley2026one"
   ],
   "west_africa": [
     "lisaius2026embedding"

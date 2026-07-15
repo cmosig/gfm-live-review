@@ -311,6 +311,10 @@
     "key": "ardizzon2025crystal",
     "status": "off_topic"
   },
+  "darkvesselnet multi modal remote sensing and trajectory reasoning for dark vessel detection": {
+    "key": "sharma2026darkvesselnet",
+    "status": "off_topic"
+  },
   "data caching for enterprise grade petabyte scale olap": {
     "key": "tang2024data",
     "status": "off_topic"
@@ -365,6 +369,12 @@
     "arxiv_id": "2604.03456",
     "dropped_claims": 0,
     "key": "gong2026earth",
+    "status": "carded"
+  },
+  "earthshift a benchmark for measuring robustness to real world distribution shifts in earth observation": {
+    "arxiv_id": "2605.29330",
+    "dropped_claims": 0,
+    "key": "doerksen2026earthshift",
     "status": "carded"
   },
   "easyspec an open source python package for long slit spectroscopy": {
@@ -454,6 +464,10 @@
     "dropped_claims": 1,
     "key": "polushko2026flood",
     "status": "carded"
+  },
+  "floro a multimodal geospatial foundation model for ecological remote sensing across sensors and scales": {
+    "key": "rodriguez2026floro",
+    "status": "quarantined"
   },
   "fluctuations clustering and interaction driven dynamics in sedimenting particles at low galileo numbers a neural network approach": {
     "key": "vovk2025fluctuations",
@@ -577,10 +591,22 @@
     "key": "basu2024geodesic",
     "status": "off_topic"
   },
+  "geospatial foundation model embeddings improve population estimation unevenly across space and scale": {
+    "arxiv_id": "2605.01650",
+    "dropped_claims": 0,
+    "key": "zhang2026geospatial",
+    "status": "carded"
+  },
   "geospatial foundation models for image analysis evaluating and enhancing nasa ibm prithvi s domain adaptability": {
     "arxiv_id": "2409.00489",
     "dropped_claims": 0,
     "key": "hsu2024geospatial",
+    "status": "carded"
+  },
+  "geovista geospatial vision tabular transformer for multimodal environment representation": {
+    "arxiv_id": "2605.14406",
+    "dropped_claims": 1,
+    "key": "liu2026geovista",
     "status": "carded"
   },
   "ggi lectures on boundary and asymptotic symmetries": {
@@ -875,6 +901,10 @@
     "key": "greco2025multi",
     "status": "off_topic"
   },
+  "nara anchor conditioned relation aware contextualization of heterogeneous geoentities": {
+    "key": "kim2026nara",
+    "status": "quarantined"
+  },
   "neural plasticity inspired multimodal foundation model for earth observation": {
     "arxiv_id": "2403.15356",
     "dropped_claims": 1,
@@ -892,6 +922,12 @@
   "no msp counterparts detected in gbt searches of spider candidates 4fgl j0935 3 0901 4fgl j1627 7 3219 and 4fgl j2212 4 0708": {
     "key": "corcoran2023msp",
     "status": "off_topic"
+  },
+  "no one knows the state of the art in geospatial foundation models": {
+    "arxiv_id": "2605.12678",
+    "dropped_claims": 0,
+    "key": "corley2026one",
+    "status": "carded"
   },
   "not so presto outcomes of sluggish prestin in outer hair cells": {
     "key": "-",
@@ -1421,6 +1457,12 @@
   "tracking advanced planetary systems tapas with harps n viii a wide orbit planetary companion in the hot jupiter system hd 118203": {
     "key": "maciejewski2024tracking",
     "status": "off_topic"
+  },
+  "trajganr trajectory centric urban multimodal learning via geospatially aligned neural representations": {
+    "arxiv_id": "2605.06990",
+    "dropped_claims": 0,
+    "key": "siampou2026trajganr",
+    "status": "carded"
   },
   "trick time and range integrity check using low earth orbiting satellite for securing gnss": {
     "key": "mumtaz2025trick",
