@@ -68,6 +68,9 @@
   "CropNet": [
     "tong2025invariant"
   ],
+  "Cross-Scale MAE": [
+    "thoreau2025parameter"
+  ],
   "DEM prior": [
     "thasma2026beyond"
   ],
@@ -76,6 +79,9 @@
   ],
   "DHS_surveys": [
     "pettersson2025leveraging"
+  ],
+  "DINO-MC": [
+    "thoreau2025parameter"
   ],
   "DINOv2": [
     "sharma2024kidsat"
@@ -88,6 +94,9 @@
   ],
   "DLRT": [
     "snyder2026compressing"
+  ],
+  "DiffusionSat": [
+    "jia2025can"
   ],
   "EFM_guided_generative_reconstruction": [
     "chen2026when"
@@ -163,6 +172,9 @@
   ],
   "KL_divergence": [
     "zhang2026geospatial"
+  ],
+  "Kronecker-product-attention": [
+    "si2025towards"
   ],
   "LMIC": [
     "metz2025application"
@@ -253,6 +265,9 @@
   ],
   "S12-MoCo": [
     "kaushik2026cryo"
+  ],
+  "SAR": [
+    "si2025towards"
   ],
   "SAR flood segmentation": [
     "thasma2026beyond"
@@ -467,9 +482,6 @@
   "building_damage_assessment": [
     "dietrich2025potential"
   ],
-  "burn_scar_mapping": [
-    "xie2024when"
-  ],
   "burned_area_mapping": [
     "shibli2026low"
   ],
@@ -590,6 +602,9 @@
   "continent_sampling": [
     "kaur2026pretrain"
   ],
+  "continent_wise_finetuning": [
+    "purohit2025how"
+  ],
   "continual_change_detection": [
     "kyselica2026towards"
   ],
@@ -643,6 +658,9 @@
   ],
   "cropland_mapping": [
     "zvonkov2025cropland"
+  ],
+  "cross-satellite-generalization": [
+    "si2025towards"
   ],
   "cross-scale-mae": [
     "tang2024cross"
@@ -803,6 +821,9 @@
   "embedding_concatenation": [
     "gilch2026how"
   ],
+  "embedding_deflection": [
+    "thoreau2025parameter"
+  ],
   "embedding_design": [
     "gilch2026how"
   ],
@@ -905,6 +926,9 @@
   "feature_engineering_free": [
     "lisaius2026embedding"
   ],
+  "feature_fusion": [
+    "jia2025can"
+  ],
   "federated-defi": [
     "sachan2026post"
   ],
@@ -997,6 +1021,9 @@
   ],
   "geoestimation": [
     "bianco2024enhancing"
+  ],
+  "geographic_sampling_strategy": [
+    "purohit2025how"
   ],
   "geolocation_features": [
     "karimzadeh2025performance"
@@ -1115,11 +1142,17 @@
   "hypernetwork": [
     "xiong2024neural"
   ],
+  "hyperparameter_optimization": [
+    "gomes2025terratorch"
+  ],
   "hyperparameter_optimization_protocol": [
     "simumba2025geo"
   ],
   "hyperparameter_tuning": [
     "sosa2024how"
+  ],
+  "hyperspectral": [
+    "si2025towards"
   ],
   "hyperspectral_foundation_model": [
     "tushar2026foundation"
@@ -1289,6 +1322,9 @@
   "lora_fine_tuning": [
     "vu2026clay"
   ],
+  "low-rank-attention": [
+    "si2025towards"
+  ],
   "low_rank_training": [
     "snyder2026compressing"
   ],
@@ -1306,9 +1342,6 @@
   ],
   "mars_crater_detection": [
     "hsu2024geospatial"
-  ],
-  "masked-autoencoder": [
-    "noman2024rethinking"
   ],
   "masked_autoencoder_pretraining": [
     "jakubik2023foundation"
@@ -1358,6 +1391,9 @@
   "missing_data_imputation": [
     "godwin2024seeing"
   ],
+  "mixture_of_experts": [
+    "jia2025can"
+  ],
   "mobile_phone_data": [
     "metz2025application"
   ],
@@ -1381,6 +1417,9 @@
   ],
   "msg_seviri_imagery": [
     "girtsou2025cloud"
+  ],
+  "multi-modal-fusion": [
+    "si2025towards"
   ],
   "multi-scale-pretraining": [
     "noman2024rethinking"
@@ -1441,6 +1480,9 @@
   ],
   "multiscale_kNN_evaluation": [
     "reed2022scale"
+  ],
+  "multispectral_adaptation": [
+    "thoreau2025parameter"
   ],
   "mutual_information_analysis": [
     "qu2026utilizing"
@@ -1516,6 +1558,9 @@
   ],
   "parameter_efficient_fine_tuning": [
     "shibli2026low"
+  ],
+  "parameter_efficient_finetuning": [
+    "thoreau2025parameter"
   ],
   "patch_density_fragmentation": [
     "orlowski2026sub"
@@ -1609,6 +1654,9 @@
   ],
   "pretraining_data_attribution": [
     "corley2026one"
+  ],
+  "pretraining_data_composition": [
+    "purohit2025how"
   ],
   "pretraining_data_diversity": [
     "kaur2026pretrain"
@@ -1820,6 +1868,9 @@
   "self_supervised_pretraining": [
     "choudhury2025rejepa"
   ],
+  "self_supervised_representation_learning": [
+    "jia2025can"
+  ],
   "semivariogram": [
     "chen2025enhancing"
   ],
@@ -1912,6 +1963,9 @@
   ],
   "speckle_noise": [
     "ye2026crossearth"
+  ],
+  "spectral-attention": [
+    "si2025towards"
   ],
   "spectral_entropy": [
     "kaur2026pretrain"
@@ -2036,6 +2090,9 @@
   "tomato_mapping": [
     "narimani2026mapping"
   ],
+  "toolkit": [
+    "gomes2025terratorch"
+  ],
   "torchgeo": [
     "fang2026earth"
   ],
@@ -2092,6 +2149,9 @@
   ],
   "universal_kriging_baseline": [
     "omalley2026context"
+  ],
+  "untangled_attention": [
+    "thoreau2025parameter"
   ],
   "urban_heat_island": [
     "fleckenstein2025detection"

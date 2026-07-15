@@ -106,6 +106,7 @@ promoted_tags:
 - air_temperature_prediction
 - biome_classification
 - building_density_estimation
+- burn_scar_mapping
 - calibration
 - cloud_gap_imputation
 - content_based_image_retrieval
@@ -130,6 +131,7 @@ promoted_tags:
 - location_encoder
 - lora_finetuning
 - malaria_prediction
+- masked-autoencoder
 - masked_autoencoder
 - model_compression
 - object_detection

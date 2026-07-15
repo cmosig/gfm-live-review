@@ -245,6 +245,12 @@
     "key": "yap2026callisto",
     "status": "off_topic"
   },
+  "can generative geospatial diffusion models excel as discriminative geospatial foundation models": {
+    "arxiv_id": "2503.07890",
+    "dropped_claims": 0,
+    "key": "jia2025can",
+    "status": "carded"
+  },
   "cardinality estimation using gumbel distribution": {
     "key": "ukasiewicz2020cardinality",
     "status": "off_topic"
@@ -735,6 +741,12 @@
     "key": "romero2026how",
     "status": "carded"
   },
+  "how does the spatial distribution of pre training data affect geospatial foundation models": {
+    "arxiv_id": "2501.12535",
+    "dropped_claims": 0,
+    "key": "purohit2025how",
+    "status": "carded"
+  },
   "how effective is pre training of large masked autoencoders for downstream earth observation tasks": {
     "arxiv_id": "2409.18536",
     "dropped_claims": 0,
@@ -1132,6 +1144,12 @@
   "osm billion level openstreetmap dataset for city wide experiments": {
     "key": "zheng2025osm",
     "status": "off_topic"
+  },
+  "parameter efficient adaptation of geospatial foundation models through embedding deflection": {
+    "arxiv_id": "2503.09493",
+    "dropped_claims": 1,
+    "key": "thoreau2025parameter",
+    "status": "carded"
   },
   "pedestrian crowd management experiments a data guidance paper": {
     "key": "boomers2023pedestrian",
@@ -1544,6 +1562,12 @@
     "key": "titus2019targeted",
     "status": "off_topic"
   },
+  "terratorch the geospatial foundation models toolkit": {
+    "arxiv_id": "2503.20563",
+    "dropped_claims": 0,
+    "key": "gomes2025terratorch",
+    "status": "carded"
+  },
   "tessera secure near line rate weight streaming for uma edge accelerators": {
     "key": "naskar2026tessera",
     "status": "off_topic"
@@ -1651,6 +1675,12 @@
   "towards scalable and generalizable earth observation data mining via foundation model composition": {
     "key": "chuc2025towards",
     "status": "quarantined"
+  },
+  "towards scalable foundation model for multi modal and hyperspectral geospatial data": {
+    "arxiv_id": "2503.12843",
+    "dropped_claims": 0,
+    "key": "si2025towards",
+    "status": "carded"
   },
   "tracking advanced planetary systems tapas with harps n viii a wide orbit planetary companion in the hot jupiter system hd 118203": {
     "key": "maciejewski2024tracking",
