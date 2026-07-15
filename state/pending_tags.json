@@ -149,6 +149,9 @@
   "LoRA_finetuning": [
     "szwarcman2024prithvi"
   ],
+  "MAE_pretraining": [
+    "zhang2026sigmae"
+  ],
   "MDI feature importance": [
     "benavidesmartinez2026what"
   ],
@@ -163,6 +166,9 @@
   ],
   "Moran's I clustering": [
     "hou2026slum"
+  ],
+  "NeuCo-Bench": [
+    "gilch2026how"
   ],
   "OpenStreetMap_integration": [
     "knoblauch2026spatial"
@@ -200,6 +206,9 @@
   "RemoteCLIP": [
     "kaushik2026cryo"
   ],
+  "ResNet_vs_ViT": [
+    "gilch2026how"
+  ],
   "S12-DINO": [
     "kaushik2026cryo"
   ],
@@ -224,6 +233,9 @@
   "SAR_MS_fusion": [
     "tanaka2025sensor"
   ],
+  "SAR_foundation_model": [
+    "ye2026crossearth"
+  ],
   "SHAP dimension importance": [
     "hou2026slum"
   ],
@@ -235,6 +247,9 @@
   ],
   "SSL4EO": [
     "mocharla2026probing"
+  ],
+  "SSL_objective_comparison": [
+    "gilch2026how"
   ],
   "SSL_pretraining_objective": [
     "romero2026how"
@@ -581,6 +596,9 @@
   "cryosphere": [
     "kaushik2026cryo"
   ],
+  "curriculum_masking": [
+    "zhang2026sigmae"
+  ],
   "data_augmentation": [
     "liu2026huiyanearth"
   ],
@@ -589,6 +607,9 @@
   ],
   "data_source_shift": [
     "doerksen2026earthshift"
+  ],
+  "data_standardization": [
+    "fang2026earth"
   ],
   "dataset_paper": [
     "mandal2026biomazon"
@@ -641,6 +662,9 @@
   "domain_gap_satellite_to_rgb": [
     "polushko2026flood"
   ],
+  "domain_generalization": [
+    "ye2026crossearth"
+  ],
   "domain_specific_MAE": [
     "perera2026clustering"
   ],
@@ -689,6 +713,12 @@
   "embedding_compression": [
     "ma2025harvesting"
   ],
+  "embedding_concatenation": [
+    "gilch2026how"
+  ],
+  "embedding_design": [
+    "gilch2026how"
+  ],
   "embedding_dimension_compression": [
     "hou2026aef"
   ],
@@ -703,6 +733,9 @@
   ],
   "embedding_interpretability": [
     "rahman2026physically"
+  ],
+  "embedding_products": [
+    "fang2026earth"
   ],
   "embeddings-as-data": [
     "feng2026tessera"
@@ -782,9 +815,6 @@
   "few-shot": [
     "kaushik2025assessing"
   ],
-  "field_boundary_delineation": [
-    "gupta2025time2agri"
-  ],
   "fine_tuning": [
     "ishikawa2025assessing"
   ],
@@ -796,6 +826,9 @@
   ],
   "fixed_embedding_products": [
     "corley2026from"
+  ],
+  "floating_objects_detection": [
+    "zhang2026sigmae"
   ],
   "flops_analysis": [
     "dionelis2025scaling"
@@ -1028,11 +1061,11 @@
   "input_label_resolution_mismatch": [
     "corley2026from"
   ],
+  "input_order_sensitivity": [
+    "muhawenayo2026prue"
+  ],
   "input_size_extrapolation": [
     "fuller2023croma"
-  ],
-  "instance_segmentation": [
-    "hsu2024geospatial"
   ],
   "int8_quantization": [
     "feng2025tessera"
@@ -1084,6 +1117,9 @@
   ],
   "laplacian_pyramid_decoder": [
     "reed2022scale"
+  ],
+  "layer_depth_analysis": [
+    "gilch2026how"
   ],
   "layer_pruning": [
     "barreiro2026simpler"
@@ -1331,6 +1367,9 @@
   "ordinal_classification": [
     "perez2026predicting"
   ],
+  "panoptic_segmentation": [
+    "muhawenayo2026prue"
+  ],
   "parameter_efficient_fine_tuning": [
     "shibli2026low"
   ],
@@ -1345,6 +1384,9 @@
   ],
   "phileo_bench": [
     "fibaek2024phileo"
+  ],
+  "physics_guided_MoE": [
+    "ye2026crossearth"
   ],
   "physics_informed_baseline": [
     "omalley2026context"
@@ -1382,6 +1424,9 @@
   "points_of_interest": [
     "hou2026aef"
   ],
+  "polarization_shift": [
+    "ye2026crossearth"
+  ],
   "pooling_strategies": [
     "corley2026from"
   ],
@@ -1405,6 +1450,9 @@
   ],
   "prediction_in_ungauged_basins": [
     "qu2026utilizing"
+  ],
+  "preprocessing_robustness": [
+    "muhawenayo2026prue"
   ],
   "pretraining-loss-vs-downstream": [
     "feng2026tessera"
@@ -1553,6 +1601,9 @@
   "scale_aware_positional_encoding": [
     "reed2022scale"
   ],
+  "scale_sensitivity": [
+    "muhawenayo2026prue"
+  ],
   "scale_shift": [
     "doerksen2026earthshift"
   ],
@@ -1570,6 +1621,9 @@
   ],
   "sea_ice_mapping": [
     "kaushik2026cryo"
+  ],
+  "search_retrieval": [
+    "fang2026earth"
   ],
   "seasonal_alignment": [
     "mocharla2026probing"
@@ -1658,6 +1712,9 @@
   "spatial_masking": [
     "tadesse2026satellite"
   ],
+  "spatial_pooling": [
+    "gilch2026how"
+  ],
   "spatial_scale_of_classes": [
     "plas2026better"
   ],
@@ -1673,8 +1730,14 @@
   "species_distribution_modeling": [
     "yusuf2024geospatial"
   ],
+  "speckle_noise": [
+    "ye2026crossearth"
+  ],
   "spectral_entropy": [
     "kaur2026pretrain"
+  ],
+  "spectral_index_guided_masking": [
+    "zhang2026sigmae"
   ],
   "spectral_temporal_metrics": [
     "lisaius2026embedding"
@@ -1730,6 +1793,9 @@
   "task-oriented semantic parsing": [
     "goel2023presto"
   ],
+  "taxonomy": [
+    "fang2026earth"
+  ],
   "teacher_student_pseudo_labeling": [
     "perez2026predicting"
   ],
@@ -1775,6 +1841,9 @@
   "tomato_mapping": [
     "narimani2026mapping"
   ],
+  "torchgeo": [
+    "fang2026earth"
+  ],
   "traditional_ML_vs_foundation_model": [
     "xie2024when"
   ],
@@ -1789,6 +1858,9 @@
   ],
   "trajectory_representation_learning": [
     "siampou2026trajganr"
+  ],
+  "translation_consistency": [
+    "muhawenayo2026prue"
   ],
   "tree_cover_density": [
     "orlowski2026sub"
@@ -1885,6 +1957,9 @@
   ],
   "west_africa": [
     "lisaius2026embedding"
+  ],
+  "wildfire_detection": [
+    "zhang2026sigmae"
   ],
   "wildfire_mapping": [
     "shibli2026low"

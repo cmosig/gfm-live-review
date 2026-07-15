@@ -307,6 +307,12 @@
     "key": "tang2024cross",
     "status": "carded"
   },
+  "crossearth sar a sar centric and billion scale geospatial foundation model for domain generalizable semantic segmentation": {
+    "arxiv_id": "2603.12008",
+    "dropped_claims": 0,
+    "key": "ye2026crossearth",
+    "status": "carded"
+  },
   "cryo bench benchmarking foundation models for cryosphere applications": {
     "arxiv_id": "2603.01576",
     "dropped_claims": 0,
@@ -370,6 +376,12 @@
   "dynamics of the velocity fluctuations in sedimenting suspensions of rigid fibres": {
     "key": "chiarini2025dynamics",
     "status": "off_topic"
+  },
+  "earth embeddings as products taxonomy ecosystem and standardized access": {
+    "arxiv_id": "2601.13134",
+    "dropped_claims": 0,
+    "key": "fang2026earth",
+    "status": "carded"
   },
   "earth embeddings reveal diverse urban signals from space": {
     "arxiv_id": "2604.03456",
@@ -669,6 +681,12 @@
     "key": "sosa2024how",
     "status": "carded"
   },
+  "how to embed matters evaluation of eo embedding design choices": {
+    "arxiv_id": "2603.10658",
+    "dropped_claims": 0,
+    "key": "gilch2026how",
+    "status": "carded"
+  },
   "huiyanearth sar a foundation model for high fidelity and low cost global remote sensing imagery generation": {
     "arxiv_id": "2604.11444",
     "dropped_claims": 0,
@@ -716,6 +734,10 @@
   "integrating evolutionary biology into physics classroom scaling dimension form and function": {
     "key": "das2024integrating",
     "status": "off_topic"
+  },
+  "interpolation of gedi biomass estimates with calibrated uncertainty quantification": {
+    "key": "young2026interpolation",
+    "status": "quarantined"
   },
   "intra query runtime elasticity for cloud native data analysis": {
     "key": "zhang2025intra",
@@ -889,6 +911,10 @@
     "key": "rahman2026mini",
     "status": "quarantined"
   },
+  "mobility embedded pois learning what a place is and how it is used from human movement": {
+    "key": "siampou2026mobility",
+    "status": "off_topic"
+  },
   "modularis modular relational analytics over heterogeneous distributed platforms": {
     "key": "koutsoukos2020modularis",
     "status": "off_topic"
@@ -961,6 +987,10 @@
   },
   "observation of low quadrupolar nuclei by surface enhanced nmr spectroscopy": {
     "key": "nagashima2020observation",
+    "status": "off_topic"
+  },
+  "observing health outcomes using remote sensing imagery and geo context guided visual transformer": {
+    "key": "li2026observing",
     "status": "off_topic"
   },
   "obstructions for quantitative measure equivalence between locally compact groups": {
@@ -1163,6 +1193,12 @@
     "key": "dabaja2026promptable",
     "status": "off_topic"
   },
+  "prue a practical recipe for field boundary segmentation at scale": {
+    "arxiv_id": "2603.27101",
+    "dropped_claims": 0,
+    "key": "muhawenayo2026prue",
+    "status": "carded"
+  },
   "pulsar detection with deep learning": {
     "key": "pendyala2025pulsar",
     "status": "off_topic"
@@ -1304,6 +1340,12 @@
     "key": "maches2024settling",
     "status": "quarantined"
   },
+  "sigmae a spectral index guided foundation model for multispectral remote sensing": {
+    "arxiv_id": "2603.07463",
+    "dropped_claims": 0,
+    "key": "zhang2026sigmae",
+    "status": "carded"
+  },
   "simpler efficient foundation model adaptation via similarity guided layer pruning for earth observation": {
     "arxiv_id": "2603.19873",
     "dropped_claims": 0,
@@ -1337,6 +1379,10 @@
   "spatiotemporal variations of temperature in jupiter s upper atmosphere": {
     "key": "roberts2025spatiotemporal",
     "status": "off_topic"
+  },
+  "spectral gaps and spatial priors studying hyperspectral downstream adaptation using terramind": {
+    "key": "leonardi2026spectral",
+    "status": "quarantined"
   },
   "spying on the quickly variable optical sky with the fast optical photometer sifap2": {
     "key": "illiano2024spying",
