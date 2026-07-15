@@ -97,6 +97,7 @@ promoted_tags:
 - PEFT
 - PlanetScope
 - RemoteCLIP
+- SAR
 - SSL4EO-S12
 - SatMAE
 - SatlasNet
@@ -133,7 +134,9 @@ promoted_tags:
 - malaria_prediction
 - masked-autoencoder
 - masked_autoencoder
+- masked_image_modeling
 - model_compression
+- monte_carlo_dropout
 - object_detection
 - retrieval_augmented_generation
 - satellite_embeddings

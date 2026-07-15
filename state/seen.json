@@ -517,6 +517,12 @@
     "key": "martiescofet2025fine",
     "status": "carded"
   },
+  "fine tuning of geospatial foundation models for aboveground biomass estimation": {
+    "arxiv_id": "2406.19888",
+    "dropped_claims": 0,
+    "key": "muszynski2024fine",
+    "status": "carded"
+  },
   "finetuning ai foundation models to develop subgrid scale parameterizations a case study on atmospheric gravity waves": {
     "arxiv_id": "2509.03816",
     "dropped_claims": 0,
@@ -695,6 +701,12 @@
     "arxiv_id": "2605.14406",
     "dropped_claims": 1,
     "key": "liu2026geovista",
+    "status": "carded"
+  },
+  "gfm4mpm towards geospatial foundation models for mineral prospectivity mapping": {
+    "arxiv_id": "2406.12756",
+    "dropped_claims": 0,
+    "key": "daruna2024gfm4mpm",
     "status": "carded"
   },
   "ggi lectures on boundary and asymptotic symmetries": {
@@ -1047,6 +1059,12 @@
     "key": "greco2025multi",
     "status": "off_topic"
   },
+  "multimodal contrastive learning of urban space representations from poi data": {
+    "arxiv_id": "2411.06229",
+    "dropped_claims": 0,
+    "key": "wang2024multimodal",
+    "status": "carded"
+  },
   "nara anchor conditioned relation aware contextualization of heterogeneous geoentities": {
     "key": "kim2026nara",
     "status": "quarantined"
@@ -1144,6 +1162,12 @@
   "osm billion level openstreetmap dataset for city wide experiments": {
     "key": "zheng2025osm",
     "status": "off_topic"
+  },
+  "pangaea a global and inclusive benchmark for geospatial foundation models": {
+    "arxiv_id": "2412.04204",
+    "dropped_claims": 0,
+    "key": "marsocci2024pangaea",
+    "status": "carded"
   },
   "parameter efficient adaptation of geospatial foundation models through embedding deflection": {
     "arxiv_id": "2503.09493",
@@ -1401,6 +1425,12 @@
     "key": "cong2022satmae",
     "status": "carded"
   },
+  "satvision toa a geospatial foundation model for coarse resolution all sky remote sensing imagery": {
+    "arxiv_id": "2411.17000",
+    "dropped_claims": 0,
+    "key": "spradlin2024satvision",
+    "status": "carded"
+  },
   "scalable analysis of bipartite experiments": {
     "arxiv_id": "2402.11070",
     "key": "shi2024scalable",
@@ -1439,6 +1469,10 @@
     "dropped_claims": 0,
     "key": "godwin2024seeing",
     "status": "carded"
+  },
+  "self supervised representation learning for geospatial objects a survey": {
+    "key": "chen2024self",
+    "status": "off_topic"
   },
   "sensor adaptive flood mapping with pre trained multi modal transformers across sar and multispectral modalities": {
     "arxiv_id": "2509.23035",

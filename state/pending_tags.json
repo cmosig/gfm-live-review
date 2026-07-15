@@ -1,4 +1,7 @@
 {
+  "3D_cloud_retrieval": [
+    "spradlin2024satvision"
+  ],
   "3d_cloud_reconstruction": [
     "girtsou2025cloud"
   ],
@@ -137,6 +140,9 @@
   "GEDI": [
     "banze2025hybiomass"
   ],
+  "GEDI labels": [
+    "muszynski2024fine"
+  ],
   "GEDI_gap_filling": [
     "young2026neural"
   ],
@@ -200,6 +206,9 @@
   "MMEarth": [
     "waithaka2025position"
   ],
+  "MODIS_TOA": [
+    "spradlin2024satvision"
+  ],
   "Mask2Former": [
     "lyu2026structure"
   ],
@@ -236,6 +245,9 @@
   "POI auxiliary features": [
     "hou2026slum"
   ],
+  "POI_representation_learning": [
+    "wang2024multimodal"
+  ],
   "Panopticon": [
     "banze2025hybiomass"
   ],
@@ -265,9 +277,6 @@
   ],
   "S12-MoCo": [
     "kaushik2026cryo"
-  ],
-  "SAR": [
-    "si2025towards"
   ],
   "SAR flood segmentation": [
     "thasma2026beyond"
@@ -317,6 +326,9 @@
   "SatMAE++": [
     "noman2024rethinking"
   ],
+  "SatVision-TOA": [
+    "spradlin2024satvision"
+  ],
   "Satlas": [
     "plekhanova2025ssl4eco"
   ],
@@ -346,6 +358,12 @@
   ],
   "SustainFM": [
     "ghamisi2025geospatial"
+  ],
+  "Swin-B backbone": [
+    "muszynski2024fine"
+  ],
+  "SwinV2": [
+    "spradlin2024satvision"
   ],
   "TreeSatAI": [
     "plekhanova2025ssl4eco"
@@ -400,6 +418,9 @@
   ],
   "airborne_RGB_imagery": [
     "polushko2026flood"
+  ],
+  "all_sky_imagery": [
+    "spradlin2024satvision"
   ],
   "alphaearth_late_fusion": [
     "mandal2026biomazon"
@@ -617,6 +638,9 @@
   "contrastive_alignment": [
     "cerna2025botaclip"
   ],
+  "contrastive_language_location_pretraining": [
+    "wang2024multimodal"
+  ],
   "contrastive_learning": [
     "liu2025beyond"
   ],
@@ -784,6 +808,9 @@
   ],
   "dsm_regression": [
     "hamoudzadeh2026inferring"
+  ],
+  "eco-region transfer": [
+    "muszynski2024fine"
   ],
   "ecotone representation": [
     "benavidesmartinez2026what"
@@ -1217,6 +1244,9 @@
   "int8_quantization": [
     "feng2025tessera"
   ],
+  "integrated_gradients": [
+    "daruna2024gfm4mpm"
+  ],
   "inter_stream_capacity_competition": [
     "hou2026aef"
   ],
@@ -1310,6 +1340,9 @@
   "location_embeddings": [
     "plas2026better"
   ],
+  "location_encoding": [
+    "wang2024multimodal"
+  ],
   "location_time_embeddings": [
     "szwarcman2024prithvi"
   ],
@@ -1385,6 +1418,9 @@
   "metadata_ablation": [
     "martiescofet2025fine"
   ],
+  "mineral_prospectivity_mapping": [
+    "daruna2024gfm4mpm"
+  ],
   "minority_crop_detection": [
     "shang2026benchmarking"
   ],
@@ -1409,9 +1445,6 @@
   "monotone_ordered_quantile_output": [
     "mandal2026biomazon"
   ],
-  "monte_carlo_dropout": [
-    "narimani2026mapping"
-  ],
   "mortality_prediction": [
     "liu2026geovista"
   ],
@@ -1426,6 +1459,9 @@
   ],
   "multi-scale-representation-learning": [
     "tang2024cross"
+  ],
+  "multi-spectral": [
+    "marsocci2024pangaea"
   ],
   "multi_scale_representation_learning": [
     "li2023assessment"
@@ -1516,6 +1552,9 @@
   ],
   "nighttime_lights": [
     "hou2026aef"
+  ],
+  "normalization_ablation": [
+    "marsocci2024pangaea"
   ],
   "nowcasting": [
     "zheng2026satellite"
@@ -1637,6 +1676,9 @@
   "position_prediction_ssl": [
     "waithaka2025position"
   ],
+  "positive_unlabeled_learning": [
+    "daruna2024gfm4mpm"
+  ],
   "post-quantum-cryptography": [
     "sachan2026post"
   ],
@@ -1750,6 +1792,9 @@
   ],
   "representation_similarity": [
     "barreiro2026simpler"
+  ],
+  "resolution_mismatch": [
+    "marsocci2024pangaea"
   ],
   "respiratory_infection_prediction": [
     "nazir2026alphaearth"
@@ -2161,6 +2206,9 @@
   ],
   "urban_signal_prediction": [
     "gong2026earth"
+  ],
+  "urban_space_embedding": [
+    "wang2024multimodal"
   ],
   "user revisions": [
     "goel2023presto"
