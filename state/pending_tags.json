@@ -443,9 +443,6 @@
   "concept_bottleneck_model": [
     "jia2025towards"
   ],
-  "content_based_image_retrieval": [
-    "choudhury2025rejepa"
-  ],
   "continual_change_detection": [
     "kyselica2026towards"
   ],
@@ -812,6 +809,9 @@
   "global_annual_embeddings": [
     "brown2025alphaearth"
   ],
+  "global_local_features": [
+    "tseng2025galileo"
+  ],
   "google_earth_engine": [
     "zvonkov2025cropland"
   ],
@@ -838,6 +838,9 @@
   ],
   "harmonic_medoid_features": [
     "ishikawa2025assessing"
+  ],
+  "hash_compression": [
+    "blumenstiel2024multi"
   ],
   "health_burden_prediction": [
     "gong2026earth"
@@ -886,6 +889,9 @@
   ],
   "image_geolocation": [
     "bianco2024enhancing"
+  ],
+  "image_retrieval": [
+    "blumenstiel2024multi"
   ],
   "image_to_gps_retrieval": [
     "cepeda2023geoclip"
@@ -1025,6 +1031,9 @@
   "masked_autoencoder_task_alignment": [
     "xie2024when"
   ],
+  "masked_modeling": [
+    "tseng2025galileo"
+  ],
   "masked_reconstruction": [
     "schmude2024prithvi"
   ],
@@ -1127,6 +1136,9 @@
   "multimodal_lidar_fusion": [
     "kristen2025habitat"
   ],
+  "multimodal_pretraining": [
+    "tseng2025galileo"
+  ],
   "multimodal_sensor_fusion": [
     "mandal2026biomazon"
   ],
@@ -1189,6 +1201,9 @@
   ],
   "patch_density_fragmentation": [
     "orlowski2026sub"
+  ],
+  "patch_size_tradeoff": [
+    "tseng2025galileo"
   ],
   "phenological_date_prediction": [
     "gupta2025time2agri"
@@ -1405,6 +1420,9 @@
   ],
   "self_supervised_change_scoring": [
     "tadesse2026watch"
+  ],
+  "self_supervised_learning": [
+    "tseng2025galileo"
   ],
   "self_supervised_pretraining": [
     "choudhury2025rejepa"
@@ -1624,6 +1642,9 @@
   ],
   "user revisions": [
     "goel2023presto"
+  ],
+  "vector_database": [
+    "blumenstiel2024multi"
   ],
   "vegetation_survey_supervision": [
     "cerna2025botaclip"

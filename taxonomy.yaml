@@ -95,6 +95,7 @@ promoted_tags:
 - biome_classification
 - building_density_estimation
 - cloud_gap_imputation
+- content_based_image_retrieval
 - country_classification
 - diffusion_model
 - disease_surveillance

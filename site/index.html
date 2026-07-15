@@ -111,14 +111,14 @@
         "2023-10": 1,
         "2023-11": 2,
         "2024-01": 1,
-        "2024-03": 3,
+        "2024-03": 4,
         "2024-04": 2,
         "2024-07": 2,
         "2024-08": 1,
         "2024-09": 2,
         "2024-12": 1,
         "2025-01": 1,
-        "2025-02": 1,
+        "2025-02": 2,
         "2025-03": 1,
         "2025-04": 1,
         "2025-05": 1,
@@ -142,13 +142,13 @@
         "2023-09": 1,
         "2023-10": 1,
         "2024-01": 1,
-        "2024-03": 2,
+        "2024-03": 3,
         "2024-04": 1,
         "2024-07": 1,
         "2024-08": 1,
         "2024-09": 2,
         "2024-12": 1,
-        "2025-02": 1,
+        "2025-02": 2,
         "2025-03": 1,
         "2025-04": 1,
         "2025-06": 2,
@@ -186,6 +186,7 @@
       },
       "human_semantics": {
         "2024-04": 1,
+        "2025-02": 1,
         "2025-03": 1,
         "2025-09": 1,
         "2026-01": 1,
@@ -292,10 +293,10 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 82,
-      "compute_cost": 39,
+      "benchmark_narrowness": 84,
+      "compute_cost": 41,
       "data_bias": 43,
-      "human_semantics": 9,
+      "human_semantics": 10,
       "interpretability": 13,
       "mixed_pixels": 19,
       "spatial_transfer": 50,
@@ -337,7 +338,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 97,
+    "n_papers": 99,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -361,9 +362,9 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 97
+      "verified": 99
     },
-    "n_papers": 97,
+    "n_papers": 99,
     "papers": [
       {
         "arxiv_id": "2607.08945",
@@ -1242,6 +1243,18 @@
         "venue": "arXiv"
       },
       {
+        "arxiv_id": "2502.09356",
+        "date": "2025-02-13",
+        "doi": "10.48550/arxiv.2502.09356",
+        "doi_status": "verified",
+        "key": "tseng2025galileo",
+        "link": "https://arxiv.org/abs/2502.09356",
+        "n_claims": 6,
+        "self_evaluation": true,
+        "title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+        "venue": "arXiv"
+      },
+      {
         "arxiv_id": "2501.02035",
         "date": "2025-01-03",
         "doi": "10.48550/arxiv.2501.02035",
@@ -1398,6 +1411,18 @@
         "venue": "arXiv"
       },
       {
+        "arxiv_id": "2403.02059",
+        "date": "2024-03-04",
+        "doi": "10.48550/arxiv.2403.02059",
+        "doi_status": "verified",
+        "key": "blumenstiel2024multi",
+        "link": "https://arxiv.org/abs/2403.02059",
+        "n_claims": 3,
+        "self_evaluation": false,
+        "title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+        "venue": "arXiv"
+      },
+      {
         "arxiv_id": "2401.15855",
         "date": "2024-01-29",
         "doi": "10.48550/arxiv.2401.15855",
@@ -1536,7 +1561,7 @@
     "all": {
       "axes": [
         {
-          "agreement": 0.647,
+          "agreement": 0.657,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -1586,6 +1611,38 @@
               "self_evaluation": false,
               "span": "retaining 96% baseline F1-macro (63.8% vs 66.6%)",
               "value": 63.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 89.31,
+              "dataset": "BigEarthNet-43",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "Prithvi processes six bands and achieves a mean Average Precision of 97.62% on BigEarthNet-43",
+              "value": 97.62
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 38.92,
+              "dataset": "ForestNet-12",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "44.51% on ForestNet-12, outperforming other RGB-based models",
+              "value": 44.51
             },
             {
               "baseline": "task_specific",
@@ -3236,6 +3293,38 @@
               "value": 0.7512
             },
             {
+              "baseline": "croma",
+              "baseline_value": 85.6,
+              "dataset": "m-EuroSat",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "Galileo-Base is the best model for im- age classification (%) by kNN",
+              "value": 93.0
+            },
+            {
+              "baseline": "croma",
+              "baseline_value": 78.9,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "The Galileo models excel at image segmentation measured by % mIoU via lin- ear probing",
+              "value": 79.4
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 0.2063,
               "dataset": "PACE OCI L1B/L2 AOD",
@@ -3462,9 +3551,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 120,
-          "n_papers": 34,
-          "n_papers_all": 52
+          "n_claims": 124,
+          "n_papers": 35,
+          "n_papers_all": 54
         },
         {
           "agreement": 0.643,
@@ -4077,13 +4166,29 @@
               "self_evaluation": false,
               "span": "Satlas-Pretrain overtakes it from m≥1m{\\geq}1 onward and gains 7.5 points by m=6m{=}6 (97.5% vs. 90.0%)",
               "value": 90.0
+            },
+            {
+              "baseline": "croma",
+              "baseline_value": 51.3,
+              "dataset": "m-EuroSat",
+              "direction": "better",
+              "label_ratio": 0.01,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "Galileo-Base is the best model for im- age classification (%) by kNN",
+              "value": 56.6
             }
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 38,
+          "n_claims": 39,
           "n_papers": 14,
-          "n_papers_all": 22
+          "n_papers_all": 23
         },
         {
           "agreement": 0.792,
@@ -5559,7 +5664,7 @@
           "n_papers_all": 12
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.75,
           "axis": "G6_compactness",
           "claims": [
             {
@@ -5593,6 +5698,22 @@
               "self_evaluation": false,
               "span": "required to recover 98% of baseline classification performance varies substantially",
               "value": 98.0
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "BigEarthNet-43",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Sec 5",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "which is also represented by a 92.58 mAP",
+              "value": 92.58
             },
             {
               "baseline": "prithvi",
@@ -5721,13 +5842,29 @@
               "self_evaluation": false,
               "span": "F1 score of 0.896 and mIoU of 0.886 in the optimal sensor-fusion scenario",
               "value": 0.896
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 58.91,
+              "dataset": "EuroSat",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 7",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "Deep targets combined with structured space-time mask- ing excels in global feature extraction",
+              "value": 89.5
             }
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 10,
-          "n_papers": 3,
-          "n_papers_all": 10
+          "n_claims": 12,
+          "n_papers": 4,
+          "n_papers_all": 12
         },
         {
           "agreement": null,
@@ -6091,6 +6228,22 @@
               "value": 0.9
             },
             {
+              "baseline": "croma",
+              "baseline_value": 64.2,
+              "dataset": "MADOS",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "The Galileo models excel at image segmentation measured by % mIoU via lin- ear probing",
+              "value": 67.6
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 81.03,
               "dataset": "Sen1Floods11",
@@ -6109,9 +6262,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 16,
+          "n_claims": 17,
           "n_papers": 6,
-          "n_papers_all": 11
+          "n_papers_all": 12
         },
         {
           "agreement": 1.0,
@@ -6577,6 +6730,22 @@
               "value": 0.172
             },
             {
+              "baseline": "presto",
+              "baseline_value": 84.0,
+              "dataset": "CropHarvest",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 6",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "The Galileo models are the best (-Base) and second-best (-Tiny) models for pixel timeseries classification",
+              "value": 84.2
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 71.6,
               "dataset": "AID",
@@ -6611,9 +6780,9 @@
           ],
           "direction": "better",
           "label": "consensus",
-          "n_claims": 20,
+          "n_claims": 21,
           "n_papers": 7,
-          "n_papers_all": 14
+          "n_papers_all": 15
         },
         {
           "agreement": null,
@@ -6903,6 +7072,22 @@
               "value": 0.896
             },
             {
+              "baseline": "croma",
+              "baseline_value": 78.9,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "The Galileo models excel at image segmentation measured by % mIoU via lin- ear probing",
+              "value": 79.4
+            },
+            {
               "baseline": null,
               "baseline_value": null,
               "dataset": "Sen1Floods11",
@@ -6958,11 +7143,12 @@
           ],
           "models": [
             "dofa",
+            "galileo",
             "presto",
             "prithvi"
           ],
-          "n_claims": 20,
-          "n_papers": 9,
+          "n_claims": 21,
+          "n_papers": 10,
           "n_vs_task_specific": 10,
           "name": "Sen1Floods11",
           "tasks": [
@@ -7065,6 +7251,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 58.91,
+              "dataset": "EuroSat",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 7",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "Deep targets combined with structured space-time mask- ing excels in global feature extraction",
+              "value": 89.5
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 54.3,
               "dataset": "EuroSAT",
               "direction": "better",
@@ -7087,25 +7289,142 @@
             "alphaearth",
             "croma",
             "dofa",
+            "galileo",
             "prithvi",
             "satmae",
             "tessera"
           ],
-          "n_claims": 6,
-          "n_papers": 5,
-          "n_vs_task_specific": 3,
+          "n_claims": 7,
+          "n_papers": 6,
+          "n_vs_task_specific": 4,
           "name": "EuroSAT",
           "tasks": [
-            "land_cover_classification"
+            "land_cover_classification",
+            "representation_probing"
           ],
           "variants": [
-            "EuroSAT"
+            "EuroSAT",
+            "EuroSat"
           ],
           "verdict": {
-            "agreement": 0.667,
+            "agreement": 0.75,
             "direction": "better",
             "label": "contested",
-            "n_papers": 3
+            "n_papers": 4
+          }
+        },
+        {
+          "benchmark": "bigearthnet",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 89.31,
+              "dataset": "BigEarthNet-43",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "Prithvi processes six bands and achieves a mean Average Precision of 97.62% on BigEarthNet-43",
+              "value": 97.62
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "BigEarthNet-43",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Sec 5",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "which is also represented by a 92.58 mAP",
+              "value": 92.58
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.62,
+              "dataset": "BigEarthNet",
+              "direction": "worse",
+              "label_ratio": 0.1,
+              "link": "https://arxiv.org/abs/2207.08051",
+              "locator": "Table 9",
+              "metric": "auc",
+              "model": "satmae",
+              "paper_key": "cong2022satmae",
+              "paper_title": "SatMAE: Pre-training Transformers for Temporal and Multi-Spectral Satellite Imagery",
+              "self_evaluation": true,
+              "span": "SeCo [35] ResNet50 82.62",
+              "value": 82.13
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "BigEarthNet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2311.00566",
+              "locator": "Table 4",
+              "metric": "f1",
+              "model": "croma",
+              "paper_key": "fuller2023croma",
+              "paper_title": "CROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders",
+              "self_evaluation": false,
+              "span": "SatViT-V2 [74]\n79.80",
+              "value": 86.24
+            },
+            {
+              "baseline": null,
+              "baseline_value": 79.4,
+              "dataset": "BigEarthNet (1%)",
+              "direction": "better",
+              "label_ratio": 0.01,
+              "link": "https://arxiv.org/abs/2311.00566",
+              "locator": "Table 5",
+              "metric": "f1",
+              "model": "croma",
+              "paper_key": "fuller2023croma",
+              "paper_title": "CROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders",
+              "self_evaluation": false,
+              "span": "DeCUR\n73.7\n79.4",
+              "value": 81.8
+            }
+          ],
+          "metrics": [
+            "accuracy",
+            "auc",
+            "f1"
+          ],
+          "models": [
+            "croma",
+            "prithvi",
+            "satmae"
+          ],
+          "n_claims": 5,
+          "n_papers": 3,
+          "n_vs_task_specific": 2,
+          "name": "BigEarthNet",
+          "tasks": [
+            "land_cover_classification",
+            "representation_probing"
+          ],
+          "variants": [
+            "BigEarthNet",
+            "BigEarthNet (1%)",
+            "BigEarthNet-43"
+          ],
+          "verdict": {
+            "agreement": 0.5,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 2
           }
         },
         {
@@ -7203,6 +7522,100 @@
             "direction": "better",
             "label": "thin",
             "n_papers": 2
+          }
+        },
+        {
+          "benchmark": "mados",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": 66.9,
+              "dataset": "MADOS",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2603.19873",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "barreiro2026simpler",
+              "paper_title": "SIMPLER: Efficient Foundation Model Adaptation via Similarity-Guided Layer Pruning for Earth Observation",
+              "self_evaluation": false,
+              "span": "SIMPLER (Ours) 64.57 64.57",
+              "value": 62.8
+            },
+            {
+              "baseline": null,
+              "baseline_value": 69.6,
+              "dataset": "MADOS",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2603.19873",
+              "locator": "Sec 4.3",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "barreiro2026simpler",
+              "paper_title": "SIMPLER: Efficient Foundation Model Adaptation via Similarity-Guided Layer Pruning for Earth Observation",
+              "self_evaluation": false,
+              "span": "SIMPLER retains 89% of baseline (mIoU 62.2% vs 69.6%)",
+              "value": 62.2
+            },
+            {
+              "baseline": "croma",
+              "baseline_value": 64.2,
+              "dataset": "MADOS",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "The Galileo models excel at image segmentation measured by % mIoU via lin- ear probing",
+              "value": 67.6
+            },
+            {
+              "baseline": null,
+              "baseline_value": 61.7,
+              "dataset": "MADOS",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.06312",
+              "locator": "Table 6",
+              "metric": "accuracy",
+              "model": "dofa",
+              "paper_key": "xiong2025dofa",
+              "paper_title": "DOFA-CLIP: Multimodal Vision-Language Foundation Models for Earth Observation",
+              "self_evaluation": true,
+              "span": "DOFA-CLIP-B w/ MaKA",
+              "value": 62.3
+            }
+          ],
+          "metrics": [
+            "accuracy",
+            "miou"
+          ],
+          "models": [
+            "dofa",
+            "galileo",
+            "prithvi"
+          ],
+          "n_claims": 4,
+          "n_papers": 3,
+          "n_vs_task_specific": 0,
+          "name": "MADOS",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "MADOS"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
           }
         },
         {
@@ -7448,6 +7861,118 @@
           }
         },
         {
+          "benchmark": "cropharvest",
+          "claims": [
+            {
+              "baseline": "presto",
+              "baseline_value": 84.0,
+              "dataset": "CropHarvest",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 6",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "The Galileo models are the best (-Base) and second-best (-Tiny) models for pixel timeseries classification",
+              "value": 84.2
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.808",
+              "value": 0.808
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.88,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.897",
+              "value": 0.897
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.745",
+              "value": 0.745
+            },
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 0.745,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.808",
+              "value": 0.808
+            }
+          ],
+          "metrics": [
+            "accuracy",
+            "f1"
+          ],
+          "models": [
+            "alphaearth",
+            "galileo",
+            "presto"
+          ],
+          "n_claims": 5,
+          "n_papers": 2,
+          "n_vs_task_specific": 3,
+          "name": "CropHarvest",
+          "tasks": [
+            "crop_type_mapping",
+            "land_cover_classification"
+          ],
+          "variants": [
+            "CropHarvest",
+            "CropHarvest Togo test set"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "eurocrops",
           "claims": [
             {
@@ -7555,153 +8080,74 @@
           }
         },
         {
-          "benchmark": "bigearthnet",
+          "benchmark": "m eurosat",
           "claims": [
             {
-              "baseline": "task_specific",
-              "baseline_value": 82.62,
-              "dataset": "BigEarthNet",
-              "direction": "worse",
-              "label_ratio": 0.1,
-              "link": "https://arxiv.org/abs/2207.08051",
-              "locator": "Table 9",
-              "metric": "auc",
-              "model": "satmae",
-              "paper_key": "cong2022satmae",
-              "paper_title": "SatMAE: Pre-training Transformers for Temporal and Multi-Spectral Satellite Imagery",
-              "self_evaluation": true,
-              "span": "SeCo [35] ResNet50 82.62",
-              "value": 82.13
-            },
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "BigEarthNet",
+              "baseline": "croma",
+              "baseline_value": 85.6,
+              "dataset": "m-EuroSat",
               "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2311.00566",
-              "locator": "Table 4",
-              "metric": "f1",
-              "model": "croma",
-              "paper_key": "fuller2023croma",
-              "paper_title": "CROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders",
-              "self_evaluation": false,
-              "span": "SatViT-V2 [74]\n79.80",
-              "value": 86.24
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "Galileo-Base is the best model for im- age classification (%) by kNN",
+              "value": 93.0
             },
             {
-              "baseline": null,
-              "baseline_value": 79.4,
-              "dataset": "BigEarthNet (1%)",
+              "baseline": "croma",
+              "baseline_value": 51.3,
+              "dataset": "m-EuroSat",
               "direction": "better",
               "label_ratio": 0.01,
-              "link": "https://arxiv.org/abs/2311.00566",
-              "locator": "Table 5",
-              "metric": "f1",
-              "model": "croma",
-              "paper_key": "fuller2023croma",
-              "paper_title": "CROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders",
-              "self_evaluation": false,
-              "span": "DeCUR\n73.7\n79.4",
-              "value": 81.8
-            }
-          ],
-          "metrics": [
-            "auc",
-            "f1"
-          ],
-          "models": [
-            "croma",
-            "satmae"
-          ],
-          "n_claims": 3,
-          "n_papers": 2,
-          "n_vs_task_specific": 1,
-          "name": "BigEarthNet",
-          "tasks": [
-            "land_cover_classification",
-            "representation_probing"
-          ],
-          "variants": [
-            "BigEarthNet",
-            "BigEarthNet (1%)"
-          ],
-          "verdict": {
-            "agreement": 1.0,
-            "direction": "worse",
-            "label": "thin",
-            "n_papers": 1
-          }
-        },
-        {
-          "benchmark": "mados",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": 66.9,
-              "dataset": "MADOS",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2603.19873",
-              "locator": "Table 2",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "barreiro2026simpler",
-              "paper_title": "SIMPLER: Efficient Foundation Model Adaptation via Similarity-Guided Layer Pruning for Earth Observation",
-              "self_evaluation": false,
-              "span": "SIMPLER (Ours) 64.57 64.57",
-              "value": 62.8
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "Galileo-Base is the best model for im- age classification (%) by kNN",
+              "value": 56.6
             },
             {
-              "baseline": null,
-              "baseline_value": 69.6,
-              "dataset": "MADOS",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2603.19873",
-              "locator": "Sec 4.3",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "barreiro2026simpler",
-              "paper_title": "SIMPLER: Efficient Foundation Model Adaptation via Similarity-Guided Layer Pruning for Earth Observation",
-              "self_evaluation": false,
-              "span": "SIMPLER retains 89% of baseline (mIoU 62.2% vs 69.6%)",
-              "value": 62.2
-            },
-            {
-              "baseline": null,
-              "baseline_value": 61.7,
-              "dataset": "MADOS",
+              "baseline": "croma",
+              "baseline_value": 90.1,
+              "dataset": "m-eurosat",
               "direction": "better",
               "label_ratio": null,
-              "link": "https://arxiv.org/abs/2503.06312",
-              "locator": "Table 6",
+              "link": "https://arxiv.org/abs/2403.15356",
+              "locator": "Table 1",
               "metric": "accuracy",
               "model": "dofa",
-              "paper_key": "xiong2025dofa",
-              "paper_title": "DOFA-CLIP: Multimodal Vision-Language Foundation Models for Earth Observation",
+              "paper_key": "xiong2024neural",
+              "paper_title": "Neural Plasticity-Inspired Multimodal Foundation Model for Earth Observation",
               "self_evaluation": true,
-              "span": "DOFA-CLIP-B w/ MaKA",
-              "value": 62.3
+              "span": "DOFA ViT-L 67.5 54.6 96.9 97.3 60.1 97.1",
+              "value": 97.1
             }
           ],
           "metrics": [
-            "accuracy",
-            "miou"
+            "accuracy"
           ],
           "models": [
             "dofa",
-            "prithvi"
+            "galileo"
           ],
           "n_claims": 3,
           "n_papers": 2,
           "n_vs_task_specific": 0,
-          "name": "MADOS",
+          "name": "m-EuroSat",
           "tasks": [
-            "semantic_segmentation"
+            "land_cover_classification"
           ],
           "variants": [
-            "MADOS"
+            "m-EuroSat",
+            "m-eurosat"
           ],
           "verdict": {
             "agreement": null,
@@ -8994,99 +9440,6 @@
             "AQS PM2.5 (WR spatial split)",
             "AQS PM2.5 checkerboard delta=30 (West->East)",
             "AQS PM2.5 checkerboard delta=8"
-          ],
-          "verdict": {
-            "agreement": 1.0,
-            "direction": "better",
-            "label": "thin",
-            "n_papers": 1
-          }
-        },
-        {
-          "benchmark": "cropharvest togo",
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.75,
-              "dataset": "CropHarvest Togo test set",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.02923",
-              "locator": "Table 2",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "zvonkov2025cropland",
-              "paper_title": "Cropland Mapping using Geospatial Embeddings",
-              "self_evaluation": false,
-              "span": "0.808",
-              "value": 0.808
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.88,
-              "dataset": "CropHarvest Togo test set",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.02923",
-              "locator": "Table 2",
-              "metric": "accuracy",
-              "model": "presto",
-              "paper_key": "zvonkov2025cropland",
-              "paper_title": "Cropland Mapping using Geospatial Embeddings",
-              "self_evaluation": false,
-              "span": "0.897",
-              "value": 0.897
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.75,
-              "dataset": "CropHarvest Togo test set",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.02923",
-              "locator": "Table 2",
-              "metric": "f1",
-              "model": "alphaearth",
-              "paper_key": "zvonkov2025cropland",
-              "paper_title": "Cropland Mapping using Geospatial Embeddings",
-              "self_evaluation": false,
-              "span": "0.745",
-              "value": 0.745
-            },
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 0.745,
-              "dataset": "CropHarvest Togo test set",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.02923",
-              "locator": "Table 2",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "zvonkov2025cropland",
-              "paper_title": "Cropland Mapping using Geospatial Embeddings",
-              "self_evaluation": false,
-              "span": "0.808",
-              "value": 0.808
-            }
-          ],
-          "metrics": [
-            "accuracy",
-            "f1"
-          ],
-          "models": [
-            "alphaearth",
-            "presto"
-          ],
-          "n_claims": 4,
-          "n_papers": 1,
-          "n_vs_task_specific": 3,
-          "name": "CropHarvest Togo test set",
-          "tasks": [
-            "land_cover_classification"
-          ],
-          "variants": [
-            "CropHarvest Togo test set"
           ],
           "verdict": {
             "agreement": 1.0,
@@ -13635,6 +13988,49 @@
           }
         },
         {
+          "benchmark": "forestnet 12",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 38.92,
+              "dataset": "ForestNet-12",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "44.51% on ForestNet-12, outperforming other RGB-based models",
+              "value": 44.51
+            }
+          ],
+          "metrics": [
+            "accuracy"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "ForestNet-12",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "ForestNet-12"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "forward pass mac comparison",
           "claims": [
             {
@@ -14449,49 +14845,6 @@
             "direction": "better",
             "label": "thin",
             "n_papers": 1
-          }
-        },
-        {
-          "benchmark": "m eurosat",
-          "claims": [
-            {
-              "baseline": "croma",
-              "baseline_value": 90.1,
-              "dataset": "m-eurosat",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2403.15356",
-              "locator": "Table 1",
-              "metric": "accuracy",
-              "model": "dofa",
-              "paper_key": "xiong2024neural",
-              "paper_title": "Neural Plasticity-Inspired Multimodal Foundation Model for Earth Observation",
-              "self_evaluation": true,
-              "span": "DOFA ViT-L 67.5 54.6 96.9 97.3 60.1 97.1",
-              "value": 97.1
-            }
-          ],
-          "metrics": [
-            "accuracy"
-          ],
-          "models": [
-            "dofa"
-          ],
-          "n_claims": 1,
-          "n_papers": 1,
-          "n_vs_task_specific": 0,
-          "name": "m-eurosat",
-          "tasks": [
-            "land_cover_classification"
-          ],
-          "variants": [
-            "m-eurosat"
-          ],
-          "verdict": {
-            "agreement": null,
-            "direction": null,
-            "label": "gap",
-            "n_papers": 0
           }
         },
         {
@@ -15692,6 +16045,54 @@
               "value": 83.33
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 89.31,
+              "dataset": "BigEarthNet-43",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "Prithvi processes six bands and achieves a mean Average Precision of 97.62% on BigEarthNet-43",
+              "value": 97.62
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 38.92,
+              "dataset": "ForestNet-12",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "44.51% on ForestNet-12, outperforming other RGB-based models",
+              "value": 44.51
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "BigEarthNet-43",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Sec 5",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "which is also represented by a 92.58 mAP",
+              "value": 92.58
+            },
+            {
               "baseline": "galileo",
               "baseline_value": 89.4,
               "dataset": "forward-pass MAC comparison",
@@ -16605,6 +17006,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 58.91,
+              "dataset": "EuroSat",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 7",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "Deep targets combined with structured space-time mask- ing excels in global feature extraction",
+              "value": 89.5
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.2063,
               "dataset": "PACE OCI L1B/L2 AOD",
               "direction": "better",
@@ -16660,6 +17077,7 @@
             "BEN-14K (S2)",
             "BEN-14K / FMoW-RGB / FMoW-Sentinel",
             "BigEarthNet (1%)",
+            "BigEarthNet-43",
             "Biome (SatCLIP+SatMAE image)",
             "Butterfly occurrence (French Alps)",
             "CHN-Econ",
@@ -16673,8 +17091,10 @@
             "ERA5 gravity wave flux (monthly-averaged)",
             "Ecoregions (Africa, few-shot)",
             "Elevation",
+            "EuroSat",
             "FLUXNET/AmeriFlux/ICOS GPP flux towers",
             "FMoW-RGB",
+            "ForestNet-12",
             "GADM country codes",
             "GAMa (BDD100k)",
             "GPW v4 population density",
@@ -16706,6 +17126,7 @@
             "alphaearth",
             "croma",
             "dofa",
+            "galileo",
             "geoclip",
             "presto",
             "prithvi",
@@ -16713,24 +17134,24 @@
             "satmae",
             "scalemae"
           ],
-          "n_claims": 62,
-          "n_papers": 27,
+          "n_claims": 66,
+          "n_papers": 29,
           "task": "representation_probing"
         }
       ],
       "evidence": {
         "directions": {
-          "better": 137,
+          "better": 140,
           "parity": 7,
           "worse": 34
         },
-        "label_ratio_unspecified": 280,
-        "n_claims": 310,
-        "n_self_eval_claims": 54,
-        "n_vs_model_or_none": 132,
-        "n_vs_task_specific": 178,
-        "pct_better": 77.0,
-        "pct_label_ratio_unspecified": 90.3
+        "label_ratio_unspecified": 285,
+        "n_claims": 319,
+        "n_self_eval_claims": 60,
+        "n_vs_model_or_none": 138,
+        "n_vs_task_specific": 181,
+        "pct_better": 77.3,
+        "pct_label_ratio_unspecified": 89.3
       },
       "groups": [
         {
@@ -17860,6 +18281,36 @@
           "label_regime": "unspecified",
           "metric": "accuracy",
           "model": "croma",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "presto",
+          "claims": [
+            {
+              "baseline": "presto",
+              "baseline_value": 84.0,
+              "dataset": "CropHarvest",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 6",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "The Galileo models are the best (-Base) and second-best (-Tiny) models for pixel timeseries classification",
+              "value": 84.2
+            }
+          ],
+          "dataset": "CropHarvest",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "galileo",
           "n_papers": 1,
           "task": "crop_type_mapping"
         },
@@ -19696,6 +20147,36 @@
           "label_regime": "unspecified",
           "metric": "f1",
           "model": "dofa",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "croma",
+          "claims": [
+            {
+              "baseline": "croma",
+              "baseline_value": 78.9,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "The Galileo models excel at image segmentation measured by % mIoU via lin- ear probing",
+              "value": 79.4
+            }
+          ],
+          "dataset": "Sen1Floods11",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "galileo",
           "n_papers": 1,
           "task": "flood_mapping"
         },
@@ -21561,6 +22042,66 @@
           "claims": [
             {
               "baseline": "croma",
+              "baseline_value": 85.6,
+              "dataset": "m-EuroSat",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "Galileo-Base is the best model for im- age classification (%) by kNN",
+              "value": 93.0
+            }
+          ],
+          "dataset": "m-EuroSat",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "accuracy",
+          "model": "galileo",
+          "n_papers": 1,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "croma",
+          "claims": [
+            {
+              "baseline": "croma",
+              "baseline_value": 51.3,
+              "dataset": "m-EuroSat",
+              "direction": "better",
+              "label_ratio": 0.01,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "Galileo-Base is the best model for im- age classification (%) by kNN",
+              "value": 56.6
+            }
+          ],
+          "dataset": "m-EuroSat",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_scarce",
+          "metric": "accuracy",
+          "model": "galileo",
+          "n_papers": 1,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "croma",
+          "claims": [
+            {
+              "baseline": "croma",
               "baseline_value": 90.1,
               "dataset": "m-eurosat",
               "direction": "better",
@@ -22479,6 +23020,66 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 89.31,
+              "dataset": "BigEarthNet-43",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "Prithvi processes six bands and achieves a mean Average Precision of 97.62% on BigEarthNet-43",
+              "value": 97.62
+            }
+          ],
+          "dataset": "BigEarthNet-43",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "BigEarthNet-43",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Sec 5",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "which is also represented by a 92.58 mAP",
+              "value": 92.58
+            }
+          ],
+          "dataset": "BigEarthNet-43",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 68.9,
               "dataset": "Biome (SatCLIP+SatMAE image)",
               "direction": "better",
@@ -22933,6 +23534,36 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 58.91,
+              "dataset": "EuroSat",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 7",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "Deep targets combined with structured space-time mask- ing excels in global feature extraction",
+              "value": 89.5
+            }
+          ],
+          "dataset": "EuroSat",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "galileo",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.68,
               "dataset": "FLUXNET/AmeriFlux/ICOS GPP flux towers",
               "direction": "better",
@@ -22984,6 +23615,36 @@
           "label_regime": "unspecified",
           "metric": "accuracy",
           "model": "scalemae",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 38.92,
+              "dataset": "ForestNet-12",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "44.51% on ForestNet-12, outperforming other RGB-based models",
+              "value": 44.51
+            }
+          ],
+          "dataset": "ForestNet-12",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "prithvi",
           "n_papers": 1,
           "task": "representation_probing"
         },
@@ -24472,6 +25133,36 @@
           "label_regime": "unspecified",
           "metric": "accuracy",
           "model": "dofa",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "croma",
+          "claims": [
+            {
+              "baseline": "croma",
+              "baseline_value": 64.2,
+              "dataset": "MADOS",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "The Galileo models excel at image segmentation measured by % mIoU via lin- ear probing",
+              "value": 67.6
+            }
+          ],
+          "dataset": "MADOS",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "galileo",
           "n_papers": 1,
           "task": "semantic_segmentation"
         },
@@ -27140,6 +27831,134 @@
             "n_claims": 7,
             "n_papers": 3,
             "n_papers_all": 4,
+            "task": "semantic_segmentation"
+          },
+          "galileo\tcrop_type_mapping": {
+            "agreement": null,
+            "claims": [
+              {
+                "baseline": "presto",
+                "baseline_value": 84.0,
+                "dataset": "CropHarvest",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2502.09356",
+                "locator": "Table 6",
+                "metric": "accuracy",
+                "model": "galileo",
+                "paper_key": "tseng2025galileo",
+                "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+                "self_evaluation": true,
+                "span": "The Galileo models are the best (-Base) and second-best (-Tiny) models for pixel timeseries classification",
+                "value": 84.2
+              }
+            ],
+            "direction": null,
+            "label": "gap",
+            "model": "galileo",
+            "n_claims": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
+            "task": "crop_type_mapping"
+          },
+          "galileo\tflood_mapping": {
+            "agreement": null,
+            "claims": [
+              {
+                "baseline": "croma",
+                "baseline_value": 78.9,
+                "dataset": "Sen1Floods11",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2502.09356",
+                "locator": "Table 5",
+                "metric": "miou",
+                "model": "galileo",
+                "paper_key": "tseng2025galileo",
+                "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+                "self_evaluation": true,
+                "span": "The Galileo models excel at image segmentation measured by % mIoU via lin- ear probing",
+                "value": 79.4
+              }
+            ],
+            "direction": null,
+            "label": "gap",
+            "model": "galileo",
+            "n_claims": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
+            "task": "flood_mapping"
+          },
+          "galileo\tland_cover_classification": {
+            "agreement": null,
+            "claims": [
+              {
+                "baseline": "croma",
+                "baseline_value": 85.6,
+                "dataset": "m-EuroSat",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2502.09356",
+                "locator": "Table 3",
+                "metric": "accuracy",
+                "model": "galileo",
+                "paper_key": "tseng2025galileo",
+                "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+                "self_evaluation": true,
+                "span": "Galileo-Base is the best model for im- age classification (%) by kNN",
+                "value": 93.0
+              },
+              {
+                "baseline": "croma",
+                "baseline_value": 51.3,
+                "dataset": "m-EuroSat",
+                "direction": "better",
+                "label_ratio": 0.01,
+                "link": "https://arxiv.org/abs/2502.09356",
+                "locator": "Table 3",
+                "metric": "accuracy",
+                "model": "galileo",
+                "paper_key": "tseng2025galileo",
+                "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+                "self_evaluation": true,
+                "span": "Galileo-Base is the best model for im- age classification (%) by kNN",
+                "value": 56.6
+              }
+            ],
+            "direction": null,
+            "label": "gap",
+            "model": "galileo",
+            "n_claims": 2,
+            "n_papers": 0,
+            "n_papers_all": 1,
+            "task": "land_cover_classification"
+          },
+          "galileo\tsemantic_segmentation": {
+            "agreement": null,
+            "claims": [
+              {
+                "baseline": "croma",
+                "baseline_value": 64.2,
+                "dataset": "MADOS",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2502.09356",
+                "locator": "Table 5",
+                "metric": "miou",
+                "model": "galileo",
+                "paper_key": "tseng2025galileo",
+                "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+                "self_evaluation": true,
+                "span": "The Galileo models excel at image segmentation measured by % mIoU via lin- ear probing",
+                "value": 67.6
+              }
+            ],
+            "direction": null,
+            "label": "gap",
+            "model": "galileo",
+            "n_claims": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
             "task": "semantic_segmentation"
           },
           "geoclip\tsocioeconomic_estimation": {
@@ -30152,6 +30971,7 @@
           "clay",
           "croma",
           "dofa",
+          "galileo",
           "geoclip",
           "presto",
           "prithvi",
@@ -33299,7 +34119,7 @@
     "no_self_eval": {
       "axes": [
         {
-          "agreement": 0.586,
+          "agreement": 0.6,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -33349,6 +34169,38 @@
               "self_evaluation": false,
               "span": "retaining 96% baseline F1-macro (63.8% vs 66.6%)",
               "value": 63.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 89.31,
+              "dataset": "BigEarthNet-43",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "Prithvi processes six bands and achieves a mean Average Precision of 97.62% on BigEarthNet-43",
+              "value": 97.62
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 38.92,
+              "dataset": "ForestNet-12",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "44.51% on ForestNet-12, outperforming other RGB-based models",
+              "value": 44.51
             },
             {
               "baseline": "task_specific",
@@ -34793,9 +35645,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 93,
-          "n_papers": 29,
-          "n_papers_all": 45
+          "n_claims": 95,
+          "n_papers": 30,
+          "n_papers_all": 46
         },
         {
           "agreement": 0.692,
@@ -36590,6 +37442,22 @@
               "value": 98.0
             },
             {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "BigEarthNet-43",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Sec 5",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "which is also represented by a 92.58 mAP",
+              "value": 92.58
+            },
+            {
               "baseline": "prithvi",
               "baseline_value": 0.9912,
               "dataset": "Maldives Sentinel-2 Coastline Dataset",
@@ -36704,9 +37572,9 @@
           ],
           "direction": "worse",
           "label": "thin",
-          "n_claims": 9,
+          "n_claims": 10,
           "n_papers": 2,
-          "n_papers_all": 9
+          "n_papers_all": 10
         },
         {
           "agreement": null,
@@ -38239,6 +39107,102 @@
             "direction": "better",
             "label": "thin",
             "n_papers": 2
+          }
+        },
+        {
+          "benchmark": "bigearthnet",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 89.31,
+              "dataset": "BigEarthNet-43",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "Prithvi processes six bands and achieves a mean Average Precision of 97.62% on BigEarthNet-43",
+              "value": 97.62
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "BigEarthNet-43",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Sec 5",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "which is also represented by a 92.58 mAP",
+              "value": 92.58
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "BigEarthNet",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2311.00566",
+              "locator": "Table 4",
+              "metric": "f1",
+              "model": "croma",
+              "paper_key": "fuller2023croma",
+              "paper_title": "CROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders",
+              "self_evaluation": false,
+              "span": "SatViT-V2 [74]\n79.80",
+              "value": 86.24
+            },
+            {
+              "baseline": null,
+              "baseline_value": 79.4,
+              "dataset": "BigEarthNet (1%)",
+              "direction": "better",
+              "label_ratio": 0.01,
+              "link": "https://arxiv.org/abs/2311.00566",
+              "locator": "Table 5",
+              "metric": "f1",
+              "model": "croma",
+              "paper_key": "fuller2023croma",
+              "paper_title": "CROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders",
+              "self_evaluation": false,
+              "span": "DeCUR\n73.7\n79.4",
+              "value": 81.8
+            }
+          ],
+          "metrics": [
+            "accuracy",
+            "f1"
+          ],
+          "models": [
+            "croma",
+            "prithvi"
+          ],
+          "n_claims": 4,
+          "n_papers": 2,
+          "n_vs_task_specific": 1,
+          "name": "BigEarthNet",
+          "tasks": [
+            "land_cover_classification",
+            "representation_probing"
+          ],
+          "variants": [
+            "BigEarthNet",
+            "BigEarthNet (1%)",
+            "BigEarthNet-43"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -40870,67 +41834,6 @@
           }
         },
         {
-          "benchmark": "bigearthnet",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "BigEarthNet",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2311.00566",
-              "locator": "Table 4",
-              "metric": "f1",
-              "model": "croma",
-              "paper_key": "fuller2023croma",
-              "paper_title": "CROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders",
-              "self_evaluation": false,
-              "span": "SatViT-V2 [74]\n79.80",
-              "value": 86.24
-            },
-            {
-              "baseline": null,
-              "baseline_value": 79.4,
-              "dataset": "BigEarthNet (1%)",
-              "direction": "better",
-              "label_ratio": 0.01,
-              "link": "https://arxiv.org/abs/2311.00566",
-              "locator": "Table 5",
-              "metric": "f1",
-              "model": "croma",
-              "paper_key": "fuller2023croma",
-              "paper_title": "CROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders",
-              "self_evaluation": false,
-              "span": "DeCUR\n73.7\n79.4",
-              "value": 81.8
-            }
-          ],
-          "metrics": [
-            "f1"
-          ],
-          "models": [
-            "croma"
-          ],
-          "n_claims": 2,
-          "n_papers": 1,
-          "n_vs_task_specific": 0,
-          "name": "BigEarthNet",
-          "tasks": [
-            "land_cover_classification",
-            "representation_probing"
-          ],
-          "variants": [
-            "BigEarthNet",
-            "BigEarthNet (1%)"
-          ],
-          "verdict": {
-            "agreement": null,
-            "direction": null,
-            "label": "gap",
-            "n_papers": 0
-          }
-        },
-        {
           "benchmark": "biome",
           "claims": [
             {
@@ -43355,6 +44258,49 @@
           }
         },
         {
+          "benchmark": "forestnet 12",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 38.92,
+              "dataset": "ForestNet-12",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "44.51% on ForestNet-12, outperforming other RGB-based models",
+              "value": 44.51
+            }
+          ],
+          "metrics": [
+            "accuracy"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "ForestNet-12",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "ForestNet-12"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "forward pass mac comparison",
           "claims": [
             {
@@ -45068,6 +46014,54 @@
               "value": 83.33
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 89.31,
+              "dataset": "BigEarthNet-43",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "Prithvi processes six bands and achieves a mean Average Precision of 97.62% on BigEarthNet-43",
+              "value": 97.62
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 38.92,
+              "dataset": "ForestNet-12",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "44.51% on ForestNet-12, outperforming other RGB-based models",
+              "value": 44.51
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "BigEarthNet-43",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Sec 5",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "which is also represented by a 92.58 mAP",
+              "value": 92.58
+            },
+            {
               "baseline": "galileo",
               "baseline_value": 89.4,
               "dataset": "forward-pass MAC comparison",
@@ -45971,6 +46965,7 @@
             "BEN-14K (S2)",
             "BEN-14K / FMoW-RGB / FMoW-Sentinel",
             "BigEarthNet (1%)",
+            "BigEarthNet-43",
             "Biome (SatCLIP+SatMAE image)",
             "Butterfly occurrence (French Alps)",
             "CHN-Econ",
@@ -45984,6 +46979,7 @@
             "ERA5 gravity wave flux (monthly-averaged)",
             "Ecoregions (Africa, few-shot)",
             "Elevation",
+            "ForestNet-12",
             "GADM country codes",
             "GAMa (BDD100k)",
             "GPW v4 population density",
@@ -46021,24 +47017,24 @@
             "satmae",
             "scalemae"
           ],
-          "n_claims": 58,
-          "n_papers": 24,
+          "n_claims": 61,
+          "n_papers": 25,
           "task": "representation_probing"
         }
       ],
       "evidence": {
         "directions": {
-          "better": 107,
+          "better": 109,
           "parity": 7,
           "worse": 31
         },
-        "label_ratio_unspecified": 238,
-        "n_claims": 256,
+        "label_ratio_unspecified": 241,
+        "n_claims": 259,
         "n_self_eval_claims": 0,
-        "n_vs_model_or_none": 111,
-        "n_vs_task_specific": 145,
-        "pct_better": 73.8,
-        "pct_label_ratio_unspecified": 93.0
+        "n_vs_model_or_none": 112,
+        "n_vs_task_specific": 147,
+        "pct_better": 74.1,
+        "pct_label_ratio_unspecified": 93.1
       },
       "groups": [
         {
@@ -50479,6 +51475,66 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 89.31,
+              "dataset": "BigEarthNet-43",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "Prithvi processes six bands and achieves a mean Average Precision of 97.62% on BigEarthNet-43",
+              "value": 97.62
+            }
+          ],
+          "dataset": "BigEarthNet-43",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "BigEarthNet-43",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Sec 5",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "which is also represented by a 92.58 mAP",
+              "value": 92.58
+            }
+          ],
+          "dataset": "BigEarthNet-43",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 68.9,
               "dataset": "Biome (SatCLIP+SatMAE image)",
               "direction": "better",
@@ -50924,6 +51980,36 @@
           "label_regime": "unspecified",
           "metric": "r2",
           "model": "presto",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 38.92,
+              "dataset": "ForestNet-12",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.02059",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "blumenstiel2024multi",
+              "paper_title": "Multi-Spectral Remote Sensing Image Retrieval Using Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "44.51% on ForestNet-12, outperforming other RGB-based models",
+              "value": 44.51
+            }
+          ],
+          "dataset": "ForestNet-12",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "prithvi",
           "n_papers": 1,
           "task": "representation_probing"
         },
