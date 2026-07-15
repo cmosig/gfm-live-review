@@ -26,8 +26,8 @@ from dataclasses import dataclass
 
 DEFAULT_PROBE = "gfm-usage-probe"
 PROBE_TIMEOUT = 180  # generous: the probe may refresh a stale token first
-PROBE_RETRIES = 3    # transient probe failures (429, token-refresh race) get retried
-PROBE_BACKOFF = 8.0  # seconds, grows linearly per attempt
+PROBE_RETRIES = 2     # one retry for a transient blip; more just hammers a 429
+PROBE_BACKOFF = 15.0  # seconds before the retry (the endpoint's window is long)
 
 
 class UsageUnavailable(RuntimeError):

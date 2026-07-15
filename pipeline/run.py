@@ -42,10 +42,12 @@ LOCK_PATH = config.STATE_DIR / ".lock"
 PER_PAPER_SLEEP = 5.0
 
 # Re-read real session usage at most this often mid-run. Polling every paper
-# rate-limits the external probe (HTTP 429), which then reads as "unavailable"
-# and stops the run early; papers move usage only ~0.5%/each, so a 2-minute
-# poll interval keeps the cap tight while staying well under the probe's limit.
-USAGE_POLL_INTERVAL = 120.0
+# rate-limits the external probe's endpoint (HTTP 429), which then reads as
+# "unavailable" and stops the run early. Papers move usage only ~0.5% each, so
+# polling every 5 minutes (~10 papers) overshoots the cap by only a few percent
+# while keeping probe traffic to ~0.2/min — a wide margin under the limit that a
+# ~2.5/min burst tripped. The cap leaves headroom below 100% to absorb overshoot.
+USAGE_POLL_INTERVAL = 300.0
 
 # A transport failure means the paper was never read, so it is retried on the
 # next run rather than quarantined. But if they never stop, retrying every
