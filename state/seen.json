@@ -233,6 +233,12 @@
     "key": "cerna2025botaclip",
     "status": "carded"
   },
+  "bridging remote sensors with multisensor geospatial foundation models": {
+    "arxiv_id": "2404.01260",
+    "dropped_claims": 0,
+    "key": "han2024bridging",
+    "status": "carded"
+  },
   "building prescribed quantitative orbit equivalence with the group of integers": {
     "key": "-",
     "status": "quarantined_mismatch"
@@ -871,6 +877,10 @@
     "key": "yan2025jackknife",
     "status": "off_topic"
   },
+  "jointly spatial temporal representation learning for individual trajectories": {
+    "key": "huang2023jointly",
+    "status": "quarantined"
+  },
   "jupiter s interior with an inverted helium gradient": {
     "key": "nettelmann2025jupiter",
     "status": "off_topic"
@@ -1034,6 +1044,12 @@
   "modularis modular relational analytics over heterogeneous distributed platforms": {
     "key": "koutsoukos2020modularis",
     "status": "off_topic"
+  },
+  "momo mars orbital model foundation model for mars orbital applications": {
+    "arxiv_id": "2604.02719",
+    "dropped_claims": 0,
+    "key": "purohit2026momo",
+    "status": "carded"
   },
   "monitoring of the offset between utc and its prediction broadcast by the gnss": {
     "key": "defraigne2025monitoring",
@@ -1425,6 +1441,12 @@
     "key": "cong2022satmae",
     "status": "carded"
   },
+  "satswinmae efficient autoencoding for multiscale time series satellite imagery": {
+    "arxiv_id": "2405.02512",
+    "dropped_claims": 0,
+    "key": "nakayama2024satswinmae",
+    "status": "carded"
+  },
   "satvision toa a geospatial foundation model for coarse resolution all sky remote sensing imagery": {
     "arxiv_id": "2411.17000",
     "dropped_claims": 0,
@@ -1462,6 +1484,10 @@
   },
   "searching for pulsars with phase characteristics": {
     "key": "peng2022searching",
+    "status": "off_topic"
+  },
+  "seefar satellite agnostic multi resolution dataset for geospatial foundation models": {
+    "key": "lowman2024seefar",
     "status": "off_topic"
   },
   "seeing through the clouds cloud gap imputation with prithvi foundation model": {
@@ -1680,9 +1706,21 @@
     "key": "vanin2026tychonic",
     "status": "off_topic"
   },
+  "the view from space navigating instrumentation differences with eofms": {
+    "arxiv_id": "2510.03316",
+    "dropped_claims": 0,
+    "key": "demilt2025view",
+    "status": "carded"
+  },
   "thermophysical properties of europa s surface constrained by galileo photopolarimeter radiometer temperature measurements": {
     "key": "lange2026thermophysical",
     "status": "off_topic"
+  },
+  "thor a versatile foundation model for earth observation climate and society applications": {
+    "arxiv_id": "2601.16011",
+    "dropped_claims": 0,
+    "key": "forgaard2026thor",
+    "status": "carded"
   },
   "time2agri temporal pretext tasks for agricultural monitoring": {
     "arxiv_id": "2507.04366",

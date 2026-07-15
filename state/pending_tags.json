@@ -98,6 +98,9 @@
   "DLRT": [
     "snyder2026compressing"
   ],
+  "DSM": [
+    "han2024bridging"
+  ],
   "DiffusionSat": [
     "jia2025can"
   ],
@@ -551,6 +554,9 @@
   "checkerboard_resolution_task": [
     "dhakal2025range"
   ],
+  "checkpoint_selection": [
+    "purohit2026momo"
+  ],
   "child_poverty": [
     "sharma2024kidsat"
   ],
@@ -587,6 +593,9 @@
   "cloud_detection": [
     "du2025first"
   ],
+  "cloud_removal": [
+    "han2024bridging"
+  ],
   "cloud_robustness": [
     "feng2025tessera"
   ],
@@ -613,6 +622,9 @@
   ],
   "compute-optimal-allocation": [
     "feng2026tessera"
+  ],
+  "compute_adaptive_patching": [
+    "forgaard2026thor"
   ],
   "concentration_inequalities": [
     "sarpe2021presto"
@@ -709,6 +721,9 @@
   ],
   "cross_paper_metric_divergence": [
     "corley2026one"
+  ],
+  "cross_sensor_pretraining": [
+    "han2024bridging"
   ],
   "cross_spectral_domain_adaptation": [
     "matin2025hyperkd"
@@ -872,6 +887,9 @@
   "embedding_products": [
     "fang2026earth"
   ],
+  "embedding_space_clustering": [
+    "demilt2025view"
+  ],
   "embeddings-as-data": [
     "feng2026tessera"
   ],
@@ -973,6 +991,9 @@
   ],
   "fixed_embedding_products": [
     "corley2026from"
+  ],
+  "flexible_patch_size": [
+    "forgaard2026thor"
   ],
   "flight_hardware_validation": [
     "du2025first"
@@ -1241,6 +1262,9 @@
   "input_size_extrapolation": [
     "fuller2023croma"
   ],
+  "instrumentation_bias": [
+    "demilt2025view"
+  ],
   "int8_quantization": [
     "feng2025tessera"
   ],
@@ -1376,6 +1400,9 @@
   "mars_crater_detection": [
     "hsu2024geospatial"
   ],
+  "mars_orbital": [
+    "purohit2026momo"
+  ],
   "masked_autoencoder_pretraining": [
     "jakubik2023foundation"
   ],
@@ -1427,14 +1454,14 @@
   "missing_data_imputation": [
     "godwin2024seeing"
   ],
-  "mixture_of_experts": [
-    "jia2025can"
-  ],
   "mobile_phone_data": [
     "metz2025application"
   ],
   "moco_v2": [
     "corley2025landsat"
+  ],
+  "model_merging": [
+    "purohit2026momo"
   ],
   "modifiable_areal_unit_problem": [
     "gong2026earth"
@@ -1447,6 +1474,9 @@
   ],
   "mortality_prediction": [
     "liu2026geovista"
+  ],
+  "msGFM": [
+    "han2024bridging"
   ],
   "msg_seviri_imagery": [
     "girtsou2025cloud"
@@ -1465,6 +1495,12 @@
   ],
   "multi_scale_representation_learning": [
     "li2023assessment"
+  ],
+  "multi_sensor": [
+    "purohit2026momo"
+  ],
+  "multi_sensor_fusion": [
+    "forgaard2026thor"
   ],
   "multi_source_embedding_integration": [
     "metz2025application"
@@ -1516,6 +1552,9 @@
   ],
   "multiscale_kNN_evaluation": [
     "reed2022scale"
+  ],
+  "multisensor_fusion": [
+    "han2024bridging"
   ],
   "multispectral_adaptation": [
     "thoreau2025parameter"
@@ -1592,6 +1631,9 @@
   "out_of_distribution_detection": [
     "gonzalezcalabuig2025shrug"
   ],
+  "pan_sharpening": [
+    "han2024bridging"
+  ],
   "panoptic_segmentation": [
     "muhawenayo2026prue"
   ],
@@ -1639,6 +1681,9 @@
   ],
   "place_embeddings": [
     "zhang2026geospatial"
+  ],
+  "planetary_science": [
+    "purohit2026momo"
   ],
   "plant_presence_prediction": [
     "cerna2025botaclip"
@@ -1859,6 +1904,9 @@
   "satmae_adaptation": [
     "girtsou2025cloud"
   ],
+  "satswinmae": [
+    "nakayama2024satswinmae"
+  ],
   "scale-mae": [
     "tang2024cross"
   ],
@@ -1925,6 +1973,9 @@
   "sensor_flexibility": [
     "tanaka2025sensor"
   ],
+  "sensor_modality_sensitivity": [
+    "demilt2025view"
+  ],
   "sensor_modality_transfer": [
     "tamazyan2025geocrossbench"
   ],
@@ -1957,6 +2008,9 @@
   ],
   "smallholder_agriculture": [
     "lisaius2026embedding"
+  ],
+  "snow_cover_regression": [
+    "forgaard2026thor"
   ],
   "socioeconomic_foundation_embedding": [
     "hou2026aef"
@@ -2066,6 +2120,12 @@
   "surface_to_subsurface_inference": [
     "nakata2026subsurface"
   ],
+  "swin_transformer": [
+    "nakayama2024satswinmae"
+  ],
+  "swinunet": [
+    "nakayama2024satswinmae"
+  ],
   "synthetic_chemistry": [
     "cao2024presto"
   ],
@@ -2077,6 +2137,9 @@
   ],
   "task-oriented semantic parsing": [
     "goel2023presto"
+  ],
+  "task_arithmetic": [
+    "purohit2026momo"
   ],
   "task_specific_distillation": [
     "yusuf2025instageo"
@@ -2227,6 +2290,9 @@
   ],
   "video_geolocalization": [
     "kulkarni2026vidtag"
+  ],
+  "video_swin_transformer": [
+    "nakayama2024satswinmae"
   ],
   "vision-language model": [
     "zhang2026fusar"

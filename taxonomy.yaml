@@ -135,6 +135,7 @@ promoted_tags:
 - masked-autoencoder
 - masked_autoencoder
 - masked_image_modeling
+- mixture_of_experts
 - model_compression
 - monte_carlo_dropout
 - object_detection
