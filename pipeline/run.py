@@ -51,15 +51,52 @@ MAX_CONSECUTIVE_INFRA_FAILURES = 5
 # ---------------------------------------------------------------------------
 # Lockfile
 # ---------------------------------------------------------------------------
+def _pid_alive(pid: int) -> bool:
+    """True if a process with this pid exists (signal 0 probes without killing)."""
+    if pid <= 0:
+        return False
+    try:
+        os.kill(pid, 0)
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        return True  # exists but owned by another user
+    return True
+
+
 class _Lock:
     def __enter__(self):
         config.STATE_DIR.mkdir(parents=True, exist_ok=True)
-        try:
-            self.fd = os.open(LOCK_PATH, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
-        except FileExistsError:
-            raise SystemExit(f"another run holds the lock: {LOCK_PATH}")
+        self.fd = self._acquire()
         os.write(self.fd, f"{os.getpid()}\n".encode())
         return self
+
+    def _acquire(self) -> int:
+        try:
+            return os.open(LOCK_PATH, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+        except FileExistsError:
+            pass
+        # A lock already exists. It is only meaningful if the process that wrote
+        # it is still alive; a run that was killed (or the box rebooted) leaves a
+        # stale lock that would otherwise wedge every future run forever — which
+        # is exactly what silently stalled the nightly job. Reclaim it only when
+        # the owner is provably gone.
+        try:
+            owner = int(LOCK_PATH.read_text().strip() or "0")
+        except (ValueError, OSError):
+            owner = 0
+        if owner and owner != os.getpid() and _pid_alive(owner):
+            raise SystemExit(f"another run holds the lock: {LOCK_PATH} (pid {owner})")
+        print(f"reclaiming stale lock {LOCK_PATH} (owner pid {owner or '?'} gone)",
+              file=sys.stderr)
+        try:
+            LOCK_PATH.unlink()
+        except FileNotFoundError:
+            pass
+        try:
+            return os.open(LOCK_PATH, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+        except FileExistsError:
+            raise SystemExit(f"another run raced for the lock: {LOCK_PATH}")
 
     def __exit__(self, *exc):
         os.close(self.fd)
