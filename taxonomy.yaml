@@ -90,6 +90,7 @@ promoted_tags:
 - GEO-Bench
 - LoRA
 - MOSAIKS
+- PlanetScope
 - TerraMind
 - air_temperature_prediction
 - biome_classification
@@ -100,6 +101,7 @@ promoted_tags:
 - diffusion_model
 - disease_surveillance
 - distribution_shift
+- earth_embeddings
 - ecoregion_classification
 - elevation_prediction
 - geographic_generalization

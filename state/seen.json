@@ -23,6 +23,10 @@
     "key": "you2021gpu",
     "status": "off_topic"
   },
+  "a new method to derive an empirical lower limit on the mass density of a ufo": {
+    "key": "loeb2024new",
+    "status": "off_topic"
+  },
   "a presto based parallel pulsar search pipeline used for fast drift scan data": {
     "key": "yu2019presto",
     "status": "off_topic"
@@ -41,6 +45,10 @@
   },
   "a survey for radio pulsars and transients in the 10 pc region around sgr a": {
     "key": "desvignes2025survey",
+    "status": "off_topic"
+  },
+  "a survey of dynamical and gravitational lensing tests in scale invariance the fall of dark matter": {
+    "key": "maeder2024survey",
     "status": "off_topic"
   },
   "a well motivated model of pedestrian dynamics": {
@@ -101,6 +109,10 @@
   },
   "analyzing local representations of self supervised vision transformers": {
     "key": "vanyan2023analyzing",
+    "status": "off_topic"
+  },
+  "apple an evolution code for modeling giant planets": {
+    "key": "sur2024apple",
     "status": "off_topic"
   },
   "application and validation of geospatial foundation model data for the prediction of health facility programmatic outputs a case study in malawi": {
@@ -203,6 +215,10 @@
     "key": "-",
     "status": "quarantined_mismatch"
   },
+  "buoyancy driven motion of non coalescing inertial drops microstructure modeling with nearest particle statistics": {
+    "key": "fintzi2024buoyancy",
+    "status": "off_topic"
+  },
   "callisto s nonresonant orbit as an outcome of circum jovian disk substructure": {
     "key": "yap2026callisto",
     "status": "off_topic"
@@ -229,11 +245,25 @@
     "key": "heiman2026characterizing",
     "status": "carded"
   },
+  "characterizing jupiter s interior using machine learning reveals four key structures": {
+    "key": "ziv2024characterizing",
+    "status": "off_topic"
+  },
+  "clay cnn hybrids leveraging geospatial foundation models as auxiliary context for landslide detection": {
+    "arxiv_id": "2606.14081",
+    "dropped_claims": 0,
+    "key": "vu2026clay",
+    "status": "carded"
+  },
   "clustering guided domain specific pretrained foundation model for very high resolution arctic remote sensing": {
     "arxiv_id": "2605.30467",
     "dropped_claims": 0,
     "key": "perera2026clustering",
     "status": "carded"
+  },
+  "commissioning an all sky infrared camera array for detection of airborne objects": {
+    "key": "domin2024commissioning",
+    "status": "off_topic"
   },
   "comparative assessment of multimodal earth observation data for soil moisture estimation": {
     "arxiv_id": "2602.18083",
@@ -247,6 +277,10 @@
   },
   "conditions for accretion favoring an unmelted callisto and a differentiated ganymede": {
     "key": "bennacer2025conditions",
+    "status": "off_topic"
+  },
+  "continuation of an optical spectroscopic campaign of fermi blazar candidates with tng discovery of a new changing look blazar": {
+    "key": "crespo2025continuation",
     "status": "off_topic"
   },
   "croma remote sensing representations with contrastive radar optical masked autoencoders": {
@@ -319,6 +353,10 @@
     "key": "fssler2019dorronsoro",
     "status": "off_topic"
   },
+  "dynamics of an oscillatory boundary layer over a sediment bed in euler lagrange simulations": {
+    "key": "doren2024dynamics",
+    "status": "off_topic"
+  },
   "dynamics of the velocity fluctuations in sedimenting suspensions of rigid fibres": {
     "key": "chiarini2025dynamics",
     "status": "off_topic"
@@ -351,6 +389,10 @@
     "key": "tao2018embedding",
     "status": "off_topic"
   },
+  "energetic proton losses reveal io s extended and longitudinally asymmetrical atmosphere": {
+    "key": "huybrighs2024energetic",
+    "status": "off_topic"
+  },
   "enhancing contrastive learning for geolocalization by discovering hard negatives on semivariograms": {
     "arxiv_id": "2509.21573",
     "dropped_claims": 0,
@@ -365,6 +407,18 @@
   },
   "evidence for optical pulsations from a redback millisecond pulsar": {
     "key": "papitto2025evidence",
+    "status": "off_topic"
+  },
+  "evolution of jupiter and saturn with helium rain": {
+    "key": "howard2024evolution",
+    "status": "off_topic"
+  },
+  "examining quality of dgnss derived positioning in data in urban city a case study of an urban city in india": {
+    "key": "singla2024examining",
+    "status": "off_topic"
+  },
+  "exploring fluorine chemical evolution in the galactic disk the open cluster perspective": {
+    "key": "seshashayana2024exploring",
     "status": "off_topic"
   },
   "exploring the potential of alphaearth and tessera embeddings for fine scale local climate zone mapping a case study across five cities in switzerland": {
@@ -459,6 +513,10 @@
     "key": "papadopoulos2025galilei",
     "status": "off_topic"
   },
+  "galileo a pseudospectral collocation framework for legged robots": {
+    "key": "chandler2024galileo",
+    "status": "off_topic"
+  },
   "galileo and buonamici on the tides of the sea was something omitted from the dialogue": {
     "key": "-",
     "status": "quarantined_mismatch"
@@ -475,6 +533,14 @@
   },
   "galileo project observatory class system architecture": {
     "key": "bridgham2025galileo",
+    "status": "off_topic"
+  },
+  "galileo s quantization": {
+    "key": "l2024galileo",
+    "status": "off_topic"
+  },
+  "galileo s ship and the relativity principle": {
+    "key": "ramrez2024galileo",
     "status": "off_topic"
   },
   "gbd dart ii 175 mhz polarimetric observation of pulsars from gauribidanur and a new pulsar signal processing pipeline": {
@@ -525,6 +591,10 @@
     "key": "-",
     "status": "quarantined_mismatch"
   },
+  "grb 240529a a tale of two shocks": {
+    "key": "sun2024grb",
+    "status": "off_topic"
+  },
   "habitat and land cover change detection in alpine protected areas a comparison of ai architectures": {
     "arxiv_id": "2511.00073",
     "dropped_claims": 0,
@@ -549,6 +619,12 @@
     "arxiv_id": "2606.18115",
     "dropped_claims": 0,
     "key": "li2026hls",
+    "status": "carded"
+  },
+  "how do self supervised remote sensing vision models transfer to downstream tasks": {
+    "arxiv_id": "2606.13896",
+    "dropped_claims": 0,
+    "key": "romero2026how",
     "status": "carded"
   },
   "how effective is pre training of large masked autoencoders for downstream earth observation tasks": {
@@ -600,6 +676,10 @@
     "dropped_claims": 0,
     "key": "hamoudzadeh2026inferring",
     "status": "carded"
+  },
+  "integrating evolutionary biology into physics classroom scaling dimension form and function": {
+    "key": "das2024integrating",
+    "status": "off_topic"
   },
   "intra query runtime elasticity for cloud native data analysis": {
     "key": "zhang2025intra",
@@ -655,6 +735,10 @@
     "key": "li2025landslide",
     "status": "carded"
   },
+  "large scale gnss spreading code optimization": {
+    "key": "yang2024large",
+    "status": "off_topic"
+  },
   "leap a rapid neural surrogate of multi fluid mhd at europa": {
     "key": "reddy2026leap",
     "status": "off_topic"
@@ -670,6 +754,10 @@
     "dropped_claims": 1,
     "key": "pettersson2025leveraging",
     "status": "carded"
+  },
+  "leveraging lstm for predictive modeling of satellite clock bias": {
+    "key": "bhatt2024leveraging",
+    "status": "off_topic"
   },
   "lightweight pre trained transformers for remote sensing timeseries": {
     "key": "tseng2023lightweight",
@@ -697,6 +785,10 @@
   },
   "low eddington ratio changing look active galactic nuclei the case of ngc 4614": {
     "key": "lusso2025low",
+    "status": "off_topic"
+  },
+  "low mass stellar and substellar content of the young cluster berkeley 59": {
+    "key": "panwar2024low",
     "status": "off_topic"
   },
   "low rank adaptation of geospatial foundation models for wildfire mapping using sentinel 2 data": {
@@ -737,6 +829,10 @@
   },
   "metadata caching in presto towards fast data processing": {
     "key": "wang2022metadata",
+    "status": "off_topic"
+  },
+  "meteoroid ablation within the jovian atmosphere implications on the oxygen delivery to the gas giant s atmosphere": {
+    "key": "mehta2024meteoroid",
     "status": "off_topic"
   },
   "metric spaces of arbitrary finitely generated scaling group": {
@@ -784,6 +880,10 @@
     "dropped_claims": 1,
     "key": "xiong2024neural",
     "status": "carded"
+  },
+  "neuralcms a deep learning approach to study jupiter s interior": {
+    "key": "ziv2024neuralcms",
+    "status": "off_topic"
   },
   "new models of jupiter s magnetopause and bow shock through the juno prime mission probabilistic location shape and internally driven variation": {
     "key": "rutala2025new",
@@ -835,6 +935,10 @@
   },
   "on the quasi isometric classification of permutational wreath products": {
     "key": "dumoncel2024quasi",
+    "status": "off_topic"
+  },
+  "on the role of the fast oscillations in the secular dynamics of the lunar coplanar perturbation on galileo satellites": {
+    "key": "alessi2024role",
     "status": "off_topic"
   },
   "on the special theory of relativity and electromagnetism": {
@@ -981,6 +1085,12 @@
     "key": "schmude2024prithvi",
     "status": "carded"
   },
+  "probing geospatial ssl representations with environmental signals": {
+    "arxiv_id": "2607.05207",
+    "dropped_claims": 0,
+    "key": "mocharla2026probing",
+    "status": "carded"
+  },
   "probing gravitational waves using gnss constellations": {
     "key": "roy2025probing",
     "status": "off_topic"
@@ -991,6 +1101,10 @@
   },
   "pulsar detection with deep learning": {
     "key": "pendyala2025pulsar",
+    "status": "off_topic"
+  },
+  "pwyll and manann n craters as a laboratory for constraining irradiation timescales on europa": {
+    "key": "davis2024pwyll",
     "status": "off_topic"
   },
   "qoulipo what a quantum computer sees when it reads a book": {
@@ -1073,6 +1187,11 @@
     "key": "cong2022satmae",
     "status": "carded"
   },
+  "scalable analysis of bipartite experiments": {
+    "arxiv_id": "2402.11070",
+    "key": "shi2024scalable",
+    "status": "source_unavailable"
+  },
   "scalable and trustworthy earth observation foundation models": {
     "key": "imtiaz2026scalable",
     "status": "quarantined"
@@ -1117,6 +1236,10 @@
     "key": "flapper2025settling",
     "status": "off_topic"
   },
+  "settling of two rigidly connected spheres": {
+    "key": "maches2024settling",
+    "status": "quarantined"
+  },
   "simpler efficient foundation model adaptation via similarity guided layer pruning for earth observation": {
     "arxiv_id": "2603.19873",
     "dropped_claims": 0,
@@ -1141,8 +1264,18 @@
     "key": "yong2022sparkesx",
     "status": "off_topic"
   },
+  "spatial representation learning beyond pixels unifying raster data and vector semantics for human centric geospatial foundation models": {
+    "arxiv_id": "2606.02374",
+    "dropped_claims": 0,
+    "key": "knoblauch2026spatial",
+    "status": "carded"
+  },
   "spatiotemporal variations of temperature in jupiter s upper atmosphere": {
     "key": "roberts2025spatiotemporal",
+    "status": "off_topic"
+  },
+  "spying on the quickly variable optical sky with the fast optical photometer sifap2": {
+    "key": "illiano2024spying",
     "status": "off_topic"
   },
   "state dependent effects on the frequency response of prestin real and imaginary components of nonlinear capacitance": {
@@ -1219,6 +1352,10 @@
     "key": "andrade2025effect",
     "status": "off_topic"
   },
+  "the emerging paradigm of geospatial foundation models from pre training to agentic reasoning": {
+    "key": "-",
+    "status": "quarantined_mismatch"
+  },
   "the gaps programme at tng lxxiii confirmation of the hot sub neptune toi 4602 b hd 25295 b a key target for future atmospheric characterization": {
     "key": "maio2026gaps",
     "status": "off_topic"
@@ -1233,6 +1370,14 @@
   },
   "the maximal coarse baum connes conjecture for spaces that admit an a by fce coarse fibration structure": {
     "key": "guo2024maximal",
+    "status": "off_topic"
+  },
+  "the orbital parameters of the del cep inner binary system determined using 2019 harps n spectroscopic data": {
+    "key": "nardetto2024orbital",
+    "status": "off_topic"
+  },
+  "the spatiotemporal structure of induced magnetic fields in callisto s plasma environment due to their propagation with mhd modes": {
+    "key": "strack2024spatiotemporal",
     "status": "off_topic"
   },
   "the stack search tests on fast data discovery of six faint isolated millisecond pulsars in ngc 6517 and ngc 7078 m15": {
@@ -1273,9 +1418,27 @@
     "key": "chuc2025towards",
     "status": "quarantined"
   },
+  "tracking advanced planetary systems tapas with harps n viii a wide orbit planetary companion in the hot jupiter system hd 118203": {
+    "key": "maciejewski2024tracking",
+    "status": "off_topic"
+  },
   "trick time and range integrity check using low earth orbiting satellite for securing gnss": {
     "key": "mumtaz2025trick",
     "status": "off_topic"
+  },
+  "un esercizio di storia della scienza misurare i periodi dei satelliti galileiani di giove con il sidereus nuncius": {
+    "key": "neri2024esercizio",
+    "status": "off_topic"
+  },
+  "unbounded yudovich solutions of the euler equations": {
+    "key": "cobb2024unbounded",
+    "status": "off_topic"
+  },
+  "uncertainty aware tree height change regression": {
+    "arxiv_id": "2607.00638",
+    "dropped_claims": 0,
+    "key": "gaber2026uncertainty",
+    "status": "carded"
   },
   "utilizing a geospatial foundation model for coastline delineation in small sandy islands": {
     "arxiv_id": "2511.10177",
