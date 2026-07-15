@@ -92,13 +92,16 @@ promoted_tags:
 - MOSAIKS
 - PDFM
 - PlanetScope
+- SatMAE
 - TerraMind
 - air_temperature_prediction
 - biome_classification
 - building_density_estimation
+- calibration
 - cloud_gap_imputation
 - content_based_image_retrieval
 - country_classification
+- dhs_survey
 - diffusion_model
 - disease_surveillance
 - distribution_shift
@@ -112,6 +115,7 @@ promoted_tags:
 - joint_embedding_predictive_architecture
 - knowledge_distillation
 - location_encoder
+- lora_finetuning
 - malaria_prediction
 - masked_autoencoder
 - object_detection

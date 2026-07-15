@@ -2,6 +2,9 @@
   "3d_cloud_reconstruction": [
     "girtsou2025cloud"
   ],
+  "AEF_embeddings": [
+    "lyu2026structure"
+  ],
   "ALS_lidar": [
     "gaber2026uncertainty"
   ],
@@ -74,6 +77,9 @@
   "ERA5_probing": [
     "mocharla2026probing"
   ],
+  "ESD_embeddings": [
+    "lyu2026structure"
+  ],
   "EnMAP": [
     "matin2025hyperkd"
   ],
@@ -94,6 +100,9 @@
   ],
   "GAIR": [
     "siampou2026trajganr"
+  ],
+  "GEDI_gap_filling": [
+    "young2026neural"
   ],
   "GEO-Bench-2": [
     "simumba2025geo"
@@ -148,6 +157,9 @@
   ],
   "MMEarth": [
     "waithaka2025position"
+  ],
+  "Mask2Former": [
+    "lyu2026structure"
   ],
   "Moran's I clustering": [
     "hou2026slum"
@@ -226,9 +238,6 @@
   ],
   "SSL_pretraining_objective": [
     "romero2026how"
-  ],
-  "SatMAE": [
-    "waithaka2025position"
   ],
   "SatMAE++": [
     "noman2024rethinking"
@@ -323,6 +332,9 @@
   "arctic_infrastructure_mapping": [
     "perera2026clustering"
   ],
+  "asset_wealth_index": [
+    "zheng2026satellite"
+  ],
   "atlantic_forest": [
     "heiman2026characterizing"
   ],
@@ -362,6 +374,9 @@
   "biodiversity_monitoring": [
     "cerna2025botaclip"
   ],
+  "bitemporal_ssl": [
+    "zheng2026satellite"
+  ],
   "borehole_data": [
     "omalley2026context"
   ],
@@ -373,9 +388,6 @@
   ],
   "butterfly_occurrence_prediction": [
     "cerna2025botaclip"
-  ],
-  "calibration": [
-    "omalley2026context"
   ],
   "california_housing_prediction": [
     "klemmer2023satclip"
@@ -479,6 +491,9 @@
   "concept_bottleneck_model": [
     "jia2025towards"
   ],
+  "continent_sampling": [
+    "kaur2026pretrain"
+  ],
   "continual_change_detection": [
     "kyselica2026towards"
   ],
@@ -505,6 +520,9 @@
   ],
   "controlnet": [
     "liu2026huiyanearth"
+  ],
+  "coordinate_based_neural_representation": [
+    "madadikhaljan2026location"
   ],
   "coordinate_displacement": [
     "pettersson2025leveraging"
@@ -544,6 +562,9 @@
   ],
   "cross_lingual_poi_text_embedding": [
     "hou2026aef"
+  ],
+  "cross_modal_fusion": [
+    "lyu2026structure"
   ],
   "cross_modal_retrieval": [
     "xiong2025dofa"
@@ -587,9 +608,6 @@
   "desert_locust_breeding_prediction": [
     "yusuf2024geospatial"
   ],
-  "dhs_survey": [
-    "nazir2026alphaearth"
-  ],
   "digital_surface_model": [
     "hamoudzadeh2026inferring"
   ],
@@ -605,6 +623,9 @@
   "dinov3": [
     "tadesse2026watch"
   ],
+  "dinov3_rgb_sat": [
+    "zheng2026satellite"
+  ],
   "disfluencies": [
     "goel2023presto"
   ],
@@ -613,6 +634,9 @@
   ],
   "distributional_robustness": [
     "doerksen2026earthshift"
+  ],
+  "disturbance_stratification": [
+    "young2026neural"
   ],
   "domain_gap_satellite_to_rgb": [
     "polushko2026flood"
@@ -929,6 +953,9 @@
   "hierarchical embedding structure": [
     "benavidesmartinez2026what"
   ],
+  "hindcasting": [
+    "zheng2026satellite"
+  ],
   "history_injection_mechanism": [
     "kyselica2026towards"
   ],
@@ -943,6 +970,9 @@
   ],
   "hurricane_track_forecasting": [
     "schmude2024prithvi"
+  ],
+  "hyper_local_model": [
+    "madadikhaljan2026location"
   ],
   "hypernetwork": [
     "xiong2024neural"
@@ -973,6 +1003,9 @@
   ],
   "image_to_gps_retrieval": [
     "cepeda2023geoclip"
+  ],
+  "implicit_neural_representation": [
+    "madadikhaljan2026location"
   ],
   "in_context_learning": [
     "omalley2026context"
@@ -1090,9 +1123,6 @@
   ],
   "lora_fine_tuning": [
     "vu2026clay"
-  ],
-  "lora_finetuning": [
-    "liu2026huiyanearth"
   ],
   "low_shot_transfer": [
     "brown2025alphaearth"
@@ -1265,11 +1295,17 @@
   "nested-embeddings": [
     "feng2026tessera"
   ],
+  "neural_processes": [
+    "young2026neural"
+  ],
   "nighttime lights": [
     "hou2026slum"
   ],
   "nighttime_lights": [
     "hou2026aef"
+  ],
+  "nowcasting": [
+    "zheng2026satellite"
   ],
   "object counting": [
     "zhang2026fusar"
@@ -1375,6 +1411,9 @@
   ],
   "pretraining_data_attribution": [
     "corley2026one"
+  ],
+  "pretraining_data_diversity": [
+    "kaur2026pretrain"
   ],
   "prithvi_wxc": [
     "gupta2025finetuning"
@@ -1634,6 +1673,9 @@
   "species_distribution_modeling": [
     "yusuf2024geospatial"
   ],
+  "spectral_entropy": [
+    "kaur2026pretrain"
+  ],
   "spectral_temporal_metrics": [
     "lisaius2026embedding"
   ],
@@ -1648,6 +1690,9 @@
   ],
   "structure_biomass_coupling": [
     "mandal2026biomazon"
+  ],
+  "structure_semantic_decoupled_modulation": [
+    "lyu2026structure"
   ],
   "sub-pixel density estimation": [
     "hou2026slum"
@@ -1708,6 +1753,9 @@
   ],
   "temporal_sampling_invariance": [
     "feng2025tessera"
+  ],
+  "tempov": [
+    "zheng2026satellite"
   ],
   "terrain_elevation": [
     "hamoudzadeh2026inferring"

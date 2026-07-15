@@ -31,6 +31,12 @@
     "key": "yu2019presto",
     "status": "off_topic"
   },
+  "a satellite foundation model for improved wealth monitoring": {
+    "arxiv_id": "2604.23166",
+    "dropped_claims": 1,
+    "key": "zheng2026satellite",
+    "status": "carded"
+  },
   "a semi coherent search for optical pulsations from scorpius x 1": {
     "key": "placa2025semi",
     "status": "off_topic"
@@ -397,6 +403,10 @@
   },
   "embedding the heisenberg group into a bounded dimensional euclidean space with optimal distortion": {
     "key": "tao2018embedding",
+    "status": "off_topic"
+  },
+  "enabling intrinsic reasoning over dense geospatial embeddings with dfr gemma": {
+    "key": "zhang2026enabling",
     "status": "off_topic"
   },
   "energetic proton losses reveal io s extended and longitudinally asymmetrical atmosphere": {
@@ -805,6 +815,12 @@
     "key": "contreras2022locality",
     "status": "off_topic"
   },
+  "location is all you need continuous spatiotemporal neural representations of earth observation data": {
+    "arxiv_id": "2604.07092",
+    "dropped_claims": 0,
+    "key": "madadikhaljan2026location",
+    "status": "carded"
+  },
   "long video diffusion generation with segmented cross attention and content rich video data curation": {
     "key": "yan2024long",
     "status": "off_topic"
@@ -909,6 +925,12 @@
     "arxiv_id": "2403.15356",
     "dropped_claims": 1,
     "key": "xiong2024neural",
+    "status": "carded"
+  },
+  "neural processes maintain calibrated biomass estimates across spatiotemporal gaps and disturbance": {
+    "arxiv_id": "2604.03874",
+    "dropped_claims": 0,
+    "key": "young2026neural",
     "status": "carded"
   },
   "neuralcms a deep learning approach to study jupiter s interior": {
@@ -1101,6 +1123,12 @@
     "arxiv_id": "2101.07152",
     "dropped_claims": 0,
     "key": "sarpe2021presto",
+    "status": "carded"
+  },
+  "pretrain where investigating how pretraining data diversity impacts geospatial foundation model performance": {
+    "arxiv_id": "2604.21104",
+    "dropped_claims": 0,
+    "key": "kaur2026pretrain",
     "status": "carded"
   },
   "prithvi complimentary adaptive fusion encoder cafe unlocking full potential for flood inundation mapping": {
@@ -1333,6 +1361,12 @@
   "structure and growth of galileo sequences": {
     "key": "cheah2026structure",
     "status": "off_topic"
+  },
+  "structure semantic decoupled modulation of global geospatial embeddings for high resolution remote sensing mapping": {
+    "arxiv_id": "2604.19591",
+    "dropped_claims": 0,
+    "key": "lyu2026structure",
+    "status": "carded"
   },
   "subsurface property mapping using google alphaearth foundations": {
     "arxiv_id": "2604.14756",
