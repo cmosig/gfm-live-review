@@ -87,6 +87,7 @@ limitations:
 # >>> auto-managed below (auto-promoted tags); human edits above are preserved >>>
 promoted_tags:
 - DINOv3
+- EnMAP
 - GEO-Bench
 - LoRA
 - MOSAIKS
@@ -101,6 +102,7 @@ promoted_tags:
 - cloud_gap_imputation
 - content_based_image_retrieval
 - country_classification
+- data_augmentation
 - dhs_survey
 - diffusion_model
 - disease_surveillance

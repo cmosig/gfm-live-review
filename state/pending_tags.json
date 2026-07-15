@@ -50,6 +50,12 @@
   "CORDEX": [
     "schmude2024prithvi"
   ],
+  "CropGlobe": [
+    "tong2025invariant"
+  ],
+  "CropNet": [
+    "tong2025invariant"
+  ],
   "DEM prior": [
     "thasma2026beyond"
   ],
@@ -83,9 +89,6 @@
   "ESD_embeddings": [
     "lyu2026structure"
   ],
-  "EnMAP": [
-    "matin2025hyperkd"
-  ],
   "EuroSAT": [
     "noman2024rethinking"
   ],
@@ -103,6 +106,12 @@
   ],
   "GAIR": [
     "siampou2026trajganr"
+  ],
+  "GASSL": [
+    "tingzon2025derived"
+  ],
+  "GEDI": [
+    "banze2025hybiomass"
   ],
   "GEDI_gap_filling": [
     "young2026neural"
@@ -200,6 +209,9 @@
   "POI auxiliary features": [
     "hou2026slum"
   ],
+  "Panopticon": [
+    "banze2025hybiomass"
+  ],
   "RAMEN": [
     "kaushik2026cryo"
   ],
@@ -242,6 +254,9 @@
   "SAR_foundation_model": [
     "ye2026crossearth"
   ],
+  "SATLASNET": [
+    "lin2025fine"
+  ],
   "SHAP dimension importance": [
     "hou2026slum"
   ],
@@ -263,6 +278,9 @@
   "SSL_pretraining_objective": [
     "romero2026how"
   ],
+  "SWIN_Transformer": [
+    "lin2025fine"
+  ],
   "SatMAE++": [
     "noman2024rethinking"
   ],
@@ -277,6 +295,15 @@
   ],
   "SoftCon": [
     "barreiro2026simpler"
+  ],
+  "Spectral-ResNet-50": [
+    "banze2025hybiomass"
+  ],
+  "Spectral-ViT-B": [
+    "banze2025hybiomass"
+  ],
+  "SpectralEarth": [
+    "banze2025hybiomass"
   ],
   "SpectralGPT": [
     "kaushik2026cryo"
@@ -617,11 +644,11 @@
   "curriculum_masking": [
     "zhang2026sigmae"
   ],
-  "data_augmentation": [
-    "liu2026huiyanearth"
-  ],
   "data_harmonization": [
     "ma2025harvesting"
+  ],
+  "data_pipeline_reproducibility": [
+    "yusuf2025instageo"
   ],
   "data_source_shift": [
     "doerksen2026earthshift"
@@ -643,6 +670,9 @@
   ],
   "dempster-shafer-fusion": [
     "sachan2026post"
+  ],
+  "desert_locust_breeding_ground_prediction": [
+    "yusuf2025instageo"
   ],
   "desert_locust_breeding_prediction": [
     "yusuf2024geospatial"
@@ -998,6 +1028,9 @@
   "hard_negative_mining": [
     "chen2025enhancing"
   ],
+  "harmonic_features": [
+    "tong2025invariant"
+  ],
   "harmonic_medoid_features": [
     "ishikawa2025assessing"
   ],
@@ -1049,6 +1082,9 @@
   "hyperspectral_foundation_model": [
     "tushar2026foundation"
   ],
+  "hyperspectral_imagery": [
+    "banze2025hybiomass"
+  ],
   "hyperspectral_imaging": [
     "matin2025hyperkd"
   ],
@@ -1066,6 +1102,9 @@
   ],
   "image_to_gps_retrieval": [
     "cepeda2023geoclip"
+  ],
+  "implicit_image_function": [
+    "lin2025fine"
   ],
   "implicit_neural_representation": [
     "madadikhaljan2026location"
@@ -1424,6 +1463,9 @@
   "patch_size_tradeoff": [
     "tseng2025galileo"
   ],
+  "permafrost_mapping": [
+    "lin2025fine"
+  ],
   "phenological_date_prediction": [
     "gupta2025time2agri"
   ],
@@ -1532,6 +1574,9 @@
   "random_forest": [
     "ishikawa2025assessing"
   ],
+  "random_forest_baseline": [
+    "lin2025fine"
+  ],
   "raster_vector_fusion": [
     "knoblauch2026spatial"
   ],
@@ -1621,6 +1666,15 @@
   ],
   "road_segmentation": [
     "fibaek2024phileo"
+  ],
+  "roof_material_classification": [
+    "tingzon2025derived"
+  ],
+  "roof_pitch_classification": [
+    "tingzon2025derived"
+  ],
+  "rooftop_classification": [
+    "tingzon2025derived"
   ],
   "routine_health_information_systems": [
     "metz2025application"
@@ -1748,6 +1802,9 @@
   "soil_organic_carbon_prediction": [
     "matin2025hyperkd"
   ],
+  "soil_taxonomy_classification": [
+    "lin2025fine"
+  ],
   "soil_trophic_group_abundance": [
     "cerna2025botaclip"
   ],
@@ -1789,6 +1846,9 @@
   ],
   "spectral_index_guided_masking": [
     "zhang2026sigmae"
+  ],
+  "spectral_temporal_convolution": [
+    "tong2025invariant"
   ],
   "spectral_temporal_metrics": [
     "lisaius2026embedding"
@@ -1844,6 +1904,9 @@
   "task-oriented semantic parsing": [
     "goel2023presto"
   ],
+  "task_specific_distillation": [
+    "yusuf2025instageo"
+  ],
   "taxonomy": [
     "fang2026earth"
   ],
@@ -1858,6 +1921,9 @@
   ],
   "temporal_embedding_distance": [
     "tadesse2026watch"
+  ],
+  "temporal_median_features": [
+    "tong2025invariant"
   ],
   "temporal_motif_counting": [
     "sarpe2021presto"
@@ -1888,6 +1954,9 @@
   ],
   "time_series_reconstruction": [
     "li2026hls"
+  ],
+  "token_patch_size": [
+    "banze2025hybiomass"
   ],
   "tomato_mapping": [
     "narimani2026mapping"

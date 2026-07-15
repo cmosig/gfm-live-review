@@ -97,6 +97,12 @@
     "key": "hou2026aef",
     "status": "carded"
   },
+  "ai derived structural building intelligence for urban resilience an application in saint vincent and the grenadines": {
+    "arxiv_id": "2509.18182",
+    "dropped_claims": 0,
+    "key": "tingzon2025derived",
+    "status": "carded"
+  },
   "alphaearth foundations an embedding field model for accurate and efficient global mapping from sparse label data": {
     "arxiv_id": "2507.22291",
     "dropped_claims": 0,
@@ -111,6 +117,10 @@
   },
   "an asymmetric formula for interval consonance and its relation to harmonic coincidence": {
     "key": "roure2026asymmetric",
+    "status": "off_topic"
+  },
+  "an open benchmark dataset for geoai foundation models for oil palm mapping in indonesia": {
+    "key": "wafiq2025open",
     "status": "off_topic"
   },
   "analyzing local representations of self supervised vision transformers": {
@@ -351,6 +361,10 @@
     "key": "butsko2025deploying",
     "status": "carded"
   },
+  "detection and simulation of urban heat islands using a fine tuned geospatial foundation model": {
+    "key": "kreismann2025detection",
+    "status": "quarantined"
+  },
   "detection and simulation of urban heat islands using a fine tuned geospatial foundation model for microclimate impact prediction": {
     "arxiv_id": "2510.18773",
     "dropped_claims": 0,
@@ -478,6 +492,12 @@
   "fast radio burst search cross spectrum vs auto spectrum method": {
     "key": "liu2018fast",
     "status": "off_topic"
+  },
+  "fine scale soil mapping in alaska with multimodal machine learning": {
+    "arxiv_id": "2506.17302",
+    "dropped_claims": 0,
+    "key": "lin2025fine",
+    "status": "carded"
   },
   "finetuning ai foundation models to develop subgrid scale parameterizations a case study on atmospheric gravity waves": {
     "arxiv_id": "2509.03816",
@@ -711,6 +731,12 @@
     "key": "liu2026huiyanearth",
     "status": "carded"
   },
+  "hybiomass global hyperspectral imagery benchmark dataset for evaluating geospatial foundation models in forest aboveground biomass estimation": {
+    "arxiv_id": "2506.11314",
+    "dropped_claims": 2,
+    "key": "banze2025hybiomass",
+    "status": "carded"
+  },
   "hyperkd distilling cross spectral knowledge in masked autoencoders via inverse domain shift with spatial aware masking and specialized loss": {
     "arxiv_id": "2508.09453",
     "dropped_claims": 0,
@@ -749,6 +775,12 @@
     "key": "hamoudzadeh2026inferring",
     "status": "carded"
   },
+  "instageo compute efficient geospatial machine learning from data to deployment": {
+    "arxiv_id": "2510.05617",
+    "dropped_claims": 0,
+    "key": "yusuf2025instageo",
+    "status": "carded"
+  },
   "integrating evolutionary biology into physics classroom scaling dimension form and function": {
     "key": "das2024integrating",
     "status": "off_topic"
@@ -760,6 +792,12 @@
   "intra query runtime elasticity for cloud native data analysis": {
     "key": "zhang2025intra",
     "status": "off_topic"
+  },
+  "invariant features for global crop type classification": {
+    "arxiv_id": "2509.03497",
+    "dropped_claims": 0,
+    "key": "tong2025invariant",
+    "status": "carded"
   },
   "ion neutral chemistry at icy moons the case of ganymede": {
     "key": "beth2025ion",
