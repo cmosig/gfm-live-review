@@ -68,6 +68,9 @@
   "DIOR": [
     "xiong2024neural"
   ],
+  "DLRT": [
+    "snyder2026compressing"
+  ],
   "EFM_guided_generative_reconstruction": [
     "chen2026when"
   ],
@@ -170,6 +173,9 @@
   "NeuCo-Bench": [
     "gilch2026how"
   ],
+  "OReole-MR": [
+    "snyder2026compressing"
+  ],
   "OpenStreetMap_integration": [
     "knoblauch2026spatial"
   ],
@@ -247,6 +253,9 @@
   ],
   "SSL4EO": [
     "mocharla2026probing"
+  ],
+  "SSL4EO-S12": [
+    "gonzalezcalabuig2025shrug"
   ],
   "SSL_objective_comparison": [
     "gilch2026how"
@@ -395,6 +404,9 @@
   "borehole_data": [
     "omalley2026context"
   ],
+  "building_damage_assessment": [
+    "dietrich2025potential"
+  ],
   "burn_scar_mapping": [
     "xie2024when"
   ],
@@ -458,6 +470,9 @@
   "climate_model_subgrid_scale": [
     "gupta2025finetuning"
   ],
+  "climate_projection_RCP": [
+    "fleckenstein2025detection"
+  ],
   "climate_sensitive_disease": [
     "nazir2026alphaearth"
   ],
@@ -472,6 +487,9 @@
   ],
   "cloud_cover_failure": [
     "kaushik2026prithvi"
+  ],
+  "cloud_detection": [
+    "du2025first"
   ],
   "cloud_robustness": [
     "feng2025tessera"
@@ -659,6 +677,9 @@
   "disturbance_stratification": [
     "young2026neural"
   ],
+  "domain_adaptation": [
+    "du2025first"
+  ],
   "domain_gap_satellite_to_rgb": [
     "polushko2026flood"
   ],
@@ -758,6 +779,9 @@
   "ensemble_learning": [
     "perez2026predicting"
   ],
+  "ensemble_uncertainty": [
+    "gonzalezcalabuig2025shrug"
+  ],
   "ensembling": [
     "bianco2024enhancing"
   ],
@@ -826,6 +850,9 @@
   ],
   "fixed_embedding_products": [
     "corley2026from"
+  ],
+  "flight_hardware_validation": [
+    "du2025first"
   ],
   "floating_objects_detection": [
     "zhang2026sigmae"
@@ -931,6 +958,9 @@
   ],
   "glad_comparison": [
     "zvonkov2025cropland"
+  ],
+  "glass_box_decision_tree": [
+    "gonzalezcalabuig2025shrug"
   ],
   "global_annual_embeddings": [
     "brown2025alphaearth"
@@ -1049,6 +1079,9 @@
   "informal settlements": [
     "hou2026slum"
   ],
+  "inpainting_simulation": [
+    "fleckenstein2025detection"
+  ],
   "input_adaptation_confound": [
     "shang2026benchmarking"
   ],
@@ -1090,6 +1123,9 @@
   ],
   "land-fertility-classification": [
     "sachan2026post"
+  ],
+  "land_surface_temperature": [
+    "fleckenstein2025detection"
   ],
   "land_surface_temperature_super_resolution": [
     "chen2026when"
@@ -1160,6 +1196,9 @@
   "lora_fine_tuning": [
     "vu2026clay"
   ],
+  "low_rank_training": [
+    "snyder2026compressing"
+  ],
   "low_shot_transfer": [
     "brown2025alphaearth"
   ],
@@ -1225,9 +1264,6 @@
   ],
   "mobile_phone_data": [
     "metz2025application"
-  ],
-  "model_compression": [
-    "barreiro2026simpler"
   ],
   "modifiable_areal_unit_problem": [
     "gong2026earth"
@@ -1355,6 +1391,12 @@
   "olmoearth": [
     "corley2026from"
   ],
+  "on_orbit_demonstration": [
+    "du2025first"
+  ],
+  "onboard_inference": [
+    "du2025first"
+  ],
   "onboard_satellite_inference": [
     "kyselica2026towards"
   ],
@@ -1366,6 +1408,9 @@
   ],
   "ordinal_classification": [
     "perez2026predicting"
+  ],
+  "out_of_distribution_detection": [
+    "gonzalezcalabuig2025shrug"
   ],
   "panoptic_segmentation": [
     "muhawenayo2026prue"
@@ -1535,6 +1580,9 @@
   "relative_position_encoding": [
     "fuller2023croma"
   ],
+  "reliability_flagging": [
+    "gonzalezcalabuig2025shrug"
+  ],
   "representation_efficiency": [
     "gong2026earth"
   ],
@@ -1561,6 +1609,9 @@
   ],
   "ridge_regression_baseline": [
     "hamoudzadeh2026inferring"
+  ],
+  "risk_coverage_curve": [
+    "gonzalezcalabuig2025shrug"
   ],
   "road_density_estimation": [
     "dionelis2025scaling"
@@ -1634,6 +1685,9 @@
   "seismic_site_characterization": [
     "nakata2026subsurface"
   ],
+  "selective_prediction": [
+    "gonzalezcalabuig2025shrug"
+  ],
   "self_supervised_adaptation": [
     "butsko2025deploying"
   ],
@@ -1669,9 +1723,6 @@
   ],
   "sentinel-2": [
     "lisaius2026embedding"
-  ],
-  "sentinel1_sentinel2_fusion": [
-    "feng2025tessera"
   ],
   "shoreline_delineation": [
     "chhabra2025utilizing"
@@ -1898,6 +1949,9 @@
   "universal_kriging_baseline": [
     "omalley2026context"
   ],
+  "urban_heat_island": [
+    "fleckenstein2025detection"
+  ],
   "urban_representation_learning": [
     "liu2025beyond"
   ],
@@ -1984,6 +2038,9 @@
   ],
   "wudapt": [
     "ko2026exploring"
+  ],
+  "xBD-S12": [
+    "dietrich2025potential"
   ],
   "xformers": [
     "tang2024cross"

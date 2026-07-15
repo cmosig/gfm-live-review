@@ -281,6 +281,12 @@
     "key": "schunck2026comprehensive",
     "status": "off_topic"
   },
+  "compressing vision transformers in geospatial transfer learning with manifold constrained optimization": {
+    "arxiv_id": "2601.08882",
+    "dropped_claims": 0,
+    "key": "snyder2026compressing",
+    "status": "carded"
+  },
   "conditions for accretion favoring an unmelted callisto and a differentiated ganymede": {
     "key": "bennacer2025conditions",
     "status": "off_topic"
@@ -343,6 +349,12 @@
     "arxiv_id": "2508.00858",
     "dropped_claims": 0,
     "key": "butsko2025deploying",
+    "status": "carded"
+  },
+  "detection and simulation of urban heat islands using a fine tuned geospatial foundation model for microclimate impact prediction": {
+    "arxiv_id": "2510.18773",
+    "dropped_claims": 0,
+    "key": "fleckenstein2025detection",
     "status": "carded"
   },
   "detection of an nh 3 absorption band at 2 2 m on europa": {
@@ -476,6 +488,12 @@
   "first multi constellation observations of navigation satellite signals in the lunar domain by post processing l1 l5 iq snapshots": {
     "key": "sciacca2025first",
     "status": "off_topic"
+  },
+  "first on orbit demonstration of a geospatial foundation model": {
+    "arxiv_id": "2512.01181",
+    "dropped_claims": 0,
+    "key": "du2025first",
+    "status": "carded"
   },
   "first passage percolation on hyperbolic groups": {
     "key": "basu2019first",
@@ -807,6 +825,10 @@
     "key": "scheurer2026lepa",
     "status": "carded"
   },
+  "leveraging ai multimodal geospatial foundation models for improved near real time flood mapping at a global scale": {
+    "key": "tulbure2025leveraging",
+    "status": "quarantined"
+  },
   "leveraging compact satellite embeddings and graph neural networks for large scale poverty mapping": {
     "arxiv_id": "2511.01408",
     "dropped_claims": 1,
@@ -1035,6 +1057,10 @@
   },
   "on the universality of fluctuations for the cover time": {
     "key": "berestycki2022universality",
+    "status": "off_topic"
+  },
+  "osm billion level openstreetmap dataset for city wide experiments": {
+    "key": "zheng2025osm",
     "status": "off_topic"
   },
   "pedestrian crowd management experiments a data guidance paper": {
@@ -1340,6 +1366,12 @@
     "key": "maches2024settling",
     "status": "quarantined"
   },
+  "shrug fm reliability aware foundation models for earth observation": {
+    "arxiv_id": "2511.10370",
+    "dropped_claims": 1,
+    "key": "gonzalezcalabuig2025shrug",
+    "status": "carded"
+  },
   "sigmae a spectral index guided foundation model for multispectral remote sensing": {
     "arxiv_id": "2603.07463",
     "dropped_claims": 0,
@@ -1420,6 +1452,10 @@
     "key": "nakata2026subsurface",
     "status": "carded"
   },
+  "survey of multimodal geospatial foundation models techniques applications and challenges": {
+    "key": "yang2025survey",
+    "status": "quarantined"
+  },
   "swinynet a transformer based multi task model for accurate and efficient frb search": {
     "key": "-",
     "status": "quarantined_mismatch"
@@ -1491,6 +1527,12 @@
   "the orbital parameters of the del cep inner binary system determined using 2019 harps n spectroscopic data": {
     "key": "nardetto2024orbital",
     "status": "off_topic"
+  },
+  "the potential of copernicus satellites for disaster response retrieving building damage from sentinel 1 and sentinel 2": {
+    "arxiv_id": "2511.05461",
+    "dropped_claims": 0,
+    "key": "dietrich2025potential",
+    "status": "carded"
   },
   "the spatiotemporal structure of induced magnetic fields in callisto s plasma environment due to their propagation with mhd modes": {
     "key": "strack2024spatiotemporal",

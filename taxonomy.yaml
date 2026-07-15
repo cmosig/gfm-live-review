@@ -120,10 +120,12 @@ promoted_tags:
 - lora_finetuning
 - malaria_prediction
 - masked_autoencoder
+- model_compression
 - object_detection
 - retrieval_augmented_generation
 - satellite_embeddings
 - satmae
+- sentinel1_sentinel2_fusion
 - spatial_autocorrelation
 - tree_species_classification
 - urban_morphology
