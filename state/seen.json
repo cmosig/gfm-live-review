@@ -133,6 +133,12 @@
     "key": "vanyan2023analyzing",
     "status": "off_topic"
   },
+  "any model any place any time get remote sensing foundation model embeddings on demand": {
+    "arxiv_id": "2602.23678",
+    "dropped_claims": 0,
+    "key": "ye2026any",
+    "status": "carded"
+  },
   "apple an evolution code for modeling giant planets": {
     "key": "sur2024apple",
     "status": "off_topic"
@@ -319,6 +325,12 @@
     "key": "bennacer2025conditions",
     "status": "off_topic"
   },
+  "continental scale habitat distribution modelling with multimodal earth observation foundation models": {
+    "arxiv_id": "2507.09732",
+    "dropped_claims": 0,
+    "key": "simoussi2025continental",
+    "status": "carded"
+  },
   "continuation of an optical spectroscopic campaign of fermi blazar candidates with tng discovery of a new changing look blazar": {
     "key": "crespo2025continuation",
     "status": "off_topic"
@@ -396,6 +408,10 @@
   "discovery of two new pulsars in 47 tucanae ngc 104": {
     "key": "-",
     "status": "quarantined_mismatch"
+  },
+  "disdop distillation with domain priors for open vocabulary aerial object detection": {
+    "key": "xu2026disdop",
+    "status": "off_topic"
   },
   "do foundation model embeddings improve cross country crop yield generalisation a leave one country out evaluation in sub saharan africa": {
     "arxiv_id": "2605.08113",
@@ -684,6 +700,18 @@
   "geodesic trees and exceptional directions in fpp on hyperbolic groups": {
     "key": "basu2024geodesic",
     "status": "off_topic"
+  },
+  "georope ground aware rotary adaptation for remote sensing foundation models": {
+    "arxiv_id": "2606.14760",
+    "dropped_claims": 1,
+    "key": "luo2026georope",
+    "status": "carded"
+  },
+  "geosane learning geospatial representations from models not data": {
+    "arxiv_id": "2603.23408",
+    "dropped_claims": 0,
+    "key": "hanna2026geosane",
+    "status": "carded"
   },
   "geospatial foundation model embeddings improve population estimation unevenly across space and scale": {
     "arxiv_id": "2605.01650",
@@ -1139,6 +1167,10 @@
     "key": "correia2025odomutants",
     "status": "off_topic"
   },
+  "on board remote sensing foundation models for unsupervised change detection of disaster events": {
+    "key": "ramrezgallego2026board",
+    "status": "quarantined"
+  },
   "on matou ek like embedding obstructions of countably branching graphs": {
     "key": "malthaner2023matou",
     "status": "off_topic"
@@ -1375,6 +1407,12 @@
     "key": "dhakal2025range",
     "status": "carded"
   },
+  "rapid adaptation of earth observation foundation models for segmentation": {
+    "arxiv_id": "2409.09907",
+    "dropped_claims": 0,
+    "key": "selvam2024rapid",
+    "status": "carded"
+  },
   "real time evaluation of an ultra tight gnss ins integration based on adaptive pll bandwidth": {
     "key": "pages2026real",
     "status": "off_topic"
@@ -1392,6 +1430,10 @@
   "relativistic roots of entropy": {
     "key": "-",
     "status": "quarantined_mismatch"
+  },
+  "reobench benchmarking robustness of earth observation foundation models": {
+    "key": "li2025reobench",
+    "status": "off_topic"
   },
   "reply to comment on observation of the quantum equivalence principle for matter waves": {
     "key": "dobkowski2025reply",
@@ -1499,6 +1541,10 @@
   "self supervised representation learning for geospatial objects a survey": {
     "key": "chen2024self",
     "status": "off_topic"
+  },
+  "senpa mae sensor parameter aware masked autoencoder for multi satellite self supervised pretraining": {
+    "key": "prexl2024senpa",
+    "status": "quarantined"
   },
   "sensor adaptive flood mapping with pre trained multi modal transformers across sar and multispectral modalities": {
     "arxiv_id": "2509.23035",

@@ -98,6 +98,7 @@ promoted_tags:
 - PlanetScope
 - RemoteCLIP
 - SAR
+- SSL4EO
 - SSL4EO-S12
 - SatMAE
 - SatlasNet
@@ -137,8 +138,10 @@ promoted_tags:
 - masked_image_modeling
 - mixture_of_experts
 - model_compression
+- model_merging
 - monte_carlo_dropout
 - object_detection
+- parameter_efficient_fine_tuning
 - retrieval_augmented_generation
 - satellite_embeddings
 - satmae

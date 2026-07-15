@@ -11,6 +11,9 @@
   "ALS_lidar": [
     "gaber2026uncertainty"
   ],
+  "AgriFM": [
+    "ye2026any"
+  ],
   "AlphaEarth Foundations": [
     "hou2026slum"
   ],
@@ -119,6 +122,9 @@
   "EU-Forest": [
     "plekhanova2025ssl4eco"
   ],
+  "EUNIS_classification": [
+    "simoussi2025continental"
+  ],
   "EuroSAT": [
     "noman2024rethinking"
   ],
@@ -157,6 +163,9 @@
   ],
   "GPP_estimation": [
     "szwarcman2024prithvi"
+  ],
+  "GSD_calibration": [
+    "luo2026georope"
   ],
   "GeoLifeCLEF": [
     "plekhanova2025ssl4eco"
@@ -266,6 +275,9 @@
   "RESISC45": [
     "xiong2024neural"
   ],
+  "ROI_centric_interface": [
+    "ye2026any"
+  ],
   "ResNet_vs_ViT": [
     "gilch2026how"
   ],
@@ -302,6 +314,9 @@
   "SDG-aligned-benchmark": [
     "ghamisi2025geospatial"
   ],
+  "SECO": [
+    "simoussi2025continental"
+  ],
   "SHAP dimension importance": [
     "hou2026slum"
   ],
@@ -310,9 +325,6 @@
   ],
   "SSIM structural fidelity": [
     "hou2026slum"
-  ],
-  "SSL4EO": [
-    "mocharla2026probing"
   ],
   "SSL4Eco": [
     "plekhanova2025ssl4eco"
@@ -403,6 +415,9 @@
   ],
   "XGBoost": [
     "metz2025application"
+  ],
+  "adapter": [
+    "luo2026georope"
   ],
   "adapter_fine_tuning": [
     "kaushik2026prithvi"
@@ -568,6 +583,9 @@
   ],
   "class_imbalance": [
     "ishikawa2025assessing"
+  ],
+  "class_imbalance_correction": [
+    "simoussi2025continental"
   ],
   "climate_model_subgrid_scale": [
     "gupta2025finetuning"
@@ -884,6 +902,9 @@
   "embedding_interpretability": [
     "rahman2026physically"
   ],
+  "embedding_library": [
+    "ye2026any"
+  ],
   "embedding_products": [
     "fang2026earth"
   ],
@@ -913,6 +934,9 @@
   ],
   "ensemble_learning": [
     "perez2026predicting"
+  ],
+  "ensemble_machine_learning": [
+    "simoussi2025continental"
   ],
   "ensemble_uncertainty": [
     "gonzalezcalabuig2025shrug"
@@ -1133,6 +1157,9 @@
   "gsd_conditioning": [
     "reed2022scale"
   ],
+  "habitat_distribution_modelling": [
+    "simoussi2025continental"
+  ],
   "habitat_retrieval": [
     "cerna2025botaclip"
   ],
@@ -1165,6 +1192,9 @@
   ],
   "hierarchical embedding structure": [
     "benavidesmartinez2026what"
+  ],
+  "hierarchical_classification": [
+    "simoussi2025continental"
   ],
   "hindcasting": [
     "zheng2026satellite"
@@ -1460,8 +1490,11 @@
   "moco_v2": [
     "corley2025landsat"
   ],
-  "model_merging": [
-    "purohit2026momo"
+  "model_foundry": [
+    "hanna2026geosane"
+  ],
+  "model_generation": [
+    "hanna2026geosane"
   ],
   "modifiable_areal_unit_problem": [
     "gong2026earth"
@@ -1525,6 +1558,9 @@
   ],
   "multimodal fusion": [
     "thasma2026beyond"
+  ],
+  "multimodal_EO_fusion": [
+    "simoussi2025continental"
   ],
   "multimodal_LLM": [
     "cao2024presto"
@@ -1636,9 +1672,6 @@
   ],
   "panoptic_segmentation": [
     "muhawenayo2026prue"
-  ],
-  "parameter_efficient_fine_tuning": [
-    "shibli2026low"
   ],
   "parameter_efficient_finetuning": [
     "thoreau2025parameter"
@@ -1756,6 +1789,9 @@
   ],
   "proprietary_model": [
     "heiman2026characterizing"
+  ],
+  "pruning_distillation_baseline": [
+    "hanna2026geosane"
   ],
   "pseudo-label supervision": [
     "hou2026slum"
@@ -1880,8 +1916,14 @@
   "rooftop_classification": [
     "tingzon2025derived"
   ],
+  "rotary_position_embedding": [
+    "luo2026georope"
+  ],
   "routine_health_information_systems": [
     "metz2025application"
+  ],
+  "rs-embed": [
+    "ye2026any"
   ],
   "salt": [
     "hecht2026multi"
@@ -2282,6 +2324,9 @@
   "vector_database": [
     "blumenstiel2024multi"
   ],
+  "vegetation_plots": [
+    "simoussi2025continental"
+  ],
   "vegetation_survey_supervision": [
     "cerna2025botaclip"
   ],
@@ -2326,6 +2371,12 @@
   ],
   "weight_release_audit": [
     "corley2026one"
+  ],
+  "weight_space_autoencoder": [
+    "hanna2026geosane"
+  ],
+  "weight_space_learning": [
+    "hanna2026geosane"
   ],
   "west_africa": [
     "lisaius2026embedding"
