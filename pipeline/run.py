@@ -41,6 +41,12 @@ SEED_ARXIV_IDS = [
 LOCK_PATH = config.STATE_DIR / ".lock"
 PER_PAPER_SLEEP = 5.0
 
+# Re-read real session usage at most this often mid-run. Polling every paper
+# rate-limits the external probe (HTTP 429), which then reads as "unavailable"
+# and stops the run early; papers move usage only ~0.5%/each, so a 2-minute
+# poll interval keeps the cap tight while staying well under the probe's limit.
+USAGE_POLL_INTERVAL = 120.0
+
 # A transport failure means the paper was never read, so it is retried on the
 # next run rather than quarantined. But if they never stop, retrying every
 # remaining paper just burns the queue against a dead API — so after this many
@@ -349,6 +355,12 @@ def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
 
     # --- per paper ---
     processed = 0
+    # The session-usage probe is rate-limited (HTTP 429) if hit every paper, and
+    # a 429 stops the run early — which stalled the drain loop at ~15%. Poll no
+    # more than once per interval instead: between polls a handful of papers pass,
+    # moving usage by ~1-2%, so the cap overshoots only trivially. The startup
+    # gate already took one reading, so defer the first mid-run poll.
+    last_usage_poll = time.monotonic()
     for sr in accepted:
         cand = sr.candidate
         if not cand.title:
@@ -399,10 +411,13 @@ def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
             stats["budget_stopped"] = True
             break
 
-        # The real gate: stop at the actual session utilisation, re-read after
-        # every paper. If usage becomes unreadable mid-run we stop rather than
-        # keep spending blind — same rule as at startup.
-        if max_session_pct is not None:
+        # The real gate: stop at the actual session utilisation. Re-read at most
+        # once per USAGE_POLL_INTERVAL (not every paper — that rate-limits the
+        # probe). If usage becomes unreadable mid-run we stop rather than keep
+        # spending blind — same rule as at startup.
+        if max_session_pct is not None and \
+                time.monotonic() - last_usage_poll >= USAGE_POLL_INTERVAL:
+            last_usage_poll = time.monotonic()
             try:
                 u = usage.fetch()
             except usage.UsageUnavailable as exc:

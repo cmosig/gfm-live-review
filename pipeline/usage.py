@@ -21,10 +21,13 @@ import json
 import os
 import shlex
 import subprocess
+import time
 from dataclasses import dataclass
 
 DEFAULT_PROBE = "gfm-usage-probe"
 PROBE_TIMEOUT = 180  # generous: the probe may refresh a stale token first
+PROBE_RETRIES = 3    # transient probe failures (429, token-refresh race) get retried
+PROBE_BACKOFF = 8.0  # seconds, grows linearly per attempt
 
 
 class UsageUnavailable(RuntimeError):
@@ -44,19 +47,36 @@ def probe_cmd() -> list[str]:
     return shlex.split(os.environ.get("GFM_USAGE_CMD") or DEFAULT_PROBE)
 
 
-def fetch() -> Usage:
+def fetch(*, retries: int = PROBE_RETRIES, backoff: float = PROBE_BACKOFF) -> Usage:
+    """Read usage, retrying transient probe failures with backoff.
+
+    Rate-limit (HTTP 429) responses and token-refresh races are transient: the
+    correct response is to wait and re-probe, NOT to declare usage unavailable
+    and stop spending. We still refuse to proceed until we get a real reading,
+    so the "unreadable is never plenty left" invariant holds — we just don't give
+    up on the first blip. A missing probe binary is a misconfiguration, not
+    transient, so it fails fast.
+    """
     cmd = probe_cmd()
-    try:
-        proc = subprocess.run(cmd, capture_output=True, text=True,
-                              timeout=PROBE_TIMEOUT, check=False)
-    except (OSError, subprocess.TimeoutExpired) as exc:
-        raise UsageUnavailable(f"usage probe {cmd[0]!r} failed: {exc}") from exc
-    if proc.returncode != 0:
-        raise UsageUnavailable(
-            f"usage probe exited {proc.returncode}: {(proc.stderr or '').strip()[-300:]}")
-    try:
-        data = json.loads(proc.stdout)
-        return Usage(session_pct=float(data["session_pct"]),
-                     weekly_pct=float(data["weekly_pct"]))
-    except (json.JSONDecodeError, KeyError, TypeError, ValueError) as exc:
-        raise UsageUnavailable(f"usage probe returned unusable output: {exc}") from exc
+    last = ""
+    for attempt in range(retries):
+        try:
+            proc = subprocess.run(cmd, capture_output=True, text=True,
+                                  timeout=PROBE_TIMEOUT, check=False)
+        except FileNotFoundError as exc:
+            raise UsageUnavailable(f"usage probe {cmd[0]!r} not found: {exc}") from exc
+        except (OSError, subprocess.TimeoutExpired) as exc:
+            last = f"{cmd[0]!r} failed: {exc}"
+        else:
+            if proc.returncode == 0:
+                try:
+                    data = json.loads(proc.stdout)
+                    return Usage(session_pct=float(data["session_pct"]),
+                                 weekly_pct=float(data["weekly_pct"]))
+                except (json.JSONDecodeError, KeyError, TypeError, ValueError) as exc:
+                    last = f"unusable output: {exc}"
+            else:
+                last = f"exited {proc.returncode}: {(proc.stderr or '').strip()[-300:]}"
+        if attempt + 1 < retries:
+            time.sleep(backoff * (attempt + 1))
+    raise UsageUnavailable(f"usage probe failed after {retries} attempts: {last}")

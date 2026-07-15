@@ -15,6 +15,12 @@ import pytest
 from pipeline import usage
 
 
+@pytest.fixture(autouse=True)
+def _no_backoff_sleep(monkeypatch):
+    """Make probe-retry backoff instant so failure tests don't wait ~24s each."""
+    monkeypatch.setattr(usage.time, "sleep", lambda *_: None)
+
+
 def _probe(monkeypatch, script: str):
     """Point GFM_USAGE_CMD at an inline python probe."""
     monkeypatch.setenv("GFM_USAGE_CMD", f"python3 -c {json.dumps(script)}")
@@ -44,6 +50,31 @@ def test_missing_probe_raises(monkeypatch):
     monkeypatch.setenv("GFM_USAGE_CMD", "definitely-not-a-real-binary-xyz")
     with pytest.raises(usage.UsageUnavailable):
         usage.fetch()
+
+
+def test_transient_failure_is_retried_then_succeeds(monkeypatch, tmp_path):
+    """A 429 on the first probe must be retried, not treated as unavailable."""
+    counter = tmp_path / "n"
+    counter.write_text("0")
+    # The probe fails (exit 2) on its first call and succeeds on the second,
+    # driven by a counter file so each exec is independent.
+    script = (
+        "import pathlib,sys;"
+        f"p=pathlib.Path({json.dumps(str(counter))});"
+        "n=int(p.read_text());p.write_text(str(n+1));"
+        "sys.exit(2) if n==0 else print('{\"session_pct\": 12.0, \"weekly_pct\": 20.0}')"
+    )
+    _probe(monkeypatch, script)
+    u = usage.fetch()
+    assert u.session_pct == 12.0
+    assert counter.read_text() == "2"  # failed once, retried, succeeded
+
+
+def test_persistent_failure_gives_up_after_retries(monkeypatch):
+    _probe(monkeypatch, 'import sys; sys.exit(2)')
+    with pytest.raises(usage.UsageUnavailable) as exc:
+        usage.fetch(retries=2)
+    assert "after 2 attempts" in str(exc.value)
 
 
 def test_partial_output_raises(monkeypatch):
