@@ -86,14 +86,22 @@ limitations:
 
 # >>> auto-managed below (auto-promoted tags); human edits above are preserved >>>
 promoted_tags:
+- BigEarthNet
 - DINOv3
 - EnMAP
 - GEO-Bench
+- GFM-Swin
 - LoRA
 - MOSAIKS
 - PDFM
+- PEFT
 - PlanetScope
+- RemoteCLIP
+- SSL4EO-S12
 - SatMAE
+- SatlasNet
+- SoftCon
+- SpectralGPT
 - TerraMind
 - air_temperature_prediction
 - biome_classification
@@ -107,6 +115,7 @@ promoted_tags:
 - diffusion_model
 - disease_surveillance
 - distribution_shift
+- domain_adaptation
 - earth_embeddings
 - ecoregion_classification
 - elevation_prediction

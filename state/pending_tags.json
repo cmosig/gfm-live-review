@@ -20,8 +20,14 @@
   "BAER_burn_intensity": [
     "szwarcman2024prithvi"
   ],
-  "BigEarthNet": [
-    "noman2024rethinking"
+  "BioMassters": [
+    "plekhanova2025ssl4eco"
+  ],
+  "Biomes_classification": [
+    "plekhanova2025ssl4eco"
+  ],
+  "CAVM_arctic_vegetation": [
+    "plekhanova2025ssl4eco"
   ],
   "CCA_CKA_similarity": [
     "plas2026better"
@@ -31,6 +37,9 @@
   ],
   "CGAN_baseline": [
     "godwin2024seeing"
+  ],
+  "CHELSA_climate_regression": [
+    "plekhanova2025ssl4eco"
   ],
   "CKA": [
     "barreiro2026simpler"
@@ -49,6 +58,9 @@
   ],
   "CORDEX": [
     "schmude2024prithvi"
+  ],
+  "CROMA": [
+    "ghamisi2025geospatial"
   ],
   "CropGlobe": [
     "tong2025invariant"
@@ -89,6 +101,9 @@
   "ESD_embeddings": [
     "lyu2026structure"
   ],
+  "EU-Forest": [
+    "plekhanova2025ssl4eco"
+  ],
   "EuroSAT": [
     "noman2024rethinking"
   ],
@@ -119,14 +134,14 @@
   "GEO-Bench-2": [
     "simumba2025geo"
   ],
-  "GFM-Swin": [
-    "kaushik2026cryo"
-  ],
   "GLCM": [
     "tadesse2026satellite"
   ],
   "GPP_estimation": [
     "szwarcman2024prithvi"
+  ],
+  "GeoLifeCLEF": [
+    "plekhanova2025ssl4eco"
   ],
   "GeoNames": [
     "pettersson2025leveraging"
@@ -176,6 +191,9 @@
   "Mask2Former": [
     "lyu2026structure"
   ],
+  "MoCo-Eco": [
+    "plekhanova2025ssl4eco"
+  ],
   "Moran's I clustering": [
     "hou2026slum"
   ],
@@ -203,14 +221,14 @@
   "PCA_dimensionality_reduction": [
     "cheng2026from"
   ],
-  "PEFT": [
-    "asif2026adapting"
-  ],
   "POI auxiliary features": [
     "hou2026slum"
   ],
   "Panopticon": [
     "banze2025hybiomass"
+  ],
+  "Prithvi": [
+    "ghamisi2025geospatial"
   ],
   "RAMEN": [
     "kaushik2026cryo"
@@ -220,9 +238,6 @@
   ],
   "RESISC45": [
     "xiong2024neural"
-  ],
-  "RemoteCLIP": [
-    "kaushik2026cryo"
   ],
   "ResNet_vs_ViT": [
     "gilch2026how"
@@ -257,6 +272,9 @@
   "SATLASNET": [
     "lin2025fine"
   ],
+  "SDG-aligned-benchmark": [
+    "ghamisi2025geospatial"
+  ],
   "SHAP dimension importance": [
     "hou2026slum"
   ],
@@ -269,8 +287,8 @@
   "SSL4EO": [
     "mocharla2026probing"
   ],
-  "SSL4EO-S12": [
-    "gonzalezcalabuig2025shrug"
+  "SSL4Eco": [
+    "plekhanova2025ssl4eco"
   ],
   "SSL_objective_comparison": [
     "gilch2026how"
@@ -284,17 +302,20 @@
   "SatMAE++": [
     "noman2024rethinking"
   ],
-  "SatlasNet": [
-    "kaushik2026cryo"
+  "Satlas": [
+    "plekhanova2025ssl4eco"
   ],
   "SatlasPretrain": [
     "tadesse2026satellite"
   ],
+  "SeCo": [
+    "plekhanova2025ssl4eco"
+  ],
+  "SeCo-Eco": [
+    "plekhanova2025ssl4eco"
+  ],
   "Sen1Floods11": [
     "waithaka2025position"
-  ],
-  "SoftCon": [
-    "barreiro2026simpler"
   ],
   "Spectral-ResNet-50": [
     "banze2025hybiomass"
@@ -305,11 +326,14 @@
   "SpectralEarth": [
     "banze2025hybiomass"
   ],
-  "SpectralGPT": [
-    "kaushik2026cryo"
-  ],
   "Sub-Saharan_Africa": [
     "pettersson2025leveraging"
+  ],
+  "SustainFM": [
+    "ghamisi2025geospatial"
+  ],
+  "TreeSatAI": [
+    "plekhanova2025ssl4eco"
   ],
   "U-Net": [
     "perez2026predicting"
@@ -329,11 +353,17 @@
   "VHSR_pretraining_curation": [
     "perera2026clustering"
   ],
+  "VPT": [
+    "martiescofet2025fine"
+  ],
   "ViT-Adapter": [
     "asif2026adapting"
   ],
   "ViT-MAE": [
     "barreiro2026simpler"
+  ],
+  "ViT_Adapter": [
+    "martiescofet2025fine"
   ],
   "XGBoost": [
     "metz2025application"
@@ -419,6 +449,9 @@
   "bi_lstm_attention": [
     "karimzadeh2025performance"
   ],
+  "bigearthnet-l": [
+    "corley2025landsat"
+  ],
   "bioclimatic_variable_prediction": [
     "plas2026better"
   ],
@@ -463,6 +496,9 @@
   ],
   "capacity_adaptive_reconstruction": [
     "hou2026aef"
+  ],
+  "carbon_footprint": [
+    "ghamisi2025geospatial"
   ],
   "census_block_group": [
     "gong2026earth"
@@ -665,6 +701,9 @@
   "decision_threshold_sensitivity": [
     "polushko2026flood"
   ],
+  "decoder_architecture": [
+    "martiescofet2025fine"
+  ],
   "decoder_design": [
     "romero2026how"
   ],
@@ -706,9 +745,6 @@
   ],
   "disturbance_stratification": [
     "young2026neural"
-  ],
-  "domain_adaptation": [
-    "du2025first"
   ],
   "domain_gap_satellite_to_rgb": [
     "polushko2026flood"
@@ -806,6 +842,9 @@
   "end_to_end_pipeline": [
     "li2023assessment"
   ],
+  "energy_efficiency": [
+    "ghamisi2025geospatial"
+  ],
   "ensemble_learning": [
     "perez2026predicting"
   ],
@@ -823,6 +862,9 @@
   ],
   "esa_cci_land_cover": [
     "bianco2024enhancing"
+  ],
+  "eurosat-l": [
+    "corley2025landsat"
   ],
   "evaluation_harness": [
     "corley2026one"
@@ -1154,6 +1196,9 @@
   "knn-classification": [
     "tang2024cross"
   ],
+  "knn_probe": [
+    "corley2025landsat"
+  ],
   "knowledge-distillation": [
     "feng2026tessera"
   ],
@@ -1171,6 +1216,9 @@
   ],
   "land_use_distribution_mapping": [
     "liu2025beyond"
+  ],
+  "landsat": [
+    "corley2025landsat"
   ],
   "landscan_population_density": [
     "bianco2024enhancing"
@@ -1202,6 +1250,9 @@
   "layerwise_linear_probing": [
     "romero2026how"
   ],
+  "lc100-l": [
+    "corley2025landsat"
+  ],
   "lcz_upscaling": [
     "ko2026exploring"
   ],
@@ -1216,6 +1267,9 @@
   ],
   "leave_one_country_out_CV": [
     "adjei2026foundation"
+  ],
+  "linear_probe": [
+    "corley2025landsat"
   ],
   "llm_as_judge": [
     "rahman2026physically"
@@ -1295,6 +1349,9 @@
   "melt": [
     "hecht2026multi"
   ],
+  "metadata_ablation": [
+    "martiescofet2025fine"
+  ],
   "minority_crop_detection": [
     "shang2026benchmarking"
   ],
@@ -1303,6 +1360,9 @@
   ],
   "mobile_phone_data": [
     "metz2025application"
+  ],
+  "moco_v2": [
+    "corley2025landsat"
   ],
   "modifiable_areal_unit_problem": [
     "gong2026earth"
@@ -1469,6 +1529,9 @@
   "phenological_date_prediction": [
     "gupta2025time2agri"
   ],
+  "phenology_informed_sampling": [
+    "plekhanova2025ssl4eco"
+  ],
   "phileo_bench": [
     "fibaek2024phileo"
   ],
@@ -1564,6 +1627,9 @@
   ],
   "pseudo_absence_generation": [
     "yusuf2024geospatial"
+  ],
+  "pseudo_labeling": [
+    "yaghmour2025sensor"
   ],
   "radar_optical_fusion": [
     "fuller2023croma"
@@ -1757,6 +1823,9 @@
   "semivariogram": [
     "chen2025enhancing"
   ],
+  "sensor_agnostic_adaptation": [
+    "yaghmour2025sensor"
+  ],
   "sensor_flexibility": [
     "tanaka2025sensor"
   ],
@@ -1780,6 +1849,9 @@
   ],
   "shoreline_delineation": [
     "chhabra2025utilizing"
+  ],
+  "simclr": [
+    "corley2025landsat"
   ],
   "single-temporal post-event SAR": [
     "thasma2026beyond"
@@ -1852,6 +1924,9 @@
   ],
   "spectral_temporal_metrics": [
     "lisaius2026embedding"
+  ],
+  "ssl4eo-l": [
+    "corley2025landsat"
   ],
   "stats_pooling": [
     "corley2026from"
@@ -2122,5 +2197,8 @@
   ],
   "zonal_statistics": [
     "corley2026from"
+  ],
+  "zonal_stats_baseline": [
+    "corley2025landsat"
   ]
 }

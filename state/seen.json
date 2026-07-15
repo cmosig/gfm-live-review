@@ -41,6 +41,12 @@
     "key": "placa2025semi",
     "status": "off_topic"
   },
+  "a sensor agnostic domain generalization framework for leveraging geospatial foundation models enhancing semantic segmentation viasynergistic pseudo labeling and generative learning": {
+    "arxiv_id": "2505.01558",
+    "dropped_claims": 0,
+    "key": "yaghmour2025sensor",
+    "status": "carded"
+  },
   "a sentinel 3 foundation model for ocean colour": {
     "key": "dawson2025sentinel",
     "status": "quarantined"
@@ -499,6 +505,12 @@
     "key": "lin2025fine",
     "status": "carded"
   },
+  "fine tune smarter not harder parameter efficient fine tuning for geospatial foundation models": {
+    "arxiv_id": "2504.17397",
+    "dropped_claims": 0,
+    "key": "martiescofet2025fine",
+    "status": "carded"
+  },
   "finetuning ai foundation models to develop subgrid scale parameterizations a case study on atmospheric gravity waves": {
     "arxiv_id": "2509.03816",
     "dropped_claims": 0,
@@ -583,6 +595,10 @@
     "key": "zhang2026fusar",
     "status": "carded"
   },
+  "gaia a foundation model for operational atmospheric dynamics": {
+    "key": "asanjan2025gaia",
+    "status": "off_topic"
+  },
   "galilei and huygens music and science": {
     "key": "papadopoulos2025galilei",
     "status": "off_topic"
@@ -661,6 +677,12 @@
     "arxiv_id": "2409.00489",
     "dropped_claims": 0,
     "key": "hsu2024geospatial",
+    "status": "carded"
+  },
+  "geospatial foundation models to enable progress on sustainable development goals": {
+    "arxiv_id": "2505.24528",
+    "dropped_claims": 0,
+    "key": "ghamisi2025geospatial",
     "status": "carded"
   },
   "geovista geospatial vision tabular transformer for multimodal environment representation": {
@@ -843,6 +865,12 @@
     "key": "kolluru2026land",
     "status": "quarantined"
   },
+  "landsat bench datasets and benchmarks for landsat foundation models": {
+    "arxiv_id": "2506.08780",
+    "dropped_claims": 0,
+    "key": "corley2025landsat",
+    "status": "carded"
+  },
   "landslide hazard mapping with geospatial foundation models geographical generalizability data scarcity and band adaptability": {
     "arxiv_id": "2511.04474",
     "dropped_claims": 0,
@@ -887,6 +915,10 @@
   },
   "lipschitz 1 connectedness for some solvable lie groups": {
     "key": "cohen2016lipschitz",
+    "status": "off_topic"
+  },
+  "lisat language instructed segmentation assistant for satellite imagery": {
+    "key": "quenum2025lisat",
     "status": "off_topic"
   },
   "llm guided monte carlo tree search over knowledge graphs composing mechanistic explanations for drug disease pairs": {
@@ -1457,6 +1489,12 @@
   "spying on the quickly variable optical sky with the fast optical photometer sifap2": {
     "key": "illiano2024spying",
     "status": "off_topic"
+  },
+  "ssl4eco a global seasonal dataset for geospatial foundation models in ecology": {
+    "arxiv_id": "2504.18256",
+    "dropped_claims": 0,
+    "key": "plekhanova2025ssl4eco",
+    "status": "carded"
   },
   "state dependent effects on the frequency response of prestin real and imaginary components of nonlinear capacitance": {
     "key": "santossacchi2020state",
