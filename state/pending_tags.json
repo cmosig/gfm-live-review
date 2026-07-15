@@ -11,6 +11,9 @@
   "AlphaEarth feature fusion": [
     "zhang2026fusar"
   ],
+  "BAER_burn_intensity": [
+    "szwarcman2024prithvi"
+  ],
   "BigEarthNet": [
     "noman2024rethinking"
   ],
@@ -80,9 +83,6 @@
   "FloodPlanet": [
     "kaushik2025assessing"
   ],
-  "GEO-Bench": [
-    "xiong2024neural"
-  ],
   "GEO-Bench-2": [
     "simumba2025geo"
   ],
@@ -91,6 +91,9 @@
   ],
   "GLCM": [
     "tadesse2026satellite"
+  ],
+  "GPP_estimation": [
+    "szwarcman2024prithvi"
   ],
   "GeoNames": [
     "pettersson2025leveraging"
@@ -115,6 +118,9 @@
   ],
   "LSTM": [
     "qu2026utilizing"
+  ],
+  "LoRA_finetuning": [
+    "szwarcman2024prithvi"
   ],
   "MDI feature importance": [
     "benavidesmartinez2026what"
@@ -584,6 +590,9 @@
   "ecotone representation": [
     "benavidesmartinez2026what"
   ],
+  "eddy_covariance": [
+    "szwarcman2024prithvi"
+  ],
   "elevation_regression": [
     "hecht2026multi"
   ],
@@ -980,6 +989,9 @@
   "location_embeddings": [
     "plas2026better"
   ],
+  "location_time_embeddings": [
+    "szwarcman2024prithvi"
+  ],
   "log_gaussian_cox_process": [
     "aalaila2026when"
   ],
@@ -1087,6 +1099,9 @@
   ],
   "multi_spectral_encoding": [
     "cong2022satmae"
+  ],
+  "multi_temporal_pretraining": [
+    "szwarcman2024prithvi"
   ],
   "multilingual dialog dataset": [
     "goel2023presto"

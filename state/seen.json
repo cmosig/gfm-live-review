@@ -881,6 +881,12 @@
     "key": "kaushik2026prithvi",
     "status": "carded"
   },
+  "prithvi eo 2 0 a versatile multi temporal foundation model for earth observation applications": {
+    "arxiv_id": "2412.02732",
+    "dropped_claims": 0,
+    "key": "szwarcman2024prithvi",
+    "status": "carded"
+  },
   "prithvi wxc foundation model for weather and climate": {
     "arxiv_id": "2409.13598",
     "dropped_claims": 0,
@@ -1095,6 +1101,10 @@
   },
   "the 3 1 formulation of chemical dynamics in curved spacetime under the eulerian observer": {
     "key": "zhang2025formulation",
+    "status": "off_topic"
+  },
+  "the coarse baum connes conjecture for certain relative expanders": {
+    "key": "deng2021coarse",
     "status": "off_topic"
   },
   "the effect of vera c rubin observatory cadence selections on kilonova detectability": {

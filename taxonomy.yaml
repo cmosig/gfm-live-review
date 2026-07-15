@@ -87,6 +87,7 @@ limitations:
 # >>> auto-managed below (auto-promoted tags); human edits above are preserved >>>
 promoted_tags:
 - DINOv3
+- GEO-Bench
 - LoRA
 - MOSAIKS
 - TerraMind

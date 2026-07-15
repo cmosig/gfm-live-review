@@ -116,6 +116,7 @@
         "2024-07": 2,
         "2024-08": 1,
         "2024-09": 2,
+        "2024-12": 1,
         "2025-01": 1,
         "2025-02": 1,
         "2025-03": 1,
@@ -146,6 +147,7 @@
         "2024-07": 1,
         "2024-08": 1,
         "2024-09": 2,
+        "2024-12": 1,
         "2025-02": 1,
         "2025-03": 1,
         "2025-04": 1,
@@ -165,6 +167,7 @@
         "2023-11": 2,
         "2024-03": 1,
         "2024-07": 1,
+        "2024-12": 1,
         "2025-01": 1,
         "2025-05": 1,
         "2025-06": 1,
@@ -207,6 +210,7 @@
       "mixed_pixels": {
         "2024-01": 1,
         "2024-04": 1,
+        "2024-12": 1,
         "2025-09": 1,
         "2025-10": 1,
         "2025-11": 3,
@@ -227,6 +231,7 @@
         "2024-03": 1,
         "2024-07": 1,
         "2024-08": 1,
+        "2024-12": 1,
         "2025-05": 1,
         "2025-07": 1,
         "2025-08": 1,
@@ -246,6 +251,7 @@
         "2022-07": 1,
         "2023-10": 1,
         "2024-07": 1,
+        "2024-12": 1,
         "2025-06": 1,
         "2025-08": 2,
         "2025-12": 1,
@@ -286,14 +292,14 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 81,
-      "compute_cost": 38,
-      "data_bias": 42,
+      "benchmark_narrowness": 82,
+      "compute_cost": 39,
+      "data_bias": 43,
       "human_semantics": 9,
       "interpretability": 13,
-      "mixed_pixels": 18,
-      "spatial_transfer": 49,
-      "temporal_transfer": 25,
+      "mixed_pixels": 19,
+      "spatial_transfer": 50,
+      "temporal_transfer": 26,
       "time_sensitivity": 21,
       "uncertainty": 12
     }
@@ -331,7 +337,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 96,
+    "n_papers": 97,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -355,9 +361,9 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 96
+      "verified": 97
     },
-    "n_papers": 96,
+    "n_papers": 97,
     "papers": [
       {
         "arxiv_id": "2607.08945",
@@ -1248,6 +1254,18 @@
         "venue": "arXiv"
       },
       {
+        "arxiv_id": "2412.02732",
+        "date": "2024-12-03",
+        "doi": "10.48550/arxiv.2412.02732",
+        "doi_status": "verified",
+        "key": "szwarcman2024prithvi",
+        "link": "https://arxiv.org/abs/2412.02732",
+        "n_claims": 6,
+        "self_evaluation": true,
+        "title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+        "venue": "arXiv"
+      },
+      {
         "arxiv_id": "2409.18536",
         "date": "2024-09-27",
         "doi": "10.48550/arxiv.2409.18536",
@@ -1518,7 +1536,7 @@
     "all": {
       "axes": [
         {
-          "agreement": 0.636,
+          "agreement": 0.647,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -3011,6 +3029,86 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 42.6,
+              "dataset": "US multi-temporal crop segmentation",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table IX",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "the 600M variant achieved the best performance, with a mIoU of 50.7% and mAcc of 68.8%",
+              "value": 50.7
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 27.49,
+              "dataset": "BioMassters",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XIII",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "It achieved an RMSE of 27.49 in the holdout test set.",
+              "value": 33.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.68,
+              "dataset": "FLUXNET/AmeriFlux/ICOS GPP flux towers",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XV",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "0.88",
+              "value": 0.88
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 81.5,
+              "dataset": "Sen4Map crop type classification",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XI",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "84.6",
+              "value": 84.6
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 72.7,
+              "dataset": "Sen4Map land cover classification",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table X",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "76.1",
+              "value": 76.1
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.926,
               "dataset": "Afghanistan looted sites (PlanetScope, 2023 imagery)",
               "direction": "worse",
@@ -3364,9 +3462,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 115,
-          "n_papers": 33,
-          "n_papers_all": 51
+          "n_claims": 120,
+          "n_papers": 34,
+          "n_papers_all": 52
         },
         {
           "agreement": 0.643,
@@ -5185,13 +5283,29 @@
               "self_evaluation": false,
               "span": "SatMAE (Fine-tuned) LandSat",
               "value": 0.3376
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 52.9,
+              "dataset": "PASTIS",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XII",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "53.4",
+              "value": 53.4
             }
           ],
           "direction": "better",
           "label": "consensus",
-          "n_claims": 15,
-          "n_papers": 5,
-          "n_papers_all": 8
+          "n_claims": 16,
+          "n_papers": 6,
+          "n_papers_all": 9
         },
         {
           "agreement": 0.6,
@@ -7597,6 +7711,145 @@
           }
         },
         {
+          "benchmark": "sen4map",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": 66.6,
+              "dataset": "Sen4Map",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2603.19873",
+              "locator": "Sec 4.3",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "barreiro2026simpler",
+              "paper_title": "SIMPLER: Efficient Foundation Model Adaptation via Similarity-Guided Layer Pruning for Earth Observation",
+              "self_evaluation": false,
+              "span": "retaining 96% baseline F1-macro (63.8% vs 66.6%)",
+              "value": 63.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 81.5,
+              "dataset": "Sen4Map crop type classification",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XI",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "84.6",
+              "value": 84.6
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 72.7,
+              "dataset": "Sen4Map land cover classification",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table X",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "76.1",
+              "value": 76.1
+            }
+          ],
+          "metrics": [
+            "f1"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 3,
+          "n_papers": 2,
+          "n_vs_task_specific": 2,
+          "name": "Sen4Map",
+          "tasks": [
+            "crop_type_mapping",
+            "land_cover_classification"
+          ],
+          "variants": [
+            "Sen4Map",
+            "Sen4Map crop type classification",
+            "Sen4Map land cover classification"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "biomassters",
+          "claims": [
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 29.59,
+              "dataset": "Biomassters",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2506.20380",
+              "locator": "Table 1 (c)",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "feng2025tessera",
+              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
+              "self_evaluation": true,
+              "span": "TESSERA achieves an RMSE of 27.43 t/ha with full labels",
+              "value": 27.43
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 27.49,
+              "dataset": "BioMassters",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XIII",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "It achieved an RMSE of 27.49 in the holdout test set.",
+              "value": 33.4
+            }
+          ],
+          "metrics": [
+            "rmse"
+          ],
+          "models": [
+            "prithvi",
+            "tessera"
+          ],
+          "n_claims": 2,
+          "n_papers": 2,
+          "n_vs_task_specific": 1,
+          "name": "BioMassters",
+          "tasks": [
+            "biomass_estimation"
+          ],
+          "variants": [
+            "BioMassters",
+            "Biomassters"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "ecoregions",
           "claims": [
             {
@@ -7837,6 +8090,68 @@
             "direction": "better",
             "label": "thin",
             "n_papers": 2
+          }
+        },
+        {
+          "benchmark": "pastis",
+          "claims": [
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 51.08,
+              "dataset": "PASTIS-R",
+              "direction": "worse",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2506.20380",
+              "locator": "Table 1 (b)",
+              "metric": "miou",
+              "model": "tessera",
+              "paper_key": "feng2025tessera",
+              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
+              "self_evaluation": true,
+              "span": "it obtains 50.68 mIoU, ranking second",
+              "value": 50.68
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 52.9,
+              "dataset": "PASTIS",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XII",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "53.4",
+              "value": 53.4
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "prithvi",
+            "tessera"
+          ],
+          "n_claims": 2,
+          "n_papers": 2,
+          "n_vs_task_specific": 1,
+          "name": "PASTIS",
+          "tasks": [
+            "crop_type_mapping",
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "PASTIS",
+            "PASTIS-R"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -12417,49 +12732,6 @@
           }
         },
         {
-          "benchmark": "biomassters",
-          "claims": [
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 29.59,
-              "dataset": "Biomassters",
-              "direction": "better",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2506.20380",
-              "locator": "Table 1 (c)",
-              "metric": "rmse",
-              "model": "tessera",
-              "paper_key": "feng2025tessera",
-              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
-              "self_evaluation": true,
-              "span": "TESSERA achieves an RMSE of 27.43 t/ha with full labels",
-              "value": 27.43
-            }
-          ],
-          "metrics": [
-            "rmse"
-          ],
-          "models": [
-            "tessera"
-          ],
-          "n_claims": 1,
-          "n_papers": 1,
-          "n_vs_task_specific": 0,
-          "name": "Biomassters",
-          "tasks": [
-            "biomass_estimation"
-          ],
-          "variants": [
-            "Biomassters"
-          ],
-          "verdict": {
-            "agreement": null,
-            "direction": null,
-            "label": "gap",
-            "n_papers": 0
-          }
-        },
-        {
           "benchmark": "borneo canopy height",
           "claims": [
             {
@@ -13274,6 +13546,49 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "fluxnet ameriflux icos gpp flux towers",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.68,
+              "dataset": "FLUXNET/AmeriFlux/ICOS GPP flux towers",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XV",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "0.88",
+              "value": 0.88
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "FLUXNET/AmeriFlux/ICOS GPP flux towers",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "FLUXNET/AmeriFlux/ICOS GPP flux towers"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -14868,49 +15183,6 @@
           }
         },
         {
-          "benchmark": "pastis r",
-          "claims": [
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 51.08,
-              "dataset": "PASTIS-R",
-              "direction": "worse",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2506.20380",
-              "locator": "Table 1 (b)",
-              "metric": "miou",
-              "model": "tessera",
-              "paper_key": "feng2025tessera",
-              "paper_title": "TESSERA: Temporal Embeddings of Surface Spectra for Earth Representation and Analysis",
-              "self_evaluation": true,
-              "span": "it obtains 50.68 mIoU, ranking second",
-              "value": 50.68
-            }
-          ],
-          "metrics": [
-            "miou"
-          ],
-          "models": [
-            "tessera"
-          ],
-          "n_claims": 1,
-          "n_papers": 1,
-          "n_vs_task_specific": 0,
-          "name": "PASTIS-R",
-          "tasks": [
-            "semantic_segmentation"
-          ],
-          "variants": [
-            "PASTIS-R"
-          ],
-          "verdict": {
-            "agreement": null,
-            "direction": null,
-            "label": "gap",
-            "n_papers": 0
-          }
-        },
-        {
           "benchmark": "pop density",
           "claims": [
             {
@@ -15083,49 +15355,6 @@
           }
         },
         {
-          "benchmark": "sen4map",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": 66.6,
-              "dataset": "Sen4Map",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2603.19873",
-              "locator": "Sec 4.3",
-              "metric": "f1",
-              "model": "prithvi",
-              "paper_key": "barreiro2026simpler",
-              "paper_title": "SIMPLER: Efficient Foundation Model Adaptation via Similarity-Guided Layer Pruning for Earth Observation",
-              "self_evaluation": false,
-              "span": "retaining 96% baseline F1-macro (63.8% vs 66.6%)",
-              "value": 63.8
-            }
-          ],
-          "metrics": [
-            "f1"
-          ],
-          "models": [
-            "prithvi"
-          ],
-          "n_claims": 1,
-          "n_papers": 1,
-          "n_vs_task_specific": 0,
-          "name": "Sen4Map",
-          "tasks": [
-            "crop_type_mapping"
-          ],
-          "variants": [
-            "Sen4Map"
-          ],
-          "verdict": {
-            "agreement": null,
-            "direction": null,
-            "label": "gap",
-            "n_papers": 0
-          }
-        },
-        {
           "benchmark": "sickle",
           "claims": [
             {
@@ -15289,6 +15518,49 @@
           ],
           "variants": [
             "Terrestrial ecoregions (biomes)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "us multi temporal crop segmentation",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 42.6,
+              "dataset": "US multi-temporal crop segmentation",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table IX",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "the 600M variant achieved the best performance, with a mIoU of 50.7% and mAcc of 68.8%",
+              "value": 50.7
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "US multi-temporal crop segmentation",
+          "tasks": [
+            "crop_type_mapping"
+          ],
+          "variants": [
+            "US multi-temporal crop segmentation"
           ],
           "verdict": {
             "agreement": 1.0,
@@ -16253,6 +16525,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.68,
+              "dataset": "FLUXNET/AmeriFlux/ICOS GPP flux towers",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XV",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "0.88",
+              "value": 0.88
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.926,
               "dataset": "Afghanistan looted sites (PlanetScope, 2023 imagery)",
               "direction": "worse",
@@ -16385,6 +16673,7 @@
             "ERA5 gravity wave flux (monthly-averaged)",
             "Ecoregions (Africa, few-shot)",
             "Elevation",
+            "FLUXNET/AmeriFlux/ICOS GPP flux towers",
             "FMoW-RGB",
             "GADM country codes",
             "GAMa (BDD100k)",
@@ -16424,26 +16713,56 @@
             "satmae",
             "scalemae"
           ],
-          "n_claims": 61,
-          "n_papers": 26,
+          "n_claims": 62,
+          "n_papers": 27,
           "task": "representation_probing"
         }
       ],
       "evidence": {
         "directions": {
-          "better": 132,
+          "better": 137,
           "parity": 7,
-          "worse": 33
+          "worse": 34
         },
-        "label_ratio_unspecified": 277,
-        "n_claims": 304,
-        "n_self_eval_claims": 48,
+        "label_ratio_unspecified": 280,
+        "n_claims": 310,
+        "n_self_eval_claims": 54,
         "n_vs_model_or_none": 132,
-        "n_vs_task_specific": 172,
-        "pct_better": 76.7,
-        "pct_label_ratio_unspecified": 91.1
+        "n_vs_task_specific": 178,
+        "pct_better": 77.0,
+        "pct_label_ratio_unspecified": 90.3
       },
       "groups": [
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 27.49,
+              "dataset": "BioMassters",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XIII",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "It achieved an RMSE of 27.49 in the holdout test set.",
+              "value": 33.4
+            }
+          ],
+          "dataset": "BioMassters",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
         {
           "agreement": 1.0,
           "baseline": "alphaearth",
@@ -18168,6 +18487,36 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 52.9,
+              "dataset": "PASTIS",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XII",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "53.4",
+              "value": 53.4
+            }
+          ],
+          "dataset": "PASTIS",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.65442,
               "dataset": "SICKLE",
               "direction": "worse",
@@ -18218,6 +18567,66 @@
           "label": "thin",
           "label_regime": "unspecified",
           "metric": "f1",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 81.5,
+              "dataset": "Sen4Map crop type classification",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XI",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "84.6",
+              "value": 84.6
+            }
+          ],
+          "dataset": "Sen4Map crop type classification",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "f1",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 42.6,
+              "dataset": "US multi-temporal crop segmentation",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table IX",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "the 600M variant achieved the best performance, with a mIoU of 50.7% and mAcc of 68.8%",
+              "value": 50.7
+            }
+          ],
+          "dataset": "US multi-temporal crop segmentation",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
           "model": "prithvi",
           "n_papers": 1,
           "task": "crop_type_mapping"
@@ -20848,6 +21257,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 72.7,
+              "dataset": "Sen4Map land cover classification",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table X",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "76.1",
+              "value": 76.1
+            }
+          ],
+          "dataset": "Sen4Map land cover classification",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "f1",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "alphaearth",
           "claims": [
             {
@@ -22485,6 +22924,36 @@
           "label_regime": "unspecified",
           "metric": "r2",
           "model": "presto",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.68,
+              "dataset": "FLUXNET/AmeriFlux/ICOS GPP flux towers",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XV",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "0.88",
+              "value": 0.88
+            }
+          ],
+          "dataset": "FLUXNET/AmeriFlux/ICOS GPP flux towers",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "prithvi",
           "n_papers": 1,
           "task": "representation_probing"
         },
@@ -27229,6 +27698,34 @@
             "n_papers_all": 1,
             "task": "population_density"
           },
+          "prithvi\tbiomass_estimation": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 27.49,
+                "dataset": "BioMassters",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2412.02732",
+                "locator": "Table XIII",
+                "metric": "rmse",
+                "model": "prithvi",
+                "paper_key": "szwarcman2024prithvi",
+                "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+                "self_evaluation": true,
+                "span": "It achieved an RMSE of 27.49 in the holdout test set.",
+                "value": 33.4
+              }
+            ],
+            "direction": "worse",
+            "label": "thin",
+            "model": "prithvi",
+            "n_claims": 1,
+            "n_papers": 1,
+            "n_papers_all": 1,
+            "task": "biomass_estimation"
+          },
           "prithvi\tchange_detection": {
             "agreement": 0.75,
             "claims": [
@@ -27386,7 +27883,7 @@
             "task": "change_detection"
           },
           "prithvi\tcrop_type_mapping": {
-            "agreement": 0.714,
+            "agreement": 0.75,
             "claims": [
               {
                 "baseline": "prithvi",
@@ -27614,6 +28111,54 @@
               },
               {
                 "baseline": "task_specific",
+                "baseline_value": 42.6,
+                "dataset": "US multi-temporal crop segmentation",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2412.02732",
+                "locator": "Table IX",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "szwarcman2024prithvi",
+                "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+                "self_evaluation": true,
+                "span": "the 600M variant achieved the best performance, with a mIoU of 50.7% and mAcc of 68.8%",
+                "value": 50.7
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 52.9,
+                "dataset": "PASTIS",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2412.02732",
+                "locator": "Table XII",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "szwarcman2024prithvi",
+                "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+                "self_evaluation": true,
+                "span": "53.4",
+                "value": 53.4
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 81.5,
+                "dataset": "Sen4Map crop type classification",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2412.02732",
+                "locator": "Table XI",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "szwarcman2024prithvi",
+                "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+                "self_evaluation": true,
+                "span": "84.6",
+                "value": 84.6
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": 47.7,
                 "dataset": "multi-temporal crop classification (HLS/Sentinel)",
                 "direction": "worse",
@@ -27632,9 +28177,9 @@
             "direction": "better",
             "label": "contested",
             "model": "prithvi",
-            "n_claims": 15,
-            "n_papers": 7,
-            "n_papers_all": 8,
+            "n_claims": 18,
+            "n_papers": 8,
+            "n_papers_all": 9,
             "task": "crop_type_mapping"
           },
           "prithvi\tcrop_yield_estimation": {
@@ -28142,7 +28687,7 @@
             "task": "flood_mapping"
           },
           "prithvi\tland_cover_classification": {
-            "agreement": 0.667,
+            "agreement": 0.5,
             "claims": [
               {
                 "baseline": null,
@@ -28239,14 +28784,30 @@
                 "self_evaluation": false,
                 "span": "SatMAE Multi Spectral 50 98.98",
                 "value": 98.44
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 72.7,
+                "dataset": "Sen4Map land cover classification",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2412.02732",
+                "locator": "Table X",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "szwarcman2024prithvi",
+                "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+                "self_evaluation": true,
+                "span": "76.1",
+                "value": 76.1
               }
             ],
             "direction": "worse",
             "label": "contested",
             "model": "prithvi",
-            "n_claims": 6,
-            "n_papers": 3,
-            "n_papers_all": 4,
+            "n_claims": 7,
+            "n_papers": 4,
+            "n_papers_all": 5,
             "task": "land_cover_classification"
           },
           "prithvi\tlandslide_susceptibility": {
@@ -29621,7 +30182,7 @@
       },
       "task_verdicts": [
         {
-          "agreement": 0.636,
+          "agreement": 0.667,
           "claims": [
             {
               "baseline": "task_specific",
@@ -29977,6 +30538,54 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 42.6,
+              "dataset": "US multi-temporal crop segmentation",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table IX",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "the 600M variant achieved the best performance, with a mIoU of 50.7% and mAcc of 68.8%",
+              "value": 50.7
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 52.9,
+              "dataset": "PASTIS",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XII",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "53.4",
+              "value": 53.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 81.5,
+              "dataset": "Sen4Map crop type classification",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XI",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "84.6",
+              "value": 84.6
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 47.7,
               "dataset": "multi-temporal crop classification (HLS/Sentinel)",
               "direction": "worse",
@@ -30005,7 +30614,10 @@
             "Kalischek cocoa probability layer",
             "Multi-Temporal Crop Segmentation",
             "Multi-Temporal Crop Segmentation (CDL)",
+            "PASTIS",
             "SICKLE",
+            "Sen4Map crop type classification",
+            "US multi-temporal crop segmentation",
             "WorldCereal crop type dataset (Geographic split)",
             "WorldCereal crop type dataset (Random split)",
             "WorldCereal crop type dataset (Temporal split)",
@@ -30041,12 +30653,12 @@
               "n_papers": 1
             },
             {
-              "agreement": 0.714,
+              "agreement": 0.75,
               "direction": "better",
               "label": "contested",
               "model": "prithvi",
-              "n_claims": 10,
-              "n_papers": 7
+              "n_claims": 13,
+              "n_papers": 8
             },
             {
               "agreement": 0.5,
@@ -30058,9 +30670,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 23,
+          "n_claims": 26,
           "n_models": 5,
-          "n_papers": 11,
+          "n_papers": 12,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 1.0,
@@ -30073,7 +30685,7 @@
           "task": "crop_type_mapping"
         },
         {
-          "agreement": 0.727,
+          "agreement": 0.75,
           "claims": [
             {
               "baseline": "task_specific",
@@ -30429,6 +31041,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 72.7,
+              "dataset": "Sen4Map land cover classification",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table X",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "76.1",
+              "value": 76.1
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": null,
               "dataset": "GeoCrossBench (In-Distribution avg)",
               "direction": "worse",
@@ -30571,6 +31199,7 @@
             "RESISC-45",
             "SIBA",
             "SIMB",
+            "Sen4Map land cover classification",
             "WorldCereal cropland dataset (Geographic split)",
             "WorldCereal cropland dataset (Random split)",
             "WorldCereal cropland dataset (Temporal split)",
@@ -30608,12 +31237,12 @@
               "n_papers": 3
             },
             {
-              "agreement": 0.667,
+              "agreement": 0.5,
               "direction": "worse",
               "label": "contested",
               "model": "prithvi",
-              "n_claims": 5,
-              "n_papers": 3
+              "n_claims": 6,
+              "n_papers": 4
             },
             {
               "agreement": 1.0,
@@ -30633,9 +31262,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 30,
+          "n_claims": 31,
           "n_models": 6,
-          "n_papers": 11,
+          "n_papers": 12,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.667,
@@ -32124,6 +32753,57 @@
             "name": "USDA-NASS county-level yield"
           },
           "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 27.49,
+              "dataset": "BioMassters",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2412.02732",
+              "locator": "Table XIII",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "szwarcman2024prithvi",
+              "paper_title": "Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications",
+              "self_evaluation": true,
+              "span": "It achieved an RMSE of 27.49 in the holdout test set.",
+              "value": 33.4
+            }
+          ],
+          "datasets": [
+            "BioMassters"
+          ],
+          "direction": "worse",
+          "fragile": "rests entirely on self-evaluations",
+          "label": "thin",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "prithvi",
+              "n_claims": 1,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 1,
+          "n_models": 1,
+          "n_papers": 1,
+          "pooling_note": null,
+          "strongest_benchmark": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_claims": 1,
+            "n_papers": 1,
+            "name": "BioMassters"
+          },
+          "task": "biomass_estimation"
         },
         {
           "agreement": 1.0,
