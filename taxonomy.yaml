@@ -151,6 +151,7 @@ promoted_tags:
 - model_merging
 - monte_carlo_dropout
 - multi_modal_pretraining
+- multimodal_fusion
 - multimodal_pretraining
 - multisensor_fusion
 - object_detection

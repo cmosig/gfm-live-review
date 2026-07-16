@@ -275,6 +275,9 @@
   "OReole-MR": [
     "snyder2026compressing"
   ],
+  "OSM_integration": [
+    "bai2025geolink"
+  ],
   "OpenStreetMap_integration": [
     "knoblauch2026spatial"
   ],
@@ -643,6 +646,9 @@
   ],
   "capacity_adaptive_reconstruction": [
     "hou2026aef"
+  ],
+  "carbon_emission_estimation": [
+    "bai2025geolink"
   ],
   "carbon_footprint": [
     "ghamisi2025geospatial"
@@ -1754,9 +1760,6 @@
   "multimodal_contrastive_learning": [
     "hecht2026multi"
   ],
-  "multimodal_fusion": [
-    "kontogiorgakis2026comparative"
-  ],
   "multimodal_lidar_fusion": [
     "kristen2025habitat"
   ],
@@ -2558,6 +2561,9 @@
   "untangled_attention": [
     "thoreau2025parameter"
   ],
+  "urban_function_zone_mapping": [
+    "bai2025geolink"
+  ],
   "urban_heat_island": [
     "fleckenstein2025detection"
   ],
@@ -2569,6 +2575,9 @@
   ],
   "urban_space_embedding": [
     "wang2024multimodal"
+  ],
+  "urban_village_identification": [
+    "bai2025geolink"
   ],
   "user revisions": [
     "goel2023presto"

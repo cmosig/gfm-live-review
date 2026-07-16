@@ -549,6 +549,10 @@
     "key": "tao2018embedding",
     "status": "off_topic"
   },
+  "emerging flexible designs for geospatial multimodal foundation models": {
+    "key": "dias2026emerging",
+    "status": "quarantined"
+  },
   "enabling intrinsic reasoning over dense geospatial embeddings with dfr gemma": {
     "key": "zhang2026enabling",
     "status": "off_topic"
@@ -800,6 +804,12 @@
   "geodesic trees and exceptional directions in fpp on hyperbolic groups": {
     "key": "basu2024geodesic",
     "status": "off_topic"
+  },
+  "geolink empowering remote sensing foundation model with openstreetmap data": {
+    "arxiv_id": "2509.26016",
+    "dropped_claims": 0,
+    "key": "bai2025geolink",
+    "status": "carded"
   },
   "geomeld toward semantically grounded foundation models for remote sensing": {
     "key": "hasan2026geomeld",
