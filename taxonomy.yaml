@@ -93,6 +93,7 @@ promoted_tags:
 - GFM-Swin
 - GeoRSCLIP
 - LoRA
+- MAE_pretraining
 - MOSAIKS
 - PDFM
 - PEFT
@@ -145,11 +146,14 @@ promoted_tags:
 - model_compression
 - model_merging
 - monte_carlo_dropout
+- multi_modal_pretraining
 - object_detection
 - parameter_efficient_fine_tuning
+- parameter_efficient_finetuning
 - retrieval_augmented_generation
 - satellite_embeddings
 - satmae
+- scene_classification
 - sentinel1_sentinel2_fusion
 - spatial_autocorrelation
 - taxonomy

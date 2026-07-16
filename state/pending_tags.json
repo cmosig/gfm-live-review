@@ -5,6 +5,12 @@
   "3d_cloud_reconstruction": [
     "girtsou2025cloud"
   ],
+  "3d_reconstruction": [
+    "diao2024ringmo"
+  ],
+  "3d_spectral_masking": [
+    "hong2023spectralgpt"
+  ],
   "AEF_embeddings": [
     "lyu2026structure"
   ],
@@ -143,6 +149,12 @@
   "FloodPlanet": [
     "kaushik2025assessing"
   ],
+  "FoMo-Bench": [
+    "bountos2023fomo"
+  ],
+  "FoMo-Net": [
+    "bountos2023fomo"
+  ],
   "GAIR": [
     "siampou2026trajganr"
   ],
@@ -191,6 +203,9 @@
   "ImageNet_baseline": [
     "romero2026how"
   ],
+  "InternImage": [
+    "wang2024mtp"
+  ],
   "KL_divergence": [
     "zhang2026geospatial"
   ],
@@ -212,9 +227,6 @@
   "LoRA_finetuning": [
     "szwarcman2024prithvi"
   ],
-  "MAE_pretraining": [
-    "zhang2026sigmae"
-  ],
   "MDI feature importance": [
     "benavidesmartinez2026what"
   ],
@@ -227,11 +239,17 @@
   "MODIS_TOA": [
     "spradlin2024satvision"
   ],
+  "MTP": [
+    "wang2024mtp"
+  ],
   "MaMMUT": [
     "barzilai2025recipe"
   ],
   "Mask2Former": [
     "lyu2026structure"
+  ],
+  "MillionAID": [
+    "wang2022advancing"
   ],
   "MoCo-Eco": [
     "plekhanova2025ssl4eco"
@@ -293,6 +311,9 @@
   "ROI_centric_interface": [
     "ye2026any"
   ],
+  "RVSA": [
+    "wang2024mtp"
+  ],
   "ResNet_vs_ViT": [
     "gilch2026how"
   ],
@@ -310,6 +331,9 @@
   ],
   "SAM-for-RS": [
     "xiao2024foundation"
+  ],
+  "SAMRS": [
+    "wang2024mtp"
   ],
   "SAR flood segmentation": [
     "thasma2026beyond"
@@ -401,6 +425,9 @@
   "SwinV2": [
     "spradlin2024satvision"
   ],
+  "TalloS": [
+    "bountos2023fomo"
+  ],
   "TreeSatAI": [
     "plekhanova2025ssl4eco"
   ],
@@ -449,8 +476,14 @@
   "adapter_fine_tuning": [
     "kaushik2026prithvi"
   ],
+  "aerial_remote_sensing": [
+    "diao2024ringmo"
+  ],
   "aerosol_optical_depth_estimation": [
     "tushar2026foundation"
+  ],
+  "affine_transformation_contrastive_learning": [
+    "diao2024ringmo"
   ],
   "affinity_propagation_clustering": [
     "perera2026clustering"
@@ -1079,6 +1112,9 @@
   "food_water_nexus": [
     "asif2026adapting"
   ],
+  "forest_monitoring": [
+    "bountos2023fomo"
+  ],
   "forest_restoration_monitoring": [
     "heiman2026characterizing"
   ],
@@ -1255,6 +1291,9 @@
   ],
   "homomorphic-encryption": [
     "sachan2026post"
+  ],
+  "horizontal_object_detection": [
+    "wang2024mtp"
   ],
   "housing_price_estimation": [
     "hou2026aef"
@@ -1592,11 +1631,11 @@
   "multi-spectral": [
     "marsocci2024pangaea"
   ],
+  "multi-task-pretraining": [
+    "wang2024mtp"
+  ],
   "multi_modal_optical_sar": [
     "hu2024vheat"
-  ],
-  "multi_modal_pretraining": [
-    "hanna2025mapex"
   ],
   "multi_scale_patch_embedding": [
     "li2025any"
@@ -1624,6 +1663,9 @@
   ],
   "multi_spectral_encoding": [
     "cong2022satmae"
+  ],
+  "multi_target_reconstruction": [
+    "hong2023spectralgpt"
   ],
   "multi_temporal_pretraining": [
     "szwarcman2024prithvi"
@@ -1712,6 +1754,9 @@
   "object counting": [
     "zhang2026fusar"
   ],
+  "object_tracking": [
+    "diao2024ringmo"
+  ],
   "off_diagonal_covariance": [
     "mocharla2026probing"
   ],
@@ -1750,9 +1795,6 @@
   ],
   "panoptic_segmentation": [
     "muhawenayo2026prue"
-  ],
-  "parameter_efficient_finetuning": [
-    "thoreau2025parameter"
   ],
   "patch_density_fragmentation": [
     "orlowski2026sub"
@@ -1793,6 +1835,9 @@
   "place_embeddings": [
     "zhang2026geospatial"
   ],
+  "plain_vit": [
+    "wang2022advancing"
+  ],
   "planetary_science": [
     "purohit2026momo"
   ],
@@ -1807,6 +1852,9 @@
   ],
   "poi_guided_alignment": [
     "liu2025beyond"
+  ],
+  "point_cloud_segmentation": [
+    "bountos2023fomo"
   ],
   "point_process_intensity": [
     "aalaila2026when"
@@ -1873,6 +1921,9 @@
   ],
   "probe_selectivity": [
     "mocharla2026probing"
+  ],
+  "progressive_pretraining": [
+    "hong2023spectralgpt"
   ],
   "proprietary_model": [
     "heiman2026characterizing"
@@ -1985,6 +2036,9 @@
   "ridge_regression_baseline": [
     "hamoudzadeh2026inferring"
   ],
+  "ringmo": [
+    "diao2024ringmo"
+  ],
   "risk_coverage_curve": [
     "gonzalezcalabuig2025shrug"
   ],
@@ -2008,6 +2062,12 @@
   ],
   "rotary_position_embedding": [
     "luo2026georope"
+  ],
+  "rotated_object_detection": [
+    "wang2024mtp"
+  ],
+  "rotated_varied_size_attention": [
+    "wang2022advancing"
   ],
   "routine_health_information_systems": [
     "metz2025application"
@@ -2062,9 +2122,6 @@
   ],
   "scattering_mechanism_constraint": [
     "liu2026huiyanearth"
-  ],
-  "scene_classification": [
-    "li2025fleximo"
   ],
   "sdg_monitoring": [
     "gong2026earth"
@@ -2215,6 +2272,9 @@
   ],
   "spectral_index_guided_masking": [
     "zhang2026sigmae"
+  ],
+  "spectral_reconstruction_fidelity": [
+    "hong2023spectralgpt"
   ],
   "spectral_temporal_convolution": [
     "tong2025invariant"

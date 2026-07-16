@@ -113,6 +113,12 @@
     "key": "badkul2025adaptive",
     "status": "off_topic"
   },
+  "advancing plain vision transformer towards remote sensing foundation model": {
+    "arxiv_id": "2208.03987",
+    "dropped_claims": 0,
+    "key": "wang2022advancing",
+    "status": "carded"
+  },
   "aef econ toward plug and play socioeconomic foundation embeddings from alphaearth for urban remote sensing": {
     "arxiv_id": "2606.20697",
     "dropped_claims": 0,
@@ -628,6 +634,12 @@
   "fluctuations clustering and interaction driven dynamics in sedimenting particles at low galileo numbers a neural network approach": {
     "key": "vovk2025fluctuations",
     "status": "off_topic"
+  },
+  "fomo multi modal multi scale and multi task remote sensing foundation models for forest monitoring": {
+    "arxiv_id": "2312.10114",
+    "dropped_claims": 0,
+    "key": "bountos2023fomo",
+    "status": "carded"
   },
   "formation and trapping of co2 from cryogenic irradiation of carbonate": {
     "key": "pandya2026formation",
@@ -1157,6 +1169,12 @@
     "key": "schulte2026mosaiks",
     "status": "off_topic"
   },
+  "mtp advancing remote sensing foundation model via multi task pretraining": {
+    "arxiv_id": "2403.13430",
+    "dropped_claims": 0,
+    "key": "wang2024mtp",
+    "status": "carded"
+  },
   "multi modal contrastive learning for implicit earth embeddings via location tying": {
     "arxiv_id": "2606.20167",
     "dropped_claims": 0,
@@ -1276,6 +1294,10 @@
   "on the universality of fluctuations for the cover time": {
     "key": "berestycki2022universality",
     "status": "off_topic"
+  },
+  "one for all toward unified foundation models for earth vision": {
+    "key": "xiong2024one",
+    "status": "quarantined"
   },
   "osm billion level openstreetmap dataset for city wide experiments": {
     "key": "zheng2025osm",
@@ -1501,6 +1523,10 @@
     "key": "-",
     "status": "quarantined_mismatch"
   },
+  "remote sensing chatgpt solving remote sensing tasks with chatgpt and visual models": {
+    "key": "guo2024remote",
+    "status": "off_topic"
+  },
   "remsa foundation model selection for remote sensing via a constraint aware agent": {
     "key": "chen2025remsa",
     "status": "off_topic"
@@ -1534,6 +1560,12 @@
   "revealing the mysteries of venus the davinci mission": {
     "key": "garvin2022revealing",
     "status": "off_topic"
+  },
+  "ringmo aerial an aerial remote sensing foundation model with affine transformation contrastive learning": {
+    "arxiv_id": "2409.13366",
+    "dropped_claims": 0,
+    "key": "diao2024ringmo",
+    "status": "carded"
   },
   "ringmo agent a unified remote sensing foundation model for multi platform and multi modal reasoning": {
     "key": "hu2025ringmo",
@@ -1709,6 +1741,12 @@
   "spectral gaps and spatial priors studying hyperspectral downstream adaptation using terramind": {
     "key": "leonardi2026spectral",
     "status": "quarantined"
+  },
+  "spectralgpt spectral remote sensing foundation model": {
+    "arxiv_id": "2311.07113",
+    "dropped_claims": 1,
+    "key": "hong2023spectralgpt",
+    "status": "carded"
   },
   "spectralx parameter efficient domain generalization for spectral remote sensing foundation models": {
     "key": "zhang2025spectralx",
