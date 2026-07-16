@@ -2457,3 +2457,4 @@
 {"ts": "2026-07-15T23:23:16.165857+00:00", "event": "rejected", "title": "Towards DeepSentinel: An extensible corpus of labelled Sentinel-1 and -2 imagery and a general-purpose sensor-fusion semantic embedding model", "reason": "no model name and no topic-regex match"}
 {"ts": "2026-07-15T23:24:13.547140+00:00", "event": "source_unavailable", "title": "Scalable Analysis of Bipartite Experiments", "arxiv_id": "2402.11070", "error": "404 for https://arxiv.org/pdf/2402.11070"}
 {"ts": "2026-07-15T23:35:32.216535+00:00", "event": "infra_failure", "title": "Emerging Flexible Designs for Geospatial Multimodal Foundation Models", "error": "claude failed (exit 1, api None): "}
+{"ts": "2026-07-16T00:00:40.888303+00:00", "event": "infra_failure", "title": "GeoLink: Empowering Remote Sensing Foundation Model with OpenStreetMap Data", "error": "claude failed (exit 1, api None): "}

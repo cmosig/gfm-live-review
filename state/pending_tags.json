@@ -23,6 +23,9 @@
   "AlphaEarth feature fusion": [
     "zhang2026fusar"
   ],
+  "Avg_DTB_metric": [
+    "adorni2025eos"
+  ],
   "BAER_burn_intensity": [
     "szwarcman2024prithvi"
   ],
@@ -260,6 +263,9 @@
   "POI_representation_learning": [
     "wang2024multimodal"
   ],
+  "Pangaea_benchmark": [
+    "adorni2025eos"
+  ],
   "Panopticon": [
     "banze2025hybiomass"
   ],
@@ -491,6 +497,9 @@
   "band_adaptation": [
     "hsu2024geospatial"
   ],
+  "band_missing_robustness": [
+    "li2025any"
+  ],
   "barlow-twins": [
     "feng2026tessera"
   ],
@@ -617,6 +626,9 @@
   "cloud_robustness": [
     "feng2025tessera"
   ],
+  "cloud_shadow_detection": [
+    "li2025any"
+  ],
   "cloudsat_radar_reflectivity": [
     "girtsou2025cloud"
   ],
@@ -734,11 +746,11 @@
   "cross_modal_fusion": [
     "lyu2026structure"
   ],
-  "cross_modal_retrieval": [
-    "xiong2025dofa"
-  ],
   "cross_paper_metric_divergence": [
     "corley2026one"
+  ],
+  "cross_sensor_generalization": [
+    "li2025any"
   ],
   "cross_sensor_pretraining": [
     "han2024bridging"
@@ -751,6 +763,9 @@
   ],
   "cryosphere": [
     "kaushik2026cryo"
+  ],
+  "csmae": [
+    "hackel2025csmoe"
   ],
   "curriculum_masking": [
     "zhang2026sigmae"
@@ -926,6 +941,9 @@
   "encoder_freezing": [
     "kaushik2025assessing"
   ],
+  "encoder_selection": [
+    "adorni2025eos"
+  ],
   "end_to_end_pipeline": [
     "li2023assessment"
   ],
@@ -937,6 +955,9 @@
   ],
   "ensemble_machine_learning": [
     "simoussi2025continental"
+  ],
+  "ensemble_of_specialists": [
+    "adorni2025eos"
   ],
   "ensemble_uncertainty": [
     "gonzalezcalabuig2025shrug"
@@ -995,11 +1016,11 @@
   "feature_engineering_free": [
     "lisaius2026embedding"
   ],
-  "feature_fusion": [
-    "jia2025can"
-  ],
   "federated-defi": [
     "sachan2026post"
+  ],
+  "federated_learning": [
+    "adorni2025eos"
   ],
   "few-shot": [
     "kaushik2025assessing"
@@ -1325,6 +1346,9 @@
   "land-fertility-classification": [
     "sachan2026post"
   ],
+  "land_cover_fraction_supervision": [
+    "li2025agrifm"
+  ],
   "land_surface_temperature": [
     "fleckenstein2025detection"
   ],
@@ -1466,6 +1490,9 @@
   "mean_reciprocal_rank": [
     "scheurer2026lepa"
   ],
+  "mean_teacher": [
+    "li2025agrifm"
+  ],
   "median_income_prediction": [
     "klemmer2023satclip"
   ],
@@ -1489,6 +1516,9 @@
   ],
   "moco_v2": [
     "corley2025landsat"
+  ],
+  "modality_pruning": [
+    "hanna2025mapex"
   ],
   "model_foundry": [
     "hanna2026geosane"
@@ -1525,6 +1555,12 @@
   ],
   "multi-spectral": [
     "marsocci2024pangaea"
+  ],
+  "multi_modal_pretraining": [
+    "hanna2025mapex"
+  ],
+  "multi_scale_patch_embedding": [
+    "li2025any"
   ],
   "multi_scale_representation_learning": [
     "li2023assessment"
@@ -1667,6 +1703,9 @@
   "out_of_distribution_detection": [
     "gonzalezcalabuig2025shrug"
   ],
+  "paddy_rice_mapping": [
+    "li2025agrifm"
+  ],
   "pan_sharpening": [
     "han2024bridging"
   ],
@@ -1780,6 +1819,9 @@
   ],
   "pretraining_data_diversity": [
     "kaur2026pretrain"
+  ],
+  "prithvi_v2": [
+    "hackel2025csmoe"
   ],
   "prithvi_wxc": [
     "gupta2025finetuning"
@@ -1940,6 +1982,9 @@
   "sar_orbit_geometry": [
     "kontogiorgakis2026comparative"
   ],
+  "satlas": [
+    "hackel2025csmoe"
+  ],
   "satlas_pretrain": [
     "tadesse2026watch"
   ],
@@ -2060,6 +2105,9 @@
   "socioeconomic_prediction": [
     "gong2026earth"
   ],
+  "soft_mixture_of_experts": [
+    "hackel2025csmoe"
+  ],
   "soil_moisture_estimation": [
     "kontogiorgakis2026comparative"
   ],
@@ -2168,6 +2216,9 @@
   "swinunet": [
     "nakayama2024satswinmae"
   ],
+  "synchronized_spatiotemporal_downsampling": [
+    "li2025agrifm"
+  ],
   "synthetic_chemistry": [
     "cao2024presto"
   ],
@@ -2225,9 +2276,6 @@
   "terrain_fusion": [
     "vu2026clay"
   ],
-  "terramind": [
-    "dionelis2025scaling"
-  ],
   "tillage_mapping": [
     "ma2025harvesting"
   ],
@@ -2242,6 +2290,9 @@
   ],
   "toolkit": [
     "gomes2025terratorch"
+  ],
+  "top_k_pruning": [
+    "adorni2025eos"
   ],
   "torchgeo": [
     "fang2026earth"
@@ -2336,9 +2387,6 @@
   "video_geolocalization": [
     "kulkarni2026vidtag"
   ],
-  "video_swin_transformer": [
-    "nakayama2024satswinmae"
-  ],
   "vision-language model": [
     "zhang2026fusar"
   ],
@@ -2381,11 +2429,11 @@
   "west_africa": [
     "lisaius2026embedding"
   ],
-  "wildfire_detection": [
-    "zhang2026sigmae"
-  ],
   "wildfire_mapping": [
     "shibli2026low"
+  ],
+  "winter_wheat_mapping": [
+    "li2025agrifm"
   ],
   "within_region_vs_out_of_region": [
     "karimzadeh2025performance"

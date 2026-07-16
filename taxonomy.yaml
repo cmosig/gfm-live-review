@@ -113,6 +113,7 @@ promoted_tags:
 - cloud_gap_imputation
 - content_based_image_retrieval
 - country_classification
+- cross_modal_retrieval
 - data_augmentation
 - dhs_survey
 - diffusion_model
@@ -122,6 +123,7 @@ promoted_tags:
 - earth_embeddings
 - ecoregion_classification
 - elevation_prediction
+- feature_fusion
 - field_boundary_delineation
 - geographic_generalization
 - gravity_wave_flux_parameterization
@@ -147,7 +149,10 @@ promoted_tags:
 - satmae
 - sentinel1_sentinel2_fusion
 - spatial_autocorrelation
+- terramind
 - tree_species_classification
 - urban_morphology
+- video_swin_transformer
 - vision_transformer
+- wildfire_detection
 - wildfire_scar_mapping

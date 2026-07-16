@@ -103,6 +103,12 @@
     "key": "hou2026aef",
     "status": "carded"
   },
+  "agrifm a multi source temporal remote sensing foundation model for agriculture mapping": {
+    "arxiv_id": "2505.21357",
+    "dropped_claims": 0,
+    "key": "li2025agrifm",
+    "status": "carded"
+  },
   "ai derived structural building intelligence for urban resilience an application in saint vincent and the grenadines": {
     "arxiv_id": "2509.18182",
     "dropped_claims": 0,
@@ -137,6 +143,12 @@
     "arxiv_id": "2602.23678",
     "dropped_claims": 0,
     "key": "ye2026any",
+    "status": "carded"
+  },
+  "any optical model a universal foundation model for optical remote sensing": {
+    "arxiv_id": "2512.17224",
+    "dropped_claims": 0,
+    "key": "li2025any",
     "status": "carded"
   },
   "apple an evolution code for modeling giant planets": {
@@ -369,6 +381,12 @@
     "key": "ardizzon2025crystal",
     "status": "off_topic"
   },
+  "csmoe an efficient remote sensing foundation model with soft mixture of experts": {
+    "arxiv_id": "2509.14104",
+    "dropped_claims": 1,
+    "key": "hackel2025csmoe",
+    "status": "carded"
+  },
   "darkvesselnet multi modal remote sensing and trajectory reasoning for dark vessel detection": {
     "key": "sharma2026darkvesselnet",
     "status": "off_topic"
@@ -495,6 +513,12 @@
     "arxiv_id": "2407.13862",
     "dropped_claims": 0,
     "key": "bianco2024enhancing",
+    "status": "carded"
+  },
+  "eos fm can an ensemble of specialist models act as a generalist feature extractor": {
+    "arxiv_id": "2511.21523",
+    "dropped_claims": 0,
+    "key": "adorni2025eos",
     "status": "carded"
   },
   "evidence for optical pulsations from a redback millisecond pulsar": {
@@ -799,6 +823,10 @@
     "key": "sosa2024how",
     "status": "carded"
   },
+  "how much of a model do we need redundancy and slimmability in remote sensing foundation models": {
+    "key": "hackel2026how",
+    "status": "quarantined"
+  },
   "how to embed matters evaluation of eo embedding design choices": {
     "arxiv_id": "2603.10658",
     "dropped_claims": 0,
@@ -1001,6 +1029,10 @@
     "key": "yan2024long",
     "status": "off_topic"
   },
+  "look where it matters training free ultra hr remote sensing vqa via adaptive zoom search": {
+    "key": "zhou2025look",
+    "status": "off_topic"
+  },
   "low eddington ratio changing look active galactic nuclei the case of ngc 4614": {
     "key": "lusso2025low",
     "status": "off_topic"
@@ -1018,6 +1050,12 @@
   "magnetization transfer from protons to quadrupolar nuclei in solid state nmr using presto or dipolar mediated refocused inept methods": {
     "key": "giovine2020magnetization",
     "status": "off_topic"
+  },
+  "mapex modality aware pruning of experts for remote sensing foundation models": {
+    "arxiv_id": "2507.07527",
+    "dropped_claims": 0,
+    "key": "hanna2025mapex",
+    "status": "carded"
   },
   "mapping the multiverse of latent representations": {
     "key": "wayland2024mapping",
@@ -1431,6 +1469,10 @@
     "key": "-",
     "status": "quarantined_mismatch"
   },
+  "remsa foundation model selection for remote sensing via a constraint aware agent": {
+    "key": "chen2025remsa",
+    "status": "off_topic"
+  },
   "reobench benchmarking robustness of earth observation foundation models": {
     "key": "li2025reobench",
     "status": "off_topic"
@@ -1459,6 +1501,10 @@
   },
   "revealing the mysteries of venus the davinci mission": {
     "key": "garvin2022revealing",
+    "status": "off_topic"
+  },
+  "ringmo agent a unified remote sensing foundation model for multi platform and multi modal reasoning": {
+    "key": "hu2025ringmo",
     "status": "off_topic"
   },
   "room temperature superparamagnetism due to giant magnetic anisotropy in mo s defected single layer mos 2": {
@@ -1519,6 +1565,10 @@
     "dropped_claims": 0,
     "key": "dionelis2025scaling",
     "status": "carded"
+  },
+  "scaling remote sensing foundation models data domain tradeoffs at the peta scale": {
+    "key": "wickrema2025scaling",
+    "status": "quarantined"
   },
   "searching for pulsars in extreme orbits gpu acceleration of the fourier domain jerk search": {
     "key": "admek2019searching",
@@ -1582,6 +1632,10 @@
     "key": "guo2023skysense",
     "status": "quarantined"
   },
+  "skysense v2 a unified foundation model for multi modal remote sensing": {
+    "key": "zhang2025skysense",
+    "status": "quarantined"
+  },
   "slum detection and density mapping with alphaearth foundations a representation learning evaluation across 12 global cities": {
     "arxiv_id": "2605.10029",
     "dropped_claims": 0,
@@ -1591,6 +1645,10 @@
   "sofic actions halo products and metric approximations of groups": {
     "key": "alekseev2026sofic",
     "status": "off_topic"
+  },
+  "soma 1m a large scale sar optical multi resolution alignment dataset for multi task remote sensing": {
+    "key": "wu2026soma",
+    "status": "quarantined"
   },
   "sparkesx single dish parkes data sets for finding the unexpected a data challenge": {
     "key": "yong2022sparkesx",
@@ -1608,6 +1666,10 @@
   },
   "spectral gaps and spatial priors studying hyperspectral downstream adaptation using terramind": {
     "key": "leonardi2026spectral",
+    "status": "quarantined"
+  },
+  "spectralx parameter efficient domain generalization for spectral remote sensing foundation models": {
+    "key": "zhang2025spectralx",
     "status": "quarantined"
   },
   "spying on the quickly variable optical sky with the fast optical photometer sifap2": {

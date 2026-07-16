@@ -94,7 +94,12 @@ class _Lock:
         except (ValueError, OSError):
             owner = 0
         if owner and owner != os.getpid() and _pid_alive(owner):
-            raise SystemExit(f"another run holds the lock: {LOCK_PATH} (pid {owner})")
+            # Not a failure: another run (the drain loop, or the nightly timer)
+            # is active and will do the work. Exit 0 so a skipped nightly is not
+            # marked "failed" by systemd when it collides with the drain loop.
+            print(f"another run holds the lock: {LOCK_PATH} (pid {owner}) — skipping",
+                  file=sys.stderr)
+            raise SystemExit(0)
         print(f"reclaiming stale lock {LOCK_PATH} (owner pid {owner or '?'} gone)",
               file=sys.stderr)
         try:

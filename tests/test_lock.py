@@ -50,7 +50,8 @@ def test_refuses_when_owner_alive(lock_path):
     live_pid = os.getppid()
     assert run._pid_alive(live_pid)
     lock_path.write_text(f"{live_pid}\n")
-    with pytest.raises(SystemExit):
+    with pytest.raises(SystemExit) as exc:
         with run._Lock():
             pass
+    assert exc.value.code == 0  # a live owner is a benign skip, not a failure
     assert lock_path.read_text().strip() == str(live_pid)  # left intact
