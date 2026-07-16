@@ -170,14 +170,14 @@
   "GSD_calibration": [
     "luo2026georope"
   ],
+  "GeoChat": [
+    "barzilai2025recipe"
+  ],
   "GeoLifeCLEF": [
     "plekhanova2025ssl4eco"
   ],
   "GeoNames": [
     "pettersson2025leveraging"
-  ],
-  "GeoRSCLIP": [
-    "tadesse2026satellite"
   ],
   "HIV_prediction": [
     "metz2025application"
@@ -196,6 +196,9 @@
   ],
   "Kronecker-product-attention": [
     "si2025towards"
+  ],
+  "LHRS-Bot": [
+    "barzilai2025recipe"
   ],
   "LMIC": [
     "metz2025application"
@@ -223,6 +226,9 @@
   ],
   "MODIS_TOA": [
     "spradlin2024satvision"
+  ],
+  "MaMMUT": [
+    "barzilai2025recipe"
   ],
   "Mask2Former": [
     "lyu2026structure"
@@ -256,6 +262,9 @@
   ],
   "PCA_dimensionality_reduction": [
     "cheng2026from"
+  ],
+  "PIR-ITR": [
+    "barzilai2025recipe"
   ],
   "POI auxiliary features": [
     "hou2026slum"
@@ -298,6 +307,9 @@
   ],
   "S12-MoCo": [
     "kaushik2026cryo"
+  ],
+  "SAM-for-RS": [
+    "xiao2024foundation"
   ],
   "SAR flood segmentation": [
     "thasma2026beyond"
@@ -365,6 +377,9 @@
   "Sen1Floods11": [
     "waithaka2025position"
   ],
+  "SkyScript": [
+    "barzilai2025recipe"
+  ],
   "Spectral-ResNet-50": [
     "banze2025hybiomass"
   ],
@@ -407,6 +422,12 @@
   "VHSR_pretraining_curation": [
     "perera2026clustering"
   ],
+  "VLM": [
+    "barzilai2025recipe"
+  ],
+  "VLM-for-RS": [
+    "xiao2024foundation"
+  ],
   "VPT": [
     "martiescofet2025fine"
   ],
@@ -442,6 +463,9 @@
   ],
   "airborne_RGB_imagery": [
     "polushko2026flood"
+  ],
+  "aircraft_detection": [
+    "wang2025complex"
   ],
   "all_sky_imagery": [
     "spradlin2024satvision"
@@ -530,6 +554,9 @@
   "building_damage_assessment": [
     "dietrich2025potential"
   ],
+  "building_extraction": [
+    "li2025fleximo"
+  ],
   "burned_area_mapping": [
     "shibli2026low"
   ],
@@ -617,9 +644,6 @@
   "cloud_cover_failure": [
     "kaushik2026prithvi"
   ],
-  "cloud_detection": [
-    "du2025first"
-  ],
   "cloud_removal": [
     "han2024bridging"
   ],
@@ -649,6 +673,9 @@
   ],
   "commuting_mode_share": [
     "gong2026earth"
+  ],
+  "complex_valued_SAR": [
+    "wang2025complex"
   ],
   "compute-optimal-allocation": [
     "feng2026tessera"
@@ -1025,6 +1052,9 @@
   "few-shot": [
     "kaushik2025assessing"
   ],
+  "few_shot_segmentation": [
+    "wang2025complex"
+  ],
   "fine_tuning": [
     "ishikawa2025assessing"
   ],
@@ -1036,9 +1066,6 @@
   ],
   "fixed_embedding_products": [
     "corley2026from"
-  ],
-  "flexible_patch_size": [
-    "forgaard2026thor"
   ],
   "flight_hardware_validation": [
     "du2025first"
@@ -1208,6 +1235,9 @@
   "health_facility_outputs": [
     "metz2025application"
   ],
+  "heat_conduction_operator": [
+    "hu2024vheat"
+  ],
   "heteroscedastic_regression": [
     "gaber2026uncertainty"
   ],
@@ -1268,11 +1298,17 @@
   "ice_wedge_polygon_mapping": [
     "hsu2024geospatial"
   ],
+  "image_classification": [
+    "hu2024vheat"
+  ],
   "image_geolocation": [
     "bianco2024enhancing"
   ],
   "image_retrieval": [
     "blumenstiel2024multi"
+  ],
+  "image_text_retrieval": [
+    "barzilai2025recipe"
   ],
   "image_to_gps_retrieval": [
     "cepeda2023geoclip"
@@ -1556,6 +1592,9 @@
   "multi-spectral": [
     "marsocci2024pangaea"
   ],
+  "multi_modal_optical_sar": [
+    "hu2024vheat"
+  ],
   "multi_modal_pretraining": [
     "hanna2025mapex"
   ],
@@ -1775,6 +1814,9 @@
   "points_of_interest": [
     "hou2026aef"
   ],
+  "polarimetric_decomposition": [
+    "wang2025complex"
+  ],
   "polarization_shift": [
     "ye2026crossearth"
   ],
@@ -1801,6 +1843,9 @@
   ],
   "post_classification_vs_direct_change_detection": [
     "kristen2025habitat"
+  ],
+  "pre-training-datasets": [
+    "xiao2024foundation"
   ],
   "prediction_in_ungauged_basins": [
     "qu2026utilizing"
@@ -1843,6 +1888,9 @@
   ],
   "pseudo_labeling": [
     "yaghmour2025sensor"
+  ],
+  "pseudo_labeling_segmentation": [
+    "barzilai2025recipe"
   ],
   "radar_optical_fusion": [
     "fuller2023croma"
@@ -2015,6 +2063,9 @@
   "scattering_mechanism_constraint": [
     "liu2026huiyanearth"
   ],
+  "scene_classification": [
+    "li2025fleximo"
+  ],
   "sdg_monitoring": [
     "gong2026earth"
   ],
@@ -2080,6 +2131,9 @@
   ],
   "sentinel-2": [
     "lisaius2026embedding"
+  ],
+  "ship_detection": [
+    "wang2025complex"
   ],
   "shoreline_delineation": [
     "chhabra2025utilizing"
@@ -2210,6 +2264,9 @@
   "surface_to_subsurface_inference": [
     "nakata2026subsurface"
   ],
+  "survey": [
+    "xiao2024foundation"
+  ],
   "swin_transformer": [
     "nakayama2024satswinmae"
   ],
@@ -2236,9 +2293,6 @@
   ],
   "task_specific_distillation": [
     "yusuf2025instageo"
-  ],
-  "taxonomy": [
-    "fang2026earth"
   ],
   "teacher_student_pseudo_labeling": [
     "perez2026predicting"
@@ -2351,6 +2405,9 @@
   "universal_kriging_baseline": [
     "omalley2026context"
   ],
+  "unsupervised_classification": [
+    "wang2025complex"
+  ],
   "untangled_attention": [
     "thoreau2025parameter"
   ],
@@ -2407,6 +2464,9 @@
   ],
   "wavelength_conditioning": [
     "xiong2024neural"
+  ],
+  "wavelength_embedding": [
+    "li2025fleximo"
   ],
   "weakly_supervised_temporal_localization": [
     "tadesse2026watch"
@@ -2465,8 +2525,8 @@
   "yield_regression": [
     "cao2024presto"
   ],
-  "zero_shot_classification": [
-    "xiong2025dofa"
+  "zero_shot_cross_modal_retrieval": [
+    "barzilai2025recipe"
   ],
   "zonal_statistics": [
     "corley2026from"

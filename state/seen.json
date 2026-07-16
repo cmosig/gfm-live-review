@@ -5,6 +5,12 @@
     "key": "girtsou2025cloud",
     "status": "carded"
   },
+  "a complex valued sar foundation model based on physically inspired representation learning": {
+    "arxiv_id": "2504.11999",
+    "dropped_claims": 0,
+    "key": "wang2025complex",
+    "status": "carded"
+  },
   "a denser hydrogen inferred from first principles simulations challenges jupiter s interior models": {
     "key": "cozza2025denser",
     "status": "off_topic"
@@ -30,6 +36,12 @@
   "a presto based parallel pulsar search pipeline used for fast drift scan data": {
     "key": "yu2019presto",
     "status": "off_topic"
+  },
+  "a recipe for improving remote sensing vlm zero shot generalization": {
+    "arxiv_id": "2503.08722",
+    "dropped_claims": 0,
+    "key": "barzilai2025recipe",
+    "status": "carded"
   },
   "a satellite foundation model for improved wealth monitoring": {
     "arxiv_id": "2604.23166",
@@ -62,6 +74,10 @@
   "a survey of dynamical and gravitational lensing tests in scale invariance the fall of dark matter": {
     "key": "maeder2024survey",
     "status": "off_topic"
+  },
+  "a survey on remote sensing foundation models from vision to multimodality": {
+    "key": "huang2025survey",
+    "status": "quarantined"
   },
   "a well motivated model of pedestrian dynamics": {
     "key": "sten2026well",
@@ -455,6 +471,10 @@
     "key": "chiarini2025dynamics",
     "status": "off_topic"
   },
+  "dynamicvis dynamic visual perception for efficient remote sensing foundation models": {
+    "key": "chen2025dynamicvis",
+    "status": "quarantined"
+  },
   "earth embeddings as products taxonomy ecosystem and standardized access": {
     "arxiv_id": "2601.13134",
     "dropped_claims": 0,
@@ -589,6 +609,12 @@
     "key": "basu2019first",
     "status": "off_topic"
   },
+  "fleximo a flexible remote sensing foundation model": {
+    "arxiv_id": "2503.23844",
+    "dropped_claims": 1,
+    "key": "li2025fleximo",
+    "status": "carded"
+  },
   "flood mapping from rgb imagery using a vision foundation model": {
     "arxiv_id": "2606.24120",
     "dropped_claims": 1,
@@ -625,6 +651,12 @@
     "arxiv_id": "2310.18660",
     "dropped_claims": 0,
     "key": "jakubik2023foundation",
+    "status": "carded"
+  },
+  "foundation models for remote sensing and earth observation a survey": {
+    "arxiv_id": "2410.16602",
+    "dropped_claims": 0,
+    "key": "xiao2024foundation",
     "status": "carded"
   },
   "from landslide conditioning factors to satellite embeddings evaluating the utilisation of google alphaearth for landslide susceptibility mapping using deep learning": {
@@ -1511,6 +1543,12 @@
     "key": "-",
     "status": "quarantined_mismatch"
   },
+  "rs vheat heat conduction guided efficient remote sensing foundation model": {
+    "arxiv_id": "2411.17984",
+    "dropped_claims": 1,
+    "key": "hu2024vheat",
+    "status": "carded"
+  },
   "satclip global general purpose location embeddings with satellite imagery": {
     "arxiv_id": "2311.17179",
     "dropped_claims": 0,
@@ -1522,6 +1560,10 @@
     "dropped_claims": 0,
     "key": "tadesse2026satellite",
     "status": "carded"
+  },
+  "satellite federated fine tuning for foundation models in space computing power networks": {
+    "key": "zhu2025satellite",
+    "status": "quarantined"
   },
   "satmae pre training transformers for temporal and multi spectral satellite imagery": {
     "arxiv_id": "2207.08051",
@@ -1851,6 +1893,10 @@
     "dropped_claims": 1,
     "key": "kyselica2026towards",
     "status": "carded"
+  },
+  "towards privacy preserved pre training of remote sensing foundation models with federated mutual guidance learning": {
+    "key": "tan2025towards",
+    "status": "off_topic"
   },
   "towards scalable and generalizable earth observation data mining via foundation model composition": {
     "key": "chuc2025towards",

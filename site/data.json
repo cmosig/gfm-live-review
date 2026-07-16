@@ -15,12 +15,13 @@
         "2024-07": 2,
         "2024-08": 1,
         "2024-09": 2,
+        "2024-10": 1,
         "2024-11": 2,
         "2024-12": 2,
         "2025-01": 2,
         "2025-02": 2,
-        "2025-03": 5,
-        "2025-04": 3,
+        "2025-03": 6,
+        "2025-04": 4,
         "2025-05": 3,
         "2025-06": 6,
         "2025-07": 5,
@@ -48,10 +49,11 @@
         "2024-07": 1,
         "2024-08": 1,
         "2024-09": 3,
-        "2024-11": 1,
+        "2024-10": 1,
+        "2024-11": 2,
         "2024-12": 1,
         "2025-02": 2,
-        "2025-03": 5,
+        "2025-03": 6,
         "2025-04": 2,
         "2025-05": 2,
         "2025-06": 3,
@@ -76,6 +78,7 @@
         "2024-06": 1,
         "2024-07": 1,
         "2024-09": 1,
+        "2024-10": 1,
         "2024-11": 1,
         "2024-12": 2,
         "2025-01": 2,
@@ -100,8 +103,9 @@
       "human_semantics": {
         "2024-04": 1,
         "2024-05": 1,
+        "2024-10": 1,
         "2025-02": 1,
-        "2025-03": 1,
+        "2025-03": 2,
         "2025-05": 1,
         "2025-09": 2,
         "2026-01": 1,
@@ -115,6 +119,9 @@
         "2023-09": 1,
         "2023-11": 1,
         "2024-06": 1,
+        "2024-10": 1,
+        "2024-11": 1,
+        "2025-04": 1,
         "2025-08": 1,
         "2025-09": 2,
         "2025-11": 2,
@@ -131,6 +138,7 @@
         "2024-04": 1,
         "2024-06": 1,
         "2024-12": 1,
+        "2025-04": 1,
         "2025-06": 1,
         "2025-09": 1,
         "2025-10": 1,
@@ -154,10 +162,11 @@
         "2024-07": 1,
         "2024-08": 1,
         "2024-09": 1,
+        "2024-10": 1,
         "2024-11": 1,
         "2024-12": 2,
         "2025-01": 1,
-        "2025-03": 2,
+        "2025-03": 3,
         "2025-04": 1,
         "2025-05": 3,
         "2025-06": 3,
@@ -180,6 +189,7 @@
         "2023-10": 1,
         "2024-04": 1,
         "2024-07": 1,
+        "2024-10": 1,
         "2024-12": 2,
         "2025-04": 1,
         "2025-06": 1,
@@ -229,14 +239,14 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 139,
-      "compute_cost": 71,
-      "data_bias": 71,
-      "human_semantics": 14,
-      "interpretability": 26,
-      "mixed_pixels": 28,
-      "spatial_transfer": 83,
-      "temporal_transfer": 35,
+      "benchmark_narrowness": 142,
+      "compute_cost": 74,
+      "data_bias": 72,
+      "human_semantics": 16,
+      "interpretability": 29,
+      "mixed_pixels": 29,
+      "spatial_transfer": 85,
+      "temporal_transfer": 36,
       "time_sensitivity": 27,
       "uncertainty": 24
     }
@@ -274,7 +284,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 159,
+    "n_papers": 164,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -298,9 +308,9 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 159
+      "verified": 164
     },
-    "n_papers": 159,
+    "n_papers": 164,
     "papers": [
       {
         "arxiv_id": "2607.08945",
@@ -1707,6 +1717,18 @@
         "venue": "arXiv"
       },
       {
+        "arxiv_id": "2504.11999",
+        "date": "2025-04-16",
+        "doi": "10.48550/arxiv.2504.11999",
+        "doi_status": "verified",
+        "key": "wang2025complex",
+        "link": "https://arxiv.org/abs/2504.11999",
+        "n_claims": 5,
+        "self_evaluation": false,
+        "title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+        "venue": "arXiv"
+      },
+      {
         "arxiv_id": "2504.03169",
         "date": "2025-04-04",
         "doi": "10.48550/arxiv.2504.03169",
@@ -1716,6 +1738,18 @@
         "n_claims": 3,
         "self_evaluation": false,
         "title": "REJEPA: A Novel Joint-Embedding Predictive Architecture for Efficient Remote Sensing Image Retrieval",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2503.23844",
+        "date": "2025-03-31",
+        "doi": "10.48550/arxiv.2503.23844",
+        "doi_status": "verified",
+        "key": "li2025fleximo",
+        "link": "https://arxiv.org/abs/2503.23844",
+        "n_claims": 4,
+        "self_evaluation": false,
+        "title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
         "venue": "arXiv"
       },
       {
@@ -1752,6 +1786,18 @@
         "n_claims": 3,
         "self_evaluation": false,
         "title": "Parameter-Efficient Adaptation of Geospatial Foundation Models through Embedding Deflection",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2503.08722",
+        "date": "2025-03-10",
+        "doi": "10.48550/arxiv.2503.08722",
+        "doi_status": "verified",
+        "key": "barzilai2025recipe",
+        "link": "https://arxiv.org/abs/2503.08722",
+        "n_claims": 1,
+        "self_evaluation": false,
+        "title": "A Recipe for Improving Remote Sensing VLM Zero Shot Generalization",
         "venue": "arXiv"
       },
       {
@@ -1851,6 +1897,18 @@
         "venue": "arXiv"
       },
       {
+        "arxiv_id": "2411.17984",
+        "date": "2024-11-27",
+        "doi": "10.48550/arxiv.2411.17984",
+        "doi_status": "verified",
+        "key": "hu2024vheat",
+        "link": "https://arxiv.org/abs/2411.17984",
+        "n_claims": 1,
+        "self_evaluation": false,
+        "title": "RS-vHeat: Heat Conduction Guided Efficient Remote Sensing Foundation Model",
+        "venue": "arXiv"
+      },
+      {
         "arxiv_id": "2411.17000",
         "date": "2024-11-26",
         "doi": "10.48550/arxiv.2411.17000",
@@ -1872,6 +1930,18 @@
         "n_claims": 2,
         "self_evaluation": false,
         "title": "Multimodal Contrastive Learning of Urban Space Representations from POI Data",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2410.16602",
+        "date": "2024-10-22",
+        "doi": "10.48550/arxiv.2410.16602",
+        "doi_status": "verified",
+        "key": "xiao2024foundation",
+        "link": "https://arxiv.org/abs/2410.16602",
+        "n_claims": 0,
+        "self_evaluation": false,
+        "title": "Foundation Models for Remote Sensing and Earth Observation: A Survey",
         "venue": "arXiv"
       },
       {
@@ -2211,13 +2281,13 @@
         "venue": "arXiv"
       }
     ],
-    "quarantine_count": 40
+    "quarantine_count": 43
   },
   "views": {
     "all": {
       "axes": [
         {
-          "agreement": 0.617,
+          "agreement": 0.629,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -2347,6 +2417,22 @@
               "self_evaluation": false,
               "span": "retaining 96% baseline F1-macro (63.8% vs 66.6%)",
               "value": 63.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 33.33,
+              "dataset": "RSITMD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.08722",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "geoclip",
+              "paper_key": "barzilai2025recipe",
+              "paper_title": "A Recipe for Improving Remote Sensing VLM Zero Shot Generalization",
+              "self_evaluation": false,
+              "span": "38.64 39.85",
+              "value": 42.63
             },
             {
               "baseline": "task_specific",
@@ -3339,6 +3425,22 @@
               "self_evaluation": false,
               "span": "a score of 0.607 for the EuroCrops dataset",
               "value": 0.607
+            },
+            {
+              "baseline": "scalemae",
+              "baseline_value": 65.77,
+              "dataset": "iSAID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2411.17984",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "hu2024vheat",
+              "paper_title": "RS-vHeat: Heat Conduction Guided Efficient Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "its 1.28% and 2.95% improvement over Scale-MAE",
+              "value": 68.72
             },
             {
               "baseline": "task_specific",
@@ -5214,6 +5316,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 57.28,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "61.52%, 70.69%, and 81.33% for the mIoU, mAcc, and OA metrics",
+              "value": 61.52
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 47.7,
               "dataset": "multi-temporal crop classification (HLS/Sentinel)",
               "direction": "worse",
@@ -5599,12 +5717,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 211,
-          "n_papers": 60,
-          "n_papers_all": 86
+          "n_claims": 214,
+          "n_papers": 62,
+          "n_papers_all": 89
         },
         {
-          "agreement": 0.692,
+          "agreement": 0.704,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -6537,6 +6655,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 19.96,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table II",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming other models by 4.93% in mIoU and 3.61% in FB-IoU",
+              "value": 24.89
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": null,
               "dataset": "C2Seg-AB",
               "direction": "better",
@@ -6570,12 +6704,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 60,
-          "n_papers": 26,
-          "n_papers_all": 38
+          "n_claims": 61,
+          "n_papers": 27,
+          "n_papers_all": 39
         },
         {
-          "agreement": 0.65,
+          "agreement": 0.659,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -7331,6 +7465,22 @@
               "value": 85.4
             },
             {
+              "baseline": "dofa",
+              "baseline_value": 88.59,
+              "dataset": "EuroSAT-SAR",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table III",
+              "metric": "accuracy",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "modifying the patch size yields a 1.37% improvement in accuracy",
+              "value": 89.96
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 58.23,
               "dataset": "Landslide Reference",
@@ -8020,6 +8170,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 67.8,
+              "dataset": "HRSID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table V",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "70.3(+2.5)",
+              "value": 70.3
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 64.04,
+              "dataset": "AIR-PolSAR-Seg",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table VII",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "surpassing the second best mIoU by 1.68%",
+              "value": 65.72
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 70.89,
               "dataset": "AID",
               "direction": "better",
@@ -8197,9 +8379,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 101,
-          "n_papers": 40,
-          "n_papers_all": 56
+          "n_claims": 104,
+          "n_papers": 41,
+          "n_papers_all": 58
         },
         {
           "agreement": 1.0,
@@ -9403,7 +9585,7 @@
           "n_papers_all": 20
         },
         {
-          "agreement": 1.0,
+          "agreement": 0.5,
           "axis": "G7_interpretability",
           "claims": [
             {
@@ -9599,6 +9781,22 @@
               "value": 0.2113
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 50.2,
+              "dataset": "SARClsL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming the second-best model by 16.6% and 7.1% respectively",
+              "value": 66.8
+            },
+            {
               "baseline": null,
               "baseline_value": 61.7,
               "dataset": "MADOS",
@@ -9617,9 +9815,9 @@
           ],
           "direction": "worse",
           "label": "thin",
-          "n_claims": 13,
-          "n_papers": 1,
-          "n_papers_all": 5
+          "n_claims": 14,
+          "n_papers": 2,
+          "n_papers_all": 6
         },
         {
           "agreement": 1.0,
@@ -9745,7 +9943,7 @@
           "n_papers_all": 3
         },
         {
-          "agreement": 0.636,
+          "agreement": 0.667,
           "axis": "G9_ecological_fine_scale",
           "claims": [
             {
@@ -9973,6 +10171,54 @@
               "value": 0.5
             },
             {
+              "baseline": "dofa",
+              "baseline_value": 47.6,
+              "dataset": "SegMunich",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table IV",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "outperforming the second-best method by 1.4 in terms of mIoU",
+              "value": 52.7
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 92.2,
+              "dataset": "WHU-Building",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table V",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "achieves SOTA performance, with an mIoU of 94.8, which is 1.2 points higher than the second-best method",
+              "value": 94.8
+            },
+            {
+              "baseline": "dofa",
+              "baseline_value": 93.2,
+              "dataset": "GF12MS-WHU-GF1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table VI",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "Compared to DOFA, our model improves the mIoU by 0.6 points",
+              "value": 93.8
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 0.671,
               "dataset": "FireCCI51 (Ndays)",
@@ -10151,9 +10397,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 25,
-          "n_papers": 11,
-          "n_papers_all": 19
+          "n_claims": 28,
+          "n_papers": 12,
+          "n_papers_all": 20
         },
         {
           "agreement": 1.0,
@@ -11463,6 +11709,22 @@
               "value": 99.46
             },
             {
+              "baseline": "dofa",
+              "baseline_value": 88.59,
+              "dataset": "EuroSAT-SAR",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table III",
+              "metric": "accuracy",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "modifying the patch size yields a 1.37% improvement in accuracy",
+              "value": 89.96
+            },
+            {
               "baseline": "croma",
               "baseline_value": 98.83,
               "dataset": "EuroSAT",
@@ -11558,8 +11820,8 @@
             "scalemae",
             "tessera"
           ],
-          "n_claims": 11,
-          "n_papers": 9,
+          "n_claims": 12,
+          "n_papers": 10,
           "n_vs_task_specific": 6,
           "name": "EuroSAT",
           "tasks": [
@@ -11569,6 +11831,7 @@
           "variants": [
             "EuroSAT",
             "EuroSAT-L",
+            "EuroSAT-SAR",
             "EuroSat"
           ],
           "verdict": {
@@ -14429,6 +14692,66 @@
             "direction": "better",
             "label": "thin",
             "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "segmunich",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": 47.6,
+              "dataset": "SegMunich",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table IV",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "outperforming the second-best method by 1.4 in terms of mIoU",
+              "value": 52.7
+            },
+            {
+              "baseline": null,
+              "baseline_value": 59.8,
+              "dataset": "SegMunich",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2603.07463",
+              "locator": "Table 5",
+              "metric": "f1",
+              "model": "dofa",
+              "paper_key": "zhang2026sigmae",
+              "paper_title": "SIGMAE: A Spectral-Index-Guided Foundation Model for Multispectral Remote Sensing",
+              "self_evaluation": false,
+              "span": "SIGMAE 90.14 81.09 32.71 63.65 89.37 85.09 22.26 48.88 55.15 50.51 31.31 77.05 64.47 60.90",
+              "value": 60.9
+            }
+          ],
+          "metrics": [
+            "f1",
+            "miou"
+          ],
+          "models": [
+            "dofa"
+          ],
+          "n_claims": 2,
+          "n_papers": 2,
+          "n_vs_task_specific": 0,
+          "name": "SegMunich",
+          "tasks": [
+            "land_cover_classification"
+          ],
+          "variants": [
+            "SegMunich"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
           }
         },
         {
@@ -19883,6 +20206,65 @@
           }
         },
         {
+          "benchmark": "sarsegl1",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 57.28,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "61.52%, 70.69%, and 81.33% for the mIoU, mAcc, and OA metrics",
+              "value": 61.52
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 19.96,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table II",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming other models by 4.93% in mIoU and 3.61% in FB-IoU",
+              "value": 24.89
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "presto"
+          ],
+          "n_claims": 2,
+          "n_papers": 1,
+          "n_vs_task_specific": 2,
+          "name": "SARSegL1",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "SARSegL1"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "sentinel 2 cloud mask catalogue",
           "claims": [
             {
@@ -20523,6 +20905,49 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "air polsar seg",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 64.04,
+              "dataset": "AIR-PolSAR-Seg",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table VII",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "surpassing the second best mIoU by 1.68%",
+              "value": 65.72
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "presto"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "AIR-PolSAR-Seg",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "AIR-PolSAR-Seg"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -22891,6 +23316,49 @@
           }
         },
         {
+          "benchmark": "gf12ms whu gf1",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": 93.2,
+              "dataset": "GF12MS-WHU-GF1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table VI",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "Compared to DOFA, our model improves the mIoU by 0.6 points",
+              "value": 93.8
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "dofa"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "GF12MS-WHU-GF1",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "GF12MS-WHU-GF1"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
+          }
+        },
+        {
           "benchmark": "gpw v4 population density",
           "claims": [
             {
@@ -23106,6 +23574,49 @@
           }
         },
         {
+          "benchmark": "hrsid",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 67.8,
+              "dataset": "HRSID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table V",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "70.3(+2.5)",
+              "value": 70.3
+            }
+          ],
+          "metrics": [
+            "auc"
+          ],
+          "models": [
+            "presto"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "HRSID",
+          "tasks": [
+            "change_detection"
+          ],
+          "variants": [
+            "HRSID"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "hurdat hurricane tracks",
           "claims": [
             {
@@ -23226,6 +23737,49 @@
           ],
           "variants": [
             "Internal Cooling (Granite-GFM cooling gradient experiment)"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "isaid",
+          "claims": [
+            {
+              "baseline": "scalemae",
+              "baseline_value": 65.77,
+              "dataset": "iSAID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2411.17984",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "hu2024vheat",
+              "paper_title": "RS-vHeat: Heat Conduction Guided Efficient Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "its 1.28% and 2.95% improvement over Scale-MAE",
+              "value": 68.72
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "scalemae"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "iSAID",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "iSAID"
           ],
           "verdict": {
             "agreement": null,
@@ -25084,6 +25638,49 @@
           }
         },
         {
+          "benchmark": "rsitmd",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 33.33,
+              "dataset": "RSITMD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.08722",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "geoclip",
+              "paper_key": "barzilai2025recipe",
+              "paper_title": "A Recipe for Improving Remote Sensing VLM Zero Shot Generalization",
+              "self_evaluation": false,
+              "span": "38.64 39.85",
+              "value": 42.63
+            }
+          ],
+          "metrics": [
+            "accuracy"
+          ],
+          "models": [
+            "geoclip"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "RSITMD",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "RSITMD"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "rts",
           "claims": [
             {
@@ -25170,46 +25767,46 @@
           }
         },
         {
-          "benchmark": "segmunich",
+          "benchmark": "sarclsl1",
           "claims": [
             {
-              "baseline": null,
-              "baseline_value": 59.8,
-              "dataset": "SegMunich",
+              "baseline": "task_specific",
+              "baseline_value": 50.2,
+              "dataset": "SARClsL1",
               "direction": "better",
               "label_ratio": null,
-              "link": "https://arxiv.org/abs/2603.07463",
-              "locator": "Table 5",
-              "metric": "f1",
-              "model": "dofa",
-              "paper_key": "zhang2026sigmae",
-              "paper_title": "SIGMAE: A Spectral-Index-Guided Foundation Model for Multispectral Remote Sensing",
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
               "self_evaluation": false,
-              "span": "SIGMAE 90.14 81.09 32.71 63.65 89.37 85.09 22.26 48.88 55.15 50.51 31.31 77.05 64.47 60.90",
-              "value": 60.9
+              "span": "outperforming the second-best model by 16.6% and 7.1% respectively",
+              "value": 66.8
             }
           ],
           "metrics": [
-            "f1"
+            "accuracy"
           ],
           "models": [
-            "dofa"
+            "presto"
           ],
           "n_claims": 1,
           "n_papers": 1,
-          "n_vs_task_specific": 0,
-          "name": "SegMunich",
+          "n_vs_task_specific": 1,
+          "name": "SARClsL1",
           "tasks": [
-            "land_cover_classification"
+            "representation_probing"
           ],
           "variants": [
-            "SegMunich"
+            "SARClsL1"
           ],
           "verdict": {
-            "agreement": null,
-            "direction": null,
-            "label": "gap",
-            "n_papers": 0
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -25858,6 +26455,49 @@
           }
         },
         {
+          "benchmark": "whu building",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 92.2,
+              "dataset": "WHU-Building",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table V",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "achieves SOTA performance, with an mIoU of 94.8, which is 1.2 points higher than the second-best method",
+              "value": 94.8
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "dofa"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "WHU-Building",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "WHU-Building"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "wildfire detection",
           "claims": [
             {
@@ -26076,6 +26716,22 @@
       "diagnostics": [
         {
           "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 33.33,
+              "dataset": "RSITMD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.08722",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "geoclip",
+              "paper_key": "barzilai2025recipe",
+              "paper_title": "A Recipe for Improving Remote Sensing VLM Zero Shot Generalization",
+              "self_evaluation": false,
+              "span": "38.64 39.85",
+              "value": 42.63
+            },
             {
               "baseline": "task_specific",
               "baseline_value": null,
@@ -27438,6 +28094,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 50.2,
+              "dataset": "SARClsL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming the second-best model by 16.6% and 7.1% respectively",
+              "value": 66.8
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 71.6,
               "dataset": "AID",
               "direction": "better",
@@ -27510,6 +28182,8 @@
             "Plant presence (French Alps relevés)",
             "RESISC-45/UC Merced/AiRound/CV-BrCT/EuroSAT/MLRSNet/Optimal-31/WHU-RS19 (avg)",
             "RESISC45",
+            "RSITMD",
+            "SARClsL1",
             "SSL4EO ERA5 extension",
             "SSL4EO-S12-downstream (Clouds)",
             "Street View",
@@ -27532,24 +28206,24 @@
             "satmae",
             "scalemae"
           ],
-          "n_claims": 86,
-          "n_papers": 38,
+          "n_claims": 88,
+          "n_papers": 40,
           "task": "representation_probing"
         }
       ],
       "evidence": {
         "directions": {
-          "better": 209,
+          "better": 216,
           "parity": 8,
           "worse": 90
         },
-        "label_ratio_unspecified": 472,
-        "n_claims": 529,
+        "label_ratio_unspecified": 483,
+        "n_claims": 540,
         "n_self_eval_claims": 70,
-        "n_vs_model_or_none": 222,
-        "n_vs_task_specific": 307,
-        "pct_better": 68.1,
-        "pct_label_ratio_unspecified": 89.2
+        "n_vs_model_or_none": 226,
+        "n_vs_task_specific": 314,
+        "pct_better": 68.8,
+        "pct_label_ratio_unspecified": 89.4
       },
       "groups": [
         {
@@ -28481,6 +29155,36 @@
           "label_regime": "unspecified",
           "metric": "f1",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "change_detection"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 67.8,
+              "dataset": "HRSID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table V",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "70.3(+2.5)",
+              "value": 70.3
+            }
+          ],
+          "dataset": "HRSID",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "auc",
+          "model": "presto",
           "n_papers": 1,
           "task": "change_detection"
         },
@@ -34436,6 +35140,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "dofa",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": 88.59,
+              "dataset": "EuroSAT-SAR",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table III",
+              "metric": "accuracy",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "modifying the patch size yields a 1.37% improvement in accuracy",
+              "value": 89.96
+            }
+          ],
+          "dataset": "EuroSAT-SAR",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "dofa",
+          "n_papers": 1,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "task_specific",
           "claims": [
             {
@@ -35122,6 +35856,36 @@
           "label": "thin",
           "label_regime": "unspecified",
           "metric": "f1",
+          "model": "dofa",
+          "n_papers": 1,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "dofa",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": 47.6,
+              "dataset": "SegMunich",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table IV",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "outperforming the second-best method by 1.4 in terms of mIoU",
+              "value": 52.7
+            }
+          ],
+          "dataset": "SegMunich",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
           "model": "dofa",
           "n_papers": 1,
           "task": "land_cover_classification"
@@ -38964,6 +39728,66 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 33.33,
+              "dataset": "RSITMD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.08722",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "geoclip",
+              "paper_key": "barzilai2025recipe",
+              "paper_title": "A Recipe for Improving Remote Sensing VLM Zero Shot Generalization",
+              "self_evaluation": false,
+              "span": "38.64 39.85",
+              "value": 42.63
+            }
+          ],
+          "dataset": "RSITMD",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "geoclip",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 50.2,
+              "dataset": "SARClsL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming the second-best model by 16.6% and 7.1% respectively",
+              "value": 66.8
+            }
+          ],
+          "dataset": "SARClsL1",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
           "baseline": null,
           "claims": [
             {
@@ -39337,6 +40161,36 @@
           "model": "galileo",
           "n_papers": 1,
           "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 64.04,
+              "dataset": "AIR-PolSAR-Seg",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table VII",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "surpassing the second best mIoU by 1.68%",
+              "value": 65.72
+            }
+          ],
+          "dataset": "AIR-PolSAR-Seg",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
         },
         {
           "agreement": 1.0,
@@ -40205,6 +41059,36 @@
           "label_regime": "unspecified",
           "metric": "f1",
           "model": "satmae",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "dofa",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": 93.2,
+              "dataset": "GF12MS-WHU-GF1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table VI",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "Compared to DOFA, our model improves the mIoU by 0.6 points",
+              "value": 93.8
+            }
+          ],
+          "dataset": "GF12MS-WHU-GF1",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "dofa",
           "n_papers": 1,
           "task": "semantic_segmentation"
         },
@@ -41146,6 +42030,52 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 57.28,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "61.52%, 70.69%, and 81.33% for the mIoU, mAcc, and OA metrics",
+              "value": 61.52
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 19.96,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table II",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming other models by 4.93% in mIoU and 3.61% in FB-IoU",
+              "value": 24.89
+            }
+          ],
+          "dataset": "SARSegL1",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 57.6,
               "dataset": "SPARCS",
               "direction": "better",
@@ -41488,6 +42418,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 92.2,
+              "dataset": "WHU-Building",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table V",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "achieves SOTA performance, with an mIoU of 94.8, which is 1.2 points higher than the second-best method",
+              "value": 94.8
+            }
+          ],
+          "dataset": "WHU-Building",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "dofa",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
           "baseline": null,
           "claims": [
             {
@@ -41573,6 +42533,36 @@
           "label_regime": "unspecified",
           "metric": "miou",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "scalemae",
+          "claims": [
+            {
+              "baseline": "scalemae",
+              "baseline_value": 65.77,
+              "dataset": "iSAID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2411.17984",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "hu2024vheat",
+              "paper_title": "RS-vHeat: Heat Conduction Guided Efficient Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "its 1.28% and 2.95% improvement over Scale-MAE",
+              "value": 68.72
+            }
+          ],
+          "dataset": "iSAID",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "scalemae",
           "n_papers": 1,
           "task": "semantic_segmentation"
         },
@@ -45120,6 +46110,38 @@
               },
               {
                 "baseline": "dofa",
+                "baseline_value": 88.59,
+                "dataset": "EuroSAT-SAR",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2503.23844",
+                "locator": "Table III",
+                "metric": "accuracy",
+                "model": "dofa",
+                "paper_key": "li2025fleximo",
+                "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+                "self_evaluation": false,
+                "span": "modifying the patch size yields a 1.37% improvement in accuracy",
+                "value": 89.96
+              },
+              {
+                "baseline": "dofa",
+                "baseline_value": 47.6,
+                "dataset": "SegMunich",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2503.23844",
+                "locator": "Table IV",
+                "metric": "miou",
+                "model": "dofa",
+                "paper_key": "li2025fleximo",
+                "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+                "self_evaluation": false,
+                "span": "outperforming the second-best method by 1.4 in terms of mIoU",
+                "value": 52.7
+              },
+              {
+                "baseline": "dofa",
                 "baseline_value": 98.13,
                 "dataset": "UCM",
                 "direction": "worse",
@@ -45250,13 +46272,13 @@
             "direction": "better",
             "label": "contested",
             "model": "dofa",
-            "n_claims": 11,
+            "n_claims": 13,
             "n_papers": 5,
-            "n_papers_all": 8,
+            "n_papers_all": 9,
             "task": "land_cover_classification"
           },
           "dofa\tsemantic_segmentation": {
-            "agreement": 0.571,
+            "agreement": 0.625,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -45436,6 +46458,38 @@
               },
               {
                 "baseline": "task_specific",
+                "baseline_value": 92.2,
+                "dataset": "WHU-Building",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2503.23844",
+                "locator": "Table V",
+                "metric": "miou",
+                "model": "dofa",
+                "paper_key": "li2025fleximo",
+                "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+                "self_evaluation": false,
+                "span": "achieves SOTA performance, with an mIoU of 94.8, which is 1.2 points higher than the second-best method",
+                "value": 94.8
+              },
+              {
+                "baseline": "dofa",
+                "baseline_value": 93.2,
+                "dataset": "GF12MS-WHU-GF1",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2503.23844",
+                "locator": "Table VI",
+                "metric": "miou",
+                "model": "dofa",
+                "paper_key": "li2025fleximo",
+                "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+                "self_evaluation": false,
+                "span": "Compared to DOFA, our model improves the mIoU by 0.6 points",
+                "value": 93.8
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": 0.7,
                 "dataset": "FTW",
                 "direction": "worse",
@@ -45518,9 +46572,9 @@
             "direction": "better",
             "label": "contested",
             "model": "dofa",
-            "n_claims": 16,
-            "n_papers": 7,
-            "n_papers_all": 10,
+            "n_claims": 18,
+            "n_papers": 8,
+            "n_papers_all": 11,
             "task": "semantic_segmentation"
           },
           "galileo\tcrop_type_mapping": {
@@ -45913,14 +46967,30 @@
                 "self_evaluation": false,
                 "span": "SHRUG-FM (Ours) 0.160 ±\\pm 0.045",
                 "value": 0.16
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 67.8,
+                "dataset": "HRSID",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2504.11999",
+                "locator": "Table V",
+                "metric": "auc",
+                "model": "presto",
+                "paper_key": "wang2025complex",
+                "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+                "self_evaluation": false,
+                "span": "70.3(+2.5)",
+                "value": 70.3
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "presto",
-            "n_claims": 1,
-            "n_papers": 1,
-            "n_papers_all": 1,
+            "n_claims": 2,
+            "n_papers": 2,
+            "n_papers_all": 2,
             "task": "change_detection"
           },
           "presto\tcrop_type_mapping": {
@@ -46498,6 +47568,66 @@
             "n_papers": 0,
             "n_papers_all": 1,
             "task": "population_density"
+          },
+          "presto\tsemantic_segmentation": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 57.28,
+                "dataset": "SARSegL1",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2504.11999",
+                "locator": "Table I",
+                "metric": "miou",
+                "model": "presto",
+                "paper_key": "wang2025complex",
+                "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+                "self_evaluation": false,
+                "span": "61.52%, 70.69%, and 81.33% for the mIoU, mAcc, and OA metrics",
+                "value": 61.52
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 19.96,
+                "dataset": "SARSegL1",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2504.11999",
+                "locator": "Table II",
+                "metric": "miou",
+                "model": "presto",
+                "paper_key": "wang2025complex",
+                "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+                "self_evaluation": false,
+                "span": "outperforming other models by 4.93% in mIoU and 3.61% in FB-IoU",
+                "value": 24.89
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 64.04,
+                "dataset": "AIR-PolSAR-Seg",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2504.11999",
+                "locator": "Table VII",
+                "metric": "miou",
+                "model": "presto",
+                "paper_key": "wang2025complex",
+                "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+                "self_evaluation": false,
+                "span": "surpassing the second best mIoU by 1.68%",
+                "value": 65.72
+              }
+            ],
+            "direction": "better",
+            "label": "thin",
+            "model": "presto",
+            "n_claims": 3,
+            "n_papers": 1,
+            "n_papers_all": 1,
+            "task": "semantic_segmentation"
           },
           "prithvi\tbiomass_estimation": {
             "agreement": 0.667,
@@ -50015,6 +51145,22 @@
             "agreement": 0.75,
             "claims": [
               {
+                "baseline": "scalemae",
+                "baseline_value": 65.77,
+                "dataset": "iSAID",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2411.17984",
+                "locator": "Table 1",
+                "metric": "miou",
+                "model": "scalemae",
+                "paper_key": "hu2024vheat",
+                "paper_title": "RS-vHeat: Heat Conduction Guided Efficient Remote Sensing Foundation Model",
+                "self_evaluation": false,
+                "span": "its 1.28% and 2.95% improvement over Scale-MAE",
+                "value": 68.72
+              },
+              {
                 "baseline": "task_specific",
                 "baseline_value": 60.68,
                 "dataset": "Five Billion Pixels",
@@ -50194,9 +51340,9 @@
             "direction": "better",
             "label": "contested",
             "model": "scalemae",
-            "n_claims": 11,
+            "n_claims": 12,
             "n_papers": 4,
-            "n_papers_all": 7,
+            "n_papers_all": 8,
             "task": "semantic_segmentation"
           },
           "tessera\tbiomass_estimation": {
@@ -50876,7 +52022,7 @@
       },
       "task_verdicts": [
         {
-          "agreement": 0.571,
+          "agreement": 0.6,
           "claims": [
             {
               "baseline": "task_specific",
@@ -51264,6 +52410,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 92.2,
+              "dataset": "WHU-Building",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table V",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "achieves SOTA performance, with an mIoU of 94.8, which is 1.2 points higher than the second-best method",
+              "value": 94.8
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.26,
               "dataset": "PASTIS",
               "direction": "better",
@@ -51632,6 +52794,54 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 57.28,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "61.52%, 70.69%, and 81.33% for the mIoU, mAcc, and OA metrics",
+              "value": 61.52
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 19.96,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table II",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming other models by 4.93% in mIoU and 3.61% in FB-IoU",
+              "value": 24.89
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 64.04,
+              "dataset": "AIR-PolSAR-Seg",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table VII",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "surpassing the second best mIoU by 1.68%",
+              "value": 65.72
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 77.12,
               "dataset": "HLS Burn Scars",
               "direction": "better",
@@ -51696,6 +52906,7 @@
             }
           ],
           "datasets": [
+            "AIR-PolSAR-Seg",
             "Arctic infrastructure",
             "Boulder",
             "C2Seg-AB",
@@ -51721,6 +52932,7 @@
             "Pangaea benchmark (avg across 11 datasets)",
             "Pangaea benchmark (avg across 11 datasets, 10% labels)",
             "RTS",
+            "SARSegL1",
             "SPARCS",
             "Saint Vincent and the Grenadines (VCT)",
             "Sen1Floods11",
@@ -51728,6 +52940,7 @@
             "TCN",
             "VV2F",
             "Vaihingen",
+            "WHU-Building",
             "averaged over 4 datasets",
             "ben-ge-8k",
             "m-NeonTree",
@@ -51764,12 +52977,12 @@
               "n_papers": 3
             },
             {
-              "agreement": 0.571,
+              "agreement": 0.625,
               "direction": "better",
               "label": "contested",
               "model": "dofa",
-              "n_claims": 10,
-              "n_papers": 7
+              "n_claims": 11,
+              "n_papers": 8
             },
             {
               "agreement": 1.0,
@@ -51777,6 +52990,14 @@
               "label": "thin",
               "model": "galileo",
               "n_claims": 1,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "presto",
+              "n_claims": 3,
               "n_papers": 1
             },
             {
@@ -51805,9 +53026,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 51,
-          "n_models": 8,
-          "n_papers": 28,
+          "n_claims": 55,
+          "n_models": 9,
+          "n_papers": 30,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.5,
@@ -54185,7 +55406,7 @@
           "task": "flood_mapping"
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.692,
           "claims": [
             {
               "baseline": "task_specific",
@@ -54573,6 +55794,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 67.8,
+              "dataset": "HRSID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table V",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "70.3(+2.5)",
+              "value": 70.3
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": null,
               "dataset": "Malawi decadal census",
               "direction": "better",
@@ -54608,6 +55845,7 @@
             "CHC",
             "ExEBench",
             "HLS Burn Scars",
+            "HRSID",
             "HabitAlp (Gesäuse NP)",
             "HabitAlp (Gesäuse NP), 2013-2020",
             "MTBS wildfire scars",
@@ -54656,8 +55894,8 @@
               "direction": "better",
               "label": "thin",
               "model": "presto",
-              "n_claims": 1,
-              "n_papers": 1
+              "n_claims": 2,
+              "n_papers": 2
             },
             {
               "agreement": 0.5,
@@ -54693,9 +55931,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 26,
+          "n_claims": 27,
           "n_models": 8,
-          "n_papers": 12,
+          "n_papers": 13,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 1.0,
@@ -56194,7 +57432,7 @@
     "no_self_eval": {
       "axes": [
         {
-          "agreement": 0.582,
+          "agreement": 0.596,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -56324,6 +57562,22 @@
               "self_evaluation": false,
               "span": "retaining 96% baseline F1-macro (63.8% vs 66.6%)",
               "value": 63.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 33.33,
+              "dataset": "RSITMD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.08722",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "geoclip",
+              "paper_key": "barzilai2025recipe",
+              "paper_title": "A Recipe for Improving Remote Sensing VLM Zero Shot Generalization",
+              "self_evaluation": false,
+              "span": "38.64 39.85",
+              "value": 42.63
             },
             {
               "baseline": "task_specific",
@@ -57092,6 +58346,22 @@
               "self_evaluation": false,
               "span": "a score of 0.607 for the EuroCrops dataset",
               "value": 0.607
+            },
+            {
+              "baseline": "scalemae",
+              "baseline_value": 65.77,
+              "dataset": "iSAID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2411.17984",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "hu2024vheat",
+              "paper_title": "RS-vHeat: Heat Conduction Guided Efficient Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "its 1.28% and 2.95% improvement over Scale-MAE",
+              "value": 68.72
             },
             {
               "baseline": "task_specific",
@@ -58695,6 +59965,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 57.28,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "61.52%, 70.69%, and 81.33% for the mIoU, mAcc, and OA metrics",
+              "value": 61.52
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 47.7,
               "dataset": "multi-temporal crop classification (HLS/Sentinel)",
               "direction": "worse",
@@ -59032,12 +60318,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 177,
-          "n_papers": 55,
-          "n_papers_all": 77
+          "n_claims": 180,
+          "n_papers": 57,
+          "n_papers_all": 80
         },
         {
-          "agreement": 0.72,
+          "agreement": 0.731,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -59874,6 +61160,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 19.96,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table II",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming other models by 4.93% in mIoU and 3.61% in FB-IoU",
+              "value": 24.89
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": null,
               "dataset": "C2Seg-AB",
               "direction": "better",
@@ -59907,12 +61209,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 54,
-          "n_papers": 25,
-          "n_papers_all": 33
+          "n_claims": 55,
+          "n_papers": 26,
+          "n_papers_all": 34
         },
         {
-          "agreement": 0.622,
+          "agreement": 0.632,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -60636,6 +61938,22 @@
               "value": 85.4
             },
             {
+              "baseline": "dofa",
+              "baseline_value": 88.59,
+              "dataset": "EuroSAT-SAR",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table III",
+              "metric": "accuracy",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "modifying the patch size yields a 1.37% improvement in accuracy",
+              "value": 89.96
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 58.23,
               "dataset": "Landslide Reference",
@@ -61292,6 +62610,38 @@
               "value": 46.3
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 67.8,
+              "dataset": "HRSID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table V",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "70.3(+2.5)",
+              "value": 70.3
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 64.04,
+              "dataset": "AIR-PolSAR-Seg",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table VII",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "surpassing the second best mIoU by 1.68%",
+              "value": 65.72
+            },
+            {
               "baseline": "prithvi",
               "baseline_value": 0.4109,
               "dataset": "C2Seg-AB",
@@ -61422,9 +62772,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 94,
-          "n_papers": 37,
-          "n_papers_all": 52
+          "n_claims": 97,
+          "n_papers": 38,
+          "n_papers_all": 54
         },
         {
           "agreement": 1.0,
@@ -62436,7 +63786,7 @@
           "n_papers_all": 18
         },
         {
-          "agreement": 1.0,
+          "agreement": 0.5,
           "axis": "G7_interpretability",
           "claims": [
             {
@@ -62630,13 +63980,29 @@
               "self_evaluation": false,
               "span": "Prithvi-EO-2.0-100M",
               "value": 0.2113
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 50.2,
+              "dataset": "SARClsL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming the second-best model by 16.6% and 7.1% respectively",
+              "value": 66.8
             }
           ],
           "direction": "worse",
           "label": "thin",
-          "n_claims": 12,
-          "n_papers": 1,
-          "n_papers_all": 4
+          "n_claims": 13,
+          "n_papers": 2,
+          "n_papers_all": 5
         },
         {
           "agreement": 1.0,
@@ -62698,7 +64064,7 @@
           "n_papers_all": 2
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.7,
           "axis": "G9_ecological_fine_scale",
           "claims": [
             {
@@ -62894,6 +64260,54 @@
               "value": 0.5
             },
             {
+              "baseline": "dofa",
+              "baseline_value": 47.6,
+              "dataset": "SegMunich",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table IV",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "outperforming the second-best method by 1.4 in terms of mIoU",
+              "value": 52.7
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 92.2,
+              "dataset": "WHU-Building",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table V",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "achieves SOTA performance, with an mIoU of 94.8, which is 1.2 points higher than the second-best method",
+              "value": 94.8
+            },
+            {
+              "baseline": "dofa",
+              "baseline_value": 93.2,
+              "dataset": "GF12MS-WHU-GF1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table VI",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "Compared to DOFA, our model improves the mIoU by 0.6 points",
+              "value": 93.8
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 0.671,
               "dataset": "FireCCI51 (Ndays)",
@@ -63040,9 +64454,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 21,
-          "n_papers": 9,
-          "n_papers_all": 15
+          "n_claims": 24,
+          "n_papers": 10,
+          "n_papers_all": 16
         },
         {
           "agreement": 1.0,
@@ -64123,6 +65537,187 @@
           }
         },
         {
+          "benchmark": "eurosat",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 78.9,
+              "dataset": "EuroSAT-L",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2506.08780",
+              "locator": "Table 2",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "corley2025landsat",
+              "paper_title": "Landsat-Bench: Datasets and Benchmarks for Landsat Foundation Models",
+              "self_evaluation": false,
+              "span": "78.9",
+              "value": 83.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 74.1,
+              "dataset": "EuroSAT-L",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2506.08780",
+              "locator": "Table 2",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "corley2025landsat",
+              "paper_title": "Landsat-Bench: Datasets and Benchmarks for Landsat Foundation Models",
+              "self_evaluation": false,
+              "span": "74.1",
+              "value": 88.8
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "EuroSAT",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2603.02080",
+              "locator": "Sec 5",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "corley2026from",
+              "paper_title": "From Pixels to Patches: Pooling Strategies for Earth Embeddings",
+              "self_evaluation": false,
+              "span": "AEF: 91.0%, Tessera: 94.4%",
+              "value": 91.0
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "EuroSAT",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2603.02080",
+              "locator": "Sec 5",
+              "metric": "accuracy",
+              "model": "tessera",
+              "paper_key": "corley2026from",
+              "paper_title": "From Pixels to Patches: Pooling Strategies for Earth Embeddings",
+              "self_evaluation": false,
+              "span": "AEF: 91.0%, Tessera: 94.4%",
+              "value": 94.4
+            },
+            {
+              "baseline": "satmae",
+              "baseline_value": 99.35,
+              "dataset": "EuroSAT",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2311.00566",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "croma",
+              "paper_key": "fuller2023croma",
+              "paper_title": "CROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders",
+              "self_evaluation": false,
+              "span": "99.35/\n98.98*",
+              "value": 99.46
+            },
+            {
+              "baseline": "dofa",
+              "baseline_value": 88.59,
+              "dataset": "EuroSAT-SAR",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table III",
+              "metric": "accuracy",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "modifying the patch size yields a 1.37% improvement in accuracy",
+              "value": 89.96
+            },
+            {
+              "baseline": "croma",
+              "baseline_value": 98.83,
+              "dataset": "EuroSAT",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.12843",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "satmae",
+              "paper_key": "si2025towards",
+              "paper_title": "Towards Scalable Foundation Model for Multi-modal and Hyperspectral Geospatial Data",
+              "self_evaluation": false,
+              "span": "98.78",
+              "value": 98.78
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 98.98,
+              "dataset": "EuroSAT",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2409.18536",
+              "locator": "Table 7",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "sosa2024how",
+              "paper_title": "How Effective is Pre-training of Large Masked Autoencoders for Downstream Earth Observation Tasks?",
+              "self_evaluation": false,
+              "span": "SatMAE Multi Spectral 50 98.98",
+              "value": 98.44
+            },
+            {
+              "baseline": null,
+              "baseline_value": 94.55,
+              "dataset": "EuroSAT",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2603.07463",
+              "locator": "Table 4",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "zhang2026sigmae",
+              "paper_title": "SIGMAE: A Spectral-Index-Guided Foundation Model for Multispectral Remote Sensing",
+              "self_evaluation": false,
+              "span": "SIGMAE 61.21 68.87 76.54 64.72 91.10 91.02 92.92 90.21 66.72 76.33 78.29 74.65 96.09",
+              "value": 96.09
+            }
+          ],
+          "metrics": [
+            "accuracy",
+            "miou"
+          ],
+          "models": [
+            "alphaearth",
+            "croma",
+            "dofa",
+            "presto",
+            "prithvi",
+            "satmae",
+            "scalemae",
+            "tessera"
+          ],
+          "n_claims": 9,
+          "n_papers": 7,
+          "n_vs_task_specific": 3,
+          "name": "EuroSAT",
+          "tasks": [
+            "land_cover_classification"
+          ],
+          "variants": [
+            "EuroSAT",
+            "EuroSAT-L",
+            "EuroSAT-SAR"
+          ],
+          "verdict": {
+            "agreement": 0.5,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 2
+          }
+        },
+        {
           "benchmark": "bigearthnet",
           "claims": [
             {
@@ -64281,169 +65876,6 @@
           ],
           "verdict": {
             "agreement": 1.0,
-            "direction": "better",
-            "label": "thin",
-            "n_papers": 2
-          }
-        },
-        {
-          "benchmark": "eurosat",
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 78.9,
-              "dataset": "EuroSAT-L",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2506.08780",
-              "locator": "Table 2",
-              "metric": "accuracy",
-              "model": "presto",
-              "paper_key": "corley2025landsat",
-              "paper_title": "Landsat-Bench: Datasets and Benchmarks for Landsat Foundation Models",
-              "self_evaluation": false,
-              "span": "78.9",
-              "value": 83.4
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 74.1,
-              "dataset": "EuroSAT-L",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2506.08780",
-              "locator": "Table 2",
-              "metric": "accuracy",
-              "model": "presto",
-              "paper_key": "corley2025landsat",
-              "paper_title": "Landsat-Bench: Datasets and Benchmarks for Landsat Foundation Models",
-              "self_evaluation": false,
-              "span": "74.1",
-              "value": 88.8
-            },
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "EuroSAT",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2603.02080",
-              "locator": "Sec 5",
-              "metric": "accuracy",
-              "model": "alphaearth",
-              "paper_key": "corley2026from",
-              "paper_title": "From Pixels to Patches: Pooling Strategies for Earth Embeddings",
-              "self_evaluation": false,
-              "span": "AEF: 91.0%, Tessera: 94.4%",
-              "value": 91.0
-            },
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "EuroSAT",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2603.02080",
-              "locator": "Sec 5",
-              "metric": "accuracy",
-              "model": "tessera",
-              "paper_key": "corley2026from",
-              "paper_title": "From Pixels to Patches: Pooling Strategies for Earth Embeddings",
-              "self_evaluation": false,
-              "span": "AEF: 91.0%, Tessera: 94.4%",
-              "value": 94.4
-            },
-            {
-              "baseline": "satmae",
-              "baseline_value": 99.35,
-              "dataset": "EuroSAT",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2311.00566",
-              "locator": "Table 1",
-              "metric": "accuracy",
-              "model": "croma",
-              "paper_key": "fuller2023croma",
-              "paper_title": "CROMA: Remote Sensing Representations with Contrastive Radar-Optical Masked Autoencoders",
-              "self_evaluation": false,
-              "span": "99.35/\n98.98*",
-              "value": 99.46
-            },
-            {
-              "baseline": "croma",
-              "baseline_value": 98.83,
-              "dataset": "EuroSAT",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2503.12843",
-              "locator": "Table 3",
-              "metric": "accuracy",
-              "model": "satmae",
-              "paper_key": "si2025towards",
-              "paper_title": "Towards Scalable Foundation Model for Multi-modal and Hyperspectral Geospatial Data",
-              "self_evaluation": false,
-              "span": "98.78",
-              "value": 98.78
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 98.98,
-              "dataset": "EuroSAT",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2409.18536",
-              "locator": "Table 7",
-              "metric": "accuracy",
-              "model": "prithvi",
-              "paper_key": "sosa2024how",
-              "paper_title": "How Effective is Pre-training of Large Masked Autoencoders for Downstream Earth Observation Tasks?",
-              "self_evaluation": false,
-              "span": "SatMAE Multi Spectral 50 98.98",
-              "value": 98.44
-            },
-            {
-              "baseline": null,
-              "baseline_value": 94.55,
-              "dataset": "EuroSAT",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2603.07463",
-              "locator": "Table 4",
-              "metric": "miou",
-              "model": "scalemae",
-              "paper_key": "zhang2026sigmae",
-              "paper_title": "SIGMAE: A Spectral-Index-Guided Foundation Model for Multispectral Remote Sensing",
-              "self_evaluation": false,
-              "span": "SIGMAE 61.21 68.87 76.54 64.72 91.10 91.02 92.92 90.21 66.72 76.33 78.29 74.65 96.09",
-              "value": 96.09
-            }
-          ],
-          "metrics": [
-            "accuracy",
-            "miou"
-          ],
-          "models": [
-            "alphaearth",
-            "croma",
-            "presto",
-            "prithvi",
-            "satmae",
-            "scalemae",
-            "tessera"
-          ],
-          "n_claims": 8,
-          "n_papers": 6,
-          "n_vs_task_specific": 3,
-          "name": "EuroSAT",
-          "tasks": [
-            "land_cover_classification"
-          ],
-          "variants": [
-            "EuroSAT",
-            "EuroSAT-L"
-          ],
-          "verdict": {
-            "agreement": 0.5,
             "direction": "better",
             "label": "thin",
             "n_papers": 2
@@ -66540,6 +67972,66 @@
           "variants": [
             "Population",
             "Population Density"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "segmunich",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": 47.6,
+              "dataset": "SegMunich",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table IV",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "outperforming the second-best method by 1.4 in terms of mIoU",
+              "value": 52.7
+            },
+            {
+              "baseline": null,
+              "baseline_value": 59.8,
+              "dataset": "SegMunich",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2603.07463",
+              "locator": "Table 5",
+              "metric": "f1",
+              "model": "dofa",
+              "paper_key": "zhang2026sigmae",
+              "paper_title": "SIGMAE: A Spectral-Index-Guided Foundation Model for Multispectral Remote Sensing",
+              "self_evaluation": false,
+              "span": "SIGMAE 90.14 81.09 32.71 63.65 89.37 85.09 22.26 48.88 55.15 50.51 31.31 77.05 64.47 60.90",
+              "value": 60.9
+            }
+          ],
+          "metrics": [
+            "f1",
+            "miou"
+          ],
+          "models": [
+            "dofa"
+          ],
+          "n_claims": 2,
+          "n_papers": 2,
+          "n_vs_task_specific": 0,
+          "name": "SegMunich",
+          "tasks": [
+            "land_cover_classification"
+          ],
+          "variants": [
+            "SegMunich"
           ],
           "verdict": {
             "agreement": null,
@@ -71530,6 +73022,65 @@
           }
         },
         {
+          "benchmark": "sarsegl1",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 57.28,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "61.52%, 70.69%, and 81.33% for the mIoU, mAcc, and OA metrics",
+              "value": 61.52
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 19.96,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table II",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming other models by 4.93% in mIoU and 3.61% in FB-IoU",
+              "value": 24.89
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "presto"
+          ],
+          "n_claims": 2,
+          "n_papers": 1,
+          "n_vs_task_specific": 2,
+          "name": "SARSegL1",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "SARSegL1"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "sentinel 2 cloud mask catalogue",
           "claims": [
             {
@@ -72050,6 +73601,49 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "air polsar seg",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 64.04,
+              "dataset": "AIR-PolSAR-Seg",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table VII",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "surpassing the second best mIoU by 1.68%",
+              "value": 65.72
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "presto"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "AIR-PolSAR-Seg",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "AIR-PolSAR-Seg"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -74289,6 +75883,49 @@
           }
         },
         {
+          "benchmark": "gf12ms whu gf1",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": 93.2,
+              "dataset": "GF12MS-WHU-GF1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table VI",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "Compared to DOFA, our model improves the mIoU by 0.6 points",
+              "value": 93.8
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "dofa"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "GF12MS-WHU-GF1",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "GF12MS-WHU-GF1"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
+          }
+        },
+        {
           "benchmark": "gpw v4 population density",
           "claims": [
             {
@@ -74504,6 +76141,49 @@
           }
         },
         {
+          "benchmark": "hrsid",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 67.8,
+              "dataset": "HRSID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table V",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "70.3(+2.5)",
+              "value": 70.3
+            }
+          ],
+          "metrics": [
+            "auc"
+          ],
+          "models": [
+            "presto"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "HRSID",
+          "tasks": [
+            "change_detection"
+          ],
+          "variants": [
+            "HRSID"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "hurdat hurricane tracks",
           "claims": [
             {
@@ -74624,6 +76304,49 @@
           ],
           "variants": [
             "Internal Cooling (Granite-GFM cooling gradient experiment)"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "isaid",
+          "claims": [
+            {
+              "baseline": "scalemae",
+              "baseline_value": 65.77,
+              "dataset": "iSAID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2411.17984",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "hu2024vheat",
+              "paper_title": "RS-vHeat: Heat Conduction Guided Efficient Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "its 1.28% and 2.95% improvement over Scale-MAE",
+              "value": 68.72
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "scalemae"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "iSAID",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "iSAID"
           ],
           "verdict": {
             "agreement": null,
@@ -76224,6 +77947,49 @@
           }
         },
         {
+          "benchmark": "rsitmd",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 33.33,
+              "dataset": "RSITMD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.08722",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "geoclip",
+              "paper_key": "barzilai2025recipe",
+              "paper_title": "A Recipe for Improving Remote Sensing VLM Zero Shot Generalization",
+              "self_evaluation": false,
+              "span": "38.64 39.85",
+              "value": 42.63
+            }
+          ],
+          "metrics": [
+            "accuracy"
+          ],
+          "models": [
+            "geoclip"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "RSITMD",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "RSITMD"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "rts",
           "claims": [
             {
@@ -76310,46 +78076,46 @@
           }
         },
         {
-          "benchmark": "segmunich",
+          "benchmark": "sarclsl1",
           "claims": [
             {
-              "baseline": null,
-              "baseline_value": 59.8,
-              "dataset": "SegMunich",
+              "baseline": "task_specific",
+              "baseline_value": 50.2,
+              "dataset": "SARClsL1",
               "direction": "better",
               "label_ratio": null,
-              "link": "https://arxiv.org/abs/2603.07463",
-              "locator": "Table 5",
-              "metric": "f1",
-              "model": "dofa",
-              "paper_key": "zhang2026sigmae",
-              "paper_title": "SIGMAE: A Spectral-Index-Guided Foundation Model for Multispectral Remote Sensing",
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
               "self_evaluation": false,
-              "span": "SIGMAE 90.14 81.09 32.71 63.65 89.37 85.09 22.26 48.88 55.15 50.51 31.31 77.05 64.47 60.90",
-              "value": 60.9
+              "span": "outperforming the second-best model by 16.6% and 7.1% respectively",
+              "value": 66.8
             }
           ],
           "metrics": [
-            "f1"
+            "accuracy"
           ],
           "models": [
-            "dofa"
+            "presto"
           ],
           "n_claims": 1,
           "n_papers": 1,
-          "n_vs_task_specific": 0,
-          "name": "SegMunich",
+          "n_vs_task_specific": 1,
+          "name": "SARClsL1",
           "tasks": [
-            "land_cover_classification"
+            "representation_probing"
           ],
           "variants": [
-            "SegMunich"
+            "SARClsL1"
           ],
           "verdict": {
-            "agreement": null,
-            "direction": null,
-            "label": "gap",
-            "n_papers": 0
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -76998,6 +78764,49 @@
           }
         },
         {
+          "benchmark": "whu building",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 92.2,
+              "dataset": "WHU-Building",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table V",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "achieves SOTA performance, with an mIoU of 94.8, which is 1.2 points higher than the second-best method",
+              "value": 94.8
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "dofa"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "WHU-Building",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "WHU-Building"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "wildfire detection",
           "claims": [
             {
@@ -77216,6 +79025,22 @@
       "diagnostics": [
         {
           "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 33.33,
+              "dataset": "RSITMD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.08722",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "geoclip",
+              "paper_key": "barzilai2025recipe",
+              "paper_title": "A Recipe for Improving Remote Sensing VLM Zero Shot Generalization",
+              "self_evaluation": false,
+              "span": "38.64 39.85",
+              "value": 42.63
+            },
             {
               "baseline": "task_specific",
               "baseline_value": null,
@@ -78479,6 +80304,22 @@
               "self_evaluation": false,
               "span": "ViTCG contains 8.82 M parameters, approximately",
               "value": 0.1925
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 50.2,
+              "dataset": "SARClsL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming the second-best model by 16.6% and 7.1% respectively",
+              "value": 66.8
             }
           ],
           "datasets": [
@@ -78532,6 +80373,8 @@
             "PACE OCI L1B/L2 AOD",
             "Plant presence (French Alps relevés)",
             "RESISC45",
+            "RSITMD",
+            "SARClsL1",
             "SSL4EO ERA5 extension",
             "SSL4EO-S12-downstream (Clouds)",
             "Street View",
@@ -78553,24 +80396,24 @@
             "satmae",
             "scalemae"
           ],
-          "n_claims": 79,
-          "n_papers": 33,
+          "n_claims": 81,
+          "n_papers": 35,
           "task": "representation_probing"
         }
       ],
       "evidence": {
         "directions": {
-          "better": 173,
+          "better": 180,
           "parity": 8,
           "worse": 87
         },
-        "label_ratio_unspecified": 418,
-        "n_claims": 459,
+        "label_ratio_unspecified": 429,
+        "n_claims": 470,
         "n_self_eval_claims": 0,
-        "n_vs_model_or_none": 191,
-        "n_vs_task_specific": 268,
-        "pct_better": 64.6,
-        "pct_label_ratio_unspecified": 91.1
+        "n_vs_model_or_none": 195,
+        "n_vs_task_specific": 275,
+        "pct_better": 65.5,
+        "pct_label_ratio_unspecified": 91.3
       },
       "groups": [
         {
@@ -79262,6 +81105,36 @@
           "label_regime": "unspecified",
           "metric": "f1",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "change_detection"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 67.8,
+              "dataset": "HRSID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table V",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "70.3(+2.5)",
+              "value": 70.3
+            }
+          ],
+          "dataset": "HRSID",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "auc",
+          "model": "presto",
           "n_papers": 1,
           "task": "change_detection"
         },
@@ -84419,6 +86292,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "dofa",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": 88.59,
+              "dataset": "EuroSAT-SAR",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table III",
+              "metric": "accuracy",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "modifying the patch size yields a 1.37% improvement in accuracy",
+              "value": 89.96
+            }
+          ],
+          "dataset": "EuroSAT-SAR",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "dofa",
+          "n_papers": 1,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "task_specific",
           "claims": [
             {
@@ -84985,6 +86888,36 @@
           "label": "thin",
           "label_regime": "unspecified",
           "metric": "f1",
+          "model": "dofa",
+          "n_papers": 1,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "dofa",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": 47.6,
+              "dataset": "SegMunich",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table IV",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "outperforming the second-best method by 1.4 in terms of mIoU",
+              "value": 52.7
+            }
+          ],
+          "dataset": "SegMunich",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
           "model": "dofa",
           "n_papers": 1,
           "task": "land_cover_classification"
@@ -88257,6 +90190,66 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 33.33,
+              "dataset": "RSITMD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.08722",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "geoclip",
+              "paper_key": "barzilai2025recipe",
+              "paper_title": "A Recipe for Improving Remote Sensing VLM Zero Shot Generalization",
+              "self_evaluation": false,
+              "span": "38.64 39.85",
+              "value": 42.63
+            }
+          ],
+          "dataset": "RSITMD",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "geoclip",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 50.2,
+              "dataset": "SARClsL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming the second-best model by 16.6% and 7.1% respectively",
+              "value": 66.8
+            }
+          ],
+          "dataset": "SARClsL1",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
           "baseline": null,
           "claims": [
             {
@@ -88600,6 +90593,36 @@
           "model": "galileo",
           "n_papers": 1,
           "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 64.04,
+              "dataset": "AIR-PolSAR-Seg",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table VII",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "surpassing the second best mIoU by 1.68%",
+              "value": 65.72
+            }
+          ],
+          "dataset": "AIR-PolSAR-Seg",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
         },
         {
           "agreement": 1.0,
@@ -89473,6 +91496,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "dofa",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": 93.2,
+              "dataset": "GF12MS-WHU-GF1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table VI",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "Compared to DOFA, our model improves the mIoU by 0.6 points",
+              "value": 93.8
+            }
+          ],
+          "dataset": "GF12MS-WHU-GF1",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "dofa",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "task_specific",
           "claims": [
             {
@@ -90289,6 +92342,52 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 57.28,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "61.52%, 70.69%, and 81.33% for the mIoU, mAcc, and OA metrics",
+              "value": 61.52
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 19.96,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table II",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming other models by 4.93% in mIoU and 3.61% in FB-IoU",
+              "value": 24.89
+            }
+          ],
+          "dataset": "SARSegL1",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 57.6,
               "dataset": "SPARCS",
               "direction": "better",
@@ -90571,6 +92670,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 92.2,
+              "dataset": "WHU-Building",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table V",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "achieves SOTA performance, with an mIoU of 94.8, which is 1.2 points higher than the second-best method",
+              "value": 94.8
+            }
+          ],
+          "dataset": "WHU-Building",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "dofa",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
           "baseline": null,
           "claims": [
             {
@@ -90656,6 +92785,36 @@
           "label_regime": "unspecified",
           "metric": "miou",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "scalemae",
+          "claims": [
+            {
+              "baseline": "scalemae",
+              "baseline_value": 65.77,
+              "dataset": "iSAID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2411.17984",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "hu2024vheat",
+              "paper_title": "RS-vHeat: Heat Conduction Guided Efficient Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "its 1.28% and 2.95% improvement over Scale-MAE",
+              "value": 68.72
+            }
+          ],
+          "dataset": "iSAID",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "scalemae",
           "n_papers": 1,
           "task": "semantic_segmentation"
         },
@@ -93947,6 +96106,38 @@
               },
               {
                 "baseline": "dofa",
+                "baseline_value": 88.59,
+                "dataset": "EuroSAT-SAR",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2503.23844",
+                "locator": "Table III",
+                "metric": "accuracy",
+                "model": "dofa",
+                "paper_key": "li2025fleximo",
+                "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+                "self_evaluation": false,
+                "span": "modifying the patch size yields a 1.37% improvement in accuracy",
+                "value": 89.96
+              },
+              {
+                "baseline": "dofa",
+                "baseline_value": 47.6,
+                "dataset": "SegMunich",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2503.23844",
+                "locator": "Table IV",
+                "metric": "miou",
+                "model": "dofa",
+                "paper_key": "li2025fleximo",
+                "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+                "self_evaluation": false,
+                "span": "outperforming the second-best method by 1.4 in terms of mIoU",
+                "value": 52.7
+              },
+              {
+                "baseline": "dofa",
                 "baseline_value": 98.13,
                 "dataset": "UCM",
                 "direction": "worse",
@@ -93997,13 +96188,13 @@
             "direction": "worse",
             "label": "contested",
             "model": "dofa",
-            "n_claims": 6,
+            "n_claims": 8,
             "n_papers": 3,
-            "n_papers_all": 6,
+            "n_papers_all": 7,
             "task": "land_cover_classification"
           },
           "dofa\tsemantic_segmentation": {
-            "agreement": 0.5,
+            "agreement": 0.571,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -94151,6 +96342,38 @@
               },
               {
                 "baseline": "task_specific",
+                "baseline_value": 92.2,
+                "dataset": "WHU-Building",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2503.23844",
+                "locator": "Table V",
+                "metric": "miou",
+                "model": "dofa",
+                "paper_key": "li2025fleximo",
+                "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+                "self_evaluation": false,
+                "span": "achieves SOTA performance, with an mIoU of 94.8, which is 1.2 points higher than the second-best method",
+                "value": 94.8
+              },
+              {
+                "baseline": "dofa",
+                "baseline_value": 93.2,
+                "dataset": "GF12MS-WHU-GF1",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2503.23844",
+                "locator": "Table VI",
+                "metric": "miou",
+                "model": "dofa",
+                "paper_key": "li2025fleximo",
+                "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+                "self_evaluation": false,
+                "span": "Compared to DOFA, our model improves the mIoU by 0.6 points",
+                "value": 93.8
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": 0.7,
                 "dataset": "FTW",
                 "direction": "worse",
@@ -94185,9 +96408,9 @@
             "direction": "better",
             "label": "contested",
             "model": "dofa",
-            "n_claims": 11,
-            "n_papers": 6,
-            "n_papers_all": 7,
+            "n_claims": 13,
+            "n_papers": 7,
+            "n_papers_all": 8,
             "task": "semantic_segmentation"
           },
           "galileo\tcrop_type_mapping": {
@@ -94476,14 +96699,30 @@
                 "self_evaluation": false,
                 "span": "SHRUG-FM (Ours) 0.160 ±\\pm 0.045",
                 "value": 0.16
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 67.8,
+                "dataset": "HRSID",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2504.11999",
+                "locator": "Table V",
+                "metric": "auc",
+                "model": "presto",
+                "paper_key": "wang2025complex",
+                "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+                "self_evaluation": false,
+                "span": "70.3(+2.5)",
+                "value": 70.3
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "presto",
-            "n_claims": 1,
-            "n_papers": 1,
-            "n_papers_all": 1,
+            "n_claims": 2,
+            "n_papers": 2,
+            "n_papers_all": 2,
             "task": "change_detection"
           },
           "presto\tcrop_type_mapping": {
@@ -95061,6 +97300,66 @@
             "n_papers": 0,
             "n_papers_all": 1,
             "task": "population_density"
+          },
+          "presto\tsemantic_segmentation": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 57.28,
+                "dataset": "SARSegL1",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2504.11999",
+                "locator": "Table I",
+                "metric": "miou",
+                "model": "presto",
+                "paper_key": "wang2025complex",
+                "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+                "self_evaluation": false,
+                "span": "61.52%, 70.69%, and 81.33% for the mIoU, mAcc, and OA metrics",
+                "value": 61.52
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 19.96,
+                "dataset": "SARSegL1",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2504.11999",
+                "locator": "Table II",
+                "metric": "miou",
+                "model": "presto",
+                "paper_key": "wang2025complex",
+                "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+                "self_evaluation": false,
+                "span": "outperforming other models by 4.93% in mIoU and 3.61% in FB-IoU",
+                "value": 24.89
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 64.04,
+                "dataset": "AIR-PolSAR-Seg",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2504.11999",
+                "locator": "Table VII",
+                "metric": "miou",
+                "model": "presto",
+                "paper_key": "wang2025complex",
+                "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+                "self_evaluation": false,
+                "span": "surpassing the second best mIoU by 1.68%",
+                "value": 65.72
+              }
+            ],
+            "direction": "better",
+            "label": "thin",
+            "model": "presto",
+            "n_claims": 3,
+            "n_papers": 1,
+            "n_papers_all": 1,
+            "task": "semantic_segmentation"
           },
           "prithvi\tbiomass_estimation": {
             "agreement": 0.5,
@@ -98290,6 +100589,22 @@
             "agreement": 0.667,
             "claims": [
               {
+                "baseline": "scalemae",
+                "baseline_value": 65.77,
+                "dataset": "iSAID",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2411.17984",
+                "locator": "Table 1",
+                "metric": "miou",
+                "model": "scalemae",
+                "paper_key": "hu2024vheat",
+                "paper_title": "RS-vHeat: Heat Conduction Guided Efficient Remote Sensing Foundation Model",
+                "self_evaluation": false,
+                "span": "its 1.28% and 2.95% improvement over Scale-MAE",
+                "value": 68.72
+              },
+              {
                 "baseline": "task_specific",
                 "baseline_value": 60.68,
                 "dataset": "Five Billion Pixels",
@@ -98453,9 +100768,9 @@
             "direction": "better",
             "label": "contested",
             "model": "scalemae",
-            "n_claims": 10,
+            "n_claims": 11,
             "n_papers": 3,
-            "n_papers_all": 6,
+            "n_papers_all": 7,
             "task": "semantic_segmentation"
           },
           "tessera\tcanopy_height_estimation": {
@@ -98746,7 +101061,7 @@
       },
       "task_verdicts": [
         {
-          "agreement": 0.56,
+          "agreement": 0.593,
           "claims": [
             {
               "baseline": "task_specific",
@@ -99118,6 +101433,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 92.2,
+              "dataset": "WHU-Building",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.23844",
+              "locator": "Table V",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "li2025fleximo",
+              "paper_title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+              "self_evaluation": false,
+              "span": "achieves SOTA performance, with an mIoU of 94.8, which is 1.2 points higher than the second-best method",
+              "value": 94.8
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.26,
               "dataset": "PASTIS",
               "direction": "better",
@@ -99470,6 +101801,54 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 57.28,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table I",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "61.52%, 70.69%, and 81.33% for the mIoU, mAcc, and OA metrics",
+              "value": 61.52
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 19.96,
+              "dataset": "SARSegL1",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table II",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "outperforming other models by 4.93% in mIoU and 3.61% in FB-IoU",
+              "value": 24.89
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 64.04,
+              "dataset": "AIR-PolSAR-Seg",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table VII",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "surpassing the second best mIoU by 1.68%",
+              "value": 65.72
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 77.12,
               "dataset": "HLS Burn Scars",
               "direction": "better",
@@ -99518,6 +101897,7 @@
             }
           ],
           "datasets": [
+            "AIR-PolSAR-Seg",
             "Arctic infrastructure",
             "Boulder",
             "C2Seg-AB",
@@ -99543,12 +101923,14 @@
             "Pangaea benchmark (avg across 11 datasets)",
             "Pangaea benchmark (avg across 11 datasets, 10% labels)",
             "RTS",
+            "SARSegL1",
             "SPARCS",
             "Saint Vincent and the Grenadines (VCT)",
             "Sen1Floods11",
             "TCN",
             "VV2F",
             "Vaihingen",
+            "WHU-Building",
             "averaged over 4 datasets",
             "ben-ge-8k",
             "m-NeonTree",
@@ -99584,12 +101966,12 @@
               "n_papers": 3
             },
             {
-              "agreement": 0.5,
+              "agreement": 0.571,
               "direction": "better",
               "label": "contested",
               "model": "dofa",
-              "n_claims": 9,
-              "n_papers": 6
+              "n_claims": 10,
+              "n_papers": 7
             },
             {
               "agreement": 1.0,
@@ -99597,6 +101979,14 @@
               "label": "thin",
               "model": "galileo",
               "n_claims": 1,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "presto",
+              "n_claims": 3,
               "n_papers": 1
             },
             {
@@ -99625,9 +102015,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 48,
-          "n_models": 8,
-          "n_papers": 25,
+          "n_claims": 52,
+          "n_models": 9,
+          "n_papers": 27,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.5,
@@ -101571,7 +103961,7 @@
           "task": "flood_mapping"
         },
         {
-          "agreement": 0.636,
+          "agreement": 0.667,
           "claims": [
             {
               "baseline": "task_specific",
@@ -101943,6 +104333,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 67.8,
+              "dataset": "HRSID",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2504.11999",
+              "locator": "Table V",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "wang2025complex",
+              "paper_title": "A Complex-valued SAR Foundation Model Based on Physically Inspired Representation Learning",
+              "self_evaluation": false,
+              "span": "70.3(+2.5)",
+              "value": 70.3
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": null,
               "dataset": "Malawi decadal census",
               "direction": "better",
@@ -101978,6 +104384,7 @@
             "CHC",
             "ExEBench",
             "HLS Burn Scars",
+            "HRSID",
             "HabitAlp (Gesäuse NP)",
             "HabitAlp (Gesäuse NP), 2013-2020",
             "Malawi decadal census",
@@ -102025,8 +104432,8 @@
               "direction": "better",
               "label": "thin",
               "model": "presto",
-              "n_claims": 1,
-              "n_papers": 1
+              "n_claims": 2,
+              "n_papers": 2
             },
             {
               "agreement": 0.6,
@@ -102062,9 +104469,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 25,
+          "n_claims": 26,
           "n_models": 8,
-          "n_papers": 11,
+          "n_papers": 12,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 1.0,

@@ -91,6 +91,7 @@ promoted_tags:
 - EnMAP
 - GEO-Bench
 - GFM-Swin
+- GeoRSCLIP
 - LoRA
 - MOSAIKS
 - PDFM
@@ -110,6 +111,7 @@ promoted_tags:
 - building_density_estimation
 - burn_scar_mapping
 - calibration
+- cloud_detection
 - cloud_gap_imputation
 - content_based_image_retrieval
 - country_classification
@@ -125,6 +127,7 @@ promoted_tags:
 - elevation_prediction
 - feature_fusion
 - field_boundary_delineation
+- flexible_patch_size
 - geographic_generalization
 - gravity_wave_flux_parameterization
 - handcrafted_spectral_texture_features
@@ -149,6 +152,7 @@ promoted_tags:
 - satmae
 - sentinel1_sentinel2_fusion
 - spatial_autocorrelation
+- taxonomy
 - terramind
 - tree_species_classification
 - urban_morphology
@@ -156,3 +160,4 @@ promoted_tags:
 - vision_transformer
 - wildfire_detection
 - wildfire_scar_mapping
+- zero_shot_classification
