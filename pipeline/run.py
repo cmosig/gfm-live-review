@@ -339,17 +339,25 @@ def run(*, seed: bool, extractor: str, egress_mode: str, push: bool,
     existing_titles = {state.title_key(c.title) for c in existing_cards}
 
     # --- ingest ---
-    if seed:
-        candidates = ingest.fetch_arxiv_by_ids(SEED_ARXIV_IDS)
-    elif backfill:
-        candidates = ingest.fetch_arxiv_backfill()
-        print(f"backfill ingest: {len(candidates)} candidates", file=sys.stderr)
-    else:
-        candidates = ingest.fetch_arxiv_recent()
-        try:
-            candidates += ingest.fetch_openalex_recent(_last_run_date())
-        except Exception as exc:  # OpenAlex is best-effort
-            print(f"openalex ingest failed (continuing): {exc}", file=sys.stderr)
+    # A total ingest failure (arXiv unreachable / rate-limited) is not a crash:
+    # log it, do nothing this run, and try again next time. Crashing here would
+    # exit non-zero and mark the nightly "failed" for a transient upstream hiccup.
+    try:
+        if seed:
+            candidates = ingest.fetch_arxiv_by_ids(SEED_ARXIV_IDS)
+        elif backfill:
+            candidates = ingest.fetch_arxiv_backfill()
+            print(f"backfill ingest: {len(candidates)} candidates", file=sys.stderr)
+        else:
+            candidates = ingest.fetch_arxiv_recent()
+            try:
+                candidates += ingest.fetch_openalex_recent(_last_run_date())
+            except Exception as exc:  # OpenAlex is best-effort
+                print(f"openalex ingest failed (continuing): {exc}", file=sys.stderr)
+    except Exception as exc:
+        print(f"ingest failed, nothing to do this run: {exc}", file=sys.stderr)
+        state.append_run({"event": "ingest_failed", "error": str(exc)})
+        return 0
     stats["ingested"] = len(candidates)
 
     # --- screen ---

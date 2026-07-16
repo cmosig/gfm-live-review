@@ -8,6 +8,7 @@ system — the LLM never sees or supplies one.
 """
 from __future__ import annotations
 
+import sys
 from dataclasses import asdict, dataclass, field
 from datetime import date, datetime
 
@@ -98,13 +99,22 @@ def fetch_arxiv_recent(*, max_results: int = 50) -> list[Candidate]:
     """Daily sweep: category firehose + one full-text query per model name."""
     cats = " OR ".join(f"cat:{c}" for c in ARXIV_CATEGORIES)
     out: list[Candidate] = []
+    # Each query is best-effort: a transient arXiv failure on one must not sink
+    # the whole daily sweep (which would crash the nightly run).
+    def _try(query: str, *, max_results: int) -> None:
+        try:
+            http.courtesy_sleep()
+            out.extend(fetch_arxiv_search(query, max_results=max_results))
+        except http.HttpError as exc:
+            print(f"daily query skipped ({query!r}): {exc}", file=sys.stderr)
+
     # A broad category query, filtered later by screen.py.
-    out += fetch_arxiv_search(f"({cats}) AND (all:foundation model AND all:remote sensing)",
-                              max_results=max_results)
+    _try(f"({cats}) AND (all:foundation model AND all:remote sensing)",
+         max_results=max_results)
     for aliases in config.model_aliases().values():
         if not aliases:
             continue
-        out += fetch_arxiv_search(f'all:"{aliases[0]}"', max_results=25)
+        _try(f'all:"{aliases[0]}"', max_results=25)
     return out
 
 
@@ -128,14 +138,23 @@ def fetch_arxiv_backfill(*, per_query: int = 100) -> list[Candidate]:
     seen_ids: set[str] = set()
     out: list[Candidate] = []
     for q in queries:
-        for start in range(0, per_query, 50):
-            batch = _arxiv_search_page(q, start=start, max_results=50)
-            new = [c for c in batch if c.arxiv_id and c.arxiv_id not in seen_ids]
-            for c in new:
-                seen_ids.add(c.arxiv_id)
-            out += new
-            if len(batch) < 50:
-                break  # no more pages for this query
+        # arXiv rate-limits (HTTP 429) if hit too fast; one query's failure must
+        # not sink the whole sweep, so skip a transiently-failing query and keep
+        # what the others returned. A courtesy pause between pages keeps us under
+        # arXiv's ~1-request-per-3s guidance and avoids tripping the limit at all.
+        try:
+            for start in range(0, per_query, 50):
+                http.courtesy_sleep()
+                batch = _arxiv_search_page(q, start=start, max_results=50)
+                new = [c for c in batch if c.arxiv_id and c.arxiv_id not in seen_ids]
+                for c in new:
+                    seen_ids.add(c.arxiv_id)
+                out += new
+                if len(batch) < 50:
+                    break  # no more pages for this query
+        except http.HttpError as exc:
+            print(f"backfill query skipped ({q!r}): {exc}", file=sys.stderr)
+            continue
     return out
 
 
