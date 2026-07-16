@@ -132,10 +132,12 @@ promoted_tags:
 - geographic_generalization
 - gravity_wave_flux_parameterization
 - handcrafted_spectral_texture_features
+- hyperspectral_imagery
 - image_geolocalization
 - instance_segmentation
 - joint_embedding_predictive_architecture
 - knowledge_distillation
+- linear_probe
 - location_encoder
 - lora_finetuning
 - malaria_prediction
@@ -147,6 +149,7 @@ promoted_tags:
 - model_merging
 - monte_carlo_dropout
 - multi_modal_pretraining
+- multisensor_fusion
 - object_detection
 - parameter_efficient_fine_tuning
 - parameter_efficient_finetuning

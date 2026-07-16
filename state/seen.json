@@ -125,6 +125,10 @@
     "key": "hou2026aef",
     "status": "carded"
   },
+  "agentic ai for remote sensing technical challenges and research directions": {
+    "key": "munir2026agentic",
+    "status": "off_topic"
+  },
   "agrifm a multi source temporal remote sensing foundation model for agriculture mapping": {
     "arxiv_id": "2505.21357",
     "dropped_claims": 0,
@@ -273,6 +277,12 @@
     "key": "cerna2025botaclip",
     "status": "carded"
   },
+  "brewing stronger features dual teacher distillation for multispectral earth observation": {
+    "arxiv_id": "2602.19863",
+    "dropped_claims": 0,
+    "key": "wolf2026brewing",
+    "status": "carded"
+  },
   "bridging remote sensors with multisensor geospatial foundation models": {
     "arxiv_id": "2404.01260",
     "dropped_claims": 0,
@@ -359,6 +369,10 @@
     "key": "bennacer2025conditions",
     "status": "off_topic"
   },
+  "context aware multimodal representation learning for spatio temporally explicit environmental modelling": {
+    "key": "peters2025context",
+    "status": "quarantined"
+  },
   "continental scale habitat distribution modelling with multimodal earth observation foundation models": {
     "arxiv_id": "2507.09732",
     "dropped_claims": 0,
@@ -380,6 +394,10 @@
     "dropped_claims": 0,
     "key": "zvonkov2025cropland",
     "status": "carded"
+  },
+  "cross domain few shot learning for hyperspectral image classification based on mixup foundation model": {
+    "key": "paeedeh2026cross",
+    "status": "off_topic"
   },
   "cross scale mae a tale of multi scale exploitation in remote sensing": {
     "arxiv_id": "2401.15855",
@@ -444,6 +462,12 @@
   "detection of an nh 3 absorption band at 2 2 m on europa": {
     "key": "emran2025detection",
     "status": "off_topic"
+  },
+  "developing a foundation model for high resolution remote sensing data of the netherlands": {
+    "arxiv_id": "2605.10184",
+    "dropped_claims": 0,
+    "key": "vermeeren2026developing",
+    "status": "carded"
   },
   "discovery of two new pulsars in 47 tucanae ngc 104": {
     "key": "-",
@@ -697,6 +721,10 @@
     "key": "zhang2026fusar",
     "status": "carded"
   },
+  "fusionrs a large scale rgb infrared remote sensing dataset for dual modal vision language foundation models": {
+    "key": "han2026fusionrs",
+    "status": "off_topic"
+  },
   "gaia a foundation model for operational atmospheric dynamics": {
     "key": "asanjan2025gaia",
     "status": "off_topic"
@@ -768,6 +796,10 @@
   "geodesic trees and exceptional directions in fpp on hyperbolic groups": {
     "key": "basu2024geodesic",
     "status": "off_topic"
+  },
+  "geomeld toward semantically grounded foundation models for remote sensing": {
+    "key": "hasan2026geomeld",
+    "status": "quarantined"
   },
   "georope ground aware rotary adaptation for remote sensing foundation models": {
     "arxiv_id": "2606.14760",
@@ -1038,6 +1070,12 @@
   "leveraging lstm for predictive modeling of satellite clock bias": {
     "key": "bhatt2024leveraging",
     "status": "off_topic"
+  },
+  "lightweight metadata aware mixture of experts masked autoencoder for earth observation": {
+    "arxiv_id": "2509.10919",
+    "dropped_claims": 0,
+    "key": "albughdadi2025lightweight",
+    "status": "carded"
   },
   "lightweight pre trained transformers for remote sensing timeseries": {
     "key": "tseng2023lightweight",
@@ -1575,6 +1613,10 @@
     "key": "-",
     "status": "quarantined_mismatch"
   },
+  "rs prune training free data pruning at high ratios for efficient remote sensing diffusion foundation models": {
+    "key": "wei2025prune",
+    "status": "quarantined"
+  },
   "rs vheat heat conduction guided efficient remote sensing foundation model": {
     "arxiv_id": "2411.17984",
     "dropped_claims": 1,
@@ -1741,6 +1783,12 @@
   "spectral gaps and spatial priors studying hyperspectral downstream adaptation using terramind": {
     "key": "leonardi2026spectral",
     "status": "quarantined"
+  },
+  "spectralearth fm bringing hyperspectral imagery into multimodal earth observation pretraining": {
+    "arxiv_id": "2605.21075",
+    "dropped_claims": 0,
+    "key": "braham2026spectralearth",
+    "status": "carded"
   },
   "spectralgpt spectral remote sensing foundation model": {
     "arxiv_id": "2311.07113",
@@ -2037,6 +2085,12 @@
   "xona pulsar compatibility with gnss": {
     "key": "reid2025xona",
     "status": "off_topic"
+  },
+  "zero shot satellite image retrieval through joint embeddings application to crisis response": {
+    "arxiv_id": "2605.05405",
+    "dropped_claims": 0,
+    "key": "walsh2026zero",
+    "status": "carded"
   },
   "zksdk streamlining zero knowledge proof development through automated trace driven zk backend selection": {
     "key": "law2025zksdk",
