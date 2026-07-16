@@ -109,12 +109,14 @@ promoted_tags:
 - TerraMind
 - air_temperature_prediction
 - biome_classification
+- building_damage_assessment
 - building_density_estimation
 - burn_scar_mapping
 - calibration
 - cloud_detection
 - cloud_gap_imputation
 - content_based_image_retrieval
+- continual_pretraining
 - country_classification
 - cross_modal_retrieval
 - data_augmentation
@@ -149,6 +151,7 @@ promoted_tags:
 - model_merging
 - monte_carlo_dropout
 - multi_modal_pretraining
+- multimodal_pretraining
 - multisensor_fusion
 - object_detection
 - parameter_efficient_fine_tuning

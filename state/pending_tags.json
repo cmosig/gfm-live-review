@@ -137,6 +137,9 @@
   "EUNIS_classification": [
     "simoussi2025continental"
   ],
+  "EfficientNet-B7": [
+    "duc2025satmamba"
+  ],
   "EuroSAT": [
     "noman2024rethinking"
   ],
@@ -323,6 +326,9 @@
   "RVSA": [
     "wang2024mtp"
   ],
+  "ResNet50": [
+    "duc2025satmamba"
+  ],
   "ResNet_vs_ViT": [
     "gilch2026how"
   ],
@@ -377,6 +383,9 @@
   "SSIM structural fidelity": [
     "hou2026slum"
   ],
+  "SSL4EO-S12-ML": [
+    "wang2024multi"
+  ],
   "SSL4Eco": [
     "plekhanova2025ssl4eco"
   ],
@@ -391,6 +400,9 @@
   ],
   "SatMAE++": [
     "noman2024rethinking"
+  ],
+  "SatMamba": [
+    "duc2025satmamba"
   ],
   "SatVision-TOA": [
     "spradlin2024satvision"
@@ -476,6 +488,9 @@
   "ViT-MAE": [
     "barreiro2026simpler"
   ],
+  "ViTMAE": [
+    "duc2025satmamba"
+  ],
   "ViT_Adapter": [
     "martiescofet2025fine"
   ],
@@ -551,6 +566,9 @@
   "atmospheric_science": [
     "gupta2025finetuning"
   ],
+  "atmospheric_variables": [
+    "wang2025towards"
+  ],
   "attention_probing": [
     "rahman2026physically"
   ],
@@ -595,9 +613,6 @@
   ],
   "borehole_data": [
     "omalley2026context"
-  ],
-  "building_damage_assessment": [
-    "dietrich2025potential"
   ],
   "building_extraction": [
     "li2025fleximo"
@@ -667,6 +682,9 @@
   ],
   "class_imbalance_correction": [
     "simoussi2025continental"
+  ],
+  "climate_bridging": [
+    "wang2025towards"
   ],
   "climate_model_subgrid_scale": [
     "gupta2025finetuning"
@@ -745,9 +763,6 @@
   ],
   "continual_change_detection": [
     "kyselica2026towards"
-  ],
-  "continual_pretraining": [
-    "xiong2024neural"
   ],
   "continuous_time_modeling": [
     "brown2025alphaearth"
@@ -940,6 +955,9 @@
   ],
   "dual_teacher_distillation": [
     "wolf2026brewing"
+  ],
+  "dynamic_world_labels": [
+    "wang2024multi"
   ],
   "eco-region transfer": [
     "muszynski2024fine"
@@ -1352,6 +1370,9 @@
   "hypernetwork": [
     "xiong2024neural"
   ],
+  "hypernetwork_patch_embedding": [
+    "wang2025towards"
+  ],
   "hyperparameter_optimization": [
     "gomes2025terratorch"
   ],
@@ -1559,6 +1580,9 @@
   "mT5": [
     "goel2023presto"
   ],
+  "mamba": [
+    "duc2025satmamba"
+  ],
   "mamba_ssm": [
     "dionelis2025scaling"
   ],
@@ -1670,6 +1694,9 @@
   "multi-task-pretraining": [
     "wang2024mtp"
   ],
+  "multi_label_pretraining": [
+    "wang2024multi"
+  ],
   "multi_modal_optical_sar": [
     "hu2024vheat"
   ],
@@ -1732,9 +1759,6 @@
   ],
   "multimodal_lidar_fusion": [
     "kristen2025habitat"
-  ],
-  "multimodal_pretraining": [
-    "tseng2025galileo"
   ],
   "multimodal_sensor_fusion": [
     "mandal2026biomazon"
@@ -2231,11 +2255,17 @@
   "sentinel-2": [
     "lisaius2026embedding"
   ],
+  "sentinel_missions": [
+    "wang2025towards"
+  ],
   "ship_detection": [
     "wang2025complex"
   ],
   "shoreline_delineation": [
     "chhabra2025utilizing"
+  ],
+  "siamese_masking": [
+    "wang2024multi"
   ],
   "simclr": [
     "corley2025landsat"
@@ -2257,6 +2287,9 @@
   ],
   "socioeconomic_prediction": [
     "gong2026earth"
+  ],
+  "soft_contrastive_learning": [
+    "wang2024multi"
   ],
   "soft_mixture_of_experts": [
     "hackel2025csmoe"
@@ -2329,6 +2362,9 @@
   ],
   "ssl4eo-l": [
     "corley2025landsat"
+  ],
+  "state_space_model": [
+    "duc2025satmamba"
   ],
   "stats_pooling": [
     "corley2026from"

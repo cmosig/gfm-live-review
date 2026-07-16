@@ -405,6 +405,10 @@
     "key": "tang2024cross",
     "status": "carded"
   },
+  "cross sensor self supervised training and alignment for remote sensing": {
+    "key": "marsocci2024cross",
+    "status": "off_topic"
+  },
   "crossearth sar a sar centric and billion scale geospatial foundation model for domain generalizable semantic segmentation": {
     "arxiv_id": "2603.12008",
     "dropped_claims": 0,
@@ -847,6 +851,10 @@
     "key": "speziale2025ggi",
     "status": "off_topic"
   },
+  "global and dense embeddings of earth major tom floating in the latent space": {
+    "key": "czerkawski2024global",
+    "status": "off_topic"
+  },
   "graphfire x physics informed graph attention networks and structural gradient boosting for building scale wildfire preparedness at the wildland urban interface": {
     "key": "-",
     "status": "quarantined_mismatch"
@@ -1211,6 +1219,12 @@
     "arxiv_id": "2403.13430",
     "dropped_claims": 0,
     "key": "wang2024mtp",
+    "status": "carded"
+  },
+  "multi label guided soft contrastive learning for efficient earth observation pretraining": {
+    "arxiv_id": "2405.20462",
+    "dropped_claims": 1,
+    "key": "wang2024multi",
     "status": "carded"
   },
   "multi modal contrastive learning for implicit earth embeddings via location tying": {
@@ -1645,6 +1659,12 @@
     "key": "cong2022satmae",
     "status": "carded"
   },
+  "satmamba development of foundation models for remote sensing imagery using state space models": {
+    "arxiv_id": "2502.00435",
+    "dropped_claims": 0,
+    "key": "duc2025satmamba",
+    "status": "carded"
+  },
   "satswinmae efficient autoencoding for multiscale time series satellite imagery": {
     "arxiv_id": "2405.02512",
     "dropped_claims": 0,
@@ -1962,6 +1982,12 @@
     "arxiv_id": "2507.04366",
     "dropped_claims": 0,
     "key": "gupta2025time2agri",
+    "status": "carded"
+  },
+  "towards a unified copernicus foundation model for earth vision": {
+    "arxiv_id": "2503.11849",
+    "dropped_claims": 0,
+    "key": "wang2025towards",
     "status": "carded"
   },
   "towards dm free search for fast radio bursts with machine learning i an implementation on multibeam data": {
