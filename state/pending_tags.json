@@ -287,6 +287,9 @@
   "PANGAEA_domain_breakdown": [
     "mocharla2026probing"
   ],
+  "PANGAEA_protocol": [
+    "schindlegger2026now"
+  ],
   "PANGEA_benchmark": [
     "xiong2024neural"
   ],
@@ -452,8 +455,17 @@
   "Swin_transformer_backbone": [
     "wolf2026brewing"
   ],
+  "THOR": [
+    "schindlegger2026now"
+  ],
   "TalloS": [
     "bountos2023fomo"
+  ],
+  "TerraTorch": [
+    "schindlegger2026now"
+  ],
+  "Thinking-in-Modalities": [
+    "schindlegger2026now"
   ],
   "TreeSatAI": [
     "plekhanova2025ssl4eco"
@@ -892,6 +904,9 @@
   ],
   "decision_threshold_sensitivity": [
     "polushko2026flood"
+  ],
+  "decoder_ablation": [
+    "schindlegger2026now"
   ],
   "decoder_architecture": [
     "martiescofet2025fine"
@@ -1861,6 +1876,9 @@
   ],
   "patch_density_fragmentation": [
     "orlowski2026sub"
+  ],
+  "patch_size_ablation": [
+    "schindlegger2026now"
   ],
   "patch_size_tradeoff": [
     "tseng2025galileo"

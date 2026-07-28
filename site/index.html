@@ -102,7 +102,7 @@
 
 <!-- Inert data blob: parsed by app.js, never executed. -->
 <script type="application/json" id="gfm-data">{
-  "corpus_through": "2026-07-09",
+  "corpus_through": "2026-07-20",
   "limitations": {
     "series": {
       "benchmark_narrowness": {
@@ -141,7 +141,7 @@
         "2026-04": 10,
         "2026-05": 16,
         "2026-06": 11,
-        "2026-07": 6
+        "2026-07": 7
       },
       "compute_cost": {
         "2022-07": 1,
@@ -178,7 +178,7 @@
         "2026-04": 6,
         "2026-05": 6,
         "2026-06": 4,
-        "2026-07": 2
+        "2026-07": 3
       },
       "data_bias": {
         "2022-07": 1,
@@ -264,7 +264,7 @@
         "2026-04": 2,
         "2026-05": 4,
         "2026-06": 4,
-        "2026-07": 1
+        "2026-07": 2
       },
       "spatial_transfer": {
         "2022-12": 1,
@@ -297,7 +297,7 @@
         "2026-04": 7,
         "2026-05": 10,
         "2026-06": 8,
-        "2026-07": 3
+        "2026-07": 4
       },
       "temporal_transfer": {
         "2022-07": 1,
@@ -338,7 +338,7 @@
         "2026-04": 4,
         "2026-05": 4,
         "2026-06": 1,
-        "2026-07": 1
+        "2026-07": 2
       },
       "uncertainty": {
         "2024-06": 1,
@@ -354,15 +354,15 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 155,
-      "compute_cost": 87,
+      "benchmark_narrowness": 156,
+      "compute_cost": 88,
       "data_bias": 80,
       "human_semantics": 16,
       "interpretability": 32,
-      "mixed_pixels": 30,
-      "spatial_transfer": 89,
+      "mixed_pixels": 31,
+      "spatial_transfer": 90,
       "temporal_transfer": 36,
-      "time_sensitivity": 28,
+      "time_sensitivity": 29,
       "uncertainty": 24
     }
   },
@@ -399,7 +399,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 178,
+    "n_papers": 179,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -423,10 +423,22 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 178
+      "verified": 179
     },
-    "n_papers": 178,
+    "n_papers": 179,
     "papers": [
+      {
+        "arxiv_id": "2607.18504",
+        "date": "2026-07-20",
+        "doi": "10.48550/arxiv.2607.18504",
+        "doi_status": "verified",
+        "key": "schindlegger2026now",
+        "link": "https://arxiv.org/abs/2607.18504",
+        "n_claims": 7,
+        "self_evaluation": true,
+        "title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+        "venue": "arXiv"
+      },
       {
         "arxiv_id": "2607.08945",
         "date": "2026-07-09",
@@ -6533,7 +6545,7 @@
           "n_papers_all": 99
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.677,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -7354,6 +7366,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.871,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Sec 6.8",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "it achieves mIoU = 0.888. This is equivalent to what UNet reaches at 50%",
+              "value": 0.888
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 47.42,
               "dataset": "Multi-Temporal Crop Segmentation",
               "direction": "worse",
@@ -7643,9 +7671,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 69,
-          "n_papers": 30,
-          "n_papers_all": 44
+          "n_claims": 70,
+          "n_papers": 31,
+          "n_papers_all": 45
         },
         {
           "agreement": 0.628,
@@ -8836,6 +8864,22 @@
               "value": 87.12
             },
             {
+              "baseline": "prithvi",
+              "baseline_value": 0.504,
+              "dataset": "Sea Ice",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "TerraMind Base 0.904 0.828 0.813 0.823 9.190 0.646 0.504",
+              "value": 0.755
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 3.08,
               "dataset": "MERRA-2 T2m downscaling",
@@ -9366,9 +9410,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 107,
+          "n_claims": 108,
           "n_papers": 43,
-          "n_papers_all": 61
+          "n_papers_all": 62
         },
         {
           "agreement": 1.0,
@@ -10225,7 +10269,7 @@
           "n_papers_all": 19
         },
         {
-          "agreement": 0.5,
+          "agreement": 0.556,
           "axis": "G6_compactness",
           "claims": [
             {
@@ -10597,6 +10641,70 @@
               "value": 77.9
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 0.879,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "Sen1Floods11 0.879 0.907 0.910",
+              "value": 0.91
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.901,
+              "dataset": "HLS Burn Scars",
+              "direction": "worse",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "HLS Burn Scars 0.901 0.865 0.891",
+              "value": 0.891
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.785,
+              "dataset": "CocoaMining",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "CocoaMining 0.785 0.820 0.817",
+              "value": 0.817
+            },
+            {
+              "baseline": "prithvi",
+              "baseline_value": 0.86,
+              "dataset": "Flood Zone",
+              "direction": "worse",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Sec 6.1",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "THOR’s best configuration reaches pixel-wise F1 = 0.86 against TerraMind’s best of 0.33",
+              "value": 0.33
+            },
+            {
               "baseline": null,
               "baseline_value": 69.43,
               "dataset": "MTBS/NBAC Wildfire Events",
@@ -10709,11 +10817,11 @@
               "value": 54.21
             }
           ],
-          "direction": "worse",
+          "direction": "better",
           "label": "contested",
-          "n_claims": 30,
-          "n_papers": 8,
-          "n_papers_all": 22
+          "n_claims": 34,
+          "n_papers": 9,
+          "n_papers_all": 23
         },
         {
           "agreement": 0.5,
@@ -11542,6 +11650,22 @@
               "value": 75.3
             },
             {
+              "baseline": "prithvi",
+              "baseline_value": 1.037,
+              "dataset": "HYPERVIEW",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Sec 6.10.2",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "TerraMind at ps4 with full fine-tuning achieves the best RMSE (0.965)",
+              "value": 0.965
+            },
+            {
               "baseline": "croma",
               "baseline_value": 64.2,
               "dataset": "MADOS",
@@ -11624,9 +11748,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 34,
+          "n_claims": 35,
           "n_papers": 16,
-          "n_papers_all": 25
+          "n_papers_all": 26
         },
         {
           "agreement": 1.0,
@@ -12691,6 +12815,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.879,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "Sen1Floods11 0.879 0.907 0.910",
+              "value": 0.91
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.871,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Sec 6.8",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "it achieves mIoU = 0.888. This is equivalent to what UNet reaches at 50%",
+              "value": 0.888
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 90.16,
               "dataset": "Sen1Floods11",
               "direction": "better",
@@ -12863,9 +13019,9 @@
             "presto",
             "prithvi"
           ],
-          "n_claims": 33,
-          "n_papers": 19,
-          "n_vs_task_specific": 18,
+          "n_claims": 35,
+          "n_papers": 20,
+          "n_vs_task_specific": 20,
           "name": "Sen1Floods11",
           "tasks": [
             "flood_mapping",
@@ -12878,10 +13034,10 @@
             "Sen1Floods11 S2-S1"
           ],
           "verdict": {
-            "agreement": 0.5,
-            "direction": "worse",
+            "agreement": 0.538,
+            "direction": "better",
             "label": "contested",
-            "n_papers": 12
+            "n_papers": 13
           }
         },
         {
@@ -14387,6 +14543,101 @@
           }
         },
         {
+          "benchmark": "hls burn scars",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.4,
+              "dataset": "HLS Burn Scars",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2512.17224",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "li2025any",
+              "paper_title": "Any-Optical-Model: A Universal Foundation Model for Optical Remote Sensing",
+              "self_evaluation": false,
+              "span": "85.4 (+3.0)",
+              "value": 85.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.62,
+              "dataset": "HLS Burn Scars",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2604.07092",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "madadikhaljan2026location",
+              "paper_title": "Location Is All You Need: Continuous Spatiotemporal Neural Representations of Earth Observation Data",
+              "self_evaluation": false,
+              "span": "UNet / Micro UNet",
+              "value": 0.59
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.901,
+              "dataset": "HLS Burn Scars",
+              "direction": "worse",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "HLS Burn Scars 0.901 0.865 0.891",
+              "value": 0.891
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 77.12,
+              "dataset": "HLS Burn Scars",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2404.11797",
+              "locator": "Table III",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "xie2024when",
+              "paper_title": "When are Foundation Models Effective? Understanding the Suitability for Pixel-Level Classification Using Multispectral Imagery",
+              "self_evaluation": false,
+              "span": "both foundation models and regular convolutional networks showed significant advantages over traditional models such as random forest",
+              "value": 85.53
+            }
+          ],
+          "metrics": [
+            "f1",
+            "miou"
+          ],
+          "models": [
+            "alphaearth",
+            "prithvi"
+          ],
+          "n_claims": 4,
+          "n_papers": 4,
+          "n_vs_task_specific": 4,
+          "name": "HLS Burn Scars",
+          "tasks": [
+            "change_detection",
+            "land_cover_classification",
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "HLS Burn Scars"
+          ],
+          "verdict": {
+            "agreement": 0.5,
+            "direction": "better",
+            "label": "contested",
+            "n_papers": 4
+          }
+        },
+        {
           "benchmark": "eurocrops",
           "claims": [
             {
@@ -14975,84 +15226,6 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
-          }
-        },
-        {
-          "benchmark": "hls burn scars",
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 82.4,
-              "dataset": "HLS Burn Scars",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2512.17224",
-              "locator": "Table 2",
-              "metric": "miou",
-              "model": "alphaearth",
-              "paper_key": "li2025any",
-              "paper_title": "Any-Optical-Model: A Universal Foundation Model for Optical Remote Sensing",
-              "self_evaluation": false,
-              "span": "85.4 (+3.0)",
-              "value": 85.4
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.62,
-              "dataset": "HLS Burn Scars",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2604.07092",
-              "locator": "Table 3",
-              "metric": "f1",
-              "model": "prithvi",
-              "paper_key": "madadikhaljan2026location",
-              "paper_title": "Location Is All You Need: Continuous Spatiotemporal Neural Representations of Earth Observation Data",
-              "self_evaluation": false,
-              "span": "UNet / Micro UNet",
-              "value": 0.59
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 77.12,
-              "dataset": "HLS Burn Scars",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2404.11797",
-              "locator": "Table III",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "xie2024when",
-              "paper_title": "When are Foundation Models Effective? Understanding the Suitability for Pixel-Level Classification Using Multispectral Imagery",
-              "self_evaluation": false,
-              "span": "both foundation models and regular convolutional networks showed significant advantages over traditional models such as random forest",
-              "value": 85.53
-            }
-          ],
-          "metrics": [
-            "f1",
-            "miou"
-          ],
-          "models": [
-            "alphaearth",
-            "prithvi"
-          ],
-          "n_claims": 3,
-          "n_papers": 3,
-          "n_vs_task_specific": 3,
-          "name": "HLS Burn Scars",
-          "tasks": [
-            "change_detection",
-            "semantic_segmentation"
-          ],
-          "variants": [
-            "HLS Burn Scars"
-          ],
-          "verdict": {
-            "agreement": 0.667,
-            "direction": "better",
-            "label": "contested",
-            "n_papers": 3
           }
         },
         {
@@ -24139,6 +24312,49 @@
           }
         },
         {
+          "benchmark": "cocoamining",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.785,
+              "dataset": "CocoaMining",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "CocoaMining 0.785 0.820 0.817",
+              "value": 0.817
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "CocoaMining",
+          "tasks": [
+            "land_cover_classification"
+          ],
+          "variants": [
+            "CocoaMining"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "combined vct lca dca",
           "claims": [
             {
@@ -25033,6 +25249,49 @@
           ],
           "variants": [
             "Flood Mapping (HLS)"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "flood zone",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 0.86,
+              "dataset": "Flood Zone",
+              "direction": "worse",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Sec 6.1",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "THOR’s best configuration reaches pixel-wise F1 = 0.86 against TerraMind’s best of 0.33",
+              "value": 0.33
+            }
+          ],
+          "metrics": [
+            "f1"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "Flood Zone",
+          "tasks": [
+            "flood_mapping"
+          ],
+          "variants": [
+            "Flood Zone"
           ],
           "verdict": {
             "agreement": null,
@@ -26114,6 +26373,49 @@
             "direction": "better",
             "label": "thin",
             "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "hyperview",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 1.037,
+              "dataset": "HYPERVIEW",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Sec 6.10.2",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "TerraMind at ps4 with full fine-tuning achieves the best RMSE (0.965)",
+              "value": 0.965
+            }
+          ],
+          "metrics": [
+            "rmse"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "HYPERVIEW",
+          "tasks": [
+            "crop_yield_estimation"
+          ],
+          "variants": [
+            "HYPERVIEW"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
           }
         },
         {
@@ -28479,6 +28781,49 @@
             "direction": "better",
             "label": "thin",
             "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "sea ice",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 0.504,
+              "dataset": "Sea Ice",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "TerraMind Base 0.904 0.828 0.813 0.823 9.190 0.646 0.504",
+              "value": 0.755
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "Sea Ice",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "Sea Ice"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
           }
         },
         {
@@ -31306,17 +31651,17 @@
       ],
       "evidence": {
         "directions": {
-          "better": 226,
+          "better": 229,
           "parity": 12,
-          "worse": 113
+          "worse": 114
         },
         "label_ratio_unspecified": 534,
-        "n_claims": 601,
-        "n_self_eval_claims": 72,
-        "n_vs_model_or_none": 250,
-        "n_vs_task_specific": 351,
-        "pct_better": 64.4,
-        "pct_label_ratio_unspecified": 88.9
+        "n_claims": 608,
+        "n_self_eval_claims": 79,
+        "n_vs_model_or_none": 253,
+        "n_vs_task_specific": 355,
+        "pct_better": 64.5,
+        "pct_label_ratio_unspecified": 87.8
       },
       "groups": [
         {
@@ -35607,6 +35952,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 1.037,
+              "dataset": "HYPERVIEW",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Sec 6.10.2",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "TerraMind at ps4 with full fine-tuning achieves the best RMSE (0.965)",
+              "value": 0.965
+            }
+          ],
+          "dataset": "HYPERVIEW",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "rmse",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "task_specific",
           "claims": [
             {
@@ -35797,6 +36172,36 @@
           "label": "thin",
           "label_regime": "unspecified",
           "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 0.86,
+              "dataset": "Flood Zone",
+              "direction": "worse",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Sec 6.1",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "THOR’s best configuration reaches pixel-wise F1 = 0.86 against TerraMind’s best of 0.33",
+              "value": 0.33
+            }
+          ],
+          "dataset": "Flood Zone",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "f1",
           "model": "prithvi",
           "n_papers": 1,
           "task": "flood_mapping"
@@ -37185,6 +37590,66 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 0.879,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "Sen1Floods11 0.879 0.907 0.910",
+              "value": 0.91
+            }
+          ],
+          "dataset": "Sen1Floods11",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.871,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Sec 6.8",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "it achieves mIoU = 0.888. This is equivalent to what UNet reaches at 50%",
+              "value": 0.888
+            }
+          ],
+          "dataset": "Sen1Floods11",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_scarce",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 73.73,
               "dataset": "Sen1Floods11 (unseen Bolivia)",
               "direction": "better",
@@ -38092,6 +38557,36 @@
           "label_regime": "unspecified",
           "metric": "f1",
           "model": "presto",
+          "n_papers": 1,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.785,
+              "dataset": "CocoaMining",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "CocoaMining 0.785 0.820 0.817",
+              "value": 0.817
+            }
+          ],
+          "dataset": "CocoaMining",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "prithvi",
           "n_papers": 1,
           "task": "land_cover_classification"
         },
@@ -39130,6 +39625,36 @@
           "label_regime": "unspecified",
           "metric": "accuracy",
           "model": "dofa",
+          "n_papers": 1,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.901,
+              "dataset": "HLS Burn Scars",
+              "direction": "worse",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "HLS Burn Scars 0.901 0.865 0.891",
+              "value": 0.891
+            }
+          ],
+          "dataset": "HLS Burn Scars",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "prithvi",
           "n_papers": 1,
           "task": "land_cover_classification"
         },
@@ -46863,6 +47388,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 0.504,
+              "dataset": "Sea Ice",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "TerraMind Base 0.904 0.828 0.813 0.823 9.190 0.646 0.504",
+              "value": 0.755
+            }
+          ],
+          "dataset": "Sea Ice",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "satmae",
           "claims": [
             {
@@ -54122,18 +54677,34 @@
                 "self_evaluation": false,
                 "span": "a single NDVI feature\n(Ridge R=2−0.170{}^{2}=-0.170) performs comparably to the full 768-dimensional\nPrithvi-EO embeddings (Ridge R=2−0.027{}^{2}=-0.027)",
                 "value": -0.17
+              },
+              {
+                "baseline": "prithvi",
+                "baseline_value": 1.037,
+                "dataset": "HYPERVIEW",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2607.18504",
+                "locator": "Sec 6.10.2",
+                "metric": "rmse",
+                "model": "prithvi",
+                "paper_key": "schindlegger2026now",
+                "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+                "self_evaluation": true,
+                "span": "TerraMind at ps4 with full fine-tuning achieves the best RMSE (0.965)",
+                "value": 0.965
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "prithvi",
-            "n_claims": 3,
+            "n_claims": 4,
             "n_papers": 1,
-            "n_papers_all": 1,
+            "n_papers_all": 2,
             "task": "crop_yield_estimation"
           },
           "prithvi\tflood_mapping": {
-            "agreement": 0.75,
+            "agreement": 0.769,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -54649,6 +55220,54 @@
               },
               {
                 "baseline": "task_specific",
+                "baseline_value": 0.879,
+                "dataset": "Sen1Floods11",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2607.18504",
+                "locator": "Table 12",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "schindlegger2026now",
+                "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+                "self_evaluation": true,
+                "span": "Sen1Floods11 0.879 0.907 0.910",
+                "value": 0.91
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.871,
+                "dataset": "Sen1Floods11",
+                "direction": "better",
+                "label_ratio": 0.05,
+                "link": "https://arxiv.org/abs/2607.18504",
+                "locator": "Sec 6.8",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "schindlegger2026now",
+                "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+                "self_evaluation": true,
+                "span": "it achieves mIoU = 0.888. This is equivalent to what UNet reaches at 50%",
+                "value": 0.888
+              },
+              {
+                "baseline": "prithvi",
+                "baseline_value": 0.86,
+                "dataset": "Flood Zone",
+                "direction": "worse",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2607.18504",
+                "locator": "Sec 6.1",
+                "metric": "f1",
+                "model": "prithvi",
+                "paper_key": "schindlegger2026now",
+                "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+                "self_evaluation": true,
+                "span": "THOR’s best configuration reaches pixel-wise F1 = 0.86 against TerraMind’s best of 0.33",
+                "value": 0.33
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": 90.16,
                 "dataset": "Sen1Floods11",
                 "direction": "better",
@@ -54715,9 +55334,9 @@
             "direction": "better",
             "label": "contested",
             "model": "prithvi",
-            "n_claims": 36,
-            "n_papers": 12,
-            "n_papers_all": 15,
+            "n_claims": 39,
+            "n_papers": 13,
+            "n_papers_all": 16,
             "task": "flood_mapping"
           },
           "prithvi\thydrological_modeling": {
@@ -54749,7 +55368,7 @@
             "task": "hydrological_modeling"
           },
           "prithvi\tland_cover_classification": {
-            "agreement": 0.583,
+            "agreement": 0.615,
             "claims": [
               {
                 "baseline": null,
@@ -55089,6 +55708,38 @@
               },
               {
                 "baseline": "task_specific",
+                "baseline_value": 0.901,
+                "dataset": "HLS Burn Scars",
+                "direction": "worse",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2607.18504",
+                "locator": "Table 12",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "schindlegger2026now",
+                "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+                "self_evaluation": true,
+                "span": "HLS Burn Scars 0.901 0.865 0.891",
+                "value": 0.891
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.785,
+                "dataset": "CocoaMining",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2607.18504",
+                "locator": "Table 12",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "schindlegger2026now",
+                "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+                "self_evaluation": true,
+                "span": "CocoaMining 0.785 0.820 0.817",
+                "value": 0.817
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": 98.98,
                 "dataset": "EuroSAT",
                 "direction": "worse",
@@ -55123,9 +55774,9 @@
             "direction": "worse",
             "label": "contested",
             "model": "prithvi",
-            "n_claims": 23,
-            "n_papers": 12,
-            "n_papers_all": 16,
+            "n_claims": 25,
+            "n_papers": 13,
+            "n_papers_all": 17,
             "task": "land_cover_classification"
           },
           "prithvi\tlandslide_susceptibility": {
@@ -55768,6 +56419,22 @@
                 "value": 80.28
               },
               {
+                "baseline": "prithvi",
+                "baseline_value": 0.504,
+                "dataset": "Sea Ice",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2607.18504",
+                "locator": "Table 5",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "schindlegger2026now",
+                "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+                "self_evaluation": true,
+                "span": "TerraMind Base 0.904 0.828 0.813 0.823 9.190 0.646 0.504",
+                "value": 0.755
+              },
+              {
                 "baseline": "task_specific",
                 "baseline_value": 0.2185,
                 "dataset": "CloudSat/CALIPSO curtain (ABI 3D cloud retrieval)",
@@ -55883,9 +56550,9 @@
             "direction": "better",
             "label": "contested",
             "model": "prithvi",
-            "n_claims": 34,
+            "n_claims": 35,
             "n_papers": 17,
-            "n_papers_all": 20,
+            "n_papers_all": 21,
             "task": "semantic_segmentation"
           },
           "prithvi\turban_signal_mapping": {
@@ -59023,7 +59690,7 @@
           "task": "semantic_segmentation"
         },
         {
-          "agreement": 0.548,
+          "agreement": 0.531,
           "claims": [
             {
               "baseline": "task_specific",
@@ -59715,6 +60382,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.901,
+              "dataset": "HLS Burn Scars",
+              "direction": "worse",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "HLS Burn Scars 0.901 0.865 0.891",
+              "value": 0.891
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.785,
+              "dataset": "CocoaMining",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "CocoaMining 0.785 0.820 0.817",
+              "value": 0.817
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 98.98,
               "dataset": "EuroSAT",
               "direction": "worse",
@@ -60056,6 +60755,7 @@
             "BigEarthNet-S1",
             "BigEarthNet-S2",
             "COMB",
+            "CocoaMining",
             "CropHarvest Togo test set",
             "DFC2020-S1",
             "DFC2020-S2",
@@ -60071,6 +60771,7 @@
             "GID24 (2 m)",
             "GID24 (4 m)",
             "GeoCrossBench (In-Distribution avg)",
+            "HLS Burn Scars",
             "JECAM Senegal (2018)",
             "JECAM Senegal (train 2018, predict 2021)",
             "London LUC dataset",
@@ -60129,12 +60830,12 @@
               "n_papers": 5
             },
             {
-              "agreement": 0.583,
+              "agreement": 0.615,
               "direction": "worse",
               "label": "contested",
               "model": "prithvi",
-              "n_claims": 15,
-              "n_papers": 12
+              "n_claims": 17,
+              "n_papers": 13
             },
             {
               "agreement": 1.0,
@@ -60170,9 +60871,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 64,
+          "n_claims": 66,
           "n_models": 8,
-          "n_papers": 31,
+          "n_papers": 32,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.5,
@@ -61024,7 +61725,7 @@
           "task": "crop_type_mapping"
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.684,
           "claims": [
             {
               "baseline": "task_specific",
@@ -61524,6 +62225,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.879,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "Sen1Floods11 0.879 0.907 0.910",
+              "value": 0.91
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.871,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Sec 6.8",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "it achieves mIoU = 0.888. This is equivalent to what UNet reaches at 50%",
+              "value": 0.888
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 90.16,
               "dataset": "Sen1Floods11",
               "direction": "better",
@@ -61683,25 +62416,25 @@
               "n_papers": 1
             },
             {
-              "agreement": 0.75,
+              "agreement": 0.769,
               "direction": "better",
               "label": "contested",
               "model": "prithvi",
-              "n_claims": 26,
-              "n_papers": 12
+              "n_claims": 28,
+              "n_papers": 13
             }
           ],
           "models_differ": true,
-          "n_claims": 37,
+          "n_claims": 39,
           "n_models": 6,
-          "n_papers": 18,
+          "n_papers": 19,
           "pooling_note": null,
           "strongest_benchmark": {
-            "agreement": 0.545,
+            "agreement": 0.583,
             "direction": "better",
             "label": "contested",
-            "n_claims": 16,
-            "n_papers": 11,
+            "n_claims": 18,
+            "n_papers": 12,
             "name": "Sen1Floods11"
           },
           "task": "flood_mapping"
