@@ -314,6 +314,9 @@
   "Panopticon": [
     "banze2025hybiomass"
   ],
+  "Presto_embeddings": [
+    "shah2026embeddings"
+  ],
   "Prithvi": [
     "ghamisi2025geospatial"
   ],
@@ -509,6 +512,9 @@
   "ViT_Adapter": [
     "martiescofet2025fine"
   ],
+  "WorldCereal": [
+    "shah2026embeddings"
+  ],
   "XGBoost": [
     "metz2025application"
   ],
@@ -556,6 +562,9 @@
   ],
   "analysis_ready_embeddings": [
     "ma2025harvesting"
+  ],
+  "anomaly_detection": [
+    "shah2026embeddings"
   ],
   "aoi_function_prediction": [
     "siampou2026trajganr"
@@ -1496,6 +1505,9 @@
   "knowledge-distillation": [
     "feng2026tessera"
   ],
+  "label_noise_cleaning": [
+    "shah2026embeddings"
+  ],
   "label_shift": [
     "adjei2026foundation"
   ],
@@ -2062,6 +2074,9 @@
   ],
   "red_edge_reconstruction": [
     "li2026hls"
+  ],
+  "reference_data_quality": [
+    "shah2026embeddings"
   ],
   "reference_data_resolution": [
     "ko2026exploring"

@@ -1,5 +1,5 @@
 {
-  "corpus_through": "2026-07-20",
+  "corpus_through": "2026-07-27",
   "limitations": {
     "series": {
       "benchmark_narrowness": {
@@ -38,7 +38,7 @@
         "2026-04": 10,
         "2026-05": 16,
         "2026-06": 11,
-        "2026-07": 7
+        "2026-07": 8
       },
       "compute_cost": {
         "2022-07": 1,
@@ -107,7 +107,7 @@
         "2026-04": 6,
         "2026-05": 7,
         "2026-06": 8,
-        "2026-07": 3
+        "2026-07": 4
       },
       "human_semantics": {
         "2024-04": 1,
@@ -141,7 +141,7 @@
         "2026-04": 1,
         "2026-05": 3,
         "2026-06": 5,
-        "2026-07": 2
+        "2026-07": 3
       },
       "mixed_pixels": {
         "2024-01": 1,
@@ -161,7 +161,7 @@
         "2026-04": 2,
         "2026-05": 4,
         "2026-06": 4,
-        "2026-07": 2
+        "2026-07": 3
       },
       "spatial_transfer": {
         "2022-12": 1,
@@ -247,20 +247,20 @@
         "2026-04": 3,
         "2026-05": 3,
         "2026-06": 5,
-        "2026-07": 2
+        "2026-07": 3
       }
     },
     "totals": {
-      "benchmark_narrowness": 156,
+      "benchmark_narrowness": 157,
       "compute_cost": 88,
-      "data_bias": 80,
+      "data_bias": 81,
       "human_semantics": 16,
-      "interpretability": 32,
-      "mixed_pixels": 31,
+      "interpretability": 33,
+      "mixed_pixels": 32,
       "spatial_transfer": 90,
       "temporal_transfer": 36,
       "time_sensitivity": 29,
-      "uncertainty": 24
+      "uncertainty": 25
     }
   },
   "meta": {
@@ -296,7 +296,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 179,
+    "n_papers": 180,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -320,10 +320,22 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 179
+      "verified": 180
     },
-    "n_papers": 179,
+    "n_papers": 180,
     "papers": [
+      {
+        "arxiv_id": "2607.23908",
+        "date": "2026-07-27",
+        "doi": "10.48550/arxiv.2607.23908",
+        "doi_status": "verified",
+        "key": "shah2026embeddings",
+        "link": "https://arxiv.org/abs/2607.23908",
+        "n_claims": 5,
+        "self_evaluation": false,
+        "title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+        "venue": "arXiv"
+      },
       {
         "arxiv_id": "2607.18504",
         "date": "2026-07-20",
@@ -2479,7 +2491,7 @@
     "all": {
       "axes": [
         {
-          "agreement": 0.594,
+          "agreement": 0.6,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -5300,6 +5312,54 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.786,
+              "dataset": "WorldCereal regional (Middle Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Middle Africa CT 0.786 0.820 +3.4",
+              "value": 0.82
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.905,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia CT 0.905 0.926 +2.2",
+              "value": 0.926
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.804,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia LC 0.804 0.821 +1.7",
+              "value": 0.821
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.2436,
               "dataset": "KidSat spatial benchmark",
               "direction": "better",
@@ -6437,9 +6497,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 247,
-          "n_papers": 69,
-          "n_papers_all": 99
+          "n_claims": 250,
+          "n_papers": 70,
+          "n_papers_all": 100
         },
         {
           "agreement": 0.677,
@@ -11079,7 +11139,7 @@
           "n_papers_all": 3
         },
         {
-          "agreement": 0.625,
+          "agreement": 0.647,
           "axis": "G9_ecological_fine_scale",
           "claims": [
             {
@@ -11563,6 +11623,38 @@
               "value": 0.965
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (Eastern Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Eastern Africa 0.66 2.5 0.67 2.6",
+              "value": 0.66
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia 0.84 5.0 0.66 3.0",
+              "value": 0.84
+            },
+            {
               "baseline": "croma",
               "baseline_value": 64.2,
               "dataset": "MADOS",
@@ -11645,9 +11737,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 35,
-          "n_papers": 16,
-          "n_papers_all": 26
+          "n_claims": 37,
+          "n_papers": 17,
+          "n_papers_all": 27
         },
         {
           "agreement": 1.0,
@@ -15604,6 +15696,238 @@
           }
         },
         {
+          "benchmark": "worldcereal",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.856,
+              "dataset": "WorldCereal cropland dataset (Random split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Finetuned Presto 0.861",
+              "value": 0.861
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.81,
+              "dataset": "WorldCereal cropland dataset (Geographic split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Deployed baseline 0.856 0.810 0.830",
+              "value": 0.829
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.83,
+              "dataset": "WorldCereal cropland dataset (Temporal split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Finetuned Presto 0.861 0.829 0.886",
+              "value": 0.886
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.728,
+              "dataset": "WorldCereal crop type dataset (Random split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Unprocessed CatBoost 0.728 0.563 0.649",
+              "value": 0.809
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.563,
+              "dataset": "WorldCereal crop type dataset (Geographic split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Finetuned Presto 0.809 0.650 0.686",
+              "value": 0.65
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.649,
+              "dataset": "WorldCereal crop type dataset (Temporal split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Unprocessed CatBoost 0.728 0.563 0.649",
+              "value": 0.686
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.415,
+              "dataset": "WorldCereal crop type dataset (millet/sorghum class, Random split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 5",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Millet / Sorghum (5.2K/0.1K) 0.415 0.429 (+0.014) 0.530 (+0.115)",
+              "value": 0.53
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (Eastern Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Eastern Africa 0.66 2.5 0.67 2.6",
+              "value": 0.66
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia 0.84 5.0 0.66 3.0",
+              "value": 0.84
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.786,
+              "dataset": "WorldCereal regional (Middle Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Middle Africa CT 0.786 0.820 +3.4",
+              "value": 0.82
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.905,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia CT 0.905 0.926 +2.2",
+              "value": 0.926
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.804,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia LC 0.804 0.821 +1.7",
+              "value": 0.821
+            }
+          ],
+          "metrics": [
+            "accuracy",
+            "auc",
+            "f1"
+          ],
+          "models": [
+            "presto"
+          ],
+          "n_claims": 12,
+          "n_papers": 2,
+          "n_vs_task_specific": 12,
+          "name": "WorldCereal",
+          "tasks": [
+            "crop_type_mapping",
+            "land_cover_classification"
+          ],
+          "variants": [
+            "WorldCereal (Eastern Africa)",
+            "WorldCereal (South-Eastern Asia)",
+            "WorldCereal crop type dataset (Geographic split)",
+            "WorldCereal crop type dataset (Random split)",
+            "WorldCereal crop type dataset (Temporal split)",
+            "WorldCereal crop type dataset (millet/sorghum class, Random split)",
+            "WorldCereal cropland dataset (Geographic split)",
+            "WorldCereal cropland dataset (Random split)",
+            "WorldCereal cropland dataset (Temporal split)",
+            "WorldCereal regional (Middle Africa)",
+            "WorldCereal regional (South-Eastern Asia)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 2
+          }
+        },
+        {
           "benchmark": "landslide4sense",
           "claims": [
             {
@@ -18738,100 +19062,6 @@
           }
         },
         {
-          "benchmark": "worldcereal crop type",
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.728,
-              "dataset": "WorldCereal crop type dataset (Random split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 3",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Unprocessed CatBoost 0.728 0.563 0.649",
-              "value": 0.809
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.563,
-              "dataset": "WorldCereal crop type dataset (Geographic split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 3",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Finetuned Presto 0.809 0.650 0.686",
-              "value": 0.65
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.649,
-              "dataset": "WorldCereal crop type dataset (Temporal split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 3",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Unprocessed CatBoost 0.728 0.563 0.649",
-              "value": 0.686
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.415,
-              "dataset": "WorldCereal crop type dataset (millet/sorghum class, Random split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 5",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Millet / Sorghum (5.2K/0.1K) 0.415 0.429 (+0.014) 0.530 (+0.115)",
-              "value": 0.53
-            }
-          ],
-          "metrics": [
-            "f1"
-          ],
-          "models": [
-            "presto"
-          ],
-          "n_claims": 4,
-          "n_papers": 1,
-          "n_vs_task_specific": 4,
-          "name": "WorldCereal crop type dataset",
-          "tasks": [
-            "crop_type_mapping"
-          ],
-          "variants": [
-            "WorldCereal crop type dataset (Geographic split)",
-            "WorldCereal crop type dataset (Random split)",
-            "WorldCereal crop type dataset (Temporal split)",
-            "WorldCereal crop type dataset (millet/sorghum class, Random split)"
-          ],
-          "verdict": {
-            "agreement": 1.0,
-            "direction": "better",
-            "label": "thin",
-            "n_papers": 1
-          }
-        },
-        {
           "benchmark": "afghanistan looted sites",
           "claims": [
             {
@@ -20279,83 +20509,6 @@
           "verdict": {
             "agreement": 1.0,
             "direction": "worse",
-            "label": "thin",
-            "n_papers": 1
-          }
-        },
-        {
-          "benchmark": "worldcereal cropland",
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.856,
-              "dataset": "WorldCereal cropland dataset (Random split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 1",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Finetuned Presto 0.861",
-              "value": 0.861
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.81,
-              "dataset": "WorldCereal cropland dataset (Geographic split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 1",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Deployed baseline 0.856 0.810 0.830",
-              "value": 0.829
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.83,
-              "dataset": "WorldCereal cropland dataset (Temporal split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 1",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Finetuned Presto 0.861 0.829 0.886",
-              "value": 0.886
-            }
-          ],
-          "metrics": [
-            "f1"
-          ],
-          "models": [
-            "presto"
-          ],
-          "n_claims": 3,
-          "n_papers": 1,
-          "n_vs_task_specific": 3,
-          "name": "WorldCereal cropland dataset",
-          "tasks": [
-            "land_cover_classification"
-          ],
-          "variants": [
-            "WorldCereal cropland dataset (Geographic split)",
-            "WorldCereal cropland dataset (Random split)",
-            "WorldCereal cropland dataset (Temporal split)"
-          ],
-          "verdict": {
-            "agreement": 1.0,
-            "direction": "better",
             "label": "thin",
             "n_papers": 1
           }
@@ -31548,17 +31701,17 @@
       ],
       "evidence": {
         "directions": {
-          "better": 229,
+          "better": 234,
           "parity": 12,
           "worse": 114
         },
-        "label_ratio_unspecified": 534,
-        "n_claims": 608,
+        "label_ratio_unspecified": 539,
+        "n_claims": 613,
         "n_self_eval_claims": 79,
         "n_vs_model_or_none": 253,
-        "n_vs_task_specific": 355,
-        "pct_better": 64.5,
-        "pct_label_ratio_unspecified": 87.8
+        "n_vs_task_specific": 360,
+        "pct_better": 65.0,
+        "pct_label_ratio_unspecified": 87.9
       },
       "groups": [
         {
@@ -35493,6 +35646,66 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (Eastern Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Eastern Africa 0.66 2.5 0.67 2.6",
+              "value": 0.66
+            }
+          ],
+          "dataset": "WorldCereal (Eastern Africa)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "auc",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia 0.84 5.0 0.66 3.0",
+              "value": 0.84
+            }
+          ],
+          "dataset": "WorldCereal (South-Eastern Asia)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "auc",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.563,
               "dataset": "WorldCereal crop type dataset (Geographic split)",
               "direction": "better",
@@ -35603,6 +35816,66 @@
           "label": "thin",
           "label_regime": "unspecified",
           "metric": "f1",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.786,
+              "dataset": "WorldCereal regional (Middle Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Middle Africa CT 0.786 0.820 +3.4",
+              "value": 0.82
+            }
+          ],
+          "dataset": "WorldCereal regional (Middle Africa)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.905,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia CT 0.905 0.926 +2.2",
+              "value": 0.926
+            }
+          ],
+          "dataset": "WorldCereal regional (South-Eastern Asia)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
           "model": "presto",
           "n_papers": 1,
           "task": "crop_type_mapping"
@@ -40663,6 +40936,36 @@
           "label": "thin",
           "label_regime": "unspecified",
           "metric": "f1",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.804,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia LC 0.804 0.821 +1.7",
+              "value": 0.821
+            }
+          ],
+          "dataset": "WorldCereal regional (South-Eastern Asia)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
           "model": "presto",
           "n_papers": 1,
           "task": "land_cover_classification"
@@ -52977,7 +53280,7 @@
             "task": "change_detection"
           },
           "presto\tcrop_type_mapping": {
-            "agreement": 0.5,
+            "agreement": 0.667,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -53061,6 +53364,70 @@
               },
               {
                 "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "WorldCereal (Eastern Africa)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.23908",
+                "locator": "Table 1",
+                "metric": "auc",
+                "model": "presto",
+                "paper_key": "shah2026embeddings",
+                "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+                "self_evaluation": false,
+                "span": "Eastern Africa 0.66 2.5 0.67 2.6",
+                "value": 0.66
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "WorldCereal (South-Eastern Asia)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.23908",
+                "locator": "Table 1",
+                "metric": "auc",
+                "model": "presto",
+                "paper_key": "shah2026embeddings",
+                "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+                "self_evaluation": false,
+                "span": "South-Eastern Asia 0.84 5.0 0.66 3.0",
+                "value": 0.84
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.786,
+                "dataset": "WorldCereal regional (Middle Africa)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.23908",
+                "locator": "Table 3",
+                "metric": "accuracy",
+                "model": "presto",
+                "paper_key": "shah2026embeddings",
+                "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+                "self_evaluation": false,
+                "span": "Middle Africa CT 0.786 0.820 +3.4",
+                "value": 0.82
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.905,
+                "dataset": "WorldCereal regional (South-Eastern Asia)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.23908",
+                "locator": "Table 3",
+                "metric": "accuracy",
+                "model": "presto",
+                "paper_key": "shah2026embeddings",
+                "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+                "self_evaluation": false,
+                "span": "South-Eastern Asia CT 0.905 0.926 +2.2",
+                "value": 0.926
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": 73.34,
                 "dataset": "CropGlobe (FRA→USA)",
                 "direction": "worse",
@@ -53109,11 +53476,11 @@
               }
             ],
             "direction": "better",
-            "label": "thin",
+            "label": "contested",
             "model": "presto",
-            "n_claims": 8,
-            "n_papers": 2,
-            "n_papers_all": 3,
+            "n_claims": 12,
+            "n_papers": 3,
+            "n_papers_all": 4,
             "task": "crop_type_mapping"
           },
           "presto\tflood_mapping": {
@@ -53469,6 +53836,22 @@
               },
               {
                 "baseline": "task_specific",
+                "baseline_value": 0.804,
+                "dataset": "WorldCereal regional (South-Eastern Asia)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.23908",
+                "locator": "Table 3",
+                "metric": "accuracy",
+                "model": "presto",
+                "paper_key": "shah2026embeddings",
+                "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+                "self_evaluation": false,
+                "span": "South-Eastern Asia LC 0.804 0.821 +1.7",
+                "value": 0.821
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": 0.75,
                 "dataset": "CropHarvest Togo test set",
                 "direction": "better",
@@ -53519,9 +53902,9 @@
             "direction": "better",
             "label": "consensus",
             "model": "presto",
-            "n_claims": 17,
-            "n_papers": 5,
-            "n_papers_all": 6,
+            "n_claims": 18,
+            "n_papers": 6,
+            "n_papers_all": 7,
             "task": "land_cover_classification"
           },
           "presto\tpopulation_density": {
@@ -59587,7 +59970,7 @@
           "task": "semantic_segmentation"
         },
         {
-          "agreement": 0.531,
+          "agreement": 0.545,
           "claims": [
             {
               "baseline": "task_specific",
@@ -60311,6 +60694,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.804,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia LC 0.804 0.821 +1.7",
+              "value": 0.821
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 98.98,
               "dataset": "EuroSAT",
               "direction": "worse",
@@ -60690,6 +61089,7 @@
             "WorldCereal cropland dataset (Geographic split)",
             "WorldCereal cropland dataset (Random split)",
             "WorldCereal cropland dataset (Temporal split)",
+            "WorldCereal regional (South-Eastern Asia)",
             "ben-ge-8k",
             "fMoW RGB",
             "fMoW RGB (temporal)",
@@ -60723,8 +61123,8 @@
               "direction": "better",
               "label": "consensus",
               "model": "presto",
-              "n_claims": 14,
-              "n_papers": 5
+              "n_claims": 15,
+              "n_papers": 6
             },
             {
               "agreement": 0.615,
@@ -60768,9 +61168,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 66,
+          "n_claims": 67,
           "n_models": 8,
-          "n_papers": 32,
+          "n_papers": 33,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.5,
@@ -60783,7 +61183,7 @@
           "task": "land_cover_classification"
         },
         {
-          "agreement": 0.609,
+          "agreement": 0.625,
           "claims": [
             {
               "baseline": "task_specific",
@@ -61331,6 +61731,70 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (Eastern Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Eastern Africa 0.66 2.5 0.67 2.6",
+              "value": 0.66
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia 0.84 5.0 0.66 3.0",
+              "value": 0.84
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.786,
+              "dataset": "WorldCereal regional (Middle Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Middle Africa CT 0.786 0.820 +3.4",
+              "value": 0.82
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.905,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia CT 0.905 0.926 +2.2",
+              "value": 0.926
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 47.42,
               "dataset": "Multi-Temporal Crop Segmentation",
               "direction": "worse",
@@ -61538,10 +62002,14 @@
             "TalloS",
             "US multi-temporal crop segmentation",
             "USDA Crop Data Layer (CDL) multi-temporal crop segmentation",
+            "WorldCereal (Eastern Africa)",
+            "WorldCereal (South-Eastern Asia)",
             "WorldCereal crop type dataset (Geographic split)",
             "WorldCereal crop type dataset (Random split)",
             "WorldCereal crop type dataset (Temporal split)",
             "WorldCereal crop type dataset (millet/sorghum class, Random split)",
+            "WorldCereal regional (Middle Africa)",
+            "WorldCereal regional (South-Eastern Asia)",
             "multi-temporal crop classification (HLS/Sentinel)",
             "reBEN 7k"
           ],
@@ -61582,12 +62050,12 @@
               "n_papers": 1
             },
             {
-              "agreement": 0.5,
+              "agreement": 0.667,
               "direction": "better",
-              "label": "thin",
+              "label": "contested",
               "model": "presto",
-              "n_claims": 7,
-              "n_papers": 2
+              "n_claims": 11,
+              "n_papers": 3
             },
             {
               "agreement": 0.692,
@@ -61607,9 +62075,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 45,
+          "n_claims": 49,
           "n_models": 7,
-          "n_papers": 23,
+          "n_papers": 24,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.667,
@@ -64506,7 +64974,7 @@
     "no_self_eval": {
       "axes": [
         {
-          "agreement": 0.562,
+          "agreement": 0.569,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -66943,6 +67411,54 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.786,
+              "dataset": "WorldCereal regional (Middle Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Middle Africa CT 0.786 0.820 +3.4",
+              "value": 0.82
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.905,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia CT 0.905 0.926 +2.2",
+              "value": 0.926
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.804,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia LC 0.804 0.821 +1.7",
+              "value": 0.821
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.2436,
               "dataset": "KidSat spatial benchmark",
               "direction": "better",
@@ -67920,9 +68436,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 213,
-          "n_papers": 64,
-          "n_papers_all": 90
+          "n_claims": 216,
+          "n_papers": 65,
+          "n_papers_all": 91
         },
         {
           "agreement": 0.69,
@@ -71970,7 +72486,7 @@
           "n_papers_all": 2
         },
         {
-          "agreement": 0.615,
+          "agreement": 0.643,
           "axis": "G9_ecological_fine_scale",
           "claims": [
             {
@@ -72391,6 +72907,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (Eastern Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Eastern Africa 0.66 2.5 0.67 2.6",
+              "value": 0.66
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia 0.84 5.0 0.66 3.0",
+              "value": 0.84
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 47.3,
               "dataset": "DFC2020",
               "direction": "better",
@@ -72440,9 +72988,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 29,
-          "n_papers": 13,
-          "n_papers_all": 20
+          "n_claims": 31,
+          "n_papers": 14,
+          "n_papers_all": 21
         },
         {
           "agreement": 1.0,
@@ -75354,6 +75902,238 @@
             "FloodPlanet PlanetScope",
             "FloodPlanet Sentinel-1",
             "FloodPlanet Sentinel-2"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 2
+          }
+        },
+        {
+          "benchmark": "worldcereal",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.856,
+              "dataset": "WorldCereal cropland dataset (Random split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Finetuned Presto 0.861",
+              "value": 0.861
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.81,
+              "dataset": "WorldCereal cropland dataset (Geographic split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Deployed baseline 0.856 0.810 0.830",
+              "value": 0.829
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.83,
+              "dataset": "WorldCereal cropland dataset (Temporal split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Finetuned Presto 0.861 0.829 0.886",
+              "value": 0.886
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.728,
+              "dataset": "WorldCereal crop type dataset (Random split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Unprocessed CatBoost 0.728 0.563 0.649",
+              "value": 0.809
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.563,
+              "dataset": "WorldCereal crop type dataset (Geographic split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Finetuned Presto 0.809 0.650 0.686",
+              "value": 0.65
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.649,
+              "dataset": "WorldCereal crop type dataset (Temporal split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Unprocessed CatBoost 0.728 0.563 0.649",
+              "value": 0.686
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.415,
+              "dataset": "WorldCereal crop type dataset (millet/sorghum class, Random split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2508.00858",
+              "locator": "Table 5",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "butsko2025deploying",
+              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
+              "self_evaluation": false,
+              "span": "Millet / Sorghum (5.2K/0.1K) 0.415 0.429 (+0.014) 0.530 (+0.115)",
+              "value": 0.53
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (Eastern Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Eastern Africa 0.66 2.5 0.67 2.6",
+              "value": 0.66
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia 0.84 5.0 0.66 3.0",
+              "value": 0.84
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.786,
+              "dataset": "WorldCereal regional (Middle Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Middle Africa CT 0.786 0.820 +3.4",
+              "value": 0.82
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.905,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia CT 0.905 0.926 +2.2",
+              "value": 0.926
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.804,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia LC 0.804 0.821 +1.7",
+              "value": 0.821
+            }
+          ],
+          "metrics": [
+            "accuracy",
+            "auc",
+            "f1"
+          ],
+          "models": [
+            "presto"
+          ],
+          "n_claims": 12,
+          "n_papers": 2,
+          "n_vs_task_specific": 12,
+          "name": "WorldCereal",
+          "tasks": [
+            "crop_type_mapping",
+            "land_cover_classification"
+          ],
+          "variants": [
+            "WorldCereal (Eastern Africa)",
+            "WorldCereal (South-Eastern Asia)",
+            "WorldCereal crop type dataset (Geographic split)",
+            "WorldCereal crop type dataset (Random split)",
+            "WorldCereal crop type dataset (Temporal split)",
+            "WorldCereal crop type dataset (millet/sorghum class, Random split)",
+            "WorldCereal cropland dataset (Geographic split)",
+            "WorldCereal cropland dataset (Random split)",
+            "WorldCereal cropland dataset (Temporal split)",
+            "WorldCereal regional (Middle Africa)",
+            "WorldCereal regional (South-Eastern Asia)"
           ],
           "verdict": {
             "agreement": 1.0,
@@ -78395,100 +79175,6 @@
           }
         },
         {
-          "benchmark": "worldcereal crop type",
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.728,
-              "dataset": "WorldCereal crop type dataset (Random split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 3",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Unprocessed CatBoost 0.728 0.563 0.649",
-              "value": 0.809
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.563,
-              "dataset": "WorldCereal crop type dataset (Geographic split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 3",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Finetuned Presto 0.809 0.650 0.686",
-              "value": 0.65
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.649,
-              "dataset": "WorldCereal crop type dataset (Temporal split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 3",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Unprocessed CatBoost 0.728 0.563 0.649",
-              "value": 0.686
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.415,
-              "dataset": "WorldCereal crop type dataset (millet/sorghum class, Random split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 5",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Millet / Sorghum (5.2K/0.1K) 0.415 0.429 (+0.014) 0.530 (+0.115)",
-              "value": 0.53
-            }
-          ],
-          "metrics": [
-            "f1"
-          ],
-          "models": [
-            "presto"
-          ],
-          "n_claims": 4,
-          "n_papers": 1,
-          "n_vs_task_specific": 4,
-          "name": "WorldCereal crop type dataset",
-          "tasks": [
-            "crop_type_mapping"
-          ],
-          "variants": [
-            "WorldCereal crop type dataset (Geographic split)",
-            "WorldCereal crop type dataset (Random split)",
-            "WorldCereal crop type dataset (Temporal split)",
-            "WorldCereal crop type dataset (millet/sorghum class, Random split)"
-          ],
-          "verdict": {
-            "agreement": 1.0,
-            "direction": "better",
-            "label": "thin",
-            "n_papers": 1
-          }
-        },
-        {
           "benchmark": "afghanistan looted sites",
           "claims": [
             {
@@ -79936,83 +80622,6 @@
           "verdict": {
             "agreement": 1.0,
             "direction": "worse",
-            "label": "thin",
-            "n_papers": 1
-          }
-        },
-        {
-          "benchmark": "worldcereal cropland",
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.856,
-              "dataset": "WorldCereal cropland dataset (Random split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 1",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Finetuned Presto 0.861",
-              "value": 0.861
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.81,
-              "dataset": "WorldCereal cropland dataset (Geographic split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 1",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Deployed baseline 0.856 0.810 0.830",
-              "value": 0.829
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.83,
-              "dataset": "WorldCereal cropland dataset (Temporal split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2508.00858",
-              "locator": "Table 1",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "butsko2025deploying",
-              "paper_title": "Deploying Geospatial Foundation Models in the Real World: Lessons from WorldCereal",
-              "self_evaluation": false,
-              "span": "Finetuned Presto 0.861 0.829 0.886",
-              "value": 0.886
-            }
-          ],
-          "metrics": [
-            "f1"
-          ],
-          "models": [
-            "presto"
-          ],
-          "n_claims": 3,
-          "n_papers": 1,
-          "n_vs_task_specific": 3,
-          "name": "WorldCereal cropland dataset",
-          "tasks": [
-            "land_cover_classification"
-          ],
-          "variants": [
-            "WorldCereal cropland dataset (Geographic split)",
-            "WorldCereal cropland dataset (Random split)",
-            "WorldCereal cropland dataset (Temporal split)"
-          ],
-          "verdict": {
-            "agreement": 1.0,
-            "direction": "better",
             "label": "thin",
             "n_papers": 1
           }
@@ -90201,16 +90810,16 @@
       ],
       "evidence": {
         "directions": {
-          "better": 189,
+          "better": 194,
           "parity": 12,
           "worse": 109
         },
-        "label_ratio_unspecified": 478,
-        "n_claims": 529,
+        "label_ratio_unspecified": 483,
+        "n_claims": 534,
         "n_self_eval_claims": 0,
         "n_vs_model_or_none": 219,
-        "n_vs_task_specific": 310,
-        "pct_better": 61.0,
+        "n_vs_task_specific": 315,
+        "pct_better": 61.6,
         "pct_label_ratio_unspecified": 90.4
       },
       "groups": [
@@ -93396,6 +94005,66 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (Eastern Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Eastern Africa 0.66 2.5 0.67 2.6",
+              "value": 0.66
+            }
+          ],
+          "dataset": "WorldCereal (Eastern Africa)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "auc",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia 0.84 5.0 0.66 3.0",
+              "value": 0.84
+            }
+          ],
+          "dataset": "WorldCereal (South-Eastern Asia)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "auc",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.563,
               "dataset": "WorldCereal crop type dataset (Geographic split)",
               "direction": "better",
@@ -93506,6 +94175,66 @@
           "label": "thin",
           "label_regime": "unspecified",
           "metric": "f1",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.786,
+              "dataset": "WorldCereal regional (Middle Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Middle Africa CT 0.786 0.820 +3.4",
+              "value": 0.82
+            }
+          ],
+          "dataset": "WorldCereal regional (Middle Africa)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.905,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia CT 0.905 0.926 +2.2",
+              "value": 0.926
+            }
+          ],
+          "dataset": "WorldCereal regional (South-Eastern Asia)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
           "model": "presto",
           "n_papers": 1,
           "task": "crop_type_mapping"
@@ -97902,6 +98631,36 @@
           "label": "thin",
           "label_regime": "unspecified",
           "metric": "f1",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "land_cover_classification"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.804,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia LC 0.804 0.821 +1.7",
+              "value": 0.821
+            }
+          ],
+          "dataset": "WorldCereal regional (South-Eastern Asia)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
           "model": "presto",
           "n_papers": 1,
           "task": "land_cover_classification"
@@ -108916,7 +109675,7 @@
             "task": "change_detection"
           },
           "presto\tcrop_type_mapping": {
-            "agreement": 0.5,
+            "agreement": 0.667,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -109000,6 +109759,70 @@
               },
               {
                 "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "WorldCereal (Eastern Africa)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.23908",
+                "locator": "Table 1",
+                "metric": "auc",
+                "model": "presto",
+                "paper_key": "shah2026embeddings",
+                "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+                "self_evaluation": false,
+                "span": "Eastern Africa 0.66 2.5 0.67 2.6",
+                "value": 0.66
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "WorldCereal (South-Eastern Asia)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.23908",
+                "locator": "Table 1",
+                "metric": "auc",
+                "model": "presto",
+                "paper_key": "shah2026embeddings",
+                "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+                "self_evaluation": false,
+                "span": "South-Eastern Asia 0.84 5.0 0.66 3.0",
+                "value": 0.84
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.786,
+                "dataset": "WorldCereal regional (Middle Africa)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.23908",
+                "locator": "Table 3",
+                "metric": "accuracy",
+                "model": "presto",
+                "paper_key": "shah2026embeddings",
+                "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+                "self_evaluation": false,
+                "span": "Middle Africa CT 0.786 0.820 +3.4",
+                "value": 0.82
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.905,
+                "dataset": "WorldCereal regional (South-Eastern Asia)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.23908",
+                "locator": "Table 3",
+                "metric": "accuracy",
+                "model": "presto",
+                "paper_key": "shah2026embeddings",
+                "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+                "self_evaluation": false,
+                "span": "South-Eastern Asia CT 0.905 0.926 +2.2",
+                "value": 0.926
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": 73.34,
                 "dataset": "CropGlobe (FRA→USA)",
                 "direction": "worse",
@@ -109048,11 +109871,11 @@
               }
             ],
             "direction": "better",
-            "label": "thin",
+            "label": "contested",
             "model": "presto",
-            "n_claims": 8,
-            "n_papers": 2,
-            "n_papers_all": 3,
+            "n_claims": 12,
+            "n_papers": 3,
+            "n_papers_all": 4,
             "task": "crop_type_mapping"
           },
           "presto\tflood_mapping": {
@@ -109408,6 +110231,22 @@
               },
               {
                 "baseline": "task_specific",
+                "baseline_value": 0.804,
+                "dataset": "WorldCereal regional (South-Eastern Asia)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.23908",
+                "locator": "Table 3",
+                "metric": "accuracy",
+                "model": "presto",
+                "paper_key": "shah2026embeddings",
+                "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+                "self_evaluation": false,
+                "span": "South-Eastern Asia LC 0.804 0.821 +1.7",
+                "value": 0.821
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": 0.75,
                 "dataset": "CropHarvest Togo test set",
                 "direction": "better",
@@ -109458,9 +110297,9 @@
             "direction": "better",
             "label": "consensus",
             "model": "presto",
-            "n_claims": 17,
-            "n_papers": 5,
-            "n_papers_all": 6,
+            "n_claims": 18,
+            "n_papers": 6,
+            "n_papers_all": 7,
             "task": "land_cover_classification"
           },
           "presto\tpopulation_density": {
@@ -114606,7 +115445,7 @@
           "task": "semantic_segmentation"
         },
         {
-          "agreement": 0.5,
+          "agreement": 0.481,
           "claims": [
             {
               "baseline": "task_specific",
@@ -115170,6 +116009,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.804,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia LC 0.804 0.821 +1.7",
+              "value": 0.821
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 98.98,
               "dataset": "EuroSAT",
               "direction": "worse",
@@ -115462,6 +116317,7 @@
             "WorldCereal cropland dataset (Geographic split)",
             "WorldCereal cropland dataset (Random split)",
             "WorldCereal cropland dataset (Temporal split)",
+            "WorldCereal regional (South-Eastern Asia)",
             "ben-ge-8k",
             "m-Cashew plant.",
             "m-bigearthnet"
@@ -115491,8 +116347,8 @@
               "direction": "better",
               "label": "consensus",
               "model": "presto",
-              "n_claims": 14,
-              "n_papers": 5
+              "n_claims": 15,
+              "n_papers": 6
             },
             {
               "agreement": 0.636,
@@ -115520,9 +116376,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 51,
+          "n_claims": 52,
           "n_models": 6,
-          "n_papers": 26,
+          "n_papers": 27,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.5,
@@ -115535,7 +116391,7 @@
           "task": "land_cover_classification"
         },
         {
-          "agreement": 0.55,
+          "agreement": 0.571,
           "claims": [
             {
               "baseline": "task_specific",
@@ -115987,6 +116843,70 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (Eastern Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Eastern Africa 0.66 2.5 0.67 2.6",
+              "value": 0.66
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "WorldCereal (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 1",
+              "metric": "auc",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia 0.84 5.0 0.66 3.0",
+              "value": 0.84
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.786,
+              "dataset": "WorldCereal regional (Middle Africa)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "Middle Africa CT 0.786 0.820 +3.4",
+              "value": 0.82
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.905,
+              "dataset": "WorldCereal regional (South-Eastern Asia)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.23908",
+              "locator": "Table 3",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "shah2026embeddings",
+              "paper_title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+              "self_evaluation": false,
+              "span": "South-Eastern Asia CT 0.905 0.926 +2.2",
+              "value": 0.926
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 47.42,
               "dataset": "Multi-Temporal Crop Segmentation",
               "direction": "worse",
@@ -116138,10 +117058,14 @@
             "SICKLE",
             "TalloS",
             "USDA Crop Data Layer (CDL) multi-temporal crop segmentation",
+            "WorldCereal (Eastern Africa)",
+            "WorldCereal (South-Eastern Asia)",
             "WorldCereal crop type dataset (Geographic split)",
             "WorldCereal crop type dataset (Random split)",
             "WorldCereal crop type dataset (Temporal split)",
             "WorldCereal crop type dataset (millet/sorghum class, Random split)",
+            "WorldCereal regional (Middle Africa)",
+            "WorldCereal regional (South-Eastern Asia)",
             "multi-temporal crop classification (HLS/Sentinel)",
             "reBEN 7k"
           ],
@@ -116182,12 +117106,12 @@
               "n_papers": 1
             },
             {
-              "agreement": 0.5,
+              "agreement": 0.667,
               "direction": "better",
-              "label": "thin",
+              "label": "contested",
               "model": "presto",
-              "n_claims": 7,
-              "n_papers": 2
+              "n_claims": 11,
+              "n_papers": 3
             },
             {
               "agreement": 0.636,
@@ -116207,9 +117131,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 36,
+          "n_claims": 40,
           "n_models": 7,
-          "n_papers": 20,
+          "n_papers": 21,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.667,

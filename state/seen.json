@@ -549,6 +549,12 @@
     "key": "tao2018embedding",
     "status": "off_topic"
   },
+  "embeddings based anomaly detection for cleaning global crop type reference datasets": {
+    "arxiv_id": "2607.23908",
+    "dropped_claims": 0,
+    "key": "shah2026embeddings",
+    "status": "carded"
+  },
   "emerging flexible designs for geospatial multimodal foundation models": {
     "key": "dias2026emerging",
     "status": "quarantined"
@@ -1801,6 +1807,10 @@
   "soma 1m a large scale sar optical multi resolution alignment dataset for multi task remote sensing": {
     "key": "wu2026soma",
     "status": "quarantined"
+  },
+  "spacecraft heat shield study in the diii d tokamak": {
+    "key": "orlov2026spacecraft",
+    "status": "off_topic"
   },
   "sparkesx single dish parkes data sets for finding the unexpected a data challenge": {
     "key": "yong2022sparkesx",
