@@ -261,6 +261,10 @@
     "key": "singh2025beyond",
     "status": "off_topic"
   },
+  "beyond counts a distributional robustness margin for pathology foundation models": {
+    "key": "grisi2026beyond",
+    "status": "off_topic"
+  },
   "biomazon a multimodal dataset for 3d forest structure and biomass modeling in the amazon basin": {
     "arxiv_id": "2606.05368",
     "dropped_claims": 0,
@@ -1485,6 +1489,10 @@
   },
   "presto predicting system level disruptions through parametric model checking": {
     "key": "fang2022presto",
+    "status": "off_topic"
+  },
+  "presto prefix aligned tree drafting for diffusion speculative decoding": {
+    "key": "wang2026presto",
     "status": "off_topic"
   },
   "presto preimage informed instruction optimization for prompting black box llms": {
