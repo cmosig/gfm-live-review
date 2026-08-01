@@ -1190,6 +1190,9 @@
   "food_water_nexus": [
     "asif2026adapting"
   ],
+  "forest_aboveground_biomass": [
+    "lamahewage2026foundation"
+  ],
   "forest_monitoring": [
     "bountos2023fomo"
   ],
@@ -1309,6 +1312,9 @@
   ],
   "google_earth_engine": [
     "zvonkov2025cropland"
+  ],
+  "google_satellite_embeddings": [
+    "lamahewage2026foundation"
   ],
   "grad_cam": [
     "vu2026clay"
@@ -1577,6 +1583,9 @@
   "leave_one_country_out_CV": [
     "adjei2026foundation"
   ],
+  "lidar_fusion": [
+    "lamahewage2026foundation"
+  ],
   "llm_as_judge": [
     "rahman2026physically"
   ],
@@ -1702,6 +1711,9 @@
   ],
   "monotone_ordered_quantile_output": [
     "mandal2026biomazon"
+  ],
+  "monte_carlo_stability": [
+    "lamahewage2026foundation"
   ],
   "mortality_prediction": [
     "liu2026geovista"

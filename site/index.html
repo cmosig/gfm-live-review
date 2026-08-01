@@ -140,7 +140,7 @@
         "2026-03": 10,
         "2026-04": 10,
         "2026-05": 16,
-        "2026-06": 11,
+        "2026-06": 12,
         "2026-07": 8
       },
       "compute_cost": {
@@ -209,7 +209,7 @@
         "2026-03": 3,
         "2026-04": 6,
         "2026-05": 7,
-        "2026-06": 8,
+        "2026-06": 9,
         "2026-07": 4
       },
       "human_semantics": {
@@ -243,7 +243,7 @@
         "2026-03": 4,
         "2026-04": 1,
         "2026-05": 3,
-        "2026-06": 5,
+        "2026-06": 6,
         "2026-07": 3
       },
       "mixed_pixels": {
@@ -263,7 +263,7 @@
         "2026-03": 3,
         "2026-04": 2,
         "2026-05": 4,
-        "2026-06": 4,
+        "2026-06": 5,
         "2026-07": 3
       },
       "spatial_transfer": {
@@ -349,21 +349,21 @@
         "2026-03": 2,
         "2026-04": 3,
         "2026-05": 3,
-        "2026-06": 5,
+        "2026-06": 6,
         "2026-07": 3
       }
     },
     "totals": {
-      "benchmark_narrowness": 157,
+      "benchmark_narrowness": 158,
       "compute_cost": 88,
-      "data_bias": 81,
+      "data_bias": 82,
       "human_semantics": 16,
-      "interpretability": 33,
-      "mixed_pixels": 32,
+      "interpretability": 34,
+      "mixed_pixels": 33,
       "spatial_transfer": 90,
       "temporal_transfer": 36,
       "time_sensitivity": 29,
-      "uncertainty": 25
+      "uncertainty": 26
     }
   },
   "meta": {
@@ -399,7 +399,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 180,
+    "n_papers": 181,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -423,9 +423,9 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 180
+      "verified": 181
     },
-    "n_papers": 180,
+    "n_papers": 181,
     "papers": [
       {
         "arxiv_id": "2607.23908",
@@ -545,6 +545,18 @@
         "n_claims": 3,
         "self_evaluation": false,
         "title": "Beyond Backscatter: AlphaEarth Land-Cover Priors for Rapid SAR Flood Segmentation Across Foundation Backbones",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2607.27217",
+        "date": "2026-06-25",
+        "doi": "10.48550/arxiv.2607.27217",
+        "doi_status": "verified",
+        "key": "lamahewage2026foundation",
+        "link": "https://arxiv.org/abs/2607.27217",
+        "n_claims": 4,
+        "self_evaluation": false,
+        "title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
         "venue": "arXiv"
       },
       {
@@ -2594,7 +2606,7 @@
     "all": {
       "axes": [
         {
-          "agreement": 0.6,
+          "agreement": 0.606,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -4484,6 +4496,38 @@
               "self_evaluation": false,
               "span": "GeoCLIP[54]",
               "value": 57.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5 / Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "Combined LiDAR-GSE models achieved an R² of 0.79 for AGB estimation",
+              "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
+              "value": 0.79
             },
             {
               "baseline": "task_specific",
@@ -6600,12 +6644,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 250,
-          "n_papers": 70,
-          "n_papers_all": 100
+          "n_claims": 252,
+          "n_papers": 71,
+          "n_papers_all": 101
         },
         {
-          "agreement": 0.677,
+          "agreement": 0.688,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -7266,6 +7310,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Scenario II Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "achieved the highest predictive accuracy exhibiting an R² of 0.82 and an MAE of 245.23 Mg ha⁻¹",
+              "value": 0.82
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 59.7,
               "dataset": "Landslide4Sense",
               "direction": "better",
@@ -7731,9 +7791,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 70,
-          "n_papers": 31,
-          "n_papers_all": 45
+          "n_claims": 71,
+          "n_papers": 32,
+          "n_papers_all": 46
         },
         {
           "agreement": 0.628,
@@ -12016,7 +12076,7 @@
           "n_papers_all": 3
         },
         {
-          "agreement": 1.0,
+          "agreement": 0.9,
           "axis": "G11_complementarity",
           "claims": [
             {
@@ -12226,6 +12286,22 @@
               "self_evaluation": false,
               "span": "SatCLIP Location Embeddings (Hadamard)",
               "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.79,
+              "dataset": "NEFIN CFI (Scenario I, GSE-only)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Discussion",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "we achieved R2 of 0.67-0.79 using GSE features, LiDAR and ML algorithms",
+              "value": 0.67
             },
             {
               "baseline": "task_specific",
@@ -12518,9 +12594,9 @@
           ],
           "direction": "better",
           "label": "consensus",
-          "n_claims": 31,
-          "n_papers": 9,
-          "n_papers_all": 21
+          "n_claims": 32,
+          "n_papers": 10,
+          "n_papers_all": 22
         },
         {
           "agreement": null,
@@ -19067,6 +19143,100 @@
           "verdict": {
             "agreement": 1.0,
             "direction": "parity",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "nefin cfi",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5 / Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "Combined LiDAR-GSE models achieved an R² of 0.79 for AGB estimation",
+              "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Scenario II Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "achieved the highest predictive accuracy exhibiting an R² of 0.82 and an MAE of 245.23 Mg ha⁻¹",
+              "value": 0.82
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.79,
+              "dataset": "NEFIN CFI (Scenario I, GSE-only)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Discussion",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "we achieved R2 of 0.67-0.79 using GSE features, LiDAR and ML algorithms",
+              "value": 0.67
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
+              "value": 0.79
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 4,
+          "n_papers": 1,
+          "n_vs_task_specific": 4,
+          "name": "NEFIN CFI",
+          "tasks": [
+            "biomass_estimation"
+          ],
+          "variants": [
+            "NEFIN CFI (Scenario I, GSE-only)",
+            "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+            "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+            "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
             "label": "thin",
             "n_papers": 1
           }
@@ -31804,17 +31974,17 @@
       ],
       "evidence": {
         "directions": {
-          "better": 234,
-          "parity": 12,
-          "worse": 114
+          "better": 236,
+          "parity": 13,
+          "worse": 115
         },
-        "label_ratio_unspecified": 539,
-        "n_claims": 613,
+        "label_ratio_unspecified": 543,
+        "n_claims": 617,
         "n_self_eval_claims": 79,
         "n_vs_model_or_none": 253,
-        "n_vs_task_specific": 360,
-        "pct_better": 65.0,
-        "pct_label_ratio_unspecified": 87.9
+        "n_vs_task_specific": 364,
+        "pct_better": 64.8,
+        "pct_label_ratio_unspecified": 88.0
       },
       "groups": [
         {
@@ -32266,6 +32436,126 @@
           "label_regime": "unspecified",
           "metric": "r2",
           "model": "dofa",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.79,
+              "dataset": "NEFIN CFI (Scenario I, GSE-only)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Discussion",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "we achieved R2 of 0.67-0.79 using GSE features, LiDAR and ML algorithms",
+              "value": 0.67
+            }
+          ],
+          "dataset": "NEFIN CFI (Scenario I, GSE-only)",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
+              "value": 0.79
+            }
+          ],
+          "dataset": "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5 / Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "Combined LiDAR-GSE models achieved an R² of 0.79 for AGB estimation",
+              "value": 0.79
+            }
+          ],
+          "dataset": "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Scenario II Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "achieved the highest predictive accuracy exhibiting an R² of 0.82 and an MAE of 245.23 Mg ha⁻¹",
+              "value": 0.82
+            }
+          ],
+          "dataset": "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
           "n_papers": 1,
           "task": "biomass_estimation"
         },
@@ -49510,6 +49800,82 @@
       ],
       "matrix": {
         "cells": {
+          "alphaearth\tbiomass_estimation": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.27217",
+                "locator": "Table 5 / Results",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "lamahewage2026foundation",
+                "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+                "self_evaluation": false,
+                "span": "Combined LiDAR-GSE models achieved an R² of 0.79 for AGB estimation",
+                "value": 0.79
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.27217",
+                "locator": "Scenario II Results",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "lamahewage2026foundation",
+                "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+                "self_evaluation": false,
+                "span": "achieved the highest predictive accuracy exhibiting an R² of 0.82 and an MAE of 245.23 Mg ha⁻¹",
+                "value": 0.82
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.79,
+                "dataset": "NEFIN CFI (Scenario I, GSE-only)",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.27217",
+                "locator": "Discussion",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "lamahewage2026foundation",
+                "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+                "self_evaluation": false,
+                "span": "we achieved R2 of 0.67-0.79 using GSE features, LiDAR and ML algorithms",
+                "value": 0.67
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.27217",
+                "locator": "Table 5",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "lamahewage2026foundation",
+                "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+                "self_evaluation": false,
+                "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
+                "value": 0.79
+              }
+            ],
+            "direction": "better",
+            "label": "thin",
+            "model": "alphaearth",
+            "n_claims": 4,
+            "n_papers": 1,
+            "n_papers_all": 1,
+            "task": "biomass_estimation"
+          },
           "alphaearth\tcanopy_height_estimation": {
             "agreement": 1.0,
             "claims": [
@@ -63499,7 +63865,7 @@
           "task": "change_detection"
         },
         {
-          "agreement": 0.75,
+          "agreement": 0.667,
           "claims": [
             {
               "baseline": "task_specific",
@@ -63564,6 +63930,70 @@
               "self_evaluation": false,
               "span": "0.50 on Biomass Mean and 0.69 on Clouds",
               "value": 0.53
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5 / Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "Combined LiDAR-GSE models achieved an R² of 0.79 for AGB estimation",
+              "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Scenario II Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "achieved the highest predictive accuracy exhibiting an R² of 0.82 and an MAE of 245.23 Mg ha⁻¹",
+              "value": 0.82
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.79,
+              "dataset": "NEFIN CFI (Scenario I, GSE-only)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Discussion",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "we achieved R2 of 0.67-0.79 using GSE features, LiDAR and ML algorithms",
+              "value": 0.67
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
+              "value": 0.79
             },
             {
               "baseline": "task_specific",
@@ -63737,12 +64167,24 @@
             "GEDI L4A (Ucayali, Peru, disturbed stratum)",
             "HyBiomass (Africa)",
             "HyBiomass (North America)",
+            "NEFIN CFI (Scenario I, GSE-only)",
+            "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+            "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+            "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
             "SSL4EO-S12-downstream (Biomass Mean)"
           ],
           "direction": "worse",
-          "fragile": "becomes consensus/worse without self-evaluations",
+          "fragile": null,
           "label": "contested",
           "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 4,
+              "n_papers": 1
+            },
             {
               "agreement": 1.0,
               "direction": "worse",
@@ -63777,9 +64219,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 14,
-          "n_models": 4,
-          "n_papers": 8,
+          "n_claims": 18,
+          "n_models": 5,
+          "n_papers": 9,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 1.0,
@@ -65077,7 +65519,7 @@
     "no_self_eval": {
       "axes": [
         {
-          "agreement": 0.569,
+          "agreement": 0.576,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -66663,6 +67105,38 @@
               "self_evaluation": false,
               "span": "GeoCLIP[54]",
               "value": 57.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5 / Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "Combined LiDAR-GSE models achieved an R² of 0.79 for AGB estimation",
+              "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
+              "value": 0.79
             },
             {
               "baseline": "task_specific",
@@ -68539,12 +69013,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 216,
-          "n_papers": 65,
-          "n_papers_all": 91
+          "n_claims": 218,
+          "n_papers": 66,
+          "n_papers_all": 92
         },
         {
-          "agreement": 0.69,
+          "agreement": 0.7,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -69125,6 +69599,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Scenario II Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "achieved the highest predictive accuracy exhibiting an R² of 0.82 and an MAE of 245.23 Mg ha⁻¹",
+              "value": 0.82
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 59.7,
               "dataset": "Landslide4Sense",
               "direction": "better",
@@ -69558,9 +70048,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 63,
-          "n_papers": 29,
-          "n_papers_all": 39
+          "n_claims": 64,
+          "n_papers": 30,
+          "n_papers_all": 40
         },
         {
           "agreement": 0.6,
@@ -73267,7 +73757,7 @@
           "n_papers_all": 3
         },
         {
-          "agreement": 1.0,
+          "agreement": 0.889,
           "axis": "G11_complementarity",
           "claims": [
             {
@@ -73477,6 +73967,22 @@
               "self_evaluation": false,
               "span": "SatCLIP Location Embeddings (Hadamard)",
               "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.79,
+              "dataset": "NEFIN CFI (Scenario I, GSE-only)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Discussion",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "we achieved R2 of 0.67-0.79 using GSE features, LiDAR and ML algorithms",
+              "value": 0.67
             },
             {
               "baseline": "task_specific",
@@ -73737,9 +74243,9 @@
           ],
           "direction": "better",
           "label": "consensus",
-          "n_claims": 29,
-          "n_papers": 8,
-          "n_papers_all": 19
+          "n_claims": 30,
+          "n_papers": 9,
+          "n_papers_all": 20
         },
         {
           "agreement": null,
@@ -79180,6 +79686,100 @@
           "verdict": {
             "agreement": 1.0,
             "direction": "parity",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "nefin cfi",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5 / Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "Combined LiDAR-GSE models achieved an R² of 0.79 for AGB estimation",
+              "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Scenario II Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "achieved the highest predictive accuracy exhibiting an R² of 0.82 and an MAE of 245.23 Mg ha⁻¹",
+              "value": 0.82
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.79,
+              "dataset": "NEFIN CFI (Scenario I, GSE-only)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Discussion",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "we achieved R2 of 0.67-0.79 using GSE features, LiDAR and ML algorithms",
+              "value": 0.67
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
+              "value": 0.79
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 4,
+          "n_papers": 1,
+          "n_vs_task_specific": 4,
+          "name": "NEFIN CFI",
+          "tasks": [
+            "biomass_estimation"
+          ],
+          "variants": [
+            "NEFIN CFI (Scenario I, GSE-only)",
+            "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+            "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+            "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
             "label": "thin",
             "n_papers": 1
           }
@@ -90913,17 +91513,17 @@
       ],
       "evidence": {
         "directions": {
-          "better": 194,
-          "parity": 12,
-          "worse": 109
+          "better": 196,
+          "parity": 13,
+          "worse": 110
         },
-        "label_ratio_unspecified": 483,
-        "n_claims": 534,
+        "label_ratio_unspecified": 487,
+        "n_claims": 538,
         "n_self_eval_claims": 0,
         "n_vs_model_or_none": 219,
-        "n_vs_task_specific": 315,
-        "pct_better": 61.6,
-        "pct_label_ratio_unspecified": 90.4
+        "n_vs_task_specific": 319,
+        "pct_better": 61.4,
+        "pct_label_ratio_unspecified": 90.5
       },
       "groups": [
         {
@@ -91165,6 +91765,126 @@
           "label_regime": "unspecified",
           "metric": "r2",
           "model": "dofa",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.79,
+              "dataset": "NEFIN CFI (Scenario I, GSE-only)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Discussion",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "we achieved R2 of 0.67-0.79 using GSE features, LiDAR and ML algorithms",
+              "value": 0.67
+            }
+          ],
+          "dataset": "NEFIN CFI (Scenario I, GSE-only)",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
+              "value": 0.79
+            }
+          ],
+          "dataset": "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5 / Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "Combined LiDAR-GSE models achieved an R² of 0.79 for AGB estimation",
+              "value": 0.79
+            }
+          ],
+          "dataset": "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Scenario II Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "achieved the highest predictive accuracy exhibiting an R² of 0.82 and an MAE of 245.23 Mg ha⁻¹",
+              "value": 0.82
+            }
+          ],
+          "dataset": "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
           "n_papers": 1,
           "task": "biomass_estimation"
         },
@@ -106305,6 +107025,82 @@
       ],
       "matrix": {
         "cells": {
+          "alphaearth\tbiomass_estimation": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.27217",
+                "locator": "Table 5 / Results",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "lamahewage2026foundation",
+                "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+                "self_evaluation": false,
+                "span": "Combined LiDAR-GSE models achieved an R² of 0.79 for AGB estimation",
+                "value": 0.79
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.27217",
+                "locator": "Scenario II Results",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "lamahewage2026foundation",
+                "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+                "self_evaluation": false,
+                "span": "achieved the highest predictive accuracy exhibiting an R² of 0.82 and an MAE of 245.23 Mg ha⁻¹",
+                "value": 0.82
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.79,
+                "dataset": "NEFIN CFI (Scenario I, GSE-only)",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.27217",
+                "locator": "Discussion",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "lamahewage2026foundation",
+                "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+                "self_evaluation": false,
+                "span": "we achieved R2 of 0.67-0.79 using GSE features, LiDAR and ML algorithms",
+                "value": 0.67
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.27217",
+                "locator": "Table 5",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "lamahewage2026foundation",
+                "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+                "self_evaluation": false,
+                "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
+                "value": 0.79
+              }
+            ],
+            "direction": "better",
+            "label": "thin",
+            "model": "alphaearth",
+            "n_claims": 4,
+            "n_papers": 1,
+            "n_papers_all": 1,
+            "task": "biomass_estimation"
+          },
           "alphaearth\tcanopy_height_estimation": {
             "agreement": 1.0,
             "claims": [
@@ -118458,6 +119254,266 @@
           "task": "change_detection"
         },
         {
+          "agreement": 0.714,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.41,
+              "dataset": "HyBiomass (North America)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2506.11314",
+              "locator": "Table I",
+              "metric": "r2",
+              "model": "dofa",
+              "paper_key": "banze2025hybiomass",
+              "paper_title": "HyBiomass: Global Hyperspectral Imagery Benchmark Dataset for Evaluating Geospatial Foundation Models in Forest Aboveground Biomass Estimation",
+              "self_evaluation": false,
+              "span": "North America 90.62 ± 0.88 0.41 ± 0.01",
+              "value": 0.33
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.56,
+              "dataset": "HyBiomass (Africa)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2506.11314",
+              "locator": "Table I",
+              "metric": "r2",
+              "model": "dofa",
+              "paper_key": "banze2025hybiomass",
+              "paper_title": "HyBiomass: Global Hyperspectral Imagery Benchmark Dataset for Evaluating Geospatial Foundation Models in Forest Aboveground Biomass Estimation",
+              "self_evaluation": false,
+              "span": "Africa 65.65 ± 2.55 0.56 ± 0.03",
+              "value": 0.54
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 68.1,
+              "dataset": "Biomass-S3",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.16011",
+              "locator": "Table 2",
+              "metric": "rmse",
+              "model": "dofa",
+              "paper_key": "forgaard2026thor",
+              "paper_title": "THOR: A Versatile Foundation Model for Earth Observation Climate and Society Applications",
+              "self_evaluation": false,
+              "span": "74.1 ± 0.1",
+              "value": 74.1
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "SSL4EO-S12-downstream (Biomass Mean)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2603.10658",
+              "locator": "Sec 4.2",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "gilch2026how",
+              "paper_title": "How to Embed Matters: Evaluation of EO Embedding Design Choices",
+              "self_evaluation": false,
+              "span": "0.50 on Biomass Mean and 0.69 on Clouds",
+              "value": 0.53
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5 / Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "Combined LiDAR-GSE models achieved an R² of 0.79 for AGB estimation",
+              "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Scenario II Results",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "achieved the highest predictive accuracy exhibiting an R² of 0.82 and an MAE of 245.23 Mg ha⁻¹",
+              "value": 0.82
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.79,
+              "dataset": "NEFIN CFI (Scenario I, GSE-only)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Discussion",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "we achieved R2 of 0.67-0.79 using GSE features, LiDAR and ML algorithms",
+              "value": 0.67
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.27217",
+              "locator": "Table 5",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "lamahewage2026foundation",
+              "paper_title": "Foundation-Model Earth Representations Enable Regional-Scale Forest Aboveground Biomass Monitoring Across the Northeastern United States",
+              "self_evaluation": false,
+              "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
+              "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 35.67,
+              "dataset": "BioMassters",
+              "direction": "worse",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2412.04204",
+              "locator": "Sec 5.1",
+              "metric": "rmse",
+              "model": "croma",
+              "paper_key": "marsocci2024pangaea",
+              "paper_title": "PANGAEA: A Global and Inclusive Benchmark for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "35.67 RMSE w.r.t. second best 36.11 RMSE with SpectralGPT",
+              "value": 36.81
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 65.5,
+              "dataset": "Brazil 2022 GEDI dataset (all eco-regions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2406.19888",
+              "locator": "Sec 5",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "muszynski2024fine",
+              "paper_title": "Fine-tuning of Geospatial Foundation Models for Aboveground Biomass Estimation",
+              "self_evaluation": false,
+              "span": "the U-Net slightly outperforms the GFMs by achieving an RMSE of 65.5 Mg/ha compared to 68.7 Mg/ha and 70.9 Mg/ha",
+              "value": 68.7
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 65.5,
+              "dataset": "Brazil 2022 GEDI dataset (all eco-regions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2406.19888",
+              "locator": "Sec 5",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "muszynski2024fine",
+              "paper_title": "Fine-tuning of Geospatial Foundation Models for Aboveground Biomass Estimation",
+              "self_evaluation": false,
+              "span": "the U-Net slightly outperforms the GFMs by achieving an RMSE of 65.5 Mg/ha compared to 68.7 Mg/ha and 70.9 Mg/ha",
+              "value": 70.9
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 68.3,
+              "dataset": "Biomass-S3",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2503.11849",
+              "locator": "Table 4",
+              "metric": "rmse",
+              "model": "dofa",
+              "paper_key": "wang2025towards",
+              "paper_title": "Towards a Unified Copernicus Foundation Model for Earth Vision",
+              "self_evaluation": false,
+              "span": "Biomass-S3",
+              "value": 74.1
+            }
+          ],
+          "datasets": [
+            "BioMassters",
+            "Biomass-S3",
+            "Brazil 2022 GEDI dataset (all eco-regions)",
+            "HyBiomass (Africa)",
+            "HyBiomass (North America)",
+            "NEFIN CFI (Scenario I, GSE-only)",
+            "NEFIN CFI (Scenario I, LiDAR-only tuned)",
+            "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
+            "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+            "SSL4EO-S12-downstream (Biomass Mean)"
+          ],
+          "direction": "worse",
+          "fragile": null,
+          "label": "contested",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 4,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "croma",
+              "n_claims": 1,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "consensus",
+              "model": "dofa",
+              "n_claims": 4,
+              "n_papers": 3
+            },
+            {
+              "agreement": 0.5,
+              "direction": "better",
+              "label": "thin",
+              "model": "prithvi",
+              "n_claims": 3,
+              "n_papers": 2
+            }
+          ],
+          "models_differ": true,
+          "n_claims": 12,
+          "n_models": 4,
+          "n_papers": 7,
+          "pooling_note": null,
+          "strongest_benchmark": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_claims": 2,
+            "n_papers": 2,
+            "name": "Biomass-S3"
+          },
+          "task": "biomass_estimation"
+        },
+        {
           "agreement": 0.667,
           "claims": [
             {
@@ -118822,190 +119878,6 @@
             "name": "AQS PM2.5"
           },
           "task": "socioeconomic_estimation"
-        },
-        {
-          "agreement": 0.833,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.41,
-              "dataset": "HyBiomass (North America)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2506.11314",
-              "locator": "Table I",
-              "metric": "r2",
-              "model": "dofa",
-              "paper_key": "banze2025hybiomass",
-              "paper_title": "HyBiomass: Global Hyperspectral Imagery Benchmark Dataset for Evaluating Geospatial Foundation Models in Forest Aboveground Biomass Estimation",
-              "self_evaluation": false,
-              "span": "North America 90.62 ± 0.88 0.41 ± 0.01",
-              "value": 0.33
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.56,
-              "dataset": "HyBiomass (Africa)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2506.11314",
-              "locator": "Table I",
-              "metric": "r2",
-              "model": "dofa",
-              "paper_key": "banze2025hybiomass",
-              "paper_title": "HyBiomass: Global Hyperspectral Imagery Benchmark Dataset for Evaluating Geospatial Foundation Models in Forest Aboveground Biomass Estimation",
-              "self_evaluation": false,
-              "span": "Africa 65.65 ± 2.55 0.56 ± 0.03",
-              "value": 0.54
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 68.1,
-              "dataset": "Biomass-S3",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.16011",
-              "locator": "Table 2",
-              "metric": "rmse",
-              "model": "dofa",
-              "paper_key": "forgaard2026thor",
-              "paper_title": "THOR: A Versatile Foundation Model for Earth Observation Climate and Society Applications",
-              "self_evaluation": false,
-              "span": "74.1 ± 0.1",
-              "value": 74.1
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "SSL4EO-S12-downstream (Biomass Mean)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2603.10658",
-              "locator": "Sec 4.2",
-              "metric": "r2",
-              "model": "prithvi",
-              "paper_key": "gilch2026how",
-              "paper_title": "How to Embed Matters: Evaluation of EO Embedding Design Choices",
-              "self_evaluation": false,
-              "span": "0.50 on Biomass Mean and 0.69 on Clouds",
-              "value": 0.53
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 35.67,
-              "dataset": "BioMassters",
-              "direction": "worse",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2412.04204",
-              "locator": "Sec 5.1",
-              "metric": "rmse",
-              "model": "croma",
-              "paper_key": "marsocci2024pangaea",
-              "paper_title": "PANGAEA: A Global and Inclusive Benchmark for Geospatial Foundation Models",
-              "self_evaluation": false,
-              "span": "35.67 RMSE w.r.t. second best 36.11 RMSE with SpectralGPT",
-              "value": 36.81
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 65.5,
-              "dataset": "Brazil 2022 GEDI dataset (all eco-regions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2406.19888",
-              "locator": "Sec 5",
-              "metric": "rmse",
-              "model": "prithvi",
-              "paper_key": "muszynski2024fine",
-              "paper_title": "Fine-tuning of Geospatial Foundation Models for Aboveground Biomass Estimation",
-              "self_evaluation": false,
-              "span": "the U-Net slightly outperforms the GFMs by achieving an RMSE of 65.5 Mg/ha compared to 68.7 Mg/ha and 70.9 Mg/ha",
-              "value": 68.7
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 65.5,
-              "dataset": "Brazil 2022 GEDI dataset (all eco-regions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2406.19888",
-              "locator": "Sec 5",
-              "metric": "rmse",
-              "model": "prithvi",
-              "paper_key": "muszynski2024fine",
-              "paper_title": "Fine-tuning of Geospatial Foundation Models for Aboveground Biomass Estimation",
-              "self_evaluation": false,
-              "span": "the U-Net slightly outperforms the GFMs by achieving an RMSE of 65.5 Mg/ha compared to 68.7 Mg/ha and 70.9 Mg/ha",
-              "value": 70.9
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 68.3,
-              "dataset": "Biomass-S3",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2503.11849",
-              "locator": "Table 4",
-              "metric": "rmse",
-              "model": "dofa",
-              "paper_key": "wang2025towards",
-              "paper_title": "Towards a Unified Copernicus Foundation Model for Earth Vision",
-              "self_evaluation": false,
-              "span": "Biomass-S3",
-              "value": 74.1
-            }
-          ],
-          "datasets": [
-            "BioMassters",
-            "Biomass-S3",
-            "Brazil 2022 GEDI dataset (all eco-regions)",
-            "HyBiomass (Africa)",
-            "HyBiomass (North America)",
-            "SSL4EO-S12-downstream (Biomass Mean)"
-          ],
-          "direction": "worse",
-          "fragile": null,
-          "label": "consensus",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "worse",
-              "label": "thin",
-              "model": "croma",
-              "n_claims": 1,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
-              "direction": "worse",
-              "label": "consensus",
-              "model": "dofa",
-              "n_claims": 4,
-              "n_papers": 3
-            },
-            {
-              "agreement": 0.5,
-              "direction": "better",
-              "label": "thin",
-              "model": "prithvi",
-              "n_claims": 3,
-              "n_papers": 2
-            }
-          ],
-          "models_differ": true,
-          "n_claims": 8,
-          "n_models": 3,
-          "n_papers": 6,
-          "pooling_note": "pooled agreement only: no single benchmark has 3+ papers (Biomass-S3 has the most, at 2)",
-          "strongest_benchmark": {
-            "agreement": 1.0,
-            "direction": "worse",
-            "label": "thin",
-            "n_claims": 2,
-            "n_papers": 2,
-            "name": "Biomass-S3"
-          },
-          "task": "biomass_estimation"
         },
         {
           "agreement": 0.8,
