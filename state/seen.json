@@ -589,6 +589,10 @@
     "key": "adorni2025eos",
     "status": "carded"
   },
+  "erwin schroedinger his poetry and fragment of a galilean dialogue": {
+    "key": "kragh2026erwin",
+    "status": "off_topic"
+  },
   "evidence for optical pulsations from a redback millisecond pulsar": {
     "key": "papitto2025evidence",
     "status": "off_topic"
@@ -1133,6 +1137,10 @@
   },
   "locality of percolation for graphs with polynomial growth": {
     "key": "contreras2022locality",
+    "status": "off_topic"
+  },
+  "locally consistent transductive information maximization for few shot remote sensing scene classification": {
+    "key": "khoury2026locally",
     "status": "off_topic"
   },
   "location is all you need continuous spatiotemporal neural representations of earth observation data": {
