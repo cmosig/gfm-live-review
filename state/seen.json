@@ -443,6 +443,10 @@
     "key": "tang2024data",
     "status": "off_topic"
   },
+  "deberta sentinel toward transparent and trustworthy detection of ai generated text": {
+    "key": "rehman2026deberta",
+    "status": "off_topic"
+  },
   "deep learning based burned area mapping using bi temporal siamese networks and alphaearth foundation datasets": {
     "key": "seydi2025deep",
     "status": "quarantined"
@@ -791,6 +795,10 @@
     "key": "ramrez2024galileo",
     "status": "off_topic"
   },
+  "galsas sdr sim an end to end simulation platform for galileo signal authentication service": {
+    "key": "wang2026galsas",
+    "status": "off_topic"
+  },
   "gbd dart ii 175 mhz polarimetric observation of pulsars from gauribidanur and a new pulsar signal processing pipeline": {
     "key": "b2026gbd",
     "status": "off_topic"
@@ -824,6 +832,12 @@
   "geodesic trees and exceptional directions in fpp on hyperbolic groups": {
     "key": "basu2024geodesic",
     "status": "off_topic"
+  },
+  "geoid flood a large scale multi modal benchmark dataset for flood segmentation": {
+    "arxiv_id": "2608.02315",
+    "dropped_claims": 0,
+    "key": "chiriaco2026geoid",
+    "status": "carded"
   },
   "geolink empowering remote sensing foundation model with openstreetmap data": {
     "arxiv_id": "2509.26016",
@@ -1453,6 +1467,10 @@
     "key": "sachan2026post",
     "status": "carded"
   },
+  "practical spoofing attacks against galileo osnma with time synchronization manipulation": {
+    "key": "wang2025practical",
+    "status": "off_topic"
+  },
   "practical spoofing attacks on galileo open service navigation message authentication": {
     "key": "wang2025practical",
     "status": "off_topic"
@@ -1847,6 +1865,12 @@
   "spatiotemporal variations of temperature in jupiter s upper atmosphere": {
     "key": "roberts2025spatiotemporal",
     "status": "off_topic"
+  },
+  "spectra band routed embedding and stage wise lora for cross sensor fine tuning of geospatial foundation models": {
+    "arxiv_id": "2608.01751",
+    "dropped_claims": 0,
+    "key": "li2026spectra",
+    "status": "carded"
   },
   "spectral gaps and spatial priors studying hyperspectral downstream adaptation using terramind": {
     "key": "leonardi2026spectral",

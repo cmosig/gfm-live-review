@@ -102,7 +102,7 @@
 
 <!-- Inert data blob: parsed by app.js, never executed. -->
 <script type="application/json" id="gfm-data">{
-  "corpus_through": "2026-07-27",
+  "corpus_through": "2026-08-03",
   "limitations": {
     "series": {
       "benchmark_narrowness": {
@@ -141,7 +141,8 @@
         "2026-04": 10,
         "2026-05": 16,
         "2026-06": 12,
-        "2026-07": 8
+        "2026-07": 8,
+        "2026-08": 2
       },
       "compute_cost": {
         "2022-07": 1,
@@ -178,7 +179,8 @@
         "2026-04": 6,
         "2026-05": 6,
         "2026-06": 4,
-        "2026-07": 3
+        "2026-07": 3,
+        "2026-08": 1
       },
       "data_bias": {
         "2022-07": 1,
@@ -210,7 +212,8 @@
         "2026-04": 6,
         "2026-05": 7,
         "2026-06": 9,
-        "2026-07": 4
+        "2026-07": 4,
+        "2026-08": 1
       },
       "human_semantics": {
         "2024-04": 1,
@@ -264,7 +267,8 @@
         "2026-04": 2,
         "2026-05": 4,
         "2026-06": 5,
-        "2026-07": 3
+        "2026-07": 3,
+        "2026-08": 1
       },
       "spatial_transfer": {
         "2022-12": 1,
@@ -297,7 +301,8 @@
         "2026-04": 7,
         "2026-05": 10,
         "2026-06": 8,
-        "2026-07": 4
+        "2026-07": 4,
+        "2026-08": 1
       },
       "temporal_transfer": {
         "2022-07": 1,
@@ -354,13 +359,13 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 158,
-      "compute_cost": 88,
-      "data_bias": 82,
+      "benchmark_narrowness": 160,
+      "compute_cost": 89,
+      "data_bias": 83,
       "human_semantics": 16,
       "interpretability": 34,
-      "mixed_pixels": 33,
-      "spatial_transfer": 90,
+      "mixed_pixels": 34,
+      "spatial_transfer": 91,
       "temporal_transfer": 36,
       "time_sensitivity": 29,
       "uncertainty": 26
@@ -399,7 +404,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 181,
+    "n_papers": 183,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -423,10 +428,34 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 181
+      "verified": 183
     },
-    "n_papers": 181,
+    "n_papers": 183,
     "papers": [
+      {
+        "arxiv_id": "2608.02315",
+        "date": "2026-08-03",
+        "doi": "10.48550/arxiv.2608.02315",
+        "doi_status": "verified",
+        "key": "chiriaco2026geoid",
+        "link": "https://arxiv.org/abs/2608.02315",
+        "n_claims": 4,
+        "self_evaluation": false,
+        "title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2608.01751",
+        "date": "2026-08-03",
+        "doi": "10.48550/arxiv.2608.01751",
+        "doi_status": "verified",
+        "key": "li2026spectra",
+        "link": "https://arxiv.org/abs/2608.01751",
+        "n_claims": 5,
+        "self_evaluation": false,
+        "title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+        "venue": "arXiv"
+      },
       {
         "arxiv_id": "2607.23908",
         "date": "2026-07-27",
@@ -2606,7 +2635,7 @@
     "all": {
       "axes": [
         {
-          "agreement": 0.606,
+          "agreement": 0.611,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -3008,6 +3037,70 @@
               "self_evaluation": false,
               "span": "125 images",
               "value": 0.9913
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.874,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "JRC-GSW achieves F1 = 0.874 without any training on the ESW dataset",
+              "value": 0.963
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "TESSERA MLP 45K 0.911 0.837 0.852 0.980",
+              "value": 0.911
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Sec 0.B.3",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "the linear probes reach 0.883 F1 for AEF and 0.902 F1 for TESSERA",
+              "value": 0.883
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.873,
+              "dataset": "GEOID-Flood",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "DOFA-B 126.92 0.929 0.873 0.975 0.833 0.477 0.761 0.847",
+              "value": 0.873
             },
             {
               "baseline": null,
@@ -6644,12 +6737,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 252,
-          "n_papers": 71,
-          "n_papers_all": 101
+          "n_claims": 256,
+          "n_papers": 72,
+          "n_papers_all": 102
         },
         {
-          "agreement": 0.688,
+          "agreement": 0.697,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -7341,6 +7434,22 @@
               "value": 66.96
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 66.36,
+              "dataset": "matched GeoFM-dataset-policy cells",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "BRE\nraises mean macro mIoU from 66.3666.36 to 69.2469.24 (+2.88+2.88 points)",
+              "value": 69.24
+            },
+            {
               "baseline": "dofa",
               "baseline_value": 0.79,
               "dataset": "Dynamic World",
@@ -7791,9 +7900,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 71,
-          "n_papers": 32,
-          "n_papers_all": 46
+          "n_claims": 72,
+          "n_papers": 33,
+          "n_papers_all": 47
         },
         {
           "agreement": 0.628,
@@ -9978,7 +10087,7 @@
           "n_papers_all": 16
         },
         {
-          "agreement": 0.5,
+          "agreement": 0.556,
           "axis": "G5_cost",
           "claims": [
             {
@@ -10156,6 +10265,54 @@
               "self_evaluation": false,
               "span": "ContUrbanCD 0.46 ±\\pm 0.26",
               "value": 0.38
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 85.1,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "86.39\\pm 0.85",
+              "value": 86.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 77.17,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4/5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "SPECTRA improves\nmacro mIoU from 77.1777.17 with LoRA-64 and 75.4175.41 with Full-FT to 85.4585.45",
+              "value": 85.45
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 69.03,
+              "dataset": "FireScars",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Sec 5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "it improves macro mIoU from 69.0369.03 with LoRA-64 and 72.3072.30\nwith Full-FT to 82.0582.05",
+              "value": 82.05
             },
             {
               "baseline": "task_specific",
@@ -10384,12 +10541,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 25,
-          "n_papers": 8,
-          "n_papers_all": 19
+          "n_claims": 28,
+          "n_papers": 9,
+          "n_papers_all": 20
         },
         {
-          "agreement": 0.556,
+          "agreement": 0.5,
           "axis": "G6_compactness",
           "claims": [
             {
@@ -10698,6 +10855,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 86.58,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 6",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ST-LoRA [8,16,16,8]",
+              "value": 85.88
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.84,
               "dataset": "Dynamic World",
               "direction": "worse",
@@ -10937,11 +11110,11 @@
               "value": 54.21
             }
           ],
-          "direction": "better",
+          "direction": "worse",
           "label": "contested",
-          "n_claims": 34,
-          "n_papers": 9,
-          "n_papers_all": 23
+          "n_claims": 35,
+          "n_papers": 10,
+          "n_papers_all": 24
         },
         {
           "agreement": 0.5,
@@ -12855,6 +13028,54 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 85.1,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "86.39\\pm 0.85",
+              "value": 86.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 77.17,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4/5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "SPECTRA improves\nmacro mIoU from 77.1777.17 with LoRA-64 and 75.4175.41 with Full-FT to 85.4585.45",
+              "value": 85.45
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 86.58,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 6",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ST-LoRA [8,16,16,8]",
+              "value": 85.88
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 91.42,
               "dataset": "Sen1Floods11",
               "direction": "worse",
@@ -13185,11 +13406,12 @@
             "dofa",
             "galileo",
             "presto",
-            "prithvi"
+            "prithvi",
+            "scalemae"
           ],
-          "n_claims": 35,
-          "n_papers": 20,
-          "n_vs_task_specific": 20,
+          "n_claims": 38,
+          "n_papers": 21,
+          "n_vs_task_specific": 23,
           "name": "Sen1Floods11",
           "tasks": [
             "flood_mapping",
@@ -13202,10 +13424,10 @@
             "Sen1Floods11 S2-S1"
           ],
           "verdict": {
-            "agreement": 0.538,
+            "agreement": 0.571,
             "direction": "better",
             "label": "contested",
-            "n_papers": 13
+            "n_papers": 14
           }
         },
         {
@@ -19949,6 +20171,82 @@
           }
         },
         {
+          "benchmark": "earth surface water",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.874,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "JRC-GSW achieves F1 = 0.874 without any training on the ESW dataset",
+              "value": 0.963
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "TESSERA MLP 45K 0.911 0.837 0.852 0.980",
+              "value": 0.911
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Sec 0.B.3",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "the linear probes reach 0.883 F1 for AEF and 0.902 F1 for TESSERA",
+              "value": 0.883
+            }
+          ],
+          "metrics": [
+            "f1"
+          ],
+          "models": [
+            "alphaearth",
+            "tessera"
+          ],
+          "n_claims": 3,
+          "n_papers": 1,
+          "n_vs_task_specific": 3,
+          "name": "Earth Surface Water",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "Earth Surface Water (ESW)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "glid",
           "claims": [
             {
@@ -25495,6 +25793,49 @@
           }
         },
         {
+          "benchmark": "firescars",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 69.03,
+              "dataset": "FireScars",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Sec 5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "it improves macro mIoU from 69.0369.03 with LoRA-64 and 72.3072.30\nwith Full-FT to 82.0582.05",
+              "value": 82.05
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "scalemae"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "FireScars",
+          "tasks": [
+            "flood_mapping"
+          ],
+          "variants": [
+            "FireScars"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "fivebillionpixels",
           "claims": [
             {
@@ -26307,6 +26648,49 @@
           "verdict": {
             "agreement": 1.0,
             "direction": "worse",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "geoid flood",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.873,
+              "dataset": "GEOID-Flood",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "DOFA-B 126.92 0.929 0.873 0.975 0.833 0.477 0.761 0.847",
+              "value": 0.873
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "dofa"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "GEOID-Flood",
+          "tasks": [
+            "flood_mapping"
+          ],
+          "variants": [
+            "GEOID-Flood"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "parity",
             "label": "thin",
             "n_papers": 1
           }
@@ -27894,6 +28278,49 @@
           ],
           "variants": [
             "Mars crater"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "matched geofm policy cells",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 66.36,
+              "dataset": "matched GeoFM-dataset-policy cells",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "BRE\nraises mean macro mIoU from 66.3666.36 to 69.2469.24 (+2.88+2.88 points)",
+              "value": 69.24
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "presto"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "matched GeoFM-dataset-policy cells",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "matched GeoFM-dataset-policy cells"
           ],
           "verdict": {
             "agreement": 1.0,
@@ -31974,17 +32401,17 @@
       ],
       "evidence": {
         "directions": {
-          "better": 236,
-          "parity": 13,
-          "worse": 115
+          "better": 243,
+          "parity": 14,
+          "worse": 116
         },
-        "label_ratio_unspecified": 543,
-        "n_claims": 617,
+        "label_ratio_unspecified": 552,
+        "n_claims": 626,
         "n_self_eval_claims": 79,
         "n_vs_model_or_none": 253,
-        "n_vs_task_specific": 364,
-        "pct_better": 64.8,
-        "pct_label_ratio_unspecified": 88.0
+        "n_vs_task_specific": 373,
+        "pct_better": 65.1,
+        "pct_label_ratio_unspecified": 88.2
       },
       "groups": [
         {
@@ -36711,6 +37138,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 69.03,
+              "dataset": "FireScars",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Sec 5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "it improves macro mIoU from 69.0369.03 with LoRA-64 and 72.3072.30\nwith Full-FT to 82.0582.05",
+              "value": 82.05
+            }
+          ],
+          "dataset": "FireScars",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "scalemae",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "prithvi",
           "claims": [
             {
@@ -37186,6 +37643,36 @@
           "label_regime": "unspecified",
           "metric": "miou",
           "model": "clay",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.873,
+              "dataset": "GEOID-Flood",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "DOFA-B 126.92 0.929 0.873 0.975 0.833 0.477 0.761 0.847",
+              "value": 0.873
+            }
+          ],
+          "dataset": "GEOID-Flood",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "dofa",
           "n_papers": 1,
           "task": "flood_mapping"
         },
@@ -37900,7 +38387,7 @@
           "task": "flood_mapping"
         },
         {
-          "agreement": 0.6,
+          "agreement": 0.667,
           "baseline": "task_specific",
           "claims": [
             {
@@ -37969,6 +38456,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 85.1,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "86.39\\pm 0.85",
+              "value": 86.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 86.58,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 6",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ST-LoRA [8,16,16,8]",
+              "value": 85.88
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 81.06,
               "dataset": "Sen1Floods11",
               "direction": "better",
@@ -38022,7 +38541,7 @@
           "label_regime": "unspecified",
           "metric": "miou",
           "model": "prithvi",
-          "n_papers": 5,
+          "n_papers": 6,
           "task": "flood_mapping"
         },
         {
@@ -38204,6 +38723,36 @@
           "label_regime": "label_scarce",
           "metric": "miou",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 77.17,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4/5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "SPECTRA improves\nmacro mIoU from 77.1777.17 with LoRA-64 and 75.4175.41 with Full-FT to 85.4585.45",
+              "value": 85.45
+            }
+          ],
+          "dataset": "Sen1Floods11",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "scalemae",
           "n_papers": 1,
           "task": "flood_mapping"
         },
@@ -46301,6 +46850,82 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 0.874,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "JRC-GSW achieves F1 = 0.874 without any training on the ESW dataset",
+              "value": 0.963
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Sec 0.B.3",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "the linear probes reach 0.883 F1 for AEF and 0.902 F1 for TESSERA",
+              "value": 0.883
+            }
+          ],
+          "dataset": "Earth Surface Water (ESW)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "TESSERA MLP 45K 0.911 0.837 0.852 0.980",
+              "value": 0.911
+            }
+          ],
+          "dataset": "Earth Surface Water (ESW)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "tessera",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.515,
               "dataset": "Earth's natural feature",
               "direction": "better",
@@ -48761,6 +49386,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 66.36,
+              "dataset": "matched GeoFM-dataset-policy cells",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "BRE\nraises mean macro mIoU from 66.3666.36 to 69.2469.24 (+2.88+2.88 points)",
+              "value": 69.24
+            }
+          ],
+          "dataset": "matched GeoFM-dataset-policy cells",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
           "baseline": null,
           "claims": [
             {
@@ -50608,6 +51263,38 @@
             "agreement": 1.0,
             "claims": [
               {
+                "baseline": "task_specific",
+                "baseline_value": 0.874,
+                "dataset": "Earth Surface Water (ESW)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.02315",
+                "locator": "Table 6",
+                "metric": "f1",
+                "model": "alphaearth",
+                "paper_key": "chiriaco2026geoid",
+                "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+                "self_evaluation": false,
+                "span": "JRC-GSW achieves F1 = 0.874 without any training on the ESW dataset",
+                "value": 0.963
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.773,
+                "dataset": "Earth Surface Water (ESW)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.02315",
+                "locator": "Sec 0.B.3",
+                "metric": "f1",
+                "model": "alphaearth",
+                "paper_key": "chiriaco2026geoid",
+                "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+                "self_evaluation": false,
+                "span": "the linear probes reach 0.883 F1 for AEF and 0.902 F1 for TESSERA",
+                "value": 0.883
+              },
+              {
                 "baseline": "dofa",
                 "baseline_value": 53.8,
                 "dataset": "m-cashew-plant.",
@@ -50675,9 +51362,9 @@
             "direction": "better",
             "label": "thin",
             "model": "alphaearth",
-            "n_claims": 4,
-            "n_papers": 1,
-            "n_papers_all": 2,
+            "n_claims": 6,
+            "n_papers": 2,
+            "n_papers_all": 3,
             "task": "semantic_segmentation"
           },
           "alphaearth\tslum_detection": {
@@ -52229,7 +52916,7 @@
             "task": "crop_type_mapping"
           },
           "dofa\tflood_mapping": {
-            "agreement": 0.5,
+            "agreement": 0.4,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -52246,6 +52933,22 @@
                 "self_evaluation": false,
                 "span": "89.37",
                 "value": 89.37
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.873,
+                "dataset": "GEOID-Flood",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.02315",
+                "locator": "Table 2",
+                "metric": "miou",
+                "model": "dofa",
+                "paper_key": "chiriaco2026geoid",
+                "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+                "self_evaluation": false,
+                "span": "DOFA-B 126.92 0.929 0.873 0.975 0.833 0.477 0.761 0.847",
+                "value": 0.873
               },
               {
                 "baseline": null,
@@ -52315,9 +53018,9 @@
             "direction": "worse",
             "label": "contested",
             "model": "dofa",
-            "n_claims": 5,
-            "n_papers": 4,
-            "n_papers_all": 4,
+            "n_claims": 6,
+            "n_papers": 5,
+            "n_papers_all": 5,
             "task": "flood_mapping"
           },
           "dofa\tland_cover_classification": {
@@ -54409,6 +55112,22 @@
             "claims": [
               {
                 "baseline": "task_specific",
+                "baseline_value": 66.36,
+                "dataset": "matched GeoFM-dataset-policy cells",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.01751",
+                "locator": "Table 5",
+                "metric": "miou",
+                "model": "presto",
+                "paper_key": "li2026spectra",
+                "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "BRE\nraises mean macro mIoU from 66.3666.36 to 69.2469.24 (+2.88+2.88 points)",
+                "value": 69.24
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": 57.28,
                 "dataset": "SARSegL1",
                 "direction": "better",
@@ -54459,9 +55178,9 @@
             "direction": "better",
             "label": "thin",
             "model": "presto",
-            "n_claims": 3,
-            "n_papers": 1,
-            "n_papers_all": 1,
+            "n_claims": 4,
+            "n_papers": 2,
+            "n_papers_all": 2,
             "task": "semantic_segmentation"
           },
           "prithvi\tbiomass_estimation": {
@@ -55453,7 +56172,7 @@
             "task": "crop_yield_estimation"
           },
           "prithvi\tflood_mapping": {
-            "agreement": 0.769,
+            "agreement": 0.786,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -55742,6 +56461,38 @@
                 "self_evaluation": false,
                 "span": "with a nearly 4% gap in both mIoU and mAcc compared to Prithvi",
                 "value": 82.12
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 85.1,
+                "dataset": "Sen1Floods11",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.01751",
+                "locator": "Table 4",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "li2026spectra",
+                "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "86.39\\pm 0.85",
+                "value": 86.39
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 86.58,
+                "dataset": "Sen1Floods11",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.01751",
+                "locator": "Table 6",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "li2026spectra",
+                "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "ST-LoRA [8,16,16,8]",
+                "value": 85.88
               },
               {
                 "baseline": null,
@@ -56083,9 +56834,9 @@
             "direction": "better",
             "label": "contested",
             "model": "prithvi",
-            "n_claims": 39,
-            "n_papers": 13,
-            "n_papers_all": 16,
+            "n_claims": 41,
+            "n_papers": 14,
+            "n_papers_all": 17,
             "task": "flood_mapping"
           },
           "prithvi\thydrological_modeling": {
@@ -58172,6 +58923,50 @@
             "n_papers_all": 1,
             "task": "change_detection"
           },
+          "scalemae\tflood_mapping": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 77.17,
+                "dataset": "Sen1Floods11",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.01751",
+                "locator": "Table 4/5.2",
+                "metric": "miou",
+                "model": "scalemae",
+                "paper_key": "li2026spectra",
+                "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "SPECTRA improves\nmacro mIoU from 77.1777.17 with LoRA-64 and 75.4175.41 with Full-FT to 85.4585.45",
+                "value": 85.45
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 69.03,
+                "dataset": "FireScars",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.01751",
+                "locator": "Sec 5.2",
+                "metric": "miou",
+                "model": "scalemae",
+                "paper_key": "li2026spectra",
+                "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "it improves macro mIoU from 69.0369.03 with LoRA-64 and 72.3072.30\nwith Full-FT to 82.0582.05",
+                "value": 82.05
+              }
+            ],
+            "direction": "better",
+            "label": "thin",
+            "model": "scalemae",
+            "n_claims": 2,
+            "n_papers": 1,
+            "n_papers_all": 1,
+            "task": "flood_mapping"
+          },
           "scalemae\tland_cover_classification": {
             "agreement": 1.0,
             "claims": [
@@ -59077,8 +59872,24 @@
             "task": "local_climate_zone_classification"
           },
           "tessera\tsemantic_segmentation": {
-            "agreement": null,
+            "agreement": 1.0,
             "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.773,
+                "dataset": "Earth Surface Water (ESW)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.02315",
+                "locator": "Table 6",
+                "metric": "f1",
+                "model": "tessera",
+                "paper_key": "chiriaco2026geoid",
+                "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+                "self_evaluation": false,
+                "span": "TESSERA MLP 45K 0.911 0.837 0.852 0.980",
+                "value": 0.911
+              },
               {
                 "baseline": "alphaearth",
                 "baseline_value": 51.08,
@@ -59096,12 +59907,12 @@
                 "value": 50.68
               }
             ],
-            "direction": null,
-            "label": "gap",
+            "direction": "better",
+            "label": "thin",
             "model": "tessera",
-            "n_claims": 1,
-            "n_papers": 0,
-            "n_papers_all": 1,
+            "n_claims": 2,
+            "n_papers": 1,
+            "n_papers_all": 2,
             "task": "semantic_segmentation"
           },
           "tessera\twealth_mapping": {
@@ -59233,7 +60044,7 @@
       },
       "task_verdicts": [
         {
-          "agreement": 0.658,
+          "agreement": 0.675,
           "claims": [
             {
               "baseline": "task_specific",
@@ -59314,6 +60125,54 @@
               "self_evaluation": false,
               "span": "76.68\n57.32\n24.55\n74.13\n35.11\n62.96\n21.47",
               "value": 57.32
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.874,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "JRC-GSW achieves F1 = 0.874 without any training on the ESW dataset",
+              "value": 0.963
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "TESSERA MLP 45K 0.911 0.837 0.852 0.980",
+              "value": 0.911
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Sec 0.B.3",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "the linear probes reach 0.883 F1 for AEF and 0.902 F1 for TESSERA",
+              "value": 0.883
             },
             {
               "baseline": "task_specific",
@@ -59714,6 +60573,22 @@
               "self_evaluation": false,
               "span": "achieves SOTA performance, with an mIoU of 94.8, which is 1.2 points higher than the second-best method",
               "value": 94.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 66.36,
+              "dataset": "matched GeoFM-dataset-policy cells",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "BRE\nraises mean macro mIoU from 66.3666.36 to 69.2469.24 (+2.88+2.88 points)",
+              "value": 69.24
             },
             {
               "baseline": "task_specific",
@@ -60305,6 +61180,7 @@
             "DFC2020",
             "DOTA-V1.0",
             "DeepGlobe-DFC2022",
+            "Earth Surface Water (ESW)",
             "Earth's natural feature",
             "EuroCrops (ARA, boundary delineation)",
             "FTW",
@@ -60344,7 +61220,8 @@
             "m-NeonTree",
             "m-cashew-plantation",
             "m-chesapeake",
-            "m-chesapeake-landcover"
+            "m-chesapeake-landcover",
+            "matched GeoFM-dataset-policy cells"
           ],
           "direction": "better",
           "fragile": null,
@@ -60355,8 +61232,8 @@
               "direction": "better",
               "label": "thin",
               "model": "alphaearth",
-              "n_claims": 2,
-              "n_papers": 1
+              "n_claims": 4,
+              "n_papers": 2
             },
             {
               "agreement": 0.5,
@@ -60395,8 +61272,8 @@
               "direction": "better",
               "label": "thin",
               "model": "presto",
-              "n_claims": 3,
-              "n_papers": 1
+              "n_claims": 4,
+              "n_papers": 2
             },
             {
               "agreement": 0.647,
@@ -60421,12 +61298,20 @@
               "model": "scalemae",
               "n_claims": 7,
               "n_papers": 5
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "tessera",
+              "n_claims": 1,
+              "n_papers": 1
             }
           ],
           "models_differ": true,
-          "n_claims": 66,
-          "n_models": 9,
-          "n_papers": 38,
+          "n_claims": 70,
+          "n_models": 10,
+          "n_papers": 40,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.5,
@@ -62559,7 +63444,7 @@
           "task": "crop_type_mapping"
         },
         {
-          "agreement": 0.684,
+          "agreement": 0.667,
           "claims": [
             {
               "baseline": "task_specific",
@@ -62576,6 +63461,22 @@
               "self_evaluation": false,
               "span": "89.37",
               "value": 89.37
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.873,
+              "dataset": "GEOID-Flood",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "DOFA-B 126.92 0.929 0.873 0.975 0.833 0.477 0.761 0.847",
+              "value": 0.873
             },
             {
               "baseline": "task_specific",
@@ -62848,6 +63749,70 @@
               "self_evaluation": false,
               "span": "with a nearly 4% gap in both mIoU and mAcc compared to Prithvi",
               "value": 82.12
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 85.1,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "86.39\\pm 0.85",
+              "value": 86.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 77.17,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4/5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "SPECTRA improves\nmacro mIoU from 77.1777.17 with LoRA-64 and 75.4175.41 with Full-FT to 85.4585.45",
+              "value": 85.45
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 69.03,
+              "dataset": "FireScars",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Sec 5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "it improves macro mIoU from 69.0369.03 with LoRA-64 and 72.3072.30\nwith Full-FT to 82.0582.05",
+              "value": 82.05
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 86.58,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 6",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ST-LoRA [8,16,16,8]",
+              "value": 85.88
             },
             {
               "baseline": "task_specific",
@@ -63188,12 +64153,14 @@
           ],
           "datasets": [
             "BlessemFlood21",
+            "FireScars",
             "Flood-S1",
             "FloodPlanet",
             "FloodPlanet (19 sites, leave-one-region-out)",
             "FloodPlanet PlanetScope",
             "FloodPlanet Sentinel-1",
             "FloodPlanet Sentinel-2",
+            "GEOID-Flood",
             "ImpactMesh-Flood (EMSR176 Louisiana floods)",
             "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
             "Kanyini mission imagery",
@@ -63234,12 +64201,12 @@
               "n_papers": 1
             },
             {
-              "agreement": 0.5,
+              "agreement": 0.4,
               "direction": "worse",
               "label": "contested",
               "model": "dofa",
-              "n_claims": 4,
-              "n_papers": 4
+              "n_claims": 5,
+              "n_papers": 5
             },
             {
               "agreement": 1.0,
@@ -63250,25 +64217,33 @@
               "n_papers": 1
             },
             {
-              "agreement": 0.769,
+              "agreement": 0.786,
               "direction": "better",
               "label": "contested",
               "model": "prithvi",
-              "n_claims": 28,
-              "n_papers": 13
+              "n_claims": 30,
+              "n_papers": 14
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "scalemae",
+              "n_claims": 2,
+              "n_papers": 1
             }
           ],
           "models_differ": true,
-          "n_claims": 39,
-          "n_models": 6,
-          "n_papers": 19,
+          "n_claims": 44,
+          "n_models": 7,
+          "n_papers": 21,
           "pooling_note": null,
           "strongest_benchmark": {
-            "agreement": 0.583,
+            "agreement": 0.615,
             "direction": "better",
             "label": "contested",
-            "n_claims": 18,
-            "n_papers": 12,
+            "n_claims": 21,
+            "n_papers": 13,
             "name": "Sen1Floods11"
           },
           "task": "flood_mapping"
@@ -65519,7 +66494,7 @@
     "no_self_eval": {
       "axes": [
         {
-          "agreement": 0.576,
+          "agreement": 0.582,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -65921,6 +66896,70 @@
               "self_evaluation": false,
               "span": "125 images",
               "value": 0.9913
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.874,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "JRC-GSW achieves F1 = 0.874 without any training on the ESW dataset",
+              "value": 0.963
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "TESSERA MLP 45K 0.911 0.837 0.852 0.980",
+              "value": 0.911
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Sec 0.B.3",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "the linear probes reach 0.883 F1 for AEF and 0.902 F1 for TESSERA",
+              "value": 0.883
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.873,
+              "dataset": "GEOID-Flood",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "DOFA-B 126.92 0.929 0.873 0.975 0.833 0.477 0.761 0.847",
+              "value": 0.873
             },
             {
               "baseline": null,
@@ -69013,12 +70052,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 218,
-          "n_papers": 66,
-          "n_papers_all": 92
+          "n_claims": 222,
+          "n_papers": 67,
+          "n_papers_all": 93
         },
         {
-          "agreement": 0.7,
+          "agreement": 0.71,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -69630,6 +70669,22 @@
               "value": 66.96
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 66.36,
+              "dataset": "matched GeoFM-dataset-policy cells",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "BRE\nraises mean macro mIoU from 66.3666.36 to 69.2469.24 (+2.88+2.88 points)",
+              "value": 69.24
+            },
+            {
               "baseline": "dofa",
               "baseline_value": 0.79,
               "dataset": "Dynamic World",
@@ -70048,9 +71103,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 64,
-          "n_papers": 30,
-          "n_papers_all": 40
+          "n_claims": 65,
+          "n_papers": 31,
+          "n_papers_all": 41
         },
         {
           "agreement": 0.6,
@@ -71963,7 +73018,7 @@
           "n_papers_all": 11
         },
         {
-          "agreement": 0.5,
+          "agreement": 0.571,
           "axis": "G5_cost",
           "claims": [
             {
@@ -72125,6 +73180,54 @@
               "self_evaluation": false,
               "span": "ContUrbanCD 0.46 ±\\pm 0.26",
               "value": 0.38
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 85.1,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "86.39\\pm 0.85",
+              "value": 86.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 77.17,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4/5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "SPECTRA improves\nmacro mIoU from 77.1777.17 with LoRA-64 and 75.4175.41 with Full-FT to 85.4585.45",
+              "value": 85.45
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 69.03,
+              "dataset": "FireScars",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Sec 5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "it improves macro mIoU from 69.0369.03 with LoRA-64 and 72.3072.30\nwith Full-FT to 82.0582.05",
+              "value": 82.05
             },
             {
               "baseline": "task_specific",
@@ -72337,12 +73440,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 23,
-          "n_papers": 6,
-          "n_papers_all": 17
+          "n_claims": 26,
+          "n_papers": 7,
+          "n_papers_all": 18
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.714,
           "axis": "G6_compactness",
           "claims": [
             {
@@ -72651,6 +73754,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 86.58,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 6",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ST-LoRA [8,16,16,8]",
+              "value": 85.88
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.84,
               "dataset": "Dynamic World",
               "direction": "worse",
@@ -72796,9 +73915,9 @@
           ],
           "direction": "worse",
           "label": "contested",
-          "n_claims": 28,
-          "n_papers": 6,
-          "n_papers_all": 20
+          "n_claims": 29,
+          "n_papers": 7,
+          "n_papers_all": 21
         },
         {
           "agreement": 0.5,
@@ -74440,6 +75559,54 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 85.1,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "86.39\\pm 0.85",
+              "value": 86.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 77.17,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4/5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "SPECTRA improves\nmacro mIoU from 77.1777.17 with LoRA-64 and 75.4175.41 with Full-FT to 85.4585.45",
+              "value": 85.45
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 86.58,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 6",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ST-LoRA [8,16,16,8]",
+              "value": 85.88
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 91.42,
               "dataset": "Sen1Floods11",
               "direction": "worse",
@@ -74705,11 +75872,12 @@
             "croma",
             "dofa",
             "presto",
-            "prithvi"
+            "prithvi",
+            "scalemae"
           ],
-          "n_claims": 27,
-          "n_papers": 16,
-          "n_vs_task_specific": 15,
+          "n_claims": 30,
+          "n_papers": 17,
+          "n_vs_task_specific": 18,
           "name": "Sen1Floods11",
           "tasks": [
             "flood_mapping",
@@ -74722,10 +75890,10 @@
             "Sen1Floods11 S2-S1"
           ],
           "verdict": {
-            "agreement": 0.6,
+            "agreement": 0.545,
             "direction": "worse",
             "label": "contested",
-            "n_papers": 10
+            "n_papers": 11
           }
         },
         {
@@ -80492,6 +81660,82 @@
           }
         },
         {
+          "benchmark": "earth surface water",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.874,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "JRC-GSW achieves F1 = 0.874 without any training on the ESW dataset",
+              "value": 0.963
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "TESSERA MLP 45K 0.911 0.837 0.852 0.980",
+              "value": 0.911
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Sec 0.B.3",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "the linear probes reach 0.883 F1 for AEF and 0.902 F1 for TESSERA",
+              "value": 0.883
+            }
+          ],
+          "metrics": [
+            "f1"
+          ],
+          "models": [
+            "alphaearth",
+            "tessera"
+          ],
+          "n_claims": 3,
+          "n_papers": 1,
+          "n_vs_task_specific": 3,
+          "name": "Earth Surface Water",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "Earth Surface Water (ESW)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "glid",
           "claims": [
             {
@@ -85669,6 +86913,49 @@
           }
         },
         {
+          "benchmark": "firescars",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 69.03,
+              "dataset": "FireScars",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Sec 5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "it improves macro mIoU from 69.0369.03 with LoRA-64 and 72.3072.30\nwith Full-FT to 82.0582.05",
+              "value": 82.05
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "scalemae"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "FireScars",
+          "tasks": [
+            "flood_mapping"
+          ],
+          "variants": [
+            "FireScars"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "fivebillionpixels",
           "claims": [
             {
@@ -86352,6 +87639,49 @@
           "verdict": {
             "agreement": 1.0,
             "direction": "worse",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "geoid flood",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.873,
+              "dataset": "GEOID-Flood",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "DOFA-B 126.92 0.929 0.873 0.975 0.833 0.477 0.761 0.847",
+              "value": 0.873
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "dofa"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "GEOID-Flood",
+          "tasks": [
+            "flood_mapping"
+          ],
+          "variants": [
+            "GEOID-Flood"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "parity",
             "label": "thin",
             "n_papers": 1
           }
@@ -87853,6 +89183,49 @@
           ],
           "variants": [
             "Mars crater"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "matched geofm policy cells",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 66.36,
+              "dataset": "matched GeoFM-dataset-policy cells",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "BRE\nraises mean macro mIoU from 66.3666.36 to 69.2469.24 (+2.88+2.88 points)",
+              "value": 69.24
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "presto"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "matched GeoFM-dataset-policy cells",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "matched GeoFM-dataset-policy cells"
           ],
           "verdict": {
             "agreement": 1.0,
@@ -91513,17 +92886,17 @@
       ],
       "evidence": {
         "directions": {
-          "better": 196,
-          "parity": 13,
-          "worse": 110
+          "better": 203,
+          "parity": 14,
+          "worse": 111
         },
-        "label_ratio_unspecified": 487,
-        "n_claims": 538,
+        "label_ratio_unspecified": 496,
+        "n_claims": 547,
         "n_self_eval_claims": 0,
         "n_vs_model_or_none": 219,
-        "n_vs_task_specific": 319,
-        "pct_better": 61.4,
-        "pct_label_ratio_unspecified": 90.5
+        "n_vs_task_specific": 328,
+        "pct_better": 61.9,
+        "pct_label_ratio_unspecified": 90.7
       },
       "groups": [
         {
@@ -95470,6 +96843,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 69.03,
+              "dataset": "FireScars",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Sec 5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "it improves macro mIoU from 69.0369.03 with LoRA-64 and 72.3072.30\nwith Full-FT to 82.0582.05",
+              "value": 82.05
+            }
+          ],
+          "dataset": "FireScars",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "scalemae",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "prithvi",
           "claims": [
             {
@@ -95915,6 +97318,36 @@
           "label_regime": "unspecified",
           "metric": "miou",
           "model": "clay",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.873,
+              "dataset": "GEOID-Flood",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "DOFA-B 126.92 0.929 0.873 0.975 0.833 0.477 0.761 0.847",
+              "value": 0.873
+            }
+          ],
+          "dataset": "GEOID-Flood",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "dofa",
           "n_papers": 1,
           "task": "flood_mapping"
         },
@@ -96569,7 +98002,7 @@
           "task": "flood_mapping"
         },
         {
-          "agreement": 0.5,
+          "agreement": 0.6,
           "baseline": "task_specific",
           "claims": [
             {
@@ -96603,6 +98036,38 @@
               "self_evaluation": false,
               "span": "IBM-NASA’s Prithvi 89.59",
               "value": 89.59
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 85.1,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "86.39\\pm 0.85",
+              "value": 86.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 86.58,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 6",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ST-LoRA [8,16,16,8]",
+              "value": 85.88
             },
             {
               "baseline": "task_specific",
@@ -96654,12 +98119,12 @@
             }
           ],
           "dataset": "Sen1Floods11",
-          "direction": "worse",
+          "direction": "better",
           "label": "contested",
           "label_regime": "unspecified",
           "metric": "miou",
           "model": "prithvi",
-          "n_papers": 4,
+          "n_papers": 5,
           "task": "flood_mapping"
         },
         {
@@ -96735,6 +98200,36 @@
           "label_regime": "label_partial",
           "metric": "miou",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 77.17,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4/5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "SPECTRA improves\nmacro mIoU from 77.1777.17 with LoRA-64 and 75.4175.41 with Full-FT to 85.4585.45",
+              "value": 85.45
+            }
+          ],
+          "dataset": "Sen1Floods11",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "scalemae",
           "n_papers": 1,
           "task": "flood_mapping"
         },
@@ -103916,6 +105411,82 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 0.874,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "JRC-GSW achieves F1 = 0.874 without any training on the ESW dataset",
+              "value": 0.963
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Sec 0.B.3",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "the linear probes reach 0.883 F1 for AEF and 0.902 F1 for TESSERA",
+              "value": 0.883
+            }
+          ],
+          "dataset": "Earth Surface Water (ESW)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "TESSERA MLP 45K 0.911 0.837 0.852 0.980",
+              "value": 0.911
+            }
+          ],
+          "dataset": "Earth Surface Water (ESW)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "tessera",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.515,
               "dataset": "Earth's natural feature",
               "direction": "better",
@@ -105986,6 +107557,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 66.36,
+              "dataset": "matched GeoFM-dataset-policy cells",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "BRE\nraises mean macro mIoU from 66.3666.36 to 69.2469.24 (+2.88+2.88 points)",
+              "value": 69.24
+            }
+          ],
+          "dataset": "matched GeoFM-dataset-policy cells",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
           "baseline": null,
           "claims": [
             {
@@ -107729,6 +109330,38 @@
             "agreement": 1.0,
             "claims": [
               {
+                "baseline": "task_specific",
+                "baseline_value": 0.874,
+                "dataset": "Earth Surface Water (ESW)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.02315",
+                "locator": "Table 6",
+                "metric": "f1",
+                "model": "alphaearth",
+                "paper_key": "chiriaco2026geoid",
+                "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+                "self_evaluation": false,
+                "span": "JRC-GSW achieves F1 = 0.874 without any training on the ESW dataset",
+                "value": 0.963
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.773,
+                "dataset": "Earth Surface Water (ESW)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.02315",
+                "locator": "Sec 0.B.3",
+                "metric": "f1",
+                "model": "alphaearth",
+                "paper_key": "chiriaco2026geoid",
+                "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+                "self_evaluation": false,
+                "span": "the linear probes reach 0.883 F1 for AEF and 0.902 F1 for TESSERA",
+                "value": 0.883
+              },
+              {
                 "baseline": "dofa",
                 "baseline_value": 53.8,
                 "dataset": "m-cashew-plant.",
@@ -107796,9 +109429,9 @@
             "direction": "better",
             "label": "thin",
             "model": "alphaearth",
-            "n_claims": 4,
-            "n_papers": 1,
-            "n_papers_all": 2,
+            "n_claims": 6,
+            "n_papers": 2,
+            "n_papers_all": 3,
             "task": "semantic_segmentation"
           },
           "alphaearth\tslum_detection": {
@@ -109334,7 +110967,7 @@
             "task": "crop_type_mapping"
           },
           "dofa\tflood_mapping": {
-            "agreement": 0.667,
+            "agreement": 0.5,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -109351,6 +110984,22 @@
                 "self_evaluation": false,
                 "span": "89.37",
                 "value": 89.37
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.873,
+                "dataset": "GEOID-Flood",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.02315",
+                "locator": "Table 2",
+                "metric": "miou",
+                "model": "dofa",
+                "paper_key": "chiriaco2026geoid",
+                "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+                "self_evaluation": false,
+                "span": "DOFA-B 126.92 0.929 0.873 0.975 0.833 0.477 0.761 0.847",
+                "value": 0.873
               },
               {
                 "baseline": null,
@@ -109404,9 +111053,9 @@
             "direction": "worse",
             "label": "contested",
             "model": "dofa",
-            "n_claims": 4,
-            "n_papers": 3,
-            "n_papers_all": 3,
+            "n_claims": 5,
+            "n_papers": 4,
+            "n_papers_all": 4,
             "task": "flood_mapping"
           },
           "dofa\tland_cover_classification": {
@@ -111234,6 +112883,22 @@
             "claims": [
               {
                 "baseline": "task_specific",
+                "baseline_value": 66.36,
+                "dataset": "matched GeoFM-dataset-policy cells",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.01751",
+                "locator": "Table 5",
+                "metric": "miou",
+                "model": "presto",
+                "paper_key": "li2026spectra",
+                "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "BRE\nraises mean macro mIoU from 66.3666.36 to 69.2469.24 (+2.88+2.88 points)",
+                "value": 69.24
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": 57.28,
                 "dataset": "SARSegL1",
                 "direction": "better",
@@ -111284,9 +112949,9 @@
             "direction": "better",
             "label": "thin",
             "model": "presto",
-            "n_claims": 3,
-            "n_papers": 1,
-            "n_papers_all": 1,
+            "n_claims": 4,
+            "n_papers": 2,
+            "n_papers_all": 2,
             "task": "semantic_segmentation"
           },
           "prithvi\tbiomass_estimation": {
@@ -112166,7 +113831,7 @@
             "task": "crop_yield_estimation"
           },
           "prithvi\tflood_mapping": {
-            "agreement": 0.727,
+            "agreement": 0.75,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -112391,6 +114056,38 @@
                 "self_evaluation": false,
                 "span": "with a nearly 4% gap in both mIoU and mAcc compared to Prithvi",
                 "value": 82.12
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 85.1,
+                "dataset": "Sen1Floods11",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.01751",
+                "locator": "Table 4",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "li2026spectra",
+                "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "86.39\\pm 0.85",
+                "value": 86.39
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 86.58,
+                "dataset": "Sen1Floods11",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.01751",
+                "locator": "Table 6",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "li2026spectra",
+                "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "ST-LoRA [8,16,16,8]",
+                "value": 85.88
               },
               {
                 "baseline": null,
@@ -112684,9 +114381,9 @@
             "direction": "better",
             "label": "contested",
             "model": "prithvi",
-            "n_claims": 32,
-            "n_papers": 11,
-            "n_papers_all": 14,
+            "n_claims": 34,
+            "n_papers": 12,
+            "n_papers_all": 15,
             "task": "flood_mapping"
           },
           "prithvi\thydrological_modeling": {
@@ -114565,6 +116262,50 @@
             "n_papers_all": 1,
             "task": "change_detection"
           },
+          "scalemae\tflood_mapping": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 77.17,
+                "dataset": "Sen1Floods11",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.01751",
+                "locator": "Table 4/5.2",
+                "metric": "miou",
+                "model": "scalemae",
+                "paper_key": "li2026spectra",
+                "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "SPECTRA improves\nmacro mIoU from 77.1777.17 with LoRA-64 and 75.4175.41 with Full-FT to 85.4585.45",
+                "value": 85.45
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 69.03,
+                "dataset": "FireScars",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.01751",
+                "locator": "Sec 5.2",
+                "metric": "miou",
+                "model": "scalemae",
+                "paper_key": "li2026spectra",
+                "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "it improves macro mIoU from 69.0369.03 with LoRA-64 and 72.3072.30\nwith Full-FT to 82.0582.05",
+                "value": 82.05
+              }
+            ],
+            "direction": "better",
+            "label": "thin",
+            "model": "scalemae",
+            "n_claims": 2,
+            "n_papers": 1,
+            "n_papers_all": 1,
+            "task": "flood_mapping"
+          },
           "scalemae\tland_cover_classification": {
             "agreement": 1.0,
             "claims": [
@@ -115093,6 +116834,34 @@
             "n_papers_all": 2,
             "task": "land_cover_classification"
           },
+          "tessera\tsemantic_segmentation": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.773,
+                "dataset": "Earth Surface Water (ESW)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.02315",
+                "locator": "Table 6",
+                "metric": "f1",
+                "model": "tessera",
+                "paper_key": "chiriaco2026geoid",
+                "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+                "self_evaluation": false,
+                "span": "TESSERA MLP 45K 0.911 0.837 0.852 0.980",
+                "value": 0.911
+              }
+            ],
+            "direction": "better",
+            "label": "thin",
+            "model": "tessera",
+            "n_claims": 1,
+            "n_papers": 1,
+            "n_papers_all": 1,
+            "task": "semantic_segmentation"
+          },
           "tessera\twealth_mapping": {
             "agreement": 1.0,
             "claims": [
@@ -115222,7 +116991,7 @@
       },
       "task_verdicts": [
         {
-          "agreement": 0.647,
+          "agreement": 0.667,
           "claims": [
             {
               "baseline": "task_specific",
@@ -115303,6 +117072,54 @@
               "self_evaluation": false,
               "span": "76.68\n57.32\n24.55\n74.13\n35.11\n62.96\n21.47",
               "value": 57.32
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.874,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "JRC-GSW achieves F1 = 0.874 without any training on the ESW dataset",
+              "value": 0.963
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 6",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "TESSERA MLP 45K 0.911 0.837 0.852 0.980",
+              "value": 0.911
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.773,
+              "dataset": "Earth Surface Water (ESW)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Sec 0.B.3",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "the linear probes reach 0.883 F1 for AEF and 0.902 F1 for TESSERA",
+              "value": 0.883
             },
             {
               "baseline": "task_specific",
@@ -115655,6 +117472,22 @@
               "self_evaluation": false,
               "span": "achieves SOTA performance, with an mIoU of 94.8, which is 1.2 points higher than the second-best method",
               "value": 94.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 66.36,
+              "dataset": "matched GeoFM-dataset-policy cells",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 5",
+              "metric": "miou",
+              "model": "presto",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "BRE\nraises mean macro mIoU from 66.3666.36 to 69.2469.24 (+2.88+2.88 points)",
+              "value": 69.24
             },
             {
               "baseline": "task_specific",
@@ -116214,6 +118047,7 @@
             "DFC2020",
             "DOTA-V1.0",
             "DeepGlobe-DFC2022",
+            "Earth Surface Water (ESW)",
             "Earth's natural feature",
             "EuroCrops (ARA, boundary delineation)",
             "FTW",
@@ -116249,7 +118083,8 @@
             "ben-ge-8k",
             "m-NeonTree",
             "m-cashew-plantation",
-            "m-chesapeake-landcover"
+            "m-chesapeake-landcover",
+            "matched GeoFM-dataset-policy cells"
           ],
           "direction": "better",
           "fragile": null,
@@ -116260,8 +118095,8 @@
               "direction": "better",
               "label": "thin",
               "model": "alphaearth",
-              "n_claims": 2,
-              "n_papers": 1
+              "n_claims": 4,
+              "n_papers": 2
             },
             {
               "agreement": 0.5,
@@ -116300,8 +118135,8 @@
               "direction": "better",
               "label": "thin",
               "model": "presto",
-              "n_claims": 3,
-              "n_papers": 1
+              "n_claims": 4,
+              "n_papers": 2
             },
             {
               "agreement": 0.625,
@@ -116326,12 +118161,20 @@
               "model": "scalemae",
               "n_claims": 6,
               "n_papers": 4
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "tessera",
+              "n_claims": 1,
+              "n_papers": 1
             }
           ],
           "models_differ": true,
-          "n_claims": 61,
-          "n_models": 9,
-          "n_papers": 34,
+          "n_claims": 65,
+          "n_models": 10,
+          "n_papers": 36,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.5,
@@ -118045,7 +119888,7 @@
           "task": "crop_type_mapping"
         },
         {
-          "agreement": 0.625,
+          "agreement": 0.611,
           "claims": [
             {
               "baseline": "task_specific",
@@ -118062,6 +119905,22 @@
               "self_evaluation": false,
               "span": "89.37",
               "value": 89.37
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.873,
+              "dataset": "GEOID-Flood",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.02315",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "chiriaco2026geoid",
+              "paper_title": "GEOID-Flood: A Large-Scale Multi-Modal Benchmark Dataset for Flood Segmentation",
+              "self_evaluation": false,
+              "span": "DOFA-B 126.92 0.929 0.873 0.975 0.833 0.477 0.761 0.847",
+              "value": 0.873
             },
             {
               "baseline": "task_specific",
@@ -118302,6 +120161,70 @@
               "self_evaluation": false,
               "span": "with a nearly 4% gap in both mIoU and mAcc compared to Prithvi",
               "value": 82.12
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 85.1,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "86.39\\pm 0.85",
+              "value": 86.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 77.17,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 4/5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "SPECTRA improves\nmacro mIoU from 77.1777.17 with LoRA-64 and 75.4175.41 with Full-FT to 85.4585.45",
+              "value": 85.45
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 69.03,
+              "dataset": "FireScars",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Sec 5.2",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "it improves macro mIoU from 69.0369.03 with LoRA-64 and 72.3072.30\nwith Full-FT to 82.0582.05",
+              "value": 82.05
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 86.58,
+              "dataset": "Sen1Floods11",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.01751",
+              "locator": "Table 6",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2026spectra",
+              "paper_title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ST-LoRA [8,16,16,8]",
+              "value": 85.88
             },
             {
               "baseline": "task_specific",
@@ -118594,12 +120517,14 @@
           ],
           "datasets": [
             "BlessemFlood21",
+            "FireScars",
             "Flood-S1",
             "FloodPlanet",
             "FloodPlanet (19 sites, leave-one-region-out)",
             "FloodPlanet PlanetScope",
             "FloodPlanet Sentinel-1",
             "FloodPlanet Sentinel-2",
+            "GEOID-Flood",
             "ImpactMesh-Flood (EMSR176 Louisiana floods)",
             "ImpactMesh-Flood (EMSR311 Hurricane Florence)",
             "Kanyini mission imagery",
@@ -118640,12 +120565,12 @@
               "n_papers": 1
             },
             {
-              "agreement": 0.667,
+              "agreement": 0.5,
               "direction": "worse",
               "label": "contested",
               "model": "dofa",
-              "n_claims": 3,
-              "n_papers": 3
+              "n_claims": 4,
+              "n_papers": 4
             },
             {
               "agreement": 1.0,
@@ -118656,25 +120581,33 @@
               "n_papers": 1
             },
             {
-              "agreement": 0.727,
+              "agreement": 0.75,
               "direction": "better",
               "label": "contested",
               "model": "prithvi",
-              "n_claims": 24,
-              "n_papers": 11
+              "n_claims": 26,
+              "n_papers": 12
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "scalemae",
+              "n_claims": 2,
+              "n_papers": 1
             }
           ],
           "models_differ": true,
-          "n_claims": 34,
-          "n_models": 6,
-          "n_papers": 16,
+          "n_claims": 39,
+          "n_models": 7,
+          "n_papers": 18,
           "pooling_note": null,
           "strongest_benchmark": {
-            "agreement": 0.556,
+            "agreement": 0.5,
             "direction": "worse",
             "label": "contested",
-            "n_claims": 13,
-            "n_papers": 9,
+            "n_claims": 16,
+            "n_papers": 10,
             "name": "Sen1Floods11"
           },
           "task": "flood_mapping"

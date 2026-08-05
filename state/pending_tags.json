@@ -50,6 +50,9 @@
   "CCDC_harmonics": [
     "brown2025alphaearth"
   ],
+  "CEMS_activations": [
+    "chiriaco2026geoid"
+  ],
   "CGAN_baseline": [
     "godwin2024seeing"
   ],
@@ -239,6 +242,12 @@
   "LoRA_finetuning": [
     "szwarcman2024prithvi"
   ],
+  "LoRA_rank_allocation": [
+    "li2026spectra"
+  ],
+  "LogME_transferability": [
+    "li2026spectra"
+  ],
   "MDI feature importance": [
     "benavidesmartinez2026what"
   ],
@@ -320,6 +329,9 @@
   "Prithvi": [
     "ghamisi2025geospatial"
   ],
+  "Prithvi-EO-2.0": [
+    "li2026spectra"
+  ],
   "RAMEN": [
     "kaushik2026cryo"
   ],
@@ -374,6 +386,9 @@
   "SAR_foundation_model": [
     "ye2026crossearth"
   ],
+  "SAR_optical_fusion": [
+    "chiriaco2026geoid"
+  ],
   "SATLASNET": [
     "lin2025fine"
   ],
@@ -421,6 +436,9 @@
   ],
   "SatlasPretrain": [
     "tadesse2026satellite"
+  ],
+  "ScaleMAE": [
+    "li2026spectra"
   ],
   "SeCo": [
     "plekhanova2025ssl4eco"
@@ -563,6 +581,9 @@
   "analysis_ready_embeddings": [
     "ma2025harvesting"
   ],
+  "annual_geospatial_embeddings": [
+    "chiriaco2026geoid"
+  ],
   "anomaly_detection": [
     "shah2026embeddings"
   ],
@@ -610,6 +631,9 @@
   ],
   "band_missing_robustness": [
     "li2025any"
+  ],
+  "band_routed_embedding": [
+    "li2026spectra"
   ],
   "barlow-twins": [
     "feng2026tessera"
@@ -871,6 +895,9 @@
   ],
   "cross_paper_metric_divergence": [
     "corley2026one"
+  ],
+  "cross_sensor_adaptation": [
+    "li2026spectra"
   ],
   "cross_sensor_generalization": [
     "li2025any"
@@ -1183,6 +1210,9 @@
   ],
   "floating_objects_detection": [
     "zhang2026sigmae"
+  ],
+  "flood_vs_permanent_water_separation": [
+    "chiriaco2026geoid"
   ],
   "flops_analysis": [
     "dionelis2025scaling"
@@ -1910,6 +1940,9 @@
   "permafrost_mapping": [
     "lin2025fine"
   ],
+  "permanent_water_layer": [
+    "chiriaco2026geoid"
+  ],
   "phenological_date_prediction": [
     "gupta2025time2agri"
   ],
@@ -2395,6 +2428,9 @@
   ],
   "spectral_index_guided_masking": [
     "zhang2026sigmae"
+  ],
+  "spectral_mismatch": [
+    "li2026spectra"
   ],
   "spectral_reconstruction_fidelity": [
     "hong2023spectralgpt"
