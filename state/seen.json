@@ -517,6 +517,12 @@
     "key": "chen2025dynamicvis",
     "status": "quarantined"
   },
+  "earth embeddings": {
+    "arxiv_id": "2608.03410",
+    "dropped_claims": 0,
+    "key": "stewart2026earth",
+    "status": "carded"
+  },
   "earth embeddings as products taxonomy ecosystem and standardized access": {
     "arxiv_id": "2601.13134",
     "dropped_claims": 0,
@@ -959,6 +965,12 @@
     "arxiv_id": "2603.10658",
     "dropped_claims": 0,
     "key": "gilch2026how",
+    "status": "carded"
+  },
+  "how usable are geospatial foundation models a systematic evaluation of 89 models": {
+    "arxiv_id": "2608.03804",
+    "dropped_claims": 0,
+    "key": "young2026how",
     "status": "carded"
   },
   "huiyanearth sar a foundation model for high fidelity and low cost global remote sensing imagery generation": {

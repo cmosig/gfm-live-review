@@ -536,6 +536,9 @@
   "XGBoost": [
     "metz2025application"
   ],
+  "access_deployment": [
+    "young2026how"
+  ],
   "adapter": [
     "luo2026georope"
   ],
@@ -787,6 +790,9 @@
   ],
   "coding_rate_regularizer": [
     "wolf2026brewing"
+  ],
+  "community_support": [
+    "young2026how"
   ],
   "commuting_mode_share": [
     "gong2026earth"
@@ -1078,9 +1084,6 @@
   ],
   "embedding_library": [
     "ye2026any"
-  ],
-  "embedding_products": [
-    "fang2026earth"
   ],
   "embedding_space_clustering": [
     "demilt2025view"
@@ -1481,6 +1484,9 @@
   "implicit_image_function": [
     "lin2025fine"
   ],
+  "implicit_location_embeddings": [
+    "stewart2026earth"
+  ],
   "implicit_neural_representation": [
     "madadikhaljan2026location"
   ],
@@ -1523,8 +1529,14 @@
   "integrated_gradients": [
     "daruna2024gfm4mpm"
   ],
+  "inter_rater_reliability": [
+    "young2026how"
+  ],
   "inter_stream_capacity_competition": [
     "hou2026aef"
+  ],
+  "interaction_customization": [
+    "young2026how"
   ],
   "intercropping": [
     "lisaius2026embedding"
@@ -1612,6 +1624,9 @@
   ],
   "leave_one_country_out_CV": [
     "adjei2026foundation"
+  ],
+  "license_openness": [
+    "stewart2026earth"
   ],
   "lidar_fusion": [
     "lamahewage2026foundation"
@@ -1811,6 +1826,9 @@
   "multilingual dialog dataset": [
     "goel2023presto"
   ],
+  "multilingual_support": [
+    "young2026how"
+  ],
   "multimodal fusion": [
     "thasma2026beyond"
   ],
@@ -1892,6 +1910,9 @@
   "off_diagonal_covariance": [
     "mocharla2026probing"
   ],
+  "offline_usability": [
+    "young2026how"
+  ],
   "oil_palm_plantation_mapping": [
     "brown2025alphaearth"
   ],
@@ -1931,6 +1952,9 @@
   "patch_density_fragmentation": [
     "orlowski2026sub"
   ],
+  "patch_embeddings": [
+    "stewart2026earth"
+  ],
   "patch_size_ablation": [
     "schindlegger2026now"
   ],
@@ -1960,9 +1984,6 @@
   ],
   "pixel-wise-foundation-model": [
     "feng2026tessera"
-  ],
-  "pixel_embeddings": [
-    "plas2026better"
   ],
   "pixel_to_patch_aggregation": [
     "corley2026from"
@@ -2084,6 +2105,9 @@
   "pseudo_labeling_segmentation": [
     "barzilai2025recipe"
   ],
+  "quantization": [
+    "stewart2026earth"
+  ],
   "radar_optical_fusion": [
     "fuller2023croma"
   ],
@@ -2158,6 +2182,9 @@
   ],
   "representation_similarity": [
     "barreiro2026simpler"
+  ],
+  "reproducibility": [
+    "stewart2026earth"
   ],
   "resolution_mismatch": [
     "marsocci2024pangaea"
@@ -2267,11 +2294,17 @@
   "scattering_mechanism_constraint": [
     "liu2026huiyanearth"
   ],
+  "scientific_permanence": [
+    "young2026how"
+  ],
   "sdg_monitoring": [
     "gong2026earth"
   ],
   "sea_ice_mapping": [
     "kaushik2026cryo"
+  ],
+  "search_and_retrieval": [
+    "stewart2026earth"
   ],
   "search_retrieval": [
     "fang2026earth"
@@ -2456,6 +2489,9 @@
   "storage-adaptive": [
     "feng2026tessera"
   ],
+  "storage_cost": [
+    "stewart2026earth"
+  ],
   "streamflow_prediction": [
     "qu2026utilizing"
   ],
@@ -2606,6 +2642,9 @@
   "tree_genera_classification": [
     "brown2025alphaearth"
   ],
+  "trust_transparency": [
+    "young2026how"
+  ],
   "tundra_capillary_network_detection": [
     "perera2026clustering"
   ],
@@ -2659,6 +2698,9 @@
   ],
   "urban_village_identification": [
     "bai2025geolink"
+  ],
+  "usability_evaluation": [
+    "young2026how"
   ],
   "user revisions": [
     "goel2023presto"

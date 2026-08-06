@@ -128,6 +128,7 @@ promoted_tags:
 - earth_embeddings
 - ecoregion_classification
 - elevation_prediction
+- embedding_products
 - feature_fusion
 - field_boundary_delineation
 - flexible_patch_size
@@ -157,6 +158,7 @@ promoted_tags:
 - object_detection
 - parameter_efficient_fine_tuning
 - parameter_efficient_finetuning
+- pixel_embeddings
 - retrieval_augmented_generation
 - satellite_embeddings
 - satmae
