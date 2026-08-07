@@ -14,6 +14,12 @@
   "AEF_embeddings": [
     "lyu2026structure"
   ],
+  "AGBD_dataset": [
+    "sialellia2026above"
+  ],
+  "AGBref_reference_dataset": [
+    "sialellia2026above"
+  ],
   "ALS_lidar": [
     "gaber2026uncertainty"
   ],
@@ -131,6 +137,9 @@
   "ERA5_probing": [
     "mocharla2026probing"
   ],
+  "ESA_CCI_biomass_comparison": [
+    "sialellia2026above"
+  ],
   "ESD_embeddings": [
     "lyu2026structure"
   ],
@@ -175,6 +184,9 @@
   ],
   "GEDI labels": [
     "muszynski2024fine"
+  ],
+  "GEDI_L4A": [
+    "sialellia2026above"
   ],
   "GEDI_gap_filling": [
     "young2026neural"
@@ -292,6 +304,9 @@
   ],
   "PACE_OCI": [
     "tushar2026foundation"
+  ],
+  "PANGAEA_benchmark": [
+    "sialellia2026above"
   ],
   "PANGAEA_domain_breakdown": [
     "mocharla2026probing"
@@ -535,6 +550,9 @@
   ],
   "XGBoost": [
     "metz2025application"
+  ],
+  "above_ground_biomass_regression": [
+    "sialellia2026above"
   ],
   "access_deployment": [
     "young2026how"
@@ -1241,6 +1259,9 @@
   "frozen_embeddings": [
     "adjei2026foundation"
   ],
+  "frozen_encoder_evaluation": [
+    "sialellia2026above"
+  ],
   "frozen_vs_finetuned_ablation": [
     "simumba2025geo"
   ],
@@ -1360,6 +1381,9 @@
   ],
   "graph_sampling": [
     "sarpe2021presto"
+  ],
+  "grokking": [
+    "pomarico2026tensor"
   ],
   "gsd_conditioning": [
     "reed2022scale"
@@ -1696,6 +1720,9 @@
   ],
   "masking_ratio_ablation": [
     "choudhury2025rejepa"
+  ],
+  "matrix_product_state": [
+    "pomarico2026tensor"
   ],
   "matryoshka-embeddings": [
     "feng2026tessera"
@@ -2054,6 +2081,9 @@
   "pre-training-datasets": [
     "xiao2024foundation"
   ],
+  "pre_computed_embedding_products": [
+    "sialellia2026above"
+  ],
   "prediction_in_ungauged_basins": [
     "qu2026utilizing"
   ],
@@ -2107,6 +2137,12 @@
   ],
   "quantization": [
     "stewart2026earth"
+  ],
+  "quantum_inspired_ml": [
+    "pomarico2026tensor"
+  ],
+  "quantum_mixedness": [
+    "pomarico2026tensor"
   ],
   "radar_optical_fusion": [
     "fuller2023croma"
@@ -2588,6 +2624,9 @@
   "tempov": [
     "zheng2026satellite"
   ],
+  "tensor_network": [
+    "pomarico2026tensor"
+  ],
   "terrain_elevation": [
     "hamoudzadeh2026inferring"
   ],
@@ -2773,6 +2812,9 @@
   ],
   "wildfire_mapping": [
     "shibli2026low"
+  ],
+  "wildfire_susceptibility_mapping": [
+    "pomarico2026tensor"
   ],
   "winter_wheat_mapping": [
     "li2025agrifm"

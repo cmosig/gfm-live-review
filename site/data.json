@@ -1,5 +1,5 @@
 {
-  "corpus_through": "2026-08-04",
+  "corpus_through": "2026-08-05",
   "limitations": {
     "series": {
       "benchmark_narrowness": {
@@ -38,8 +38,8 @@
         "2026-04": 10,
         "2026-05": 16,
         "2026-06": 12,
-        "2026-07": 8,
-        "2026-08": 4
+        "2026-07": 9,
+        "2026-08": 5
       },
       "compute_cost": {
         "2022-07": 1,
@@ -77,7 +77,7 @@
         "2026-05": 6,
         "2026-06": 4,
         "2026-07": 3,
-        "2026-08": 3
+        "2026-08": 4
       },
       "data_bias": {
         "2022-07": 1,
@@ -110,7 +110,7 @@
         "2026-05": 7,
         "2026-06": 9,
         "2026-07": 4,
-        "2026-08": 3
+        "2026-08": 4
       },
       "human_semantics": {
         "2024-04": 1,
@@ -125,7 +125,8 @@
         "2026-03": 1,
         "2026-04": 1,
         "2026-05": 1,
-        "2026-06": 2
+        "2026-06": 2,
+        "2026-07": 1
       },
       "interpretability": {
         "2023-09": 1,
@@ -144,7 +145,7 @@
         "2026-04": 1,
         "2026-05": 3,
         "2026-06": 6,
-        "2026-07": 3,
+        "2026-07": 4,
         "2026-08": 2
       },
       "mixed_pixels": {
@@ -166,7 +167,7 @@
         "2026-05": 4,
         "2026-06": 5,
         "2026-07": 3,
-        "2026-08": 2
+        "2026-08": 3
       },
       "spatial_transfer": {
         "2022-12": 1,
@@ -200,7 +201,7 @@
         "2026-05": 10,
         "2026-06": 8,
         "2026-07": 4,
-        "2026-08": 2
+        "2026-08": 3
       },
       "temporal_transfer": {
         "2022-07": 1,
@@ -222,7 +223,7 @@
         "2026-05": 3,
         "2026-06": 3,
         "2026-07": 2,
-        "2026-08": 1
+        "2026-08": 2
       },
       "time_sensitivity": {
         "2024-03": 1,
@@ -259,14 +260,14 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 162,
-      "compute_cost": 91,
-      "data_bias": 85,
-      "human_semantics": 16,
-      "interpretability": 36,
-      "mixed_pixels": 35,
-      "spatial_transfer": 92,
-      "temporal_transfer": 37,
+      "benchmark_narrowness": 164,
+      "compute_cost": 92,
+      "data_bias": 86,
+      "human_semantics": 17,
+      "interpretability": 37,
+      "mixed_pixels": 36,
+      "spatial_transfer": 93,
+      "temporal_transfer": 38,
       "time_sensitivity": 29,
       "uncertainty": 28
     }
@@ -304,7 +305,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 185,
+    "n_papers": 187,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -328,10 +329,22 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 185
+      "verified": 187
     },
-    "n_papers": 185,
+    "n_papers": 187,
     "papers": [
+      {
+        "arxiv_id": "2608.04792",
+        "date": "2026-08-05",
+        "doi": "10.48550/arxiv.2608.04792",
+        "doi_status": "verified",
+        "key": "sialellia2026above",
+        "link": "https://arxiv.org/abs/2608.04792",
+        "n_claims": 10,
+        "self_evaluation": false,
+        "title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+        "venue": "arXiv"
+      },
       {
         "arxiv_id": "2608.03410",
         "date": "2026-08-04",
@@ -390,6 +403,18 @@
         "n_claims": 5,
         "self_evaluation": false,
         "title": "Embeddings based Anomaly Detection for Cleaning Global Crop Type Reference Datasets",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2607.19503",
+        "date": "2026-07-21",
+        "doi": "10.48550/arxiv.2607.19503",
+        "doi_status": "verified",
+        "key": "pomarico2026tensor",
+        "link": "https://arxiv.org/abs/2607.19503",
+        "n_claims": 3,
+        "self_evaluation": false,
+        "title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
         "venue": "arXiv"
       },
       {
@@ -2553,13 +2578,13 @@
         "venue": "arXiv"
       }
     ],
-    "quarantine_count": 48
+    "quarantine_count": 49
   },
   "views": {
     "all": {
       "axes": [
         {
-          "agreement": 0.611,
+          "agreement": 0.608,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -5395,6 +5420,54 @@
               "value": 99.5
             },
             {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Gargano wildfire susceptibility map (binary)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "an accuracy of 87.07%±0.04%87.07\\%\\pm 0.04\\%",
+              "value": 87.07
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Gargano wildfire susceptibility map (four-class)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "reaching 53.01%±0.20%53.01\\%\\pm 0.20\\% accuracy",
+              "value": 53.01
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 95.0,
+              "dataset": "Gargano wildfire susceptibility map",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Discussion",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "the Random Forest model achieving an overall accuracy above 95%95\\%",
+              "value": 53.01
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": null,
               "dataset": "Boulder",
@@ -5617,6 +5690,70 @@
               "self_evaluation": false,
               "span": "87.57",
               "value": 87.57
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF 50.92",
+              "value": 50.92
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF+ 50.79",
+              "value": 50.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "MLP AEF 52.22",
+              "value": 52.22
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD Lite",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "GFM (best) SSL4EO-MoCo S2 only 60.56",
+              "value": 60.56
             },
             {
               "baseline": "task_specific",
@@ -6661,12 +6798,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 256,
-          "n_papers": 72,
-          "n_papers_all": 102
+          "n_claims": 263,
+          "n_papers": 74,
+          "n_papers_all": 104
         },
         {
-          "agreement": 0.697,
+          "agreement": 0.706,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -7534,6 +7671,54 @@
               "value": 0.888
             },
             {
+              "baseline": "prithvi",
+              "baseline_value": 64.34,
+              "dataset": "AGBD Lite",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a simple MLP reaches 53.91 Mg/ha on AEF embeddings",
+              "value": 53.91
+            },
+            {
+              "baseline": "prithvi",
+              "baseline_value": 64.34,
+              "dataset": "AGBD Lite",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "and 59.79 Mg/ha on TESSERA embeddings",
+              "value": 59.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a 20-fold reduction in labels, at no cost in performance",
+              "value": 52.72
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 47.42,
               "dataset": "Multi-Temporal Crop Segmentation",
@@ -7824,12 +8009,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 72,
-          "n_papers": 33,
-          "n_papers_all": 47
+          "n_claims": 75,
+          "n_papers": 34,
+          "n_papers_all": 48
         },
         {
-          "agreement": 0.628,
+          "agreement": 0.636,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -9194,6 +9379,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 40.79,
+              "dataset": "AGBD (Africa, cross-region)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF+ reduces RMSE from 40.79 to 33.72 Mg/ha (17.3%)",
+              "value": 33.72
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 79.28,
+              "dataset": "AGBD (South Asia, cross-region)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF under cross-region produces an RMSE of 99.34 Mg/ha, 25% worse than AGBD (79.28 Mg/ha)",
+              "value": 99.34
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 42.5,
               "dataset": "WATCH Afghanistan archaeological sites (test split)",
               "direction": "better",
@@ -9563,9 +9780,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 108,
-          "n_papers": 43,
-          "n_papers_all": 62
+          "n_claims": 110,
+          "n_papers": 44,
+          "n_papers_all": 63
         },
         {
           "agreement": 1.0,
@@ -11399,7 +11616,7 @@
           "n_papers_all": 3
         },
         {
-          "agreement": 0.647,
+          "agreement": 0.667,
           "axis": "G9_ecological_fine_scale",
           "claims": [
             {
@@ -11915,6 +12132,22 @@
               "value": 0.84
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 45.77,
+              "dataset": "AGBref",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 5 / Sec 5.5",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ESA CCI has the smaller absolute bias on the All set",
+              "value": 27.2
+            },
+            {
               "baseline": "croma",
               "baseline_value": 64.2,
               "dataset": "MADOS",
@@ -11997,9 +12230,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 37,
-          "n_papers": 17,
-          "n_papers_all": 27
+          "n_claims": 38,
+          "n_papers": 18,
+          "n_papers_all": 28
         },
         {
           "agreement": 1.0,
@@ -17683,6 +17916,182 @@
           }
         },
         {
+          "benchmark": "agbd",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF 50.92",
+              "value": 50.92
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF+ 50.79",
+              "value": 50.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "MLP AEF 52.22",
+              "value": 52.22
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD Lite",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "GFM (best) SSL4EO-MoCo S2 only 60.56",
+              "value": 60.56
+            },
+            {
+              "baseline": "prithvi",
+              "baseline_value": 64.34,
+              "dataset": "AGBD Lite",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a simple MLP reaches 53.91 Mg/ha on AEF embeddings",
+              "value": 53.91
+            },
+            {
+              "baseline": "prithvi",
+              "baseline_value": 64.34,
+              "dataset": "AGBD Lite",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "and 59.79 Mg/ha on TESSERA embeddings",
+              "value": 59.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a 20-fold reduction in labels, at no cost in performance",
+              "value": 52.72
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 40.79,
+              "dataset": "AGBD (Africa, cross-region)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF+ reduces RMSE from 40.79 to 33.72 Mg/ha (17.3%)",
+              "value": 33.72
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 79.28,
+              "dataset": "AGBD (South Asia, cross-region)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF under cross-region produces an RMSE of 99.34 Mg/ha, 25% worse than AGBD (79.28 Mg/ha)",
+              "value": 99.34
+            }
+          ],
+          "metrics": [
+            "rmse"
+          ],
+          "models": [
+            "alphaearth",
+            "prithvi",
+            "tessera"
+          ],
+          "n_claims": 9,
+          "n_papers": 1,
+          "n_vs_task_specific": 7,
+          "name": "AGBD",
+          "tasks": [
+            "biomass_estimation"
+          ],
+          "variants": [
+            "AGBD",
+            "AGBD (Africa, cross-region)",
+            "AGBD (South Asia, cross-region)",
+            "AGBD Lite"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "jecam senegal",
           "claims": [
             {
@@ -20166,6 +20575,83 @@
           "verdict": {
             "agreement": 1.0,
             "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "gargano wildfire susceptibility map",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Gargano wildfire susceptibility map (binary)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "an accuracy of 87.07%±0.04%87.07\\%\\pm 0.04\\%",
+              "value": 87.07
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Gargano wildfire susceptibility map (four-class)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "reaching 53.01%±0.20%53.01\\%\\pm 0.20\\% accuracy",
+              "value": 53.01
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 95.0,
+              "dataset": "Gargano wildfire susceptibility map",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Discussion",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "the Random Forest model achieving an overall accuracy above 95%95\\%",
+              "value": 53.01
+            }
+          ],
+          "metrics": [
+            "accuracy"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 3,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "Gargano wildfire susceptibility map",
+          "tasks": [
+            "landslide_susceptibility"
+          ],
+          "variants": [
+            "Gargano wildfire susceptibility map",
+            "Gargano wildfire susceptibility map (binary)",
+            "Gargano wildfire susceptibility map (four-class)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
             "label": "thin",
             "n_papers": 1
           }
@@ -23779,6 +24265,49 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "agbref",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 45.77,
+              "dataset": "AGBref",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 5 / Sec 5.5",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ESA CCI has the smaller absolute bias on the All set",
+              "value": 27.2
+            }
+          ],
+          "metrics": [
+            "rmse"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "AGBref",
+          "tasks": [
+            "biomass_estimation"
+          ],
+          "variants": [
+            "AGBref"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -32325,19 +32854,291 @@
       ],
       "evidence": {
         "directions": {
-          "better": 243,
+          "better": 249,
           "parity": 14,
-          "worse": 116
+          "worse": 119
         },
-        "label_ratio_unspecified": 552,
-        "n_claims": 626,
+        "label_ratio_unspecified": 562,
+        "n_claims": 639,
         "n_self_eval_claims": 79,
-        "n_vs_model_or_none": 253,
-        "n_vs_task_specific": 373,
-        "pct_better": 65.1,
-        "pct_label_ratio_unspecified": 88.2
+        "n_vs_model_or_none": 257,
+        "n_vs_task_specific": 382,
+        "pct_better": 65.2,
+        "pct_label_ratio_unspecified": 87.9
       },
       "groups": [
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF 50.92",
+              "value": 50.92
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF+ 50.79",
+              "value": 50.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "MLP AEF 52.22",
+              "value": 52.22
+            }
+          ],
+          "dataset": "AGBD",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a 20-fold reduction in labels, at no cost in performance",
+              "value": 52.72
+            }
+          ],
+          "dataset": "AGBD",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_scarce",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 40.79,
+              "dataset": "AGBD (Africa, cross-region)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF+ reduces RMSE from 40.79 to 33.72 Mg/ha (17.3%)",
+              "value": 33.72
+            }
+          ],
+          "dataset": "AGBD (Africa, cross-region)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 79.28,
+              "dataset": "AGBD (South Asia, cross-region)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF under cross-region produces an RMSE of 99.34 Mg/ha, 25% worse than AGBD (79.28 Mg/ha)",
+              "value": 99.34
+            }
+          ],
+          "dataset": "AGBD (South Asia, cross-region)",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 64.34,
+              "dataset": "AGBD Lite",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a simple MLP reaches 53.91 Mg/ha on AEF embeddings",
+              "value": 53.91
+            }
+          ],
+          "dataset": "AGBD Lite",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_scarce",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD Lite",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "GFM (best) SSL4EO-MoCo S2 only 60.56",
+              "value": 60.56
+            }
+          ],
+          "dataset": "AGBD Lite",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 64.34,
+              "dataset": "AGBD Lite",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "and 59.79 Mg/ha on TESSERA embeddings",
+              "value": 59.79
+            }
+          ],
+          "dataset": "AGBD Lite",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_scarce",
+          "metric": "rmse",
+          "model": "tessera",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 45.77,
+              "dataset": "AGBref",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 5 / Sec 5.5",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ESA CCI has the smaller absolute bias on the All set",
+              "value": 27.2
+            }
+          ],
+          "dataset": "AGBref",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
         {
           "agreement": 1.0,
           "baseline": "task_specific",
@@ -42382,6 +43183,96 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 95.0,
+              "dataset": "Gargano wildfire susceptibility map",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Discussion",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "the Random Forest model achieving an overall accuracy above 95%95\\%",
+              "value": 53.01
+            }
+          ],
+          "dataset": "Gargano wildfire susceptibility map",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "landslide_susceptibility"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Gargano wildfire susceptibility map (binary)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "an accuracy of 87.07%±0.04%87.07\\%\\pm 0.04\\%",
+              "value": 87.07
+            }
+          ],
+          "dataset": "Gargano wildfire susceptibility map (binary)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "landslide_susceptibility"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Gargano wildfire susceptibility map (four-class)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "reaching 53.01%±0.20%53.01\\%\\pm 0.20\\% accuracy",
+              "value": 53.01
+            }
+          ],
+          "dataset": "Gargano wildfire susceptibility map (four-class)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "landslide_susceptibility"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 58.23,
               "dataset": "Landslide Reference",
               "direction": "better",
@@ -50445,14 +51336,142 @@
                 "self_evaluation": false,
                 "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
                 "value": 0.79
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 53.73,
+                "dataset": "AGBD",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Table 1",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "fcn_film AEF 50.92",
+                "value": 50.92
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 53.73,
+                "dataset": "AGBD",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Table 1",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "fcn_film AEF+ 50.79",
+                "value": 50.79
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 53.73,
+                "dataset": "AGBD",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Table 1",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "MLP AEF 52.22",
+                "value": 52.22
+              },
+              {
+                "baseline": "prithvi",
+                "baseline_value": 64.34,
+                "dataset": "AGBD Lite",
+                "direction": "better",
+                "label_ratio": 0.05,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Sec 6.2",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "a simple MLP reaches 53.91 Mg/ha on AEF embeddings",
+                "value": 53.91
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 53.73,
+                "dataset": "AGBD",
+                "direction": "better",
+                "label_ratio": 0.05,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Sec 6.2",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "a 20-fold reduction in labels, at no cost in performance",
+                "value": 52.72
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 40.79,
+                "dataset": "AGBD (Africa, cross-region)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Sec 5.2",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "AEF+ reduces RMSE from 40.79 to 33.72 Mg/ha (17.3%)",
+                "value": 33.72
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 79.28,
+                "dataset": "AGBD (South Asia, cross-region)",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Sec 5.2",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "AEF under cross-region produces an RMSE of 99.34 Mg/ha, 25% worse than AGBD (79.28 Mg/ha)",
+                "value": 99.34
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 45.77,
+                "dataset": "AGBref",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Table 5 / Sec 5.5",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "ESA CCI has the smaller absolute bias on the All set",
+                "value": 27.2
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "alphaearth",
-            "n_claims": 4,
-            "n_papers": 1,
-            "n_papers_all": 1,
+            "n_claims": 12,
+            "n_papers": 2,
+            "n_papers_all": 2,
             "task": "biomass_estimation"
           },
           "alphaearth\tcanopy_height_estimation": {
@@ -51068,7 +52087,7 @@
             "task": "land_cover_classification"
           },
           "alphaearth\tlandslide_susceptibility": {
-            "agreement": 1.0,
+            "agreement": 0.5,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -51085,14 +52104,62 @@
                 "self_evaluation": false,
                 "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
                 "value": 0.99
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "Gargano wildfire susceptibility map (binary)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.19503",
+                "locator": "Table 1",
+                "metric": "accuracy",
+                "model": "alphaearth",
+                "paper_key": "pomarico2026tensor",
+                "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+                "self_evaluation": false,
+                "span": "an accuracy of 87.07%±0.04%87.07\\%\\pm 0.04\\%",
+                "value": 87.07
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "Gargano wildfire susceptibility map (four-class)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.19503",
+                "locator": "Table 1",
+                "metric": "accuracy",
+                "model": "alphaearth",
+                "paper_key": "pomarico2026tensor",
+                "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+                "self_evaluation": false,
+                "span": "reaching 53.01%±0.20%53.01\\%\\pm 0.20\\% accuracy",
+                "value": 53.01
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 95.0,
+                "dataset": "Gargano wildfire susceptibility map",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.19503",
+                "locator": "Discussion",
+                "metric": "accuracy",
+                "model": "alphaearth",
+                "paper_key": "pomarico2026tensor",
+                "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+                "self_evaluation": false,
+                "span": "the Random Forest model achieving an overall accuracy above 95%95\\%",
+                "value": 53.01
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "alphaearth",
-            "n_claims": 1,
-            "n_papers": 1,
-            "n_papers_all": 1,
+            "n_claims": 4,
+            "n_papers": 2,
+            "n_papers_all": 2,
             "task": "landslide_susceptibility"
           },
           "alphaearth\tlocal_climate_zone_classification": {
@@ -55108,7 +56175,7 @@
             "task": "semantic_segmentation"
           },
           "prithvi\tbiomass_estimation": {
-            "agreement": 0.667,
+            "agreement": 0.75,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -55176,6 +56243,22 @@
               },
               {
                 "baseline": "task_specific",
+                "baseline_value": 53.73,
+                "dataset": "AGBD Lite",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Table 1",
+                "metric": "rmse",
+                "model": "prithvi",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "GFM (best) SSL4EO-MoCo S2 only 60.56",
+                "value": 60.56
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": 27.49,
                 "dataset": "BioMassters",
                 "direction": "worse",
@@ -55194,9 +56277,9 @@
             "direction": "worse",
             "label": "contested",
             "model": "prithvi",
-            "n_claims": 5,
-            "n_papers": 3,
-            "n_papers_all": 4,
+            "n_claims": 6,
+            "n_papers": 4,
+            "n_papers_all": 5,
             "task": "biomass_estimation"
           },
           "prithvi\tcanopy_height_estimation": {
@@ -59295,6 +60378,22 @@
                 "value": 27.43
               },
               {
+                "baseline": "prithvi",
+                "baseline_value": 64.34,
+                "dataset": "AGBD Lite",
+                "direction": "better",
+                "label_ratio": 0.05,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Sec 6.2",
+                "metric": "rmse",
+                "model": "tessera",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "and 59.79 Mg/ha on TESSERA embeddings",
+                "value": 59.79
+              },
+              {
                 "baseline": "task_specific",
                 "baseline_value": 0.7,
                 "dataset": "GEDI L4A (Guaviare, Colombia)",
@@ -59378,9 +60477,9 @@
             "direction": "better",
             "label": "thin",
             "model": "tessera",
-            "n_claims": 6,
+            "n_claims": 7,
             "n_papers": 1,
-            "n_papers_all": 2,
+            "n_papers_all": 3,
             "task": "biomass_estimation"
           },
           "tessera\tcanopy_height_estimation": {
@@ -64764,7 +65863,7 @@
           "task": "change_detection"
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.6,
           "claims": [
             {
               "baseline": "task_specific",
@@ -64944,6 +66043,134 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF 50.92",
+              "value": 50.92
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF+ 50.79",
+              "value": 50.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "MLP AEF 52.22",
+              "value": 52.22
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD Lite",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "GFM (best) SSL4EO-MoCo S2 only 60.56",
+              "value": 60.56
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a 20-fold reduction in labels, at no cost in performance",
+              "value": 52.72
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 40.79,
+              "dataset": "AGBD (Africa, cross-region)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF+ reduces RMSE from 40.79 to 33.72 Mg/ha (17.3%)",
+              "value": 33.72
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 79.28,
+              "dataset": "AGBD (South Asia, cross-region)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF under cross-region produces an RMSE of 99.34 Mg/ha, 25% worse than AGBD (79.28 Mg/ha)",
+              "value": 99.34
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 45.77,
+              "dataset": "AGBref",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 5 / Sec 5.5",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ESA CCI has the smaller absolute bias on the All set",
+              "value": 27.2
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 27.49,
               "dataset": "BioMassters",
               "direction": "worse",
@@ -65056,6 +66283,11 @@
             }
           ],
           "datasets": [
+            "AGBD",
+            "AGBD (Africa, cross-region)",
+            "AGBD (South Asia, cross-region)",
+            "AGBD Lite",
+            "AGBref",
             "BioMassters",
             "Biomass-S3",
             "Brazil 2022 GEDI dataset (all eco-regions)",
@@ -65081,8 +66313,8 @@
               "direction": "better",
               "label": "thin",
               "model": "alphaearth",
-              "n_claims": 4,
-              "n_papers": 1
+              "n_claims": 11,
+              "n_papers": 2
             },
             {
               "agreement": 1.0,
@@ -65101,12 +66333,12 @@
               "n_papers": 3
             },
             {
-              "agreement": 0.667,
+              "agreement": 0.75,
               "direction": "worse",
               "label": "contested",
               "model": "prithvi",
-              "n_claims": 4,
-              "n_papers": 3
+              "n_claims": 5,
+              "n_papers": 4
             },
             {
               "agreement": 1.0,
@@ -65118,9 +66350,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 18,
+          "n_claims": 26,
           "n_models": 5,
-          "n_papers": 9,
+          "n_papers": 10,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 1.0,
@@ -65131,6 +66363,305 @@
             "name": "Biomass-S3"
           },
           "task": "biomass_estimation"
+        },
+        {
+          "agreement": 0.667,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.9,
+              "dataset": "Nantou County, Taiwan",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.07268",
+              "locator": "Sec 4.3",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "cheng2026from",
+              "paper_title": "From Landslide Conditioning Factors to Satellite Embeddings: Evaluating the Utilisation of Google AlphaEarth for Landslide Susceptibility Mapping using Deep Learning",
+              "self_evaluation": false,
+              "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
+              "value": 0.99
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 70.44,
+              "dataset": "Landslide4Sense",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2511.04474",
+              "locator": "Table 3",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2025landslide",
+              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
+              "self_evaluation": false,
+              "span": "The 300M variant achieved the highest mIoU and F1 (71.30 / 60.70",
+              "value": 71.3
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 61.2,
+              "dataset": "Landslide4Sense",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2511.04474",
+              "locator": "Table 4",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2025landslide",
+              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
+              "self_evaluation": false,
+              "span": "end-to-end tuning further increased performance to 73.62 mIoU and 65.42 F1",
+              "value": 73.62
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 59.7,
+              "dataset": "Landslide4Sense",
+              "direction": "better",
+              "label_ratio": 0.0125,
+              "link": "https://arxiv.org/abs/2511.04474",
+              "locator": "Sec 4.4",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2025landslide",
+              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
+              "self_evaluation": false,
+              "span": "At 1.25%1.25\\% labels, Prithvi-EO-2.0-600M attains 66.96 mIoU, followed by Prithvi-300M at 64.45",
+              "value": 66.96
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 58.23,
+              "dataset": "Landslide Reference",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.04474",
+              "locator": "Table 6",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2025landslide",
+              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
+              "self_evaluation": false,
+              "span": "71.18 for Prithvi-EO-2.0-600M vs. 58.23 for U-Net",
+              "value": 71.18
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.09,
+              "dataset": "GVLM-S2",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.04474",
+              "locator": "Table 6",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2025landslide",
+              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
+              "self_evaluation": false,
+              "span": "Both variants sustained around 70 mIoU on GVLM-S2, while U-Net and U-Net++ dropped to the high-40s and low-50s",
+              "value": 70.75
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 94.87,
+              "dataset": "NSP presence-absence (Random split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2506.17302",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lin2025fine",
+              "paper_title": "Fine-Scale Soil Mapping in Alaska with Multimodal Machine Learning",
+              "self_evaluation": false,
+              "span": "MiSo 97.38 98.26 93.90 90.98 96.61",
+              "value": 96.61
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 92.2,
+              "dataset": "NSP presence-absence (SH-1km split)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2506.17302",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lin2025fine",
+              "paper_title": "Fine-Scale Soil Mapping in Alaska with Multimodal Machine Learning",
+              "self_evaluation": false,
+              "span": "MiSo 95.33 92.17 76.17 84.87 90.48",
+              "value": 90.48
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 83.44,
+              "dataset": "NSP presence-absence (SH-10km split)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2506.17302",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lin2025fine",
+              "paper_title": "Fine-Scale Soil Mapping in Alaska with Multimodal Machine Learning",
+              "self_evaluation": false,
+              "span": "MiSo 91.27 82.68 58.62 75.93 81.06",
+              "value": 81.06
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 95.0,
+              "dataset": "Gargano wildfire susceptibility map",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Discussion",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "the Random Forest model achieving an overall accuracy above 95%95\\%",
+              "value": 53.01
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 59.9,
+              "dataset": "Landslide4Sense",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.14081",
+              "locator": "Table I",
+              "metric": "f1",
+              "model": "clay",
+              "paper_key": "vu2026clay",
+              "paper_title": "Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection",
+              "self_evaluation": false,
+              "span": "The hybrid U-Net + Clay model with two-stage Low-Rank Adaptation (LoRA) achieved the best test F1 of",
+              "value": 64.5
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 59.9,
+              "dataset": "Landslide4Sense",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.14081",
+              "locator": "Table I",
+              "metric": "f1",
+              "model": "clay",
+              "paper_key": "vu2026clay",
+              "paper_title": "Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection",
+              "self_evaluation": false,
+              "span": "surpassing the Clay-only backbone (55.2 ±\\pm 3.6%) and the U-Net baseline (59.9%)",
+              "value": 55.2
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 75.76,
+              "dataset": "UN-FAO Locust Hub / HLS",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.06860",
+              "locator": "Table 2",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "yusuf2024geospatial",
+              "paper_title": "A Geospatial Approach to Predicting Desert Locust Breeding Grounds in Africa",
+              "self_evaluation": false,
+              "span": "achieving the highest accuracy, F1 and ROC-AUC scores (83.03%, 81.53% and 87.69%, respectively)",
+              "value": 83.03
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 67.34,
+              "dataset": "UN-FAO Locust Hub / HLS",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.06860",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "yusuf2024geospatial",
+              "paper_title": "A Geospatial Approach to Predicting Desert Locust Breeding Grounds in Africa",
+              "self_evaluation": false,
+              "span": "It achieved an accuracy, F1-score, and ROC-AUC score of 75.76%, 67.34%, and 63.61%",
+              "value": 81.53
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 63.61,
+              "dataset": "UN-FAO Locust Hub / HLS",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.06860",
+              "locator": "Table 2",
+              "metric": "auc",
+              "model": "prithvi",
+              "paper_key": "yusuf2024geospatial",
+              "paper_title": "A Geospatial Approach to Predicting Desert Locust Breeding Grounds in Africa",
+              "self_evaluation": false,
+              "span": "It achieved an accuracy, F1-score, and ROC-AUC score of 75.76%, 67.34%, and 63.61%",
+              "value": 87.69
+            }
+          ],
+          "datasets": [
+            "GVLM-S2",
+            "Gargano wildfire susceptibility map",
+            "Landslide Reference",
+            "Landslide4Sense",
+            "NSP presence-absence (Random split)",
+            "NSP presence-absence (SH-10km split)",
+            "NSP presence-absence (SH-1km split)",
+            "Nantou County, Taiwan",
+            "UN-FAO Locust Hub / HLS"
+          ],
+          "direction": "better",
+          "fragile": null,
+          "label": "contested",
+          "models": [
+            {
+              "agreement": 0.5,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 2,
+              "n_papers": 2
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "clay",
+              "n_claims": 2,
+              "n_papers": 1
+            },
+            {
+              "agreement": 0.667,
+              "direction": "better",
+              "label": "contested",
+              "model": "prithvi",
+              "n_claims": 11,
+              "n_papers": 3
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 15,
+          "n_models": 3,
+          "n_papers": 6,
+          "pooling_note": null,
+          "strongest_benchmark": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_claims": 5,
+            "n_papers": 2,
+            "name": "Landslide4Sense"
+          },
+          "task": "landslide_susceptibility"
         },
         {
           "agreement": 0.667,
@@ -65497,288 +67028,6 @@
             "name": "AQS PM2.5"
           },
           "task": "socioeconomic_estimation"
-        },
-        {
-          "agreement": 0.8,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.9,
-              "dataset": "Nantou County, Taiwan",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.07268",
-              "locator": "Sec 4.3",
-              "metric": "auc",
-              "model": "alphaearth",
-              "paper_key": "cheng2026from",
-              "paper_title": "From Landslide Conditioning Factors to Satellite Embeddings: Evaluating the Utilisation of Google AlphaEarth for Landslide Susceptibility Mapping using Deep Learning",
-              "self_evaluation": false,
-              "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
-              "value": 0.99
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 70.44,
-              "dataset": "Landslide4Sense",
-              "direction": "better",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2511.04474",
-              "locator": "Table 3",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "li2025landslide",
-              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
-              "self_evaluation": false,
-              "span": "The 300M variant achieved the highest mIoU and F1 (71.30 / 60.70",
-              "value": 71.3
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 61.2,
-              "dataset": "Landslide4Sense",
-              "direction": "better",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2511.04474",
-              "locator": "Table 4",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "li2025landslide",
-              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
-              "self_evaluation": false,
-              "span": "end-to-end tuning further increased performance to 73.62 mIoU and 65.42 F1",
-              "value": 73.62
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 59.7,
-              "dataset": "Landslide4Sense",
-              "direction": "better",
-              "label_ratio": 0.0125,
-              "link": "https://arxiv.org/abs/2511.04474",
-              "locator": "Sec 4.4",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "li2025landslide",
-              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
-              "self_evaluation": false,
-              "span": "At 1.25%1.25\\% labels, Prithvi-EO-2.0-600M attains 66.96 mIoU, followed by Prithvi-300M at 64.45",
-              "value": 66.96
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 58.23,
-              "dataset": "Landslide Reference",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.04474",
-              "locator": "Table 6",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "li2025landslide",
-              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
-              "self_evaluation": false,
-              "span": "71.18 for Prithvi-EO-2.0-600M vs. 58.23 for U-Net",
-              "value": 71.18
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 53.09,
-              "dataset": "GVLM-S2",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.04474",
-              "locator": "Table 6",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "li2025landslide",
-              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
-              "self_evaluation": false,
-              "span": "Both variants sustained around 70 mIoU on GVLM-S2, while U-Net and U-Net++ dropped to the high-40s and low-50s",
-              "value": 70.75
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 94.87,
-              "dataset": "NSP presence-absence (Random split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2506.17302",
-              "locator": "Table 1",
-              "metric": "accuracy",
-              "model": "prithvi",
-              "paper_key": "lin2025fine",
-              "paper_title": "Fine-Scale Soil Mapping in Alaska with Multimodal Machine Learning",
-              "self_evaluation": false,
-              "span": "MiSo 97.38 98.26 93.90 90.98 96.61",
-              "value": 96.61
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 92.2,
-              "dataset": "NSP presence-absence (SH-1km split)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2506.17302",
-              "locator": "Table 1",
-              "metric": "accuracy",
-              "model": "prithvi",
-              "paper_key": "lin2025fine",
-              "paper_title": "Fine-Scale Soil Mapping in Alaska with Multimodal Machine Learning",
-              "self_evaluation": false,
-              "span": "MiSo 95.33 92.17 76.17 84.87 90.48",
-              "value": 90.48
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 83.44,
-              "dataset": "NSP presence-absence (SH-10km split)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2506.17302",
-              "locator": "Table 1",
-              "metric": "accuracy",
-              "model": "prithvi",
-              "paper_key": "lin2025fine",
-              "paper_title": "Fine-Scale Soil Mapping in Alaska with Multimodal Machine Learning",
-              "self_evaluation": false,
-              "span": "MiSo 91.27 82.68 58.62 75.93 81.06",
-              "value": 81.06
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 59.9,
-              "dataset": "Landslide4Sense",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.14081",
-              "locator": "Table I",
-              "metric": "f1",
-              "model": "clay",
-              "paper_key": "vu2026clay",
-              "paper_title": "Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection",
-              "self_evaluation": false,
-              "span": "The hybrid U-Net + Clay model with two-stage Low-Rank Adaptation (LoRA) achieved the best test F1 of",
-              "value": 64.5
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 59.9,
-              "dataset": "Landslide4Sense",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.14081",
-              "locator": "Table I",
-              "metric": "f1",
-              "model": "clay",
-              "paper_key": "vu2026clay",
-              "paper_title": "Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection",
-              "self_evaluation": false,
-              "span": "surpassing the Clay-only backbone (55.2 ±\\pm 3.6%) and the U-Net baseline (59.9%)",
-              "value": 55.2
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 75.76,
-              "dataset": "UN-FAO Locust Hub / HLS",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2403.06860",
-              "locator": "Table 2",
-              "metric": "accuracy",
-              "model": "prithvi",
-              "paper_key": "yusuf2024geospatial",
-              "paper_title": "A Geospatial Approach to Predicting Desert Locust Breeding Grounds in Africa",
-              "self_evaluation": false,
-              "span": "achieving the highest accuracy, F1 and ROC-AUC scores (83.03%, 81.53% and 87.69%, respectively)",
-              "value": 83.03
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 67.34,
-              "dataset": "UN-FAO Locust Hub / HLS",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2403.06860",
-              "locator": "Table 2",
-              "metric": "f1",
-              "model": "prithvi",
-              "paper_key": "yusuf2024geospatial",
-              "paper_title": "A Geospatial Approach to Predicting Desert Locust Breeding Grounds in Africa",
-              "self_evaluation": false,
-              "span": "It achieved an accuracy, F1-score, and ROC-AUC score of 75.76%, 67.34%, and 63.61%",
-              "value": 81.53
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 63.61,
-              "dataset": "UN-FAO Locust Hub / HLS",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2403.06860",
-              "locator": "Table 2",
-              "metric": "auc",
-              "model": "prithvi",
-              "paper_key": "yusuf2024geospatial",
-              "paper_title": "A Geospatial Approach to Predicting Desert Locust Breeding Grounds in Africa",
-              "self_evaluation": false,
-              "span": "It achieved an accuracy, F1-score, and ROC-AUC score of 75.76%, 67.34%, and 63.61%",
-              "value": 87.69
-            }
-          ],
-          "datasets": [
-            "GVLM-S2",
-            "Landslide Reference",
-            "Landslide4Sense",
-            "NSP presence-absence (Random split)",
-            "NSP presence-absence (SH-10km split)",
-            "NSP presence-absence (SH-1km split)",
-            "Nantou County, Taiwan",
-            "UN-FAO Locust Hub / HLS"
-          ],
-          "direction": "better",
-          "fragile": null,
-          "label": "consensus",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "alphaearth",
-              "n_claims": 1,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "clay",
-              "n_claims": 2,
-              "n_papers": 1
-            },
-            {
-              "agreement": 0.667,
-              "direction": "better",
-              "label": "contested",
-              "model": "prithvi",
-              "n_claims": 11,
-              "n_papers": 3
-            }
-          ],
-          "models_differ": false,
-          "n_claims": 14,
-          "n_models": 3,
-          "n_papers": 5,
-          "pooling_note": "pooled agreement only: no single benchmark has 3+ papers (Landslide4Sense has the most, at 2)",
-          "strongest_benchmark": {
-            "agreement": 1.0,
-            "direction": "better",
-            "label": "thin",
-            "n_claims": 5,
-            "n_papers": 2,
-            "name": "Landslide4Sense"
-          },
-          "task": "landslide_susceptibility"
         },
         {
           "agreement": 0.5,
@@ -66418,7 +67667,7 @@
     "no_self_eval": {
       "axes": [
         {
-          "agreement": 0.582,
+          "agreement": 0.58,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -68870,6 +70119,54 @@
               "value": 99.5
             },
             {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Gargano wildfire susceptibility map (binary)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "an accuracy of 87.07%±0.04%87.07\\%\\pm 0.04\\%",
+              "value": 87.07
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Gargano wildfire susceptibility map (four-class)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "reaching 53.01%±0.20%53.01\\%\\pm 0.20\\% accuracy",
+              "value": 53.01
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 95.0,
+              "dataset": "Gargano wildfire susceptibility map",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Discussion",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "the Random Forest model achieving an overall accuracy above 95%95\\%",
+              "value": 53.01
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": null,
               "dataset": "Boulder",
@@ -69092,6 +70389,70 @@
               "self_evaluation": false,
               "span": "87.57",
               "value": 87.57
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF 50.92",
+              "value": 50.92
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF+ 50.79",
+              "value": 50.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "MLP AEF 52.22",
+              "value": 52.22
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD Lite",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "GFM (best) SSL4EO-MoCo S2 only 60.56",
+              "value": 60.56
             },
             {
               "baseline": "task_specific",
@@ -69976,12 +71337,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 222,
-          "n_papers": 67,
-          "n_papers_all": 93
+          "n_claims": 229,
+          "n_papers": 69,
+          "n_papers_all": 95
         },
         {
-          "agreement": 0.71,
+          "agreement": 0.719,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -70753,6 +72114,54 @@
               "value": 83.95
             },
             {
+              "baseline": "prithvi",
+              "baseline_value": 64.34,
+              "dataset": "AGBD Lite",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a simple MLP reaches 53.91 Mg/ha on AEF embeddings",
+              "value": 53.91
+            },
+            {
+              "baseline": "prithvi",
+              "baseline_value": 64.34,
+              "dataset": "AGBD Lite",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "and 59.79 Mg/ha on TESSERA embeddings",
+              "value": 59.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a 20-fold reduction in labels, at no cost in performance",
+              "value": 52.72
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 47.42,
               "dataset": "Multi-Temporal Crop Segmentation",
@@ -71027,12 +72436,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 65,
-          "n_papers": 31,
-          "n_papers_all": 41
+          "n_claims": 68,
+          "n_papers": 32,
+          "n_papers_all": 42
         },
         {
-          "agreement": 0.6,
+          "agreement": 0.61,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -72317,6 +73726,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 40.79,
+              "dataset": "AGBD (Africa, cross-region)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF+ reduces RMSE from 40.79 to 33.72 Mg/ha (17.3%)",
+              "value": 33.72
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 79.28,
+              "dataset": "AGBD (South Asia, cross-region)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF under cross-region produces an RMSE of 99.34 Mg/ha, 25% worse than AGBD (79.28 Mg/ha)",
+              "value": 99.34
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 42.5,
               "dataset": "WATCH Afghanistan archaeological sites (test split)",
               "direction": "better",
@@ -72638,9 +74079,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 100,
-          "n_papers": 40,
-          "n_papers_all": 57
+          "n_claims": 102,
+          "n_papers": 41,
+          "n_papers_all": 58
         },
         {
           "agreement": 1.0,
@@ -74122,7 +75563,7 @@
           "n_papers_all": 2
         },
         {
-          "agreement": 0.643,
+          "agreement": 0.667,
           "axis": "G9_ecological_fine_scale",
           "claims": [
             {
@@ -74575,6 +76016,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 45.77,
+              "dataset": "AGBref",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 5 / Sec 5.5",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ESA CCI has the smaller absolute bias on the All set",
+              "value": 27.2
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 47.3,
               "dataset": "DFC2020",
               "direction": "better",
@@ -74624,9 +76081,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 31,
-          "n_papers": 14,
-          "n_papers_all": 21
+          "n_claims": 32,
+          "n_papers": 15,
+          "n_papers_all": 22
         },
         {
           "agreement": 1.0,
@@ -79462,6 +80919,182 @@
           }
         },
         {
+          "benchmark": "agbd",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF 50.92",
+              "value": 50.92
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF+ 50.79",
+              "value": 50.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "MLP AEF 52.22",
+              "value": 52.22
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD Lite",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "GFM (best) SSL4EO-MoCo S2 only 60.56",
+              "value": 60.56
+            },
+            {
+              "baseline": "prithvi",
+              "baseline_value": 64.34,
+              "dataset": "AGBD Lite",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a simple MLP reaches 53.91 Mg/ha on AEF embeddings",
+              "value": 53.91
+            },
+            {
+              "baseline": "prithvi",
+              "baseline_value": 64.34,
+              "dataset": "AGBD Lite",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "and 59.79 Mg/ha on TESSERA embeddings",
+              "value": 59.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a 20-fold reduction in labels, at no cost in performance",
+              "value": 52.72
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 40.79,
+              "dataset": "AGBD (Africa, cross-region)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF+ reduces RMSE from 40.79 to 33.72 Mg/ha (17.3%)",
+              "value": 33.72
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 79.28,
+              "dataset": "AGBD (South Asia, cross-region)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF under cross-region produces an RMSE of 99.34 Mg/ha, 25% worse than AGBD (79.28 Mg/ha)",
+              "value": 99.34
+            }
+          ],
+          "metrics": [
+            "rmse"
+          ],
+          "models": [
+            "alphaearth",
+            "prithvi",
+            "tessera"
+          ],
+          "n_claims": 9,
+          "n_papers": 1,
+          "n_vs_task_specific": 7,
+          "name": "AGBD",
+          "tasks": [
+            "biomass_estimation"
+          ],
+          "variants": [
+            "AGBD",
+            "AGBD (Africa, cross-region)",
+            "AGBD (South Asia, cross-region)",
+            "AGBD Lite"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "habitalp",
           "claims": [
             {
@@ -81655,6 +83288,83 @@
           "verdict": {
             "agreement": 1.0,
             "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "gargano wildfire susceptibility map",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Gargano wildfire susceptibility map (binary)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "an accuracy of 87.07%±0.04%87.07\\%\\pm 0.04\\%",
+              "value": 87.07
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Gargano wildfire susceptibility map (four-class)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "reaching 53.01%±0.20%53.01\\%\\pm 0.20\\% accuracy",
+              "value": 53.01
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 95.0,
+              "dataset": "Gargano wildfire susceptibility map",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Discussion",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "the Random Forest model achieving an overall accuracy above 95%95\\%",
+              "value": 53.01
+            }
+          ],
+          "metrics": [
+            "accuracy"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 3,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "Gargano wildfire susceptibility map",
+          "tasks": [
+            "landslide_susceptibility"
+          ],
+          "variants": [
+            "Gargano wildfire susceptibility map",
+            "Gargano wildfire susceptibility map (binary)",
+            "Gargano wildfire susceptibility map (four-class)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
             "label": "thin",
             "n_papers": 1
           }
@@ -85028,6 +86738,49 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "agbref",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 45.77,
+              "dataset": "AGBref",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 5 / Sec 5.5",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ESA CCI has the smaller absolute bias on the All set",
+              "value": 27.2
+            }
+          ],
+          "metrics": [
+            "rmse"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "AGBref",
+          "tasks": [
+            "biomass_estimation"
+          ],
+          "variants": [
+            "AGBref"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -92810,19 +94563,291 @@
       ],
       "evidence": {
         "directions": {
-          "better": 203,
+          "better": 209,
           "parity": 14,
-          "worse": 111
+          "worse": 114
         },
-        "label_ratio_unspecified": 496,
-        "n_claims": 547,
+        "label_ratio_unspecified": 506,
+        "n_claims": 560,
         "n_self_eval_claims": 0,
-        "n_vs_model_or_none": 219,
-        "n_vs_task_specific": 328,
-        "pct_better": 61.9,
-        "pct_label_ratio_unspecified": 90.7
+        "n_vs_model_or_none": 223,
+        "n_vs_task_specific": 337,
+        "pct_better": 62.0,
+        "pct_label_ratio_unspecified": 90.4
       },
       "groups": [
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF 50.92",
+              "value": 50.92
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF+ 50.79",
+              "value": 50.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "MLP AEF 52.22",
+              "value": 52.22
+            }
+          ],
+          "dataset": "AGBD",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a 20-fold reduction in labels, at no cost in performance",
+              "value": 52.72
+            }
+          ],
+          "dataset": "AGBD",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_scarce",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 40.79,
+              "dataset": "AGBD (Africa, cross-region)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF+ reduces RMSE from 40.79 to 33.72 Mg/ha (17.3%)",
+              "value": 33.72
+            }
+          ],
+          "dataset": "AGBD (Africa, cross-region)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 79.28,
+              "dataset": "AGBD (South Asia, cross-region)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF under cross-region produces an RMSE of 99.34 Mg/ha, 25% worse than AGBD (79.28 Mg/ha)",
+              "value": 99.34
+            }
+          ],
+          "dataset": "AGBD (South Asia, cross-region)",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 64.34,
+              "dataset": "AGBD Lite",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a simple MLP reaches 53.91 Mg/ha on AEF embeddings",
+              "value": 53.91
+            }
+          ],
+          "dataset": "AGBD Lite",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_scarce",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD Lite",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "GFM (best) SSL4EO-MoCo S2 only 60.56",
+              "value": 60.56
+            }
+          ],
+          "dataset": "AGBD Lite",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "prithvi",
+          "claims": [
+            {
+              "baseline": "prithvi",
+              "baseline_value": 64.34,
+              "dataset": "AGBD Lite",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "and 59.79 Mg/ha on TESSERA embeddings",
+              "value": 59.79
+            }
+          ],
+          "dataset": "AGBD Lite",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_scarce",
+          "metric": "rmse",
+          "model": "tessera",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 45.77,
+              "dataset": "AGBref",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 5 / Sec 5.5",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ESA CCI has the smaller absolute bias on the All set",
+              "value": 27.2
+            }
+          ],
+          "dataset": "AGBref",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
         {
           "agreement": 1.0,
           "baseline": "task_specific",
@@ -101243,6 +103268,96 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 95.0,
+              "dataset": "Gargano wildfire susceptibility map",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Discussion",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "the Random Forest model achieving an overall accuracy above 95%95\\%",
+              "value": 53.01
+            }
+          ],
+          "dataset": "Gargano wildfire susceptibility map",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "landslide_susceptibility"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Gargano wildfire susceptibility map (binary)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "an accuracy of 87.07%±0.04%87.07\\%\\pm 0.04\\%",
+              "value": 87.07
+            }
+          ],
+          "dataset": "Gargano wildfire susceptibility map (binary)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "landslide_susceptibility"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Gargano wildfire susceptibility map (four-class)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "reaching 53.01%±0.20%53.01\\%\\pm 0.20\\% accuracy",
+              "value": 53.01
+            }
+          ],
+          "dataset": "Gargano wildfire susceptibility map (four-class)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "landslide_susceptibility"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 58.23,
               "dataset": "Landslide Reference",
               "direction": "better",
@@ -108616,14 +110731,142 @@
                 "self_evaluation": false,
                 "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
                 "value": 0.79
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 53.73,
+                "dataset": "AGBD",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Table 1",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "fcn_film AEF 50.92",
+                "value": 50.92
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 53.73,
+                "dataset": "AGBD",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Table 1",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "fcn_film AEF+ 50.79",
+                "value": 50.79
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 53.73,
+                "dataset": "AGBD",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Table 1",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "MLP AEF 52.22",
+                "value": 52.22
+              },
+              {
+                "baseline": "prithvi",
+                "baseline_value": 64.34,
+                "dataset": "AGBD Lite",
+                "direction": "better",
+                "label_ratio": 0.05,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Sec 6.2",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "a simple MLP reaches 53.91 Mg/ha on AEF embeddings",
+                "value": 53.91
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 53.73,
+                "dataset": "AGBD",
+                "direction": "better",
+                "label_ratio": 0.05,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Sec 6.2",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "a 20-fold reduction in labels, at no cost in performance",
+                "value": 52.72
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 40.79,
+                "dataset": "AGBD (Africa, cross-region)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Sec 5.2",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "AEF+ reduces RMSE from 40.79 to 33.72 Mg/ha (17.3%)",
+                "value": 33.72
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 79.28,
+                "dataset": "AGBD (South Asia, cross-region)",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Sec 5.2",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "AEF under cross-region produces an RMSE of 99.34 Mg/ha, 25% worse than AGBD (79.28 Mg/ha)",
+                "value": 99.34
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 45.77,
+                "dataset": "AGBref",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Table 5 / Sec 5.5",
+                "metric": "rmse",
+                "model": "alphaearth",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "ESA CCI has the smaller absolute bias on the All set",
+                "value": 27.2
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "alphaearth",
-            "n_claims": 4,
-            "n_papers": 1,
-            "n_papers_all": 1,
+            "n_claims": 12,
+            "n_papers": 2,
+            "n_papers_all": 2,
             "task": "biomass_estimation"
           },
           "alphaearth\tcanopy_height_estimation": {
@@ -109179,7 +111422,7 @@
             "task": "land_cover_classification"
           },
           "alphaearth\tlandslide_susceptibility": {
-            "agreement": 1.0,
+            "agreement": 0.5,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -109196,14 +111439,62 @@
                 "self_evaluation": false,
                 "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
                 "value": 0.99
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "Gargano wildfire susceptibility map (binary)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.19503",
+                "locator": "Table 1",
+                "metric": "accuracy",
+                "model": "alphaearth",
+                "paper_key": "pomarico2026tensor",
+                "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+                "self_evaluation": false,
+                "span": "an accuracy of 87.07%±0.04%87.07\\%\\pm 0.04\\%",
+                "value": 87.07
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "Gargano wildfire susceptibility map (four-class)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.19503",
+                "locator": "Table 1",
+                "metric": "accuracy",
+                "model": "alphaearth",
+                "paper_key": "pomarico2026tensor",
+                "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+                "self_evaluation": false,
+                "span": "reaching 53.01%±0.20%53.01\\%\\pm 0.20\\% accuracy",
+                "value": 53.01
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 95.0,
+                "dataset": "Gargano wildfire susceptibility map",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2607.19503",
+                "locator": "Discussion",
+                "metric": "accuracy",
+                "model": "alphaearth",
+                "paper_key": "pomarico2026tensor",
+                "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+                "self_evaluation": false,
+                "span": "the Random Forest model achieving an overall accuracy above 95%95\\%",
+                "value": 53.01
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "alphaearth",
-            "n_claims": 1,
-            "n_papers": 1,
-            "n_papers_all": 1,
+            "n_claims": 4,
+            "n_papers": 2,
+            "n_papers_all": 2,
             "task": "landslide_susceptibility"
           },
           "alphaearth\tpopulation_density": {
@@ -112879,7 +115170,7 @@
             "task": "semantic_segmentation"
           },
           "prithvi\tbiomass_estimation": {
-            "agreement": 0.5,
+            "agreement": 0.667,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -112944,14 +115235,30 @@
                 "self_evaluation": false,
                 "span": "SeCo-Eco (ours)\n75.3 ± 0.3",
                 "value": 75.3
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 53.73,
+                "dataset": "AGBD Lite",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Table 1",
+                "metric": "rmse",
+                "model": "prithvi",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "GFM (best) SSL4EO-MoCo S2 only 60.56",
+                "value": 60.56
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": "worse",
+            "label": "contested",
             "model": "prithvi",
-            "n_claims": 4,
-            "n_papers": 2,
-            "n_papers_all": 3,
+            "n_claims": 5,
+            "n_papers": 3,
+            "n_papers_all": 4,
             "task": "biomass_estimation"
           },
           "prithvi\tcanopy_height_estimation": {
@@ -116597,6 +118904,34 @@
             "n_papers": 1,
             "n_papers_all": 1,
             "task": "urban_signal_mapping"
+          },
+          "tessera\tbiomass_estimation": {
+            "agreement": null,
+            "claims": [
+              {
+                "baseline": "prithvi",
+                "baseline_value": 64.34,
+                "dataset": "AGBD Lite",
+                "direction": "better",
+                "label_ratio": 0.05,
+                "link": "https://arxiv.org/abs/2608.04792",
+                "locator": "Sec 6.2",
+                "metric": "rmse",
+                "model": "tessera",
+                "paper_key": "sialellia2026above",
+                "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "and 59.79 Mg/ha on TESSERA embeddings",
+                "value": 59.79
+              }
+            ],
+            "direction": null,
+            "label": "gap",
+            "model": "tessera",
+            "n_claims": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
+            "task": "biomass_estimation"
           },
           "tessera\tcanopy_height_estimation": {
             "agreement": null,
@@ -121111,7 +123446,7 @@
           "task": "change_detection"
         },
         {
-          "agreement": 0.714,
+          "agreement": 0.625,
           "claims": [
             {
               "baseline": "task_specific",
@@ -121291,6 +123626,134 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF 50.92",
+              "value": 50.92
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "fcn_film AEF+ 50.79",
+              "value": 50.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "MLP AEF 52.22",
+              "value": 52.22
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD Lite",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "prithvi",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "GFM (best) SSL4EO-MoCo S2 only 60.56",
+              "value": 60.56
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.73,
+              "dataset": "AGBD",
+              "direction": "better",
+              "label_ratio": 0.05,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 6.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "a 20-fold reduction in labels, at no cost in performance",
+              "value": 52.72
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 40.79,
+              "dataset": "AGBD (Africa, cross-region)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF+ reduces RMSE from 40.79 to 33.72 Mg/ha (17.3%)",
+              "value": 33.72
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 79.28,
+              "dataset": "AGBD (South Asia, cross-region)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Sec 5.2",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AEF under cross-region produces an RMSE of 99.34 Mg/ha, 25% worse than AGBD (79.28 Mg/ha)",
+              "value": 99.34
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 45.77,
+              "dataset": "AGBref",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.04792",
+              "locator": "Table 5 / Sec 5.5",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "sialellia2026above",
+              "paper_title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "ESA CCI has the smaller absolute bias on the All set",
+              "value": 27.2
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 68.3,
               "dataset": "Biomass-S3",
               "direction": "worse",
@@ -121307,6 +123770,11 @@
             }
           ],
           "datasets": [
+            "AGBD",
+            "AGBD (Africa, cross-region)",
+            "AGBD (South Asia, cross-region)",
+            "AGBD Lite",
+            "AGBref",
             "BioMassters",
             "Biomass-S3",
             "Brazil 2022 GEDI dataset (all eco-regions)",
@@ -121327,8 +123795,8 @@
               "direction": "better",
               "label": "thin",
               "model": "alphaearth",
-              "n_claims": 4,
-              "n_papers": 1
+              "n_claims": 11,
+              "n_papers": 2
             },
             {
               "agreement": 1.0,
@@ -121347,18 +123815,18 @@
               "n_papers": 3
             },
             {
-              "agreement": 0.5,
-              "direction": "better",
-              "label": "thin",
+              "agreement": 0.667,
+              "direction": "worse",
+              "label": "contested",
               "model": "prithvi",
-              "n_claims": 3,
-              "n_papers": 2
+              "n_claims": 4,
+              "n_papers": 3
             }
           ],
           "models_differ": true,
-          "n_claims": 12,
+          "n_claims": 20,
           "n_models": 4,
-          "n_papers": 7,
+          "n_papers": 8,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 1.0,
@@ -121369,6 +123837,305 @@
             "name": "Biomass-S3"
           },
           "task": "biomass_estimation"
+        },
+        {
+          "agreement": 0.667,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.9,
+              "dataset": "Nantou County, Taiwan",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.07268",
+              "locator": "Sec 4.3",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "cheng2026from",
+              "paper_title": "From Landslide Conditioning Factors to Satellite Embeddings: Evaluating the Utilisation of Google AlphaEarth for Landslide Susceptibility Mapping using Deep Learning",
+              "self_evaluation": false,
+              "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
+              "value": 0.99
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 70.44,
+              "dataset": "Landslide4Sense",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2511.04474",
+              "locator": "Table 3",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2025landslide",
+              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
+              "self_evaluation": false,
+              "span": "The 300M variant achieved the highest mIoU and F1 (71.30 / 60.70",
+              "value": 71.3
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 61.2,
+              "dataset": "Landslide4Sense",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2511.04474",
+              "locator": "Table 4",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2025landslide",
+              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
+              "self_evaluation": false,
+              "span": "end-to-end tuning further increased performance to 73.62 mIoU and 65.42 F1",
+              "value": 73.62
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 59.7,
+              "dataset": "Landslide4Sense",
+              "direction": "better",
+              "label_ratio": 0.0125,
+              "link": "https://arxiv.org/abs/2511.04474",
+              "locator": "Sec 4.4",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2025landslide",
+              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
+              "self_evaluation": false,
+              "span": "At 1.25%1.25\\% labels, Prithvi-EO-2.0-600M attains 66.96 mIoU, followed by Prithvi-300M at 64.45",
+              "value": 66.96
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 58.23,
+              "dataset": "Landslide Reference",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.04474",
+              "locator": "Table 6",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2025landslide",
+              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
+              "self_evaluation": false,
+              "span": "71.18 for Prithvi-EO-2.0-600M vs. 58.23 for U-Net",
+              "value": 71.18
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 53.09,
+              "dataset": "GVLM-S2",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.04474",
+              "locator": "Table 6",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "li2025landslide",
+              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
+              "self_evaluation": false,
+              "span": "Both variants sustained around 70 mIoU on GVLM-S2, while U-Net and U-Net++ dropped to the high-40s and low-50s",
+              "value": 70.75
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 94.87,
+              "dataset": "NSP presence-absence (Random split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2506.17302",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lin2025fine",
+              "paper_title": "Fine-Scale Soil Mapping in Alaska with Multimodal Machine Learning",
+              "self_evaluation": false,
+              "span": "MiSo 97.38 98.26 93.90 90.98 96.61",
+              "value": 96.61
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 92.2,
+              "dataset": "NSP presence-absence (SH-1km split)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2506.17302",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lin2025fine",
+              "paper_title": "Fine-Scale Soil Mapping in Alaska with Multimodal Machine Learning",
+              "self_evaluation": false,
+              "span": "MiSo 95.33 92.17 76.17 84.87 90.48",
+              "value": 90.48
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 83.44,
+              "dataset": "NSP presence-absence (SH-10km split)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2506.17302",
+              "locator": "Table 1",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lin2025fine",
+              "paper_title": "Fine-Scale Soil Mapping in Alaska with Multimodal Machine Learning",
+              "self_evaluation": false,
+              "span": "MiSo 91.27 82.68 58.62 75.93 81.06",
+              "value": 81.06
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 95.0,
+              "dataset": "Gargano wildfire susceptibility map",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2607.19503",
+              "locator": "Discussion",
+              "metric": "accuracy",
+              "model": "alphaearth",
+              "paper_key": "pomarico2026tensor",
+              "paper_title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+              "self_evaluation": false,
+              "span": "the Random Forest model achieving an overall accuracy above 95%95\\%",
+              "value": 53.01
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 59.9,
+              "dataset": "Landslide4Sense",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.14081",
+              "locator": "Table I",
+              "metric": "f1",
+              "model": "clay",
+              "paper_key": "vu2026clay",
+              "paper_title": "Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection",
+              "self_evaluation": false,
+              "span": "The hybrid U-Net + Clay model with two-stage Low-Rank Adaptation (LoRA) achieved the best test F1 of",
+              "value": 64.5
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 59.9,
+              "dataset": "Landslide4Sense",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2606.14081",
+              "locator": "Table I",
+              "metric": "f1",
+              "model": "clay",
+              "paper_key": "vu2026clay",
+              "paper_title": "Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection",
+              "self_evaluation": false,
+              "span": "surpassing the Clay-only backbone (55.2 ±\\pm 3.6%) and the U-Net baseline (59.9%)",
+              "value": 55.2
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 75.76,
+              "dataset": "UN-FAO Locust Hub / HLS",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.06860",
+              "locator": "Table 2",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "yusuf2024geospatial",
+              "paper_title": "A Geospatial Approach to Predicting Desert Locust Breeding Grounds in Africa",
+              "self_evaluation": false,
+              "span": "achieving the highest accuracy, F1 and ROC-AUC scores (83.03%, 81.53% and 87.69%, respectively)",
+              "value": 83.03
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 67.34,
+              "dataset": "UN-FAO Locust Hub / HLS",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.06860",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "yusuf2024geospatial",
+              "paper_title": "A Geospatial Approach to Predicting Desert Locust Breeding Grounds in Africa",
+              "self_evaluation": false,
+              "span": "It achieved an accuracy, F1-score, and ROC-AUC score of 75.76%, 67.34%, and 63.61%",
+              "value": 81.53
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 63.61,
+              "dataset": "UN-FAO Locust Hub / HLS",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2403.06860",
+              "locator": "Table 2",
+              "metric": "auc",
+              "model": "prithvi",
+              "paper_key": "yusuf2024geospatial",
+              "paper_title": "A Geospatial Approach to Predicting Desert Locust Breeding Grounds in Africa",
+              "self_evaluation": false,
+              "span": "It achieved an accuracy, F1-score, and ROC-AUC score of 75.76%, 67.34%, and 63.61%",
+              "value": 87.69
+            }
+          ],
+          "datasets": [
+            "GVLM-S2",
+            "Gargano wildfire susceptibility map",
+            "Landslide Reference",
+            "Landslide4Sense",
+            "NSP presence-absence (Random split)",
+            "NSP presence-absence (SH-10km split)",
+            "NSP presence-absence (SH-1km split)",
+            "Nantou County, Taiwan",
+            "UN-FAO Locust Hub / HLS"
+          ],
+          "direction": "better",
+          "fragile": null,
+          "label": "contested",
+          "models": [
+            {
+              "agreement": 0.5,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 2,
+              "n_papers": 2
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "clay",
+              "n_claims": 2,
+              "n_papers": 1
+            },
+            {
+              "agreement": 0.667,
+              "direction": "better",
+              "label": "contested",
+              "model": "prithvi",
+              "n_claims": 11,
+              "n_papers": 3
+            }
+          ],
+          "models_differ": false,
+          "n_claims": 15,
+          "n_models": 3,
+          "n_papers": 6,
+          "pooling_note": null,
+          "strongest_benchmark": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_claims": 5,
+            "n_papers": 2,
+            "name": "Landslide4Sense"
+          },
+          "task": "landslide_susceptibility"
         },
         {
           "agreement": 0.667,
@@ -121735,288 +124502,6 @@
             "name": "AQS PM2.5"
           },
           "task": "socioeconomic_estimation"
-        },
-        {
-          "agreement": 0.8,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.9,
-              "dataset": "Nantou County, Taiwan",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.07268",
-              "locator": "Sec 4.3",
-              "metric": "auc",
-              "model": "alphaearth",
-              "paper_key": "cheng2026from",
-              "paper_title": "From Landslide Conditioning Factors to Satellite Embeddings: Evaluating the Utilisation of Google AlphaEarth for Landslide Susceptibility Mapping using Deep Learning",
-              "self_evaluation": false,
-              "span": "In Nantou, AUC values increased from approximately 0.90 for LCF-based models to around 0.99 when AE features were used",
-              "value": 0.99
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 70.44,
-              "dataset": "Landslide4Sense",
-              "direction": "better",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2511.04474",
-              "locator": "Table 3",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "li2025landslide",
-              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
-              "self_evaluation": false,
-              "span": "The 300M variant achieved the highest mIoU and F1 (71.30 / 60.70",
-              "value": 71.3
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 61.2,
-              "dataset": "Landslide4Sense",
-              "direction": "better",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2511.04474",
-              "locator": "Table 4",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "li2025landslide",
-              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
-              "self_evaluation": false,
-              "span": "end-to-end tuning further increased performance to 73.62 mIoU and 65.42 F1",
-              "value": 73.62
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 59.7,
-              "dataset": "Landslide4Sense",
-              "direction": "better",
-              "label_ratio": 0.0125,
-              "link": "https://arxiv.org/abs/2511.04474",
-              "locator": "Sec 4.4",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "li2025landslide",
-              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
-              "self_evaluation": false,
-              "span": "At 1.25%1.25\\% labels, Prithvi-EO-2.0-600M attains 66.96 mIoU, followed by Prithvi-300M at 64.45",
-              "value": 66.96
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 58.23,
-              "dataset": "Landslide Reference",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.04474",
-              "locator": "Table 6",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "li2025landslide",
-              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
-              "self_evaluation": false,
-              "span": "71.18 for Prithvi-EO-2.0-600M vs. 58.23 for U-Net",
-              "value": 71.18
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 53.09,
-              "dataset": "GVLM-S2",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.04474",
-              "locator": "Table 6",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "li2025landslide",
-              "paper_title": "Landslide Hazard Mapping with Geospatial Foundation Models: Geographical Generalizability, Data Scarcity, and Band Adaptability",
-              "self_evaluation": false,
-              "span": "Both variants sustained around 70 mIoU on GVLM-S2, while U-Net and U-Net++ dropped to the high-40s and low-50s",
-              "value": 70.75
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 94.87,
-              "dataset": "NSP presence-absence (Random split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2506.17302",
-              "locator": "Table 1",
-              "metric": "accuracy",
-              "model": "prithvi",
-              "paper_key": "lin2025fine",
-              "paper_title": "Fine-Scale Soil Mapping in Alaska with Multimodal Machine Learning",
-              "self_evaluation": false,
-              "span": "MiSo 97.38 98.26 93.90 90.98 96.61",
-              "value": 96.61
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 92.2,
-              "dataset": "NSP presence-absence (SH-1km split)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2506.17302",
-              "locator": "Table 1",
-              "metric": "accuracy",
-              "model": "prithvi",
-              "paper_key": "lin2025fine",
-              "paper_title": "Fine-Scale Soil Mapping in Alaska with Multimodal Machine Learning",
-              "self_evaluation": false,
-              "span": "MiSo 95.33 92.17 76.17 84.87 90.48",
-              "value": 90.48
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 83.44,
-              "dataset": "NSP presence-absence (SH-10km split)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2506.17302",
-              "locator": "Table 1",
-              "metric": "accuracy",
-              "model": "prithvi",
-              "paper_key": "lin2025fine",
-              "paper_title": "Fine-Scale Soil Mapping in Alaska with Multimodal Machine Learning",
-              "self_evaluation": false,
-              "span": "MiSo 91.27 82.68 58.62 75.93 81.06",
-              "value": 81.06
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 59.9,
-              "dataset": "Landslide4Sense",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.14081",
-              "locator": "Table I",
-              "metric": "f1",
-              "model": "clay",
-              "paper_key": "vu2026clay",
-              "paper_title": "Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection",
-              "self_evaluation": false,
-              "span": "The hybrid U-Net + Clay model with two-stage Low-Rank Adaptation (LoRA) achieved the best test F1 of",
-              "value": 64.5
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 59.9,
-              "dataset": "Landslide4Sense",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2606.14081",
-              "locator": "Table I",
-              "metric": "f1",
-              "model": "clay",
-              "paper_key": "vu2026clay",
-              "paper_title": "Clay-CNN Hybrids: Leveraging Geospatial Foundation Models as Auxiliary Context for Landslide Detection",
-              "self_evaluation": false,
-              "span": "surpassing the Clay-only backbone (55.2 ±\\pm 3.6%) and the U-Net baseline (59.9%)",
-              "value": 55.2
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 75.76,
-              "dataset": "UN-FAO Locust Hub / HLS",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2403.06860",
-              "locator": "Table 2",
-              "metric": "accuracy",
-              "model": "prithvi",
-              "paper_key": "yusuf2024geospatial",
-              "paper_title": "A Geospatial Approach to Predicting Desert Locust Breeding Grounds in Africa",
-              "self_evaluation": false,
-              "span": "achieving the highest accuracy, F1 and ROC-AUC scores (83.03%, 81.53% and 87.69%, respectively)",
-              "value": 83.03
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 67.34,
-              "dataset": "UN-FAO Locust Hub / HLS",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2403.06860",
-              "locator": "Table 2",
-              "metric": "f1",
-              "model": "prithvi",
-              "paper_key": "yusuf2024geospatial",
-              "paper_title": "A Geospatial Approach to Predicting Desert Locust Breeding Grounds in Africa",
-              "self_evaluation": false,
-              "span": "It achieved an accuracy, F1-score, and ROC-AUC score of 75.76%, 67.34%, and 63.61%",
-              "value": 81.53
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 63.61,
-              "dataset": "UN-FAO Locust Hub / HLS",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2403.06860",
-              "locator": "Table 2",
-              "metric": "auc",
-              "model": "prithvi",
-              "paper_key": "yusuf2024geospatial",
-              "paper_title": "A Geospatial Approach to Predicting Desert Locust Breeding Grounds in Africa",
-              "self_evaluation": false,
-              "span": "It achieved an accuracy, F1-score, and ROC-AUC score of 75.76%, 67.34%, and 63.61%",
-              "value": 87.69
-            }
-          ],
-          "datasets": [
-            "GVLM-S2",
-            "Landslide Reference",
-            "Landslide4Sense",
-            "NSP presence-absence (Random split)",
-            "NSP presence-absence (SH-10km split)",
-            "NSP presence-absence (SH-1km split)",
-            "Nantou County, Taiwan",
-            "UN-FAO Locust Hub / HLS"
-          ],
-          "direction": "better",
-          "fragile": null,
-          "label": "consensus",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "alphaearth",
-              "n_claims": 1,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "clay",
-              "n_claims": 2,
-              "n_papers": 1
-            },
-            {
-              "agreement": 0.667,
-              "direction": "better",
-              "label": "contested",
-              "model": "prithvi",
-              "n_claims": 11,
-              "n_papers": 3
-            }
-          ],
-          "models_differ": false,
-          "n_claims": 14,
-          "n_models": 3,
-          "n_papers": 5,
-          "pooling_note": "pooled agreement only: no single benchmark has 3+ papers (Landslide4Sense has the most, at 2)",
-          "strongest_benchmark": {
-            "agreement": 1.0,
-            "direction": "better",
-            "label": "thin",
-            "n_claims": 5,
-            "n_papers": 2,
-            "name": "Landslide4Sense"
-          },
-          "task": "landslide_susceptibility"
         },
         {
           "agreement": 0.5,

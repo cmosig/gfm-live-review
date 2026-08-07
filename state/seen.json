@@ -87,6 +87,12 @@
     "key": "lustigyaeger2023wispr",
     "status": "off_topic"
   },
+  "above ground biomass estimation with geospatial foundation models": {
+    "arxiv_id": "2608.04792",
+    "dropped_claims": 1,
+    "key": "sialellia2026above",
+    "status": "carded"
+  },
   "accelerating frb search dataset and methods": {
     "key": "guo2024accelerating",
     "status": "off_topic"
@@ -455,6 +461,10 @@
     "key": "grayevsky2025dehn",
     "status": "off_topic"
   },
+  "deluge towards continental scale daily pluvial flood damage prediction via interpretable conditioning on foundation model embeddings": {
+    "key": "kawakami2026deluge",
+    "status": "quarantined"
+  },
   "deploying geospatial foundation models in the real world lessons from worldcereal": {
     "arxiv_id": "2508.00858",
     "dropped_claims": 0,
@@ -656,6 +666,10 @@
     "dropped_claims": 0,
     "key": "gupta2025finetuning",
     "status": "carded"
+  },
+  "first fast radio burst search campaign at the argentine institute of radio astronomy": {
+    "key": "lousto2026first",
+    "status": "off_topic"
   },
   "first multi constellation observations of navigation satellite signals in the lunar domain by post processing l1 l5 iq snapshots": {
     "key": "sciacca2025first",
@@ -1798,6 +1812,10 @@
     "key": "godwin2024seeing",
     "status": "carded"
   },
+  "self consistent 1d modelling of jupiter s upper atmosphere as an exoplanet analogue": {
+    "key": "robeling2026self",
+    "status": "off_topic"
+  },
   "self supervised representation learning for geospatial objects a survey": {
     "key": "chen2024self",
     "status": "off_topic"
@@ -1965,6 +1983,12 @@
   "targeted search for young radio pulsars in the smc discovery of two new pulsars": {
     "key": "titus2019targeted",
     "status": "off_topic"
+  },
+  "tensor network machine learning for wildfire susceptibility mapping from grokking dynamics to quantum mixedness of class representations": {
+    "arxiv_id": "2607.19503",
+    "dropped_claims": 0,
+    "key": "pomarico2026tensor",
+    "status": "carded"
   },
   "terratorch the geospatial foundation models toolkit": {
     "arxiv_id": "2503.20563",
