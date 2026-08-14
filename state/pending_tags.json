@@ -86,6 +86,9 @@
   "CROMA": [
     "ghamisi2025geospatial"
   ],
+  "CRPS": [
+    "sousa2026earth"
+  ],
   "CropGlobe": [
     "tong2025invariant"
   ],
@@ -103,6 +106,9 @@
   ],
   "DHS_surveys": [
     "pettersson2025leveraging"
+  ],
+  "DINO": [
+    "zhang2026adadino"
   ],
   "DINO-MC": [
     "thoreau2025parameter"
@@ -160,6 +166,9 @@
   ],
   "FCOS": [
     "asif2026adapting"
+  ],
+  "FFN-pruning": [
+    "zhang2026adadino"
   ],
   "Faster_RCNN": [
     "asif2026adapting"
@@ -401,6 +410,9 @@
   "SAR_foundation_model": [
     "ye2026crossearth"
   ],
+  "SAR_intensity_pretraining": [
+    "gupta2026sar2agri"
+  ],
   "SAR_optical_fusion": [
     "chiriaco2026geoid"
   ],
@@ -418,6 +430,9 @@
   ],
   "SHAP_feature_importance": [
     "tadesse2026satellite"
+  ],
+  "SICKLE_benchmark": [
+    "gupta2026sar2agri"
   ],
   "SSIM structural fidelity": [
     "hou2026slum"
@@ -665,6 +680,9 @@
   "basin_similarity": [
     "qu2026utilizing"
   ],
+  "bi-temporal-interaction": [
+    "zhang2026adadino"
+  ],
   "bi_lstm_attention": [
     "karimzadeh2025performance"
   ],
@@ -830,6 +848,9 @@
   "concept_bottleneck_model": [
     "jia2025towards"
   ],
+  "conditional_neural_process": [
+    "sousa2026earth"
+  ],
   "continent_sampling": [
     "kaur2026pretrain"
   ],
@@ -940,6 +961,9 @@
   ],
   "csmae": [
     "hackel2025csmoe"
+  ],
+  "curriculum_learning": [
+    "gupta2026sar2agri"
   ],
   "curriculum_masking": [
     "zhang2026sigmae"
@@ -1214,6 +1238,9 @@
   "few_shot_segmentation": [
     "wang2025complex"
   ],
+  "fine_grained_taxonomy": [
+    "lauber2026swisscrop25"
+  ],
   "fine_tuning": [
     "ishikawa2025assessing"
   ],
@@ -1240,6 +1267,9 @@
   ],
   "food_water_nexus": [
     "asif2026adapting"
+  ],
+  "forecast_lead_robustness": [
+    "sousa2026earth"
   ],
   "forest_aboveground_biomass": [
     "lamahewage2026foundation"
@@ -1382,6 +1412,9 @@
   "graph_sampling": [
     "sarpe2021presto"
   ],
+  "grassland_management_types": [
+    "lauber2026swisscrop25"
+  ],
   "grokking": [
     "pomarico2026tensor"
   ],
@@ -1517,6 +1550,9 @@
   "in_context_learning": [
     "omalley2026context"
   ],
+  "in_season_usability": [
+    "lauber2026swisscrop25"
+  ],
   "inaturalist_species_classification": [
     "klemmer2023satclip"
   ],
@@ -1649,6 +1685,9 @@
   "leave_one_country_out_CV": [
     "adjei2026foundation"
   ],
+  "leave_one_year_out": [
+    "lauber2026swisscrop25"
+  ],
   "license_openness": [
     "stewart2026earth"
   ],
@@ -1717,6 +1756,9 @@
   ],
   "masked_reconstruction": [
     "schmude2024prithvi"
+  ],
+  "masking": [
+    "gupta2026sar2agri"
   ],
   "masking_ratio_ablation": [
     "choudhury2025rejepa"
@@ -1976,6 +2018,9 @@
   "panoptic_segmentation": [
     "muhawenayo2026prue"
   ],
+  "parameter-efficient-adaptation": [
+    "zhang2026adadino"
+  ],
   "patch_density_fragmentation": [
     "orlowski2026sub"
   ],
@@ -1999,6 +2044,9 @@
   ],
   "phenology_informed_sampling": [
     "plekhanova2025ssl4eco"
+  ],
+  "phenology_prediction": [
+    "gupta2026sar2agri"
   ],
   "phileo_bench": [
     "fibaek2024phileo"
@@ -2330,6 +2378,9 @@
   "scattering_mechanism_constraint": [
     "liu2026huiyanearth"
   ],
+  "scene_completeness": [
+    "lauber2026swisscrop25"
+  ],
   "scientific_permanence": [
     "young2026how"
   ],
@@ -2540,6 +2591,9 @@
   "sub-pixel density estimation": [
     "hou2026slum"
   ],
+  "sub_grid_correction": [
+    "sousa2026earth"
+  ],
   "subsurface_heterogeneity": [
     "qu2026utilizing"
   ],
@@ -2594,6 +2648,9 @@
   "teacher_student_pseudo_labeling": [
     "perez2026predicting"
   ],
+  "temperature_downscaling": [
+    "sousa2026earth"
+  ],
   "temporal_alignment": [
     "cheng2026from"
   ],
@@ -2615,9 +2672,6 @@
   "temporal_positional_encoding": [
     "cong2022satmae"
   ],
-  "temporal_pretext_tasks": [
-    "gupta2025time2agri"
-  ],
   "temporal_sampling_invariance": [
     "feng2025tessera"
   ],
@@ -2635,6 +2689,9 @@
   ],
   "text_image_alignment": [
     "walsh2026zero"
+  ],
+  "thermal_positional_encoding": [
+    "lauber2026swisscrop25"
   ],
   "tillage_mapping": [
     "ma2025harvesting"
@@ -2792,6 +2849,9 @@
   "weakly_supervised_temporal_localization": [
     "tadesse2026watch"
   ],
+  "weather_downscaling": [
+    "sousa2026earth"
+  ],
   "weather_forecasting": [
     "schmude2024prithvi"
   ],
@@ -2815,6 +2875,9 @@
   ],
   "wildfire_susceptibility_mapping": [
     "pomarico2026tensor"
+  ],
+  "wind_speed_downscaling": [
+    "sousa2026earth"
   ],
   "winter_wheat_mapping": [
     "li2025agrifm"

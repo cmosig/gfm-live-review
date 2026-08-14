@@ -109,6 +109,12 @@
     "key": "sticker2026activation",
     "status": "off_topic"
   },
+  "adadino pair aware in backbone adaptation of frozen dino for efficient remote sensing change detection": {
+    "arxiv_id": "2608.07982",
+    "dropped_claims": 0,
+    "key": "zhang2026adadino",
+    "status": "carded"
+  },
   "adapting prithvi eo for fallow detection for food water nexus vit adapter necks and parameter efficient backbone tuning of geospatial foundation model": {
     "arxiv_id": "2606.12218",
     "dropped_claims": 0,
@@ -146,6 +152,10 @@
     "dropped_claims": 0,
     "key": "tingzon2025derived",
     "status": "carded"
+  },
+  "alkali metallicity mineral clouds and deep atmospheric variability on jupiter": {
+    "key": "zhang2026alkali",
+    "status": "off_topic"
   },
   "alphaearth foundations an embedding field model for accurate and efficient global mapping from sparse label data": {
     "arxiv_id": "2507.22291",
@@ -543,6 +553,12 @@
     "arxiv_id": "2604.03456",
     "dropped_claims": 0,
     "key": "gong2026earth",
+    "status": "carded"
+  },
+  "earth observation embeddings are effective sub grid descriptors for probabilistic weather downscaling": {
+    "arxiv_id": "2608.12271",
+    "dropped_claims": 0,
+    "key": "sousa2026earth",
     "status": "carded"
   },
   "earthshift a benchmark for measuring robustness to real world distribution shifts in earth observation": {
@@ -1090,6 +1106,10 @@
   "jointly spatial temporal representation learning for individual trajectories": {
     "key": "huang2023jointly",
     "status": "quarantined"
+  },
+  "juno microwave observations reveal jupiter s deep alkali chlorine relation": {
+    "key": "zhang2026juno",
+    "status": "off_topic"
   },
   "jupiter s interior with an inverted helium gradient": {
     "key": "nettelmann2025jupiter",
@@ -1733,6 +1753,12 @@
     "key": "hu2024vheat",
     "status": "carded"
   },
+  "sar2agri learning sar intensity representations for agricultural monitoring": {
+    "arxiv_id": "2608.11142",
+    "dropped_claims": 1,
+    "key": "gupta2026sar2agri",
+    "status": "carded"
+  },
   "satclip global general purpose location embeddings with satellite imagery": {
     "arxiv_id": "2311.17179",
     "dropped_claims": 0,
@@ -1983,6 +2009,12 @@
   "swinynet a transformer based multi task model for accurate and efficient frb search": {
     "key": "-",
     "status": "quarantined_mismatch"
+  },
+  "swisscrop25 a national multi year benchmark for operational crop mapping": {
+    "arxiv_id": "2608.09497",
+    "dropped_claims": 1,
+    "key": "lauber2026swisscrop25",
+    "status": "carded"
   },
   "symbolic specialization of rewriting logic theories with presto": {
     "key": "alpuente2021symbolic",

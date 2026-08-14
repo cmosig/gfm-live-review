@@ -1,5 +1,5 @@
 {
-  "corpus_through": "2026-08-05",
+  "corpus_through": "2026-08-12",
   "limitations": {
     "series": {
       "benchmark_narrowness": {
@@ -39,7 +39,7 @@
         "2026-05": 16,
         "2026-06": 12,
         "2026-07": 9,
-        "2026-08": 5
+        "2026-08": 9
       },
       "compute_cost": {
         "2022-07": 1,
@@ -77,7 +77,7 @@
         "2026-05": 6,
         "2026-06": 4,
         "2026-07": 3,
-        "2026-08": 4
+        "2026-08": 7
       },
       "data_bias": {
         "2022-07": 1,
@@ -110,7 +110,7 @@
         "2026-05": 7,
         "2026-06": 9,
         "2026-07": 4,
-        "2026-08": 4
+        "2026-08": 5
       },
       "human_semantics": {
         "2024-04": 1,
@@ -126,7 +126,8 @@
         "2026-04": 1,
         "2026-05": 1,
         "2026-06": 2,
-        "2026-07": 1
+        "2026-07": 1,
+        "2026-08": 1
       },
       "interpretability": {
         "2023-09": 1,
@@ -146,7 +147,7 @@
         "2026-05": 3,
         "2026-06": 6,
         "2026-07": 4,
-        "2026-08": 2
+        "2026-08": 3
       },
       "mixed_pixels": {
         "2024-01": 1,
@@ -167,7 +168,7 @@
         "2026-05": 4,
         "2026-06": 5,
         "2026-07": 3,
-        "2026-08": 3
+        "2026-08": 4
       },
       "spatial_transfer": {
         "2022-12": 1,
@@ -201,7 +202,7 @@
         "2026-05": 10,
         "2026-06": 8,
         "2026-07": 4,
-        "2026-08": 3
+        "2026-08": 4
       },
       "temporal_transfer": {
         "2022-07": 1,
@@ -223,7 +224,7 @@
         "2026-05": 3,
         "2026-06": 3,
         "2026-07": 2,
-        "2026-08": 2
+        "2026-08": 4
       },
       "time_sensitivity": {
         "2024-03": 1,
@@ -243,7 +244,8 @@
         "2026-04": 4,
         "2026-05": 4,
         "2026-06": 1,
-        "2026-07": 2
+        "2026-07": 2,
+        "2026-08": 2
       },
       "uncertainty": {
         "2024-06": 1,
@@ -260,15 +262,15 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 164,
-      "compute_cost": 92,
-      "data_bias": 86,
-      "human_semantics": 17,
-      "interpretability": 37,
-      "mixed_pixels": 36,
-      "spatial_transfer": 93,
-      "temporal_transfer": 38,
-      "time_sensitivity": 29,
+      "benchmark_narrowness": 168,
+      "compute_cost": 95,
+      "data_bias": 87,
+      "human_semantics": 18,
+      "interpretability": 38,
+      "mixed_pixels": 37,
+      "spatial_transfer": 94,
+      "temporal_transfer": 40,
+      "time_sensitivity": 31,
       "uncertainty": 28
     }
   },
@@ -305,7 +307,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 187,
+    "n_papers": 191,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -329,10 +331,58 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 187
+      "verified": 191
     },
-    "n_papers": 187,
+    "n_papers": 191,
     "papers": [
+      {
+        "arxiv_id": "2608.12271",
+        "date": "2026-08-12",
+        "doi": "10.48550/arxiv.2608.12271",
+        "doi_status": "verified",
+        "key": "sousa2026earth",
+        "link": "https://arxiv.org/abs/2608.12271",
+        "n_claims": 5,
+        "self_evaluation": true,
+        "title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2608.11142",
+        "date": "2026-08-11",
+        "doi": "10.48550/arxiv.2608.11142",
+        "doi_status": "verified",
+        "key": "gupta2026sar2agri",
+        "link": "https://arxiv.org/abs/2608.11142",
+        "n_claims": 1,
+        "self_evaluation": false,
+        "title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2608.09497",
+        "date": "2026-08-10",
+        "doi": "10.48550/arxiv.2608.09497",
+        "doi_status": "verified",
+        "key": "lauber2026swisscrop25",
+        "link": "https://arxiv.org/abs/2608.09497",
+        "n_claims": 3,
+        "self_evaluation": false,
+        "title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2608.07982",
+        "date": "2026-08-08",
+        "doi": "10.48550/arxiv.2608.07982",
+        "doi_status": "verified",
+        "key": "zhang2026adadino",
+        "link": "https://arxiv.org/abs/2608.07982",
+        "n_claims": 1,
+        "self_evaluation": false,
+        "title": "AdaDINO: Pair-Aware In-Backbone Adaptation of Frozen DINO for Efficient Remote Sensing Change Detection",
+        "venue": "arXiv"
+      },
       {
         "arxiv_id": "2608.04792",
         "date": "2026-08-05",
@@ -2584,7 +2634,7 @@
     "all": {
       "axes": [
         {
-          "agreement": 0.608,
+          "agreement": 0.597,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -3741,6 +3791,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 82.67,
+              "dataset": "SICKLE",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.11142",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "gupta2026sar2agri",
+              "paper_title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+              "self_evaluation": false,
+              "span": "DoFA S1 61.215",
+              "value": 61.215
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.38,
               "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
               "direction": "better",
@@ -4570,6 +4636,22 @@
               "self_evaluation": false,
               "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
               "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 48.1,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Table 3",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Fine-tuned Galileo-nano (30.4% mIoU) falls behind the other models",
+              "value": 30.4
             },
             {
               "baseline": "task_specific",
@@ -5757,6 +5839,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 1.67,
+              "dataset": "GHCNh Europe",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera 1.10 1.58 0.79",
+              "value": 1.58
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 2.1,
+              "dataset": "GHCNh All regions",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera 1.32 1.90 0.96",
+              "value": 1.9
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 42.6,
               "dataset": "US multi-temporal crop segmentation",
               "direction": "better",
@@ -6798,12 +6912,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 263,
-          "n_papers": 74,
-          "n_papers_all": 104
+          "n_claims": 267,
+          "n_papers": 77,
+          "n_papers_all": 107
         },
         {
-          "agreement": 0.706,
+          "agreement": 0.694,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -7480,6 +7594,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 30.8,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": 0.1,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Supp. Table 8",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Galileo-nano (10%)",
+              "value": 18.4
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 59.7,
               "dataset": "Landslide4Sense",
               "direction": "better",
@@ -7752,6 +7882,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 1.87,
+              "dataset": "GHCNh East Asia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera 1.10 1.53 0.79",
+              "value": 1.53
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.2185,
               "dataset": "CloudSat/CALIPSO curtain (ABI 3D cloud retrieval)",
               "direction": "better",
@@ -8009,12 +8155,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 75,
-          "n_papers": 34,
-          "n_papers_all": 48
+          "n_claims": 77,
+          "n_papers": 36,
+          "n_papers_all": 50
         },
         {
-          "agreement": 0.636,
+          "agreement": 0.63,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -8704,6 +8850,22 @@
               "self_evaluation": true,
               "span": "TESSERA achieved the best test results with a test IoU of 0.69 and accuracy of 0.80",
               "value": 0.69
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Section 4.2",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
+              "value": 20.6
             },
             {
               "baseline": "task_specific",
@@ -9411,6 +9573,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 1.69,
+              "dataset": "Norwegian probe stations (wind speed, cold start)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Sec 3.5",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera is 16.7%16.7\\% better before a single Norwegian probe is deployed (1.411.41 against 1.69",
+              "value": 1.41
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 42.5,
               "dataset": "WATCH Afghanistan archaeological sites (test split)",
               "direction": "better",
@@ -9780,9 +9958,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 110,
-          "n_papers": 44,
-          "n_papers_all": 63
+          "n_claims": 112,
+          "n_papers": 46,
+          "n_papers_all": 65
         },
         {
           "agreement": 1.0,
@@ -10678,13 +10856,29 @@
               "self_evaluation": true,
               "span": "DOFA+ achieves SOTA performance on the RESISC-45 classification benchmark with 98.1% accuracy",
               "value": 98.1
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "SYSU-CD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.07982",
+              "locator": "Abstract",
+              "metric": "f1",
+              "model": "dofa",
+              "paper_key": "zhang2026adadino",
+              "paper_title": "AdaDINO: Pair-Aware In-Backbone Adaptation of Frozen DINO for Efficient Remote Sensing Change Detection",
+              "self_evaluation": false,
+              "span": "AdaDINO still achieves an F1 score of 85.29% on SYSU-CD while delivering a 1.41",
+              "value": 85.29
             }
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 28,
+          "n_claims": 29,
           "n_papers": 9,
-          "n_papers_all": 20
+          "n_papers_all": 21
         },
         {
           "agreement": 0.5,
@@ -12406,7 +12600,7 @@
           "n_papers_all": 3
         },
         {
-          "agreement": 0.9,
+          "agreement": 0.818,
           "axis": "G11_complementarity",
           "claims": [
             {
@@ -12794,6 +12988,22 @@
               "value": 0.019
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 0.65,
+              "dataset": "ERA5-interpolation residual, Europe (wind speed)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Sec 3.3 / Figure 5",
+              "metric": "r2",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "highest cross-validated R2R^{2} in both Europe (0.270.27) and the United States",
+              "value": 0.27
+            },
+            {
               "baseline": "prithvi",
               "baseline_value": 0.876,
               "dataset": "Sen1Floods11",
@@ -12924,9 +13134,9 @@
           ],
           "direction": "better",
           "label": "consensus",
-          "n_claims": 32,
-          "n_papers": 10,
-          "n_papers_all": 22
+          "n_claims": 33,
+          "n_papers": 11,
+          "n_papers_all": 23
         },
         {
           "agreement": null,
@@ -17735,6 +17945,65 @@
           }
         },
         {
+          "benchmark": "sickle",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.65442,
+              "dataset": "SICKLE",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2507.04366",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "gupta2025time2agri",
+              "paper_title": "Time2Agri: Temporal Pretext Tasks for Agricultural Monitoring",
+              "self_evaluation": false,
+              "span": "0.58363",
+              "value": 0.58363
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.67,
+              "dataset": "SICKLE",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.11142",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "gupta2026sar2agri",
+              "paper_title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+              "self_evaluation": false,
+              "span": "DoFA S1 61.215",
+              "value": 61.215
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "dofa"
+          ],
+          "n_claims": 2,
+          "n_papers": 2,
+          "n_vs_task_specific": 2,
+          "name": "SICKLE",
+          "tasks": [
+            "crop_type_mapping"
+          ],
+          "variants": [
+            "SICKLE"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_papers": 2
+          }
+        },
+        {
           "benchmark": "spacenet v1",
           "claims": [
             {
@@ -21333,6 +21602,81 @@
             "NSP presence-absence (Random split)",
             "NSP presence-absence (SH-10km split)",
             "NSP presence-absence (SH-1km split)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "swisscrop25",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 48.1,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Table 3",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Fine-tuned Galileo-nano (30.4% mIoU) falls behind the other models",
+              "value": 30.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 30.8,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": 0.1,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Supp. Table 8",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Galileo-nano (10%)",
+              "value": 18.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Section 4.2",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
+              "value": 20.6
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "galileo"
+          ],
+          "n_claims": 3,
+          "n_papers": 1,
+          "n_vs_task_specific": 3,
+          "name": "SwissCrop25",
+          "tasks": [
+            "crop_type_mapping"
+          ],
+          "variants": [
+            "SwissCrop25"
           ],
           "verdict": {
             "agreement": 1.0,
@@ -26031,6 +26375,49 @@
           }
         },
         {
+          "benchmark": "era5 interpolation residual",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.65,
+              "dataset": "ERA5-interpolation residual, Europe (wind speed)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Sec 3.3 / Figure 5",
+              "metric": "r2",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "highest cross-validated R2R^{2} in both Europe (0.270.27) and the United States",
+              "value": 0.27
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "tessera"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "ERA5-interpolation residual",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "ERA5-interpolation residual, Europe (wind speed)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "esa worldcover",
           "claims": [
             {
@@ -27232,6 +27619,135 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "ghcnh all regions",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 2.1,
+              "dataset": "GHCNh All regions",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera 1.32 1.90 0.96",
+              "value": 1.9
+            }
+          ],
+          "metrics": [
+            "rmse"
+          ],
+          "models": [
+            "tessera"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "GHCNh All regions",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "GHCNh All regions"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "ghcnh east asia",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 1.87,
+              "dataset": "GHCNh East Asia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera 1.10 1.53 0.79",
+              "value": 1.53
+            }
+          ],
+          "metrics": [
+            "rmse"
+          ],
+          "models": [
+            "tessera"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "GHCNh East Asia",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "GHCNh East Asia"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "ghcnh europe",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 1.67,
+              "dataset": "GHCNh Europe",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera 1.10 1.58 0.79",
+              "value": 1.58
+            }
+          ],
+          "metrics": [
+            "rmse"
+          ],
+          "models": [
+            "tessera"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "GHCNh Europe",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "GHCNh Europe"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -29385,6 +29901,49 @@
           }
         },
         {
+          "benchmark": "norwegian probe stations",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 1.69,
+              "dataset": "Norwegian probe stations (wind speed, cold start)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Sec 3.5",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera is 16.7%16.7\\% better before a single Norwegian probe is deployed (1.411.41 against 1.69",
+              "value": 1.41
+            }
+          ],
+          "metrics": [
+            "rmse"
+          ],
+          "models": [
+            "tessera"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "Norwegian probe stations",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "Norwegian probe stations (wind speed, cold start)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "ns sec sdm",
           "claims": [
             {
@@ -30159,49 +30718,6 @@
           }
         },
         {
-          "benchmark": "sickle",
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.65442,
-              "dataset": "SICKLE",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2507.04366",
-              "locator": "Table 1",
-              "metric": "miou",
-              "model": "dofa",
-              "paper_key": "gupta2025time2agri",
-              "paper_title": "Time2Agri: Temporal Pretext Tasks for Agricultural Monitoring",
-              "self_evaluation": false,
-              "span": "0.58363",
-              "value": 0.58363
-            }
-          ],
-          "metrics": [
-            "miou"
-          ],
-          "models": [
-            "dofa"
-          ],
-          "n_claims": 1,
-          "n_papers": 1,
-          "n_vs_task_specific": 1,
-          "name": "SICKLE",
-          "tasks": [
-            "crop_type_mapping"
-          ],
-          "variants": [
-            "SICKLE"
-          ],
-          "verdict": {
-            "agreement": 1.0,
-            "direction": "worse",
-            "label": "thin",
-            "n_papers": 1
-          }
-        },
-        {
           "benchmark": "so2sat",
           "claims": [
             {
@@ -30408,6 +30924,49 @@
           ],
           "variants": [
             "Street View"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "sysu cd",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "SYSU-CD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.07982",
+              "locator": "Abstract",
+              "metric": "f1",
+              "model": "dofa",
+              "paper_key": "zhang2026adadino",
+              "paper_title": "AdaDINO: Pair-Aware In-Backbone Adaptation of Frozen DINO for Efficient Remote Sensing Change Detection",
+              "self_evaluation": false,
+              "span": "AdaDINO still achieves an F1 score of 85.29% on SYSU-CD while delivering a 1.41",
+              "value": 85.29
+            }
+          ],
+          "metrics": [
+            "f1"
+          ],
+          "models": [
+            "dofa"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "SYSU-CD",
+          "tasks": [
+            "change_detection"
+          ],
+          "variants": [
+            "SYSU-CD"
           ],
           "verdict": {
             "agreement": null,
@@ -32503,6 +33062,86 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 1.67,
+              "dataset": "GHCNh Europe",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera 1.10 1.58 0.79",
+              "value": 1.58
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 1.87,
+              "dataset": "GHCNh East Asia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera 1.10 1.53 0.79",
+              "value": 1.53
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 2.1,
+              "dataset": "GHCNh All regions",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera 1.32 1.90 0.96",
+              "value": 1.9
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 1.69,
+              "dataset": "Norwegian probe stations (wind speed, cold start)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Sec 3.5",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera is 16.7%16.7\\% better before a single Norwegian probe is deployed (1.411.41 against 1.69",
+              "value": 1.41
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.65,
+              "dataset": "ERA5-interpolation residual, Europe (wind speed)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Sec 3.3 / Figure 5",
+              "metric": "r2",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "highest cross-validated R2R^{2} in both Europe (0.270.27) and the United States",
+              "value": 0.27
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.68,
               "dataset": "FLUXNET/AmeriFlux/ICOS GPP flux towers",
               "direction": "better",
@@ -32780,6 +33419,7 @@
             "ERA5 GW flux, Drake Passage",
             "ERA5 gravity wave flux (daily-sampled)",
             "ERA5 gravity wave flux (monthly-averaged)",
+            "ERA5-interpolation residual, Europe (wind speed)",
             "EcoRegions",
             "Ecoregions (Africa, few-shot)",
             "Elevation",
@@ -32792,6 +33432,9 @@
             "GADM country codes",
             "GAMa (BDD100k)",
             "GEO-Bench",
+            "GHCNh All regions",
+            "GHCNh East Asia",
+            "GHCNh Europe",
             "GPW v4 population density",
             "GeoBench (Avg.P)",
             "GeoQuery 76-query disaster retrieval benchmark (UK floods)",
@@ -32816,6 +33459,7 @@
             "Mapillary (MSLS)",
             "Multi-Temporal Cloud Gap Imputation",
             "NWPU-RESISC45",
+            "Norwegian probe stations (wind speed, cold start)",
             "OSV-5M",
             "OSV5M",
             "PACE OCI L1B/L2 AOD",
@@ -32845,26 +33489,27 @@
             "prithvi",
             "satclip",
             "satmae",
-            "scalemae"
+            "scalemae",
+            "tessera"
           ],
-          "n_claims": 95,
-          "n_papers": 43,
+          "n_claims": 100,
+          "n_papers": 44,
           "task": "representation_probing"
         }
       ],
       "evidence": {
         "directions": {
-          "better": 249,
+          "better": 253,
           "parity": 14,
-          "worse": 119
+          "worse": 124
         },
-        "label_ratio_unspecified": 562,
-        "n_claims": 639,
-        "n_self_eval_claims": 79,
-        "n_vs_model_or_none": 257,
-        "n_vs_task_specific": 382,
-        "pct_better": 65.2,
-        "pct_label_ratio_unspecified": 87.9
+        "label_ratio_unspecified": 571,
+        "n_claims": 649,
+        "n_self_eval_claims": 84,
+        "n_vs_model_or_none": 258,
+        "n_vs_task_specific": 391,
+        "pct_better": 64.7,
+        "pct_label_ratio_unspecified": 88.0
       },
       "groups": [
         {
@@ -34866,6 +35511,36 @@
           "label_regime": "unspecified",
           "metric": "f1",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "change_detection"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "SYSU-CD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.07982",
+              "locator": "Abstract",
+              "metric": "f1",
+              "model": "dofa",
+              "paper_key": "zhang2026adadino",
+              "paper_title": "AdaDINO: Pair-Aware In-Backbone Adaptation of Frozen DINO for Efficient Remote Sensing Change Detection",
+              "self_evaluation": false,
+              "span": "AdaDINO still achieves an F1 score of 85.29% on SYSU-CD while delivering a 1.41",
+              "value": 85.29
+            }
+          ],
+          "dataset": "SYSU-CD",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "dofa",
           "n_papers": 1,
           "task": "change_detection"
         },
@@ -36964,6 +37639,22 @@
               "self_evaluation": false,
               "span": "0.58363",
               "value": 0.58363
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.67,
+              "dataset": "SICKLE",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.11142",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "gupta2026sar2agri",
+              "paper_title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+              "self_evaluation": false,
+              "span": "DoFA S1 61.215",
+              "value": 61.215
             }
           ],
           "dataset": "SICKLE",
@@ -36972,7 +37663,7 @@
           "label_regime": "unspecified",
           "metric": "miou",
           "model": "dofa",
-          "n_papers": 1,
+          "n_papers": 2,
           "task": "crop_type_mapping"
         },
         {
@@ -37032,6 +37723,82 @@
           "label_regime": "label_rich",
           "metric": "f1",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 48.1,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Table 3",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Fine-tuned Galileo-nano (30.4% mIoU) falls behind the other models",
+              "value": 30.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Section 4.2",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
+              "value": 20.6
+            }
+          ],
+          "dataset": "SwissCrop25",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "galileo",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 30.8,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": 0.1,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Supp. Table 8",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Galileo-nano (10%)",
+              "value": 18.4
+            }
+          ],
+          "dataset": "SwissCrop25",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "label_partial",
+          "metric": "miou",
+          "model": "galileo",
           "n_papers": 1,
           "task": "crop_type_mapping"
         },
@@ -45017,6 +45784,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.65,
+              "dataset": "ERA5-interpolation residual, Europe (wind speed)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Sec 3.3 / Figure 5",
+              "metric": "r2",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "highest cross-validated R2R^{2} in both Europe (0.270.27) and the United States",
+              "value": 0.27
+            }
+          ],
+          "dataset": "ERA5-interpolation residual, Europe (wind speed)",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "tessera",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
           "baseline": null,
           "claims": [
             {
@@ -45402,6 +46199,96 @@
           "label_regime": "unspecified",
           "metric": "accuracy",
           "model": "satmae",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 2.1,
+              "dataset": "GHCNh All regions",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera 1.32 1.90 0.96",
+              "value": 1.9
+            }
+          ],
+          "dataset": "GHCNh All regions",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "tessera",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 1.87,
+              "dataset": "GHCNh East Asia",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera 1.10 1.53 0.79",
+              "value": 1.53
+            }
+          ],
+          "dataset": "GHCNh East Asia",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "tessera",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 1.67,
+              "dataset": "GHCNh Europe",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera 1.10 1.58 0.79",
+              "value": 1.58
+            }
+          ],
+          "dataset": "GHCNh Europe",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "tessera",
           "n_papers": 1,
           "task": "representation_probing"
         },
@@ -46258,6 +47145,36 @@
           "label_regime": "unspecified",
           "metric": "accuracy",
           "model": "scalemae",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 1.69,
+              "dataset": "Norwegian probe stations (wind speed, cold start)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12271",
+              "locator": "Sec 3.5",
+              "metric": "rmse",
+              "model": "tessera",
+              "paper_key": "sousa2026earth",
+              "paper_title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+              "self_evaluation": true,
+              "span": "ConvCNP with Tessera is 16.7%16.7\\% better before a single Norwegian probe is deployed (1.411.41 against 1.69",
+              "value": 1.41
+            }
+          ],
+          "dataset": "Norwegian probe stations (wind speed, cold start)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "tessera",
           "n_papers": 1,
           "task": "representation_probing"
         },
@@ -53791,6 +54708,22 @@
               },
               {
                 "baseline": null,
+                "baseline_value": null,
+                "dataset": "SYSU-CD",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.07982",
+                "locator": "Abstract",
+                "metric": "f1",
+                "model": "dofa",
+                "paper_key": "zhang2026adadino",
+                "paper_title": "AdaDINO: Pair-Aware In-Backbone Adaptation of Frozen DINO for Efficient Remote Sensing Change Detection",
+                "self_evaluation": false,
+                "span": "AdaDINO still achieves an F1 score of 85.29% on SYSU-CD while delivering a 1.41",
+                "value": 85.29
+              },
+              {
+                "baseline": null,
                 "baseline_value": 55.81,
                 "dataset": "OSCD",
                 "direction": "better",
@@ -53809,13 +54742,13 @@
             "direction": "worse",
             "label": "contested",
             "model": "dofa",
-            "n_claims": 5,
+            "n_claims": 6,
             "n_papers": 3,
-            "n_papers_all": 4,
+            "n_papers_all": 5,
             "task": "change_detection"
           },
           "dofa\tcrop_type_mapping": {
-            "agreement": 0.75,
+            "agreement": 0.8,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -53882,6 +54815,22 @@
                 "value": 0.58363
               },
               {
+                "baseline": "task_specific",
+                "baseline_value": 82.67,
+                "dataset": "SICKLE",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.11142",
+                "locator": "Table 1",
+                "metric": "miou",
+                "model": "dofa",
+                "paper_key": "gupta2026sar2agri",
+                "paper_title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+                "self_evaluation": false,
+                "span": "DoFA S1 61.215",
+                "value": 61.215
+              },
+              {
                 "baseline": null,
                 "baseline_value": null,
                 "dataset": "GB-SA-crop-type",
@@ -53899,11 +54848,11 @@
               }
             ],
             "direction": "worse",
-            "label": "contested",
+            "label": "consensus",
             "model": "dofa",
-            "n_claims": 5,
-            "n_papers": 4,
-            "n_papers_all": 5,
+            "n_claims": 6,
+            "n_papers": 5,
+            "n_papers_all": 6,
             "task": "crop_type_mapping"
           },
           "dofa\tflood_mapping": {
@@ -55027,7 +55976,7 @@
             "task": "semantic_segmentation"
           },
           "galileo\tcrop_type_mapping": {
-            "agreement": 1.0,
+            "agreement": 0.5,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -55044,6 +55993,54 @@
                 "self_evaluation": false,
                 "span": "Germany-Cambodia",
                 "value": 17.21
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 48.1,
+                "dataset": "SwissCrop25",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.09497",
+                "locator": "Table 3",
+                "metric": "miou",
+                "model": "galileo",
+                "paper_key": "lauber2026swisscrop25",
+                "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+                "self_evaluation": false,
+                "span": "Fine-tuned Galileo-nano (30.4% mIoU) falls behind the other models",
+                "value": 30.4
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 30.8,
+                "dataset": "SwissCrop25",
+                "direction": "worse",
+                "label_ratio": 0.1,
+                "link": "https://arxiv.org/abs/2608.09497",
+                "locator": "Supp. Table 8",
+                "metric": "miou",
+                "model": "galileo",
+                "paper_key": "lauber2026swisscrop25",
+                "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+                "self_evaluation": false,
+                "span": "Galileo-nano (10%)",
+                "value": 18.4
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "SwissCrop25",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.09497",
+                "locator": "Section 4.2",
+                "metric": "miou",
+                "model": "galileo",
+                "paper_key": "lauber2026swisscrop25",
+                "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+                "self_evaluation": false,
+                "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
+                "value": 20.6
               },
               {
                 "baseline": "presto",
@@ -55065,9 +56062,9 @@
             "direction": "better",
             "label": "thin",
             "model": "galileo",
-            "n_claims": 2,
-            "n_papers": 1,
-            "n_papers_all": 2,
+            "n_claims": 5,
+            "n_papers": 2,
+            "n_papers_all": 3,
             "task": "crop_type_mapping"
           },
           "galileo\tflood_mapping": {
@@ -63560,7 +64557,7 @@
           "task": "land_cover_classification"
         },
         {
-          "agreement": 0.625,
+          "agreement": 0.577,
           "claims": [
             {
               "baseline": "task_specific",
@@ -63756,6 +64753,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 82.67,
+              "dataset": "SICKLE",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.11142",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "gupta2026sar2agri",
+              "paper_title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+              "self_evaluation": false,
+              "span": "DoFA S1 61.215",
+              "value": 61.215
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.561,
               "dataset": "EuroCrops",
               "direction": "better",
@@ -63801,6 +64814,54 @@
               "self_evaluation": true,
               "span": "The mean accuracy for Prithvi of 13 classes is 64.06%, and for U-Net is 61.91%",
               "value": 64.06
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 48.1,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Table 3",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Fine-tuned Galileo-nano (30.4% mIoU) falls behind the other models",
+              "value": 30.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 30.8,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": 0.1,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Supp. Table 8",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Galileo-nano (10%)",
+              "value": 18.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Section 4.2",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
+              "value": 20.6
             },
             {
               "baseline": "task_specific",
@@ -64376,6 +65437,7 @@
             "SACrop",
             "SICKLE",
             "Sen4Map crop type classification",
+            "SwissCrop25",
             "TalloS",
             "US multi-temporal crop segmentation",
             "USDA Crop Data Layer (CDL) multi-temporal crop segmentation",
@@ -64411,20 +65473,20 @@
               "n_papers": 3
             },
             {
-              "agreement": 0.75,
+              "agreement": 0.8,
               "direction": "worse",
-              "label": "contested",
+              "label": "consensus",
               "model": "dofa",
-              "n_claims": 4,
-              "n_papers": 4
+              "n_claims": 5,
+              "n_papers": 5
             },
             {
-              "agreement": 1.0,
+              "agreement": 0.5,
               "direction": "better",
               "label": "thin",
               "model": "galileo",
-              "n_claims": 1,
-              "n_papers": 1
+              "n_claims": 4,
+              "n_papers": 2
             },
             {
               "agreement": 0.667,
@@ -64452,9 +65514,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 49,
+          "n_claims": 53,
           "n_models": 7,
-          "n_papers": 24,
+          "n_papers": 26,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.667,
@@ -67667,7 +68729,7 @@
     "no_self_eval": {
       "axes": [
         {
-          "agreement": 0.58,
+          "agreement": 0.563,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -68600,6 +69662,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 82.67,
+              "dataset": "SICKLE",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.11142",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "gupta2026sar2agri",
+              "paper_title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+              "self_evaluation": false,
+              "span": "DoFA S1 61.215",
+              "value": 61.215
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.38,
               "dataset": "Nouvelle-Aquitaine IGN RGE ALTI DSM",
               "direction": "better",
@@ -69349,6 +70427,22 @@
               "self_evaluation": false,
               "span": "RF1_T model achieved the best R2 (0.79) and lowest RMSE and MAE values",
               "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 48.1,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Table 3",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Fine-tuned Galileo-nano (30.4% mIoU) falls behind the other models",
+              "value": 30.4
             },
             {
               "baseline": "task_specific",
@@ -71337,12 +72431,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 229,
-          "n_papers": 69,
-          "n_papers_all": 95
+          "n_claims": 231,
+          "n_papers": 71,
+          "n_papers_all": 97
         },
         {
-          "agreement": 0.719,
+          "agreement": 0.697,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -71939,6 +73033,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 30.8,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": 0.1,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Supp. Table 8",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Galileo-nano (10%)",
+              "value": 18.4
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 59.7,
               "dataset": "Landslide4Sense",
               "direction": "better",
@@ -72436,12 +73546,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 68,
-          "n_papers": 32,
-          "n_papers_all": 42
+          "n_claims": 69,
+          "n_papers": 33,
+          "n_papers_all": 43
         },
         {
-          "agreement": 0.61,
+          "agreement": 0.595,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -73099,6 +74209,22 @@
               "self_evaluation": false,
               "span": "Ecoregions†",
               "value": 32.03
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Section 4.2",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
+              "value": 20.6
             },
             {
               "baseline": "task_specific",
@@ -74079,9 +75205,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 102,
-          "n_papers": 41,
-          "n_papers_all": 58
+          "n_claims": 103,
+          "n_papers": 42,
+          "n_papers_all": 59
         },
         {
           "agreement": 1.0,
@@ -74801,13 +75927,29 @@
               "self_evaluation": false,
               "span": "ViT-L + RVSA\n\n305\n\n32\n\n6.3",
               "value": 6.3
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "SYSU-CD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.07982",
+              "locator": "Abstract",
+              "metric": "f1",
+              "model": "dofa",
+              "paper_key": "zhang2026adadino",
+              "paper_title": "AdaDINO: Pair-Aware In-Backbone Adaptation of Frozen DINO for Efficient Remote Sensing Change Detection",
+              "self_evaluation": false,
+              "span": "AdaDINO still achieves an F1 score of 85.29% on SYSU-CD while delivering a 1.41",
+              "value": 85.29
             }
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 26,
+          "n_claims": 27,
           "n_papers": 7,
-          "n_papers_all": 18
+          "n_papers_all": 19
         },
         {
           "agreement": 0.714,
@@ -80798,6 +81940,65 @@
           }
         },
         {
+          "benchmark": "sickle",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.65442,
+              "dataset": "SICKLE",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2507.04366",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "gupta2025time2agri",
+              "paper_title": "Time2Agri: Temporal Pretext Tasks for Agricultural Monitoring",
+              "self_evaluation": false,
+              "span": "0.58363",
+              "value": 0.58363
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.67,
+              "dataset": "SICKLE",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.11142",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "gupta2026sar2agri",
+              "paper_title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+              "self_evaluation": false,
+              "span": "DoFA S1 61.215",
+              "value": 61.215
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "dofa"
+          ],
+          "n_claims": 2,
+          "n_papers": 2,
+          "n_vs_task_specific": 2,
+          "name": "SICKLE",
+          "tasks": [
+            "crop_type_mapping"
+          ],
+          "variants": [
+            "SICKLE"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_papers": 2
+          }
+        },
+        {
           "benchmark": "ucm",
           "claims": [
             {
@@ -84046,6 +85247,81 @@
             "NSP presence-absence (Random split)",
             "NSP presence-absence (SH-10km split)",
             "NSP presence-absence (SH-1km split)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "swisscrop25",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 48.1,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Table 3",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Fine-tuned Galileo-nano (30.4% mIoU) falls behind the other models",
+              "value": 30.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 30.8,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": 0.1,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Supp. Table 8",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Galileo-nano (10%)",
+              "value": 18.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Section 4.2",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
+              "value": 20.6
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "galileo"
+          ],
+          "n_claims": 3,
+          "n_papers": 1,
+          "n_vs_task_specific": 3,
+          "name": "SwissCrop25",
+          "tasks": [
+            "crop_type_mapping"
+          ],
+          "variants": [
+            "SwissCrop25"
           ],
           "verdict": {
             "agreement": 1.0,
@@ -92073,49 +93349,6 @@
           }
         },
         {
-          "benchmark": "sickle",
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.65442,
-              "dataset": "SICKLE",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2507.04366",
-              "locator": "Table 1",
-              "metric": "miou",
-              "model": "dofa",
-              "paper_key": "gupta2025time2agri",
-              "paper_title": "Time2Agri: Temporal Pretext Tasks for Agricultural Monitoring",
-              "self_evaluation": false,
-              "span": "0.58363",
-              "value": 0.58363
-            }
-          ],
-          "metrics": [
-            "miou"
-          ],
-          "models": [
-            "dofa"
-          ],
-          "n_claims": 1,
-          "n_papers": 1,
-          "n_vs_task_specific": 1,
-          "name": "SICKLE",
-          "tasks": [
-            "crop_type_mapping"
-          ],
-          "variants": [
-            "SICKLE"
-          ],
-          "verdict": {
-            "agreement": 1.0,
-            "direction": "worse",
-            "label": "thin",
-            "n_papers": 1
-          }
-        },
-        {
           "benchmark": "so2sat",
           "claims": [
             {
@@ -92322,6 +93555,49 @@
           ],
           "variants": [
             "Street View"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "sysu cd",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "SYSU-CD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.07982",
+              "locator": "Abstract",
+              "metric": "f1",
+              "model": "dofa",
+              "paper_key": "zhang2026adadino",
+              "paper_title": "AdaDINO: Pair-Aware In-Backbone Adaptation of Frozen DINO for Efficient Remote Sensing Change Detection",
+              "self_evaluation": false,
+              "span": "AdaDINO still achieves an F1 score of 85.29% on SYSU-CD while delivering a 1.41",
+              "value": 85.29
+            }
+          ],
+          "metrics": [
+            "f1"
+          ],
+          "models": [
+            "dofa"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "SYSU-CD",
+          "tasks": [
+            "change_detection"
+          ],
+          "variants": [
+            "SYSU-CD"
           ],
           "verdict": {
             "agreement": null,
@@ -94565,15 +95841,15 @@
         "directions": {
           "better": 209,
           "parity": 14,
-          "worse": 114
+          "worse": 118
         },
-        "label_ratio_unspecified": 506,
-        "n_claims": 560,
+        "label_ratio_unspecified": 510,
+        "n_claims": 565,
         "n_self_eval_claims": 0,
-        "n_vs_model_or_none": 223,
-        "n_vs_task_specific": 337,
-        "pct_better": 62.0,
-        "pct_label_ratio_unspecified": 90.4
+        "n_vs_model_or_none": 224,
+        "n_vs_task_specific": 341,
+        "pct_better": 61.3,
+        "pct_label_ratio_unspecified": 90.3
       },
       "groups": [
         {
@@ -96245,6 +97521,36 @@
           "label_regime": "unspecified",
           "metric": "f1",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "change_detection"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "SYSU-CD",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.07982",
+              "locator": "Abstract",
+              "metric": "f1",
+              "model": "dofa",
+              "paper_key": "zhang2026adadino",
+              "paper_title": "AdaDINO: Pair-Aware In-Backbone Adaptation of Frozen DINO for Efficient Remote Sensing Change Detection",
+              "self_evaluation": false,
+              "span": "AdaDINO still achieves an F1 score of 85.29% on SYSU-CD while delivering a 1.41",
+              "value": 85.29
+            }
+          ],
+          "dataset": "SYSU-CD",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "dofa",
           "n_papers": 1,
           "task": "change_detection"
         },
@@ -97983,6 +99289,22 @@
               "self_evaluation": false,
               "span": "0.58363",
               "value": 0.58363
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.67,
+              "dataset": "SICKLE",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.11142",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "gupta2026sar2agri",
+              "paper_title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+              "self_evaluation": false,
+              "span": "DoFA S1 61.215",
+              "value": 61.215
             }
           ],
           "dataset": "SICKLE",
@@ -97991,7 +99313,7 @@
           "label_regime": "unspecified",
           "metric": "miou",
           "model": "dofa",
-          "n_papers": 1,
+          "n_papers": 2,
           "task": "crop_type_mapping"
         },
         {
@@ -98021,6 +99343,82 @@
           "label_regime": "unspecified",
           "metric": "f1",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 48.1,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Table 3",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Fine-tuned Galileo-nano (30.4% mIoU) falls behind the other models",
+              "value": 30.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Section 4.2",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
+              "value": 20.6
+            }
+          ],
+          "dataset": "SwissCrop25",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "galileo",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 30.8,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": 0.1,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Supp. Table 8",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Galileo-nano (10%)",
+              "value": 18.4
+            }
+          ],
+          "dataset": "SwissCrop25",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "label_partial",
+          "metric": "miou",
+          "model": "galileo",
           "n_papers": 1,
           "task": "crop_type_mapping"
         },
@@ -113066,6 +114464,22 @@
               },
               {
                 "baseline": null,
+                "baseline_value": null,
+                "dataset": "SYSU-CD",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.07982",
+                "locator": "Abstract",
+                "metric": "f1",
+                "model": "dofa",
+                "paper_key": "zhang2026adadino",
+                "paper_title": "AdaDINO: Pair-Aware In-Backbone Adaptation of Frozen DINO for Efficient Remote Sensing Change Detection",
+                "self_evaluation": false,
+                "span": "AdaDINO still achieves an F1 score of 85.29% on SYSU-CD while delivering a 1.41",
+                "value": 85.29
+              },
+              {
+                "baseline": null,
                 "baseline_value": 55.81,
                 "dataset": "OSCD",
                 "direction": "better",
@@ -113084,13 +114498,13 @@
             "direction": "worse",
             "label": "contested",
             "model": "dofa",
-            "n_claims": 5,
+            "n_claims": 6,
             "n_papers": 3,
-            "n_papers_all": 4,
+            "n_papers_all": 5,
             "task": "change_detection"
           },
           "dofa\tcrop_type_mapping": {
-            "agreement": 0.75,
+            "agreement": 0.8,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -113157,6 +114571,22 @@
                 "value": 0.58363
               },
               {
+                "baseline": "task_specific",
+                "baseline_value": 82.67,
+                "dataset": "SICKLE",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.11142",
+                "locator": "Table 1",
+                "metric": "miou",
+                "model": "dofa",
+                "paper_key": "gupta2026sar2agri",
+                "paper_title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+                "self_evaluation": false,
+                "span": "DoFA S1 61.215",
+                "value": 61.215
+              },
+              {
                 "baseline": null,
                 "baseline_value": null,
                 "dataset": "GB-SA-crop-type",
@@ -113174,11 +114604,11 @@
               }
             ],
             "direction": "worse",
-            "label": "contested",
+            "label": "consensus",
             "model": "dofa",
-            "n_claims": 5,
-            "n_papers": 4,
-            "n_papers_all": 5,
+            "n_claims": 6,
+            "n_papers": 5,
+            "n_papers_all": 6,
             "task": "crop_type_mapping"
           },
           "dofa\tflood_mapping": {
@@ -114126,7 +115556,7 @@
             "task": "semantic_segmentation"
           },
           "galileo\tcrop_type_mapping": {
-            "agreement": 1.0,
+            "agreement": 0.5,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -114143,14 +115573,62 @@
                 "self_evaluation": false,
                 "span": "Germany-Cambodia",
                 "value": 17.21
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 48.1,
+                "dataset": "SwissCrop25",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.09497",
+                "locator": "Table 3",
+                "metric": "miou",
+                "model": "galileo",
+                "paper_key": "lauber2026swisscrop25",
+                "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+                "self_evaluation": false,
+                "span": "Fine-tuned Galileo-nano (30.4% mIoU) falls behind the other models",
+                "value": 30.4
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 30.8,
+                "dataset": "SwissCrop25",
+                "direction": "worse",
+                "label_ratio": 0.1,
+                "link": "https://arxiv.org/abs/2608.09497",
+                "locator": "Supp. Table 8",
+                "metric": "miou",
+                "model": "galileo",
+                "paper_key": "lauber2026swisscrop25",
+                "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+                "self_evaluation": false,
+                "span": "Galileo-nano (10%)",
+                "value": 18.4
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "SwissCrop25",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.09497",
+                "locator": "Section 4.2",
+                "metric": "miou",
+                "model": "galileo",
+                "paper_key": "lauber2026swisscrop25",
+                "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+                "self_evaluation": false,
+                "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
+                "value": 20.6
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "galileo",
-            "n_claims": 1,
-            "n_papers": 1,
-            "n_papers_all": 1,
+            "n_claims": 4,
+            "n_papers": 2,
+            "n_papers_all": 2,
             "task": "crop_type_mapping"
           },
           "galileo\tsemantic_segmentation": {
@@ -121392,7 +122870,7 @@
           "task": "land_cover_classification"
         },
         {
-          "agreement": 0.571,
+          "agreement": 0.522,
           "claims": [
             {
               "baseline": "task_specific",
@@ -121588,6 +123066,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 82.67,
+              "dataset": "SICKLE",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.11142",
+              "locator": "Table 1",
+              "metric": "miou",
+              "model": "dofa",
+              "paper_key": "gupta2026sar2agri",
+              "paper_title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+              "self_evaluation": false,
+              "span": "DoFA S1 61.215",
+              "value": 61.215
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.561,
               "dataset": "EuroCrops",
               "direction": "better",
@@ -121617,6 +123111,54 @@
               "self_evaluation": false,
               "span": "MViTv2-Optimal N/A 0.708",
               "value": 0.657
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 48.1,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Table 3",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Fine-tuned Galileo-nano (30.4% mIoU) falls behind the other models",
+              "value": 30.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 30.8,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": 0.1,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Supp. Table 8",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "Galileo-nano (10%)",
+              "value": 18.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "SwissCrop25",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.09497",
+              "locator": "Section 4.2",
+              "metric": "miou",
+              "model": "galileo",
+              "paper_key": "lauber2026swisscrop25",
+              "paper_title": "SwissCrop25: A National Multi-Year Benchmark for Operational Crop Mapping",
+              "self_evaluation": false,
+              "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
+              "value": 20.6
             },
             {
               "baseline": "task_specific",
@@ -122057,6 +123599,7 @@
             "PASTIS-R",
             "SACrop",
             "SICKLE",
+            "SwissCrop25",
             "TalloS",
             "USDA Crop Data Layer (CDL) multi-temporal crop segmentation",
             "WorldCereal (Eastern Africa)",
@@ -122091,20 +123634,20 @@
               "n_papers": 3
             },
             {
-              "agreement": 0.75,
+              "agreement": 0.8,
               "direction": "worse",
-              "label": "contested",
+              "label": "consensus",
               "model": "dofa",
-              "n_claims": 4,
-              "n_papers": 4
+              "n_claims": 5,
+              "n_papers": 5
             },
             {
-              "agreement": 1.0,
+              "agreement": 0.5,
               "direction": "better",
               "label": "thin",
               "model": "galileo",
-              "n_claims": 1,
-              "n_papers": 1
+              "n_claims": 4,
+              "n_papers": 2
             },
             {
               "agreement": 0.667,
@@ -122132,9 +123675,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 40,
+          "n_claims": 44,
           "n_models": 7,
-          "n_papers": 21,
+          "n_papers": 23,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.667,

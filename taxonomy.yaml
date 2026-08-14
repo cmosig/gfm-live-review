@@ -166,6 +166,7 @@ promoted_tags:
 - sentinel1_sentinel2_fusion
 - spatial_autocorrelation
 - taxonomy
+- temporal_pretext_tasks
 - terramind
 - tree_species_classification
 - urban_morphology
