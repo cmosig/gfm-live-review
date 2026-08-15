@@ -15,6 +15,10 @@
     "key": "cozza2025denser",
     "status": "off_topic"
   },
+  "a distributional robustness margin for pathology foundation models": {
+    "key": "grisi2026distributional",
+    "status": "off_topic"
+  },
   "a fourier domain jerk search for binary pulsars": {
     "key": "-",
     "status": "quarantined_mismatch"
@@ -1617,6 +1621,12 @@
     "arxiv_id": "2412.02732",
     "dropped_claims": 0,
     "key": "szwarcman2024prithvi",
+    "status": "carded"
+  },
+  "prithvi precip integrating satellite observations into an atmospheric ai foundation model for precipitation forecasting": {
+    "arxiv_id": "2608.03959",
+    "dropped_claims": 0,
+    "key": "pfreundschuh2026prithvi",
     "status": "carded"
   },
   "prithvi wxc foundation model for weather and climate": {

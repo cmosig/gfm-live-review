@@ -39,7 +39,7 @@
         "2026-05": 16,
         "2026-06": 12,
         "2026-07": 9,
-        "2026-08": 9
+        "2026-08": 10
       },
       "compute_cost": {
         "2022-07": 1,
@@ -77,7 +77,7 @@
         "2026-05": 6,
         "2026-06": 4,
         "2026-07": 3,
-        "2026-08": 7
+        "2026-08": 8
       },
       "data_bias": {
         "2022-07": 1,
@@ -110,7 +110,7 @@
         "2026-05": 7,
         "2026-06": 9,
         "2026-07": 4,
-        "2026-08": 5
+        "2026-08": 6
       },
       "human_semantics": {
         "2024-04": 1,
@@ -224,7 +224,7 @@
         "2026-05": 3,
         "2026-06": 3,
         "2026-07": 2,
-        "2026-08": 4
+        "2026-08": 5
       },
       "time_sensitivity": {
         "2024-03": 1,
@@ -262,14 +262,14 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 168,
-      "compute_cost": 95,
-      "data_bias": 87,
+      "benchmark_narrowness": 169,
+      "compute_cost": 96,
+      "data_bias": 88,
       "human_semantics": 18,
       "interpretability": 38,
       "mixed_pixels": 37,
       "spatial_transfer": 94,
-      "temporal_transfer": 40,
+      "temporal_transfer": 41,
       "time_sensitivity": 31,
       "uncertainty": 28
     }
@@ -307,7 +307,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 191,
+    "n_papers": 192,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -331,9 +331,9 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 191
+      "verified": 192
     },
-    "n_papers": 191,
+    "n_papers": 192,
     "papers": [
       {
         "arxiv_id": "2608.12271",
@@ -393,6 +393,18 @@
         "n_claims": 10,
         "self_evaluation": false,
         "title": "Above-ground Biomass Estimation with Geospatial Foundation Models",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2608.03959",
+        "date": "2026-08-04",
+        "doi": "10.48550/arxiv.2608.03959",
+        "doi_status": "verified",
+        "key": "pfreundschuh2026prithvi",
+        "link": "https://arxiv.org/abs/2608.03959",
+        "n_claims": 0,
+        "self_evaluation": false,
+        "title": "Prithvi-Precip: Integrating Satellite Observations into an Atmospheric AI Foundation Model for Precipitation Forecasting",
         "venue": "arXiv"
       },
       {

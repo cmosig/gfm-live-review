@@ -644,6 +644,9 @@
   "atlantic_forest": [
     "heiman2026characterizing"
   ],
+  "atmospheric_foundation_model": [
+    "pfreundschuh2026prithvi"
+  ],
   "atmospheric_science": [
     "gupta2025finetuning"
   ],
@@ -1787,6 +1790,9 @@
   "median_income_prediction": [
     "klemmer2023satclip"
   ],
+  "medium_range_forecasting": [
+    "pfreundschuh2026prithvi"
+  ],
   "melt": [
     "hecht2026multi"
   ],
@@ -1970,6 +1976,9 @@
   "nowcasting": [
     "zheng2026satellite"
   ],
+  "numerical_weather_prediction": [
+    "pfreundschuh2026prithvi"
+  ],
   "object counting": [
     "zhang2026fusar"
   ],
@@ -2131,6 +2140,9 @@
   ],
   "pre_computed_embedding_products": [
     "sialellia2026above"
+  ],
+  "precipitation_forecasting": [
+    "pfreundschuh2026prithvi"
   ],
   "prediction_in_ungauged_basins": [
     "qu2026utilizing"
@@ -2344,6 +2356,9 @@
   ],
   "sar_orbit_geometry": [
     "kontogiorgakis2026comparative"
+  ],
+  "satellite_observation_assimilation": [
+    "pfreundschuh2026prithvi"
   ],
   "satlas": [
     "hackel2025csmoe"
