@@ -174,4 +174,5 @@ promoted_tags:
 - vision_transformer
 - wildfire_detection
 - wildfire_scar_mapping
+- wildfire_susceptibility_mapping
 - zero_shot_classification

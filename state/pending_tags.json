@@ -77,6 +77,9 @@
   "CNN2D": [
     "cheng2026from"
   ],
+  "CNN_neighbourhood_patch": [
+    "zhuang2026evaluating"
+  ],
   "CNN_transfer_learning": [
     "tadesse2026satellite"
   ],
@@ -508,6 +511,9 @@
   ],
   "THOR": [
     "schindlegger2026now"
+  ],
+  "TabPFN_tabular_foundation_model": [
+    "zhuang2026evaluating"
   ],
   "TalloS": [
     "bountos2023fomo"
@@ -2237,6 +2243,9 @@
   "recall_vs_area_metric": [
     "bianco2024enhancing"
   ],
+  "reconstruction_of_physical_variables": [
+    "zhuang2026evaluating"
+  ],
   "red_edge_reconstruction": [
     "li2026hls"
   ],
@@ -2473,6 +2482,9 @@
   ],
   "sentinel_missions": [
     "wang2025towards"
+  ],
+  "sequence_informed_modelling": [
+    "zhuang2026evaluating"
   ],
   "ship_detection": [
     "wang2025complex"
@@ -2887,9 +2899,6 @@
   ],
   "wildfire_mapping": [
     "shibli2026low"
-  ],
-  "wildfire_susceptibility_mapping": [
-    "pomarico2026tensor"
   ],
   "wind_speed_downscaling": [
     "sousa2026earth"

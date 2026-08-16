@@ -142,7 +142,7 @@
         "2026-05": 16,
         "2026-06": 12,
         "2026-07": 9,
-        "2026-08": 10
+        "2026-08": 11
       },
       "compute_cost": {
         "2022-07": 1,
@@ -250,7 +250,7 @@
         "2026-05": 3,
         "2026-06": 6,
         "2026-07": 4,
-        "2026-08": 3
+        "2026-08": 4
       },
       "mixed_pixels": {
         "2024-01": 1,
@@ -305,7 +305,7 @@
         "2026-05": 10,
         "2026-06": 8,
         "2026-07": 4,
-        "2026-08": 4
+        "2026-08": 5
       },
       "temporal_transfer": {
         "2022-07": 1,
@@ -327,7 +327,7 @@
         "2026-05": 3,
         "2026-06": 3,
         "2026-07": 2,
-        "2026-08": 5
+        "2026-08": 6
       },
       "time_sensitivity": {
         "2024-03": 1,
@@ -348,7 +348,7 @@
         "2026-05": 4,
         "2026-06": 1,
         "2026-07": 2,
-        "2026-08": 2
+        "2026-08": 3
       },
       "uncertainty": {
         "2024-06": 1,
@@ -365,15 +365,15 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 169,
+      "benchmark_narrowness": 170,
       "compute_cost": 96,
       "data_bias": 88,
       "human_semantics": 18,
-      "interpretability": 38,
+      "interpretability": 39,
       "mixed_pixels": 37,
-      "spatial_transfer": 94,
-      "temporal_transfer": 41,
-      "time_sensitivity": 31,
+      "spatial_transfer": 95,
+      "temporal_transfer": 42,
+      "time_sensitivity": 32,
       "uncertainty": 28
     }
   },
@@ -410,7 +410,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 192,
+    "n_papers": 193,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -434,9 +434,9 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 192
+      "verified": 193
     },
-    "n_papers": 192,
+    "n_papers": 193,
     "papers": [
       {
         "arxiv_id": "2608.12271",
@@ -448,6 +448,18 @@
         "n_claims": 5,
         "self_evaluation": true,
         "title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2608.12663",
+        "date": "2026-08-12",
+        "doi": "10.48550/arxiv.2608.12663",
+        "doi_status": "verified",
+        "key": "zhuang2026evaluating",
+        "link": "https://arxiv.org/abs/2608.12663",
+        "n_claims": 1,
+        "self_evaluation": false,
+        "title": "Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping",
         "venue": "arXiv"
       },
       {
@@ -8275,7 +8287,7 @@
           "n_papers_all": 50
         },
         {
-          "agreement": 0.63,
+          "agreement": 0.638,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -10069,13 +10081,29 @@
               "self_evaluation": false,
               "span": "achieves strong predictive accuracy (R2=0.63,r2=0.68R^{2}=0.63,r^{2}=0.68)",
               "value": 0.63
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.0,
+              "dataset": "Canberra–Namadgi transfer site",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12663",
+              "locator": "Abstract",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "zhuang2026evaluating",
+              "paper_title": "Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping",
+              "self_evaluation": false,
+              "span": "ROC-AUC improves by around 4% at Canberra and declines by around 2% at Western Sydney–Blue Mountains",
+              "value": 0.0
             }
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 112,
-          "n_papers": 46,
-          "n_papers_all": 65
+          "n_claims": 113,
+          "n_papers": 47,
+          "n_papers_all": 66
         },
         {
           "agreement": 1.0,
@@ -25415,6 +25443,49 @@
           }
         },
         {
+          "benchmark": "canberra namadgi transfer site",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.0,
+              "dataset": "Canberra–Namadgi transfer site",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12663",
+              "locator": "Abstract",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "zhuang2026evaluating",
+              "paper_title": "Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping",
+              "self_evaluation": false,
+              "span": "ROC-AUC improves by around 4% at Canberra and declines by around 2% at Western Sydney–Blue Mountains",
+              "value": 0.0
+            }
+          ],
+          "metrics": [
+            "auc"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "Canberra–Namadgi transfer site",
+          "tasks": [
+            "landslide_susceptibility"
+          ],
+          "variants": [
+            "Canberra–Namadgi transfer site"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "cavm",
           "claims": [
             {
@@ -33614,16 +33685,16 @@
       ],
       "evidence": {
         "directions": {
-          "better": 253,
+          "better": 254,
           "parity": 14,
           "worse": 124
         },
-        "label_ratio_unspecified": 571,
-        "n_claims": 649,
+        "label_ratio_unspecified": 572,
+        "n_claims": 650,
         "n_self_eval_claims": 84,
         "n_vs_model_or_none": 258,
-        "n_vs_task_specific": 391,
-        "pct_better": 64.7,
+        "n_vs_task_specific": 392,
+        "pct_better": 64.8,
         "pct_label_ratio_unspecified": 88.0
       },
       "groups": [
@@ -44035,6 +44106,36 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 0.0,
+              "dataset": "Canberra–Namadgi transfer site",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12663",
+              "locator": "Abstract",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "zhuang2026evaluating",
+              "paper_title": "Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping",
+              "self_evaluation": false,
+              "span": "ROC-AUC improves by around 4% at Canberra and declines by around 2% at Western Sydney–Blue Mountains",
+              "value": 0.0
+            }
+          ],
+          "dataset": "Canberra–Namadgi transfer site",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "auc",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "landslide_susceptibility"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 53.09,
               "dataset": "GVLM-S2",
               "direction": "better",
@@ -53119,7 +53220,7 @@
             "task": "land_cover_classification"
           },
           "alphaearth\tlandslide_susceptibility": {
-            "agreement": 0.5,
+            "agreement": 0.667,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -53184,14 +53285,30 @@
                 "self_evaluation": false,
                 "span": "the Random Forest model achieving an overall accuracy above 95%95\\%",
                 "value": 53.01
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.0,
+                "dataset": "Canberra–Namadgi transfer site",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.12663",
+                "locator": "Abstract",
+                "metric": "auc",
+                "model": "alphaearth",
+                "paper_key": "zhuang2026evaluating",
+                "paper_title": "Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping",
+                "self_evaluation": false,
+                "span": "ROC-AUC improves by around 4% at Canberra and declines by around 2% at Western Sydney–Blue Mountains",
+                "value": 0.0
               }
             ],
             "direction": "better",
-            "label": "thin",
+            "label": "contested",
             "model": "alphaearth",
-            "n_claims": 4,
-            "n_papers": 2,
-            "n_papers_all": 2,
+            "n_claims": 5,
+            "n_papers": 3,
+            "n_papers_all": 3,
             "task": "landslide_susceptibility"
           },
           "alphaearth\tlocal_climate_zone_classification": {
@@ -67542,7 +67659,7 @@
           "task": "biomass_estimation"
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.714,
           "claims": [
             {
               "baseline": "task_specific",
@@ -67783,9 +67900,26 @@
               "self_evaluation": false,
               "span": "It achieved an accuracy, F1-score, and ROC-AUC score of 75.76%, 67.34%, and 63.61%",
               "value": 87.69
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.0,
+              "dataset": "Canberra–Namadgi transfer site",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12663",
+              "locator": "Abstract",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "zhuang2026evaluating",
+              "paper_title": "Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping",
+              "self_evaluation": false,
+              "span": "ROC-AUC improves by around 4% at Canberra and declines by around 2% at Western Sydney–Blue Mountains",
+              "value": 0.0
             }
           ],
           "datasets": [
+            "Canberra–Namadgi transfer site",
             "GVLM-S2",
             "Gargano wildfire susceptibility map",
             "Landslide Reference",
@@ -67801,12 +67935,12 @@
           "label": "contested",
           "models": [
             {
-              "agreement": 0.5,
+              "agreement": 0.667,
               "direction": "better",
-              "label": "thin",
+              "label": "contested",
               "model": "alphaearth",
-              "n_claims": 2,
-              "n_papers": 2
+              "n_claims": 3,
+              "n_papers": 3
             },
             {
               "agreement": 1.0,
@@ -67826,9 +67960,9 @@
             }
           ],
           "models_differ": false,
-          "n_claims": 15,
+          "n_claims": 16,
           "n_models": 3,
-          "n_papers": 6,
+          "n_papers": 7,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 1.0,
@@ -73666,7 +73800,7 @@
           "n_papers_all": 43
         },
         {
-          "agreement": 0.595,
+          "agreement": 0.605,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -75316,13 +75450,29 @@
               "self_evaluation": false,
               "span": "achieves strong predictive accuracy (R2=0.63,r2=0.68R^{2}=0.63,r^{2}=0.68)",
               "value": 0.63
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.0,
+              "dataset": "Canberra–Namadgi transfer site",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12663",
+              "locator": "Abstract",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "zhuang2026evaluating",
+              "paper_title": "Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping",
+              "self_evaluation": false,
+              "span": "ROC-AUC improves by around 4% at Canberra and declines by around 2% at Western Sydney–Blue Mountains",
+              "value": 0.0
             }
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 103,
-          "n_papers": 42,
-          "n_papers_all": 59
+          "n_claims": 104,
+          "n_papers": 43,
+          "n_papers_all": 60
         },
         {
           "agreement": 1.0,
@@ -88734,6 +88884,49 @@
           }
         },
         {
+          "benchmark": "canberra namadgi transfer site",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.0,
+              "dataset": "Canberra–Namadgi transfer site",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12663",
+              "locator": "Abstract",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "zhuang2026evaluating",
+              "paper_title": "Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping",
+              "self_evaluation": false,
+              "span": "ROC-AUC improves by around 4% at Canberra and declines by around 2% at Western Sydney–Blue Mountains",
+              "value": 0.0
+            }
+          ],
+          "metrics": [
+            "auc"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "Canberra–Namadgi transfer site",
+          "tasks": [
+            "landslide_susceptibility"
+          ],
+          "variants": [
+            "Canberra–Namadgi transfer site"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "cavm",
           "claims": [
             {
@@ -95954,16 +96147,16 @@
       ],
       "evidence": {
         "directions": {
-          "better": 209,
+          "better": 210,
           "parity": 14,
           "worse": 118
         },
-        "label_ratio_unspecified": 510,
-        "n_claims": 565,
+        "label_ratio_unspecified": 511,
+        "n_claims": 566,
         "n_self_eval_claims": 0,
         "n_vs_model_or_none": 224,
-        "n_vs_task_specific": 341,
-        "pct_better": 61.3,
+        "n_vs_task_specific": 342,
+        "pct_better": 61.4,
         "pct_label_ratio_unspecified": 90.3
       },
       "groups": [
@@ -104751,6 +104944,36 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 0.0,
+              "dataset": "Canberra–Namadgi transfer site",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12663",
+              "locator": "Abstract",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "zhuang2026evaluating",
+              "paper_title": "Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping",
+              "self_evaluation": false,
+              "span": "ROC-AUC improves by around 4% at Canberra and declines by around 2% at Western Sydney–Blue Mountains",
+              "value": 0.0
+            }
+          ],
+          "dataset": "Canberra–Namadgi transfer site",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "auc",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "landslide_susceptibility"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 53.09,
               "dataset": "GVLM-S2",
               "direction": "better",
@@ -112935,7 +113158,7 @@
             "task": "land_cover_classification"
           },
           "alphaearth\tlandslide_susceptibility": {
-            "agreement": 0.5,
+            "agreement": 0.667,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -113000,14 +113223,30 @@
                 "self_evaluation": false,
                 "span": "the Random Forest model achieving an overall accuracy above 95%95\\%",
                 "value": 53.01
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.0,
+                "dataset": "Canberra–Namadgi transfer site",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.12663",
+                "locator": "Abstract",
+                "metric": "auc",
+                "model": "alphaearth",
+                "paper_key": "zhuang2026evaluating",
+                "paper_title": "Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping",
+                "self_evaluation": false,
+                "span": "ROC-AUC improves by around 4% at Canberra and declines by around 2% at Western Sydney–Blue Mountains",
+                "value": 0.0
               }
             ],
             "direction": "better",
-            "label": "thin",
+            "label": "contested",
             "model": "alphaearth",
-            "n_claims": 4,
-            "n_papers": 2,
-            "n_papers_all": 2,
+            "n_claims": 5,
+            "n_papers": 3,
+            "n_papers_all": 3,
             "task": "landslide_susceptibility"
           },
           "alphaearth\tpopulation_density": {
@@ -125497,7 +125736,7 @@
           "task": "biomass_estimation"
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.714,
           "claims": [
             {
               "baseline": "task_specific",
@@ -125738,9 +125977,26 @@
               "self_evaluation": false,
               "span": "It achieved an accuracy, F1-score, and ROC-AUC score of 75.76%, 67.34%, and 63.61%",
               "value": 87.69
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.0,
+              "dataset": "Canberra–Namadgi transfer site",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.12663",
+              "locator": "Abstract",
+              "metric": "auc",
+              "model": "alphaearth",
+              "paper_key": "zhuang2026evaluating",
+              "paper_title": "Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping",
+              "self_evaluation": false,
+              "span": "ROC-AUC improves by around 4% at Canberra and declines by around 2% at Western Sydney–Blue Mountains",
+              "value": 0.0
             }
           ],
           "datasets": [
+            "Canberra–Namadgi transfer site",
             "GVLM-S2",
             "Gargano wildfire susceptibility map",
             "Landslide Reference",
@@ -125756,12 +126012,12 @@
           "label": "contested",
           "models": [
             {
-              "agreement": 0.5,
+              "agreement": 0.667,
               "direction": "better",
-              "label": "thin",
+              "label": "contested",
               "model": "alphaearth",
-              "n_claims": 2,
-              "n_papers": 2
+              "n_claims": 3,
+              "n_papers": 3
             },
             {
               "agreement": 1.0,
@@ -125781,9 +126037,9 @@
             }
           ],
           "models_differ": false,
-          "n_claims": 15,
+          "n_claims": 16,
           "n_models": 3,
-          "n_papers": 6,
+          "n_papers": 7,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 1.0,
