@@ -1,5 +1,5 @@
 {
-  "corpus_through": "2026-08-12",
+  "corpus_through": "2026-08-17",
   "limitations": {
     "series": {
       "benchmark_narrowness": {
@@ -39,7 +39,7 @@
         "2026-05": 16,
         "2026-06": 12,
         "2026-07": 9,
-        "2026-08": 11
+        "2026-08": 13
       },
       "compute_cost": {
         "2022-07": 1,
@@ -77,7 +77,7 @@
         "2026-05": 6,
         "2026-06": 4,
         "2026-07": 3,
-        "2026-08": 8
+        "2026-08": 9
       },
       "data_bias": {
         "2022-07": 1,
@@ -110,7 +110,7 @@
         "2026-05": 7,
         "2026-06": 9,
         "2026-07": 4,
-        "2026-08": 6
+        "2026-08": 7
       },
       "human_semantics": {
         "2024-04": 1,
@@ -127,7 +127,7 @@
         "2026-05": 1,
         "2026-06": 2,
         "2026-07": 1,
-        "2026-08": 1
+        "2026-08": 2
       },
       "interpretability": {
         "2023-09": 1,
@@ -147,7 +147,7 @@
         "2026-05": 3,
         "2026-06": 6,
         "2026-07": 4,
-        "2026-08": 4
+        "2026-08": 5
       },
       "mixed_pixels": {
         "2024-01": 1,
@@ -168,7 +168,7 @@
         "2026-05": 4,
         "2026-06": 5,
         "2026-07": 3,
-        "2026-08": 4
+        "2026-08": 5
       },
       "spatial_transfer": {
         "2022-12": 1,
@@ -202,7 +202,7 @@
         "2026-05": 10,
         "2026-06": 8,
         "2026-07": 4,
-        "2026-08": 5
+        "2026-08": 7
       },
       "temporal_transfer": {
         "2022-07": 1,
@@ -224,7 +224,7 @@
         "2026-05": 3,
         "2026-06": 3,
         "2026-07": 2,
-        "2026-08": 6
+        "2026-08": 8
       },
       "time_sensitivity": {
         "2024-03": 1,
@@ -258,20 +258,20 @@
         "2026-05": 3,
         "2026-06": 6,
         "2026-07": 3,
-        "2026-08": 2
+        "2026-08": 4
       }
     },
     "totals": {
-      "benchmark_narrowness": 170,
-      "compute_cost": 96,
-      "data_bias": 88,
-      "human_semantics": 18,
-      "interpretability": 39,
-      "mixed_pixels": 37,
-      "spatial_transfer": 95,
-      "temporal_transfer": 42,
+      "benchmark_narrowness": 172,
+      "compute_cost": 97,
+      "data_bias": 89,
+      "human_semantics": 19,
+      "interpretability": 40,
+      "mixed_pixels": 38,
+      "spatial_transfer": 97,
+      "temporal_transfer": 44,
       "time_sensitivity": 32,
-      "uncertainty": 28
+      "uncertainty": 30
     }
   },
   "meta": {
@@ -307,7 +307,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 193,
+    "n_papers": 195,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -331,10 +331,34 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 193
+      "verified": 195
     },
-    "n_papers": 193,
+    "n_papers": 195,
     "papers": [
+      {
+        "arxiv_id": "2608.16614",
+        "date": "2026-08-17",
+        "doi": "10.48550/arxiv.2608.16614",
+        "doi_status": "verified",
+        "key": "lehmann2026beyond",
+        "link": "https://arxiv.org/abs/2608.16614",
+        "n_claims": 4,
+        "self_evaluation": false,
+        "title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+        "venue": "arXiv"
+      },
+      {
+        "arxiv_id": "2608.15282",
+        "date": "2026-08-15",
+        "doi": "10.48550/arxiv.2608.15282",
+        "doi_status": "verified",
+        "key": "yu2026earth",
+        "link": "https://arxiv.org/abs/2608.15282",
+        "n_claims": 4,
+        "self_evaluation": false,
+        "title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+        "venue": "arXiv"
+      },
       {
         "arxiv_id": "2608.12271",
         "date": "2026-08-12",
@@ -2658,7 +2682,7 @@
     "all": {
       "axes": [
         {
-          "agreement": 0.597,
+          "agreement": 0.59,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -4676,6 +4700,22 @@
               "self_evaluation": false,
               "span": "Fine-tuned Galileo-nano (30.4% mIoU) falls behind the other models",
               "value": 30.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay V1.5 0.849 0.025",
+              "value": 0.849
             },
             {
               "baseline": "task_specific",
@@ -6936,9 +6976,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 267,
-          "n_papers": 77,
-          "n_papers_all": 107
+          "n_claims": 268,
+          "n_papers": 78,
+          "n_papers_all": 108
         },
         {
           "agreement": 0.694,
@@ -8161,6 +8201,22 @@
               "value": 0.6381
             },
             {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "OpenET",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "AlphaEarth also achieved R2=0.58±0.01R^{2}=0.58\\pm 0.01 for monthly OpenET labels",
+              "value": 0.58
+            },
+            {
               "baseline": "prithvi",
               "baseline_value": 0.36,
               "dataset": "Malawi 2016 survey",
@@ -8179,12 +8235,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 77,
+          "n_claims": 78,
           "n_papers": 36,
-          "n_papers_all": 50
+          "n_papers_all": 51
         },
         {
-          "agreement": 0.638,
+          "agreement": 0.625,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -8890,6 +8946,22 @@
               "self_evaluation": false,
               "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
               "value": 20.6
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Prithvi-v2-300 0.825 0.062",
+              "value": 0.825
             },
             {
               "baseline": "task_specific",
@@ -9933,6 +10005,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "SM (Sentinel-1/2/ERA5, pan-European)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-B2",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "found almost no incremental benefit from Prithvi features over handcrafted predictors under spatial cross-validation (R2=0.515R^{2}=0.515 versus 0.514)",
+              "value": 0.515
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.754,
               "dataset": "US counties (aggregated)",
               "direction": "worse",
@@ -9998,9 +10086,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 113,
-          "n_papers": 47,
-          "n_papers_all": 66
+          "n_claims": 115,
+          "n_papers": 48,
+          "n_papers_all": 68
         },
         {
           "agreement": 1.0,
@@ -10626,6 +10714,22 @@
               "value": 0.38
             },
             {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Sec III-C",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "clean ECE is\nindistinguishable (0.0230.023 vs. 0.0240.024; Table IV",
+              "value": 0.023
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 85.1,
               "dataset": "Sen1Floods11",
@@ -10916,9 +11020,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 29,
+          "n_claims": 30,
           "n_papers": 9,
-          "n_papers_all": 21
+          "n_papers_all": 22
         },
         {
           "agreement": 0.5,
@@ -11763,6 +11867,22 @@
               "value": 0.115
             },
             {
+              "baseline": "dofa",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon (cloud severity 3)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV / Sec IV-B",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay and TerraMind are the worst of the learned encoders",
+              "value": 0.5
+            },
+            {
               "baseline": null,
               "baseline_value": null,
               "dataset": "Landslide4Sense",
@@ -11845,12 +11965,12 @@
           ],
           "direction": "better",
           "label": "thin",
-          "n_claims": 7,
+          "n_claims": 8,
           "n_papers": 2,
-          "n_papers_all": 3
+          "n_papers_all": 4
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.684,
           "axis": "G9_ecological_fine_scale",
           "claims": [
             {
@@ -12460,13 +12580,45 @@
               "self_evaluation": true,
               "span": "RGB + CA + RE1 + RE2 + RE3 + NIR Broad + NIR Narrow + Water Vapor + Cirrus + SWIR1 + SWIR2",
               "value": 92.51
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "FLUXNET urban ET",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "reaching temporally held-out FLUXNET R2=0.92R^{2}=0.92 and RMSE=0.37=0.37 mm d-1",
+              "value": 0.92
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C4",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
+              "value": 0.81
             }
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 38,
-          "n_papers": 18,
-          "n_papers_all": 28
+          "n_claims": 40,
+          "n_papers": 19,
+          "n_papers_all": 29
         },
         {
           "agreement": 1.0,
@@ -17803,6 +17955,66 @@
           }
         },
         {
+          "benchmark": "openet",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "OpenET ensemble",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2507.22291",
+              "locator": "Sec 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "brown2025alphaearth",
+              "paper_title": "AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse label data",
+              "self_evaluation": true,
+              "span": "achieving R2=0.58±0.01R^{2}=0.58\\pm 0.01",
+              "value": 0.58
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "OpenET",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "AlphaEarth also achieved R2=0.58±0.01R^{2}=0.58\\pm 0.01 for monthly OpenET labels",
+              "value": 0.58
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 2,
+          "n_papers": 2,
+          "n_vs_task_specific": 0,
+          "name": "OpenET",
+          "tasks": [
+            "hydrological_modeling"
+          ],
+          "variants": [
+            "OpenET",
+            "OpenET ensemble"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
+          }
+        },
+        {
           "benchmark": "oscd",
           "claims": [
             {
@@ -19728,6 +19940,99 @@
           "verdict": {
             "agreement": 1.0,
             "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "four classification canon",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay V1.5 0.849 0.025",
+              "value": 0.849
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Prithvi-v2-300 0.825 0.062",
+              "value": 0.825
+            },
+            {
+              "baseline": "dofa",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon (cloud severity 3)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV / Sec IV-B",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay and TerraMind are the worst of the learned encoders",
+              "value": 0.5
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Sec III-C",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "clean ECE is\nindistinguishable (0.0230.023 vs. 0.0240.024; Table IV",
+              "value": 0.023
+            }
+          ],
+          "metrics": [
+            "accuracy"
+          ],
+          "models": [
+            "clay",
+            "prithvi"
+          ],
+          "n_claims": 4,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "four-dataset classification canon",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "four-dataset classification canon",
+            "four-dataset classification canon (cloud severity 3)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
             "label": "thin",
             "n_papers": 1
           }
@@ -26372,6 +26677,49 @@
           }
         },
         {
+          "benchmark": "eddy covariance nee partitioned gpp",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C4",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
+              "value": 0.81
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "eddy-covariance NEE-partitioned GPP",
+          "tasks": [
+            "crop_yield_estimation"
+          ],
+          "variants": [
+            "eddy-covariance NEE-partitioned GPP (37 sites)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "elevation",
           "claims": [
             {
@@ -26971,6 +27319,49 @@
             "direction": "better",
             "label": "thin",
             "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "fluxnet urban et",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "FLUXNET urban ET",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "reaching temporally held-out FLUXNET R2=0.92R^{2}=0.92 and RMSE=0.37=0.37 mm d-1",
+              "value": 0.92
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "FLUXNET urban ET",
+          "tasks": [
+            "hydrological_modeling"
+          ],
+          "variants": [
+            "FLUXNET urban ET"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
           }
         },
         {
@@ -30156,49 +30547,6 @@
           }
         },
         {
-          "benchmark": "openet ensemble",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": null,
-              "dataset": "OpenET ensemble",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2507.22291",
-              "locator": "Sec 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "brown2025alphaearth",
-              "paper_title": "AlphaEarth Foundations: An embedding field model for accurate and efficient global mapping from sparse label data",
-              "self_evaluation": true,
-              "span": "achieving R2=0.58±0.01R^{2}=0.58\\pm 0.01",
-              "value": 0.58
-            }
-          ],
-          "metrics": [
-            "r2"
-          ],
-          "models": [
-            "alphaearth"
-          ],
-          "n_claims": 1,
-          "n_papers": 1,
-          "n_vs_task_specific": 0,
-          "name": "OpenET ensemble",
-          "tasks": [
-            "hydrological_modeling"
-          ],
-          "variants": [
-            "OpenET ensemble"
-          ],
-          "verdict": {
-            "agreement": null,
-            "direction": null,
-            "label": "gap",
-            "n_papers": 0
-          }
-        },
-        {
           "benchmark": "osv 5m",
           "claims": [
             {
@@ -30798,6 +31146,49 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "sm",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "SM (Sentinel-1/2/ERA5, pan-European)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-B2",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "found almost no incremental benefit from Prithvi features over handcrafted predictors under spatial cross-validation (R2=0.515R^{2}=0.515 versus 0.514)",
+              "value": 0.515
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "SM",
+          "tasks": [
+            "biomass_estimation"
+          ],
+          "variants": [
+            "SM (Sentinel-1/2/ERA5, pan-European)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "parity",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -32857,6 +33248,70 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay V1.5 0.849 0.025",
+              "value": 0.849
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Prithvi-v2-300 0.825 0.062",
+              "value": 0.825
+            },
+            {
+              "baseline": "dofa",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon (cloud severity 3)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV / Sec IV-B",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay and TerraMind are the worst of the learned encoders",
+              "value": 0.5
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Sec III-C",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "clean ECE is\nindistinguishable (0.0230.023 vs. 0.0240.024; Table IV",
+              "value": 0.023
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 73.82,
               "dataset": "GeoBench (Avg.P)",
               "direction": "better",
@@ -33556,6 +34011,8 @@
             "Street View",
             "Terrestrial ecoregions (biomes)",
             "forward-pass MAC comparison",
+            "four-dataset classification canon",
+            "four-dataset classification canon (cloud severity 3)",
             "iNaturalist",
             "iNaturalist-2018",
             "m-BigEarthNet",
@@ -33575,24 +34032,24 @@
             "scalemae",
             "tessera"
           ],
-          "n_claims": 100,
-          "n_papers": 44,
+          "n_claims": 104,
+          "n_papers": 45,
           "task": "representation_probing"
         }
       ],
       "evidence": {
         "directions": {
-          "better": 254,
-          "parity": 14,
-          "worse": 124
+          "better": 255,
+          "parity": 15,
+          "worse": 125
         },
-        "label_ratio_unspecified": 572,
-        "n_claims": 650,
+        "label_ratio_unspecified": 580,
+        "n_claims": 658,
         "n_self_eval_claims": 84,
-        "n_vs_model_or_none": 258,
-        "n_vs_task_specific": 392,
-        "pct_better": 64.8,
-        "pct_label_ratio_unspecified": 88.0
+        "n_vs_model_or_none": 263,
+        "n_vs_task_specific": 395,
+        "pct_better": 64.6,
+        "pct_label_ratio_unspecified": 88.1
       },
       "groups": [
         {
@@ -34436,6 +34893,36 @@
           "label_regime": "unspecified",
           "metric": "r2",
           "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "SM (Sentinel-1/2/ERA5, pan-European)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-B2",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "found almost no incremental benefit from Prithvi features over handcrafted predictors under spatial cross-validation (R2=0.515R^{2}=0.515 versus 0.514)",
+              "value": 0.515
+            }
+          ],
+          "dataset": "SM (Sentinel-1/2/ERA5, pan-European)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "prithvi",
           "n_papers": 1,
           "task": "biomass_estimation"
         },
@@ -38627,6 +39114,36 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C4",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
+              "value": 0.81
+            }
+          ],
+          "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 99.3,
               "dataset": "BlessemFlood21",
               "direction": "better",
@@ -40674,6 +41191,66 @@
           "label_regime": "unspecified",
           "metric": "r2",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "hydrological_modeling"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "FLUXNET urban ET",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "reaching temporally held-out FLUXNET R2=0.92R^{2}=0.92 and RMSE=0.37=0.37 mm d-1",
+              "value": 0.92
+            }
+          ],
+          "dataset": "FLUXNET urban ET",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "hydrological_modeling"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "OpenET",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "AlphaEarth also achieved R2=0.58±0.01R^{2}=0.58\\pm 0.01 for monthly OpenET labels",
+              "value": 0.58
+            }
+          ],
+          "dataset": "OpenET",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
           "n_papers": 1,
           "task": "hydrological_modeling"
         },
@@ -47851,6 +48428,126 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay V1.5 0.849 0.025",
+              "value": 0.849
+            }
+          ],
+          "dataset": "four-dataset classification canon",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "clay",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Sec III-C",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "clean ECE is\nindistinguishable (0.0230.023 vs. 0.0240.024; Table IV",
+              "value": 0.023
+            }
+          ],
+          "dataset": "four-dataset classification canon",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "clay",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Prithvi-v2-300 0.825 0.062",
+              "value": 0.825
+            }
+          ],
+          "dataset": "four-dataset classification canon",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "dofa",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon (cloud severity 3)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV / Sec IV-B",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay and TerraMind are the worst of the learned encoders",
+              "value": 0.5
+            }
+          ],
+          "dataset": "four-dataset classification canon (cloud severity 3)",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "clay",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "geoclip",
           "claims": [
             {
@@ -52918,14 +53615,46 @@
                 "self_evaluation": false,
                 "span": "the median NSE of the AEF embeddings rose to 0.612, while the model relying on CAMELS attributes reached only 0.553",
                 "value": 0.612
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "OpenET",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.15282",
+                "locator": "Sec IV-C3",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "yu2026earth",
+                "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+                "self_evaluation": false,
+                "span": "AlphaEarth also achieved R2=0.58±0.01R^{2}=0.58\\pm 0.01 for monthly OpenET labels",
+                "value": 0.58
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "FLUXNET urban ET",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.15282",
+                "locator": "Sec IV-C3",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "yu2026earth",
+                "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+                "self_evaluation": false,
+                "span": "reaching temporally held-out FLUXNET R2=0.92R^{2}=0.92 and RMSE=0.37=0.37 mm d-1",
+                "value": 0.92
               }
             ],
             "direction": "parity",
             "label": "thin",
             "model": "alphaearth",
-            "n_claims": 3,
+            "n_claims": 5,
             "n_papers": 1,
-            "n_papers_all": 2,
+            "n_papers_all": 3,
             "task": "hydrological_modeling"
           },
           "alphaearth\tland_cover_classification": {
@@ -57301,7 +58030,7 @@
             "task": "semantic_segmentation"
           },
           "prithvi\tbiomass_estimation": {
-            "agreement": 0.75,
+            "agreement": 0.6,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -57398,14 +58127,30 @@
                 "self_evaluation": true,
                 "span": "It achieved an RMSE of 27.49 in the holdout test set.",
                 "value": 33.4
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.514,
+                "dataset": "SM (Sentinel-1/2/ERA5, pan-European)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.15282",
+                "locator": "Sec IV-B2",
+                "metric": "r2",
+                "model": "prithvi",
+                "paper_key": "yu2026earth",
+                "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+                "self_evaluation": false,
+                "span": "found almost no incremental benefit from Prithvi features over handcrafted predictors under spatial cross-validation (R2=0.515R^{2}=0.515 versus 0.514)",
+                "value": 0.515
               }
             ],
             "direction": "worse",
             "label": "contested",
             "model": "prithvi",
-            "n_claims": 6,
-            "n_papers": 4,
-            "n_papers_all": 5,
+            "n_claims": 7,
+            "n_papers": 5,
+            "n_papers_all": 6,
             "task": "biomass_estimation"
           },
           "prithvi\tcanopy_height_estimation": {
@@ -58294,14 +59039,30 @@
                 "self_evaluation": true,
                 "span": "TerraMind at ps4 with full fine-tuning achieves the best RMSE (0.965)",
                 "value": 0.965
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.75,
+                "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.15282",
+                "locator": "Sec IV-C4",
+                "metric": "r2",
+                "model": "prithvi",
+                "paper_key": "yu2026earth",
+                "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+                "self_evaluation": false,
+                "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
+                "value": 0.81
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "prithvi",
-            "n_claims": 4,
-            "n_papers": 1,
-            "n_papers_all": 2,
+            "n_claims": 5,
+            "n_papers": 2,
+            "n_papers_all": 3,
             "task": "crop_yield_estimation"
           },
           "prithvi\tflood_mapping": {
@@ -67054,7 +67815,7 @@
           "task": "change_detection"
         },
         {
-          "agreement": 0.6,
+          "agreement": 0.545,
           "claims": [
             {
               "baseline": "task_specific",
@@ -67471,6 +68232,22 @@
               "self_evaluation": true,
               "span": "XGBoost’s ZZ-score standard deviation reaches 13.03",
               "value": 0.94
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "SM (Sentinel-1/2/ERA5, pan-European)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-B2",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "found almost no incremental benefit from Prithvi features over handcrafted predictors under spatial cross-validation (R2=0.515R^{2}=0.515 versus 0.514)",
+              "value": 0.515
             }
           ],
           "datasets": [
@@ -67493,6 +68270,7 @@
             "NEFIN CFI (Scenario I, LiDAR-only tuned)",
             "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
             "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+            "SM (Sentinel-1/2/ERA5, pan-European)",
             "SSL4EO-S12-downstream (Biomass Mean)"
           ],
           "direction": "worse",
@@ -67524,12 +68302,12 @@
               "n_papers": 3
             },
             {
-              "agreement": 0.75,
+              "agreement": 0.6,
               "direction": "worse",
               "label": "contested",
               "model": "prithvi",
-              "n_claims": 5,
-              "n_papers": 4
+              "n_claims": 6,
+              "n_papers": 5
             },
             {
               "agreement": 1.0,
@@ -67541,9 +68319,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 26,
+          "n_claims": 27,
           "n_models": 5,
-          "n_papers": 10,
+          "n_papers": 11,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 1.0,
@@ -68073,6 +68851,149 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": -0.093,
+              "dataset": "GROW-Africa/HarvestStat maize yield (LOCO)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08113",
+              "locator": "Table III",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "adjei2026foundation",
+              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+              "self_evaluation": false,
+              "span": "ranging from −0.093-0.093 (Spectral / Ridge) to −0.027-0.027 (Prithvi-EO / Ridge)",
+              "value": -0.027
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.291,
+              "dataset": "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08113",
+              "locator": "Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "adjei2026foundation",
+              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+              "self_evaluation": false,
+              "span": "best-case Prithvi-EO R=20.300{}^{2}=0.300 vs. spectral R=20.291{}^{2}=0.291",
+              "value": 0.3
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
+              "value": 0.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around -0.28–0.07",
+              "value": -0.28
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around 0.39–0.51",
+              "value": 0.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C4",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
+              "value": 0.81
+            }
+          ],
+          "datasets": [
+            "GROW-Africa/HarvestStat maize yield (LOCO)",
+            "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
+            "USDA-NASS county-level yield",
+            "USDA-NASS county-level yield (ETF/GP ecoregions)",
+            "eddy-covariance NEE-partitioned GPP (37 sites)"
+          ],
+          "direction": "better",
+          "fragile": null,
+          "label": "contested",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 3,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "prithvi",
+              "n_claims": 3,
+              "n_papers": 2
+            }
+          ],
+          "models_differ": true,
+          "n_claims": 6,
+          "n_models": 2,
+          "n_papers": 3,
+          "pooling_note": null,
+          "strongest_benchmark": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_claims": 3,
+            "n_papers": 1,
+            "name": "USDA-NASS county-level yield"
+          },
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 0.667,
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.73,
               "dataset": "AQS PM2.5 (WR random split)",
               "direction": "better",
@@ -68236,132 +69157,6 @@
             "name": "AQS PM2.5"
           },
           "task": "socioeconomic_estimation"
-        },
-        {
-          "agreement": 0.5,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": -0.093,
-              "dataset": "GROW-Africa/HarvestStat maize yield (LOCO)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08113",
-              "locator": "Table III",
-              "metric": "r2",
-              "model": "prithvi",
-              "paper_key": "adjei2026foundation",
-              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
-              "self_evaluation": false,
-              "span": "ranging from −0.093-0.093 (Spectral / Ridge) to −0.027-0.027 (Prithvi-EO / Ridge)",
-              "value": -0.027
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.291,
-              "dataset": "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08113",
-              "locator": "Table II",
-              "metric": "r2",
-              "model": "prithvi",
-              "paper_key": "adjei2026foundation",
-              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
-              "self_evaluation": false,
-              "span": "best-case Prithvi-EO R=20.300{}^{2}=0.300 vs. spectral R=20.291{}^{2}=0.291",
-              "value": 0.3
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 3",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
-              "value": 0.8
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around -0.28–0.07",
-              "value": -0.28
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around 0.39–0.51",
-              "value": 0.39
-            }
-          ],
-          "datasets": [
-            "GROW-Africa/HarvestStat maize yield (LOCO)",
-            "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
-            "USDA-NASS county-level yield",
-            "USDA-NASS county-level yield (ETF/GP ecoregions)"
-          ],
-          "direction": "better",
-          "fragile": null,
-          "label": "thin",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "worse",
-              "label": "thin",
-              "model": "alphaearth",
-              "n_claims": 3,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "prithvi",
-              "n_claims": 2,
-              "n_papers": 1
-            }
-          ],
-          "models_differ": true,
-          "n_claims": 5,
-          "n_models": 2,
-          "n_papers": 2,
-          "pooling_note": null,
-          "strongest_benchmark": {
-            "agreement": 1.0,
-            "direction": "worse",
-            "label": "thin",
-            "n_claims": 3,
-            "n_papers": 1,
-            "name": "USDA-NASS county-level yield"
-          },
-          "task": "crop_yield_estimation"
         },
         {
           "agreement": 1.0,
@@ -68875,7 +69670,7 @@
     "no_self_eval": {
       "axes": [
         {
-          "agreement": 0.563,
+          "agreement": 0.556,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -70589,6 +71384,22 @@
               "self_evaluation": false,
               "span": "Fine-tuned Galileo-nano (30.4% mIoU) falls behind the other models",
               "value": 30.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay V1.5 0.849 0.025",
+              "value": 0.849
             },
             {
               "baseline": "task_specific",
@@ -72577,9 +73388,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 231,
-          "n_papers": 71,
-          "n_papers_all": 97
+          "n_claims": 232,
+          "n_papers": 72,
+          "n_papers_all": 98
         },
         {
           "agreement": 0.697,
@@ -73674,6 +74485,22 @@
               "value": 0.6381
             },
             {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "OpenET",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "AlphaEarth also achieved R2=0.58±0.01R^{2}=0.58\\pm 0.01 for monthly OpenET labels",
+              "value": 0.58
+            },
+            {
               "baseline": "prithvi",
               "baseline_value": 0.36,
               "dataset": "Malawi 2016 survey",
@@ -73692,12 +74519,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 69,
+          "n_claims": 70,
           "n_papers": 33,
-          "n_papers_all": 43
+          "n_papers_all": 44
         },
         {
-          "agreement": 0.605,
+          "agreement": 0.591,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -74371,6 +75198,22 @@
               "self_evaluation": false,
               "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
               "value": 20.6
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Prithvi-v2-300 0.825 0.062",
+              "value": 0.825
             },
             {
               "baseline": "task_specific",
@@ -75302,6 +76145,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "SM (Sentinel-1/2/ERA5, pan-European)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-B2",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "found almost no incremental benefit from Prithvi features over handcrafted predictors under spatial cross-validation (R2=0.515R^{2}=0.515 versus 0.514)",
+              "value": 0.515
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.754,
               "dataset": "US counties (aggregated)",
               "direction": "worse",
@@ -75367,9 +76226,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 104,
-          "n_papers": 43,
-          "n_papers_all": 60
+          "n_claims": 106,
+          "n_papers": 44,
+          "n_papers_all": 62
         },
         {
           "agreement": 1.0,
@@ -75835,6 +76694,22 @@
               "value": 0.38
             },
             {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Sec III-C",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "clean ECE is\nindistinguishable (0.0230.023 vs. 0.0240.024; Table IV",
+              "value": 0.023
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 85.1,
               "dataset": "Sen1Floods11",
@@ -76109,9 +76984,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 27,
+          "n_claims": 28,
           "n_papers": 7,
-          "n_papers_all": 19
+          "n_papers_all": 20
         },
         {
           "agreement": 0.714,
@@ -76844,6 +77719,22 @@
               "value": 0.115
             },
             {
+              "baseline": "dofa",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon (cloud severity 3)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV / Sec IV-B",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay and TerraMind are the worst of the learned encoders",
+              "value": 0.5
+            },
+            {
               "baseline": null,
               "baseline_value": null,
               "dataset": "Landslide4Sense",
@@ -76862,12 +77753,12 @@
           ],
           "direction": "better",
           "label": "thin",
-          "n_claims": 3,
+          "n_claims": 4,
           "n_papers": 1,
-          "n_papers_all": 2
+          "n_papers_all": 3
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.688,
           "axis": "G9_ecological_fine_scale",
           "claims": [
             {
@@ -77381,13 +78272,45 @@
               "self_evaluation": false,
               "span": "Biomass-S3",
               "value": 74.1
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "FLUXNET urban ET",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "reaching temporally held-out FLUXNET R2=0.92R^{2}=0.92 and RMSE=0.37=0.37 mm d-1",
+              "value": 0.92
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C4",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
+              "value": 0.81
             }
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 32,
-          "n_papers": 15,
-          "n_papers_all": 22
+          "n_claims": 34,
+          "n_papers": 16,
+          "n_papers_all": 23
         },
         {
           "agreement": 1.0,
@@ -83495,6 +84418,99 @@
           "verdict": {
             "agreement": 1.0,
             "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "four classification canon",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay V1.5 0.849 0.025",
+              "value": 0.849
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Prithvi-v2-300 0.825 0.062",
+              "value": 0.825
+            },
+            {
+              "baseline": "dofa",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon (cloud severity 3)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV / Sec IV-B",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay and TerraMind are the worst of the learned encoders",
+              "value": 0.5
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Sec III-C",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "clean ECE is\nindistinguishable (0.0230.023 vs. 0.0240.024; Table IV",
+              "value": 0.023
+            }
+          ],
+          "metrics": [
+            "accuracy"
+          ],
+          "models": [
+            "clay",
+            "prithvi"
+          ],
+          "n_claims": 4,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "four-dataset classification canon",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "four-dataset classification canon",
+            "four-dataset classification canon (cloud severity 3)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
             "label": "thin",
             "n_papers": 1
           }
@@ -89770,6 +90786,49 @@
           }
         },
         {
+          "benchmark": "eddy covariance nee partitioned gpp",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C4",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
+              "value": 0.81
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "eddy-covariance NEE-partitioned GPP",
+          "tasks": [
+            "crop_yield_estimation"
+          ],
+          "variants": [
+            "eddy-covariance NEE-partitioned GPP (37 sites)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "elevation",
           "claims": [
             {
@@ -90240,6 +91299,49 @@
             "direction": "worse",
             "label": "thin",
             "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "fluxnet urban et",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "FLUXNET urban ET",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "reaching temporally held-out FLUXNET R2=0.92R^{2}=0.92 and RMSE=0.37=0.37 mm d-1",
+              "value": 0.92
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "FLUXNET urban ET",
+          "tasks": [
+            "hydrological_modeling"
+          ],
+          "variants": [
+            "FLUXNET urban ET"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
           }
         },
         {
@@ -92995,6 +94097,49 @@
           }
         },
         {
+          "benchmark": "openet",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "OpenET",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "AlphaEarth also achieved R2=0.58±0.01R^{2}=0.58\\pm 0.01 for monthly OpenET labels",
+              "value": 0.58
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "OpenET",
+          "tasks": [
+            "hydrological_modeling"
+          ],
+          "variants": [
+            "OpenET"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
+          }
+        },
+        {
           "benchmark": "osv 5m",
           "claims": [
             {
@@ -93551,6 +94696,49 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "sm",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "SM (Sentinel-1/2/ERA5, pan-European)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-B2",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "found almost no incremental benefit from Prithvi features over handcrafted predictors under spatial cross-validation (R2=0.515R^{2}=0.515 versus 0.514)",
+              "value": 0.515
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "SM",
+          "tasks": [
+            "biomass_estimation"
+          ],
+          "variants": [
+            "SM (Sentinel-1/2/ERA5, pan-European)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "parity",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -95492,6 +96680,70 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay V1.5 0.849 0.025",
+              "value": 0.849
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Prithvi-v2-300 0.825 0.062",
+              "value": 0.825
+            },
+            {
+              "baseline": "dofa",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon (cloud severity 3)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV / Sec IV-B",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay and TerraMind are the worst of the learned encoders",
+              "value": 0.5
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Sec III-C",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "clean ECE is\nindistinguishable (0.0230.023 vs. 0.0240.024; Table IV",
+              "value": 0.023
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 73.82,
               "dataset": "GeoBench (Avg.P)",
               "direction": "better",
@@ -96020,6 +97272,8 @@
             "Street View",
             "Terrestrial ecoregions (biomes)",
             "forward-pass MAC comparison",
+            "four-dataset classification canon",
+            "four-dataset classification canon (cloud severity 3)",
             "iNaturalist",
             "iNaturalist-2018",
             "m-so2sat"
@@ -96037,24 +97291,24 @@
             "satmae",
             "scalemae"
           ],
-          "n_claims": 88,
-          "n_papers": 38,
+          "n_claims": 92,
+          "n_papers": 39,
           "task": "representation_probing"
         }
       ],
       "evidence": {
         "directions": {
-          "better": 210,
-          "parity": 14,
-          "worse": 118
+          "better": 211,
+          "parity": 15,
+          "worse": 119
         },
-        "label_ratio_unspecified": 511,
-        "n_claims": 566,
+        "label_ratio_unspecified": 519,
+        "n_claims": 574,
         "n_self_eval_claims": 0,
-        "n_vs_model_or_none": 224,
-        "n_vs_task_specific": 342,
-        "pct_better": 61.4,
-        "pct_label_ratio_unspecified": 90.3
+        "n_vs_model_or_none": 229,
+        "n_vs_task_specific": 345,
+        "pct_better": 61.2,
+        "pct_label_ratio_unspecified": 90.4
       },
       "groups": [
         {
@@ -96688,6 +97942,36 @@
           "label_regime": "unspecified",
           "metric": "r2",
           "model": "alphaearth",
+          "n_papers": 1,
+          "task": "biomass_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "SM (Sentinel-1/2/ERA5, pan-European)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-B2",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "found almost no incremental benefit from Prithvi features over handcrafted predictors under spatial cross-validation (R2=0.515R^{2}=0.515 versus 0.514)",
+              "value": 0.515
+            }
+          ],
+          "dataset": "SM (Sentinel-1/2/ERA5, pan-European)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "prithvi",
           "n_papers": 1,
           "task": "biomass_estimation"
         },
@@ -100309,6 +101593,36 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C4",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
+              "value": 0.81
+            }
+          ],
+          "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 99.3,
               "dataset": "BlessemFlood21",
               "direction": "better",
@@ -102128,6 +103442,66 @@
           "label_regime": "unspecified",
           "metric": "r2",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "hydrological_modeling"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "FLUXNET urban ET",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "reaching temporally held-out FLUXNET R2=0.92R^{2}=0.92 and RMSE=0.37=0.37 mm d-1",
+              "value": 0.92
+            }
+          ],
+          "dataset": "FLUXNET urban ET",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "hydrological_modeling"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "OpenET",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "AlphaEarth also achieved R2=0.58±0.01R^{2}=0.58\\pm 0.01 for monthly OpenET labels",
+              "value": 0.58
+            }
+          ],
+          "dataset": "OpenET",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
           "n_papers": 1,
           "task": "hydrological_modeling"
         },
@@ -108269,6 +109643,126 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay V1.5 0.849 0.025",
+              "value": 0.849
+            }
+          ],
+          "dataset": "four-dataset classification canon",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "clay",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Sec III-C",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "clean ECE is\nindistinguishable (0.0230.023 vs. 0.0240.024; Table IV",
+              "value": 0.023
+            }
+          ],
+          "dataset": "four-dataset classification canon",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "clay",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV",
+              "metric": "accuracy",
+              "model": "prithvi",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Prithvi-v2-300 0.825 0.062",
+              "value": 0.825
+            }
+          ],
+          "dataset": "four-dataset classification canon",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "dofa",
+          "claims": [
+            {
+              "baseline": "dofa",
+              "baseline_value": null,
+              "dataset": "four-dataset classification canon (cloud severity 3)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.16614",
+              "locator": "Table IV / Sec IV-B",
+              "metric": "accuracy",
+              "model": "clay",
+              "paper_key": "lehmann2026beyond",
+              "paper_title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+              "self_evaluation": false,
+              "span": "Clay and TerraMind are the worst of the learned encoders",
+              "value": 0.5
+            }
+          ],
+          "dataset": "four-dataset classification canon (cloud severity 3)",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "accuracy",
+          "model": "clay",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "geoclip",
           "claims": [
             {
@@ -112856,14 +114350,46 @@
                 "self_evaluation": false,
                 "span": "the median NSE of the AEF embeddings rose to 0.612, while the model relying on CAMELS attributes reached only 0.553",
                 "value": 0.612
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "OpenET",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.15282",
+                "locator": "Sec IV-C3",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "yu2026earth",
+                "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+                "self_evaluation": false,
+                "span": "AlphaEarth also achieved R2=0.58±0.01R^{2}=0.58\\pm 0.01 for monthly OpenET labels",
+                "value": 0.58
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "FLUXNET urban ET",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.15282",
+                "locator": "Sec IV-C3",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "yu2026earth",
+                "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+                "self_evaluation": false,
+                "span": "reaching temporally held-out FLUXNET R2=0.92R^{2}=0.92 and RMSE=0.37=0.37 mm d-1",
+                "value": 0.92
               }
             ],
             "direction": "parity",
             "label": "thin",
             "model": "alphaearth",
-            "n_claims": 2,
+            "n_claims": 4,
             "n_papers": 1,
-            "n_papers_all": 1,
+            "n_papers_all": 2,
             "task": "hydrological_modeling"
           },
           "alphaearth\tland_cover_classification": {
@@ -116899,7 +118425,7 @@
             "task": "semantic_segmentation"
           },
           "prithvi\tbiomass_estimation": {
-            "agreement": 0.667,
+            "agreement": 0.5,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -116980,14 +118506,30 @@
                 "self_evaluation": false,
                 "span": "GFM (best) SSL4EO-MoCo S2 only 60.56",
                 "value": 60.56
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.514,
+                "dataset": "SM (Sentinel-1/2/ERA5, pan-European)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.15282",
+                "locator": "Sec IV-B2",
+                "metric": "r2",
+                "model": "prithvi",
+                "paper_key": "yu2026earth",
+                "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+                "self_evaluation": false,
+                "span": "found almost no incremental benefit from Prithvi features over handcrafted predictors under spatial cross-validation (R2=0.515R^{2}=0.515 versus 0.514)",
+                "value": 0.515
               }
             ],
             "direction": "worse",
             "label": "contested",
             "model": "prithvi",
-            "n_claims": 5,
-            "n_papers": 3,
-            "n_papers_all": 4,
+            "n_claims": 6,
+            "n_papers": 4,
+            "n_papers_all": 5,
             "task": "biomass_estimation"
           },
           "prithvi\tcanopy_height_estimation": {
@@ -117780,14 +119322,30 @@
                 "self_evaluation": false,
                 "span": "a single NDVI feature\n(Ridge R=2−0.170{}^{2}=-0.170) performs comparably to the full 768-dimensional\nPrithvi-EO embeddings (Ridge R=2−0.027{}^{2}=-0.027)",
                 "value": -0.17
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.75,
+                "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.15282",
+                "locator": "Sec IV-C4",
+                "metric": "r2",
+                "model": "prithvi",
+                "paper_key": "yu2026earth",
+                "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+                "self_evaluation": false,
+                "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
+                "value": 0.81
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "prithvi",
-            "n_claims": 3,
-            "n_papers": 1,
-            "n_papers_all": 1,
+            "n_claims": 4,
+            "n_papers": 2,
+            "n_papers_all": 2,
             "task": "crop_yield_estimation"
           },
           "prithvi\tflood_mapping": {
@@ -125240,7 +126798,7 @@
           "task": "change_detection"
         },
         {
-          "agreement": 0.625,
+          "agreement": 0.556,
           "claims": [
             {
               "baseline": "task_specific",
@@ -125561,6 +127119,22 @@
               "self_evaluation": false,
               "span": "Biomass-S3",
               "value": 74.1
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.514,
+              "dataset": "SM (Sentinel-1/2/ERA5, pan-European)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-B2",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "found almost no incremental benefit from Prithvi features over handcrafted predictors under spatial cross-validation (R2=0.515R^{2}=0.515 versus 0.514)",
+              "value": 0.515
             }
           ],
           "datasets": [
@@ -125578,6 +127152,7 @@
             "NEFIN CFI (Scenario I, LiDAR-only tuned)",
             "NEFIN CFI (Scenario I, combined LiDAR+GSE)",
             "NEFIN CFI (Scenario II, GSE-only, growth-adjusted)",
+            "SM (Sentinel-1/2/ERA5, pan-European)",
             "SSL4EO-S12-downstream (Biomass Mean)"
           ],
           "direction": "worse",
@@ -125609,18 +127184,18 @@
               "n_papers": 3
             },
             {
-              "agreement": 0.667,
+              "agreement": 0.5,
               "direction": "worse",
               "label": "contested",
               "model": "prithvi",
-              "n_claims": 4,
-              "n_papers": 3
+              "n_claims": 5,
+              "n_papers": 4
             }
           ],
           "models_differ": true,
-          "n_claims": 20,
+          "n_claims": 21,
           "n_models": 4,
-          "n_papers": 8,
+          "n_papers": 9,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 1.0,
@@ -126150,6 +127725,149 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": -0.093,
+              "dataset": "GROW-Africa/HarvestStat maize yield (LOCO)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08113",
+              "locator": "Table III",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "adjei2026foundation",
+              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+              "self_evaluation": false,
+              "span": "ranging from −0.093-0.093 (Spectral / Ridge) to −0.027-0.027 (Prithvi-EO / Ridge)",
+              "value": -0.027
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.291,
+              "dataset": "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08113",
+              "locator": "Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "adjei2026foundation",
+              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+              "self_evaluation": false,
+              "span": "best-case Prithvi-EO R=20.300{}^{2}=0.300 vs. spectral R=20.291{}^{2}=0.291",
+              "value": 0.3
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
+              "value": 0.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around -0.28–0.07",
+              "value": -0.28
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around 0.39–0.51",
+              "value": 0.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C4",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
+              "value": 0.81
+            }
+          ],
+          "datasets": [
+            "GROW-Africa/HarvestStat maize yield (LOCO)",
+            "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
+            "USDA-NASS county-level yield",
+            "USDA-NASS county-level yield (ETF/GP ecoregions)",
+            "eddy-covariance NEE-partitioned GPP (37 sites)"
+          ],
+          "direction": "better",
+          "fragile": null,
+          "label": "contested",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 3,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "prithvi",
+              "n_claims": 3,
+              "n_papers": 2
+            }
+          ],
+          "models_differ": true,
+          "n_claims": 6,
+          "n_models": 2,
+          "n_papers": 3,
+          "pooling_note": null,
+          "strongest_benchmark": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_claims": 3,
+            "n_papers": 1,
+            "name": "USDA-NASS county-level yield"
+          },
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 0.667,
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.73,
               "dataset": "AQS PM2.5 (WR random split)",
               "direction": "better",
@@ -126313,132 +128031,6 @@
             "name": "AQS PM2.5"
           },
           "task": "socioeconomic_estimation"
-        },
-        {
-          "agreement": 0.5,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": -0.093,
-              "dataset": "GROW-Africa/HarvestStat maize yield (LOCO)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08113",
-              "locator": "Table III",
-              "metric": "r2",
-              "model": "prithvi",
-              "paper_key": "adjei2026foundation",
-              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
-              "self_evaluation": false,
-              "span": "ranging from −0.093-0.093 (Spectral / Ridge) to −0.027-0.027 (Prithvi-EO / Ridge)",
-              "value": -0.027
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.291,
-              "dataset": "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08113",
-              "locator": "Table II",
-              "metric": "r2",
-              "model": "prithvi",
-              "paper_key": "adjei2026foundation",
-              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
-              "self_evaluation": false,
-              "span": "best-case Prithvi-EO R=20.300{}^{2}=0.300 vs. spectral R=20.291{}^{2}=0.291",
-              "value": 0.3
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 3",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
-              "value": 0.8
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around -0.28–0.07",
-              "value": -0.28
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around 0.39–0.51",
-              "value": 0.39
-            }
-          ],
-          "datasets": [
-            "GROW-Africa/HarvestStat maize yield (LOCO)",
-            "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
-            "USDA-NASS county-level yield",
-            "USDA-NASS county-level yield (ETF/GP ecoregions)"
-          ],
-          "direction": "better",
-          "fragile": null,
-          "label": "thin",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "worse",
-              "label": "thin",
-              "model": "alphaearth",
-              "n_claims": 3,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "prithvi",
-              "n_claims": 2,
-              "n_papers": 1
-            }
-          ],
-          "models_differ": true,
-          "n_claims": 5,
-          "n_models": 2,
-          "n_papers": 2,
-          "pooling_note": null,
-          "strongest_benchmark": {
-            "agreement": 1.0,
-            "direction": "worse",
-            "label": "thin",
-            "n_claims": 3,
-            "n_papers": 1,
-            "name": "USDA-NASS county-level yield"
-          },
-          "task": "crop_yield_estimation"
         },
         {
           "agreement": 1.0,

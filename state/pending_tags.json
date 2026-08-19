@@ -29,6 +29,9 @@
   "AlphaEarth Foundations": [
     "hou2026slum"
   ],
+  "AlphaEarth embeddings": [
+    "yu2026earth"
+  ],
   "AlphaEarth embeddings as auxiliary input": [
     "thasma2026beyond"
   ],
@@ -1007,6 +1010,9 @@
   "decoder_design": [
     "romero2026how"
   ],
+  "deep_ensembles": [
+    "lehmann2026beyond"
+  ],
   "dempster-shafer-fusion": [
     "sachan2026post"
   ],
@@ -1039,6 +1045,9 @@
   ],
   "distance_to_road_prediction": [
     "plas2026better"
+  ],
+  "distribution_shift_robustness": [
+    "lehmann2026beyond"
   ],
   "distributional_robustness": [
     "doerksen2026earthshift"
@@ -1075,6 +1084,9 @@
   ],
   "eco-region transfer": [
     "muszynski2024fine"
+  ],
+  "ecohydrology": [
+    "yu2026earth"
   ],
   "ecotone representation": [
     "benavidesmartinez2026what"
@@ -1208,6 +1220,9 @@
   "exogenous_spatial_context": [
     "aalaila2026when"
   ],
+  "expected_calibration_error": [
+    "lehmann2026beyond"
+  ],
   "expert_routing": [
     "albughdadi2025lightweight"
   ],
@@ -1274,6 +1289,9 @@
   "flops_analysis": [
     "dionelis2025scaling"
   ],
+  "flux-tower evaluation": [
+    "yu2026earth"
+  ],
   "food_water_nexus": [
     "asif2026adapting"
   ],
@@ -1321,6 +1339,9 @@
   ],
   "gap_filling": [
     "li2026hls"
+  ],
+  "gaussian_process_probe": [
+    "lehmann2026beyond"
   ],
   "gdp_mapping": [
     "liu2025beyond"
@@ -1802,6 +1823,9 @@
   "melt": [
     "hecht2026multi"
   ],
+  "meta-analysis of EOFMs": [
+    "yu2026earth"
+  ],
   "metadata_ablation": [
     "martiescofet2025fine"
   ],
@@ -1990,6 +2014,9 @@
   ],
   "object_tracking": [
     "diao2024ringmo"
+  ],
+  "observation-to-inference hierarchy": [
+    "yu2026earth"
   ],
   "off_diagonal_covariance": [
     "mocharla2026probing"
@@ -2279,6 +2306,9 @@
   "reliability_flagging": [
     "gonzalezcalabuig2025shrug"
   ],
+  "representation_drift_CKA": [
+    "lehmann2026beyond"
+  ],
   "representation_efficiency": [
     "gong2026earth"
   ],
@@ -2428,9 +2458,6 @@
   ],
   "seismic_site_characterization": [
     "nakata2026subsurface"
-  ],
-  "selective_prediction": [
-    "gonzalezcalabuig2025shrug"
   ],
   "self_supervised_adaptation": [
     "butsko2025deploying"
@@ -2678,6 +2705,9 @@
   "temperature_downscaling": [
     "sousa2026earth"
   ],
+  "temperature_scaling": [
+    "lehmann2026beyond"
+  ],
   "temporal_alignment": [
     "cheng2026from"
   ],
@@ -2746,6 +2776,9 @@
   ],
   "traffic_speed_prediction": [
     "siampou2026trajganr"
+  ],
+  "training_data_budget_sweep": [
+    "lehmann2026beyond"
   ],
   "training_from_scratch": [
     "sosa2024how"

@@ -157,6 +157,10 @@
     "key": "tingzon2025derived",
     "status": "carded"
   },
+  "alignjepa predictive vision language alignment for remote sensing foundation models": {
+    "key": "hossain2026alignjepa",
+    "status": "off_topic"
+  },
   "alkali metallicity mineral clouds and deep atmospheric variability on jupiter": {
     "key": "zhang2026alkali",
     "status": "off_topic"
@@ -263,6 +267,12 @@
     "arxiv_id": "2605.18667",
     "dropped_claims": 0,
     "key": "plas2026better",
+    "status": "carded"
+  },
+  "beyond accuracy assessing calibration of geospatial foundation models and their sensitivity to distribution shifts": {
+    "arxiv_id": "2608.16614",
+    "dropped_claims": 0,
+    "key": "lehmann2026beyond",
     "status": "carded"
   },
   "beyond alphaearth toward human centered geospatial foundation models via poi guided contrastive learning": {
@@ -563,6 +573,12 @@
     "arxiv_id": "2608.12271",
     "dropped_claims": 0,
     "key": "sousa2026earth",
+    "status": "carded"
+  },
+  "earth observation foundation models for terrestrial ecohydrology from representation learning to process inference": {
+    "arxiv_id": "2608.15282",
+    "dropped_claims": 2,
+    "key": "yu2026earth",
     "status": "carded"
   },
   "earthshift a benchmark for measuring robustness to real world distribution shifts in earth observation": {

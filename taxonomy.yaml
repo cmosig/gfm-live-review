@@ -163,6 +163,7 @@ promoted_tags:
 - satellite_embeddings
 - satmae
 - scene_classification
+- selective_prediction
 - sentinel1_sentinel2_fusion
 - spatial_autocorrelation
 - taxonomy
