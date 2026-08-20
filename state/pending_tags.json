@@ -944,6 +944,9 @@
   "cross_band_generalization": [
     "tamazyan2025geocrossbench"
   ],
+  "cross_country_transfer": [
+    "wen2026morax"
+  ],
   "cross_lingual_poi_text_embedding": [
     "hou2026aef"
   ],
@@ -1250,6 +1253,9 @@
   "feature_engineering_free": [
     "lisaius2026embedding"
   ],
+  "feature_wise_modulation": [
+    "wen2026morax"
+  ],
   "federated-defi": [
     "sachan2026post"
   ],
@@ -1513,6 +1519,9 @@
   ],
   "housing_price_prediction": [
     "dhakal2025range"
+  ],
+  "human_mobility_augmentation": [
+    "wen2026morax"
   ],
   "hurricane_track_forecasting": [
     "schmude2024prithvi"
@@ -2306,6 +2315,9 @@
   "reliability_flagging": [
     "gonzalezcalabuig2025shrug"
   ],
+  "remoteclip_backbone": [
+    "wen2026morax"
+  ],
   "representation_drift_CKA": [
     "lehmann2026beyond"
   ],
@@ -2698,6 +2710,9 @@
   ],
   "task_specific_distillation": [
     "yusuf2025instageo"
+  ],
+  "teacher_student_distillation": [
+    "wen2026morax"
   ],
   "teacher_student_pseudo_labeling": [
     "perez2026predicting"

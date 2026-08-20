@@ -1,5 +1,5 @@
 {
-  "corpus_through": "2026-08-17",
+  "corpus_through": "2026-08-18",
   "limitations": {
     "series": {
       "benchmark_narrowness": {
@@ -39,7 +39,7 @@
         "2026-05": 16,
         "2026-06": 12,
         "2026-07": 9,
-        "2026-08": 13
+        "2026-08": 14
       },
       "compute_cost": {
         "2022-07": 1,
@@ -127,7 +127,7 @@
         "2026-05": 1,
         "2026-06": 2,
         "2026-07": 1,
-        "2026-08": 2
+        "2026-08": 3
       },
       "interpretability": {
         "2023-09": 1,
@@ -202,7 +202,7 @@
         "2026-05": 10,
         "2026-06": 8,
         "2026-07": 4,
-        "2026-08": 7
+        "2026-08": 8
       },
       "temporal_transfer": {
         "2022-07": 1,
@@ -262,13 +262,13 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 172,
+      "benchmark_narrowness": 173,
       "compute_cost": 97,
       "data_bias": 89,
-      "human_semantics": 19,
+      "human_semantics": 20,
       "interpretability": 40,
       "mixed_pixels": 38,
-      "spatial_transfer": 97,
+      "spatial_transfer": 98,
       "temporal_transfer": 44,
       "time_sensitivity": 32,
       "uncertainty": 30
@@ -307,7 +307,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 195,
+    "n_papers": 196,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -331,10 +331,22 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 195
+      "verified": 196
     },
-    "n_papers": 195,
+    "n_papers": 196,
     "papers": [
+      {
+        "arxiv_id": "2608.17848",
+        "date": "2026-08-18",
+        "doi": "10.48550/arxiv.2608.17848",
+        "doi_status": "verified",
+        "key": "wen2026morax",
+        "link": "https://arxiv.org/abs/2608.17848",
+        "n_claims": 3,
+        "self_evaluation": false,
+        "title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+        "venue": "arXiv"
+      },
       {
         "arxiv_id": "2608.16614",
         "date": "2026-08-17",
@@ -2676,13 +2688,13 @@
         "venue": "arXiv"
       }
     ],
-    "quarantine_count": 49
+    "quarantine_count": 50
   },
   "views": {
     "all": {
       "axes": [
         {
-          "agreement": 0.59,
+          "agreement": 0.595,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -6543,6 +6555,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.361,
+              "dataset": "Shanghai NTL",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.638
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": null,
               "dataset": "GEO-Bench+SpaceNetv1+Sen1Floods11+PASTIS (overall avg)",
               "direction": "better",
@@ -6976,9 +7004,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 268,
-          "n_papers": 78,
-          "n_papers_all": 108
+          "n_claims": 269,
+          "n_papers": 79,
+          "n_papers_all": 109
         },
         {
           "agreement": 0.694,
@@ -8240,7 +8268,7 @@
           "n_papers_all": 51
         },
         {
-          "agreement": 0.625,
+          "agreement": 0.612,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -9877,6 +9905,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.421,
+              "dataset": "NYC Crime",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "RemoteCLIP 0.168 0.341 0.232 0.271",
+              "value": 0.179
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 70.89,
               "dataset": "AID",
               "direction": "better",
@@ -10086,9 +10130,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 115,
-          "n_papers": 48,
-          "n_papers_all": 68
+          "n_claims": 116,
+          "n_papers": 49,
+          "n_papers_all": 69
         },
         {
           "agreement": 1.0,
@@ -12792,7 +12836,7 @@
           "n_papers_all": 3
         },
         {
-          "agreement": 0.818,
+          "agreement": 0.833,
           "axis": "G11_complementarity",
           "claims": [
             {
@@ -13293,6 +13337,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.323,
+              "dataset": "Shanghai CO2",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.508
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 71.6,
               "dataset": "AID",
               "direction": "better",
@@ -13326,9 +13386,9 @@
           ],
           "direction": "better",
           "label": "consensus",
-          "n_claims": 33,
-          "n_papers": 11,
-          "n_papers_all": 23
+          "n_claims": 34,
+          "n_papers": 12,
+          "n_papers_all": 24
         },
         {
           "agreement": null,
@@ -30504,6 +30564,49 @@
           }
         },
         {
+          "benchmark": "nyc crime",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.421,
+              "dataset": "NYC Crime",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "RemoteCLIP 0.168 0.341 0.232 0.271",
+              "value": 0.179
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "NYC Crime",
+          "tasks": [
+            "socioeconomic_estimation"
+          ],
+          "variants": [
+            "NYC Crime"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "openearthmap",
           "claims": [
             {
@@ -31146,6 +31249,92 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "shanghai co2",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.323,
+              "dataset": "Shanghai CO2",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.508
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "Shanghai CO2",
+          "tasks": [
+            "urban_signal_mapping"
+          ],
+          "variants": [
+            "Shanghai CO2"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "shanghai ntl",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.361,
+              "dataset": "Shanghai NTL",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.638
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "Shanghai NTL",
+          "tasks": [
+            "urban_signal_mapping"
+          ],
+          "variants": [
+            "Shanghai NTL"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -34039,17 +34228,17 @@
       ],
       "evidence": {
         "directions": {
-          "better": 255,
+          "better": 257,
           "parity": 15,
-          "worse": 125
+          "worse": 126
         },
-        "label_ratio_unspecified": 580,
-        "n_claims": 658,
+        "label_ratio_unspecified": 583,
+        "n_claims": 661,
         "n_self_eval_claims": 84,
         "n_vs_model_or_none": 263,
-        "n_vs_task_specific": 395,
+        "n_vs_task_specific": 398,
         "pct_better": 64.6,
-        "pct_label_ratio_unspecified": 88.1
+        "pct_label_ratio_unspecified": 88.2
       },
       "groups": [
         {
@@ -52394,6 +52583,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.421,
+              "dataset": "NYC Crime",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "RemoteCLIP 0.168 0.341 0.232 0.271",
+              "value": 0.179
+            }
+          ],
+          "dataset": "NYC Crime",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "socioeconomic_estimation"
+        },
+        {
+          "agreement": 1.0,
           "baseline": null,
           "claims": [
             {
@@ -52721,6 +52940,66 @@
           "label_regime": "unspecified",
           "metric": "r2",
           "model": "satclip",
+          "n_papers": 1,
+          "task": "urban_signal_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.323,
+              "dataset": "Shanghai CO2",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.508
+            }
+          ],
+          "dataset": "Shanghai CO2",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "urban_signal_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.361,
+              "dataset": "Shanghai NTL",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.638
+            }
+          ],
+          "dataset": "Shanghai NTL",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
           "n_papers": 1,
           "task": "urban_signal_mapping"
         },
@@ -54210,7 +54489,7 @@
             "task": "slum_detection"
           },
           "alphaearth\tsocioeconomic_estimation": {
-            "agreement": 1.0,
+            "agreement": 0.5,
             "claims": [
               {
                 "baseline": "prithvi",
@@ -54275,18 +54554,34 @@
                 "self_evaluation": false,
                 "span": "GeoViSTA outperforms baselines on Ndays",
                 "value": 0.792
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.421,
+                "dataset": "NYC Crime",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.17848",
+                "locator": "Table 1",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "wen2026morax",
+                "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "RemoteCLIP 0.168 0.341 0.232 0.271",
+                "value": 0.179
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "alphaearth",
-            "n_claims": 4,
-            "n_papers": 1,
-            "n_papers_all": 3,
+            "n_claims": 5,
+            "n_papers": 2,
+            "n_papers_all": 4,
             "task": "socioeconomic_estimation"
           },
           "alphaearth\turban_signal_mapping": {
-            "agreement": null,
+            "agreement": 1.0,
             "claims": [
               {
                 "baseline": "prithvi",
@@ -54367,14 +54662,46 @@
                 "self_evaluation": false,
                 "span": "all three models cluster at low R2 (AlphaEarth ∼\\sim 0.15, Clay ∼\\sim 0.15)",
                 "value": 0.15
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.361,
+                "dataset": "Shanghai NTL",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.17848",
+                "locator": "Table 1",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "wen2026morax",
+                "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+                "value": 0.638
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.323,
+                "dataset": "Shanghai CO2",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.17848",
+                "locator": "Table 1",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "wen2026morax",
+                "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+                "value": 0.508
               }
             ],
-            "direction": null,
-            "label": "gap",
+            "direction": "better",
+            "label": "thin",
             "model": "alphaearth",
-            "n_claims": 5,
-            "n_papers": 0,
-            "n_papers_all": 1,
+            "n_claims": 7,
+            "n_papers": 1,
+            "n_papers_all": 2,
             "task": "urban_signal_mapping"
           },
           "alphaearth\twealth_mapping": {
@@ -68650,6 +68977,192 @@
           "task": "landslide_susceptibility"
         },
         {
+          "agreement": 0.5,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.73,
+              "dataset": "AQS PM2.5 (WR random split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2505.18461",
+              "locator": "Table 2",
+              "metric": "r2",
+              "model": "geoclip",
+              "paper_key": "karimzadeh2025performance",
+              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
+              "self_evaluation": false,
+              "span": "GeoCLIP Location Embeddings (Hadamard)",
+              "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.62,
+              "dataset": "AQS PM2.5 (WR spatial split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2505.18461",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "geoclip",
+              "paper_key": "karimzadeh2025performance",
+              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
+              "self_evaluation": false,
+              "span": "GeoCLIP Location Embeddings",
+              "value": 0.67
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 7.43,
+              "dataset": "AQS PM2.5 checkerboard delta=30 (West->East)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2505.18461",
+              "locator": "Sec 3.3",
+              "metric": "rmse",
+              "model": "geoclip",
+              "paper_key": "karimzadeh2025performance",
+              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
+              "self_evaluation": false,
+              "span": "a lower average RMSE of 6.90 (vs. 7.43",
+              "value": 6.9
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.59,
+              "dataset": "AQS PM2.5 checkerboard delta=8",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2505.18461",
+              "locator": "Table 4",
+              "metric": "r2",
+              "model": "geoclip",
+              "paper_key": "karimzadeh2025performance",
+              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
+              "self_evaluation": false,
+              "span": "GeoCLIP Location Embeddings",
+              "value": 0.6
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.569,
+              "dataset": "CDC WONDER mortality (All causes, Washington held-out)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.14406",
+              "locator": "Table 2",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "liu2026geovista",
+              "paper_title": "GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation",
+              "self_evaluation": false,
+              "span": "Results demonstrate that GeoViSTA yields superior zero-shot downstream metric performance",
+              "value": 0.611
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.671,
+              "dataset": "FireCCI51 (Ndays)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.14406",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "liu2026geovista",
+              "paper_title": "GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation",
+              "self_evaluation": false,
+              "span": "GeoViSTA outperforms baselines on Ndays",
+              "value": 0.792
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 21.65,
+              "dataset": "NS-SeC SDM dataset",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2411.06229",
+              "locator": "Table 7",
+              "metric": "rmse",
+              "model": "satclip",
+              "paper_key": "wang2024multimodal",
+              "paper_title": "Multimodal Contrastive Learning of Urban Space Representations from POI Data",
+              "self_evaluation": false,
+              "span": "SatCLIP 12.2 ± 2.5 16.8 ± 2.0 12.2 ± 1.6 28.89 ± 0.09 8.84 ± 0.03 7.07 ± 0.01",
+              "value": 28.89
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.421,
+              "dataset": "NYC Crime",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "RemoteCLIP 0.168 0.341 0.232 0.271",
+              "value": 0.179
+            }
+          ],
+          "datasets": [
+            "AQS PM2.5 (WR random split)",
+            "AQS PM2.5 (WR spatial split)",
+            "AQS PM2.5 checkerboard delta=30 (West->East)",
+            "AQS PM2.5 checkerboard delta=8",
+            "CDC WONDER mortality (All causes, Washington held-out)",
+            "FireCCI51 (Ndays)",
+            "NS-SeC SDM dataset",
+            "NYC Crime"
+          ],
+          "direction": "better",
+          "fragile": null,
+          "label": "contested",
+          "models": [
+            {
+              "agreement": 0.5,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 3,
+              "n_papers": 2
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "geoclip",
+              "n_claims": 4,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "satclip",
+              "n_claims": 1,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": true,
+          "n_claims": 8,
+          "n_models": 3,
+          "n_papers": 4,
+          "pooling_note": null,
+          "strongest_benchmark": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_claims": 4,
+            "n_papers": 1,
+            "name": "AQS PM2.5"
+          },
+          "task": "socioeconomic_estimation"
+        },
+        {
           "agreement": 0.667,
           "claims": [
             {
@@ -68990,131 +69503,80 @@
           "task": "crop_yield_estimation"
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.333,
           "claims": [
             {
               "baseline": "task_specific",
-              "baseline_value": 0.73,
-              "dataset": "AQS PM2.5 (WR random split)",
-              "direction": "better",
+              "baseline_value": null,
+              "dataset": "UV identification",
+              "direction": "parity",
               "label_ratio": null,
-              "link": "https://arxiv.org/abs/2505.18461",
-              "locator": "Table 2",
-              "metric": "r2",
-              "model": "geoclip",
-              "paper_key": "karimzadeh2025performance",
-              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
-              "self_evaluation": false,
-              "span": "GeoCLIP Location Embeddings (Hadamard)",
-              "value": 0.79
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.62,
-              "dataset": "AQS PM2.5 (WR spatial split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2505.18461",
+              "link": "https://arxiv.org/abs/2509.26016",
               "locator": "Table 3",
-              "metric": "r2",
-              "model": "geoclip",
-              "paper_key": "karimzadeh2025performance",
-              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "bai2025geolink",
+              "paper_title": "GeoLink: Empowering Remote Sensing Foundation Model with OpenStreetMap Data",
               "self_evaluation": false,
-              "span": "GeoCLIP Location Embeddings",
-              "value": 0.67
+              "span": "Scale-MAE\n\n90.29\n\n58.21\n\n74.25",
+              "value": 74.25
             },
             {
               "baseline": "task_specific",
-              "baseline_value": 7.43,
-              "dataset": "AQS PM2.5 checkerboard delta=30 (West->East)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2505.18461",
-              "locator": "Sec 3.3",
-              "metric": "rmse",
-              "model": "geoclip",
-              "paper_key": "karimzadeh2025performance",
-              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
-              "self_evaluation": false,
-              "span": "a lower average RMSE of 6.90 (vs. 7.43",
-              "value": 6.9
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.59,
-              "dataset": "AQS PM2.5 checkerboard delta=8",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2505.18461",
-              "locator": "Table 4",
-              "metric": "r2",
-              "model": "geoclip",
-              "paper_key": "karimzadeh2025performance",
-              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
-              "self_evaluation": false,
-              "span": "GeoCLIP Location Embeddings",
-              "value": 0.6
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.569,
-              "dataset": "CDC WONDER mortality (All causes, Washington held-out)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.14406",
-              "locator": "Table 2",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "liu2026geovista",
-              "paper_title": "GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation",
-              "self_evaluation": false,
-              "span": "Results demonstrate that GeoViSTA yields superior zero-shot downstream metric performance",
-              "value": 0.611
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.671,
-              "dataset": "FireCCI51 (Ndays)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.14406",
-              "locator": "Table 3",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "liu2026geovista",
-              "paper_title": "GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation",
-              "self_evaluation": false,
-              "span": "GeoViSTA outperforms baselines on Ndays",
-              "value": 0.792
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 21.65,
-              "dataset": "NS-SeC SDM dataset",
+              "baseline_value": 0.063,
+              "dataset": "PhilEO Bench (road density)",
               "direction": "worse",
               "label_ratio": null,
-              "link": "https://arxiv.org/abs/2411.06229",
-              "locator": "Table 7",
+              "link": "https://arxiv.org/abs/2506.14765",
+              "locator": "Sec 4.6 / Table 3",
               "metric": "rmse",
-              "model": "satclip",
-              "paper_key": "wang2024multimodal",
-              "paper_title": "Multimodal Contrastive Learning of Urban Space Representations from POI Data",
+              "model": "prithvi",
+              "paper_key": "dionelis2025scaling",
+              "paper_title": "Scaling Laws for Geospatial Foundation Models: A case study on PhilEO Bench",
               "self_evaluation": false,
-              "span": "SatCLIP 12.2 ± 2.5 16.8 ± 2.0 12.2 ± 1.6 28.89 ± 0.09 8.84 ± 0.03 7.07 ± 0.01",
-              "value": 28.89
+              "span": "Geo-Aware U-Net 44M trained on 23TB achieves an RMSE of 0.067",
+              "value": 0.071
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.361,
+              "dataset": "Shanghai NTL",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.638
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.323,
+              "dataset": "Shanghai CO2",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.508
             }
           ],
           "datasets": [
-            "AQS PM2.5 (WR random split)",
-            "AQS PM2.5 (WR spatial split)",
-            "AQS PM2.5 checkerboard delta=30 (West->East)",
-            "AQS PM2.5 checkerboard delta=8",
-            "CDC WONDER mortality (All causes, Washington held-out)",
-            "FireCCI51 (Ndays)",
-            "NS-SeC SDM dataset"
+            "PhilEO Bench (road density)",
+            "Shanghai CO2",
+            "Shanghai NTL",
+            "UV identification"
           ],
-          "direction": "better",
+          "direction": "parity",
           "fragile": null,
           "label": "contested",
           "models": [
@@ -69128,35 +69590,35 @@
             },
             {
               "agreement": 1.0,
-              "direction": "better",
+              "direction": "worse",
               "label": "thin",
-              "model": "geoclip",
-              "n_claims": 4,
+              "model": "prithvi",
+              "n_claims": 1,
               "n_papers": 1
             },
             {
               "agreement": 1.0,
-              "direction": "worse",
+              "direction": "parity",
               "label": "thin",
-              "model": "satclip",
+              "model": "scalemae",
               "n_claims": 1,
               "n_papers": 1
             }
           ],
           "models_differ": true,
-          "n_claims": 7,
+          "n_claims": 4,
           "n_models": 3,
           "n_papers": 3,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 1.0,
-            "direction": "better",
+            "direction": "parity",
             "label": "thin",
-            "n_claims": 4,
+            "n_claims": 1,
             "n_papers": 1,
-            "name": "AQS PM2.5"
+            "name": "UV identification"
           },
-          "task": "socioeconomic_estimation"
+          "task": "urban_signal_mapping"
         },
         {
           "agreement": 1.0,
@@ -69300,82 +69762,6 @@
             "name": "Malawi health catchment areas"
           },
           "task": "population_density"
-        },
-        {
-          "agreement": 0.5,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "UV identification",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2509.26016",
-              "locator": "Table 3",
-              "metric": "miou",
-              "model": "scalemae",
-              "paper_key": "bai2025geolink",
-              "paper_title": "GeoLink: Empowering Remote Sensing Foundation Model with OpenStreetMap Data",
-              "self_evaluation": false,
-              "span": "Scale-MAE\n\n90.29\n\n58.21\n\n74.25",
-              "value": 74.25
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.063,
-              "dataset": "PhilEO Bench (road density)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2506.14765",
-              "locator": "Sec 4.6 / Table 3",
-              "metric": "rmse",
-              "model": "prithvi",
-              "paper_key": "dionelis2025scaling",
-              "paper_title": "Scaling Laws for Geospatial Foundation Models: A case study on PhilEO Bench",
-              "self_evaluation": false,
-              "span": "Geo-Aware U-Net 44M trained on 23TB achieves an RMSE of 0.067",
-              "value": 0.071
-            }
-          ],
-          "datasets": [
-            "PhilEO Bench (road density)",
-            "UV identification"
-          ],
-          "direction": "parity",
-          "fragile": null,
-          "label": "thin",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "worse",
-              "label": "thin",
-              "model": "prithvi",
-              "n_claims": 1,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
-              "direction": "parity",
-              "label": "thin",
-              "model": "scalemae",
-              "n_claims": 1,
-              "n_papers": 1
-            }
-          ],
-          "models_differ": true,
-          "n_claims": 2,
-          "n_models": 2,
-          "n_papers": 2,
-          "pooling_note": null,
-          "strongest_benchmark": {
-            "agreement": 1.0,
-            "direction": "parity",
-            "label": "thin",
-            "n_claims": 1,
-            "n_papers": 1,
-            "name": "UV identification"
-          },
-          "task": "urban_signal_mapping"
         },
         {
           "agreement": 1.0,
@@ -69670,7 +70056,7 @@
     "no_self_eval": {
       "axes": [
         {
-          "agreement": 0.556,
+          "agreement": 0.562,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -73003,6 +73389,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.361,
+              "dataset": "Shanghai NTL",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.638
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": null,
               "dataset": "GEO-Bench+SpaceNetv1+Sen1Floods11+PASTIS (overall avg)",
               "direction": "better",
@@ -73388,9 +73790,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 232,
-          "n_papers": 72,
-          "n_papers_all": 98
+          "n_claims": 233,
+          "n_papers": 73,
+          "n_papers_all": 99
         },
         {
           "agreement": 0.697,
@@ -74524,7 +74926,7 @@
           "n_papers_all": 44
         },
         {
-          "agreement": 0.591,
+          "agreement": 0.578,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -76064,6 +76466,22 @@
               "value": 83.0
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 0.421,
+              "dataset": "NYC Crime",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "RemoteCLIP 0.168 0.341 0.232 0.271",
+              "value": 0.179
+            },
+            {
               "baseline": "prithvi",
               "baseline_value": 0.4109,
               "dataset": "C2Seg-AB",
@@ -76226,9 +76644,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 106,
-          "n_papers": 44,
-          "n_papers_all": 62
+          "n_claims": 107,
+          "n_papers": 45,
+          "n_papers_all": 63
         },
         {
           "agreement": 1.0,
@@ -78484,7 +78902,7 @@
           "n_papers_all": 3
         },
         {
-          "agreement": 0.889,
+          "agreement": 0.9,
           "axis": "G11_complementarity",
           "claims": [
             {
@@ -78952,6 +79370,22 @@
               "value": 64.5
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 0.323,
+              "dataset": "Shanghai CO2",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.508
+            },
+            {
               "baseline": "alphaearth",
               "baseline_value": 0.745,
               "dataset": "CropHarvest Togo test set",
@@ -78970,9 +79404,9 @@
           ],
           "direction": "better",
           "label": "consensus",
-          "n_claims": 30,
-          "n_papers": 9,
-          "n_papers_all": 20
+          "n_claims": 31,
+          "n_papers": 10,
+          "n_papers_all": 21
         },
         {
           "agreement": null,
@@ -94054,6 +94488,49 @@
           }
         },
         {
+          "benchmark": "nyc crime",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.421,
+              "dataset": "NYC Crime",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "RemoteCLIP 0.168 0.341 0.232 0.271",
+              "value": 0.179
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "NYC Crime",
+          "tasks": [
+            "socioeconomic_estimation"
+          ],
+          "variants": [
+            "NYC Crime"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "openearthmap",
           "claims": [
             {
@@ -94696,6 +95173,92 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "shanghai co2",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.323,
+              "dataset": "Shanghai CO2",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.508
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "Shanghai CO2",
+          "tasks": [
+            "urban_signal_mapping"
+          ],
+          "variants": [
+            "Shanghai CO2"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
+          "benchmark": "shanghai ntl",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.361,
+              "dataset": "Shanghai NTL",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.638
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "Shanghai NTL",
+          "tasks": [
+            "urban_signal_mapping"
+          ],
+          "variants": [
+            "Shanghai NTL"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -97298,17 +97861,17 @@
       ],
       "evidence": {
         "directions": {
-          "better": 211,
+          "better": 213,
           "parity": 15,
-          "worse": 119
+          "worse": 120
         },
-        "label_ratio_unspecified": 519,
-        "n_claims": 574,
+        "label_ratio_unspecified": 522,
+        "n_claims": 577,
         "n_self_eval_claims": 0,
         "n_vs_model_or_none": 229,
-        "n_vs_task_specific": 345,
+        "n_vs_task_specific": 348,
         "pct_better": 61.2,
-        "pct_label_ratio_unspecified": 90.4
+        "pct_label_ratio_unspecified": 90.5
       },
       "groups": [
         {
@@ -113189,6 +113752,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.421,
+              "dataset": "NYC Crime",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "RemoteCLIP 0.168 0.341 0.232 0.271",
+              "value": 0.179
+            }
+          ],
+          "dataset": "NYC Crime",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "socioeconomic_estimation"
+        },
+        {
+          "agreement": 1.0,
           "baseline": null,
           "claims": [
             {
@@ -113516,6 +114109,66 @@
           "label_regime": "unspecified",
           "metric": "r2",
           "model": "satclip",
+          "n_papers": 1,
+          "task": "urban_signal_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.323,
+              "dataset": "Shanghai CO2",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.508
+            }
+          ],
+          "dataset": "Shanghai CO2",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
+          "n_papers": 1,
+          "task": "urban_signal_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.361,
+              "dataset": "Shanghai NTL",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.638
+            }
+          ],
+          "dataset": "Shanghai NTL",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "alphaearth",
           "n_papers": 1,
           "task": "urban_signal_mapping"
         },
@@ -114901,7 +115554,7 @@
             "task": "slum_detection"
           },
           "alphaearth\tsocioeconomic_estimation": {
-            "agreement": 1.0,
+            "agreement": 0.5,
             "claims": [
               {
                 "baseline": "prithvi",
@@ -114966,18 +115619,34 @@
                 "self_evaluation": false,
                 "span": "GeoViSTA outperforms baselines on Ndays",
                 "value": 0.792
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.421,
+                "dataset": "NYC Crime",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.17848",
+                "locator": "Table 1",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "wen2026morax",
+                "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "RemoteCLIP 0.168 0.341 0.232 0.271",
+                "value": 0.179
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "alphaearth",
-            "n_claims": 4,
-            "n_papers": 1,
-            "n_papers_all": 3,
+            "n_claims": 5,
+            "n_papers": 2,
+            "n_papers_all": 4,
             "task": "socioeconomic_estimation"
           },
           "alphaearth\turban_signal_mapping": {
-            "agreement": null,
+            "agreement": 1.0,
             "claims": [
               {
                 "baseline": "prithvi",
@@ -115058,14 +115727,46 @@
                 "self_evaluation": false,
                 "span": "all three models cluster at low R2 (AlphaEarth ∼\\sim 0.15, Clay ∼\\sim 0.15)",
                 "value": 0.15
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.361,
+                "dataset": "Shanghai NTL",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.17848",
+                "locator": "Table 1",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "wen2026morax",
+                "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+                "value": 0.638
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.323,
+                "dataset": "Shanghai CO2",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.17848",
+                "locator": "Table 1",
+                "metric": "r2",
+                "model": "alphaearth",
+                "paper_key": "wen2026morax",
+                "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+                "self_evaluation": false,
+                "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+                "value": 0.508
               }
             ],
-            "direction": null,
-            "label": "gap",
+            "direction": "better",
+            "label": "thin",
             "model": "alphaearth",
-            "n_claims": 5,
-            "n_papers": 0,
-            "n_papers_all": 1,
+            "n_claims": 7,
+            "n_papers": 1,
+            "n_papers_all": 2,
             "task": "urban_signal_mapping"
           },
           "alphaearth\twealth_mapping": {
@@ -127524,6 +128225,192 @@
           "task": "landslide_susceptibility"
         },
         {
+          "agreement": 0.5,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.73,
+              "dataset": "AQS PM2.5 (WR random split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2505.18461",
+              "locator": "Table 2",
+              "metric": "r2",
+              "model": "geoclip",
+              "paper_key": "karimzadeh2025performance",
+              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
+              "self_evaluation": false,
+              "span": "GeoCLIP Location Embeddings (Hadamard)",
+              "value": 0.79
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.62,
+              "dataset": "AQS PM2.5 (WR spatial split)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2505.18461",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "geoclip",
+              "paper_key": "karimzadeh2025performance",
+              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
+              "self_evaluation": false,
+              "span": "GeoCLIP Location Embeddings",
+              "value": 0.67
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 7.43,
+              "dataset": "AQS PM2.5 checkerboard delta=30 (West->East)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2505.18461",
+              "locator": "Sec 3.3",
+              "metric": "rmse",
+              "model": "geoclip",
+              "paper_key": "karimzadeh2025performance",
+              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
+              "self_evaluation": false,
+              "span": "a lower average RMSE of 6.90 (vs. 7.43",
+              "value": 6.9
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.59,
+              "dataset": "AQS PM2.5 checkerboard delta=8",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2505.18461",
+              "locator": "Table 4",
+              "metric": "r2",
+              "model": "geoclip",
+              "paper_key": "karimzadeh2025performance",
+              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
+              "self_evaluation": false,
+              "span": "GeoCLIP Location Embeddings",
+              "value": 0.6
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.569,
+              "dataset": "CDC WONDER mortality (All causes, Washington held-out)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.14406",
+              "locator": "Table 2",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "liu2026geovista",
+              "paper_title": "GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation",
+              "self_evaluation": false,
+              "span": "Results demonstrate that GeoViSTA yields superior zero-shot downstream metric performance",
+              "value": 0.611
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.671,
+              "dataset": "FireCCI51 (Ndays)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.14406",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "liu2026geovista",
+              "paper_title": "GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation",
+              "self_evaluation": false,
+              "span": "GeoViSTA outperforms baselines on Ndays",
+              "value": 0.792
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 21.65,
+              "dataset": "NS-SeC SDM dataset",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2411.06229",
+              "locator": "Table 7",
+              "metric": "rmse",
+              "model": "satclip",
+              "paper_key": "wang2024multimodal",
+              "paper_title": "Multimodal Contrastive Learning of Urban Space Representations from POI Data",
+              "self_evaluation": false,
+              "span": "SatCLIP 12.2 ± 2.5 16.8 ± 2.0 12.2 ± 1.6 28.89 ± 0.09 8.84 ± 0.03 7.07 ± 0.01",
+              "value": 28.89
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.421,
+              "dataset": "NYC Crime",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "RemoteCLIP 0.168 0.341 0.232 0.271",
+              "value": 0.179
+            }
+          ],
+          "datasets": [
+            "AQS PM2.5 (WR random split)",
+            "AQS PM2.5 (WR spatial split)",
+            "AQS PM2.5 checkerboard delta=30 (West->East)",
+            "AQS PM2.5 checkerboard delta=8",
+            "CDC WONDER mortality (All causes, Washington held-out)",
+            "FireCCI51 (Ndays)",
+            "NS-SeC SDM dataset",
+            "NYC Crime"
+          ],
+          "direction": "better",
+          "fragile": null,
+          "label": "contested",
+          "models": [
+            {
+              "agreement": 0.5,
+              "direction": "better",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 3,
+              "n_papers": 2
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "geoclip",
+              "n_claims": 4,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "satclip",
+              "n_claims": 1,
+              "n_papers": 1
+            }
+          ],
+          "models_differ": true,
+          "n_claims": 8,
+          "n_models": 3,
+          "n_papers": 4,
+          "pooling_note": null,
+          "strongest_benchmark": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_claims": 4,
+            "n_papers": 1,
+            "name": "AQS PM2.5"
+          },
+          "task": "socioeconomic_estimation"
+        },
+        {
           "agreement": 0.667,
           "claims": [
             {
@@ -127864,131 +128751,80 @@
           "task": "crop_yield_estimation"
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.333,
           "claims": [
             {
               "baseline": "task_specific",
-              "baseline_value": 0.73,
-              "dataset": "AQS PM2.5 (WR random split)",
-              "direction": "better",
+              "baseline_value": null,
+              "dataset": "UV identification",
+              "direction": "parity",
               "label_ratio": null,
-              "link": "https://arxiv.org/abs/2505.18461",
-              "locator": "Table 2",
-              "metric": "r2",
-              "model": "geoclip",
-              "paper_key": "karimzadeh2025performance",
-              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
-              "self_evaluation": false,
-              "span": "GeoCLIP Location Embeddings (Hadamard)",
-              "value": 0.79
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.62,
-              "dataset": "AQS PM2.5 (WR spatial split)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2505.18461",
+              "link": "https://arxiv.org/abs/2509.26016",
               "locator": "Table 3",
-              "metric": "r2",
-              "model": "geoclip",
-              "paper_key": "karimzadeh2025performance",
-              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
+              "metric": "miou",
+              "model": "scalemae",
+              "paper_key": "bai2025geolink",
+              "paper_title": "GeoLink: Empowering Remote Sensing Foundation Model with OpenStreetMap Data",
               "self_evaluation": false,
-              "span": "GeoCLIP Location Embeddings",
-              "value": 0.67
+              "span": "Scale-MAE\n\n90.29\n\n58.21\n\n74.25",
+              "value": 74.25
             },
             {
               "baseline": "task_specific",
-              "baseline_value": 7.43,
-              "dataset": "AQS PM2.5 checkerboard delta=30 (West->East)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2505.18461",
-              "locator": "Sec 3.3",
-              "metric": "rmse",
-              "model": "geoclip",
-              "paper_key": "karimzadeh2025performance",
-              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
-              "self_evaluation": false,
-              "span": "a lower average RMSE of 6.90 (vs. 7.43",
-              "value": 6.9
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.59,
-              "dataset": "AQS PM2.5 checkerboard delta=8",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2505.18461",
-              "locator": "Table 4",
-              "metric": "r2",
-              "model": "geoclip",
-              "paper_key": "karimzadeh2025performance",
-              "paper_title": "Performance and Generalizability Impacts of Incorporating Location Encoders into Deep Learning for Dynamic PM2.5 Estimation",
-              "self_evaluation": false,
-              "span": "GeoCLIP Location Embeddings",
-              "value": 0.6
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.569,
-              "dataset": "CDC WONDER mortality (All causes, Washington held-out)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.14406",
-              "locator": "Table 2",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "liu2026geovista",
-              "paper_title": "GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation",
-              "self_evaluation": false,
-              "span": "Results demonstrate that GeoViSTA yields superior zero-shot downstream metric performance",
-              "value": 0.611
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.671,
-              "dataset": "FireCCI51 (Ndays)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.14406",
-              "locator": "Table 3",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "liu2026geovista",
-              "paper_title": "GeoViSTA: Geospatial Vision-Tabular Transformer for Multimodal Environment Representation",
-              "self_evaluation": false,
-              "span": "GeoViSTA outperforms baselines on Ndays",
-              "value": 0.792
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 21.65,
-              "dataset": "NS-SeC SDM dataset",
+              "baseline_value": 0.063,
+              "dataset": "PhilEO Bench (road density)",
               "direction": "worse",
               "label_ratio": null,
-              "link": "https://arxiv.org/abs/2411.06229",
-              "locator": "Table 7",
+              "link": "https://arxiv.org/abs/2506.14765",
+              "locator": "Sec 4.6 / Table 3",
               "metric": "rmse",
-              "model": "satclip",
-              "paper_key": "wang2024multimodal",
-              "paper_title": "Multimodal Contrastive Learning of Urban Space Representations from POI Data",
+              "model": "prithvi",
+              "paper_key": "dionelis2025scaling",
+              "paper_title": "Scaling Laws for Geospatial Foundation Models: A case study on PhilEO Bench",
               "self_evaluation": false,
-              "span": "SatCLIP 12.2 ± 2.5 16.8 ± 2.0 12.2 ± 1.6 28.89 ± 0.09 8.84 ± 0.03 7.07 ± 0.01",
-              "value": 28.89
+              "span": "Geo-Aware U-Net 44M trained on 23TB achieves an RMSE of 0.067",
+              "value": 0.071
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.361,
+              "dataset": "Shanghai NTL",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.638
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.323,
+              "dataset": "Shanghai CO2",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.17848",
+              "locator": "Table 1",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "wen2026morax",
+              "paper_title": "MoRAX: Mobility-based Representation Augmentation for Geospatial Foundation Models",
+              "self_evaluation": false,
+              "span": "AlphaEarth 0.548 0.638 0.508 0.506",
+              "value": 0.508
             }
           ],
           "datasets": [
-            "AQS PM2.5 (WR random split)",
-            "AQS PM2.5 (WR spatial split)",
-            "AQS PM2.5 checkerboard delta=30 (West->East)",
-            "AQS PM2.5 checkerboard delta=8",
-            "CDC WONDER mortality (All causes, Washington held-out)",
-            "FireCCI51 (Ndays)",
-            "NS-SeC SDM dataset"
+            "PhilEO Bench (road density)",
+            "Shanghai CO2",
+            "Shanghai NTL",
+            "UV identification"
           ],
-          "direction": "better",
+          "direction": "parity",
           "fragile": null,
           "label": "contested",
           "models": [
@@ -128002,35 +128838,35 @@
             },
             {
               "agreement": 1.0,
-              "direction": "better",
+              "direction": "worse",
               "label": "thin",
-              "model": "geoclip",
-              "n_claims": 4,
+              "model": "prithvi",
+              "n_claims": 1,
               "n_papers": 1
             },
             {
               "agreement": 1.0,
-              "direction": "worse",
+              "direction": "parity",
               "label": "thin",
-              "model": "satclip",
+              "model": "scalemae",
               "n_claims": 1,
               "n_papers": 1
             }
           ],
           "models_differ": true,
-          "n_claims": 7,
+          "n_claims": 4,
           "n_models": 3,
           "n_papers": 3,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 1.0,
-            "direction": "better",
+            "direction": "parity",
             "label": "thin",
-            "n_claims": 4,
+            "n_claims": 1,
             "n_papers": 1,
-            "name": "AQS PM2.5"
+            "name": "UV identification"
           },
-          "task": "socioeconomic_estimation"
+          "task": "urban_signal_mapping"
         },
         {
           "agreement": 1.0,
@@ -128174,82 +129010,6 @@
             "name": "Malawi health catchment areas"
           },
           "task": "population_density"
-        },
-        {
-          "agreement": 0.5,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "UV identification",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2509.26016",
-              "locator": "Table 3",
-              "metric": "miou",
-              "model": "scalemae",
-              "paper_key": "bai2025geolink",
-              "paper_title": "GeoLink: Empowering Remote Sensing Foundation Model with OpenStreetMap Data",
-              "self_evaluation": false,
-              "span": "Scale-MAE\n\n90.29\n\n58.21\n\n74.25",
-              "value": 74.25
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.063,
-              "dataset": "PhilEO Bench (road density)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2506.14765",
-              "locator": "Sec 4.6 / Table 3",
-              "metric": "rmse",
-              "model": "prithvi",
-              "paper_key": "dionelis2025scaling",
-              "paper_title": "Scaling Laws for Geospatial Foundation Models: A case study on PhilEO Bench",
-              "self_evaluation": false,
-              "span": "Geo-Aware U-Net 44M trained on 23TB achieves an RMSE of 0.067",
-              "value": 0.071
-            }
-          ],
-          "datasets": [
-            "PhilEO Bench (road density)",
-            "UV identification"
-          ],
-          "direction": "parity",
-          "fragile": null,
-          "label": "thin",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "worse",
-              "label": "thin",
-              "model": "prithvi",
-              "n_claims": 1,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
-              "direction": "parity",
-              "label": "thin",
-              "model": "scalemae",
-              "n_claims": 1,
-              "n_papers": 1
-            }
-          ],
-          "models_differ": true,
-          "n_claims": 2,
-          "n_models": 2,
-          "n_papers": 2,
-          "pooling_note": null,
-          "strongest_benchmark": {
-            "agreement": 1.0,
-            "direction": "parity",
-            "label": "thin",
-            "n_claims": 1,
-            "n_papers": 1,
-            "name": "UV identification"
-          },
-          "task": "urban_signal_mapping"
         },
         {
           "agreement": 1.0,

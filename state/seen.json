@@ -443,6 +443,10 @@
     "key": "marsocci2024cross",
     "status": "off_topic"
   },
+  "cross view urban sensing mapping subjective streetscape perception via alphaearth embeddings and urban context": {
+    "key": "li2026cross",
+    "status": "quarantined"
+  },
   "crossearth sar a sar centric and billion scale geospatial foundation model for domain generalizable semantic segmentation": {
     "arxiv_id": "2603.12008",
     "dropped_claims": 0,
@@ -1335,6 +1339,12 @@
     "key": "defraigne2025monitoring",
     "status": "off_topic"
   },
+  "morax mobility based representation augmentation for geospatial foundation models": {
+    "arxiv_id": "2608.17848",
+    "dropped_claims": 1,
+    "key": "wen2026morax",
+    "status": "carded"
+  },
   "mosaiks are made of tesserae gui design for a co simulation framework": {
     "key": "schulte2026mosaiks",
     "status": "off_topic"
@@ -1695,6 +1705,10 @@
   },
   "quasi isometric rigidity for lamplighters with lamps of polynomial growth": {
     "key": "dumoncel2025quasi",
+    "status": "off_topic"
+  },
+  "quasirandomness and uniform twin width": {
+    "key": "kontogeorgiou2026quasirandomness",
     "status": "off_topic"
   },
   "range retrieval augmented neural fields for multi resolution geo embeddings": {
@@ -2247,6 +2261,10 @@
     "dropped_claims": 0,
     "key": "qu2026utilizing",
     "status": "carded"
+  },
+  "validating direct solvers for newton s gravitational n body problem and the systematic comparison between ieee floating point and posits": {
+    "key": "zwart2026validating",
+    "status": "off_topic"
   },
   "vanishing of the second l p cohomology group for most semisimple groups of rank at least 3": {
     "key": "neumann2023vanishing",
