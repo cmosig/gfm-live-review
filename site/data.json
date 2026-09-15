@@ -1,5 +1,5 @@
 {
-  "corpus_through": "2026-08-18",
+  "corpus_through": "2026-08-31",
   "limitations": {
     "series": {
       "benchmark_narrowness": {
@@ -39,7 +39,7 @@
         "2026-05": 16,
         "2026-06": 12,
         "2026-07": 9,
-        "2026-08": 14
+        "2026-08": 15
       },
       "compute_cost": {
         "2022-07": 1,
@@ -77,7 +77,7 @@
         "2026-05": 6,
         "2026-06": 4,
         "2026-07": 3,
-        "2026-08": 9
+        "2026-08": 10
       },
       "data_bias": {
         "2022-07": 1,
@@ -110,7 +110,7 @@
         "2026-05": 7,
         "2026-06": 9,
         "2026-07": 4,
-        "2026-08": 7
+        "2026-08": 8
       },
       "human_semantics": {
         "2024-04": 1,
@@ -202,7 +202,7 @@
         "2026-05": 10,
         "2026-06": 8,
         "2026-07": 4,
-        "2026-08": 8
+        "2026-08": 9
       },
       "temporal_transfer": {
         "2022-07": 1,
@@ -224,7 +224,7 @@
         "2026-05": 3,
         "2026-06": 3,
         "2026-07": 2,
-        "2026-08": 8
+        "2026-08": 9
       },
       "time_sensitivity": {
         "2024-03": 1,
@@ -262,14 +262,14 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 173,
-      "compute_cost": 97,
-      "data_bias": 89,
+      "benchmark_narrowness": 174,
+      "compute_cost": 98,
+      "data_bias": 90,
       "human_semantics": 20,
       "interpretability": 40,
       "mixed_pixels": 38,
-      "spatial_transfer": 98,
-      "temporal_transfer": 44,
+      "spatial_transfer": 99,
+      "temporal_transfer": 45,
       "time_sensitivity": 32,
       "uncertainty": 30
     }
@@ -307,7 +307,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 196,
+    "n_papers": 197,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -331,10 +331,22 @@
   },
   "registry": {
     "doi_status_counts": {
-      "verified": 196
+      "verified": 197
     },
-    "n_papers": 196,
+    "n_papers": 197,
     "papers": [
+      {
+        "arxiv_id": "2608.30392",
+        "date": "2026-08-31",
+        "doi": "10.48550/arxiv.2608.30392",
+        "doi_status": "verified",
+        "key": "nedungadi2026foundation",
+        "link": "https://arxiv.org/abs/2608.30392",
+        "n_claims": 5,
+        "self_evaluation": false,
+        "title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+        "venue": "arXiv"
+      },
       {
         "arxiv_id": "2608.17848",
         "date": "2026-08-18",
@@ -8268,7 +8280,7 @@
           "n_papers_all": 51
         },
         {
-          "agreement": 0.612,
+          "agreement": 0.62,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -9296,6 +9308,70 @@
               "value": 28.44
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 0.55,
+              "dataset": "CY-Bench (US)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "the unconstrained, tabular-focused TabPFN outperforms all other models with an R2R^{2} of 0.650.65",
+              "value": 0.65
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": -0.15,
+              "dataset": "YieldSAT (Argentina)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "CropFM under full fine-tuning yields the best performance (R2=0.33R^{2}=0.33)",
+              "value": 0.33
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.89,
+              "dataset": "CropHarvest (Kenya)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "Galileo suffers performance penalties in both Kenya (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.7
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.6,
+              "dataset": "BreizhCrops",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "and France (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.34
+            },
+            {
               "baseline": "alphaearth",
               "baseline_value": 0.64,
               "dataset": "FDaP v2025b (AlphaEarth-based)",
@@ -10130,9 +10206,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 116,
-          "n_papers": 49,
-          "n_papers_all": 69
+          "n_claims": 120,
+          "n_papers": 50,
+          "n_papers_all": 70
         },
         {
           "agreement": 1.0,
@@ -10413,6 +10489,22 @@
             {
               "baseline": null,
               "baseline_value": null,
+              "dataset": "CY-Bench (Germany)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.3",
+              "metric": "r2",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "R2=−0.85R^{2}=-0.85, and 53.42 MAE",
+              "value": -0.85
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
               "dataset": "CHELSA",
               "direction": "better",
               "label_ratio": null,
@@ -10573,9 +10665,9 @@
           ],
           "direction": "better",
           "label": "consensus",
-          "n_claims": 27,
+          "n_claims": 28,
           "n_papers": 10,
-          "n_papers_all": 16
+          "n_papers_all": 17
         },
         {
           "agreement": 0.556,
@@ -15216,6 +15308,151 @@
           }
         },
         {
+          "benchmark": "cropharvest",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.89,
+              "dataset": "CropHarvest (Kenya)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "Galileo suffers performance penalties in both Kenya (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.7
+            },
+            {
+              "baseline": null,
+              "baseline_value": 0.68,
+              "dataset": "CropHarvest",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2501.12535",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "purohit2025how",
+              "paper_title": "How Does the Spatial Distribution of Pre-training Data Affect Geospatial Foundation Models?",
+              "self_evaluation": false,
+              "span": "0.71 ±plus-or-minus\\pm± 0.02",
+              "value": 0.71
+            },
+            {
+              "baseline": "presto",
+              "baseline_value": 84.0,
+              "dataset": "CropHarvest",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2502.09356",
+              "locator": "Table 6",
+              "metric": "accuracy",
+              "model": "galileo",
+              "paper_key": "tseng2025galileo",
+              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
+              "self_evaluation": true,
+              "span": "The Galileo models are the best (-Base) and second-best (-Tiny) models for pixel timeseries classification",
+              "value": 84.2
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.808",
+              "value": 0.808
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.88,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.897",
+              "value": 0.897
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.745",
+              "value": 0.745
+            },
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 0.745,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.808",
+              "value": 0.808
+            }
+          ],
+          "metrics": [
+            "accuracy",
+            "f1"
+          ],
+          "models": [
+            "alphaearth",
+            "galileo",
+            "presto"
+          ],
+          "n_claims": 7,
+          "n_papers": 4,
+          "n_vs_task_specific": 4,
+          "name": "CropHarvest",
+          "tasks": [
+            "crop_type_mapping",
+            "land_cover_classification"
+          ],
+          "variants": [
+            "CropHarvest",
+            "CropHarvest (Kenya)",
+            "CropHarvest Togo test set"
+          ],
+          "verdict": {
+            "agreement": 0.5,
+            "direction": "worse",
+            "label": "thin",
+            "n_papers": 2
+          }
+        },
+        {
           "benchmark": "dfc2020",
           "claims": [
             {
@@ -15839,134 +16076,6 @@
             "direction": "better",
             "label": "contested",
             "n_papers": 3
-          }
-        },
-        {
-          "benchmark": "cropharvest",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": 0.68,
-              "dataset": "CropHarvest",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2501.12535",
-              "locator": "Table 1",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "purohit2025how",
-              "paper_title": "How Does the Spatial Distribution of Pre-training Data Affect Geospatial Foundation Models?",
-              "self_evaluation": false,
-              "span": "0.71 ±plus-or-minus\\pm± 0.02",
-              "value": 0.71
-            },
-            {
-              "baseline": "presto",
-              "baseline_value": 84.0,
-              "dataset": "CropHarvest",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2502.09356",
-              "locator": "Table 6",
-              "metric": "accuracy",
-              "model": "galileo",
-              "paper_key": "tseng2025galileo",
-              "paper_title": "Galileo: Learning Global & Local Features of Many Remote Sensing Modalities",
-              "self_evaluation": true,
-              "span": "The Galileo models are the best (-Base) and second-best (-Tiny) models for pixel timeseries classification",
-              "value": 84.2
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.75,
-              "dataset": "CropHarvest Togo test set",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.02923",
-              "locator": "Table 2",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "zvonkov2025cropland",
-              "paper_title": "Cropland Mapping using Geospatial Embeddings",
-              "self_evaluation": false,
-              "span": "0.808",
-              "value": 0.808
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.88,
-              "dataset": "CropHarvest Togo test set",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.02923",
-              "locator": "Table 2",
-              "metric": "accuracy",
-              "model": "presto",
-              "paper_key": "zvonkov2025cropland",
-              "paper_title": "Cropland Mapping using Geospatial Embeddings",
-              "self_evaluation": false,
-              "span": "0.897",
-              "value": 0.897
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.75,
-              "dataset": "CropHarvest Togo test set",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.02923",
-              "locator": "Table 2",
-              "metric": "f1",
-              "model": "alphaearth",
-              "paper_key": "zvonkov2025cropland",
-              "paper_title": "Cropland Mapping using Geospatial Embeddings",
-              "self_evaluation": false,
-              "span": "0.745",
-              "value": 0.745
-            },
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 0.745,
-              "dataset": "CropHarvest Togo test set",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.02923",
-              "locator": "Table 2",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "zvonkov2025cropland",
-              "paper_title": "Cropland Mapping using Geospatial Embeddings",
-              "self_evaluation": false,
-              "span": "0.808",
-              "value": 0.808
-            }
-          ],
-          "metrics": [
-            "accuracy",
-            "f1"
-          ],
-          "models": [
-            "alphaearth",
-            "galileo",
-            "presto"
-          ],
-          "n_claims": 6,
-          "n_papers": 3,
-          "n_vs_task_specific": 3,
-          "name": "CropHarvest",
-          "tasks": [
-            "crop_type_mapping",
-            "land_cover_classification"
-          ],
-          "variants": [
-            "CropHarvest",
-            "CropHarvest Togo test set"
-          ],
-          "verdict": {
-            "agreement": 1.0,
-            "direction": "better",
-            "label": "thin",
-            "n_papers": 1
           }
         },
         {
@@ -22920,6 +23029,67 @@
           }
         },
         {
+          "benchmark": "cy bench",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.55,
+              "dataset": "CY-Bench (US)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "the unconstrained, tabular-focused TabPFN outperforms all other models with an R2R^{2} of 0.650.65",
+              "value": 0.65
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "CY-Bench (Germany)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.3",
+              "metric": "r2",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "R2=−0.85R^{2}=-0.85, and 53.42 MAE",
+              "value": -0.85
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "galileo",
+            "presto"
+          ],
+          "n_claims": 2,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "CY-Bench",
+          "tasks": [
+            "crop_yield_estimation"
+          ],
+          "variants": [
+            "CY-Bench (Germany)",
+            "CY-Bench (US)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "danum valley",
           "claims": [
             {
@@ -25573,6 +25743,49 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "breizhcrops",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.6,
+              "dataset": "BreizhCrops",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "and France (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.34
+            }
+          ],
+          "metrics": [
+            "f1"
+          ],
+          "models": [
+            "galileo"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "BreizhCrops",
+          "tasks": [
+            "crop_type_mapping"
+          ],
+          "variants": [
+            "BreizhCrops"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -32454,6 +32667,49 @@
             "label": "thin",
             "n_papers": 1
           }
+        },
+        {
+          "benchmark": "yieldsat",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": -0.15,
+              "dataset": "YieldSAT (Argentina)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "CropFM under full fine-tuning yields the best performance (R2=0.33R^{2}=0.33)",
+              "value": 0.33
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "presto"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "YieldSAT",
+          "tasks": [
+            "crop_yield_estimation"
+          ],
+          "variants": [
+            "YieldSAT (Argentina)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
         }
       ],
       "diagnostics": [
@@ -34228,17 +34484,17 @@
       ],
       "evidence": {
         "directions": {
-          "better": 257,
+          "better": 259,
           "parity": 15,
-          "worse": 126
+          "worse": 128
         },
-        "label_ratio_unspecified": 583,
-        "n_claims": 661,
+        "label_ratio_unspecified": 588,
+        "n_claims": 666,
         "n_self_eval_claims": 84,
-        "n_vs_model_or_none": 263,
-        "n_vs_task_specific": 398,
-        "pct_better": 64.6,
-        "pct_label_ratio_unspecified": 88.2
+        "n_vs_model_or_none": 264,
+        "n_vs_task_specific": 402,
+        "pct_better": 64.4,
+        "pct_label_ratio_unspecified": 88.3
       },
       "groups": [
         {
@@ -36911,6 +37167,36 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 0.6,
+              "dataset": "BreizhCrops",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "and France (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.34
+            }
+          ],
+          "dataset": "BreizhCrops",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "galileo",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 67.41,
               "dataset": "CDL",
               "direction": "better",
@@ -37322,6 +37608,36 @@
           "label_regime": "unspecified",
           "metric": "f1",
           "model": "presto",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.89,
+              "dataset": "CropHarvest (Kenya)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "Galileo suffers performance penalties in both Kenya (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.7
+            }
+          ],
+          "dataset": "CropHarvest (Kenya)",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "galileo",
           "n_papers": 1,
           "task": "crop_type_mapping"
         },
@@ -39103,6 +39419,66 @@
         },
         {
           "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "CY-Bench (Germany)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.3",
+              "metric": "r2",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "R2=−0.85R^{2}=-0.85, and 53.42 MAE",
+              "value": -0.85
+            }
+          ],
+          "dataset": "CY-Bench (Germany)",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "galileo",
+          "n_papers": 1,
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.55,
+              "dataset": "CY-Bench (US)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "the unconstrained, tabular-focused TabPFN outperforms all other models with an R2R^{2} of 0.650.65",
+              "value": 0.65
+            }
+          ],
+          "dataset": "CY-Bench (US)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "task_specific",
           "claims": [
             {
@@ -39294,6 +39670,36 @@
           "label_regime": "unspecified",
           "metric": "r2",
           "model": "alphaearth",
+          "n_papers": 1,
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": -0.15,
+              "dataset": "YieldSAT (Argentina)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "CropFM under full fine-tuning yields the best performance (R2=0.33R^{2}=0.33)",
+              "value": 0.33
+            }
+          ],
+          "dataset": "YieldSAT (Argentina)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "presto",
           "n_papers": 1,
           "task": "crop_yield_estimation"
         },
@@ -57161,7 +57567,7 @@
             "task": "semantic_segmentation"
           },
           "galileo\tcrop_type_mapping": {
-            "agreement": 0.5,
+            "agreement": 0.667,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -57228,6 +57634,38 @@
                 "value": 20.6
               },
               {
+                "baseline": "task_specific",
+                "baseline_value": 0.89,
+                "dataset": "CropHarvest (Kenya)",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.30392",
+                "locator": "Table 3",
+                "metric": "f1",
+                "model": "galileo",
+                "paper_key": "nedungadi2026foundation",
+                "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+                "self_evaluation": false,
+                "span": "Galileo suffers performance penalties in both Kenya (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+                "value": 0.7
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.6,
+                "dataset": "BreizhCrops",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.30392",
+                "locator": "Table 3",
+                "metric": "f1",
+                "model": "galileo",
+                "paper_key": "nedungadi2026foundation",
+                "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+                "self_evaluation": false,
+                "span": "and France (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+                "value": 0.34
+              },
+              {
                 "baseline": "presto",
                 "baseline_value": 84.0,
                 "dataset": "CropHarvest",
@@ -57244,13 +57682,41 @@
                 "value": 84.2
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": "worse",
+            "label": "contested",
             "model": "galileo",
-            "n_claims": 5,
-            "n_papers": 2,
-            "n_papers_all": 3,
+            "n_claims": 7,
+            "n_papers": 3,
+            "n_papers_all": 4,
             "task": "crop_type_mapping"
+          },
+          "galileo\tcrop_yield_estimation": {
+            "agreement": null,
+            "claims": [
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "CY-Bench (Germany)",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.30392",
+                "locator": "Sec 3.2.3",
+                "metric": "r2",
+                "model": "galileo",
+                "paper_key": "nedungadi2026foundation",
+                "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+                "self_evaluation": false,
+                "span": "R2=−0.85R^{2}=-0.85, and 53.42 MAE",
+                "value": -0.85
+              }
+            ],
+            "direction": null,
+            "label": "gap",
+            "model": "galileo",
+            "n_claims": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
+            "task": "crop_yield_estimation"
           },
           "galileo\tflood_mapping": {
             "agreement": null,
@@ -57827,6 +58293,50 @@
             "n_papers": 3,
             "n_papers_all": 4,
             "task": "crop_type_mapping"
+          },
+          "presto\tcrop_yield_estimation": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.55,
+                "dataset": "CY-Bench (US)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.30392",
+                "locator": "Sec 3.2.2",
+                "metric": "r2",
+                "model": "presto",
+                "paper_key": "nedungadi2026foundation",
+                "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+                "self_evaluation": false,
+                "span": "the unconstrained, tabular-focused TabPFN outperforms all other models with an R2R^{2} of 0.650.65",
+                "value": 0.65
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": -0.15,
+                "dataset": "YieldSAT (Argentina)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.30392",
+                "locator": "Sec 3.2.2",
+                "metric": "r2",
+                "model": "presto",
+                "paper_key": "nedungadi2026foundation",
+                "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+                "self_evaluation": false,
+                "span": "CropFM under full fine-tuning yields the best performance (R2=0.33R^{2}=0.33)",
+                "value": 0.33
+              }
+            ],
+            "direction": "better",
+            "label": "thin",
+            "model": "presto",
+            "n_claims": 2,
+            "n_papers": 1,
+            "n_papers_all": 1,
+            "task": "crop_yield_estimation"
           },
           "presto\tflood_mapping": {
             "agreement": 1.0,
@@ -65774,7 +66284,7 @@
           "task": "land_cover_classification"
         },
         {
-          "agreement": 0.577,
+          "agreement": 0.556,
           "claims": [
             {
               "baseline": "task_specific",
@@ -66274,6 +66784,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.89,
+              "dataset": "CropHarvest (Kenya)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "Galileo suffers performance penalties in both Kenya (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.7
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.6,
+              "dataset": "BreizhCrops",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "and France (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.34
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.92,
               "dataset": "COLD-CI stratified reference points",
               "direction": "worse",
@@ -66627,6 +67169,7 @@
           ],
           "datasets": [
             "AgriPotential",
+            "BreizhCrops",
             "CDL",
             "COLD-CI stratified reference points",
             "Crop Type Mapping-SS",
@@ -66634,6 +67177,7 @@
             "CropGlobe (USA→AUS)",
             "CropGlobe USA (2023→2017)",
             "CropGlobe USA (2023→2020)",
+            "CropHarvest (Kenya)",
             "EuroCrops",
             "EuroCrops (ARA, agricultural land mapping)",
             "Expanded 2022 CDL",
@@ -66698,12 +67242,12 @@
               "n_papers": 5
             },
             {
-              "agreement": 0.5,
-              "direction": "better",
-              "label": "thin",
+              "agreement": 0.667,
+              "direction": "worse",
+              "label": "contested",
               "model": "galileo",
-              "n_claims": 4,
-              "n_papers": 2
+              "n_claims": 6,
+              "n_papers": 3
             },
             {
               "agreement": 0.667,
@@ -66731,9 +67275,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 53,
+          "n_claims": 55,
           "n_models": 7,
-          "n_papers": 26,
+          "n_papers": 27,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.667,
@@ -68977,6 +69521,191 @@
           "task": "landslide_susceptibility"
         },
         {
+          "agreement": 0.75,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": -0.093,
+              "dataset": "GROW-Africa/HarvestStat maize yield (LOCO)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08113",
+              "locator": "Table III",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "adjei2026foundation",
+              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+              "self_evaluation": false,
+              "span": "ranging from −0.093-0.093 (Spectral / Ridge) to −0.027-0.027 (Prithvi-EO / Ridge)",
+              "value": -0.027
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.291,
+              "dataset": "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08113",
+              "locator": "Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "adjei2026foundation",
+              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+              "self_evaluation": false,
+              "span": "best-case Prithvi-EO R=20.300{}^{2}=0.300 vs. spectral R=20.291{}^{2}=0.291",
+              "value": 0.3
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
+              "value": 0.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around -0.28–0.07",
+              "value": -0.28
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around 0.39–0.51",
+              "value": 0.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.55,
+              "dataset": "CY-Bench (US)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "the unconstrained, tabular-focused TabPFN outperforms all other models with an R2R^{2} of 0.650.65",
+              "value": 0.65
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": -0.15,
+              "dataset": "YieldSAT (Argentina)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "CropFM under full fine-tuning yields the best performance (R2=0.33R^{2}=0.33)",
+              "value": 0.33
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C4",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
+              "value": 0.81
+            }
+          ],
+          "datasets": [
+            "CY-Bench (US)",
+            "GROW-Africa/HarvestStat maize yield (LOCO)",
+            "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
+            "USDA-NASS county-level yield",
+            "USDA-NASS county-level yield (ETF/GP ecoregions)",
+            "YieldSAT (Argentina)",
+            "eddy-covariance NEE-partitioned GPP (37 sites)"
+          ],
+          "direction": "better",
+          "fragile": null,
+          "label": "contested",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 3,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "presto",
+              "n_claims": 2,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "prithvi",
+              "n_claims": 3,
+              "n_papers": 2
+            }
+          ],
+          "models_differ": true,
+          "n_claims": 8,
+          "n_models": 3,
+          "n_papers": 4,
+          "pooling_note": null,
+          "strongest_benchmark": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_claims": 3,
+            "n_papers": 1,
+            "name": "USDA-NASS county-level yield"
+          },
+          "task": "crop_yield_estimation"
+        },
+        {
           "agreement": 0.5,
           "claims": [
             {
@@ -69358,149 +70087,6 @@
             "name": "CHC"
           },
           "task": "canopy_height_estimation"
-        },
-        {
-          "agreement": 0.667,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": -0.093,
-              "dataset": "GROW-Africa/HarvestStat maize yield (LOCO)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08113",
-              "locator": "Table III",
-              "metric": "r2",
-              "model": "prithvi",
-              "paper_key": "adjei2026foundation",
-              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
-              "self_evaluation": false,
-              "span": "ranging from −0.093-0.093 (Spectral / Ridge) to −0.027-0.027 (Prithvi-EO / Ridge)",
-              "value": -0.027
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.291,
-              "dataset": "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08113",
-              "locator": "Table II",
-              "metric": "r2",
-              "model": "prithvi",
-              "paper_key": "adjei2026foundation",
-              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
-              "self_evaluation": false,
-              "span": "best-case Prithvi-EO R=20.300{}^{2}=0.300 vs. spectral R=20.291{}^{2}=0.291",
-              "value": 0.3
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 3",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
-              "value": 0.8
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around -0.28–0.07",
-              "value": -0.28
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around 0.39–0.51",
-              "value": 0.39
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.75,
-              "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2608.15282",
-              "locator": "Sec IV-C4",
-              "metric": "r2",
-              "model": "prithvi",
-              "paper_key": "yu2026earth",
-              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
-              "self_evaluation": false,
-              "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
-              "value": 0.81
-            }
-          ],
-          "datasets": [
-            "GROW-Africa/HarvestStat maize yield (LOCO)",
-            "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
-            "USDA-NASS county-level yield",
-            "USDA-NASS county-level yield (ETF/GP ecoregions)",
-            "eddy-covariance NEE-partitioned GPP (37 sites)"
-          ],
-          "direction": "better",
-          "fragile": null,
-          "label": "contested",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "worse",
-              "label": "thin",
-              "model": "alphaearth",
-              "n_claims": 3,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "prithvi",
-              "n_claims": 3,
-              "n_papers": 2
-            }
-          ],
-          "models_differ": true,
-          "n_claims": 6,
-          "n_models": 2,
-          "n_papers": 3,
-          "pooling_note": null,
-          "strongest_benchmark": {
-            "agreement": 1.0,
-            "direction": "worse",
-            "label": "thin",
-            "n_claims": 3,
-            "n_papers": 1,
-            "name": "USDA-NASS county-level yield"
-          },
-          "task": "crop_yield_estimation"
         },
         {
           "agreement": 0.333,
@@ -74926,7 +75512,7 @@
           "n_papers_all": 44
         },
         {
-          "agreement": 0.578,
+          "agreement": 0.587,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -75922,6 +76508,70 @@
               "value": 28.44
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 0.55,
+              "dataset": "CY-Bench (US)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "the unconstrained, tabular-focused TabPFN outperforms all other models with an R2R^{2} of 0.650.65",
+              "value": 0.65
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": -0.15,
+              "dataset": "YieldSAT (Argentina)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "CropFM under full fine-tuning yields the best performance (R2=0.33R^{2}=0.33)",
+              "value": 0.33
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.89,
+              "dataset": "CropHarvest (Kenya)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "Galileo suffers performance penalties in both Kenya (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.7
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.6,
+              "dataset": "BreizhCrops",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "and France (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.34
+            },
+            {
               "baseline": "alphaearth",
               "baseline_value": 0.64,
               "dataset": "FDaP v2025b (AlphaEarth-based)",
@@ -76644,9 +77294,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 107,
-          "n_papers": 45,
-          "n_papers_all": 63
+          "n_claims": 111,
+          "n_papers": 46,
+          "n_papers_all": 64
         },
         {
           "agreement": 1.0,
@@ -76815,6 +77465,22 @@
             {
               "baseline": null,
               "baseline_value": null,
+              "dataset": "CY-Bench (Germany)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.3",
+              "metric": "r2",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "R2=−0.85R^{2}=-0.85, and 53.42 MAE",
+              "value": -0.85
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
               "dataset": "CHELSA",
               "direction": "better",
               "label_ratio": null,
@@ -76943,9 +77609,9 @@
           ],
           "direction": "better",
           "label": "consensus",
-          "n_claims": 18,
+          "n_claims": 19,
           "n_papers": 7,
-          "n_papers_all": 11
+          "n_papers_all": 12
         },
         {
           "agreement": 0.571,
@@ -80909,6 +81575,135 @@
           }
         },
         {
+          "benchmark": "cropharvest",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.89,
+              "dataset": "CropHarvest (Kenya)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "Galileo suffers performance penalties in both Kenya (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.7
+            },
+            {
+              "baseline": null,
+              "baseline_value": 0.68,
+              "dataset": "CropHarvest",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2501.12535",
+              "locator": "Table 1",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "purohit2025how",
+              "paper_title": "How Does the Spatial Distribution of Pre-training Data Affect Geospatial Foundation Models?",
+              "self_evaluation": false,
+              "span": "0.71 ±plus-or-minus\\pm± 0.02",
+              "value": 0.71
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.808",
+              "value": 0.808
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.88,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "accuracy",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.897",
+              "value": 0.897
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "alphaearth",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.745",
+              "value": 0.745
+            },
+            {
+              "baseline": "alphaearth",
+              "baseline_value": 0.745,
+              "dataset": "CropHarvest Togo test set",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2511.02923",
+              "locator": "Table 2",
+              "metric": "f1",
+              "model": "presto",
+              "paper_key": "zvonkov2025cropland",
+              "paper_title": "Cropland Mapping using Geospatial Embeddings",
+              "self_evaluation": false,
+              "span": "0.808",
+              "value": 0.808
+            }
+          ],
+          "metrics": [
+            "accuracy",
+            "f1"
+          ],
+          "models": [
+            "alphaearth",
+            "galileo",
+            "presto"
+          ],
+          "n_claims": 6,
+          "n_papers": 3,
+          "n_vs_task_specific": 4,
+          "name": "CropHarvest",
+          "tasks": [
+            "crop_type_mapping",
+            "land_cover_classification"
+          ],
+          "variants": [
+            "CropHarvest",
+            "CropHarvest (Kenya)",
+            "CropHarvest Togo test set"
+          ],
+          "verdict": {
+            "agreement": 0.5,
+            "direction": "worse",
+            "label": "thin",
+            "n_papers": 2
+          }
+        },
+        {
           "benchmark": "mados",
           "claims": [
             {
@@ -82117,117 +82912,6 @@
             "direction": "better",
             "label": "thin",
             "n_papers": 2
-          }
-        },
-        {
-          "benchmark": "cropharvest",
-          "claims": [
-            {
-              "baseline": null,
-              "baseline_value": 0.68,
-              "dataset": "CropHarvest",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2501.12535",
-              "locator": "Table 1",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "purohit2025how",
-              "paper_title": "How Does the Spatial Distribution of Pre-training Data Affect Geospatial Foundation Models?",
-              "self_evaluation": false,
-              "span": "0.71 ±plus-or-minus\\pm± 0.02",
-              "value": 0.71
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.75,
-              "dataset": "CropHarvest Togo test set",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.02923",
-              "locator": "Table 2",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "zvonkov2025cropland",
-              "paper_title": "Cropland Mapping using Geospatial Embeddings",
-              "self_evaluation": false,
-              "span": "0.808",
-              "value": 0.808
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.88,
-              "dataset": "CropHarvest Togo test set",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.02923",
-              "locator": "Table 2",
-              "metric": "accuracy",
-              "model": "presto",
-              "paper_key": "zvonkov2025cropland",
-              "paper_title": "Cropland Mapping using Geospatial Embeddings",
-              "self_evaluation": false,
-              "span": "0.897",
-              "value": 0.897
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.75,
-              "dataset": "CropHarvest Togo test set",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.02923",
-              "locator": "Table 2",
-              "metric": "f1",
-              "model": "alphaearth",
-              "paper_key": "zvonkov2025cropland",
-              "paper_title": "Cropland Mapping using Geospatial Embeddings",
-              "self_evaluation": false,
-              "span": "0.745",
-              "value": 0.745
-            },
-            {
-              "baseline": "alphaearth",
-              "baseline_value": 0.745,
-              "dataset": "CropHarvest Togo test set",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2511.02923",
-              "locator": "Table 2",
-              "metric": "f1",
-              "model": "presto",
-              "paper_key": "zvonkov2025cropland",
-              "paper_title": "Cropland Mapping using Geospatial Embeddings",
-              "self_evaluation": false,
-              "span": "0.808",
-              "value": 0.808
-            }
-          ],
-          "metrics": [
-            "accuracy",
-            "f1"
-          ],
-          "models": [
-            "alphaearth",
-            "presto"
-          ],
-          "n_claims": 5,
-          "n_papers": 2,
-          "n_vs_task_specific": 3,
-          "name": "CropHarvest",
-          "tasks": [
-            "crop_type_mapping",
-            "land_cover_classification"
-          ],
-          "variants": [
-            "CropHarvest",
-            "CropHarvest Togo test set"
-          ],
-          "verdict": {
-            "agreement": 1.0,
-            "direction": "better",
-            "label": "thin",
-            "n_papers": 1
           }
         },
         {
@@ -87652,6 +88336,67 @@
           }
         },
         {
+          "benchmark": "cy bench",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.55,
+              "dataset": "CY-Bench (US)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "the unconstrained, tabular-focused TabPFN outperforms all other models with an R2R^{2} of 0.650.65",
+              "value": 0.65
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "CY-Bench (Germany)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.3",
+              "metric": "r2",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "R2=−0.85R^{2}=-0.85, and 53.42 MAE",
+              "value": -0.85
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "galileo",
+            "presto"
+          ],
+          "n_claims": 2,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "CY-Bench",
+          "tasks": [
+            "crop_yield_estimation"
+          ],
+          "variants": [
+            "CY-Bench (Germany)",
+            "CY-Bench (US)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "danum valley",
           "claims": [
             {
@@ -90099,6 +90844,49 @@
             "direction": null,
             "label": "gap",
             "n_papers": 0
+          }
+        },
+        {
+          "benchmark": "breizhcrops",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.6,
+              "dataset": "BreizhCrops",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "and France (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.34
+            }
+          ],
+          "metrics": [
+            "f1"
+          ],
+          "models": [
+            "galileo"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "BreizhCrops",
+          "tasks": [
+            "crop_type_mapping"
+          ],
+          "variants": [
+            "BreizhCrops"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_papers": 1
           }
         },
         {
@@ -96292,6 +97080,49 @@
             "label": "thin",
             "n_papers": 1
           }
+        },
+        {
+          "benchmark": "yieldsat",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": -0.15,
+              "dataset": "YieldSAT (Argentina)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "CropFM under full fine-tuning yields the best performance (R2=0.33R^{2}=0.33)",
+              "value": 0.33
+            }
+          ],
+          "metrics": [
+            "r2"
+          ],
+          "models": [
+            "presto"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "YieldSAT",
+          "tasks": [
+            "crop_yield_estimation"
+          ],
+          "variants": [
+            "YieldSAT (Argentina)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
         }
       ],
       "diagnostics": [
@@ -97861,16 +98692,16 @@
       ],
       "evidence": {
         "directions": {
-          "better": 213,
+          "better": 215,
           "parity": 15,
-          "worse": 120
+          "worse": 122
         },
-        "label_ratio_unspecified": 522,
-        "n_claims": 577,
+        "label_ratio_unspecified": 527,
+        "n_claims": 582,
         "n_self_eval_claims": 0,
-        "n_vs_model_or_none": 229,
-        "n_vs_task_specific": 348,
-        "pct_better": 61.2,
+        "n_vs_model_or_none": 230,
+        "n_vs_task_specific": 352,
+        "pct_better": 61.1,
         "pct_label_ratio_unspecified": 90.5
       },
       "groups": [
@@ -100154,6 +100985,36 @@
           "claims": [
             {
               "baseline": "task_specific",
+              "baseline_value": 0.6,
+              "dataset": "BreizhCrops",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "and France (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.34
+            }
+          ],
+          "dataset": "BreizhCrops",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "galileo",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
               "baseline_value": 67.41,
               "dataset": "CDL",
               "direction": "better",
@@ -100535,6 +101396,36 @@
           "label_regime": "unspecified",
           "metric": "f1",
           "model": "presto",
+          "n_papers": 1,
+          "task": "crop_type_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.89,
+              "dataset": "CropHarvest (Kenya)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "Galileo suffers performance penalties in both Kenya (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.7
+            }
+          ],
+          "dataset": "CropHarvest (Kenya)",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "galileo",
           "n_papers": 1,
           "task": "crop_type_mapping"
         },
@@ -101986,6 +102877,66 @@
         },
         {
           "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "CY-Bench (Germany)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.3",
+              "metric": "r2",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "R2=−0.85R^{2}=-0.85, and 53.42 MAE",
+              "value": -0.85
+            }
+          ],
+          "dataset": "CY-Bench (Germany)",
+          "direction": "worse",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "galileo",
+          "n_papers": 1,
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.55,
+              "dataset": "CY-Bench (US)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "the unconstrained, tabular-focused TabPFN outperforms all other models with an R2R^{2} of 0.650.65",
+              "value": 0.65
+            }
+          ],
+          "dataset": "CY-Bench (US)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "presto",
+          "n_papers": 1,
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "task_specific",
           "claims": [
             {
@@ -102147,6 +103098,36 @@
           "label_regime": "unspecified",
           "metric": "r2",
           "model": "alphaearth",
+          "n_papers": 1,
+          "task": "crop_yield_estimation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": -0.15,
+              "dataset": "YieldSAT (Argentina)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "CropFM under full fine-tuning yields the best performance (R2=0.33R^{2}=0.33)",
+              "value": 0.33
+            }
+          ],
+          "dataset": "YieldSAT (Argentina)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "r2",
+          "model": "presto",
           "n_papers": 1,
           "task": "crop_yield_estimation"
         },
@@ -118034,7 +119015,7 @@
             "task": "semantic_segmentation"
           },
           "galileo\tcrop_type_mapping": {
-            "agreement": 0.5,
+            "agreement": 0.667,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -118099,15 +119080,75 @@
                 "self_evaluation": false,
                 "span": "frozen variants (Galileo-nano: 14.1%; Galileo-base: 20.6%; full results in Supp. Table 4)",
                 "value": 20.6
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.89,
+                "dataset": "CropHarvest (Kenya)",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.30392",
+                "locator": "Table 3",
+                "metric": "f1",
+                "model": "galileo",
+                "paper_key": "nedungadi2026foundation",
+                "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+                "self_evaluation": false,
+                "span": "Galileo suffers performance penalties in both Kenya (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+                "value": 0.7
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.6,
+                "dataset": "BreizhCrops",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.30392",
+                "locator": "Table 3",
+                "metric": "f1",
+                "model": "galileo",
+                "paper_key": "nedungadi2026foundation",
+                "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+                "self_evaluation": false,
+                "span": "and France (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+                "value": 0.34
               }
             ],
-            "direction": "better",
-            "label": "thin",
+            "direction": "worse",
+            "label": "contested",
             "model": "galileo",
-            "n_claims": 4,
-            "n_papers": 2,
-            "n_papers_all": 2,
+            "n_claims": 6,
+            "n_papers": 3,
+            "n_papers_all": 3,
             "task": "crop_type_mapping"
+          },
+          "galileo\tcrop_yield_estimation": {
+            "agreement": null,
+            "claims": [
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "CY-Bench (Germany)",
+                "direction": "worse",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.30392",
+                "locator": "Sec 3.2.3",
+                "metric": "r2",
+                "model": "galileo",
+                "paper_key": "nedungadi2026foundation",
+                "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+                "self_evaluation": false,
+                "span": "R2=−0.85R^{2}=-0.85, and 53.42 MAE",
+                "value": -0.85
+              }
+            ],
+            "direction": null,
+            "label": "gap",
+            "model": "galileo",
+            "n_claims": 1,
+            "n_papers": 0,
+            "n_papers_all": 1,
+            "task": "crop_yield_estimation"
           },
           "galileo\tsemantic_segmentation": {
             "agreement": 1.0,
@@ -118596,6 +119637,50 @@
             "n_papers": 3,
             "n_papers_all": 4,
             "task": "crop_type_mapping"
+          },
+          "presto\tcrop_yield_estimation": {
+            "agreement": 1.0,
+            "claims": [
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.55,
+                "dataset": "CY-Bench (US)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.30392",
+                "locator": "Sec 3.2.2",
+                "metric": "r2",
+                "model": "presto",
+                "paper_key": "nedungadi2026foundation",
+                "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+                "self_evaluation": false,
+                "span": "the unconstrained, tabular-focused TabPFN outperforms all other models with an R2R^{2} of 0.650.65",
+                "value": 0.65
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": -0.15,
+                "dataset": "YieldSAT (Argentina)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2608.30392",
+                "locator": "Sec 3.2.2",
+                "metric": "r2",
+                "model": "presto",
+                "paper_key": "nedungadi2026foundation",
+                "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+                "self_evaluation": false,
+                "span": "CropFM under full fine-tuning yields the best performance (R2=0.33R^{2}=0.33)",
+                "value": 0.33
+              }
+            ],
+            "direction": "better",
+            "label": "thin",
+            "model": "presto",
+            "n_claims": 2,
+            "n_papers": 1,
+            "n_papers_all": 1,
+            "task": "crop_yield_estimation"
           },
           "presto\tflood_mapping": {
             "agreement": 1.0,
@@ -125380,7 +126465,7 @@
           "task": "land_cover_classification"
         },
         {
-          "agreement": 0.522,
+          "agreement": 0.5,
           "claims": [
             {
               "baseline": "task_specific",
@@ -125784,6 +126869,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.89,
+              "dataset": "CropHarvest (Kenya)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "Galileo suffers performance penalties in both Kenya (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.7
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.6,
+              "dataset": "BreizhCrops",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "galileo",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "and France (Δ​F1≈−0.16\\Delta\\text{F1}\\approx-0.16)",
+              "value": 0.34
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 0.92,
               "dataset": "COLD-CI stratified reference points",
               "direction": "worse",
@@ -126089,6 +127206,7 @@
           ],
           "datasets": [
             "AgriPotential",
+            "BreizhCrops",
             "CDL",
             "COLD-CI stratified reference points",
             "Crop Type Mapping-SS",
@@ -126096,6 +127214,7 @@
             "CropGlobe (USA→AUS)",
             "CropGlobe USA (2023→2017)",
             "CropGlobe USA (2023→2020)",
+            "CropHarvest (Kenya)",
             "EuroCrops",
             "EuroCrops (ARA, agricultural land mapping)",
             "Expanded 2022 CDL",
@@ -126152,12 +127271,12 @@
               "n_papers": 5
             },
             {
-              "agreement": 0.5,
-              "direction": "better",
-              "label": "thin",
+              "agreement": 0.667,
+              "direction": "worse",
+              "label": "contested",
               "model": "galileo",
-              "n_claims": 4,
-              "n_papers": 2
+              "n_claims": 6,
+              "n_papers": 3
             },
             {
               "agreement": 0.667,
@@ -126185,9 +127304,9 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 44,
+          "n_claims": 46,
           "n_models": 7,
-          "n_papers": 23,
+          "n_papers": 24,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.667,
@@ -128225,6 +129344,191 @@
           "task": "landslide_susceptibility"
         },
         {
+          "agreement": 0.75,
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": -0.093,
+              "dataset": "GROW-Africa/HarvestStat maize yield (LOCO)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08113",
+              "locator": "Table III",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "adjei2026foundation",
+              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+              "self_evaluation": false,
+              "span": "ranging from −0.093-0.093 (Spectral / Ridge) to −0.027-0.027 (Prithvi-EO / Ridge)",
+              "value": -0.027
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.291,
+              "dataset": "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2605.08113",
+              "locator": "Table II",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "adjei2026foundation",
+              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
+              "self_evaluation": false,
+              "span": "best-case Prithvi-EO R=20.300{}^{2}=0.300 vs. spectral R=20.291{}^{2}=0.291",
+              "value": 0.3
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 3",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
+              "value": 0.8
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around -0.28–0.07",
+              "value": -0.28
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2601.00857",
+              "locator": "Table 6",
+              "metric": "r2",
+              "model": "alphaearth",
+              "paper_key": "ma2025harvesting",
+              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
+              "self_evaluation": false,
+              "span": "with R² values around 0.39–0.51",
+              "value": 0.39
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.55,
+              "dataset": "CY-Bench (US)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "the unconstrained, tabular-focused TabPFN outperforms all other models with an R2R^{2} of 0.650.65",
+              "value": 0.65
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": -0.15,
+              "dataset": "YieldSAT (Argentina)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.30392",
+              "locator": "Sec 3.2.2",
+              "metric": "r2",
+              "model": "presto",
+              "paper_key": "nedungadi2026foundation",
+              "paper_title": "Foundation Models Meet Agriculture: Challenges Beyond Pretraining",
+              "self_evaluation": false,
+              "span": "CropFM under full fine-tuning yields the best performance (R2=0.33R^{2}=0.33)",
+              "value": 0.33
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.75,
+              "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2608.15282",
+              "locator": "Sec IV-C4",
+              "metric": "r2",
+              "model": "prithvi",
+              "paper_key": "yu2026earth",
+              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+              "self_evaluation": false,
+              "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
+              "value": 0.81
+            }
+          ],
+          "datasets": [
+            "CY-Bench (US)",
+            "GROW-Africa/HarvestStat maize yield (LOCO)",
+            "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
+            "USDA-NASS county-level yield",
+            "USDA-NASS county-level yield (ETF/GP ecoregions)",
+            "YieldSAT (Argentina)",
+            "eddy-covariance NEE-partitioned GPP (37 sites)"
+          ],
+          "direction": "better",
+          "fragile": null,
+          "label": "contested",
+          "models": [
+            {
+              "agreement": 1.0,
+              "direction": "worse",
+              "label": "thin",
+              "model": "alphaearth",
+              "n_claims": 3,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "presto",
+              "n_claims": 2,
+              "n_papers": 1
+            },
+            {
+              "agreement": 1.0,
+              "direction": "better",
+              "label": "thin",
+              "model": "prithvi",
+              "n_claims": 3,
+              "n_papers": 2
+            }
+          ],
+          "models_differ": true,
+          "n_claims": 8,
+          "n_models": 3,
+          "n_papers": 4,
+          "pooling_note": null,
+          "strongest_benchmark": {
+            "agreement": 1.0,
+            "direction": "worse",
+            "label": "thin",
+            "n_claims": 3,
+            "n_papers": 1,
+            "name": "USDA-NASS county-level yield"
+          },
+          "task": "crop_yield_estimation"
+        },
+        {
           "agreement": 0.5,
           "claims": [
             {
@@ -128606,149 +129910,6 @@
             "name": "CHC"
           },
           "task": "canopy_height_estimation"
-        },
-        {
-          "agreement": 0.667,
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": -0.093,
-              "dataset": "GROW-Africa/HarvestStat maize yield (LOCO)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08113",
-              "locator": "Table III",
-              "metric": "r2",
-              "model": "prithvi",
-              "paper_key": "adjei2026foundation",
-              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
-              "self_evaluation": false,
-              "span": "ranging from −0.093-0.093 (Spectral / Ridge) to −0.027-0.027 (Prithvi-EO / Ridge)",
-              "value": -0.027
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.291,
-              "dataset": "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2605.08113",
-              "locator": "Table II",
-              "metric": "r2",
-              "model": "prithvi",
-              "paper_key": "adjei2026foundation",
-              "paper_title": "Do Foundation Model Embeddings Improve Cross-Country Crop Yield Generalisation? A Leave-One-Country-Out Evaluation in Sub-Saharan Africa",
-              "self_evaluation": false,
-              "span": "best-case Prithvi-EO R=20.300{}^{2}=0.300 vs. spectral R=20.291{}^{2}=0.291",
-              "value": 0.3
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield",
-              "direction": "parity",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 3",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "achieving an R2 of around 0.80 for corn and soybean, and 0.70 for winter wheat",
-              "value": 0.8
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around -0.28–0.07",
-              "value": -0.28
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": null,
-              "dataset": "USDA-NASS county-level yield (ETF/GP ecoregions)",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2601.00857",
-              "locator": "Table 6",
-              "metric": "r2",
-              "model": "alphaearth",
-              "paper_key": "ma2025harvesting",
-              "paper_title": "Harvesting AlphaEarth: Benchmarking the Geospatial Foundation Model for Agricultural Downstream Tasks",
-              "self_evaluation": false,
-              "span": "with R² values around 0.39–0.51",
-              "value": 0.39
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.75,
-              "dataset": "eddy-covariance NEE-partitioned GPP (37 sites)",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2608.15282",
-              "locator": "Sec IV-C4",
-              "metric": "r2",
-              "model": "prithvi",
-              "paper_key": "yu2026earth",
-              "paper_title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
-              "self_evaluation": false,
-              "span": "a fused Prithvi–MERRA-2 model averaged R2=0.81R^{2}=0.81, compared with 0.75 for a same-input ResNet",
-              "value": 0.81
-            }
-          ],
-          "datasets": [
-            "GROW-Africa/HarvestStat maize yield (LOCO)",
-            "GROW-Africa/HarvestStat maize yield (random five-fold CV)",
-            "USDA-NASS county-level yield",
-            "USDA-NASS county-level yield (ETF/GP ecoregions)",
-            "eddy-covariance NEE-partitioned GPP (37 sites)"
-          ],
-          "direction": "better",
-          "fragile": null,
-          "label": "contested",
-          "models": [
-            {
-              "agreement": 1.0,
-              "direction": "worse",
-              "label": "thin",
-              "model": "alphaearth",
-              "n_claims": 3,
-              "n_papers": 1
-            },
-            {
-              "agreement": 1.0,
-              "direction": "better",
-              "label": "thin",
-              "model": "prithvi",
-              "n_claims": 3,
-              "n_papers": 2
-            }
-          ],
-          "models_differ": true,
-          "n_claims": 6,
-          "n_models": 2,
-          "n_papers": 3,
-          "pooling_note": null,
-          "strongest_benchmark": {
-            "agreement": 1.0,
-            "direction": "worse",
-            "label": "thin",
-            "n_claims": 3,
-            "n_papers": 1,
-            "name": "USDA-NASS county-level yield"
-          },
-          "task": "crop_yield_estimation"
         },
         {
           "agreement": 0.333,

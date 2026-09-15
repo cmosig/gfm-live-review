@@ -95,6 +95,9 @@
   "CRPS": [
     "sousa2026earth"
   ],
+  "CropFM": [
+    "nedungadi2026foundation"
+  ],
   "CropGlobe": [
     "tong2025invariant"
   ],
@@ -515,6 +518,9 @@
   "THOR": [
     "schindlegger2026now"
   ],
+  "TabPFN": [
+    "nedungadi2026foundation"
+  ],
   "TabPFN_tabular_foundation_model": [
     "zhuang2026evaluating"
   ],
@@ -748,6 +754,9 @@
   ],
   "carbon_footprint": [
     "ghamisi2025geospatial"
+  ],
+  "catastrophic_forgetting": [
+    "nedungadi2026foundation"
   ],
   "census_block_group": [
     "gong2026earth"
@@ -1853,6 +1862,9 @@
   "moco_v2": [
     "corley2025landsat"
   ],
+  "modality_mismatch": [
+    "nedungadi2026foundation"
+  ],
   "modality_pruning": [
     "hanna2025mapex"
   ],
@@ -2257,6 +2269,9 @@
   ],
   "random_forest_baseline": [
     "lin2025fine"
+  ],
+  "rank_instability": [
+    "nedungadi2026foundation"
   ],
   "raster_vector_fusion": [
     "knoblauch2026spatial"
@@ -2699,6 +2714,9 @@
   "tabular_feature_augmentation": [
     "nazir2026alphaearth"
   ],
+  "tabular_foundation_model": [
+    "nedungadi2026foundation"
+  ],
   "target detection": [
     "zhang2026fusar"
   ],
@@ -2707,6 +2725,9 @@
   ],
   "task_arithmetic": [
     "purohit2026momo"
+  ],
+  "task_heterogeneity": [
+    "nedungadi2026foundation"
   ],
   "task_specific_distillation": [
     "yusuf2025instageo"
