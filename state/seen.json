@@ -1449,6 +1449,14 @@
     "key": "wang2024multimodal",
     "status": "carded"
   },
+  "multimodal foundation models adaptation based on domain aware relaxed orthogonal subspace for remote sensing": {
+    "key": "luo2026multimodal",
+    "status": "off_topic"
+  },
+  "multimodal multiresolution foundation model for lunar remote sensing": {
+    "key": "fraccaro2026multimodal",
+    "status": "off_topic"
+  },
   "nara anchor conditioned relation aware contextualization of heterogeneous geoentities": {
     "key": "kim2026nara",
     "status": "quarantined"
