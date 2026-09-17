@@ -26,9 +26,6 @@
   "AgriFM": [
     "ye2026any"
   ],
-  "AlphaEarth Foundations": [
-    "hou2026slum"
-  ],
   "AlphaEarth embeddings": [
     "yu2026earth"
   ],
@@ -37,6 +34,9 @@
   ],
   "AlphaEarth feature fusion": [
     "zhang2026fusar"
+  ],
+  "AnySat": [
+    "khot2026applying"
   ],
   "Avg_DTB_metric": [
     "adorni2025eos"
@@ -58,6 +58,9 @@
   ],
   "CCDC_harmonics": [
     "brown2025alphaearth"
+  ],
+  "CDC_PLACES": [
+    "hendrix2026geospatial"
   ],
   "CEMS_activations": [
     "chiriaco2026geoid"
@@ -142,6 +145,9 @@
   ],
   "DiffusionSat": [
     "jia2025can"
+  ],
+  "DynamicVis": [
+    "naveen2026composition"
   ],
   "EFM_guided_generative_reconstruction": [
     "chen2026when"
@@ -229,6 +235,9 @@
   ],
   "GeoNames": [
     "pettersson2025leveraging"
+  ],
+  "Grad-CAM": [
+    "khot2026applying"
   ],
   "HIV_prediction": [
     "metz2025application"
@@ -349,6 +358,9 @@
   ],
   "POI_representation_learning": [
     "wang2024multimodal"
+  ],
+  "POI_semantics": [
+    "tian2026beacon"
   ],
   "Pangaea_benchmark": [
     "adorni2025eos"
@@ -472,9 +484,6 @@
   ],
   "Satlas": [
     "plekhanova2025ssl4eco"
-  ],
-  "SatlasPretrain": [
-    "tadesse2026satellite"
   ],
   "ScaleMAE": [
     "li2026spectra"
@@ -653,6 +662,9 @@
   "arctic_infrastructure_mapping": [
     "perera2026clustering"
   ],
+  "area_deprivation_index": [
+    "hendrix2026geospatial"
+  ],
   "asset_wealth_index": [
     "zheng2026satellite"
   ],
@@ -668,11 +680,17 @@
   "atmospheric_variables": [
     "wang2025towards"
   ],
+  "attention_entropy": [
+    "khot2026applying"
+  ],
   "attention_probing": [
     "rahman2026physically"
   ],
   "attention_unet": [
     "ko2026exploring"
+  ],
+  "autonomous_agent_pipeline": [
+    "ma2026planetary"
   ],
   "auxiliary land-cover prior": [
     "thasma2026beyond"
@@ -761,6 +779,12 @@
   "census_block_group": [
     "gong2026earth"
   ],
+  "census_noise_parameter": [
+    "iqbal2026satellites"
+  ],
+  "census_tract_embeddings": [
+    "hendrix2026geospatial"
+  ],
   "changevit": [
     "kristen2025habitat"
   ],
@@ -787,6 +811,9 @@
   ],
   "city-scale representation drift": [
     "hou2026slum"
+  ],
+  "class_adaptive_temporal_windows": [
+    "guerreroviu2026temporal"
   ],
   "class_imbalance": [
     "ishikawa2025assessing"
@@ -851,11 +878,17 @@
   "community_support": [
     "young2026how"
   ],
+  "commuting_flow_prediction": [
+    "iqbal2026satellites"
+  ],
   "commuting_mode_share": [
     "gong2026earth"
   ],
   "complex_valued_SAR": [
     "wang2025complex"
+  ],
+  "composition_aware_pretraining": [
+    "naveen2026composition"
   ],
   "compute-optimal-allocation": [
     "feng2026tessera"
@@ -871,6 +904,9 @@
   ],
   "conditional_neural_process": [
     "sousa2026earth"
+  ],
+  "conditioning_mechanism": [
+    "ribeiro2026precipitation"
   ],
   "continent_sampling": [
     "kaur2026pretrain"
@@ -931,6 +967,9 @@
   ],
   "crisis_response": [
     "walsh2026zero"
+  ],
+  "critical_infrastructure_classification": [
+    "guthrie2026infra"
   ],
   "cropland_classification": [
     "butsko2025deploying"
@@ -1045,9 +1084,6 @@
   ],
   "dimensionality_reduction": [
     "gong2026earth"
-  ],
-  "dinov3": [
-    "tadesse2026watch"
   ],
   "dinov3_rgb_sat": [
     "zheng2026satellite"
@@ -1205,6 +1241,9 @@
   "environmental_variable_regression": [
     "rahman2026physically"
   ],
+  "epidemiological_nowcasting": [
+    "ma2026planetary"
+  ],
   "era5_climate_variables": [
     "dhakal2025range"
   ],
@@ -1238,6 +1277,12 @@
   "expert_routing": [
     "albughdadi2025lightweight"
   ],
+  "extreme_event_representation": [
+    "ribeiro2026precipitation"
+  ],
+  "fMoW": [
+    "naveen2026composition"
+  ],
   "fMoW-RGB": [
     "noman2024rethinking"
   ],
@@ -1249,6 +1294,9 @@
   ],
   "fMoW_Sentinel_dataset": [
     "cong2022satmae"
+  ],
+  "facility_scale_asset_classification": [
+    "guthrie2026infra"
   ],
   "faiss_similarity_search": [
     "rahman2026physically"
@@ -1451,6 +1499,9 @@
   "granularity_generalization_tradeoff": [
     "qu2026utilizing"
   ],
+  "graph_diffusion": [
+    "iqbal2026satellites"
+  ],
   "graph_neural_network": [
     "pettersson2025leveraging"
   ],
@@ -1637,6 +1688,9 @@
   "integrated_gradients": [
     "daruna2024gfm4mpm"
   ],
+  "intelligent_data_selection": [
+    "ma2026planetary"
+  ],
   "inter_rater_reliability": [
     "young2026how"
   ],
@@ -1742,6 +1796,12 @@
   "lidar_fusion": [
     "lamahewage2026foundation"
   ],
+  "linear_probe_vs_unet": [
+    "guerreroviu2026temporal"
+  ],
+  "linear_probing_vs_fine_tuning": [
+    "guthrie2026infra"
+  ],
   "llm_as_judge": [
     "rahman2026physically"
   ],
@@ -1841,6 +1901,9 @@
   "melt": [
     "hecht2026multi"
   ],
+  "mental_health_prediction": [
+    "tian2026beacon"
+  ],
   "meta-analysis of EOFMs": [
     "yu2026earth"
   ],
@@ -1856,8 +1919,14 @@
   "missing_data_imputation": [
     "godwin2024seeing"
   ],
+  "mixed_forest_stands": [
+    "koukos2026tree"
+  ],
   "mobile_phone_data": [
     "metz2025application"
+  ],
+  "mobility_patterns": [
+    "tian2026beacon"
   ],
   "moco_v2": [
     "corley2025landsat"
@@ -1994,9 +2063,6 @@
   "mutual_information_band_selection": [
     "li2025landslide"
   ],
-  "national_forest_inventory": [
-    "ishikawa2025assessing"
-  ],
   "natural_language_query": [
     "rahman2026physically"
   ],
@@ -2029,6 +2095,9 @@
   ],
   "numerical_weather_prediction": [
     "pfreundschuh2026prithvi"
+  ],
+  "obesity_prevalence": [
+    "tian2026beacon"
   ],
   "object counting": [
     "zhang2026fusar"
@@ -2068,6 +2137,9 @@
   ],
   "ordinal_classification": [
     "perez2026predicting"
+  ],
+  "origin_destination_generation": [
+    "iqbal2026satellites"
   ],
   "out_of_distribution_detection": [
     "gonzalezcalabuig2025shrug"
@@ -2110,6 +2182,9 @@
   ],
   "phenology_prediction": [
     "gupta2026sar2agri"
+  ],
+  "phenology_vs_spectral_stability": [
+    "guerreroviu2026temporal"
   ],
   "phileo_bench": [
     "fibaek2024phileo"
@@ -2194,6 +2269,9 @@
   ],
   "pre_computed_embedding_products": [
     "sialellia2026above"
+  ],
+  "precipitation_downscaling": [
+    "ribeiro2026precipitation"
   ],
   "precipitation_forecasting": [
     "pfreundschuh2026prithvi"
@@ -2330,6 +2408,9 @@
   "reliability_flagging": [
     "gonzalezcalabuig2025shrug"
   ],
+  "remoteclip": [
+    "iqbal2026satellites"
+  ],
   "remoteclip_backbone": [
     "wen2026morax"
   ],
@@ -2347,6 +2428,9 @@
   ],
   "reproducibility": [
     "stewart2026earth"
+  ],
+  "residual_variance_analysis": [
+    "hendrix2026geospatial"
   ],
   "resolution_mismatch": [
     "marsocci2024pangaea"
@@ -2564,6 +2648,9 @@
   "snow_cover_regression": [
     "forgaard2026thor"
   ],
+  "social_risk_index": [
+    "hendrix2026geospatial"
+  ],
   "socioeconomic_foundation_embedding": [
     "hou2026aef"
   ],
@@ -2603,6 +2690,9 @@
   "spatial_pooling": [
     "gilch2026how"
   ],
+  "spatial_regression": [
+    "ma2026planetary"
+  ],
   "spatial_scale_of_classes": [
     "plas2026better"
   ],
@@ -2638,6 +2728,9 @@
   ],
   "spectral_temporal_convolution": [
     "tong2025invariant"
+  ],
+  "spectral_temporal_features": [
+    "koukos2026tree"
   ],
   "spectral_temporal_metrics": [
     "lisaius2026embedding"
@@ -2683,6 +2776,9 @@
   ],
   "subsurface_temperature_prediction": [
     "omalley2026context"
+  ],
+  "super_resolution_downscaling": [
+    "ma2026planetary"
   ],
   "surface_emissivity": [
     "brown2025alphaearth"
@@ -2768,6 +2864,9 @@
   "temporal_sampling_invariance": [
     "feng2025tessera"
   ],
+  "temporal_window_sensitivity": [
+    "guerreroviu2026temporal"
+  ],
   "tempov": [
     "zheng2026satellite"
   ],
@@ -2791,6 +2890,9 @@
   ],
   "time_series_reconstruction": [
     "li2026hls"
+  ],
+  "tiny_object_detection": [
+    "naveen2026composition"
   ],
   "token_patch_size": [
     "banze2025hybiomass"
@@ -2833,6 +2935,9 @@
   ],
   "tree_genera_classification": [
     "brown2025alphaearth"
+  ],
+  "tri_modal_contrastive_learning": [
+    "tian2026beacon"
   ],
   "trust_transparency": [
     "young2026how"
@@ -2878,6 +2983,9 @@
   ],
   "urban_heat_island": [
     "fleckenstein2025detection"
+  ],
+  "urban_livability_evaluation": [
+    "khot2026applying"
   ],
   "urban_representation_learning": [
     "liu2025beyond"
@@ -3007,6 +3115,9 @@
   ],
   "zero_shot_cross_modal_retrieval": [
     "barzilai2025recipe"
+  ],
+  "zero_shot_image_retrieval": [
+    "naveen2026composition"
   ],
   "zero_shot_retrieval": [
     "walsh2026zero"

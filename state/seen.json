@@ -11,6 +11,12 @@
     "key": "wang2025complex",
     "status": "carded"
   },
+  "a composition aware pretraining framework for geospatial foundation models": {
+    "arxiv_id": "2608.30817",
+    "dropped_claims": 2,
+    "key": "naveen2026composition",
+    "status": "carded"
+  },
   "a denser hydrogen inferred from first principles simulations challenges jupiter s interior models": {
     "key": "cozza2025denser",
     "status": "off_topic"
@@ -211,6 +217,12 @@
     "key": "metz2025application",
     "status": "carded"
   },
+  "applying foundation model embeddings towards urban livability evaluation": {
+    "arxiv_id": "2609.09429",
+    "dropped_claims": 0,
+    "key": "khot2026applying",
+    "status": "carded"
+  },
   "asiaco asiago spectroscopy and imaging atlas of comets": {
     "key": "ochner2025asiaco",
     "status": "off_topic"
@@ -252,6 +264,12 @@
   "background induced forces from quadratically coupled ultralight dark matter": {
     "key": "bouley2026background",
     "status": "off_topic"
+  },
+  "beacon behavioral and semantic enrichment of alphaearth embeddings through tri modal contrastive learning": {
+    "arxiv_id": "2608.29553",
+    "dropped_claims": 1,
+    "key": "tian2026beacon",
+    "status": "carded"
   },
   "benchmarking foundation models for hyperspectral image classification application to cereal crop type mapping": {
     "key": "elbarz2025benchmarking",
@@ -477,6 +495,10 @@
     "key": "tang2024data",
     "status": "off_topic"
   },
+  "data leakage inflates generalizability of power outage prediction models": {
+    "key": "essus2026data",
+    "status": "off_topic"
+  },
   "deberta sentinel toward transparent and trustworthy detection of ai generated text": {
     "key": "rehman2026deberta",
     "status": "off_topic"
@@ -519,6 +541,10 @@
     "key": "vermeeren2026developing",
     "status": "carded"
   },
+  "discovery foundation models toward open ended discovery intelligence": {
+    "key": "yang2026discovery",
+    "status": "off_topic"
+  },
   "discovery of two new pulsars in 47 tucanae ngc 104": {
     "key": "-",
     "status": "quarantined_mismatch"
@@ -531,6 +557,12 @@
     "arxiv_id": "2605.08113",
     "dropped_claims": 0,
     "key": "adjei2026foundation",
+    "status": "carded"
+  },
+  "do satellites see commuters a critical benchmark of vision foundation models": {
+    "arxiv_id": "2609.00661",
+    "dropped_claims": 0,
+    "key": "iqbal2026satellites",
     "status": "carded"
   },
   "dofa clip multimodal vision language foundation models for earth observation": {
@@ -717,6 +749,10 @@
     "key": "lousto2026first",
     "status": "off_topic"
   },
+  "first galileo sas authenticated time solution": {
+    "key": "galanfigueras2026first",
+    "status": "off_topic"
+  },
   "first multi constellation observations of navigation satellite signals in the lunar domain by post processing l1 l5 iq snapshots": {
     "key": "sciacca2025first",
     "status": "off_topic"
@@ -799,6 +835,10 @@
     "key": "nedungadi2026foundation",
     "status": "carded"
   },
+  "from foundation embeddings to cropland maps label efficiency temporal transferability and independent human validation": {
+    "key": "mughees2026from",
+    "status": "quarantined"
+  },
   "from landslide conditioning factors to satellite embeddings evaluating the utilisation of google alphaearth for landslide susceptibility mapping using deep learning": {
     "arxiv_id": "2601.07268",
     "dropped_claims": 0,
@@ -817,6 +857,10 @@
   },
   "frtsearch unified detection and parameter inference of fast radio transients using instance segmentation": {
     "key": "zhang2026frtsearch",
+    "status": "off_topic"
+  },
+  "fundamental groups of asymptotic cones of lie groups with the sol obstruction": {
+    "key": "velut2026fundamental",
     "status": "off_topic"
   },
   "fusar gpt a spatiotemporal feature embedded and two stage decoupled visual language model for sar imagery": {
@@ -937,6 +981,12 @@
     "arxiv_id": "2605.01650",
     "dropped_claims": 0,
     "key": "zhang2026geospatial",
+    "status": "carded"
+  },
+  "geospatial foundation models capture health relevant dimensions of place beyond conventional social risk indices": {
+    "arxiv_id": "2609.11689",
+    "dropped_claims": 1,
+    "key": "hendrix2026geospatial",
     "status": "carded"
   },
   "geospatial foundation models for image analysis evaluating and enhancing nasa ibm prithvi s domain adaptability": {
@@ -1087,6 +1137,12 @@
     "arxiv_id": "2602.17250",
     "dropped_claims": 0,
     "key": "hamoudzadeh2026inferring",
+    "status": "carded"
+  },
+  "infra bench cls a global open source benchmark for critical infrastructure classification with earth observation foundation models": {
+    "arxiv_id": "2609.09482",
+    "dropped_claims": 0,
+    "key": "guthrie2026infra",
     "status": "carded"
   },
   "instageo compute efficient geospatial machine learning from data to deployment": {
@@ -1319,6 +1375,10 @@
     "key": "levitin2022metric",
     "status": "off_topic"
   },
+  "mince iv a detailed analysis of 37 metal poor and subsolar metallicity stars": {
+    "key": "sgatti2026mince",
+    "status": "off_topic"
+  },
   "mineral false positives in the search for exoplanet surface biosignatures": {
     "key": "parkinson2026mineral",
     "status": "off_topic"
@@ -1539,6 +1599,12 @@
     "key": "rahman2026physically",
     "status": "carded"
   },
+  "planetary prediction engine autonomous geospatial prediction via intelligent data selection and foundation model embeddings": {
+    "arxiv_id": "2608.26088",
+    "dropped_claims": 0,
+    "key": "ma2026planetary",
+    "status": "carded"
+  },
   "poincar profiles of lamplighter diagonal products": {
     "key": "coz2020poincar",
     "status": "off_topic"
@@ -1570,6 +1636,12 @@
   "practical spoofing attacks on galileo open service navigation message authentication": {
     "key": "wang2025practical",
     "status": "off_topic"
+  },
+  "precipitation downscaling using foundation model conditioned diffusion": {
+    "arxiv_id": "2608.25858",
+    "dropped_claims": 0,
+    "key": "ribeiro2026precipitation",
+    "status": "carded"
   },
   "predicting rare events by shrinking towards proportional odds": {
     "key": "faletto2023predicting",
@@ -1609,6 +1681,10 @@
   },
   "presto distilling steps and layers for accelerating music generation": {
     "key": "novack2024presto",
+    "status": "off_topic"
+  },
+  "presto efficient training free and open world object placement via imaginary search": {
+    "key": "ding2026presto",
     "status": "off_topic"
   },
   "presto fast motion planning using diffusion models based on key configuration environment representation": {
@@ -1888,6 +1964,10 @@
     "key": "wickrema2025scaling",
     "status": "quarantined"
   },
+  "searching for optical pulsations from spider millisecond pulsars with the fast photometer sifap2": {
+    "key": "malacaria2026searching",
+    "status": "off_topic"
+  },
   "searching for pulsars in extreme orbits gpu acceleration of the fourier domain jerk search": {
     "key": "admek2019searching",
     "status": "off_topic"
@@ -1931,6 +2011,10 @@
   "settling of two rigidly connected spheres": {
     "key": "maches2024settling",
     "status": "quarantined"
+  },
+  "sharp iterated logarithmic thresholds for quantitative measure and orbit equivalence between integer lattices": {
+    "key": "jiao2026sharp",
+    "status": "off_topic"
   },
   "shrug fm reliability aware foundation models for earth observation": {
     "arxiv_id": "2511.10370",
@@ -2084,6 +2168,12 @@
     "key": "titus2019targeted",
     "status": "off_topic"
   },
+  "temporal sensitivity analysis of tessera embeddings": {
+    "arxiv_id": "2608.27175",
+    "dropped_claims": 0,
+    "key": "guerreroviu2026temporal",
+    "status": "carded"
+  },
   "tensor network machine learning for wildfire susceptibility mapping from grokking dynamics to quantum mixedness of class representations": {
     "arxiv_id": "2607.19503",
     "dropped_claims": 0,
@@ -2138,6 +2228,10 @@
   },
   "the gaps programme at tng lxxiii confirmation of the hot sub neptune toi 4602 b hd 25295 b a key target for future atmospheric characterization": {
     "key": "maio2026gaps",
+    "status": "off_topic"
+  },
+  "the gaps programme at tng lxxviii phase resolved detection of multiple atomic species in the atmosphere of kelt 20b mascara 2b": {
+    "key": "biassoni2026gaps",
     "status": "off_topic"
   },
   "the geometry of motions vol i mechanics as geometries": {
@@ -2242,6 +2336,12 @@
     "key": "siampou2026trajganr",
     "status": "carded"
   },
+  "tree species mapping in denmark a comparison of spectral temporal features with geospatial foundation model embeddings": {
+    "arxiv_id": "2609.03480",
+    "dropped_claims": 3,
+    "key": "koukos2026tree",
+    "status": "carded"
+  },
   "trick time and range integrity check using low earth orbiting satellite for securing gnss": {
     "key": "mumtaz2025trick",
     "status": "off_topic"
@@ -2326,6 +2426,10 @@
   },
   "xona pulsar compatibility with gnss": {
     "key": "reid2025xona",
+    "status": "off_topic"
+  },
+  "xona pulsar compatibility with spaceborne gnss receivers": {
+    "key": "kriezis2026xona",
     "status": "off_topic"
   },
   "zero shot satellite image retrieval through joint embeddings application to crisis response": {

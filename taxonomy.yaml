@@ -86,6 +86,7 @@ limitations:
 
 # >>> auto-managed below (auto-promoted tags); human edits above are preserved >>>
 promoted_tags:
+- AlphaEarth Foundations
 - BigEarthNet
 - DINOv3
 - EnMAP
@@ -95,6 +96,7 @@ promoted_tags:
 - LoRA
 - MAE_pretraining
 - MOSAIKS
+- OlmoEarth
 - PDFM
 - PEFT
 - PlanetScope
@@ -104,6 +106,7 @@ promoted_tags:
 - SSL4EO-S12
 - SatMAE
 - SatlasNet
+- SatlasPretrain
 - SoftCon
 - SpectralGPT
 - TerraMind
@@ -122,6 +125,7 @@ promoted_tags:
 - data_augmentation
 - dhs_survey
 - diffusion_model
+- dinov3
 - disease_surveillance
 - distribution_shift
 - domain_adaptation
@@ -155,6 +159,7 @@ promoted_tags:
 - multimodal_fusion
 - multimodal_pretraining
 - multisensor_fusion
+- national_forest_inventory
 - object_detection
 - parameter_efficient_fine_tuning
 - parameter_efficient_finetuning
