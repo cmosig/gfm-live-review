@@ -164,6 +164,7 @@ promoted_tags:
 - parameter_efficient_fine_tuning
 - parameter_efficient_finetuning
 - pixel_embeddings
+- pseudo_labeling
 - retrieval_augmented_generation
 - satellite_embeddings
 - satmae

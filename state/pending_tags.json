@@ -173,6 +173,9 @@
   "EfficientNet-B7": [
     "duc2025satmamba"
   ],
+  "EfficientViT": [
+    "schmalstieg2026cross"
+  ],
   "EuroSAT": [
     "noman2024rethinking"
   ],
@@ -257,6 +260,9 @@
   "JEPA_pretraining": [
     "braham2026spectralearth"
   ],
+  "Jetson_Xavier_NX": [
+    "schmalstieg2026cross"
+  ],
   "KL_divergence": [
     "zhang2026geospatial"
   ],
@@ -296,6 +302,9 @@
   "MMEarth": [
     "waithaka2025position"
   ],
+  "MNDWI": [
+    "schmalstieg2026cross"
+  ],
   "MODIS_TOA": [
     "spradlin2024satvision"
   ],
@@ -319,6 +328,9 @@
   ],
   "NeuCo-Bench": [
     "gilch2026how"
+  ],
+  "OFA_distillation": [
+    "schmalstieg2026cross"
   ],
   "OReole-MR": [
     "snyder2026compressing"
@@ -535,6 +547,9 @@
   ],
   "TalloS": [
     "bountos2023fomo"
+  ],
+  "TensorRT": [
+    "schmalstieg2026cross"
   ],
   "TerraTorch": [
     "schindlegger2026now"
@@ -1141,6 +1156,9 @@
   ],
   "eddy_covariance": [
     "szwarcman2024prithvi"
+  ],
+  "edge_deployment": [
+    "schmalstieg2026cross"
   ],
   "effective_rank": [
     "mocharla2026probing"
@@ -2321,14 +2339,14 @@
   "pseudo_absence_generation": [
     "yusuf2024geospatial"
   ],
-  "pseudo_labeling": [
-    "yaghmour2025sensor"
-  ],
   "pseudo_labeling_segmentation": [
     "barzilai2025recipe"
   ],
   "quantization": [
     "stewart2026earth"
+  ],
+  "quantization_aware_training": [
+    "schmalstieg2026cross"
   ],
   "quantum_inspired_ml": [
     "pomarico2026tensor"

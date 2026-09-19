@@ -447,6 +447,12 @@
     "key": "zvonkov2025cropland",
     "status": "carded"
   },
+  "cross architecture foundation model distillation for edge flood segmentation": {
+    "arxiv_id": "2609.20441",
+    "dropped_claims": 0,
+    "key": "schmalstieg2026cross",
+    "status": "carded"
+  },
   "cross domain few shot learning for hyperspectral image classification based on mixup foundation model": {
     "key": "paeedeh2026cross",
     "status": "off_topic"

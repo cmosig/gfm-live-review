@@ -1,5 +1,5 @@
 {
-  "corpus_through": "2026-09-10",
+  "corpus_through": "2026-09-17",
   "limitations": {
     "series": {
       "benchmark_narrowness": {
@@ -40,7 +40,7 @@
         "2026-06": 12,
         "2026-07": 9,
         "2026-08": 20,
-        "2026-09": 5
+        "2026-09": 6
       },
       "compute_cost": {
         "2022-07": 1,
@@ -79,7 +79,7 @@
         "2026-06": 4,
         "2026-07": 3,
         "2026-08": 13,
-        "2026-09": 3
+        "2026-09": 4
       },
       "data_bias": {
         "2022-07": 1,
@@ -113,7 +113,7 @@
         "2026-06": 9,
         "2026-07": 4,
         "2026-08": 9,
-        "2026-09": 3
+        "2026-09": 4
       },
       "human_semantics": {
         "2024-04": 1,
@@ -174,7 +174,7 @@
         "2026-06": 5,
         "2026-07": 3,
         "2026-08": 8,
-        "2026-09": 2
+        "2026-09": 3
       },
       "spatial_transfer": {
         "2022-12": 1,
@@ -254,7 +254,7 @@
         "2026-06": 1,
         "2026-07": 2,
         "2026-08": 3,
-        "2026-09": 2
+        "2026-09": 3
       },
       "uncertainty": {
         "2024-06": 1,
@@ -271,15 +271,15 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 184,
-      "compute_cost": 104,
-      "data_bias": 94,
+      "benchmark_narrowness": 185,
+      "compute_cost": 105,
+      "data_bias": 95,
       "human_semantics": 22,
       "interpretability": 42,
-      "mixed_pixels": 43,
+      "mixed_pixels": 44,
       "spatial_transfer": 105,
       "temporal_transfer": 49,
-      "time_sensitivity": 34,
+      "time_sensitivity": 35,
       "uncertainty": 31
     }
   },
@@ -316,7 +316,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 207,
+    "n_papers": 208,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -341,10 +341,22 @@
   "registry": {
     "doi_status_counts": {
       "unresolved": 3,
-      "verified": 204
+      "verified": 205
     },
-    "n_papers": 207,
+    "n_papers": 208,
     "papers": [
+      {
+        "arxiv_id": "2609.20441",
+        "date": "2026-09-17",
+        "doi": "10.48550/arxiv.2609.20441",
+        "doi_status": "verified",
+        "key": "schmalstieg2026cross",
+        "link": "https://arxiv.org/abs/2609.20441",
+        "n_claims": 3,
+        "self_evaluation": false,
+        "title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+        "venue": "arXiv"
+      },
       {
         "arxiv_id": "2609.11689",
         "date": "2026-09-10",
@@ -7471,7 +7483,7 @@
           "n_papers_all": 119
         },
         {
-          "agreement": 0.7,
+          "agreement": 0.707,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -8435,6 +8447,22 @@
               "value": 0.888
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 0.789,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec IV",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "0.789 mIoU and 0.650 water IoU on the Sen1Floods11 test split, against 0.877 and 0.787",
+              "value": 0.897
+            },
+            {
               "baseline": "prithvi",
               "baseline_value": 64.34,
               "dataset": "AGBD Lite",
@@ -8805,12 +8833,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 83,
-          "n_papers": 40,
-          "n_papers_all": 55
+          "n_claims": 84,
+          "n_papers": 41,
+          "n_papers_all": 56
         },
         {
-          "agreement": 0.604,
+          "agreement": 0.611,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -10223,6 +10251,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "STURM-Flood",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec I",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "reaches 0.755 mean intersection over union (mIoU) on our protocol of the STURM out-of-distribution (OOD) benchmark",
+              "value": 0.755
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 3.08,
               "dataset": "MERRA-2 T2m downscaling",
               "direction": "better",
@@ -10848,9 +10892,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 127,
-          "n_papers": 53,
-          "n_papers_all": 74
+          "n_claims": 128,
+          "n_papers": 54,
+          "n_papers_all": 75
         },
         {
           "agreement": 1.0,
@@ -12320,6 +12364,22 @@
             },
             {
               "baseline": null,
+              "baseline_value": null,
+              "dataset": "Sen1Floods11",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec III-A",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "On the S11 test split we measure 0.897 mIoU and 0.822 water IoU",
+              "value": 0.897
+            },
+            {
+              "baseline": null,
               "baseline_value": 69.43,
               "dataset": "MTBS/NBAC Wildfire Events",
               "direction": "better",
@@ -12433,9 +12493,9 @@
           ],
           "direction": "worse",
           "label": "contested",
-          "n_claims": 35,
+          "n_claims": 36,
           "n_papers": 10,
-          "n_papers_all": 24
+          "n_papers_all": 25
         },
         {
           "agreement": 0.5,
@@ -14780,6 +14840,38 @@
               "value": 0.888
             },
             {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Sen1Floods11",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec III-A",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "On the S11 test split we measure 0.897 mIoU and 0.822 water IoU",
+              "value": 0.897
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.789,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec IV",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "0.789 mIoU and 0.650 water IoU on the Sen1Floods11 test split, against 0.877 and 0.787",
+              "value": 0.897
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 90.16,
               "dataset": "Sen1Floods11",
@@ -14954,9 +15046,9 @@
             "prithvi",
             "scalemae"
           ],
-          "n_claims": 38,
-          "n_papers": 21,
-          "n_vs_task_specific": 23,
+          "n_claims": 40,
+          "n_papers": 22,
+          "n_vs_task_specific": 24,
           "name": "Sen1Floods11",
           "tasks": [
             "flood_mapping",
@@ -14969,10 +15061,10 @@
             "Sen1Floods11 S2-S1"
           ],
           "verdict": {
-            "agreement": 0.571,
+            "agreement": 0.6,
             "direction": "better",
             "label": "contested",
-            "n_papers": 14
+            "n_papers": 15
           }
         },
         {
@@ -33975,6 +34067,49 @@
           }
         },
         {
+          "benchmark": "sturm flood",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "STURM-Flood",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec I",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "reaches 0.755 mean intersection over union (mIoU) on our protocol of the STURM out-of-distribution (OOD) benchmark",
+              "value": 0.755
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "STURM-Flood",
+          "tasks": [
+            "flood_mapping"
+          ],
+          "variants": [
+            "STURM-Flood"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "sysu cd",
           "claims": [
             {
@@ -36775,17 +36910,17 @@
       ],
       "evidence": {
         "directions": {
-          "better": 278,
+          "better": 280,
           "parity": 17,
           "worse": 137
         },
-        "label_ratio_unspecified": 619,
-        "n_claims": 710,
+        "label_ratio_unspecified": 621,
+        "n_claims": 713,
         "n_self_eval_claims": 84,
-        "n_vs_model_or_none": 278,
-        "n_vs_task_specific": 432,
-        "pct_better": 64.4,
-        "pct_label_ratio_unspecified": 87.2
+        "n_vs_model_or_none": 279,
+        "n_vs_task_specific": 434,
+        "pct_better": 64.5,
+        "pct_label_ratio_unspecified": 87.1
       },
       "groups": [
         {
@@ -43154,6 +43289,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "STURM-Flood",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec I",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "reaches 0.755 mean intersection over union (mIoU) on our protocol of the STURM out-of-distribution (OOD) benchmark",
+              "value": 0.755
+            }
+          ],
+          "dataset": "STURM-Flood",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "prithvi",
           "claims": [
             {
@@ -43689,7 +43854,7 @@
           "task": "flood_mapping"
         },
         {
-          "agreement": 0.333,
+          "agreement": 0.5,
           "baseline": null,
           "claims": [
             {
@@ -43739,15 +43904,31 @@
               "self_evaluation": false,
               "span": "Sen1Floods11",
               "value": 87.12
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Sen1Floods11",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec III-A",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "On the S11 test split we measure 0.897 mIoU and 0.822 water IoU",
+              "value": 0.897
             }
           ],
           "dataset": "Sen1Floods11",
-          "direction": "better",
+          "direction": "parity",
           "label": "contested",
           "label_regime": "unspecified",
           "metric": "miou",
           "model": "prithvi",
-          "n_papers": 3,
+          "n_papers": 4,
           "task": "flood_mapping"
         },
         {
@@ -43829,6 +44010,22 @@
               "self_evaluation": true,
               "span": "Sen1Floods11 0.879 0.907 0.910",
               "value": 0.91
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.789,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec IV",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "0.789 mIoU and 0.650 water IoU on the Sen1Floods11 test split, against 0.877 and 0.787",
+              "value": 0.897
             }
           ],
           "dataset": "Sen1Floods11",
@@ -43837,7 +44034,7 @@
           "label_regime": "label_rich",
           "metric": "miou",
           "model": "prithvi",
-          "n_papers": 1,
+          "n_papers": 2,
           "task": "flood_mapping"
         },
         {
@@ -63798,7 +63995,7 @@
             "task": "crop_yield_estimation"
           },
           "prithvi\tflood_mapping": {
-            "agreement": 0.786,
+            "agreement": 0.8,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -64393,6 +64590,54 @@
                 "value": 0.33
               },
               {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "Sen1Floods11",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2609.20441",
+                "locator": "Sec III-A",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "schmalstieg2026cross",
+                "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+                "self_evaluation": false,
+                "span": "On the S11 test split we measure 0.897 mIoU and 0.822 water IoU",
+                "value": 0.897
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.789,
+                "dataset": "Sen1Floods11",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2609.20441",
+                "locator": "Sec IV",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "schmalstieg2026cross",
+                "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+                "self_evaluation": false,
+                "span": "0.789 mIoU and 0.650 water IoU on the Sen1Floods11 test split, against 0.877 and 0.787",
+                "value": 0.897
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "STURM-Flood",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2609.20441",
+                "locator": "Sec I",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "schmalstieg2026cross",
+                "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+                "self_evaluation": false,
+                "span": "reaches 0.755 mean intersection over union (mIoU) on our protocol of the STURM out-of-distribution (OOD) benchmark",
+                "value": 0.755
+              },
+              {
                 "baseline": "task_specific",
                 "baseline_value": 90.16,
                 "dataset": "Sen1Floods11",
@@ -64458,11 +64703,11 @@
               }
             ],
             "direction": "better",
-            "label": "contested",
+            "label": "consensus",
             "model": "prithvi",
-            "n_claims": 41,
-            "n_papers": 14,
-            "n_papers_all": 17,
+            "n_claims": 44,
+            "n_papers": 15,
+            "n_papers_all": 18,
             "task": "flood_mapping"
           },
           "prithvi\thydrological_modeling": {
@@ -71557,7 +71802,7 @@
           "task": "crop_type_mapping"
         },
         {
-          "agreement": 0.667,
+          "agreement": 0.682,
           "claims": [
             {
               "baseline": "task_specific",
@@ -72169,6 +72414,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.789,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec IV",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "0.789 mIoU and 0.650 water IoU on the Sen1Floods11 test split, against 0.877 and 0.787",
+              "value": 0.897
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "STURM-Flood",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec I",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "reaches 0.755 mean intersection over union (mIoU) on our protocol of the STURM out-of-distribution (OOD) benchmark",
+              "value": 0.755
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 90.16,
               "dataset": "Sen1Floods11",
               "direction": "better",
@@ -72279,6 +72556,7 @@
             "Kanyini mission imagery",
             "NeuenahrFlood",
             "SEN12-FLOOD",
+            "STURM-Flood",
             "Sen1Floods11",
             "Sen1Floods11 (unseen Bolivia)",
             "Sen1Floods11 Bolivia",
@@ -72330,12 +72608,12 @@
               "n_papers": 1
             },
             {
-              "agreement": 0.786,
+              "agreement": 0.8,
               "direction": "better",
-              "label": "contested",
+              "label": "consensus",
               "model": "prithvi",
-              "n_claims": 30,
-              "n_papers": 14
+              "n_claims": 32,
+              "n_papers": 15
             },
             {
               "agreement": 1.0,
@@ -72347,16 +72625,16 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 44,
+          "n_claims": 46,
           "n_models": 7,
-          "n_papers": 21,
+          "n_papers": 22,
           "pooling_note": null,
           "strongest_benchmark": {
-            "agreement": 0.615,
+            "agreement": 0.643,
             "direction": "better",
             "label": "contested",
-            "n_claims": 21,
-            "n_papers": 13,
+            "n_claims": 22,
+            "n_papers": 14,
             "name": "Sen1Floods11"
           },
           "task": "flood_mapping"
@@ -79276,7 +79554,7 @@
           "n_papers_all": 109
         },
         {
-          "agreement": 0.703,
+          "agreement": 0.711,
           "axis": "G2_label_scarce_efficiency",
           "claims": [
             {
@@ -80144,6 +80422,22 @@
               "value": 83.95
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 0.789,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec IV",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "0.789 mIoU and 0.650 water IoU on the Sen1Floods11 test split, against 0.877 and 0.787",
+              "value": 0.897
+            },
+            {
               "baseline": "prithvi",
               "baseline_value": 64.34,
               "dataset": "AGBD Lite",
@@ -80482,12 +80776,12 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 75,
-          "n_papers": 37,
-          "n_papers_all": 48
+          "n_claims": 76,
+          "n_papers": 38,
+          "n_papers_all": 49
         },
         {
-          "agreement": 0.571,
+          "agreement": 0.58,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -81820,6 +82114,22 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "STURM-Flood",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec I",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "reaches 0.755 mean intersection over union (mIoU) on our protocol of the STURM out-of-distribution (OOD) benchmark",
+              "value": 0.755
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 3.08,
               "dataset": "MERRA-2 T2m downscaling",
               "direction": "better",
@@ -82381,9 +82691,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 118,
-          "n_papers": 49,
-          "n_papers_all": 68
+          "n_claims": 119,
+          "n_papers": 50,
+          "n_papers_all": 69
         },
         {
           "agreement": 1.0,
@@ -83597,6 +83907,22 @@
             },
             {
               "baseline": null,
+              "baseline_value": null,
+              "dataset": "Sen1Floods11",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec III-A",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "On the S11 test split we measure 0.897 mIoU and 0.822 water IoU",
+              "value": 0.897
+            },
+            {
+              "baseline": null,
               "baseline_value": 69.43,
               "dataset": "MTBS/NBAC Wildfire Events",
               "direction": "better",
@@ -83694,9 +84020,9 @@
           ],
           "direction": "worse",
           "label": "contested",
-          "n_claims": 29,
+          "n_claims": 30,
           "n_papers": 7,
-          "n_papers_all": 21
+          "n_papers_all": 22
         },
         {
           "agreement": 0.5,
@@ -85721,6 +86047,38 @@
               "value": 87.12
             },
             {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Sen1Floods11",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec III-A",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "On the S11 test split we measure 0.897 mIoU and 0.822 water IoU",
+              "value": 0.897
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.789,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec IV",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "0.789 mIoU and 0.650 water IoU on the Sen1Floods11 test split, against 0.877 and 0.787",
+              "value": 0.897
+            },
+            {
               "baseline": "task_specific",
               "baseline_value": 90.16,
               "dataset": "Sen1Floods11",
@@ -85862,9 +86220,9 @@
             "prithvi",
             "scalemae"
           ],
-          "n_claims": 30,
-          "n_papers": 17,
-          "n_vs_task_specific": 18,
+          "n_claims": 32,
+          "n_papers": 18,
+          "n_vs_task_specific": 19,
           "name": "Sen1Floods11",
           "tasks": [
             "flood_mapping",
@@ -85877,10 +86235,10 @@
             "Sen1Floods11 S2-S1"
           ],
           "verdict": {
-            "agreement": 0.545,
+            "agreement": 0.5,
             "direction": "worse",
             "label": "contested",
-            "n_papers": 11
+            "n_papers": 12
           }
         },
         {
@@ -102945,6 +103303,49 @@
           }
         },
         {
+          "benchmark": "sturm flood",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "STURM-Flood",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec I",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "reaches 0.755 mean intersection over union (mIoU) on our protocol of the STURM out-of-distribution (OOD) benchmark",
+              "value": 0.755
+            }
+          ],
+          "metrics": [
+            "miou"
+          ],
+          "models": [
+            "prithvi"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "STURM-Flood",
+          "tasks": [
+            "flood_mapping"
+          ],
+          "variants": [
+            "STURM-Flood"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "sysu cd",
           "claims": [
             {
@@ -105455,17 +105856,17 @@
       ],
       "evidence": {
         "directions": {
-          "better": 234,
+          "better": 236,
           "parity": 17,
           "worse": 131
         },
-        "label_ratio_unspecified": 558,
-        "n_claims": 626,
+        "label_ratio_unspecified": 560,
+        "n_claims": 629,
         "n_self_eval_claims": 0,
-        "n_vs_model_or_none": 244,
-        "n_vs_task_specific": 382,
-        "pct_better": 61.3,
-        "pct_label_ratio_unspecified": 89.1
+        "n_vs_model_or_none": 245,
+        "n_vs_task_specific": 384,
+        "pct_better": 61.5,
+        "pct_label_ratio_unspecified": 89.0
       },
       "groups": [
         {
@@ -111024,6 +111425,36 @@
         },
         {
           "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "STURM-Flood",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec I",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "reaches 0.755 mean intersection over union (mIoU) on our protocol of the STURM out-of-distribution (OOD) benchmark",
+              "value": 0.755
+            }
+          ],
+          "dataset": "STURM-Flood",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
           "baseline": "prithvi",
           "claims": [
             {
@@ -111467,7 +111898,7 @@
           "task": "flood_mapping"
         },
         {
-          "agreement": 0.5,
+          "agreement": 0.667,
           "baseline": null,
           "claims": [
             {
@@ -111501,15 +111932,31 @@
               "self_evaluation": false,
               "span": "Sen1Floods11",
               "value": 87.12
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "Sen1Floods11",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec III-A",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "On the S11 test split we measure 0.897 mIoU and 0.822 water IoU",
+              "value": 0.897
             }
           ],
           "dataset": "Sen1Floods11",
-          "direction": "worse",
-          "label": "thin",
+          "direction": "parity",
+          "label": "contested",
           "label_regime": "unspecified",
           "metric": "miou",
           "model": "prithvi",
-          "n_papers": 2,
+          "n_papers": 3,
           "task": "flood_mapping"
         },
         {
@@ -111537,6 +111984,36 @@
           "direction": "better",
           "label": "thin",
           "label_regime": "label_partial",
+          "metric": "miou",
+          "model": "prithvi",
+          "n_papers": 1,
+          "task": "flood_mapping"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.789,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec IV",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "0.789 mIoU and 0.650 water IoU on the Sen1Floods11 test split, against 0.877 and 0.787",
+              "value": 0.897
+            }
+          ],
+          "dataset": "Sen1Floods11",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "label_rich",
           "metric": "miou",
           "model": "prithvi",
           "n_papers": 1,
@@ -129502,7 +129979,7 @@
             "task": "crop_yield_estimation"
           },
           "prithvi\tflood_mapping": {
-            "agreement": 0.75,
+            "agreement": 0.769,
             "claims": [
               {
                 "baseline": "task_specific",
@@ -129985,6 +130462,54 @@
                 "value": 87.12
               },
               {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "Sen1Floods11",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2609.20441",
+                "locator": "Sec III-A",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "schmalstieg2026cross",
+                "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+                "self_evaluation": false,
+                "span": "On the S11 test split we measure 0.897 mIoU and 0.822 water IoU",
+                "value": 0.897
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.789,
+                "dataset": "Sen1Floods11",
+                "direction": "better",
+                "label_ratio": 1.0,
+                "link": "https://arxiv.org/abs/2609.20441",
+                "locator": "Sec IV",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "schmalstieg2026cross",
+                "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+                "self_evaluation": false,
+                "span": "0.789 mIoU and 0.650 water IoU on the Sen1Floods11 test split, against 0.877 and 0.787",
+                "value": 0.897
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": null,
+                "dataset": "STURM-Flood",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2609.20441",
+                "locator": "Sec I",
+                "metric": "miou",
+                "model": "prithvi",
+                "paper_key": "schmalstieg2026cross",
+                "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+                "self_evaluation": false,
+                "span": "reaches 0.755 mean intersection over union (mIoU) on our protocol of the STURM out-of-distribution (OOD) benchmark",
+                "value": 0.755
+              },
+              {
                 "baseline": "task_specific",
                 "baseline_value": 90.16,
                 "dataset": "Sen1Floods11",
@@ -130052,9 +130577,9 @@
             "direction": "better",
             "label": "contested",
             "model": "prithvi",
-            "n_claims": 34,
-            "n_papers": 12,
-            "n_papers_all": 15,
+            "n_claims": 37,
+            "n_papers": 13,
+            "n_papers_all": 16,
             "task": "flood_mapping"
           },
           "prithvi\thydrological_modeling": {
@@ -136066,7 +136591,7 @@
           "task": "crop_type_mapping"
         },
         {
-          "agreement": 0.611,
+          "agreement": 0.632,
           "claims": [
             {
               "baseline": "task_specific",
@@ -136614,6 +137139,38 @@
             },
             {
               "baseline": "task_specific",
+              "baseline_value": 0.789,
+              "dataset": "Sen1Floods11",
+              "direction": "better",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec IV",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "0.789 mIoU and 0.650 water IoU on the Sen1Floods11 test split, against 0.877 and 0.787",
+              "value": 0.897
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": null,
+              "dataset": "STURM-Flood",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.20441",
+              "locator": "Sec I",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schmalstieg2026cross",
+              "paper_title": "Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation",
+              "self_evaluation": false,
+              "span": "reaches 0.755 mean intersection over union (mIoU) on our protocol of the STURM out-of-distribution (OOD) benchmark",
+              "value": 0.755
+            },
+            {
+              "baseline": "task_specific",
               "baseline_value": 90.16,
               "dataset": "Sen1Floods11",
               "direction": "better",
@@ -136708,6 +137265,7 @@
             "Kanyini mission imagery",
             "NeuenahrFlood",
             "SEN12-FLOOD",
+            "STURM-Flood",
             "Sen1Floods11",
             "Sen1Floods11 (unseen Bolivia)",
             "Sen1Floods11 Bolivia",
@@ -136759,12 +137317,12 @@
               "n_papers": 1
             },
             {
-              "agreement": 0.75,
+              "agreement": 0.769,
               "direction": "better",
               "label": "contested",
               "model": "prithvi",
-              "n_claims": 26,
-              "n_papers": 12
+              "n_claims": 28,
+              "n_papers": 13
             },
             {
               "agreement": 1.0,
@@ -136776,16 +137334,16 @@
             }
           ],
           "models_differ": true,
-          "n_claims": 39,
+          "n_claims": 41,
           "n_models": 7,
-          "n_papers": 18,
+          "n_papers": 19,
           "pooling_note": null,
           "strongest_benchmark": {
-            "agreement": 0.5,
-            "direction": "worse",
+            "agreement": 0.545,
+            "direction": "better",
             "label": "contested",
-            "n_claims": 16,
-            "n_papers": 10,
+            "n_claims": 17,
+            "n_papers": 11,
             "name": "Sen1Floods11"
           },
           "task": "flood_mapping"
