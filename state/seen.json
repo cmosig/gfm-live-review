@@ -1023,6 +1023,10 @@
     "key": "speziale2025ggi",
     "status": "off_topic"
   },
+  "giarps simultaneous optical and infrared high spectral resolution observations of cepheids i limb darkening from cross correlated radial velocities": {
+    "key": "nardetto2026giarps",
+    "status": "off_topic"
+  },
   "global and dense embeddings of earth major tom floating in the latent space": {
     "key": "czerkawski2024global",
     "status": "off_topic"
@@ -1045,6 +1049,12 @@
     "arxiv_id": "2601.00857",
     "dropped_claims": 0,
     "key": "ma2025harvesting",
+    "status": "carded"
+  },
+  "hiding in plain sight a diffusion based mitigation of geolocation privacy leakage in vision language models": {
+    "arxiv_id": "2609.21363",
+    "dropped_claims": 0,
+    "key": "wang2026hiding",
     "status": "carded"
   },
   "higher rank confining subsets and hyperbolic actions of solvable groups": {
@@ -2113,6 +2123,10 @@
   "spectralx parameter efficient domain generalization for spectral remote sensing foundation models": {
     "key": "zhang2025spectralx",
     "status": "quarantined"
+  },
+  "spoofing missed detection bounds for prf gnss ranging authentication under awgn models": {
+    "key": "anderson2025spoofing",
+    "status": "off_topic"
   },
   "spying on the quickly variable optical sky with the fast optical photometer sifap2": {
     "key": "illiano2024spying",

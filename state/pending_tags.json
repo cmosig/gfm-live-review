@@ -617,6 +617,9 @@
   "adapter_fine_tuning": [
     "kaushik2026prithvi"
   ],
+  "adversarial_defense": [
+    "wang2026hiding"
+  ],
   "aerial_remote_sensing": [
     "diao2024ringmo"
   ],
@@ -1088,6 +1091,9 @@
   "desert_locust_breeding_prediction": [
     "yusuf2024geospatial"
   ],
+  "diffusion_based_perturbation": [
+    "wang2026hiding"
+  ],
   "digital_surface_model": [
     "hamoudzadeh2026inferring"
   ],
@@ -1463,6 +1469,9 @@
   "geolocation_features": [
     "karimzadeh2025performance"
   ],
+  "geolocation_privacy_protection": [
+    "wang2026hiding"
+  ],
   "geolocation_retrieval": [
     "walsh2026zero"
   ],
@@ -1723,6 +1732,9 @@
   ],
   "internet_search_embeddings": [
     "metz2025application"
+  ],
+  "jailbreak_attacks": [
+    "wang2026hiding"
   ],
   "knn-classification": [
     "tang2024cross"
@@ -3046,6 +3058,9 @@
   ],
   "vision-language model": [
     "zhang2026fusar"
+  ],
+  "vision_language_models": [
+    "wang2026hiding"
   ],
   "vision_language_pretraining": [
     "xiong2025dofa"
