@@ -1,5 +1,5 @@
 {
-  "corpus_through": "2026-09-18",
+  "corpus_through": "2026-09-22",
   "limitations": {
     "series": {
       "benchmark_narrowness": {
@@ -113,7 +113,7 @@
         "2026-06": 9,
         "2026-07": 4,
         "2026-08": 9,
-        "2026-09": 4
+        "2026-09": 5
       },
       "human_semantics": {
         "2024-04": 1,
@@ -209,7 +209,7 @@
         "2026-06": 8,
         "2026-07": 4,
         "2026-08": 11,
-        "2026-09": 4
+        "2026-09": 5
       },
       "temporal_transfer": {
         "2022-07": 1,
@@ -254,7 +254,7 @@
         "2026-06": 1,
         "2026-07": 2,
         "2026-08": 3,
-        "2026-09": 3
+        "2026-09": 4
       },
       "uncertainty": {
         "2024-06": 1,
@@ -273,13 +273,13 @@
     "totals": {
       "benchmark_narrowness": 186,
       "compute_cost": 105,
-      "data_bias": 95,
+      "data_bias": 96,
       "human_semantics": 23,
       "interpretability": 43,
       "mixed_pixels": 44,
-      "spatial_transfer": 105,
+      "spatial_transfer": 106,
       "temporal_transfer": 49,
-      "time_sensitivity": 35,
+      "time_sensitivity": 36,
       "uncertainty": 31
     }
   },
@@ -316,7 +316,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 209,
+    "n_papers": 210,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -341,10 +341,22 @@
   "registry": {
     "doi_status_counts": {
       "unresolved": 3,
-      "verified": 206
+      "verified": 207
     },
-    "n_papers": 209,
+    "n_papers": 210,
     "papers": [
+      {
+        "arxiv_id": "2609.25731",
+        "date": "2026-09-22",
+        "doi": "10.48550/arxiv.2609.25731",
+        "doi_status": "verified",
+        "key": "knezevic2026annual",
+        "link": "https://arxiv.org/abs/2609.25731",
+        "n_claims": 4,
+        "self_evaluation": true,
+        "title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+        "venue": "arXiv"
+      },
       {
         "arxiv_id": "2609.21363",
         "date": "2026-09-18",
@@ -2854,13 +2866,13 @@
         "venue": "arXiv"
       }
     ],
-    "quarantine_count": 51
+    "quarantine_count": 52
   },
   "views": {
     "all": {
       "axes": [
         {
-          "agreement": 0.609,
+          "agreement": 0.614,
           "axis": "G1_label_rich_parity",
           "claims": [
             {
@@ -4862,6 +4874,54 @@
               "self_evaluation": false,
               "span": "Countries",
               "value": 96.0
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.905,
+              "dataset": "HLS Burn Scars (single-fire subset, 559 chips)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec 4.2, Figure 4",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "Tessera with the full U-Net achieved the strongest overall performance (F1 = 0.916, IoU = 0.845)",
+              "value": 0.916
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "HLS Burn Scars (793 chips, annual-fire labels)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec 4.3, Table 3",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "Across 793 chips containing 1,162 distinct MTBS fires, the Tessera lightweight U-Net achieved F1 = 0.896",
+              "value": 0.896
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.845,
+              "dataset": "HLS Burn Scars (PANGAEA protocol, single-fire subset)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec S8.2, Table S3",
+              "metric": "miou",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "Tessera with the lightweight U-Net (mIoU = 0.922, m-F1 = 0.959)",
+              "value": 0.922
             },
             {
               "baseline": null,
@@ -7490,9 +7550,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 289,
-          "n_papers": 87,
-          "n_papers_all": 119
+          "n_claims": 292,
+          "n_papers": 88,
+          "n_papers_all": 120
         },
         {
           "agreement": 0.707,
@@ -9592,6 +9652,22 @@
             {
               "baseline": null,
               "baseline_value": null,
+              "dataset": "European EMSR fires 2024-2025 (88 fires)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec 4.5, Table 5",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "achieving micro F1 = 0.882 and IoU = 0.789",
+              "value": 0.882
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
               "dataset": "WUDAPT LCZ",
               "direction": "better",
               "label_ratio": null,
@@ -10904,9 +10980,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 128,
+          "n_claims": 129,
           "n_papers": 54,
-          "n_papers_all": 75
+          "n_papers_all": 76
         },
         {
           "agreement": 1.0,
@@ -16087,6 +16163,153 @@
           }
         },
         {
+          "benchmark": "hls burn scars",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.905,
+              "dataset": "HLS Burn Scars (single-fire subset, 559 chips)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec 4.2, Figure 4",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "Tessera with the full U-Net achieved the strongest overall performance (F1 = 0.916, IoU = 0.845)",
+              "value": 0.916
+            },
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "HLS Burn Scars (793 chips, annual-fire labels)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec 4.3, Table 3",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "Across 793 chips containing 1,162 distinct MTBS fires, the Tessera lightweight U-Net achieved F1 = 0.896",
+              "value": 0.896
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.845,
+              "dataset": "HLS Burn Scars (PANGAEA protocol, single-fire subset)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec S8.2, Table S3",
+              "metric": "miou",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "Tessera with the lightweight U-Net (mIoU = 0.922, m-F1 = 0.959)",
+              "value": 0.922
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 82.4,
+              "dataset": "HLS Burn Scars",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2512.17224",
+              "locator": "Table 2",
+              "metric": "miou",
+              "model": "alphaearth",
+              "paper_key": "li2025any",
+              "paper_title": "Any-Optical-Model: A Universal Foundation Model for Optical Remote Sensing",
+              "self_evaluation": false,
+              "span": "85.4 (+3.0)",
+              "value": 85.4
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.62,
+              "dataset": "HLS Burn Scars",
+              "direction": "worse",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2604.07092",
+              "locator": "Table 3",
+              "metric": "f1",
+              "model": "prithvi",
+              "paper_key": "madadikhaljan2026location",
+              "paper_title": "Location Is All You Need: Continuous Spatiotemporal Neural Representations of Earth Observation Data",
+              "self_evaluation": false,
+              "span": "UNet / Micro UNet",
+              "value": 0.59
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.901,
+              "dataset": "HLS Burn Scars",
+              "direction": "worse",
+              "label_ratio": 1.0,
+              "link": "https://arxiv.org/abs/2607.18504",
+              "locator": "Table 12",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "schindlegger2026now",
+              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
+              "self_evaluation": true,
+              "span": "HLS Burn Scars 0.901 0.865 0.891",
+              "value": 0.891
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 77.12,
+              "dataset": "HLS Burn Scars",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2404.11797",
+              "locator": "Table III",
+              "metric": "miou",
+              "model": "prithvi",
+              "paper_key": "xie2024when",
+              "paper_title": "When are Foundation Models Effective? Understanding the Suitability for Pixel-Level Classification Using Multispectral Imagery",
+              "self_evaluation": false,
+              "span": "both foundation models and regular convolutional networks showed significant advantages over traditional models such as random forest",
+              "value": 85.53
+            }
+          ],
+          "metrics": [
+            "f1",
+            "miou"
+          ],
+          "models": [
+            "alphaearth",
+            "prithvi",
+            "tessera"
+          ],
+          "n_claims": 7,
+          "n_papers": 5,
+          "n_vs_task_specific": 6,
+          "name": "HLS Burn Scars",
+          "tasks": [
+            "change_detection",
+            "land_cover_classification",
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "HLS Burn Scars",
+            "HLS Burn Scars (793 chips, annual-fire labels)",
+            "HLS Burn Scars (PANGAEA protocol, single-fire subset)",
+            "HLS Burn Scars (single-fire subset, 559 chips)"
+          ],
+          "verdict": {
+            "agreement": 0.6,
+            "direction": "better",
+            "label": "contested",
+            "n_papers": 5
+          }
+        },
+        {
           "benchmark": "mados",
           "claims": [
             {
@@ -16804,101 +17027,6 @@
             "direction": "parity",
             "label": "thin",
             "n_papers": 2
-          }
-        },
-        {
-          "benchmark": "hls burn scars",
-          "claims": [
-            {
-              "baseline": "task_specific",
-              "baseline_value": 82.4,
-              "dataset": "HLS Burn Scars",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2512.17224",
-              "locator": "Table 2",
-              "metric": "miou",
-              "model": "alphaearth",
-              "paper_key": "li2025any",
-              "paper_title": "Any-Optical-Model: A Universal Foundation Model for Optical Remote Sensing",
-              "self_evaluation": false,
-              "span": "85.4 (+3.0)",
-              "value": 85.4
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.62,
-              "dataset": "HLS Burn Scars",
-              "direction": "worse",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2604.07092",
-              "locator": "Table 3",
-              "metric": "f1",
-              "model": "prithvi",
-              "paper_key": "madadikhaljan2026location",
-              "paper_title": "Location Is All You Need: Continuous Spatiotemporal Neural Representations of Earth Observation Data",
-              "self_evaluation": false,
-              "span": "UNet / Micro UNet",
-              "value": 0.59
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 0.901,
-              "dataset": "HLS Burn Scars",
-              "direction": "worse",
-              "label_ratio": 1.0,
-              "link": "https://arxiv.org/abs/2607.18504",
-              "locator": "Table 12",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "schindlegger2026now",
-              "paper_title": "Now We Know? A Systematic Comparison of TerraMind and THOR",
-              "self_evaluation": true,
-              "span": "HLS Burn Scars 0.901 0.865 0.891",
-              "value": 0.891
-            },
-            {
-              "baseline": "task_specific",
-              "baseline_value": 77.12,
-              "dataset": "HLS Burn Scars",
-              "direction": "better",
-              "label_ratio": null,
-              "link": "https://arxiv.org/abs/2404.11797",
-              "locator": "Table III",
-              "metric": "miou",
-              "model": "prithvi",
-              "paper_key": "xie2024when",
-              "paper_title": "When are Foundation Models Effective? Understanding the Suitability for Pixel-Level Classification Using Multispectral Imagery",
-              "self_evaluation": false,
-              "span": "both foundation models and regular convolutional networks showed significant advantages over traditional models such as random forest",
-              "value": 85.53
-            }
-          ],
-          "metrics": [
-            "f1",
-            "miou"
-          ],
-          "models": [
-            "alphaearth",
-            "prithvi"
-          ],
-          "n_claims": 4,
-          "n_papers": 4,
-          "n_vs_task_specific": 4,
-          "name": "HLS Burn Scars",
-          "tasks": [
-            "change_detection",
-            "land_cover_classification",
-            "semantic_segmentation"
-          ],
-          "variants": [
-            "HLS Burn Scars"
-          ],
-          "verdict": {
-            "agreement": 0.5,
-            "direction": "better",
-            "label": "contested",
-            "n_papers": 4
           }
         },
         {
@@ -29091,6 +29219,49 @@
           }
         },
         {
+          "benchmark": "european emsr fires",
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "European EMSR fires 2024-2025 (88 fires)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec 4.5, Table 5",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "achieving micro F1 = 0.882 and IoU = 0.789",
+              "value": 0.882
+            }
+          ],
+          "metrics": [
+            "f1"
+          ],
+          "models": [
+            "tessera"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 0,
+          "name": "European EMSR fires 2024-2025",
+          "tasks": [
+            "semantic_segmentation"
+          ],
+          "variants": [
+            "European EMSR fires 2024-2025 (88 fires)"
+          ],
+          "verdict": {
+            "agreement": null,
+            "direction": null,
+            "label": "gap",
+            "n_papers": 0
+          }
+        },
+        {
           "benchmark": "exebench",
           "claims": [
             {
@@ -36922,17 +37093,17 @@
       ],
       "evidence": {
         "directions": {
-          "better": 280,
+          "better": 282,
           "parity": 17,
           "worse": 137
         },
-        "label_ratio_unspecified": 621,
-        "n_claims": 713,
-        "n_self_eval_claims": 84,
-        "n_vs_model_or_none": 279,
-        "n_vs_task_specific": 434,
-        "pct_better": 64.5,
-        "pct_label_ratio_unspecified": 87.1
+        "label_ratio_unspecified": 625,
+        "n_claims": 717,
+        "n_self_eval_claims": 88,
+        "n_vs_model_or_none": 281,
+        "n_vs_task_specific": 436,
+        "pct_better": 64.7,
+        "pct_label_ratio_unspecified": 87.2
       },
       "groups": [
         {
@@ -38302,6 +38473,36 @@
           "label_regime": "unspecified",
           "metric": "f1",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "change_detection"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.845,
+              "dataset": "HLS Burn Scars (PANGAEA protocol, single-fire subset)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec S8.2, Table S3",
+              "metric": "miou",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "Tessera with the lightweight U-Net (mIoU = 0.922, m-F1 = 0.959)",
+              "value": 0.922
+            }
+          ],
+          "dataset": "HLS Burn Scars (PANGAEA protocol, single-fire subset)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "miou",
+          "model": "tessera",
           "n_papers": 1,
           "task": "change_detection"
         },
@@ -53405,6 +53606,36 @@
           "claims": [
             {
               "baseline": null,
+              "baseline_value": null,
+              "dataset": "European EMSR fires 2024-2025 (88 fires)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec 4.5, Table 5",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "achieving micro F1 = 0.882 and IoU = 0.789",
+              "value": 0.882
+            }
+          ],
+          "dataset": "European EMSR fires 2024-2025 (88 fires)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "tessera",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
               "baseline_value": 54.23,
               "dataset": "FOD",
               "direction": "better",
@@ -54026,6 +54257,66 @@
           "label_regime": "unspecified",
           "metric": "miou",
           "model": "prithvi",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": null,
+          "claims": [
+            {
+              "baseline": null,
+              "baseline_value": null,
+              "dataset": "HLS Burn Scars (793 chips, annual-fire labels)",
+              "direction": "parity",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec 4.3, Table 3",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "Across 793 chips containing 1,162 distinct MTBS fires, the Tessera lightweight U-Net achieved F1 = 0.896",
+              "value": 0.896
+            }
+          ],
+          "dataset": "HLS Burn Scars (793 chips, annual-fire labels)",
+          "direction": "parity",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "tessera",
+          "n_papers": 1,
+          "task": "semantic_segmentation"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.905,
+              "dataset": "HLS Burn Scars (single-fire subset, 559 chips)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec 4.2, Figure 4",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "Tessera with the full U-Net achieved the strongest overall performance (F1 = 0.916, IoU = 0.845)",
+              "value": 0.916
+            }
+          ],
+          "dataset": "HLS Burn Scars (single-fire subset, 559 chips)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "f1",
+          "model": "tessera",
           "n_papers": 1,
           "task": "semantic_segmentation"
         },
@@ -67535,6 +67826,22 @@
             "claims": [
               {
                 "baseline": "task_specific",
+                "baseline_value": 0.845,
+                "dataset": "HLS Burn Scars (PANGAEA protocol, single-fire subset)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2609.25731",
+                "locator": "Sec S8.2, Table S3",
+                "metric": "miou",
+                "model": "tessera",
+                "paper_key": "knezevic2026annual",
+                "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+                "self_evaluation": true,
+                "span": "Tessera with the lightweight U-Net (mIoU = 0.922, m-F1 = 0.959)",
+                "value": 0.922
+              },
+              {
+                "baseline": "task_specific",
                 "baseline_value": null,
                 "dataset": "Malawi decadal census",
                 "direction": "better",
@@ -67569,9 +67876,9 @@
             "direction": "better",
             "label": "thin",
             "model": "tessera",
-            "n_claims": 2,
-            "n_papers": 1,
-            "n_papers_all": 1,
+            "n_claims": 3,
+            "n_papers": 2,
+            "n_papers_all": 2,
             "task": "change_detection"
           },
           "tessera\tcrop_type_mapping": {
@@ -68060,14 +68367,62 @@
                 "self_evaluation": true,
                 "span": "it obtains 50.68 mIoU, ranking second",
                 "value": 50.68
+              },
+              {
+                "baseline": "task_specific",
+                "baseline_value": 0.905,
+                "dataset": "HLS Burn Scars (single-fire subset, 559 chips)",
+                "direction": "better",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2609.25731",
+                "locator": "Sec 4.2, Figure 4",
+                "metric": "f1",
+                "model": "tessera",
+                "paper_key": "knezevic2026annual",
+                "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+                "self_evaluation": true,
+                "span": "Tessera with the full U-Net achieved the strongest overall performance (F1 = 0.916, IoU = 0.845)",
+                "value": 0.916
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "European EMSR fires 2024-2025 (88 fires)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2609.25731",
+                "locator": "Sec 4.5, Table 5",
+                "metric": "f1",
+                "model": "tessera",
+                "paper_key": "knezevic2026annual",
+                "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+                "self_evaluation": true,
+                "span": "achieving micro F1 = 0.882 and IoU = 0.789",
+                "value": 0.882
+              },
+              {
+                "baseline": null,
+                "baseline_value": null,
+                "dataset": "HLS Burn Scars (793 chips, annual-fire labels)",
+                "direction": "parity",
+                "label_ratio": null,
+                "link": "https://arxiv.org/abs/2609.25731",
+                "locator": "Sec 4.3, Table 3",
+                "metric": "f1",
+                "model": "tessera",
+                "paper_key": "knezevic2026annual",
+                "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+                "self_evaluation": true,
+                "span": "Across 793 chips containing 1,162 distinct MTBS fires, the Tessera lightweight U-Net achieved F1 = 0.896",
+                "value": 0.896
               }
             ],
             "direction": "better",
             "label": "thin",
             "model": "tessera",
-            "n_claims": 2,
-            "n_papers": 1,
-            "n_papers_all": 2,
+            "n_claims": 5,
+            "n_papers": 2,
+            "n_papers_all": 3,
             "task": "semantic_segmentation"
           },
           "tessera\twealth_mapping": {
@@ -68199,7 +68554,7 @@
       },
       "task_verdicts": [
         {
-          "agreement": 0.659,
+          "agreement": 0.667,
           "claims": [
             {
               "baseline": "task_specific",
@@ -68632,6 +68987,22 @@
               "self_evaluation": false,
               "span": "achieving the highest scores on CaFFe (mIoU 55.00) and SICD (mIoU 24.54)",
               "value": 55.0
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.905,
+              "dataset": "HLS Burn Scars (single-fire subset, 559 chips)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec 4.2, Figure 4",
+              "metric": "f1",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "Tessera with the full U-Net achieved the strongest overall performance (F1 = 0.916, IoU = 0.845)",
+              "value": 0.916
             },
             {
               "baseline": "task_specific",
@@ -69363,6 +69734,7 @@
             "GEO-Bench+SpaceNetv1+Sen1Floods11+PASTIS (overall avg)",
             "GLID",
             "HLS Burn Scars",
+            "HLS Burn Scars (single-fire subset, 559 chips)",
             "HLSBurnscars",
             "HabitAlp (Gesäuse NP)",
             "IWP",
@@ -69476,22 +69848,22 @@
               "direction": "better",
               "label": "thin",
               "model": "tessera",
-              "n_claims": 1,
-              "n_papers": 1
+              "n_claims": 2,
+              "n_papers": 2
             }
           ],
           "models_differ": true,
-          "n_claims": 71,
+          "n_claims": 72,
           "n_models": 10,
-          "n_papers": 41,
+          "n_papers": 42,
           "pooling_note": null,
           "strongest_benchmark": {
-            "agreement": 0.5,
-            "direction": "worse",
-            "label": "thin",
-            "n_claims": 2,
-            "n_papers": 2,
-            "name": "SpaceNet v1"
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "consensus",
+            "n_claims": 3,
+            "n_papers": 3,
+            "name": "HLS Burn Scars"
           },
           "task": "semantic_segmentation"
         },
@@ -72652,7 +73024,7 @@
           "task": "flood_mapping"
         },
         {
-          "agreement": 0.588,
+          "agreement": 0.611,
           "claims": [
             {
               "baseline": "task_specific",
@@ -72829,6 +73201,22 @@
               "self_evaluation": true,
               "span": "surpassing a U-Net-based baseline by 2.61pp and a ViT-based baseline by 4.58pp",
               "value": 73.62
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 0.845,
+              "dataset": "HLS Burn Scars (PANGAEA protocol, single-fire subset)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.25731",
+              "locator": "Sec S8.2, Table S3",
+              "metric": "miou",
+              "model": "tessera",
+              "paper_key": "knezevic2026annual",
+              "paper_title": "Annual Earth-observation embeddings encode wildfire disturbance and support simplified burned area mapping",
+              "self_evaluation": true,
+              "span": "Tessera with the lightweight U-Net (mIoU = 0.922, m-F1 = 0.959)",
+              "value": 0.922
             },
             {
               "baseline": "task_specific",
@@ -73155,6 +73543,7 @@
             "CHC",
             "ExEBench",
             "HLS Burn Scars",
+            "HLS Burn Scars (PANGAEA protocol, single-fire subset)",
             "HRSID",
             "HabitAlp (Gesäuse NP)",
             "HabitAlp (Gesäuse NP), 2013-2020",
@@ -73239,22 +73628,22 @@
               "direction": "better",
               "label": "thin",
               "model": "tessera",
-              "n_claims": 2,
-              "n_papers": 1
+              "n_claims": 3,
+              "n_papers": 2
             }
           ],
           "models_differ": true,
-          "n_claims": 31,
+          "n_claims": 32,
           "n_models": 8,
-          "n_papers": 17,
+          "n_papers": 18,
           "pooling_note": null,
           "strongest_benchmark": {
             "agreement": 0.5,
-            "direction": "parity",
+            "direction": "better",
             "label": "thin",
             "n_claims": 2,
             "n_papers": 2,
-            "name": "LEVIR-CD"
+            "name": "HLS Burn Scars"
           },
           "task": "change_detection"
         },

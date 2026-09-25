@@ -659,6 +659,9 @@
   "analysis_ready_embeddings": [
     "ma2025harvesting"
   ],
+  "annual-embeddings": [
+    "knezevic2026annual"
+  ],
   "annual_geospatial_embeddings": [
     "chiriaco2026geoid"
   ],
@@ -757,6 +760,9 @@
   ],
   "building_extraction": [
     "li2025fleximo"
+  ],
+  "burned-area-mapping": [
+    "knezevic2026annual"
   ],
   "burned_area_mapping": [
     "shibli2026low"
@@ -1357,6 +1363,9 @@
   ],
   "fine_tuning_vs_frozen": [
     "romero2026how"
+  ],
+  "fire-timing-prediction": [
+    "knezevic2026annual"
   ],
   "fire_hazard_prediction": [
     "liu2026geovista"
@@ -3076,6 +3085,9 @@
   ],
   "vs30_estimation": [
     "nakata2026subsurface"
+  ],
+  "wall-to-wall-mapping": [
+    "knezevic2026annual"
   ],
   "wavelength_conditioning": [
     "xiong2024neural"

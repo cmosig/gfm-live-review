@@ -157,6 +157,10 @@
     "key": "li2025agrifm",
     "status": "carded"
   },
+  "agrobench a reproducible multimodal benchmark for weakly supervised crop yield learning from county statistics and pixel observations": {
+    "key": "singh2026agrobench",
+    "status": "off_topic"
+  },
   "ai derived structural building intelligence for urban resilience an application in saint vincent and the grenadines": {
     "arxiv_id": "2509.18182",
     "dropped_claims": 0,
@@ -194,6 +198,12 @@
   "analyzing local representations of self supervised vision transformers": {
     "key": "vanyan2023analyzing",
     "status": "off_topic"
+  },
+  "annual earth observation embeddings encode wildfire disturbance and support simplified burned area mapping": {
+    "arxiv_id": "2609.25731",
+    "dropped_claims": 0,
+    "key": "knezevic2026annual",
+    "status": "carded"
   },
   "any model any place any time get remote sensing foundation model embeddings on demand": {
     "arxiv_id": "2602.23678",
@@ -509,6 +519,10 @@
     "key": "rehman2026deberta",
     "status": "off_topic"
   },
+  "decoupling logical masks from gpu execution for dynamic block sparse attention": {
+    "key": "liu2026decoupling",
+    "status": "off_topic"
+  },
   "deep learning based burned area mapping using bi temporal siamese networks and alphaearth foundation datasets": {
     "key": "seydi2025deep",
     "status": "quarantined"
@@ -689,6 +703,10 @@
   },
   "erwin schroedinger his poetry and fragment of a galilean dialogue": {
     "key": "kragh2026erwin",
+    "status": "off_topic"
+  },
+  "europa smooth plains formation a sph cryovolcanic model": {
+    "key": "bodin2026europa",
     "status": "off_topic"
   },
   "evaluating alphaearth foundations embeddings for wildfire susceptibility mapping": {
@@ -982,6 +1000,10 @@
     "dropped_claims": 0,
     "key": "hanna2026geosane",
     "status": "carded"
+  },
+  "geospatial embeddings detect old growth forests but buffered spatial validation narrows their advantage over sentinel features": {
+    "key": "ratsakatika2026geospatial",
+    "status": "quarantined"
   },
   "geospatial foundation model embeddings improve population estimation unevenly across space and scale": {
     "arxiv_id": "2605.01650",
@@ -2213,6 +2235,10 @@
     "dropped_claims": 0,
     "key": "gomes2025terratorch",
     "status": "carded"
+  },
+  "tessera a workload driven simulation and design space exploration framework for heterogeneous npus": {
+    "key": "das2026tessera",
+    "status": "off_topic"
   },
   "tessera secure near line rate weight streaming for uma edge accelerators": {
     "key": "naskar2026tessera",
