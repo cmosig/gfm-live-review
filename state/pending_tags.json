@@ -968,6 +968,9 @@
   "controlnet": [
     "liu2026huiyanearth"
   ],
+  "coordinate-probing": [
+    "zhang2026recoverable"
+  ],
   "coordinate_based_neural_representation": [
     "madadikhaljan2026location"
   ],
@@ -1186,6 +1189,9 @@
   ],
   "embedding redundancy": [
     "benavidesmartinez2026what"
+  ],
+  "embedding-auditing": [
+    "zhang2026recoverable"
   ],
   "embedding_clustering": [
     "zvonkov2025cropland"
@@ -1471,6 +1477,9 @@
   ],
   "geoestimation": [
     "bianco2024enhancing"
+  ],
+  "geographic-information-leakage": [
+    "zhang2026recoverable"
   ],
   "geographic_sampling_strategy": [
     "purohit2025how"
@@ -2213,6 +2222,9 @@
   "permanent_water_layer": [
     "chiriaco2026geoid"
   ],
+  "permutation-test": [
+    "zhang2026recoverable"
+  ],
   "phenological_date_prediction": [
     "gupta2025time2agri"
   ],
@@ -2714,11 +2726,17 @@
   "soil_trophic_group_abundance": [
     "cerna2025botaclip"
   ],
+  "solar-farms": [
+    "zhang2026recoverable"
+  ],
   "spatial block cross-validation": [
     "hou2026slum"
   ],
   "spatial localization": [
     "zhang2026fusar"
+  ],
+  "spatial-cross-validation": [
+    "zhang2026recoverable"
   ],
   "spatial_fairness": [
     "knoblauch2026spatial"

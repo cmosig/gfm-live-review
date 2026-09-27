@@ -1859,6 +1859,12 @@
     "key": "wani2026real",
     "status": "off_topic"
   },
+  "recoverable geographic location information in earth observation embeddings": {
+    "arxiv_id": "2609.29151",
+    "dropped_claims": 0,
+    "key": "zhang2026recoverable",
+    "status": "carded"
+  },
   "regular maps from the lamplighter to metabelian groups": {
     "key": "gournay2024regular",
     "status": "off_topic"

@@ -1,5 +1,5 @@
 {
-  "corpus_through": "2026-09-22",
+  "corpus_through": "2026-09-24",
   "limitations": {
     "series": {
       "benchmark_narrowness": {
@@ -40,7 +40,7 @@
         "2026-06": 12,
         "2026-07": 9,
         "2026-08": 20,
-        "2026-09": 7
+        "2026-09": 8
       },
       "compute_cost": {
         "2022-07": 1,
@@ -113,7 +113,7 @@
         "2026-06": 9,
         "2026-07": 4,
         "2026-08": 9,
-        "2026-09": 5
+        "2026-09": 6
       },
       "human_semantics": {
         "2024-04": 1,
@@ -209,7 +209,7 @@
         "2026-06": 8,
         "2026-07": 4,
         "2026-08": 11,
-        "2026-09": 5
+        "2026-09": 6
       },
       "temporal_transfer": {
         "2022-07": 1,
@@ -271,13 +271,13 @@
       }
     },
     "totals": {
-      "benchmark_narrowness": 186,
+      "benchmark_narrowness": 187,
       "compute_cost": 105,
-      "data_bias": 96,
+      "data_bias": 97,
       "human_semantics": 23,
       "interpretability": 43,
       "mixed_pixels": 44,
-      "spatial_transfer": 106,
+      "spatial_transfer": 107,
       "temporal_transfer": 49,
       "time_sensitivity": 36,
       "uncertainty": 31
@@ -316,7 +316,7 @@
       "scalemae",
       "tessera"
     ],
-    "n_papers": 210,
+    "n_papers": 211,
     "tasks": [
       "biomass_estimation",
       "canopy_height_estimation",
@@ -341,10 +341,22 @@
   "registry": {
     "doi_status_counts": {
       "unresolved": 3,
-      "verified": 207
+      "verified": 208
     },
-    "n_papers": 210,
+    "n_papers": 211,
     "papers": [
+      {
+        "arxiv_id": "2609.29151",
+        "date": "2026-09-24",
+        "doi": "10.48550/arxiv.2609.29151",
+        "doi_status": "verified",
+        "key": "zhang2026recoverable",
+        "link": "https://arxiv.org/abs/2609.29151",
+        "n_claims": 1,
+        "self_evaluation": true,
+        "title": "Recoverable Geographic Location Information in Earth-Observation Embeddings",
+        "venue": "arXiv"
+      },
       {
         "arxiv_id": "2609.25731",
         "date": "2026-09-22",
@@ -8910,7 +8922,7 @@
           "n_papers_all": 56
         },
         {
-          "agreement": 0.611,
+          "agreement": 0.618,
           "axis": "G3_spatial_transfer",
           "claims": [
             {
@@ -10930,6 +10942,22 @@
               "value": 0.658
             },
             {
+              "baseline": "task_specific",
+              "baseline_value": 391.9,
+              "dataset": "Global Renewables Watch solar farms (284 European farms, 2024)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.29151",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "zhang2026recoverable",
+              "paper_title": "Recoverable Geographic Location Information in Earth-Observation Embeddings",
+              "self_evaluation": true,
+              "span": "All three representations substantially outperformed the uniform random baseline (1,350.5 km)",
+              "value": 179.7
+            },
+            {
               "baseline": null,
               "baseline_value": null,
               "dataset": "DHS Kenya/Nigeria/Bangladesh",
@@ -10980,9 +11008,9 @@
           ],
           "direction": "better",
           "label": "contested",
-          "n_claims": 129,
-          "n_papers": 54,
-          "n_papers_all": 76
+          "n_claims": 130,
+          "n_papers": 55,
+          "n_papers_all": 77
         },
         {
           "agreement": 1.0,
@@ -30638,6 +30666,49 @@
           }
         },
         {
+          "benchmark": "global renewables watch solar farms",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 391.9,
+              "dataset": "Global Renewables Watch solar farms (284 European farms, 2024)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.29151",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "zhang2026recoverable",
+              "paper_title": "Recoverable Geographic Location Information in Earth-Observation Embeddings",
+              "self_evaluation": true,
+              "span": "All three representations substantially outperformed the uniform random baseline (1,350.5 km)",
+              "value": 179.7
+            }
+          ],
+          "metrics": [
+            "rmse"
+          ],
+          "models": [
+            "alphaearth"
+          ],
+          "n_claims": 1,
+          "n_papers": 1,
+          "n_vs_task_specific": 1,
+          "name": "Global Renewables Watch solar farms",
+          "tasks": [
+            "representation_probing"
+          ],
+          "variants": [
+            "Global Renewables Watch solar farms (284 European farms, 2024)"
+          ],
+          "verdict": {
+            "agreement": 1.0,
+            "direction": "better",
+            "label": "thin",
+            "n_papers": 1
+          }
+        },
+        {
           "benchmark": "gpw v4 population density",
           "claims": [
             {
@@ -36979,6 +37050,22 @@
               "self_evaluation": true,
               "span": "DOFA-CLIP-B (Merging) (ours)",
               "value": 77.6
+            },
+            {
+              "baseline": "task_specific",
+              "baseline_value": 391.9,
+              "dataset": "Global Renewables Watch solar farms (284 European farms, 2024)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.29151",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "zhang2026recoverable",
+              "paper_title": "Recoverable Geographic Location Information in Earth-Observation Embeddings",
+              "self_evaluation": true,
+              "span": "All three representations substantially outperformed the uniform random baseline (1,350.5 km)",
+              "value": 179.7
             }
           ],
           "datasets": [
@@ -37030,6 +37117,7 @@
             "GeoQuery 76-query disaster retrieval benchmark (US droughts)",
             "GeoQuery 76-query disaster retrieval benchmark (US wildfires)",
             "GeoQuery 76-query disaster retrieval benchmark (overall)",
+            "Global Renewables Watch solar farms (284 European farms, 2024)",
             "HLS (LEPA MRR eval)",
             "HLS CONUS cloud imputation dataset",
             "HLS Landsat LST benchmark (Forest)",
@@ -37086,23 +37174,23 @@
             "scalemae",
             "tessera"
           ],
-          "n_claims": 114,
-          "n_papers": 48,
+          "n_claims": 115,
+          "n_papers": 49,
           "task": "representation_probing"
         }
       ],
       "evidence": {
         "directions": {
-          "better": 282,
+          "better": 283,
           "parity": 17,
           "worse": 137
         },
-        "label_ratio_unspecified": 625,
-        "n_claims": 717,
-        "n_self_eval_claims": 88,
+        "label_ratio_unspecified": 626,
+        "n_claims": 718,
+        "n_self_eval_claims": 89,
         "n_vs_model_or_none": 281,
-        "n_vs_task_specific": 436,
-        "pct_better": 64.7,
+        "n_vs_task_specific": 437,
+        "pct_better": 64.8,
         "pct_label_ratio_unspecified": 87.2
       },
       "groups": [
@@ -51071,6 +51159,36 @@
           "label_regime": "unspecified",
           "metric": "accuracy",
           "model": "clay",
+          "n_papers": 1,
+          "task": "representation_probing"
+        },
+        {
+          "agreement": 1.0,
+          "baseline": "task_specific",
+          "claims": [
+            {
+              "baseline": "task_specific",
+              "baseline_value": 391.9,
+              "dataset": "Global Renewables Watch solar farms (284 European farms, 2024)",
+              "direction": "better",
+              "label_ratio": null,
+              "link": "https://arxiv.org/abs/2609.29151",
+              "locator": "Table 1",
+              "metric": "rmse",
+              "model": "alphaearth",
+              "paper_key": "zhang2026recoverable",
+              "paper_title": "Recoverable Geographic Location Information in Earth-Observation Embeddings",
+              "self_evaluation": true,
+              "span": "All three representations substantially outperformed the uniform random baseline (1,350.5 km)",
+              "value": 179.7
+            }
+          ],
+          "dataset": "Global Renewables Watch solar farms (284 European farms, 2024)",
+          "direction": "better",
+          "label": "thin",
+          "label_regime": "unspecified",
+          "metric": "rmse",
+          "model": "alphaearth",
           "n_papers": 1,
           "task": "representation_probing"
         },
